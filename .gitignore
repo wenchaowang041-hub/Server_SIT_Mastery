@@ -14,4 +14,4 @@ __pycache__/
 # Local test artifacts
 /tmp/
 /out/
-
+git-init-smoke-test/
