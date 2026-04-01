@@ -25,3 +25,7 @@
 - 根因判断
 - 处理建议
 - 复查结论
+
+## 当前案例
+
+- [2026-03-31-10.121.176.138-bmc-alarm-analysis.md](E:/72785/Codex/SIT提升/Server-SIT-Mastery/docs/bmc-cases/2026-03-31-10.121.176.138-bmc-alarm-analysis.md)
