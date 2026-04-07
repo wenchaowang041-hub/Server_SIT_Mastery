@@ -5,6 +5,7 @@ set -euo pipefail
 DEVICES=""
 RUNTIME=60
 RW_MODE="randrw"
+RW_MODES=""
 RW_MIX_READ=70
 BS="4k"
 IODEPTH=32
@@ -20,8 +21,9 @@ usage() {
 选项:
   --devices DEV1,DEV2         指定多块 NVMe 设备，逗号分隔
   --runtime 60                运行时长，单位秒
-  --rw randrw                 读写模式，默认 randrw
-  --rwmixread 70              混合读比例，默认 70
+  --rw randrw                 指定单个 fio rw 模式，默认 randrw
+  --rw-modes A,B,C            指定多个 rw 模式，按顺序逐个执行
+  --rwmixread 70              混合读比例，默认 70，仅混合模式生效
   --bs 4k                     块大小
   --iodepth 32                队列深度
   --numjobs 1                 每组 job 数
@@ -29,9 +31,13 @@ usage() {
   --log-dir DIR               指定日志目录
   -h, --help                  显示帮助
 
+常见 rw 模式:
+  read, write, randread, randwrite, rw, randrw, readwrite, trim, randtrim
+
 示例:
   bash nvme_multi_device_fio.sh --devices /dev/nvme0n1,/dev/nvme1n1
-  bash nvme_multi_device_fio.sh --devices /dev/nvme0n1,/dev/nvme1n1,/dev/nvme2n1,/dev/nvme3n1 --runtime 300
+  bash nvme_multi_device_fio.sh --devices /dev/nvme0n1,/dev/nvme1n1 --rw randread --bs 4k
+  bash nvme_multi_device_fio.sh --devices /dev/nvme0n1,/dev/nvme1n1 --rw-modes read,write,randread,randwrite,randrw
 EOF
 }
 
@@ -46,6 +52,17 @@ require_cmd() {
   fi
 }
 
+is_mixed_rw_mode() {
+  case "$1" in
+    rw|randrw|readwrite|randreadwrite)
+      return 0
+      ;;
+    *)
+      return 1
+      ;;
+  esac
+}
+
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --devices)
@@ -58,6 +75,10 @@ while [[ $# -gt 0 ]]; do
       ;;
     --rw)
       RW_MODE="${2:-randrw}"
+      shift 2
+      ;;
+    --rw-modes)
+      RW_MODES="${2:-}"
       shift 2
       ;;
     --rwmixread)
@@ -110,10 +131,16 @@ mkdir -p "$LOG_DIR"
 DEVICE_LIST_COLON="$(echo "$DEVICES" | tr ',' ':')"
 IFS=',' read -r -a DEVICE_ARRAY <<< "$DEVICES"
 
+if [[ -n "$RW_MODES" ]]; then
+  IFS=',' read -r -a RW_MODE_ARRAY <<< "$RW_MODES"
+else
+  RW_MODE_ARRAY=("$RW_MODE")
+fi
+
 {
   echo "date=$(date '+%F %T')"
   echo "devices=$DEVICES"
-  echo "rw_mode=$RW_MODE"
+  echo "rw_modes=${RW_MODE_ARRAY[*]}"
   echo "rwmixread=$RW_MIX_READ"
   echo "bs=$BS"
   echo "iodepth=$IODEPTH"
@@ -140,23 +167,40 @@ for dev in "${DEVICE_ARRAY[@]}"; do
   fi
 done
 
-log "开始执行多设备并发 FIO 测试"
+for rw in "${RW_MODE_ARRAY[@]}"; do
+  rw="$(echo "$rw" | xargs)"
+  [[ -z "$rw" ]] && continue
 
-fio \
-  --name=multi_device_test \
-  --filename="$DEVICE_LIST_COLON" \
-  --direct=1 \
-  --ioengine=libaio \
-  --rw="$RW_MODE" \
-  --rwmixread="$RW_MIX_READ" \
-  --bs="$BS" \
-  --iodepth="$IODEPTH" \
-  --runtime="$RUNTIME" \
-  --time_based \
-  --numjobs="$NUMJOBS" \
-  --size="$SIZE" \
-  --group_reporting \
-  --output="$LOG_DIR/fio-result.txt"
+  output_file="$LOG_DIR/fio-${rw}.txt"
+  log "开始执行多设备并发 FIO 测试: rw=$rw"
+
+  fio_cmd=(
+    fio
+    --name="multi_device_${rw}"
+    --filename="$DEVICE_LIST_COLON"
+    --direct=1
+    --ioengine=libaio
+    --rw="$rw"
+    --bs="$BS"
+    --iodepth="$IODEPTH"
+    --runtime="$RUNTIME"
+    --time_based
+    --numjobs="$NUMJOBS"
+    --size="$SIZE"
+    --group_reporting
+    --output="$output_file"
+  )
+
+  if is_mixed_rw_mode "$rw"; then
+    fio_cmd+=(--rwmixread="$RW_MIX_READ")
+  fi
+
+  printf 'command=' >> "$LOG_DIR/test-meta.txt"
+  printf '%q ' "${fio_cmd[@]}" >> "$LOG_DIR/test-meta.txt"
+  printf '\n' >> "$LOG_DIR/test-meta.txt"
+
+  "${fio_cmd[@]}"
+done
 
 log "采集测试后信息"
 lsblk > "$LOG_DIR/lsblk-after.txt"

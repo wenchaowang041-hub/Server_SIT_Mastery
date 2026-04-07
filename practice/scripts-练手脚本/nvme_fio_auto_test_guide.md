@@ -1,5 +1,8 @@
 # NVMe FIO 自动测试脚本使用手册
 
+Windows PowerShell 下建议使用 `nvme_fio_auto_test.ps1` 启动，或者先执行 `chcp 65001` 再运行 Bash 脚本，以避免中文提示乱码。
+
+
 适用脚本：[nvme_fio_auto_test.sh](/C:/Users/王文超/Desktop/Servre_SIT_Mastery/practice/scripts-练手脚本/nvme_fio_auto_test.sh)
 
 ## 1. 脚本用途

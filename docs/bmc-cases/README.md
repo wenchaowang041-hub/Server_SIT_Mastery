@@ -1,4 +1,4 @@
-# BMC Cases
+﻿# BMC Cases
 
 这个目录只保留后续经过整理、具备长期复用价值的 BMC / Redfish / IPMI 正式案例。
 
@@ -28,4 +28,5 @@
 
 ## 当前案例
 
-- [2026-03-31-10.121.176.138-bmc-alarm-analysis.md](E:/72785/Codex/SIT提升/Server-SIT-Mastery/docs/bmc-cases/2026-03-31-10.121.176.138-bmc-alarm-analysis.md)
+- [2026-04-05-DC500cycles-dc-cycle-hardware-error-analysis.md](C:/Users/王文超/Desktop/Servre_SIT_Mastery/docs/bmc-cases/2026-04-05-DC500cycles-dc-cycle-hardware-error-analysis.md)
+- [2026-03-31-10.121.176.138-bmc-alarm-analysis.md](C:/Users/王文超/Desktop/Servre_SIT_Mastery/docs/bmc-cases/2026-03-31-10.121.176.138-bmc-alarm-analysis.md)
