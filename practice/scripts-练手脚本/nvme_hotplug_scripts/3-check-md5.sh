@@ -29,6 +29,9 @@ for disk in "${DUTS[@]}"; do
 done
 
 dmesg | tail -200 | tee -a "${LOG_DIR}/dmesg-After-Reinsert.log" >/dev/null
+nvme list | tee -a "${LOG_DIR}/nvme-list-After-Reinsert.log" >/dev/null
+lsblk | tee -a "${LOG_DIR}/lsblk-After-Reinsert.log" >/dev/null
+fdisk -l | tee -a "${LOG_DIR}/fdisk-After-Reinsert.log" >/dev/null
 command -v ipmitool >/dev/null 2>&1 && ipmitool sel list | tee -a "${LOG_DIR}/bmc-After-Reinsert.log" >/dev/null
 
 umount "${MOUNT_ROOT}"/* || true

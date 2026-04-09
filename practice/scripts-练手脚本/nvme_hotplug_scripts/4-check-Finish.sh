@@ -12,6 +12,8 @@ check_duts
 log_header "finish check"
 
 lsblk | tee -a "${LOG_DIR}/lsblk-Finish.log" >/dev/null
+fdisk -l | tee -a "${LOG_DIR}/fdisk-Finish.log" >/dev/null
+nvme list | tee -a "${LOG_DIR}/nvme-list-Finish.log" >/dev/null
 command -v lsscsi >/dev/null 2>&1 && lsscsi | tee -a "${LOG_DIR}/lsscsi-Finish.log" >/dev/null
 dmesg | tee -a "${LOG_DIR}/dmesg-Finish.log" >/dev/null
 dmesg | grep -i "err\\|fail\\|abort\\|timeout" | tee -a "${LOG_DIR}/dmesg-Errors.log" >/dev/null || true
@@ -23,7 +25,9 @@ for disk in "${DUTS[@]}"; do
   {
     echo "disk: $disk"
     echo "bdf: $(bdf_of_disk "$disk")"
+    echo "rootport: $(rootport_of_disk "$disk")"
     echo "slot: $(slot_of_disk "$disk")"
+    speed_of_disk "$disk" || true
     nvme smart-log "$disk" || true
     smartctl -a "$disk" || true
   } | tee -a "${LOG_DIR}/${name}-Finish.log" >/dev/null

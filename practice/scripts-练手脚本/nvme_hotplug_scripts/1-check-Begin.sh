@@ -12,6 +12,8 @@ check_duts
 log_header "begin check"
 
 lsblk | tee -a "${LOG_DIR}/lsblk-Begin.log" >/dev/null
+fdisk -l | tee -a "${LOG_DIR}/fdisk-Begin.log" >/dev/null
+nvme list | tee -a "${LOG_DIR}/nvme-list-Begin.log" >/dev/null
 command -v lsscsi >/dev/null 2>&1 && lsscsi | tee -a "${LOG_DIR}/lsscsi-Begin.log" >/dev/null
 dmesg -C
 command -v ipmitool >/dev/null 2>&1 && ipmitool sel clear >/dev/null
@@ -22,8 +24,9 @@ for disk in "${DUTS[@]}"; do
   {
     echo "disk: $disk"
     echo "bdf: $bdf"
+    echo "rootport: $(rootport_of_disk "$disk")"
     echo "slot: $(slot_of_disk "$disk")"
-    lspci -s "$bdf" -vvv | grep -i "LnkSta:\|Speed" || true
+    speed_of_disk "$disk" || true
     nvme list | grep -F "$disk" || true
     nvme smart-log "$disk" || true
     smartctl -a "$disk" || true
