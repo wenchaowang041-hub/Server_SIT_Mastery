@@ -2,26 +2,11 @@
 
 set -euo pipefail
 
-resolve_base_disk() {
-    local dev="$1" parent
-    while true; do
-        parent="$(lsblk -no PKNAME "${dev}" 2>/dev/null | head -n1 || true)"
-        if [ -z "${parent}" ]; then
-            echo "${dev}"
-            return 0
-        fi
-        dev="/dev/${parent}"
-    done
-}
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+[ -f "${SCRIPT_DIR}/config.sh" ] && source "${SCRIPT_DIR}/config.sh"
 
 get_system_disks() {
-    local target src base
-    for target in / /boot /boot/efi; do
-        src="$(findmnt -n -o SOURCE "${target}" 2>/dev/null || true)"
-        [ -z "${src}" ] && continue
-        base="$(resolve_base_disk "${src}")"
-        [ -n "${base}" ] && echo "${base}"
-    done | sort -u
+    echo /dev/nvme5n1
 }
 
 get_system_disk() {
@@ -34,6 +19,36 @@ list_test_nvme_disks() {
     for disk in /dev/nvme*n1; do
         [ -b "${disk}" ] || continue
         if printf '%s\n' "${sysdisks}" | grep -Fxq "${disk}"; then
+            continue
+        fi
+        echo "${disk}"
+    done
+}
+
+list_dut_disks() {
+    local disk sysdisks
+    sysdisks="$(get_system_disks || true)"
+
+    if [ ${#DUTS[@]} -eq 0 ]; then
+        list_test_nvme_disks
+        return 0
+    fi
+
+    for disk in "${DUTS[@]}"; do
+        [ -b "${disk}" ] || continue
+        if printf '%s\n' "${sysdisks}" | grep -Fxq "${disk}"; then
+            echo "Refusing to use system disk as DUT: ${disk}" >&2
+            exit 1
+        fi
+        echo "${disk}"
+    done
+}
+
+list_non_dut_nvmes() {
+    local disk dut_disks
+    dut_disks="$(list_dut_disks)"
+    for disk in $(list_test_nvme_disks); do
+        if printf '%s\n' "${dut_disks}" | grep -Fxq "${disk}"; then
             continue
         fi
         echo "${disk}"

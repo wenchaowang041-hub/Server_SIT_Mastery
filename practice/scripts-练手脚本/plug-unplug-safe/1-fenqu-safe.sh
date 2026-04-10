@@ -10,15 +10,15 @@ if [ "$(id -u)" -ne 0 ]; then
     exit 1
 fi
 
-mapfile -t nvme_disks < <(list_test_nvme_disks)
+mapfile -t nvme_disks < <(list_dut_disks)
 system_disk="$(get_system_disk || true)"
 
 if [ ${#nvme_disks[@]} -eq 0 ]; then
-    echo "No test NVMe disk found."
+    echo "No DUT NVMe disk found."
     exit 0
 fi
 
-echo "Detected test NVMe disks:"
+echo "Detected DUT NVMe disks:"
 printf "  %s\n" "${nvme_disks[@]}"
 [ -n "${system_disk}" ] && echo "Excluded system disk: ${system_disk}"
 echo

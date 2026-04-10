@@ -12,7 +12,7 @@ dmesg | grep -i "err\\|failed" || true
 ipmitool sel list | grep -i "err\\|failed" || true
 ipmitool sel list | tee -a bmc-Finish.log >> /dev/null || true
 
-for disk in $(list_test_nvme_disks); do
+for disk in $(list_dut_disks); do
     smartctl -a "$disk" | tee -a smartctl-Begin.log >> /dev/null
     smartctl -H "$disk" | tee -a smartctl-H-Begin.log >> /dev/null
     smartctl -H "$disk" | grep overall-health | grep -v "PASSED" || true

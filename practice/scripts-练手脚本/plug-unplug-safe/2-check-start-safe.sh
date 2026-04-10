@@ -9,7 +9,7 @@ dmesg -c &> /dev/null
 ipmitool sel clear &> /dev/null || true
 fdisk -l | tee -a fdisk.txt
 
-for disk in $(list_test_nvme_disks); do
+for disk in $(list_dut_disks); do
     smartctl -a "$disk" | tee -a check-smart-start.txt
     smartctl -H "$disk" | tee -a check-smart-start.txt
 done

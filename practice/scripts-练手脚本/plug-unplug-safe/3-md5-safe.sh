@@ -10,7 +10,7 @@ mount -a
 sleep 10
 df -h | tee -a df.txt
 
-for disk in $(list_test_nvme_disks); do
+for disk in $(list_dut_disks); do
     idx="$(disk_index "$disk")"
     dd if=/dev/urandom of="./md5/nvme${idx}n1p1.bin" bs=1M count=1000
     sleep 10

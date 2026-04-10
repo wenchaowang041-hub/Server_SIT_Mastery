@@ -13,6 +13,9 @@ blkid | grep -E '^/dev/nvme[0-9]+n1p1:' | while read -r line; do
     device="$(echo "$line" | awk -F: '{print $1}' | sed 's|/dev/||')"
     base_dev="$(echo "$line" | awk -F: '{print $1}' | sed 's#p1$##')"
     [ -n "${system_disk}" ] && [ "${base_dev}" = "${system_disk}" ] && continue
+    if ! printf '%s\n' "$(list_dut_disks)" | grep -Fxq "${base_dev}"; then
+        continue
+    fi
     uuid="$(echo "$line" | grep -oE 'UUID=\"[^\"]+\"' | head -1 | cut -d'"' -f2)"
     fstype="$(echo "$line" | grep -oE 'TYPE=\"[^\"]+\"' | head -1 | cut -d'"' -f2)"
     [ -z "${uuid}" ] && continue

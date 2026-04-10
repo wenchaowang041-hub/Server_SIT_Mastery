@@ -54,11 +54,13 @@ echo "cycles=${CYCLES}" >> round-meta.txt
 echo "pull_wait_seconds=${PULL_WAIT_SECONDS}" >> round-meta.txt
 echo "insert_wait_seconds=${INSERT_WAIT_SECONDS}" >> round-meta.txt
 echo "system_disk=$(get_system_disk || true)" >> round-meta.txt
-echo "test_nvme_disks=$(list_test_nvme_disks | xargs)" >> round-meta.txt
+echo "dut_disks=$(list_dut_disks | xargs)" >> round-meta.txt
+echo "other_nvme_disks=$(list_non_dut_nvmes | xargs)" >> round-meta.txt
 
 echo "Round directory: ${ROUND_DIR}"
 echo "System disk excluded: $(get_system_disk || true)"
-echo "Test disks: $(list_test_nvme_disks | xargs)"
+echo "DUT disks: $(list_dut_disks | xargs)"
+echo "Other NVMe disks: $(list_non_dut_nvmes | xargs)"
 
 pause_enter "Confirm the test environment is ready and /etc/fstab does not contain stale DUT entries."
 
@@ -73,21 +75,25 @@ step_run "Step 3: collect start logs" "${SCRIPT_DIR}/2-check-start-safe.sh" "03-
 step_run "Step 4: create md5 source files and copy to p1" "${SCRIPT_DIR}/3-md5-safe.sh" "04-md5-create.log"
 step_run "Step 5: start fio pressure on p2" "${SCRIPT_DIR}/fio-safe.sh" "05-fio-start.log"
 
+mapfile -t dut_disks < <(list_dut_disks)
+
 for ((loop=1; loop<=CYCLES; loop++)); do
     echo
     echo "===== Hotplug loop ${loop}/${CYCLES} ====="
-    record_manual_state "loop ${loop} start"
+    for disk in "${dut_disks[@]}"; do
+        record_manual_state "loop ${loop} disk ${disk} start"
 
-    pause_enter "Now you may PULL OUT the target disk."
-    record_manual_state "loop ${loop} operator pulled disk"
-    countdown "${PULL_WAIT_SECONDS}" "Pull wait"
+        pause_enter "Now you may PULL OUT ${disk}."
+        record_manual_state "loop ${loop} operator pulled ${disk}"
+        countdown "${PULL_WAIT_SECONDS}" "Pull wait"
 
-    pause_enter "Now you may INSERT the target disk slowly."
-    record_manual_state "loop ${loop} operator inserted disk"
-    countdown "${INSERT_WAIT_SECONDS}" "Insert settle"
+        pause_enter "Now you may INSERT ${disk} slowly."
+        record_manual_state "loop ${loop} operator inserted ${disk}"
+        countdown "${INSERT_WAIT_SECONDS}" "Insert settle"
 
-    step_run "Step 6: md5 check after reinsert (loop ${loop})" "${SCRIPT_DIR}/4-check-md5-safe.sh" "06-check-md5-loop${loop}.log"
-    record_manual_state "loop ${loop} md5 check finished"
+        step_run "Step 6: md5 check after reinsert (loop ${loop}, ${disk})" "${SCRIPT_DIR}/4-check-md5-safe.sh" "06-check-md5-loop${loop}-$(basename "${disk}").log"
+        record_manual_state "loop ${loop} disk ${disk} md5 check finished"
+    done
 done
 
 step_run "Step 7: final log check" "${SCRIPT_DIR}/5-check-log-safe.sh" "07-check-log.log"
