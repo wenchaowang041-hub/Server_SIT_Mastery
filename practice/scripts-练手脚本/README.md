@@ -31,3 +31,18 @@
 - NVMe 热插拔现场脚本与执行手册统一收口在 `nvme_hotplug_scripts/`
 - `run-hotplug-test.sh` 是 NVMe 热插拔的统一执行入口
 - 只有在复盘旧命令或追溯历史行为时，再回看 `legacy/`
+# Hotplug Toolkit
+
+- `nvme_hotplug_scripts/`
+  说明: 按指定 DUT 盘执行的 NVMe 热插拔脚本与手册，适合按拓扑分组做测试。
+  入口: `nvme_hotplug_scripts/run-hotplug-test.sh`
+  手册: `NVMe热插拔测试通用详细执行手册.md`、`下午现场执行手册.md`
+
+- `plug-unplug-safe/`
+  说明: 基于 Plug-UnPlug 流程整理的安全版半自动工具，自动排除系统盘，适合现场按提示人工插拔。
+  入口: `plug-unplug-safe/auto-plug-unplug-fio-safe.sh`
+  手册: `plug-unplug-safe/Plug-UnPlug-安全版操作手册.md`
+
+- 选择建议
+  如果你需要按两块指定 DUT、按拓扑逐轮执行，优先用 `nvme_hotplug_scripts/`。
+  如果你需要沿用 Plug-UnPlug 的分步习惯，并希望脚本自动串联流程，优先用 `plug-unplug-safe/`。
