@@ -73,13 +73,21 @@ mount -a | tee -a "02-uuid.log"
 
 step_run "Step 3: collect start logs" "${SCRIPT_DIR}/2-check-start-safe.sh" "03-check-start.log"
 step_run "Step 4: create md5 source files and copy to p1" "${SCRIPT_DIR}/3-md5-safe.sh" "04-md5-create.log"
-step_run "Step 5: start fio pressure on p2" "${SCRIPT_DIR}/fio-safe.sh" "05-fio-start.log"
 
 mapfile -t dut_disks < <(list_dut_disks)
 
 for ((loop=1; loop<=CYCLES; loop++)); do
     echo
     echo "===== Hotplug loop ${loop}/${CYCLES} ====="
+
+    # 每轮启动 FIO 压力测试（后台运行，覆盖整轮拔插时间）
+    # 单盘约 PULL_WAIT + INSERT_WAIT + 30s 缓冲，乘以盘数
+    FIO_RUNTIME=$(( ${#dut_disks[@]} * (PULL_WAIT_SECONDS + INSERT_WAIT_SECONDS + 30) ))
+    echo "[FIO] 本轮 FIO 压力测试启动，预计运行 ${FIO_RUNTIME}s"
+    export FIO_RUNTIME
+    bash "${SCRIPT_DIR}/fio-safe.sh" > "05-fio-loop${loop}.log" 2>&1 &
+    sleep 5  # 等 FIO 进程稳定启动
+
     for disk in "${dut_disks[@]}"; do
         record_manual_state "loop ${loop} disk ${disk} start"
 
@@ -94,6 +102,12 @@ for ((loop=1; loop<=CYCLES; loop++)); do
         step_run "Step 6: md5 check after reinsert (loop ${loop}, ${disk})" "${SCRIPT_DIR}/4-check-md5-safe.sh" "06-check-md5-loop${loop}-$(basename "${disk}").log"
         record_manual_state "loop ${loop} disk ${disk} md5 check finished"
     done
+
+    # 本轮所有盘拔插完成，清理残留 FIO 进程
+    echo "[FIO] 清理本轮 FIO 进程..."
+    pkill -f "fio.*seq_mixed" 2>/dev/null || true
+    sleep 2
+    echo "[FIO] 本轮 FIO 已结束"
 done
 
 step_run "Step 7: final log check" "${SCRIPT_DIR}/5-check-log-safe.sh" "07-check-log.log"
