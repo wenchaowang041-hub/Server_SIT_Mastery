@@ -3,8 +3,16 @@
 # 通知式 NVMe 热插拔测试（PCI 插槽电源控制）
 # 流程：
 #   分区 → UUID → 预采集日志 → MD5源文件
-#   循环N轮：FIO→断电所有槽→等待→通电所有槽→检测识别→MD5校验→清FIO
+#   循环N轮：FIO→软件断电所有槽→等待→提示物理插回→自动检测识别→MD5校验→清FIO
 #   最终日志采集
+#
+# 与原脚本对比优化：
+#   - 原: 断电后等5秒→提示插盘→监控/var/log/messages "iommu: Adding"计数
+#   - 新: 断电后等PULL_WAIT→提示插盘→轮询/dev设备节点检测（更稳定）
+#   - 原: for i in {0..11} 包含系统盘
+#   - 新: 自动遍历非系统盘，排除nvme5
+#   - 原: 60s 固定 runtime
+#   - 新: FIO_RUNTIME 可配置，默认300s
 #===============================================================================
 
 set -euo pipefail
@@ -35,11 +43,6 @@ step_run() {
 record_manual_state() {
     local note="$1"
     printf '[%s] %s\n' "$(date '+%F %T')" "$note" | tee -a loop-record.txt
-}
-
-# 获取所有 PCI 插槽（数字排序）
-get_pci_slots() {
-    ls /sys/bus/pci/slots/ 2>/dev/null | sort -n
 }
 
 # 获取所有非系统盘的 DUT NVMe 设备
@@ -74,15 +77,11 @@ wait_for_disk() {
     return 1
 }
 
-# 获取 PCI 插槽号
+# 获取磁盘对应的 PCI 插槽号
 slot_of_disk() {
     local disk="$1"
     local node
     node="$(readlink -f "/sys/class/nvme/$(basename "${disk}")")"
-    # 从 /sys/devices/.../pciXXXX:XX/XXXX:XX:XX.X/nvme/nvmeX 中提取 slot
-    local slot_dir
-    slot_dir="$(basename "$(dirname "$(dirname "$node")")")"
-    # 查找对应的 /sys/bus/pci/slots/ 下的插槽号
     for s in /sys/bus/pci/slots/*/; do
         [ -d "$s" ] || continue
         local addr_file="${s}address"
@@ -96,22 +95,6 @@ slot_of_disk() {
         fi
     done
     echo ""
-}
-
-# 映射磁盘到PCI插槽
-map_disks_to_slots() {
-    local disks=("$@")
-    local slot_map=()
-    for disk in "${disks[@]}"; do
-        local slot
-        slot="$(slot_of_disk "$disk")"
-        if [ -n "$slot" ]; then
-            slot_map+=("$slot")
-            echo "  ${disk} -> 插槽 ${slot}"
-        else
-            echo "[警告] ${disk} 未找到对应 PCI 插槽"
-        fi
-    done
 }
 
 echo "round_name=${ROUND_NAME}" > round-meta.txt
@@ -129,20 +112,16 @@ echo "DUT disks: ${dut_disks[*]}"
 echo ""
 
 # 获取 PCI 插槽映射
-echo "PCI 插槽映射:"
-mapfile -t slot_nums < <(get_pci_slots)
-echo "可用插槽: ${slot_nums[*]}"
-echo ""
-
-# 获取所有有设备的插槽（通过 lspci 或其他方式确认有 NVMe 的插槽）
 dut_slots=()
 for disk in "${dut_disks[@]}"; do
     slot="$(slot_of_disk "$disk")"
     if [ -n "$slot" ]; then
         dut_slots+=("$slot")
+        echo "  ${disk} -> 插槽 ${slot}"
+    else
+        echo "[警告] ${disk} 未找到对应 PCI 插槽"
     fi
 done
-echo "DUT 对应插槽: ${dut_slots[*]}"
 echo ""
 
 # Step 1: 分区
@@ -169,9 +148,9 @@ for ((loop=1; loop<=CYCLES; loop++)); do
     echo "[FIO] 启动压力测试，预计运行 ${FIO_RUNTIME}s"
     export FIO_RUNTIME
     bash "$(pwd)/fio.sh" > "05-fio-loop${loop}.log" 2>&1 &
-    sleep 5  # 等 FIO 进程稳定启动
+    sleep 5
 
-    # 2. 批量下电所有 PCI 插槽
+    # 2. 软件断电所有 PCI 插槽（模拟拔盘）
     echo "[断电] 批量关闭 PCI 插槽电源..."
     for slot in "${dut_slots[@]}"; do
         echo "  关闭插槽 ${slot}"
@@ -180,24 +159,20 @@ for ((loop=1; loop<=CYCLES; loop++)); do
     record_manual_state "loop ${loop} batch power off done"
 
     # 3. 等待
-    countdown_label="断电等待"
     seconds=$PULL_WAIT_SECONDS
     while (( seconds > 0 )); do
-        printf '\r%s: %2ds ' "$countdown_label" "$seconds"
+        printf '\r断电等待: %2ds ' "$seconds"
         sleep 1
         ((seconds--))
     done
-    printf '\r%s: done   \n' "$countdown_label"
+    printf '\r断电等待: done   \n'
 
-    # 4. 批量上电所有 PCI 插槽
-    echo "[通电] 批量开启 PCI 插槽电源..."
-    for slot in "${dut_slots[@]}"; do
-        echo "  开启插槽 ${slot}"
-        echo 1 > "/sys/bus/pci/slots/${slot}/power" 2>/dev/null || echo "    [警告] 插槽 ${slot} 上电失败"
-    done
-    record_manual_state "loop ${loop} batch power on done"
+    # 4. 提示物理插回（不做软件上电，靠物理插入触发系统识别）
+    echo "[提示] 请物理插入所有硬盘，按 Enter 确认..."
+    read -r -p "" _
+    record_manual_state "loop ${loop} physical reinsert done"
 
-    # 5. 等待并逐个检测所有盘已识别
+    # 5. 轮询检测所有盘已识别（替代原脚本的 /var/log/messages 监控）
     echo "[检测] 等待所有盘被系统识别..."
     all_detected=true
     for disk in "${dut_disks[@]}"; do
@@ -209,7 +184,7 @@ for ((loop=1; loop<=CYCLES; loop++)); do
         echo "[警告] 部分盘未被识别，但继续执行后续步骤"
     fi
 
-    # 6. 执行一次 MD5 校验（内部会遍历所有盘）
+    # 6. MD5 校验
     step_run "Step 6: md5 check (loop ${loop})" "$(pwd)/4-check-md5.sh" "06-check-md5-loop${loop}.log"
     record_manual_state "loop ${loop} all disks md5 check finished"
 
