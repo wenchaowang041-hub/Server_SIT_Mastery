@@ -98,7 +98,11 @@ for ((loop=1; loop<=CYCLES; loop++)); do
 
         pause_enter "Now you may INSERT ${disk} slowly."
         record_manual_state "loop ${loop} operator inserted ${disk}"
-        countdown "${INSERT_WAIT_SECONDS}" "Insert settle"
+
+        # 等待系统识别到盘（最长 INSERT_WAIT_SECONDS 秒，超时也不阻塞流程）
+        if ! wait_for_disk "${disk}" "${INSERT_WAIT_SECONDS}"; then
+            echo "[警告] ${disk} 未被识别，但继续执行后续步骤"
+        fi
 
         step_run "Step 6: md5 check after reinsert (loop ${loop}, ${disk})" "${SCRIPT_DIR}/4-check-md5-safe.sh" "06-check-md5-loop${loop}-$(basename "${disk}").log"
         record_manual_state "loop ${loop} disk ${disk} md5 check finished"

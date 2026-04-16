@@ -59,3 +59,28 @@ disk_index() {
     local disk="$1"
     basename "${disk}" | sed -E 's#^nvme([0-9]+)n1$#\1#'
 }
+
+# 等待系统识别到 NVMe 设备（轮询检测，超时兜底）
+# 用法: wait_for_disk /dev/nvme0n1 30
+wait_for_disk() {
+    local disk="$1"
+    local timeout="${2:-30}"
+    local elapsed=0
+
+    while (( elapsed < timeout )); do
+        # 检查设备节点 + 分区是否都已就绪
+        if [ -b "${disk}" ] && [ -b "${disk}p1" ] && [ -b "${disk}p2" ]; then
+            if (( elapsed <= 1 )); then
+                echo "[OK] ${disk} 已识别"
+            else
+                echo "[OK] ${disk} 已识别，耗时 ${elapsed}s"
+            fi
+            return 0
+        fi
+        sleep 1
+        ((elapsed++))
+    done
+
+    echo "[FAIL] ${disk} 在 ${timeout}s 内未被系统识别"
+    return 1
+}
