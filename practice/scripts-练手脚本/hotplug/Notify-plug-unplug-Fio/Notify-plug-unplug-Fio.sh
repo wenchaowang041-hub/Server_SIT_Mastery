@@ -77,16 +77,16 @@ wait_for_disk() {
 #       和 /sys/bus/pci/slots/X/address 比对
 slot_of_disk() {
     local disk="$1"
-    local node
-    node="$(readlink -f "/sys/class/nvme/$(basename "${disk}")")"
+    local bdf
 
-    # 从路径中提取设备 BDF: /sys/devices/pci0000:XX/.../0000:XX:XX.X/nvme/nvmeN
-    # 取倒数第二个目录名（如 0000:09:00.0）
-    local device_bdf
-    device_bdf="$(basename "$(dirname "$node")")"
+    # /sys/block/nvmeXn1/device -> ../../../0000:XX:XX.X
+    # 直接读 symlink 内容，不追到最终路径
+    local devlink
+    devlink="$(readlink "/sys/block/$(basename "${disk}")/device")"
+    bdf="$(basename "$devlink")"
 
     # 去掉 function 部分: 0000:09:00.0 -> 0000:09:00
-    local device_base="${device_bdf%.*}"
+    local device_base="${bdf%.*}"
 
     # 遍历所有插槽，比对 address 文件
     for s in /sys/bus/pci/slots/*/; do
