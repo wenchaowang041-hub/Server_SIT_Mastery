@@ -58,15 +58,7 @@ for dev in /dev/nvme*n1; do
     dd if=/dev/zero of="$dev" bs=1M count=10 status=none 2>/dev/null || true
 done
 
-# 4. 重新扫描 NVMe 设备
-echo "[4] 重新扫描 NVMe 总线..."
-for ctrl in /sys/class/nvme/nvme*/; do
-    [ -d "$ctrl" ] || continue
-    echo 1 > "${ctrl}rescan" 2>/dev/null || true
-done
-sleep 3
-
-# 5. 验证
+# 4. 验证
 echo ""
 echo "=== 清理结果 ==="
 echo ""
