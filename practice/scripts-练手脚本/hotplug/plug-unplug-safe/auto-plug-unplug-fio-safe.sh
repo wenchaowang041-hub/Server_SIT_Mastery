@@ -7,8 +7,8 @@ source "${SCRIPT_DIR}/common.sh"
 cd "$SCRIPT_DIR"
 
 CYCLES="${CYCLES:-10}"
-PULL_WAIT_SECONDS="${PULL_WAIT_SECONDS:-30}"
-INSERT_WAIT_SECONDS="${INSERT_WAIT_SECONDS:-6}"
+PULL_WAIT_SECONDS="${PULL_WAIT_SECONDS:-10}"
+INSERT_WAIT_SECONDS="${INSERT_WAIT_SECONDS:-30}"
 ROUND_NAME="${1:-$(date '+%F_%H%M%S')}"
 LOG_ROOT="${LOG_ROOT:-$SCRIPT_DIR/runs}"
 ROUND_DIR="${LOG_ROOT}/${ROUND_NAME}"
@@ -80,35 +80,45 @@ for ((loop=1; loop<=CYCLES; loop++)); do
     echo
     echo "===== Hotplug loop ${loop}/${CYCLES} ====="
 
-    # 每轮启动 FIO 压力测试（后台运行，覆盖整轮拔插时间）
-    # 单盘耗时 = 人工拔/插等待 + INSERT_WAIT + md5校验 + 交互缓冲 ~40s
-    # FIO 需覆盖该轮所有盘的操作时间，额外留 60s 余量
-    FIO_RUNTIME=$(( ${#dut_disks[@]} * (PULL_WAIT_SECONDS + INSERT_WAIT_SECONDS + 40) + 60 ))
-    echo "[FIO] 本轮 FIO 压力测试启动，预计运行 ${FIO_RUNTIME}s"
+    # 1. 启动 FIO 压力测试
+    # FIO 需覆盖：拔盘等待 + 检测超时 + MD5校验时间 + 余量
+    FIO_RUNTIME=$(( PULL_WAIT_SECONDS + ${#dut_disks[@]} * (30 + 30) + 60 ))
+    echo "[FIO] 启动压力测试，预计运行 ${FIO_RUNTIME}s"
     export FIO_RUNTIME
     bash "${SCRIPT_DIR}/fio-safe.sh" > "05-fio-loop${loop}.log" 2>&1 &
     sleep 5  # 等 FIO 进程稳定启动
 
+    # 2. 提示拔所有盘
+    record_manual_state "loop ${loop} batch pull start"
+    pause_enter "Now you may PULL OUT all DUT disks: ${dut_disks[*]}."
+    record_manual_state "loop ${loop} batch pull done"
+
+    # 3. 等待一段时间
+    countdown "${PULL_WAIT_SECONDS}" "Pull wait"
+
+    # 4. 提示插回所有盘
+    pause_enter "Now you may INSERT all DUT disks slowly."
+    record_manual_state "loop ${loop} batch insert done"
+
+    # 5. 等待并逐个检测所有盘已识别
+    echo "[检测] 等待所有盘被系统识别..."
+    all_detected=true
     for disk in "${dut_disks[@]}"; do
-        record_manual_state "loop ${loop} disk ${disk} start"
-
-        pause_enter "Now you may PULL OUT ${disk}."
-        record_manual_state "loop ${loop} operator pulled ${disk}"
-        countdown "${PULL_WAIT_SECONDS}" "Pull wait"
-
-        pause_enter "Now you may INSERT ${disk} slowly."
-        record_manual_state "loop ${loop} operator inserted ${disk}"
-
-        # 等待系统识别到盘（最长 INSERT_WAIT_SECONDS 秒，超时也不阻塞流程）
-        if ! wait_for_disk "${disk}" "${INSERT_WAIT_SECONDS}"; then
-            echo "[警告] ${disk} 未被识别，但继续执行后续步骤"
+        if ! wait_for_disk "${disk}"; then
+            all_detected=false
         fi
+    done
+    if ! $all_detected; then
+        echo "[警告] 部分盘未被识别，但继续执行后续步骤"
+    fi
 
-        step_run "Step 6: md5 check after reinsert (loop ${loop}, ${disk})" "${SCRIPT_DIR}/4-check-md5-safe.sh" "06-check-md5-loop${loop}-$(basename "${disk}").log"
+    # 6. 逐个执行 MD5 校验
+    for disk in "${dut_disks[@]}"; do
+        step_run "Step 6: md5 check (loop ${loop}, ${disk})" "${SCRIPT_DIR}/4-check-md5-safe.sh" "06-check-md5-loop${loop}-$(basename "${disk}").log"
         record_manual_state "loop ${loop} disk ${disk} md5 check finished"
     done
 
-    # 本轮所有盘拔插完成，清理残留 FIO 进程
+    # 7. 清理 FIO 进程
     echo "[FIO] 清理本轮 FIO 进程..."
     pkill -f "fio.*seq_mixed" 2>/dev/null || true
     sleep 2
