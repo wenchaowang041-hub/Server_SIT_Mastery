@@ -169,23 +169,33 @@ for ((loop=1; loop<=CYCLES; loop++)); do
             echo 0 > "/sys/bus/pci/slots/${slot}/power" 2>/dev/null || echo "    [警告] 插槽 ${slot} 下电失败"
         done
         record_manual_state "loop ${loop} batch power off done"
+        echo ""
+        echo "============================================"
+        echo "  所有硬盘已断电（绿色指示灯应已熄灭）"
+        echo "  请拔出所有 DUT 硬盘"
+        echo "  等待 ${PULL_WAIT_SECONDS}s 后提示插回"
+        echo "============================================"
     fi
 
-    # 3. 等待
+    # 3. 倒计时（等待拔盘）
     seconds=$PULL_WAIT_SECONDS
     while (( seconds > 0 )); do
-        printf '\r等待: %2ds ' "$seconds"
+        printf '\r  等待: %2ds ' "$seconds"
         sleep 1
         ((seconds--))
     done
-    printf '\r等待: done   \n'
-
-    # 4. 提示插回（软件不上电，靠物理插入触发系统识别）
-    echo "[提示] 请插入所有硬盘，按 Enter 确认..."
+    printf '\r  等待: 完成   \n'
+    echo ""
+    echo "============================================"
+    echo "  请将所有 DUT 硬盘插回对应插槽"
+    echo "  等待硬盘绿色指示灯全部亮起后"
+    echo "  按 Enter 键继续"
+    echo "============================================"
     read -r -p "" _
     record_manual_state "loop ${loop} physical reinsert done"
 
-    # 5. 轮询检测所有盘已识别
+    # 4. 轮询检测所有盘已识别
+    echo ""
     echo "[检测] 等待所有盘被系统识别..."
     all_detected=true
     for disk in "${dut_disks[@]}"; do

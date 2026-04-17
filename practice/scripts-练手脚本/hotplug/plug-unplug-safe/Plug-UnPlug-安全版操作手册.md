@@ -1,377 +1,293 @@
-# Plug-UnPlug 安全版操作手册
+# 批量热插拔测试（plug-unplug-safe）操作手册
 
-## 适用场景
+## 一、概述
 
-这套脚本用于 Linux 下 NVMe 暴力热插拔测试。
+### 1.1 用途
 
-当前版本适合两种模式：
+Linux 下 NVMe SSD 批量热插拔压力测试脚本，用于验证：
+- 热插拔过程中的数据完整性（MD5 校验）
+- 反复拔插后的 PCIe 链路稳定性（AER 错误检测）
+- 带 FIO 压力测试时的热插拔可靠性
 
-- 默认模式：`config.sh` 中 `DUTS=()`，表示除系统盘外的所有 NVMe 都作为 DUT
-- 指定模式：在 `config.sh` 中手工填写指定 DUT
+### 1.2 核心流程
 
-## 当前脚本目录
-
-- `config.sh`
-- `common.sh`
-- `auto-plug-unplug-fio-safe.sh`
-- `1-fenqu-safe.sh`
-- `UUID-safe.sh`
-- `2-check-start-safe.sh`
-- `3-md5-safe.sh`
-- `fio-safe.sh`
-- `4-check-md5-safe.sh`
-- `5-check-log-safe.sh`
-
-## 当前机器说明
-
-在你这台机器上，系统盘已经固定确认为：
-
-```bash
-/dev/nvme5n1
+```
+分区 -> UUID绑定 -> 预采集日志 -> 创建MD5源文件
+-> 循环N轮：
+     FIO压测 -> 提示拔所有盘 -> 倒计时 -> 提示插回 -> 检测识别 -> MD5校验 -> 清理FIO
+-> 最终日志采集（dmesg/SEL/SMART/topology）
 ```
 
-这块盘不会参与：
+### 1.3 工作模式
 
-- 分区
-- UUID 绑定
-- MD5 文件生成
-- `fio`
-- 热插拔循环
-- 结束检查
+| 模式 | 说明 | 配置 |
+|------|------|------|
+| 自动模式（推荐） | 自动识别除系统盘外所有 NVMe 盘 | `config.sh` 中 `DUTS=()` |
+| 指定模式 | 只测试指定的磁盘 | `config.sh` 中填写具体盘符 |
 
-## 当前默认配置
+## 二、前置条件
 
-`config.sh` 现在建议保持：
+### 2.1 硬件要求
 
-```bash
-DUTS=()
-```
+- NVMe SSD（支持热插拔的平台）
+- 确认系统盘（不会被测试影响）
+- 足够的物理空间操作硬盘
 
-这表示：
-
-- 自动把除 `/dev/nvme5n1` 外的所有 NVMe 盘都作为 DUT
-
-如果以后只想测指定盘，再改成：
+### 2.2 软件依赖
 
 ```bash
-DUTS=(
-  "/dev/nvme2n1"
-  "/dev/nvme3n1"
-)
+# 需要安装的工具
+yum install -y fio smartmontools ipmitool util-linux parted e2fsprogs
 ```
 
-## 执行前检查
+确认命令可用：
+```bash
+which fio smartctl ipmitool lsblk lsscsi nvme findmnt sgdisk wipefs
+```
 
-先确认：
+### 2.3 系统盘确认
 
-- 你在 `root` 下执行
-- `fio`、`smartctl`、`ipmitool`、`findmnt`、`lsblk` 已安装
-- `/etc/fstab` 中没有旧的测试盘挂载条目
-- 除系统盘外的 DUT 允许被重新分区和压测
+**当前机器系统盘**：`/dev/nvme5n1`
 
-## 执行前验证
+如需移植到其他机器，修改 `common.sh` 中的 `get_system_disks()` 函数：
+```bash
+get_system_disks() {
+    echo /dev/nvmeXn1  # 改为实际的系统盘
+}
+```
 
-先加载公共函数：
+### 2.4 执行前检查
 
 ```bash
-source /root/plug-unplug-safe/common.sh
+# 1. 确认在 root 下执行
+whoami
+
+# 2. 确认 /etc/fstab 无旧测试条目
+grep nvme /etc/fstab
+
+# 3. 确认 DUT 允许被重新分区和压测
+
+# 4. 加载公共函数验证环境
+cd /root/plug-unplug-safe
+source common.sh
+get_system_disks        # 应输出系统盘
+list_dut_disks          # 应输出所有 DUT 盘
 ```
 
-确认系统盘：
+## 三、文件说明
 
-```bash
-get_system_disks
-```
+### 3.1 核心文件
 
-预期输出：
+| 文件 | 说明 |
+|------|------|
+| `config.sh` | 配置文件（系统盘/DUT列表） |
+| `common.sh` | 公共函数库（磁盘识别/wait_for_disk） |
+| `auto-plug-unplug-fio-safe.sh` | 主控制脚本 |
 
-```bash
-/dev/nvme5n1
-```
+### 3.2 子脚本
 
-确认 DUT：
+| 文件 | 说明 |
+|------|------|
+| `1-fenqu-safe.sh` | 磁盘分区（p1: 10G ext4, p2: 剩余空间） |
+| `UUID-safe.sh` | UUID 绑定到 fstab |
+| `2-check-start-safe.sh` | 测试前日志采集（dmesg/SEL/topology） |
+| `3-md5-safe.sh` | 创建 MD5 源文件并拷贝到 p1 分区 |
+| `fio-safe.sh` | FIO 压力测试配置 |
+| `4-check-md5-safe.sh` | MD5 校验 |
+| `5-check-log-safe.sh` | 最终日志采集（dmesg/SEL/SMART/topology） |
+| `9-cleanup-safe.sh` | 清理测试环境 |
 
-```bash
-list_dut_disks
-```
+### 3.3 运行时文件
 
-如果 `DUTS=()`，预期是除 `nvme5n1` 外的所有 NVMe。
+| 文件 | 说明 |
+|------|------|
+| `round-meta.txt` | 本轮元信息（循环数/等待时间/系统盘/DUT列表） |
+| `loop-record.txt` | 手动操作记录（拔插时间戳） |
 
-确认非 DUT 盘：
+## 四、使用指南
 
-```bash
-list_non_dut_nvmes
-```
-
-如果 `DUTS=()`，预期这里不输出内容。
-
-建议现场完整验证顺序直接执行：
-
-```bash
-source /root/plug-unplug-safe/common.sh
-get_system_disks
-list_dut_disks
-list_non_dut_nvmes
-```
-
-判断标准：
-
-- `get_system_disks` 必须输出 `/dev/nvme5n1`
-- `list_dut_disks` 必须不包含 `/dev/nvme5n1`
-- 当 `DUTS=()` 时，`list_non_dut_nvmes` 应为空
-
-## 执行命令
-
-先试跑 1 轮：
+### 4.1 快速开始
 
 ```bash
 cd /root/plug-unplug-safe
 chmod +x *.sh
+
+# 试跑 1 轮验证
 CYCLES=1 bash auto-plug-unplug-fio-safe.sh
-```
 
-正式跑多轮时，例如 10 轮：
-
-```bash
+# 正式跑 10 轮
 CYCLES=10 bash auto-plug-unplug-fio-safe.sh
 ```
 
-如果要自定义等待时间：
+### 4.2 自定义参数
 
 ```bash
-CYCLES=10 PULL_WAIT_SECONDS=30 INSERT_WAIT_SECONDS=6 bash auto-plug-unplug-fio-safe.sh
+# 跑 10 轮，拔盘等待 30s
+CYCLES=10 PULL_WAIT_SECONDS=30 bash auto-plug-unplug-fio-safe.sh
 ```
 
-## 脚本自动执行顺序
+| 参数 | 默认值 | 说明 |
+|------|--------|------|
+| `CYCLES` | 10 | 循环次数 |
+| `PULL_WAIT_SECONDS` | 10 | 拔盘后等待时间 |
+| `INSERT_WAIT_SECONDS` | 30 | 插回后等待时间 |
+| `FIO_RUNTIME` | 自动计算 | FIO 运行时长（一般不需手动设） |
 
-脚本会自动按以下顺序执行：
+### 4.3 输出目录
 
-1. `1-fenqu-safe.sh`
-2. `UUID-safe.sh`
-3. `mount -a`
-4. `2-check-start-safe.sh`
-5. `3-md5-safe.sh`
-6. `fio-safe.sh`
-7. 循环执行热插拔
-8. `5-check-log-safe.sh`
+每次运行创建独立目录：`runs/时间戳/`
 
-## 你现场只需要做的动作
-
-脚本跑到热插拔阶段后，你只需要：
-
-1. 按提示拔出当前盘
-2. 等脚本倒计时结束
-3. 按提示慢插回去
-4. 等脚本倒计时结束
-5. 脚本会自动做 `MD5` 校验
-
-## 热插拔循环说明
-
-### 当 `DUTS=()` 时
-
-脚本会按所有非系统盘顺序逐块提示你拔插。
-
-例如你当前机器会按类似下面顺序进行：
-
-- `nvme0n1`
-- `nvme10n1`
-- `nvme11n1`
-- `nvme1n1`
-- `nvme2n1`
-- `nvme3n1`
-- `nvme4n1`
-- `nvme6n1`
-- `nvme7n1`
-- `nvme8n1`
-- `nvme9n1`
-
-如果 `CYCLES=1`，就按上面每块盘各做 1 次。
-
-如果 `CYCLES=10`，就整套顺序做 10 轮。
-
-### 当 `DUTS` 指定盘时
-
-脚本只会按指定盘顺序提示你拔插。
-
-## 关键日志
-
-每次运行会创建：
-
-```bash
-runs/时间戳目录
+关键日志文件：
+```
+runs/2026-04-17_103742/
+├── round-meta.txt          # 本轮元信息
+├── loop-record.txt         # 手动操作记录
+├── 01-fenqu.log            # 分区日志
+├── 02-uuid.log             # UUID绑定日志
+├── 03-check-start.log      # 预采集日志
+├── 04-md5-create.log       # MD5源文件创建日志
+├── 05-fio-loop1.log        # FIO日志（每轮一个）
+├── 06-check-md5-loop1.log  # MD5校验日志（每轮一个）
+├── 07-check-log.log        # 最终日志
+├── dmesg-before.log        # 测试前dmesg
+├── dmesg-after.log         # 测试后dmesg
+├── sel-before.log          # 测试前SEL
+├── sel-after.log           # 测试后SEL
+├── topology-before.log     # 测试前拓扑
+├── topology-after.log      # 测试后拓扑
+├── smart-begin-*.log       # SMART健康日志
+└── smart-finish-*.log      # SMART健康日志
 ```
 
-重要日志文件包括：
+## 五、操作流程
 
-- `01-fenqu.log`
-- `02-uuid.log`
-- `03-check-start.log`
-- `04-md5-create.log`
-- `05-fio-start.log`
-- `06-check-md5-loopX-盘名.log`
-- `07-check-log.log`
-- `loop-record.txt`
-- `round-meta.txt`
+### 5.1 准备阶段（全自动）
 
-## round-meta.txt 内容
+脚本自动执行：
+1. **分区**：所有 DUT 盘创建 p1(10G ext4) + p2(剩余)
+2. **UUID 绑定**：p1 分区挂载到 `/mnt/nvmeXn1p1`
+3. **预采集日志**：dmesg/SEL/拓扑信息
+4. **创建 MD5 源文件**：生成 1GB 随机文件，记录 MD5
 
-会记录：
+### 5.2 热插拔循环（人工参与）
 
-- 本轮目录
-- 循环次数
-- 拔盘等待时间
-- 回插等待时间
-- 系统盘
-- DUT 列表
-- 其他盘列表
+每轮循环流程：
 
-## 如何判断当前流程是否正常
+```
+===== Hotplug loop 1/10 =====
+[FIO] 启动压力测试，预计运行 420s
+Now you may PULL OUT all DUT disks: /dev/nvme0n1 /dev/nvme1n1 ...
+Press Enter to continue...  <- 拔完所有盘后按 Enter
+Pull wait: 10s              <- 倒计时等待
+Now you may INSERT all DUT disks slowly.
+Press Enter to continue...  <- 插回所有盘后按 Enter
+[检测] 等待所有盘被系统识别...
+[OK] /dev/nvme0n1 已识别，耗时 2s
+...
+Step 6: md5 check (loop 1)  <- 自动 MD5 校验
+[FIO] 清理本轮 FIO 进程...
+```
 
-### 到“提示拔盘”为止算正常的现象
+**你需要做的**：
+1. 看到 "PULL OUT" 提示后，拔出所有 DUT 盘
+2. 按 Enter 确认
+3. 等待倒计时结束
+4. 看到 "INSERT" 提示后，插回所有 DUT 盘
+5. 按 Enter 确认
+6. 脚本自动检测识别 + MD5 校验
 
-- `Step 1` 完成所有 DUT 分区
-- 系统盘没有被分区
-- `Step 2` 执行完成且 `mount -a` 没报致命错误
-- `Step 3` 能输出 `fdisk` 和 `smart` 信息
-- `Step 4` 没有 `mount/cp/md5sum` 报错
-- `Step 5` 没有 `fio` 启动失败报错
-- 脚本成功进入 “Now you may PULL OUT ...”
+### 5.3 结束阶段（全自动）
 
-### 需要立即停下的情况
+- 采集最终 dmesg/SEL/SMART/topology
+- 生成对比报告
 
-- 出现系统盘 `/dev/nvme5n1` 被分区或被加入 DUT
+## 六、结果判定
+
+### 6.1 正常现象
+
+- 所有步骤无报错退出
+- MD5 校验全部通过
+- dmesg 无 AER 错误（或仅有短暂的 Uncorrected Non-Fatal）
+- SEL 无新增 Drive Fault 事件
+
+### 6.2 需要关注的情况
+
+- **MD5 校验失败**：数据损坏，需排查
+- **盘未识别**：`wait_for_disk` 超时，可能是硬件或链路问题
+- **dmesg 大量 AER 错误**：PCIe 链路不稳定
+- **SEL Drive Fault**：背板/控制器检测到异常
+
+### 6.3 需要立即停下的情况
+
+- 系统盘被误分区
 - `mount -a` 大量报错
 - `fio` 报找不到设备或权限错误
-- `4-check-md5-safe.sh` 连续校验失败
+- MD5 连续校验失败
 
-## 当前推荐操作
+## 七、异常恢复
 
-今天现场推荐先这样执行：
-
-```bash
-cd /root/plug-unplug-safe
-source /root/plug-unplug-safe/common.sh
-get_system_disks
-list_dut_disks
-CYCLES=1 bash auto-plug-unplug-fio-safe.sh
-```
-
-确认整轮跑通后，再决定是否上 `CYCLES=10`。
-
-## 中止测试后的恢复流程
-
-如果现场因为无法确认物理盘位、定位灯不可用或其他原因不能继续做热插拔，建议按下面步骤恢复环境。
-
-### 1. 中止总控脚本
-
-如果脚本正停在等待你拔盘或插盘的位置，直接按：
+### 7.1 中止测试
 
 ```bash
-Ctrl+C
-```
-
-### 2. 停止 `fio`
-
-```bash
-pkill fio
-ps -ef | grep fio
-```
-
-如果还有残留进程，可执行：
-
-```bash
+# Ctrl+C 中止脚本
+# 清理残留 FIO 进程
 pkill -9 fio
 ```
 
-### 3. 卸载测试挂载点
-
-```bash
-umount /mnt/nvme_hotplug/* 2>/dev/null
-umount /mnt/nvme* 2>/dev/null
-```
-
-### 4. 清理 `/etc/fstab` 中的测试挂载项
-
-先备份：
-
-```bash
-cp /etc/fstab /etc/fstab.bak.$(date +%F_%H%M%S)
-```
-
-再批量删除测试挂载项：
-
-```bash
-grep -vE '/mnt/nvme_hotplug/|/mnt/nvme[0-9]+n1p1' /etc/fstab > /etc/fstab.clean
-cp /etc/fstab.clean /etc/fstab
-rm -f /etc/fstab.clean
-```
-
-验证：
-
-```bash
-mount -a
-grep nvme /etc/fstab
-```
-
-预期：
-
-- `mount -a` 不报错
-- `grep nvme /etc/fstab` 无测试挂载项输出
-
-### 5. 记录本轮中止原因
-
-进入本轮日志目录，例如：
-
-```bash
-cd /root/plug-unplug-safe/runs/2026-04-10_100635
-```
-
-写入中止说明：
-
-```bash
-echo "[STOP] Unable to identify physical DUT because local locate LED is unavailable. Test stopped after preparation steps." >> loop-record.txt
-```
-
-### 6. 如需彻底恢复，清除非系统盘测试分区
-
-先确认系统盘为：
-
-```bash
-/dev/nvme5n1
-```
-
-然后清除除系统盘外所有 NVMe 的测试分区：
-
-```bash
-for d in /dev/nvme*n1; do
-  [ "$d" = "/dev/nvme5n1" ] && continue
-  wipefs -a "$d"
-  parted -s "$d" mklabel gpt
-done
-partprobe
-lsblk
-```
-
-执行后预期：
-
-- `nvme5n1` 保留系统分区
-- 其他 NVMe 盘仅显示为裸盘，不再有 `p1/p2`
-
-### 7. 恢复完成的判定标准
-
-满足以下条件即可视为恢复完成：
-
-- `fio` 已停止
-- `/etc/fstab` 无测试挂载项
-- 测试挂载点已卸载
-- 系统盘 `nvme5n1` 正常
-- 其他非系统盘已清除测试分区，或至少不再被挂载
-
-### 8. 下次重新开始
-
-环境恢复后，下次可以直接重新从头执行：
+### 7.2 清理环境
 
 ```bash
 cd /root/plug-unplug-safe
-CYCLES=1 bash auto-plug-unplug-fio-safe.sh
+bash 9-cleanup-safe.sh
 ```
+
+或手动清理：
+```bash
+# 1. 卸载挂载点
+umount /mnt/nvme* 2>/dev/null
+
+# 2. 清理 fstab
+cp /etc/fstab /etc/fstab.bak.$(date +%F)
+sed -i '/nvme.*nvme/d' /etc/fstab
+sed -i '/nvme.*UUID/d' /etc/fstab
+
+# 3. 清除分区表（排除系统盘）
+for d in /dev/nvme*n1; do
+  [ "$d" = "/dev/nvme5n1" ] && continue
+  sgdisk --zap-all "$d" 2>/dev/null || true
+  wipefs -a "$d" 2>/dev/null || true
+done
+
+# 4. 确认
+lsblk
+```
+
+## 八、移植到新机器
+
+### 8.1 步骤
+
+1. 确认系统盘：`lsblk` 或 `findmnt /` 查看
+2. 修改 `common.sh` 中的 `get_system_disks()` 函数
+3. （可选）修改 `config.sh` 中的 `DUTS=()` 为自动模式或指定模式
+4. 确认所有子脚本中的 `SYSTEM_DISK` 变量一致
+5. 安装依赖工具
+6. `CYCLES=1` 试跑验证
+
+### 8.2 示例：新机器系统盘为 nvme0n1
+
+```bash
+# common.sh
+get_system_disks() {
+    echo /dev/nvme0n1
+}
+```
+
+所有子脚本中的 `SYSTEM_DISK` 同步改为 `"/dev/nvme0n1"`。
+
+## 九、注意事项
+
+- 测试前确认 `/etc/fstab` 无旧测试条目
+- FIO 会在 p2 分区上运行，确保 p2 有足够空间
+- 根分区需有足够空间存放日志（建议 > 5GB）
+- 测试过程中不要手动挂载/卸载测试盘
+- 如果测试中途中止，必须执行清理流程后再重新跑
