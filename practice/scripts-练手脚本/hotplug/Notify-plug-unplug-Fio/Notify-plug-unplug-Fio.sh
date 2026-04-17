@@ -78,8 +78,12 @@ wait_for_disk() {
 #       和 /sys/bus/pci/slots/X/address 精确比对
 slot_of_disk() {
     local disk="$1"
+    local disk_base
+    disk_base="$(basename "${disk}")"
+    # 从设备名提取控制器名: nvme10n1 -> nvme10, nvme1n1 -> nvme1
+    local nvme_ctrl_name="${disk_base%n1}"
     local nvme_ctrl
-    nvme_ctrl="$(readlink -f "/sys/block/$(basename "${disk}")/device/nvme0")"
+    nvme_ctrl="$(readlink -f "/sys/block/${disk_base}/device/${nvme_ctrl_name}")"
 
     # 取倒数第二个目录名（0000:YY:YY.Y），去掉 function
     local controller_dir
