@@ -1,0 +1,251 @@
+Bus,Chip,Write_success_count,Write_failed_count,Read_success_count,Read_failed_count,Statistic_Time(s),Chip_access_times(sec),Error_Recording
+Hisport_8,Eeprom_3_15_010101,0,0,0,0,37920,0,
+Hisport_20,Eeprom_3_5_010101,0,0,0,0,37920,0,
+Hisport_10,Eeprom_3_11_010101,0,0,0,0,37920,0,
+Hisport_21,Eeprom_3_6_010101,0,0,0,0,37920,0,
+I2c_1,Smc_CpuBrdSMC_0101,522,0,149025,0,37928,3.9429160815671,
+I2c_1,Eeprom_3_1_0101,0,0,5,0,37928,0.00013182869335881,
+I2c_1,VChip_I2c_1,0,0,0,0,37928,0,
+Gpio_74,Chip_Gpio_74_01,0,0,37659,0,37933,0.9927741207547,
+Gpio_56,Chip_Gpio_56_01,0,0,0,0,37933,0,
+Hisport_19,Eeprom_3_4_010101,0,0,0,0,37920,0,
+I2c_5,Eeprom_3_12_0101,0,0,6,0,37928,0.00015819447373972,
+I2c_5,Eeprom_3_2_0101,0,0,6,0,37928,0.00015819447373972,
+I2c_5,Eeprom_3_13_0101,0,0,6,0,37927,0.00015819451544888,
+I2c_5,Eeprom_3_6_0101,0,0,0,0,37927,0,
+I2c_5,Pca9545_i2c5_chip_0101,710719,0,0,0,37928,18.738616601332,
+I2c_5,Chip_Cdr5902L_0_010105,0,0,32025,23275,37922,1.4582248893938,"2026-04-20 13:26:53.705420 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 11, input:{""has_error"":false,""len"":1,""bus_type"":0,""offsetWidth"":1,""addrWidth"":1,""addr"":192,""offset"":34,""is_trace"":false,""rw_type"":1,""name"":""Chip_Cdr5902L_0_010105"",""mask"":4294967295,""requestor"":""bmc.kepler.general_hardware"",""type"":1}
+2026-04-20 13:26:53.555358 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 11, input:{""has_error"":false,""len"":1,""bus_type"":0,""offsetWidth"":1,""addrWidth"":1,""addr"":192,""offset"":34,""is_trace"":false,""rw_type"":1,""name"":""Chip_Cdr5902L_0_010105"",""mask"":4294967295,""requestor"":""bmc.kepler.general_hardware"",""type"":1}
+2026-04-20 13:26:53.396648 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 11, input:{""has_error"":false,""len"":1,""bus_type"":0,""offsetWidth"":1,""addrWidth"":1,""addr"":192,""offset"":34,""is_trace"":false,""rw_type"":1,""name"":""Chip_Cdr5902L_0_010105"",""mask"":4294967295,""requestor"":""bmc.kepler.general_hardware"",""type"":1}
+2026-04-20 13:26:53.246023 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 11, input:{""has_error"":false,""len"":1,""bus_type"":0,""offsetWidth"":1,""addrWidth"":1,""addr"":192,""offset"":34,""is_trace"":false,""rw_type"":1,""name"":""Chip_Cdr5902L_0_010105"",""mask"":4294967295,""requestor"":""bmc.kepler.general_hardware"",""type"":1}
+2026-04-20 13:26:52.555778 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 11, input:{""has_error"":false,""len"":1,""bus_type"":0,""offsetWidth"":1,""addrWidth"":1,""addr"":192,""offset"":34,""is_trace"":false,""rw_type"":1,""name"":""Chip_Cdr5902L_0_010105"",""mask"":4294967295,""requestor"":""bmc.kepler.general_hardware"",""type"":1}
+2026-04-20 13:26:50.836034 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 11, input:{""is_trace"":false,""has_error"":false,""rw_type"":1,""bus_type"":0,""name"":""Chip_Cdr5902L_0_010105"",""requestor"":""bmc.kepler.general_hardware"",""offsetWidth"":1,""addrWidth"":1,""addr"":192,""type"":1,""len"":1,""mask"":4294967295,""offset"":34}
+2026-04-20 13:26:50.165853 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 11, input:{""has_error"":false,""len"":1,""bus_type"":0,""offsetWidth"":1,""addrWidth"":1,""addr"":192,""offset"":34,""is_trace"":false,""rw_type"":1,""name"":""Chip_Cdr5902L_0_010105"",""mask"":4294967295,""requestor"":""bmc.kepler.general_hardware"",""type"":1}
+2026-04-20 13:26:40.537487 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 62, input:{""has_error"":false,""len"":1,""bus_type"":0,""name"":""Chip_Cdr5902L_0_010105"",""offsetWidth"":1,""mask"":4294967295,""addr"":192,""offset"":34,""is_trace"":false,""rw_type"":1,""addrWidth"":1,""requestor"":""bmc.kepler.general_hardware"",""type"":1}
+2026-04-20 13:26:39.486472 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 11, input:{""has_error"":false,""len"":1,""bus_type"":0,""name"":""Chip_Cdr5902L_0_010105"",""offsetWidth"":1,""mask"":4294967295,""addr"":192,""offset"":34,""is_trace"":false,""rw_type"":1,""addrWidth"":1,""requestor"":""bmc.kepler.general_hardware"",""type"":1}
+2026-04-20 13:26:38.996133 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 11, input:{""has_error"":false,""len"":1,""bus_type"":0,""offsetWidth"":1,""addrWidth"":1,""addr"":192,""offset"":34,""is_trace"":false,""rw_type"":1,""requestor"":""bmc.kepler.general_hardware"",""name"":""Chip_Cdr5902L_0_010105"",""mask"":4294967295,""type"":1}"
+I2c_5,Chip_SSD_01010D0101,0,0,50986,1,37833,1.3476588105438,2026-04-20 02:56:23.284703 error: ./opt/bmc/apps/hwproxy/lualib/protocol/smc.lua:93: bad argument #2 to 's_pack' (unsigned overflow)
+I2c_5,Smc_EnclSMC_01010C,516,0,130085,27913,37910,4.1812767620942,"2026-04-20 13:26:56.541397 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 13:26:55.340218 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 13:26:54.188969 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 13:26:52.329170 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 13:26:51.089228 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 13:26:49.675584 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 13:26:49.028688 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 13:26:47.730240 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 13:26:46.457859 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 13:26:45.193981 error: request error, opcode not supported, SMC completion code: 1"
+I2c_5,Eeprom_3_5_0101,0,0,4,0,37927,0.00010546306591152,
+I2c_5,Smc_EnclSMC_010102,516,0,132563,28928,37912,4.2732177363581,"2026-04-20 13:26:56.437250 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 13:26:55.269031 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 13:26:54.136794 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 13:26:52.992126 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 13:26:51.318252 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 13:26:49.640377 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 13:26:49.592508 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 13:26:48.159868 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 13:26:46.985068 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 13:26:45.746522 error: request error, opcode not supported, SMC completion code: 1"
+I2c_5,Chip_Temp_01010D0201,0,0,15395,0,37832,0.40691999231359,
+I2c_5,Chip_Temp_01010D0101,0,0,15529,0,37833,0.41045341238793,
+I2c_5,Smc_EnclSMC_01010D,516,0,101479,0,37907,2.6905958537468,
+I2c_5,Chip_Virtual_SSD_01010D02,0,0,7033,0,37870,0.18571026452556,
+I2c_5,Chip_SSD_01010D0201,0,0,50852,1,37832,1.3441443565523,2026-04-20 02:56:23.942052 error: ./opt/bmc/apps/hwproxy/lualib/protocol/smc.lua:93: bad argument #2 to 's_pack' (unsigned overflow)
+I2c_5,Chip_Virtual_SSD_01010D01,0,0,7061,0,37871,0.18644553379639,
+I2c_5,Lm75_1_010105,0,0,24443,0,37922,0.64454594885085,
+I2c_5,VChip_I2c_5,0,0,0,0,37928,0,
+I2c_5,Pca9555_NIC_010105,7442,0,0,0,37922,0.19624068041353,
+I2c_6,VChip_I2c_6,0,0,0,0,37928,0,
+I2c_6,Eeprom_3_20_0101,0,0,0,10,37928,0.00026365731720243,"1970-01-01 00:01:01.691692 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""name"":""Eeprom_3_20_0101"",""is_trace"":false,""offsetWidth"":2,""addrWidth"":1,""addr"":174,""requestor"":""bmc.kepler.hwdiscovery"",""len"":32,""mask"":4294967295,""offset"":0,""rw_type"":1,""has_error"":false,""type"":1}
+1970-01-01 00:01:01.457217 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""name"":""Eeprom_3_20_0101"",""is_trace"":false,""offsetWidth"":2,""addrWidth"":1,""addr"":174,""requestor"":""bmc.kepler.hwdiscovery"",""len"":32,""mask"":4294967295,""offset"":0,""rw_type"":1,""type"":1,""has_error"":false}
+1970-01-01 00:01:00.804351 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""name"":""Eeprom_3_20_0101"",""is_trace"":false,""offsetWidth"":2,""addrWidth"":1,""addr"":174,""requestor"":""bmc.kepler.hwdiscovery"",""len"":32,""mask"":4294967295,""offset"":0,""rw_type"":1,""has_error"":false,""type"":1}
+1970-01-01 00:01:00.544060 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""name"":""Eeprom_3_20_0101"",""is_trace"":false,""offsetWidth"":2,""addrWidth"":1,""addr"":174,""requestor"":""bmc.kepler.hwdiscovery"",""len"":32,""mask"":4294967295,""offset"":0,""rw_type"":1,""type"":1,""has_error"":false}
+1970-01-01 00:00:59.898134 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""name"":""Eeprom_3_20_0101"",""is_trace"":false,""offsetWidth"":2,""addrWidth"":1,""addr"":174,""requestor"":""bmc.kepler.hwdiscovery"",""len"":32,""mask"":4294967295,""offset"":0,""rw_type"":1,""has_error"":false,""type"":1}
+1970-01-01 00:00:56.224504 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""name"":""Eeprom_3_20_0101"",""is_trace"":false,""offsetWidth"":2,""addrWidth"":1,""addr"":174,""requestor"":""bmc.kepler.hwdiscovery"",""len"":32,""mask"":4294967295,""offset"":0,""rw_type"":1,""type"":1,""has_error"":false}
+1970-01-01 00:00:55.796252 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""name"":""Eeprom_3_20_0101"",""is_trace"":false,""offsetWidth"":2,""addrWidth"":1,""addr"":174,""requestor"":""bmc.kepler.hwdiscovery"",""len"":32,""mask"":4294967295,""offset"":0,""rw_type"":1,""has_error"":false,""type"":1}
+1970-01-01 00:00:54.981565 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""name"":""Eeprom_3_20_0101"",""is_trace"":false,""offsetWidth"":2,""addrWidth"":1,""addr"":174,""requestor"":""bmc.kepler.hwdiscovery"",""len"":32,""mask"":4294967295,""offset"":0,""rw_type"":1,""type"":1,""has_error"":false}
+1970-01-01 00:00:54.767405 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""name"":""Eeprom_3_20_0101"",""is_trace"":false,""offsetWidth"":2,""addrWidth"":1,""addr"":174,""requestor"":""bmc.kepler.hwdiscovery"",""len"":32,""mask"":4294967295,""offset"":0,""type"":1,""has_error"":false,""rw_type"":1}
+1970-01-01 00:00:53.951747 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""name"":""Eeprom_3_20_0101"",""is_trace"":false,""offsetWidth"":2,""addrWidth"":1,""addr"":174,""requestor"":""bmc.kepler.hwdiscovery"",""len"":32,""mask"":4294967295,""offset"":0,""has_error"":false,""type"":1,""rw_type"":1}"
+I2c_6,Pca9545_i2c6_chip_0101,20,0,0,0,37928,0.00052731435634428,
+Hisport_16,Eeprom_3_1_010101,0,0,0,10,37920,0.00026371002024238,"2026-04-20 02:55:32.873209 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:32.775452 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:32.669060 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:32.576155 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:32.475751 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:32.364366 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:32.265306 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:31.950156 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:31.838469 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:31.747119 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290"
+Hisport_18,Eeprom_3_3_010101,0,0,0,0,37920,0,
+I2c_8,Eeprom_3_10_0101,0,0,7,0,37928,0.0001845599273994,
+I2c_8,Chip_UsbCc_On_0101,0,0,0,635,37928,0.016742221985517,"2026-04-20 13:26:14.383829 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""len"":1,""bus_type"":0,""rw_type"":1,""mask"":4294967295,""offsetWidth"":1,""addrWidth"":1,""addr"":66,""is_trace"":false,""type"":0,""has_error"":false,""offset"":18,""name"":""Chip_UsbCc_On_0101"",""requestor"":""Scanner_CcChipOnAttachStatus_0101""}
+2026-04-20 13:25:14.261106 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""bus_type"":0,""rw_type"":1,""len"":1,""requestor"":""Scanner_CcChipOnAttachStatus_0101"",""mask"":4294967295,""offsetWidth"":1,""addrWidth"":1,""addr"":66,""is_trace"":false,""has_error"":false,""offset"":18,""name"":""Chip_UsbCc_On_0101"",""type"":0}
+2026-04-20 13:24:14.187656 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""len"":1,""bus_type"":0,""rw_type"":1,""mask"":4294967295,""offsetWidth"":1,""addrWidth"":1,""addr"":66,""is_trace"":false,""type"":0,""has_error"":false,""offset"":18,""name"":""Chip_UsbCc_On_0101"",""requestor"":""Scanner_CcChipOnAttachStatus_0101""}
+2026-04-20 13:23:14.036583 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""len"":1,""bus_type"":0,""rw_type"":1,""mask"":4294967295,""offsetWidth"":1,""addrWidth"":1,""addr"":66,""is_trace"":false,""type"":0,""has_error"":false,""offset"":18,""name"":""Chip_UsbCc_On_0101"",""requestor"":""Scanner_CcChipOnAttachStatus_0101""}
+2026-04-20 13:22:13.887092 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""len"":1,""bus_type"":0,""rw_type"":1,""mask"":4294967295,""offsetWidth"":1,""addrWidth"":1,""addr"":66,""is_trace"":false,""type"":0,""has_error"":false,""offset"":18,""name"":""Chip_UsbCc_On_0101"",""requestor"":""Scanner_CcChipOnAttachStatus_0101""}
+2026-04-20 13:21:13.781616 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""len"":1,""bus_type"":0,""rw_type"":1,""mask"":4294967295,""offsetWidth"":1,""addrWidth"":1,""addr"":66,""is_trace"":false,""type"":0,""has_error"":false,""offset"":18,""name"":""Chip_UsbCc_On_0101"",""requestor"":""Scanner_CcChipOnAttachStatus_0101""}
+2026-04-20 13:20:13.642238 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""len"":1,""bus_type"":0,""rw_type"":1,""mask"":4294967295,""offsetWidth"":1,""addrWidth"":1,""addr"":66,""is_trace"":false,""type"":0,""has_error"":false,""offset"":18,""name"":""Chip_UsbCc_On_0101"",""requestor"":""Scanner_CcChipOnAttachStatus_0101""}
+2026-04-20 13:19:13.514350 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""len"":1,""bus_type"":0,""rw_type"":1,""mask"":4294967295,""offsetWidth"":1,""addrWidth"":1,""addr"":66,""is_trace"":false,""type"":0,""has_error"":false,""offset"":18,""name"":""Chip_UsbCc_On_0101"",""requestor"":""Scanner_CcChipOnAttachStatus_0101""}
+2026-04-20 13:18:13.331947 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""len"":1,""bus_type"":0,""rw_type"":1,""mask"":4294967295,""offsetWidth"":1,""addrWidth"":1,""addr"":66,""is_trace"":false,""type"":0,""has_error"":false,""offset"":18,""name"":""Chip_UsbCc_On_0101"",""requestor"":""Scanner_CcChipOnAttachStatus_0101""}
+2026-04-20 13:17:13.216463 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""len"":1,""bus_type"":0,""rw_type"":1,""mask"":4294967295,""offsetWidth"":1,""addrWidth"":1,""addr"":66,""is_trace"":false,""type"":0,""has_error"":false,""offset"":18,""name"":""Chip_UsbCc_On_0101"",""requestor"":""Scanner_CcChipOnAttachStatus_0101""}"
+I2c_8,Chip_UsbCc_Sgm_0101,0,0,0,635,37928,0.016742221985517,"2026-04-20 13:26:14.396271 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""requestor"":""Scanner_CcChipSgmAttachStatus_0101"",""len"":1,""rw_type"":1,""mask"":4294967295,""offsetWidth"":1,""addrWidth"":1,""addr"":142,""is_trace"":false,""type"":0,""has_error"":false,""offset"":9,""name"":""Chip_UsbCc_Sgm_0101"",""bus_type"":0}
+2026-04-20 13:25:14.266094 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""type"":0,""len"":1,""bus_type"":0,""mask"":4294967295,""offsetWidth"":1,""addrWidth"":1,""addr"":142,""is_trace"":false,""requestor"":""Scanner_CcChipSgmAttachStatus_0101"",""has_error"":false,""offset"":9,""name"":""Chip_UsbCc_Sgm_0101"",""rw_type"":1}
+2026-04-20 13:24:14.190296 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""requestor"":""Scanner_CcChipSgmAttachStatus_0101"",""len"":1,""rw_type"":1,""mask"":4294967295,""offsetWidth"":1,""addrWidth"":1,""addr"":142,""is_trace"":false,""type"":0,""has_error"":false,""offset"":9,""name"":""Chip_UsbCc_Sgm_0101"",""bus_type"":0}
+2026-04-20 13:23:14.041115 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""requestor"":""Scanner_CcChipSgmAttachStatus_0101"",""len"":1,""rw_type"":1,""mask"":4294967295,""offsetWidth"":1,""addrWidth"":1,""addr"":142,""is_trace"":false,""type"":0,""has_error"":false,""offset"":9,""name"":""Chip_UsbCc_Sgm_0101"",""bus_type"":0}
+2026-04-20 13:22:13.891968 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""requestor"":""Scanner_CcChipSgmAttachStatus_0101"",""len"":1,""rw_type"":1,""mask"":4294967295,""offsetWidth"":1,""addrWidth"":1,""addr"":142,""is_trace"":false,""type"":0,""has_error"":false,""offset"":9,""name"":""Chip_UsbCc_Sgm_0101"",""bus_type"":0}
+2026-04-20 13:21:13.784147 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""requestor"":""Scanner_CcChipSgmAttachStatus_0101"",""len"":1,""rw_type"":1,""mask"":4294967295,""offsetWidth"":1,""addrWidth"":1,""addr"":142,""is_trace"":false,""type"":0,""has_error"":false,""offset"":9,""name"":""Chip_UsbCc_Sgm_0101"",""bus_type"":0}
+2026-04-20 13:20:13.644792 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""requestor"":""Scanner_CcChipSgmAttachStatus_0101"",""len"":1,""rw_type"":1,""mask"":4294967295,""offsetWidth"":1,""addrWidth"":1,""addr"":142,""is_trace"":false,""type"":0,""has_error"":false,""offset"":9,""name"":""Chip_UsbCc_Sgm_0101"",""bus_type"":0}
+2026-04-20 13:19:13.517965 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""requestor"":""Scanner_CcChipSgmAttachStatus_0101"",""len"":1,""rw_type"":1,""mask"":4294967295,""offsetWidth"":1,""addrWidth"":1,""addr"":142,""is_trace"":false,""type"":0,""has_error"":false,""offset"":9,""name"":""Chip_UsbCc_Sgm_0101"",""bus_type"":0}
+2026-04-20 13:18:13.336522 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""requestor"":""Scanner_CcChipSgmAttachStatus_0101"",""len"":1,""rw_type"":1,""mask"":4294967295,""offsetWidth"":1,""addrWidth"":1,""addr"":142,""is_trace"":false,""type"":0,""has_error"":false,""offset"":9,""name"":""Chip_UsbCc_Sgm_0101"",""bus_type"":0}
+2026-04-20 13:17:13.219647 error: ./opt/bmc/apps/hwproxy/lualib/stream/i2c.lua:117: response error, i2c read fail, ret: 5, input:{""requestor"":""Scanner_CcChipSgmAttachStatus_0101"",""len"":1,""rw_type"":1,""mask"":4294967295,""offsetWidth"":1,""addrWidth"":1,""addr"":142,""is_trace"":false,""type"":0,""has_error"":false,""offset"":9,""name"":""Chip_UsbCc_Sgm_0101"",""bus_type"":0}"
+I2c_8,VChip_I2c_8,0,0,0,0,37928,0,
+I2c_8,Lm75_InletTemp_0101,0,0,37641,0,37928,0.99243146103439,
+Hisport_15,Eeprom_3_7_010101,0,0,0,0,37920,0,
+I2c_9,Eeprom_3_4_0101,0,0,4,0,37928,0.00010546284346282,
+I2c_9,Smc_FanBoardSMC_2_0101,17236,0,268787,159,37928,7.5453898775735,"2026-04-20 02:58:49.488939 error: ./opt/bmc/apps/hwproxy/lualib/driver/smc.lua:145: request error, error para, para: 11, size: 4, read_len: 20
+2026-04-20 02:58:47.425926 error: ./opt/bmc/apps/hwproxy/lualib/driver/smc.lua:145: request error, error para, para: 11, size: 1, read_len: 1
+2026-04-20 02:58:43.367739 error: ./opt/bmc/apps/hwproxy/lualib/driver/smc.lua:145: request error, error para, para: 11, size: 1, read_len: 1
+2026-04-20 02:58:43.360425 error: ./opt/bmc/apps/hwproxy/lualib/driver/smc.lua:145: request error, error para, para: 11, size: 4, read_len: 20
+2026-04-20 02:57:52.800238 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 02:57:52.651774 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 02:57:52.386672 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 02:57:52.182922 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 02:57:52.032729 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 02:57:50.763545 error: request error, opcode not supported, SMC completion code: 1"
+I2c_9,VChip_I2c_9,0,0,0,0,37928,0,
+Hisport_6,Eeprom_3_13_010101,0,0,0,0,37920,0,
+Hisport_14,Eeprom_3_8_010101,0,0,0,0,37920,0,
+Jtag_1,Cpld_1_0101,0,0,0,0,37928,0,
+Hisport_13,Eeprom_3_10_010101,0,0,0,0,37920,0,
+Gpio_31,Chip_Gpio_31_01,0,0,12625,0,37933,0.33282225894178,
+JtagOverLocalBus_1,Cpld_1_010103,0,0,0,0,37914,0,
+JtagOverLocalBus_1,Cpld_2_010104,0,0,0,0,37893,0,
+JtagOverLocalBus_1,Cpld_1_010102,0,0,0,0,37912,0,
+JtagOverLocalBus_1,Cpld_1_01010D,0,0,0,0,37907,0,
+JtagOverLocalBus_1,JtagSwitch_1_0101,0,0,0,0,37928,0,
+JtagOverLocalBus_1,Cpld_1_010101,0,0,0,0,37920,0,
+JtagOverLocalBus_1,Cpld_1_01010C,0,0,0,0,37911,0,
+Hisport_12,Eeprom_3_9_010101,0,0,0,0,37920,0,
+I2c_2,Smc_ExpBoardSMC_0101,30142,0,1030564,1923,37928,28.016983745267,"2026-04-20 13:26:07.833146 error: ./opt/bmc/apps/hwproxy/lualib/driver/smc.lua:125: request error, invalid input length: 3
+2026-04-20 13:26:01.019083 error: ./opt/bmc/apps/hwproxy/lualib/driver/smc.lua:125: request error, invalid input length: 5
+2026-04-20 13:25:59.584423 error: ./opt/bmc/apps/hwproxy/lualib/driver/smc.lua:125: request error, invalid input length: 6
+2026-04-20 13:25:07.475839 error: ./opt/bmc/apps/hwproxy/lualib/driver/smc.lua:125: request error, invalid input length: 3
+2026-04-20 13:25:00.497942 error: ./opt/bmc/apps/hwproxy/lualib/driver/smc.lua:125: request error, invalid input length: 5
+2026-04-20 13:24:59.214510 error: ./opt/bmc/apps/hwproxy/lualib/driver/smc.lua:125: request error, invalid input length: 6
+2026-04-20 13:24:07.243013 error: ./opt/bmc/apps/hwproxy/lualib/driver/smc.lua:125: request error, invalid input length: 3
+2026-04-20 13:24:00.267013 error: ./opt/bmc/apps/hwproxy/lualib/driver/smc.lua:125: request error, invalid input length: 5
+2026-04-20 13:23:58.748012 error: ./opt/bmc/apps/hwproxy/lualib/driver/smc.lua:125: request error, invalid input length: 6
+2026-04-20 13:23:06.942311 error: ./opt/bmc/apps/hwproxy/lualib/driver/smc.lua:125: request error, invalid input length: 3"
+I2c_2,VChip_I2c_2,0,0,0,0,37933,0,
+I2c_2,Eeprom_3_1_01,0,0,6,0,37933,0.00015817287134904,
+Hisport_0,Eeprom_3_20_010101,0,0,0,10,37920,0.00026371008978537,"2026-04-20 02:55:41.457341 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:41.360649 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:40.858782 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:40.754419 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:40.630319 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:39.931378 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:39.817690 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:39.477546 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:39.378796 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:39.077152 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290"
+Hisport_11,Eeprom_3_12_010101,0,0,0,0,37920,0,
+Hisport_17,Eeprom_3_2_010101,0,0,0,10,37920,0.00026371008978537,"2026-04-20 02:55:36.425989 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:36.321182 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:36.207247 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:36.116039 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:36.008135 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:35.511858 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:35.386660 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:34.162505 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:34.066973 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:33.143942 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290"
+Hisport_1,Eeprom_3_19_010101,0,0,0,10,37920,0.00026371008978537,"2026-04-20 02:55:31.535932 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:31.433721 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:31.326265 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:30.398713 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:29.590733 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:29.377935 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:29.181889 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:29.077031 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:28.978298 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:28.865847 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290"
+Hisport_9,Eeprom_3_16_010101,0,0,0,10,37920,0.00026371008978537,"2026-04-20 02:55:38.574331 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:38.468695 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:38.365985 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:38.234563 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:38.119140 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:37.925091 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:37.827085 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:37.356834 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:36.799363 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:36.695407 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290"
+Hisport_2,Eeprom_3_18_010101,0,0,0,10,37920,0.0002637101593284,"2026-04-20 02:55:28.362667 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:28.265382 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:28.171013 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:28.060688 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:27.961616 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:27.655061 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:26.092628 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:23.355174 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:17.216725 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:17.098315 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290"
+I2c_4,Smc_FanBoardSMC_1_0101,17239,0,363119,155,37928,10.032485158098,"2026-04-20 02:57:34.862553 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 02:57:34.832258 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 02:57:34.812449 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 02:57:34.793573 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 02:57:34.534643 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 02:57:33.321677 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 02:57:33.133001 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 02:57:32.919604 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 02:57:32.711057 error: request error, opcode not supported, SMC completion code: 1
+2026-04-20 02:57:32.507443 error: request error, opcode not supported, SMC completion code: 1"
+I2c_4,Eeprom_3_3_0101,0,0,4,0,37928,0.0001054627600448,
+I2c_4,VChip_I2c_4,0,0,0,0,37928,0,
+Hisport_3,Eeprom_3_17_010101,0,0,0,10,37920,0.00026371002024238,"2026-04-20 02:55:16.702593 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:16.607592 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:16.500946 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+2026-04-20 02:55:16.390698 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+1970-01-01 00:01:03.254576 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+1970-01-01 00:01:03.157413 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+1970-01-01 00:01:03.057788 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+1970-01-01 00:01:02.953017 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+1970-01-01 00:01:02.859933 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290
+1970-01-01 00:01:02.746259 error: ./opt/bmc/apps/hwproxy/lualib/stream/hisport.lua:62: response error, ioctl(HISPORT_CMD_READ) failed: Unknown error 290"
+I2c_3,Eeprom_PsuChip1_010110,129,0,284556,0,37925,7.5064488460105,
+I2c_3,VChip_I2c_3,0,0,0,0,37928,0,
+I2c_3,Eeprom_3_15_0101,0,0,4,0,37928,0.00010546259320916,
+I2c_3,Eeprom_PsuChip3_010110,129,0,284609,0,37925,7.5078463266957,
+I2c_3,Eeprom_PsuChip2_01010F,130,0,302992,0,37925,7.9925243284961,
+I2c_3,Eeprom_PsuChip1_01010F,129,0,284738,0,37925,7.5111883264352,
+I2c_3,Pca9545_i2c3_chip_0101,704518,0,0,0,37928,18.575068913195,
+I2c_3,Eeprom_PsuChip3_01010F,130,0,303079,0,37925,7.9948182880786,
+I2c_3,Eeprom_PsuChip2_010110,129,0,284659,0,37925,7.5091647047005,
+I2c_3,Eeprom_3_16_0101,0,0,4,0,37928,0.00010546259320916,
+Hisport_7,Eeprom_3_14_010101,0,0,0,0,37920,0,
+I2c_7,Chip_Dmini_Elabel_01011501,0,0,0,0,37681,0,
+I2c_7,Pca9545_EA_010115,704846,0,0,0,37912,18.591152687022,
+I2c_7,Smc_SwitchBoardSMC_0101,516,0,3098,0,37928,0.095285427841854,
+I2c_7,Eeprom_Switch_0101,0,0,5,0,37928,0.00013182817199674,
+I2c_7,Pca9555_40_010115,0,0,0,0,37912,0,
+I2c_7,Chip_INA226_80_010115,1,0,4973,0,37912,0.13119520839438,
+I2c_7,Chip_Dmini_Elabel_0101150B,0,0,0,0,37667,0,
+I2c_7,Chip_Dmini_0101150B,82057,0,82057,0,37667,4.3569413748017,
+I2c_7,Chip_Dmini_Elabel_01011503,0,0,0,0,37680,0,
+I2c_7,Chip_EMC1413_98_010115,0,0,7212,0,37912,0.19022518948666,
+I2c_7,Chip_Dmini_Elabel_0101150A,0,0,0,0,37667,0,
+I2c_7,Chip_Dmini_01011508,83350,0,83350,0,37675,4.4245861538854,
+I2c_7,Chip_Dmini_0101150A,81047,0,81047,0,37667,4.3032441981042,
+I2c_7,VChip_I2c_7,0,0,0,0,37928,0,
+I2c_7,Chip_INA226_82_010115,1,0,4973,0,37912,0.13119527760304,
+I2c_7,Chip_Dmini_Elabel_01011508,0,0,0,0,37675,0,
+I2c_7,Chip_RaidChip_01011506,210355,0,1762245,0,37676,52.356618483325,
+I2c_7,Chip_Dmini_Elabel_01011504,0,0,0,0,37678,0,
+I2c_7,Chip_Dmini_01011504,92564,0,92564,0,37678,4.9133981984277,
+I2c_7,Chip_Dmini_01011503,105766,0,105766,0,37680,5.6138261288187,
+I2c_7,Chip_Dmini_Elabel_01011509,0,0,0,0,37675,0,
+I2c_7,Chip_Dmini_01011502,106898,0,106898,0,37680,5.6738514681034,
+I2c_7,Pca9545_E4_010115,277817,0,0,0,37912,7.3277581069903,
+I2c_7,Chip_Dmini_01011509,82639,0,82639,0,37675,4.3869374490213,
+I2c_7,Chip_Dmini_Elabel_01011502,0,0,0,0,37680,0,
+I2c_7,Chip_Dmini_01011501,108601,0,108601,0,37681,5.7641884776738,

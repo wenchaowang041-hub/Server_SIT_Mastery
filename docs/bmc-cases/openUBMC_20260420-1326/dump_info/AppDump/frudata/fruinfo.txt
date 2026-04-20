@@ -1,0 +1,176 @@
+FRU Device Description : Builtin FRU Device (FRUID 0, BMC)
+ Chassis Type          : Unspecified
+ Board Mfg. Date       : 1996/01/01 Mon 00:00:00
+ Board Manufacturer    : iSoftStone
+ Board FRU File ID     : 11.02.01.14
+ Product Manufacturer  : iSoftStone
+ Product FRU File ID   : 11.02.01.14
+FRU Device Description : Builtin FRU Device (FRUID 13, PSU5)
+ Board Mfg. Date       : 2025/01/07 Tue 00:00:00
+ Board Manufacturer    : iSoftStone
+ Board FRU File ID     : 11.02.01.14
+ Product Manufacturer  : Great Wall
+ Product Name          : CRPS2700D2    
+ Product Part Number   : CRPS2700D2    
+ Product Serial Number : 1P028734CC0000098    
+ Product FRU File ID   : 11.02.01.14
+FRU Device Description : Builtin FRU Device (FRUID 19, Atlas 300I-3000)
+ Board Mfg. Date       : 1996/01/01 Mon 00:00:00
+ Board Manufacturer    : iSoftStone
+ Board FRU File ID     : 11.02.01.14
+ Product Manufacturer  : iSoftStone
+ Product FRU File ID   : 11.02.01.14
+FRU Device Description : Builtin FRU Device (FRUID 2, NIC 1 (SF223D-H))
+ Board Mfg. Date       : 2025/05/19 Mon 00:00:00
+ Board Manufacturer    : Huawei
+ Board Product Name    : BC83ETHB
+ Board Serial Number   : 102559619918
+ Product Manufacturer  : Huawei
+FRU Device Description : Builtin FRU Device (FRUID 80, BMCCard)
+ Board Mfg. Date       : 1996/01/01 Mon 00:00:00
+ Board Manufacturer    : Huawei
+ Product Manufacturer  : Huawei
+FRU Device Description : Builtin FRU Device (FRUID 24, Atlas 300I-3000)
+ Board Mfg. Date       : 1996/01/01 Mon 00:00:00
+ Board Manufacturer    : iSoftStone
+ Board FRU File ID     : 11.02.01.14
+ Product Manufacturer  : iSoftStone
+ Product FRU File ID   : 11.02.01.14
+FRU Device Description : Builtin FRU Device (FRUID 12, PSU4)
+ Board Mfg. Date       : 2025/01/07 Tue 00:00:00
+ Board Manufacturer    : iSoftStone
+ Board FRU File ID     : 11.02.01.14
+ Product Manufacturer  : Great Wall
+ Product Name          : CRPS2700D2    
+ Product Part Number   : CRPS2700D2    
+ Product Serial Number : 1P028734CC0000104    
+ Product FRU File ID   : 11.02.01.14
+FRU Device Description : Builtin FRU Device (FRUID 10, DiskBP3)
+ Chassis Type          : Unspecified
+ Board Mfg. Date       : 1996/01/01 Mon 00:00:00
+ Board Manufacturer    : iSoftStone
+ Product Manufacturer  : iSoftStone
+FRU Device Description : Builtin FRU Device (FRUID 8, SwitchBoard)
+ Chassis Type          : Unspecified
+ Board Mfg. Date       : 1996/01/01 Mon 00:00:00
+ Board Manufacturer    : iSoftStone123
+ Product Manufacturer  : iSoftStone
+FRU Device Description : Builtin FRU Device (FRUID 22, Atlas 300I-3000)
+ Board Mfg. Date       : 1996/01/01 Mon 00:00:00
+ Board Manufacturer    : iSoftStone
+ Board FRU File ID     : 11.02.01.14
+ Product Manufacturer  : iSoftStone
+ Product FRU File ID   : 11.02.01.14
+FRU Device Description : Builtin FRU Device (FRUID 5, CpuBoard1)
+ Board Mfg. Date       : 2025/05/23 Fri 22:58:00
+ Board Manufacturer    : Huawei
+ Board Product Name    : BC83AMDA01
+ Board Serial Number   : 2106411791FSR5001839
+ Board Part Number     : 5104-00799
+ Extend label          : Description=Other Server Accessories,Main Board,BC83AMDA01,Chinese doc
+                         IssueNumber=00
+                         CLEICode=Null
+                         BOM=Null
+                         Model=BC83AMDA01
+ Product Manufacturer  : Ramaxel
+FRU Device Description : Builtin FRU Device (FRUID 1, ExpBoard1)
+ Chassis Type          : Unspecified
+ Board Mfg. Date       : 1996/01/01 Mon 00:00:00
+ Board Manufacturer    : iSoftStone
+ Product Manufacturer  : iSoftStone
+FRU Device Description : Builtin FRU Device (FRUID 25, Atlas 300I-3000)
+ Board Mfg. Date       : 1996/01/01 Mon 00:00:00
+ Board Manufacturer    : iSoftStone
+ Board FRU File ID     : 11.02.01.14
+ Product Manufacturer  : iSoftStone
+ Product FRU File ID   : 11.02.01.14
+FRU Device Description : Builtin FRU Device (FRUID 3, PSUBoard1)
+ Chassis Type          : Unspecified
+ Board Mfg. Date       : 1996/01/01 Mon 00:00:00
+ Board Manufacturer    : iSoftStone
+ Product Manufacturer  : iSoftStone
+FRU Device Description : Builtin FRU Device (FRUID 21, Atlas 300I-3000)
+ Board Mfg. Date       : 1996/01/01 Mon 00:00:00
+ Board Manufacturer    : iSoftStone
+ Board FRU File ID     : 11.02.01.14
+ Product Manufacturer  : iSoftStone
+ Product FRU File ID   : 11.02.01.14
+FRU Device Description : Builtin FRU Device (FRUID 20, Atlas 300I-3000)
+ Board Mfg. Date       : 1996/01/01 Mon 00:00:00
+ Board Manufacturer    : iSoftStone
+ Board FRU File ID     : 11.02.01.14
+ Product Manufacturer  : iSoftStone
+ Product FRU File ID   : 11.02.01.14
+FRU Device Description : Builtin FRU Device (FRUID 6, DiskBP2)
+ Chassis Type          : Unspecified
+ Board Mfg. Date       : 1996/01/01 Mon 00:00:00
+ Board Manufacturer    : iSoftStone
+ Product Manufacturer  : iSoftStone
+FRU Device Description : Builtin FRU Device (FRUID 9, FanBoard_Front)
+ Chassis Type          : Unspecified
+ Board Mfg. Date       : 1996/01/01 Mon 00:00:00
+ Board Manufacturer    : iSoftStone
+ Product Manufacturer  : iSoftStone
+FRU Device Description : Builtin FRU Device (FRUID 18, Atlas 300I-3000)
+ Board Mfg. Date       : 1996/01/01 Mon 00:00:00
+ Board Manufacturer    : iSoftStone
+ Board FRU File ID     : 11.02.01.14
+ Product Manufacturer  : iSoftStone
+ Product FRU File ID   : 11.02.01.14
+FRU Device Description : Builtin FRU Device (FRUID 17, PSU1)
+ Board Mfg. Date       : 2025/03/07 Fri 00:00:00
+ Board Manufacturer    : iSoftStone
+ Board FRU File ID     : 11.02.01.14
+ Product Manufacturer  : Great Wall
+ Product Name          : CRPS2700D2    
+ Product Part Number   : CRPS2700D2    
+ Product Serial Number : 1P108734CC0001539    
+ Product FRU File ID   : 11.02.01.14
+FRU Device Description : Builtin FRU Device (FRUID 23, Atlas 300I-3000)
+ Board Mfg. Date       : 1996/01/01 Mon 00:00:00
+ Board Manufacturer    : iSoftStone
+ Board FRU File ID     : 11.02.01.14
+ Product Manufacturer  : iSoftStone
+ Product FRU File ID   : 11.02.01.14
+FRU Device Description : Builtin FRU Device (FRUID 4, PSUBoard2)
+ Chassis Type          : Unspecified
+ Board Mfg. Date       : 1996/01/01 Mon 00:00:00
+ Board Manufacturer    : iSoftStone123
+ Product Manufacturer  : iSoftStone
+FRU Device Description : Builtin FRU Device (FRUID 7, DiskBP1)
+ Chassis Type          : Unspecified
+ Board Mfg. Date       : 1996/01/01 Mon 00:00:00
+ Board Manufacturer    : iSoftStone
+ Product Manufacturer  : iSoftStone
+FRU Device Description : Builtin FRU Device (FRUID 14, PSU6)
+ Board Mfg. Date       : 2025/01/07 Tue 00:00:00
+ Board Manufacturer    : iSoftStone
+ Board FRU File ID     : 11.02.01.14
+ Product Manufacturer  : Great Wall
+ Product Name          : CRPS2700D2    
+ Product Part Number   : CRPS2700D2    
+ Product Serial Number : 1P028734CC0000100    
+ Product FRU File ID   : 11.02.01.14
+FRU Device Description : Builtin FRU Device (FRUID 16, PSU3)
+ Board Mfg. Date       : 2025/01/07 Tue 00:00:00
+ Board Manufacturer    : iSoftStone
+ Board FRU File ID     : 11.02.01.14
+ Product Manufacturer  : Great Wall
+ Product Name          : CRPS2700D2    
+ Product Part Number   : CRPS2700D2    
+ Product Serial Number : 1P028734CC0000101    
+ Product FRU File ID   : 11.02.01.14
+FRU Device Description : Builtin FRU Device (FRUID 15, PSU2)
+ Board Mfg. Date       : 2025/03/07 Fri 00:00:00
+ Board Manufacturer    : iSoftStone
+ Board FRU File ID     : 11.02.01.14
+ Product Manufacturer  : Great Wall
+ Product Name          : CRPS2700D2    
+ Product Part Number   : CRPS2700D2    
+ Product Serial Number : 1P108734CC0001534    
+ Product FRU File ID   : 11.02.01.14
+FRU Device Description : Builtin FRU Device (FRUID 11, FanBoard_Middle)
+ Chassis Type          : Unspecified
+ Board Mfg. Date       : 1996/01/01 Mon 00:00:00
+ Board Manufacturer    : iSoftStone
+ Product Manufacturer  : iSoftStone

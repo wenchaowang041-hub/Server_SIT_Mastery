@@ -1,0 +1,106 @@
+{
+    ":00000009": {
+        "cpu": 0.082953,
+        "memory": "656.83 Kb",
+        "task": 0,
+        "name": "snlua sd_bus",
+        "message": 19,
+        "mqlen": 0
+    },
+    ":00000011": {
+        "cpu": 67.142773,
+        "memory": "6285.55 Kb",
+        "task": 16,
+        "name": "snlua metric_analyzer/service/main",
+        "message": 131824,
+        "mqlen": 0
+    },
+    ":0000000a": {
+        "cpu": 14.247419,
+        "memory": "877.72 Kb",
+        "task": 2,
+        "name": "snlua harbor",
+        "message": 43428,
+        "mqlen": 0
+    },
+    ":00000010": {
+        "cpu": 193.617715,
+        "memory": "13320.49 Kb",
+        "task": 11,
+        "name": "snlua fault_diagnosis/service/main",
+        "message": 78919,
+        "mqlen": 0
+    },
+    ":0000000d": {
+        "cpu": 3340.255833,
+        "memory": "13098.77 Kb",
+        "task": 72,
+        "name": "snlua compute/service/main",
+        "message": 2221714,
+        "mqlen": 0
+    },
+    ":0000000b": {
+        "cpu": 112.975346,
+        "memory": "9264.39 Kb",
+        "task": 5,
+        "name": "snlua bios/service/main",
+        "message": 109520,
+        "mqlen": 0
+    },
+    ":00000004": {
+        "cpu": 0.041594,
+        "memory": "641.13 Kb",
+        "task": 0,
+        "name": "snlua cdummy",
+        "message": 22,
+        "mqlen": 0
+    },
+    ":00000006": {
+        "cpu": 0.035689,
+        "memory": "634.71 Kb",
+        "task": 0,
+        "name": "snlua datacenterd",
+        "message": 14,
+        "mqlen": 0
+    },
+    ":0000000e": {
+        "cpu": 0.047694,
+        "memory": "728.37 Kb",
+        "task": 0,
+        "name": "snlua debug_console 0.0.0.0 40033",
+        "message": 16,
+        "mqlen": 0
+    },
+    ":00000007": {
+        "cpu": 0.048547,
+        "memory": "573.95 Kb",
+        "task": 1,
+        "name": "snlua service_mgr",
+        "message": 37,
+        "mqlen": 0
+    },
+    ":0000000c": {
+        "cpu": 278.238962,
+        "memory": "9702.43 Kb",
+        "task": 28,
+        "name": "snlua pcie_device/service/main",
+        "message": 131935,
+        "mqlen": 0
+    },
+    ":00000008": {
+        "cpu": 0.143282,
+        "memory": "471.37 Kb",
+        "task": 1,
+        "name": "snlua hica/subsys/ras/service/main",
+        "message": 149,
+        "mqlen": 0
+    },
+    ":0000000f": {
+        "cpu": 19.672036,
+        "memory": "2835.12 Kb",
+        "task": 3,
+        "name": "snlua ai_engine/service/main",
+        "message": 76389,
+        "mqlen": 0
+    }
+}

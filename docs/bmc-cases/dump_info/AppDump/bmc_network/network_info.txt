@@ -1,0 +1,109 @@
+EthGroup ID               :  1
+Net Mode                  :  Fixed
+Net Type                  :  Dedicated
+Active Port               :  eth2
+IpVersion                 :  IPv4AndIPv6
+IPv4 Information          :
+IP Mode                   :  Static
+IP Address                :  10.121.176.127
+Subnet Mask               :  255.255.254.0
+Default Gateway           :  10.121.176.1
+Backup IP Address         :  192.168.2.100 (Deactivated)
+Backup Subnet Mask        :  255.255.255.0 (Deactivated)
+MAC Address               :  94:d2:bc:29:bc:d4
+IPv6 Information          :
+IPv6 Mode                 :  Static
+IPv6 Address 1            :
+Default Gateway IPv6      :  
+Link-Local Address        :  fe80::96d2:bcff:fe29:bcd4/64
+VLAN Information          :
+NCSI Port VLAN State      :  disabled
+Dedicated Port VLAN State :  disabled
+Chain INPUT (policy ACCEPT 55123 packets, 7795K bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+20876 9050K ACCEPT     0    --  eth2   *       0.0.0.0/0            239.255.255.250     
+    0     0 ACCEPT     6    --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:22 flags:0x17/0x02 limit: avg 100/sec burst 100
+    0     0 DROP       6    --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:22 flags:0x17/0x02
+    0     0 ACCEPT     6    --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:22
+    0     0 ACCEPT     17   --  *      *       0.0.0.0/0            0.0.0.0/0            udp dpt:161
+    0     0 ACCEPT     6    --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:2198 flags:0x17/0x02 limit: avg 100/sec burst 100
+    0     0 DROP       6    --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:2198 flags:0x17/0x02
+    0     0 ACCEPT     6    --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:2198
+    0     0 ACCEPT     6    --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:8208 flags:0x17/0x02 limit: avg 100/sec burst 100
+    0     0 DROP       6    --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:8208 flags:0x17/0x02
+    0     0 ACCEPT     6    --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:8208
+    0     0 ACCEPT     6    --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:2199 flags:0x17/0x02 limit: avg 100/sec burst 100
+    0     0 DROP       6    --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:2199 flags:0x17/0x02
+    0     0 ACCEPT     6    --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:2199
+    0     0 ACCEPT     6    --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:5900 flags:0x17/0x02 limit: avg 100/sec burst 100
+    0     0 DROP       6    --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:5900 flags:0x17/0x02
+    0     0 ACCEPT     6    --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:5900
+    0     0 ACCEPT     6    --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:80 flags:0x17/0x02 limit: avg 100/sec burst 100
+    0     0 DROP       6    --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:80 flags:0x17/0x02
+    0     0 ACCEPT     6    --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:80
+  294 15288 ACCEPT     6    --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:443 flags:0x17/0x02 limit: avg 100/sec burst 100
+    0     0 DROP       6    --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:443 flags:0x17/0x02
+12219 3233K ACCEPT     6    --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:443
+    0     0 ACCEPT     6    --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:50080 flags:0x17/0x02 limit: avg 100/sec burst 100
+    0     0 DROP       6    --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:50080 flags:0x17/0x02
+    9  1866 ACCEPT     6    --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:50080
+  597 56432 ACCEPT     17   --  *      *       0.0.0.0/0            0.0.0.0/0            udp dpt:623
+    0     0 ACCEPT     17   --  *      *       0.0.0.0/0            0.0.0.0/0            udp dpt:664
+    0     0 ACCEPT     6    --  eth2   *       0.0.0.0/0            10.121.176.127       tcp flags:0x17/0x02 limit: avg 100/sec burst 100
+    0     0 DROP       6    --  eth2   *       0.0.0.0/0            10.121.176.127       tcp flags:0x17/0x02
+    0     0 ACCEPT     0    --  eth2   *       0.0.0.0/0            10.121.176.127      
+    0     0 ACCEPT     6    --  eth2   *       0.0.0.0/0            192.168.2.100        tcp flags:0x17/0x02 limit: avg 100/sec burst 100
+    0     0 DROP       6    --  eth2   *       0.0.0.0/0            192.168.2.100        tcp flags:0x17/0x02
+    0     0 ACCEPT     0    --  eth2   *       0.0.0.0/0            192.168.2.100       
+    0     0 DROP       1    --  eth2   *       0.0.0.0/0            0.0.0.0/0            icmptype 11
+    0     0 DROP       1    --  eth2   *       0.0.0.0/0            0.0.0.0/0            icmptype 13
+ 5844  718K DROP       0    --  eth2   *       0.0.0.0/0            0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 69759 packets, 35M bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 DROP       1    --  *      *       0.0.0.0/0            0.0.0.0/0            icmptype 11
+    0     0 DROP       1    --  *      *       0.0.0.0/0            0.0.0.0/0            icmptype 14
+Chain INPUT (policy ACCEPT 4 packets, 288 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+  539  194K ACCEPT     0    --  eth2   *       ::/0                 ff05::c             
+    0     0 ACCEPT     6    --  *      *       ::/0                 ::/0                 tcp dpt:22 flags:0x17/0x02 limit: avg 100/sec burst 100
+    0     0 DROP       6    --  *      *       ::/0                 ::/0                 tcp dpt:22 flags:0x17/0x02
+    0     0 ACCEPT     6    --  *      *       ::/0                 ::/0                 tcp dpt:22
+    0     0 ACCEPT     17   --  *      *       ::/0                 ::/0                 udp dpt:161
+    0     0 ACCEPT     6    --  *      *       ::/0                 ::/0                 tcp dpt:2198 flags:0x17/0x02 limit: avg 100/sec burst 100
+    0     0 DROP       6    --  *      *       ::/0                 ::/0                 tcp dpt:2198 flags:0x17/0x02
+    0     0 ACCEPT     6    --  *      *       ::/0                 ::/0                 tcp dpt:2198
+    0     0 ACCEPT     6    --  *      *       ::/0                 ::/0                 tcp dpt:8208 flags:0x17/0x02 limit: avg 100/sec burst 100
+    0     0 DROP       6    --  *      *       ::/0                 ::/0                 tcp dpt:8208 flags:0x17/0x02
+    0     0 ACCEPT     6    --  *      *       ::/0                 ::/0                 tcp dpt:8208
+    0     0 ACCEPT     6    --  *      *       ::/0                 ::/0                 tcp dpt:2199 flags:0x17/0x02 limit: avg 100/sec burst 100
+    0     0 DROP       6    --  *      *       ::/0                 ::/0                 tcp dpt:2199 flags:0x17/0x02
+    0     0 ACCEPT     6    --  *      *       ::/0                 ::/0                 tcp dpt:2199
+    0     0 ACCEPT     6    --  *      *       ::/0                 ::/0                 tcp dpt:5900 flags:0x17/0x02 limit: avg 100/sec burst 100
+    0     0 DROP       6    --  *      *       ::/0                 ::/0                 tcp dpt:5900 flags:0x17/0x02
+    0     0 ACCEPT     6    --  *      *       ::/0                 ::/0                 tcp dpt:5900
+    0     0 ACCEPT     6    --  *      *       ::/0                 ::/0                 tcp dpt:80 flags:0x17/0x02 limit: avg 100/sec burst 100
+    0     0 DROP       6    --  *      *       ::/0                 ::/0                 tcp dpt:80 flags:0x17/0x02
+    0     0 ACCEPT     6    --  *      *       ::/0                 ::/0                 tcp dpt:80
+    0     0 ACCEPT     6    --  *      *       ::/0                 ::/0                 tcp dpt:443 flags:0x17/0x02 limit: avg 100/sec burst 100
+    0     0 DROP       6    --  *      *       ::/0                 ::/0                 tcp dpt:443 flags:0x17/0x02
+    0     0 ACCEPT     6    --  *      *       ::/0                 ::/0                 tcp dpt:443
+    0     0 ACCEPT     17   --  *      *       ::/0                 ::/0                 udp dpt:623
+    0     0 ACCEPT     17   --  *      *       ::/0                 ::/0                 udp dpt:664
+    0     0 ACCEPT     6    --  eth2   *       ::/0                 ::/0                 tcp flags:0x17/0x02 limit: avg 100/sec burst 100
+  139 10008 ACCEPT     58   --  eth2   *       ::/0                 ::/0                 limit: avg 100/sec burst 100
+    0     0 DROP       6    --  eth2   *       ::/0                 ::/0                 tcp flags:0x17/0x02
+    0     0 DROP       58   --  eth2   *       ::/0                 ::/0                 ipv6-icmptype 3
+    0     0 ACCEPT     0    --  eth2   *       ::/0                 ::2                 
+    0     0 ACCEPT     0    --  eth2   *       ::/0                 fe80::96d2:bcff:fe29:bcd4 
+  434  477K DROP       0    --  eth2   *       ::/0                 ::/0                
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 99 packets, 25944 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 DROP       58   --  *      *       ::/0                 ::/0                 ipv6-icmptype 3

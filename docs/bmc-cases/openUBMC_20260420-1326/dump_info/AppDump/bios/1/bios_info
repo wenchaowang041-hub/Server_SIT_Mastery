@@ -1,0 +1,200 @@
+------Bios Boot Options Begin------
+set in progress[0]:0
+
+service partition selector[0]:0
+
+service partition scan[0]:0
+
+boot flag valid bit clearing[0]:8
+
+boot info acknowledge[0]:0
+boot info acknowledge[1]:1
+
+boot flags[0]:32
+boot flags[1]:0
+boot flags[2]:0
+boot flags[3]:0
+boot flags[4]:0
+
+boot initiator info[0]:0
+boot initiator info[1]:0
+boot initiator info[2]:0
+boot initiator info[3]:0
+boot initiator info[4]:0
+boot initiator info[5]:0
+boot initiator info[6]:0
+boot initiator info[7]:0
+boot initiator info[8]:0
+
+boot initiator mailbox[0]:0
+boot initiator mailbox[1]:0
+boot initiator mailbox[2]:0
+boot initiator mailbox[3]:0
+boot initiator mailbox[4]:0
+boot initiator mailbox[5]:0
+boot initiator mailbox[6]:0
+boot initiator mailbox[7]:0
+boot initiator mailbox[8]:0
+boot initiator mailbox[9]:0
+boot initiator mailbox[10]:0
+boot initiator mailbox[11]:0
+boot initiator mailbox[12]:0
+boot initiator mailbox[13]:0
+boot initiator mailbox[14]:0
+boot initiator mailbox[15]:0
+boot initiator mailbox[16]:0
+boot initiator mailbox[17]:0
+boot initiator mailbox[18]:0
+boot initiator mailbox[19]:0
+boot initiator mailbox[20]:0
+boot initiator mailbox[21]:0
+boot initiator mailbox[22]:0
+boot initiator mailbox[23]:0
+boot initiator mailbox[24]:0
+boot initiator mailbox[25]:0
+boot initiator mailbox[26]:0
+boot initiator mailbox[27]:0
+boot initiator mailbox[28]:0
+boot initiator mailbox[29]:0
+boot initiator mailbox[30]:0
+boot initiator mailbox[31]:0
+boot initiator mailbox[32]:0
+boot initiator mailbox[33]:0
+boot initiator mailbox[34]:0
+boot initiator mailbox[35]:0
+boot initiator mailbox[36]:0
+boot initiator mailbox[37]:0
+boot initiator mailbox[38]:0
+boot initiator mailbox[39]:0
+boot initiator mailbox[40]:0
+boot initiator mailbox[41]:0
+boot initiator mailbox[42]:0
+boot initiator mailbox[43]:0
+boot initiator mailbox[44]:0
+boot initiator mailbox[45]:0
+boot initiator mailbox[46]:0
+boot initiator mailbox[47]:0
+boot initiator mailbox[48]:0
+boot initiator mailbox[49]:0
+boot initiator mailbox[50]:0
+boot initiator mailbox[51]:0
+boot initiator mailbox[52]:0
+boot initiator mailbox[53]:0
+boot initiator mailbox[54]:0
+boot initiator mailbox[55]:0
+boot initiator mailbox[56]:0
+boot initiator mailbox[57]:0
+boot initiator mailbox[58]:0
+boot initiator mailbox[59]:0
+boot initiator mailbox[60]:0
+boot initiator mailbox[61]:0
+boot initiator mailbox[62]:0
+boot initiator mailbox[63]:0
+boot initiator mailbox[64]:0
+boot initiator mailbox[65]:0
+boot initiator mailbox[66]:0
+boot initiator mailbox[67]:0
+boot initiator mailbox[68]:0
+boot initiator mailbox[69]:0
+boot initiator mailbox[70]:0
+boot initiator mailbox[71]:0
+boot initiator mailbox[72]:0
+boot initiator mailbox[73]:0
+boot initiator mailbox[74]:0
+boot initiator mailbox[75]:0
+boot initiator mailbox[76]:0
+boot initiator mailbox[77]:0
+boot initiator mailbox[78]:0
+boot initiator mailbox[79]:0
+
+1[0]:0
+1[1]:0
+1[2]:0
+1[3]:0
+1[4]:0
+1[5]:0
+1[6]:0
+1[7]:0
+1[8]:0
+1[9]:0
+1[10]:0
+1[11]:0
+1[12]:0
+1[13]:0
+1[14]:0
+1[15]:0
+
+
+------Bios tree Begin------
+Slot:0
+FlashChannel:0
+FlashNum:1
+FlashSize:32
+Soc:Hi1630V100
+SecureBootVerifyState:0
+SecureBootVerifyCompletionCode:213
+SecureBootEnableState:192
+SecureBootEnableCompletionCode:213
+ResetCmos:0
+SystemId:1
+BackupVersion:21.23
+PcieDiskBDF:
+PcieCardBDF:0 0 12 0 0 0 0 8 0 0 0 0 70 0 0 0 0 66 0 0 0 255 255 255 255 0 1 131 0 0 0 255 255 255 255 0 1 214 0 0 0 1 193 0 0 0 1 150 0 0 0 1 171 0 0 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 
+DEMTConfig:0
+MenuChangeFlag:0
+MenuData:
+RegistryFileName:/data/opt/registry.json
+SettingFileName:/data/opt/setting.json
+ResultFileName:/data/opt/result.json
+CurrentValueFileName:/data/opt/currentvalue.json
+BiosConfigActiveMode:0
+ResetBiosToDefaultsPending:false
+TeeOSVersion:
+Version:21.23
+BiosBootStage:1
+SystemStartupState:254
+SettingsEffectiveStatus:Effective
+RegistryVersion:V2.66
+RecoverFailed:0
+UpgradeFailed:0
+BiosLogPrintEnabled:0
+OCPCardBDF:0 0 255 255 255 0 1 129 0 0 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 0 255 255 255 255 
+ObjectName:Bios_1_010101
+ObjectIdentifier:1 1 1 010101 
+ClassName:Bios
+State:Idle
+Progress:0
+Result:
+Source:
+Description:
+Media:
+Method:
+
+------Smbios tree Begin------
+ObjectName:SmBios_1
+ObjectIdentifier:0    
+ClassName:SmBios
+SystemId:1
+Version:
+SmBiosStatus:3
+SmBiosUpdatedFlag:1
+Family:
+SKUNumber:
+FileName:/data/opt/SMBIOS_CONF
+DiffFileName:/data/opt/SMBIOS_DIFF
+SerialNumber:
+FileChange:1
+
+------Boot tree Begin------
+ObjectName:BootOptions_1
+ObjectIdentifier:0    
+ClassName:BootOptions
+PreviousBootSourceOverrideTarget:
+BootOptionPolicy:0
+BootOrder:HardDiskDrive DVDROMDrive PXE Others 
+BootSourceOverrideTarget:None
+BootSourceOverrideEnabled:Disabled
+BootSourceOverrideMode:UEFI
+BootModeIpmiSettable:true
+BootModeSupport:true
+BootOptionReference:None Pxe Floppy Cd Hdd BiosSetup Others 

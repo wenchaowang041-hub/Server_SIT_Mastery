@@ -1,0 +1,2300 @@
+{
+    "t_soc_management": [
+        {
+            "BmcHardResetFlag": "1",
+            "DDRSelfTestResult": "1",
+            "Name": "Hi1711"
+        }
+    ],
+    "t_Led": [
+        {
+            "Id": "2",
+            "State": "255"
+        },
+        {
+            "Id": "4",
+            "State": "0"
+        }
+    ],
+    "t_controller_info": [
+        {
+            "BatteryPresence": "0",
+            "DeviceName": "PCIe Card 6 (9560-16i)",
+            "Id": "0"
+        }
+    ],
+    "t_fan_info": [
+        {
+            "FanPosition": "010103",
+            "BOM": "BOM32030389-001",
+            "FrontMaxSpeed": "16900",
+            "IsTwins": "1",
+            "Model": "AVC 8080+",
+            "RearMaxSpeed": "12800",
+            "PartNumber": "02314EWC",
+            "SystemId": "1",
+            "FanId": "1",
+            "Type": "0"
+        },
+        {
+            "FanPosition": "010104",
+            "BOM": "BOM32030389-001",
+            "FrontMaxSpeed": "16900",
+            "IsTwins": "1",
+            "Model": "AVC 8080+",
+            "RearMaxSpeed": "12800",
+            "PartNumber": "02314EWC",
+            "SystemId": "1",
+            "FanId": "10",
+            "Type": "0"
+        },
+        {
+            "FanPosition": "010104",
+            "BOM": "BOM32030389-001",
+            "FrontMaxSpeed": "16900",
+            "IsTwins": "1",
+            "Model": "AVC 8080+",
+            "RearMaxSpeed": "12800",
+            "PartNumber": "02314EWC",
+            "SystemId": "1",
+            "FanId": "11",
+            "Type": "0"
+        },
+        {
+            "FanPosition": "010104",
+            "BOM": "BOM32030389-001",
+            "FrontMaxSpeed": "16900",
+            "IsTwins": "1",
+            "Model": "AVC 8080+",
+            "RearMaxSpeed": "12800",
+            "PartNumber": "02314EWC",
+            "SystemId": "1",
+            "FanId": "12",
+            "Type": "0"
+        },
+        {
+            "FanPosition": "010104",
+            "BOM": "BOM32030389-001",
+            "FrontMaxSpeed": "16900",
+            "IsTwins": "1",
+            "Model": "AVC 8080+",
+            "RearMaxSpeed": "12800",
+            "PartNumber": "02314EWC",
+            "SystemId": "1",
+            "FanId": "13",
+            "Type": "0"
+        },
+        {
+            "FanPosition": "010103",
+            "BOM": "BOM32030389-001",
+            "FrontMaxSpeed": "16900",
+            "IsTwins": "1",
+            "Model": "AVC 8080+",
+            "RearMaxSpeed": "12800",
+            "PartNumber": "02314EWC",
+            "SystemId": "1",
+            "FanId": "2",
+            "Type": "0"
+        },
+        {
+            "FanPosition": "010103",
+            "BOM": "BOM32030389-001",
+            "FrontMaxSpeed": "16900",
+            "IsTwins": "1",
+            "Model": "AVC 8080+",
+            "RearMaxSpeed": "12800",
+            "PartNumber": "02314EWC",
+            "SystemId": "1",
+            "FanId": "3",
+            "Type": "0"
+        },
+        {
+            "FanPosition": "010103",
+            "BOM": "BOM32030389-001",
+            "FrontMaxSpeed": "16900",
+            "IsTwins": "1",
+            "Model": "AVC 8080+",
+            "RearMaxSpeed": "12800",
+            "PartNumber": "02314EWC",
+            "SystemId": "1",
+            "FanId": "4",
+            "Type": "0"
+        },
+        {
+            "FanPosition": "010103",
+            "BOM": "BOM32030389-001",
+            "FrontMaxSpeed": "16900",
+            "IsTwins": "1",
+            "Model": "AVC 8080+",
+            "RearMaxSpeed": "12800",
+            "PartNumber": "02314EWC",
+            "SystemId": "1",
+            "FanId": "5",
+            "Type": "0"
+        },
+        {
+            "FanPosition": "010103",
+            "BOM": "BOM32030389-001",
+            "FrontMaxSpeed": "16900",
+            "IsTwins": "1",
+            "Model": "AVC 8080+",
+            "RearMaxSpeed": "12800",
+            "PartNumber": "02314EWC",
+            "SystemId": "1",
+            "FanId": "6",
+            "Type": "0"
+        },
+        {
+            "FanPosition": "010103",
+            "BOM": "BOM32030389-001",
+            "FrontMaxSpeed": "16900",
+            "IsTwins": "1",
+            "Model": "AVC 8080+",
+            "RearMaxSpeed": "12800",
+            "PartNumber": "02314EWC",
+            "SystemId": "1",
+            "FanId": "7",
+            "Type": "0"
+        },
+        {
+            "FanPosition": "010103",
+            "BOM": "BOM32030389-001",
+            "FrontMaxSpeed": "16900",
+            "IsTwins": "1",
+            "Model": "AVC 8080+",
+            "RearMaxSpeed": "12800",
+            "PartNumber": "02314EWC",
+            "SystemId": "1",
+            "FanId": "8",
+            "Type": "0"
+        },
+        {
+            "FanPosition": "010104",
+            "BOM": "BOM32030389-001",
+            "FrontMaxSpeed": "16900",
+            "IsTwins": "1",
+            "Model": "AVC 8080+",
+            "RearMaxSpeed": "12800",
+            "PartNumber": "02314EWC",
+            "SystemId": "1",
+            "FanId": "9",
+            "Type": "0"
+        }
+    ],
+    "t_aclost_record": [
+        {
+            "Id": "AclostRecord",
+            "ResetFlag": "1"
+        }
+    ],
+    "t_fructrl_tb": [
+        {
+            "RestartCauseRecords": "[\"Unknown\"]",
+            "PowerState": "ON",
+            "Id": "0",
+            "CurrentRestartCause": "Unknown"
+        }
+    ],
+    "t_systems_signature": [
+        {
+            "Signature": "F76DACEC3556093F515506A273D88648DE00E375F6DE93ADD786E8BAEA086DF0",
+            "VerificationResult": "0",
+            "Id": "Bios",
+            "SystemId": "1"
+        }
+    ],
+    "t_fdm_domain": [
+        {
+            "GlobalSystemId": "1",
+            "LocalSystemId": "0",
+            "CaterrDiagnoseResult": "0"
+        }
+    ],
+    "t_storage_drive": [
+        {
+            "SlotNumber": "0",
+            "SerialNumber": "034BBTN0Q3019451",
+            "Manufacturer": "HUAWEI",
+            "CapableSpeedGbs": "3",
+            "CapacityMiB": "457344",
+            "Protocol": "3",
+            "EnclosureId": "252",
+            "Id": "0",
+            "RefControllerId": "0",
+            "MediaType": "1",
+            "NegotiatedSpeedGbs": "3",
+            "Revision": "10B6",
+            "Model": "HWE62ST3480L003N"
+        },
+        {
+            "SlotNumber": "1",
+            "SerialNumber": "034BBTN0Q3019257",
+            "Manufacturer": "HUAWEI",
+            "CapableSpeedGbs": "3",
+            "CapacityMiB": "457344",
+            "Protocol": "3",
+            "EnclosureId": "252",
+            "Id": "1",
+            "RefControllerId": "0",
+            "MediaType": "1",
+            "NegotiatedSpeedGbs": "3",
+            "Revision": "10B6",
+            "Model": "HWE62ST3480L003N"
+        },
+        {
+            "SlotNumber": "2",
+            "SerialNumber": "034BBTN0Q3019512",
+            "Manufacturer": "HUAWEI",
+            "CapableSpeedGbs": "3",
+            "CapacityMiB": "457344",
+            "Protocol": "3",
+            "EnclosureId": "252",
+            "Id": "2",
+            "RefControllerId": "0",
+            "MediaType": "1",
+            "NegotiatedSpeedGbs": "3",
+            "Revision": "10B6",
+            "Model": "HWE62ST3480L003N"
+        },
+        {
+            "SlotNumber": "3",
+            "SerialNumber": "034BBTN0Q3019379",
+            "Manufacturer": "HUAWEI",
+            "CapableSpeedGbs": "3",
+            "CapacityMiB": "457344",
+            "Protocol": "3",
+            "EnclosureId": "252",
+            "Id": "3",
+            "RefControllerId": "0",
+            "MediaType": "1",
+            "NegotiatedSpeedGbs": "3",
+            "Revision": "10B6",
+            "Model": "HWE62ST3480L003N"
+        },
+        {
+            "SlotNumber": "4",
+            "SerialNumber": "034BBTN0Q3019415",
+            "Manufacturer": "HUAWEI",
+            "CapableSpeedGbs": "3",
+            "CapacityMiB": "457344",
+            "Protocol": "3",
+            "EnclosureId": "252",
+            "Id": "4",
+            "RefControllerId": "0",
+            "MediaType": "1",
+            "NegotiatedSpeedGbs": "3",
+            "Revision": "10B6",
+            "Model": "HWE62ST3480L003N"
+        },
+        {
+            "SlotNumber": "5",
+            "SerialNumber": "034BBTN0Q3019799",
+            "Manufacturer": "HUAWEI",
+            "CapableSpeedGbs": "3",
+            "CapacityMiB": "457344",
+            "Protocol": "3",
+            "EnclosureId": "252",
+            "Id": "5",
+            "RefControllerId": "0",
+            "MediaType": "1",
+            "NegotiatedSpeedGbs": "3",
+            "Revision": "10B6",
+            "Model": "HWE62ST3480L003N"
+        },
+        {
+            "SlotNumber": "6",
+            "SerialNumber": "034BBTN0Q3019413",
+            "Manufacturer": "HUAWEI",
+            "CapableSpeedGbs": "3",
+            "CapacityMiB": "457344",
+            "Protocol": "3",
+            "EnclosureId": "252",
+            "Id": "6",
+            "RefControllerId": "0",
+            "MediaType": "1",
+            "NegotiatedSpeedGbs": "3",
+            "Revision": "10B6",
+            "Model": "HWE62ST3480L003N"
+        },
+        {
+            "SlotNumber": "7",
+            "SerialNumber": "034BBTN0Q3019516",
+            "Manufacturer": "HUAWEI",
+            "CapableSpeedGbs": "3",
+            "CapacityMiB": "457344",
+            "Protocol": "3",
+            "EnclosureId": "252",
+            "Id": "7",
+            "RefControllerId": "0",
+            "MediaType": "1",
+            "NegotiatedSpeedGbs": "3",
+            "Revision": "10B6",
+            "Model": "HWE62ST3480L003N"
+        },
+        {
+            "SerialNumber": "D77446D401J852",
+            "Manufacturer": "DERA",
+            "CapableSpeedGbs": "14",
+            "CapacityMiB": "3052360",
+            "Protocol": "6",
+            "Model": "DERAP44YGM03T2US",
+            "Id": "8",
+            "MediaType": "1",
+            "Revision": "D7Y05M1F"
+        },
+        {
+            "SerialNumber": "D77446D4017E52",
+            "Manufacturer": "DERA",
+            "CapableSpeedGbs": "14",
+            "CapacityMiB": "3052360",
+            "Protocol": "6",
+            "Model": "DERAP44YGM03T2US",
+            "Id": "9",
+            "MediaType": "1",
+            "Revision": "D7Y05M1F"
+        }
+    ],
+    "t_event": [
+        {
+            "PerId": "Event_Cpu1Installed_010101",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Cpu1Removed_010101",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Cpu2Installed_010101",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Cpu2Removed_010101",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Drive1RebuildEnd_010102",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Drive1RebuildEnd_01010C",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Drive1RebuildEnd_01010D",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Drive1RebuildStart_010102",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Drive1RebuildStart_01010C",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Drive1RebuildStart_01010D",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Drive2RebuildEnd_010102",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Drive2RebuildEnd_01010C",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Drive2RebuildEnd_01010D",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Drive2RebuildStart_010102",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Drive2RebuildStart_01010C",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Drive2RebuildStart_01010D",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Drive3RebuildEnd_010102",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Drive3RebuildEnd_01010C",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Drive3RebuildEnd_01010D",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Drive3RebuildStart_010102",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Drive3RebuildStart_01010C",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Drive3RebuildStart_01010D",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Drive4RebuildEnd_010102",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Drive4RebuildEnd_01010C",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Drive4RebuildEnd_01010D",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Drive4RebuildStart_010102",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Drive4RebuildStart_01010C",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Drive4RebuildStart_01010D",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Fan10Install_010104",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Fan10Removed_010104",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Fan11Install_010104",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Fan11Removed_010104",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Fan12Install_010104",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Fan12Removed_010104",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Fan13Install_010104",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Fan13Removed_010104",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Fan1Install_010103",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Fan1Removed_010103",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Fan2Install_010103",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Fan2Removed_010103",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Fan3Install_010103",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Fan3Removed_010103",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Fan4Install_010103",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Fan4Removed_010103",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Fan5Install_010103",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Fan5Removed_010103",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Fan6Install_010103",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Fan6Removed_010103",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Fan7Install_010103",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Fan7Removed_010103",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Fan8Install_010103",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Fan8Removed_010103",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Fan9Install_010104",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Fan9Removed_010104",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Hdd1Insert_010102",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Hdd1Insert_01010C",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Hdd1Insert_01010D",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Hdd1Removed_010102",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Hdd1Removed_01010C",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Hdd1Removed_01010D",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Hdd2Insert_010102",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Hdd2Insert_01010C",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Hdd2Insert_01010D",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Hdd2Removed_010102",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Hdd2Removed_01010C",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Hdd2Removed_01010D",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Hdd3Insert_010102",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Hdd3Insert_01010C",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Hdd3Insert_01010D",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Hdd3Removed_010102",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Hdd3Removed_01010C",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Hdd3Removed_01010D",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Hdd4Insert_010102",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Hdd4Insert_01010C",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Hdd4Insert_01010D",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Hdd4Removed_010102",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Hdd4Removed_01010C",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Hdd4Removed_01010D",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Mem000Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem000Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem001Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem001Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem010Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem010Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem011Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem011Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem020Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem020Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem021Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem021Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem030Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem030Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem031Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem031Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem040Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem040Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem041Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem041Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem050Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem050Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem051Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem051Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem060Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem060Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem061Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem061Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem070Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem070Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem071Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem071Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem100Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem100Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem1010Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem101Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem110Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem110Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem111Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem111Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem120Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem120Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem121Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem121Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem130Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem130Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem131Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem131Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem140Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem140Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem1410Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem141Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem150Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem150Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem151Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem151Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem160Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem160Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem161Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem161Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem170Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem170Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem171Installed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Mem171Removed_01010117",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_NICCardReplaceMntr_010105",
+            "State": "1"
+        },
+        {
+            "PerId": "Event_PcieBBUInstall_01011506",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_PcieBBURemove_01011506",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Port1LinkDown_010105",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Port2LinkDown_010105",
+            "SaveReading": "0"
+        },
+        {
+            "PerId": "Event_Ps1Install_0101",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Ps1Removed_0101",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Ps2Install_0101",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_Ps2Removed_0101",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_SystemACPISoftOffState_0101",
+            "SaveReading": "1"
+        },
+        {
+            "PerId": "Event_SystemACPIWorkingState_0101",
+            "State": "1"
+        }
+    ],
+    "t_fw_active": [
+        {
+            "BmcResetFlag": "1",
+            "Id": "1"
+        }
+    ],
+    "t_network_adapter": [
+        {
+            "AttentionHotPlugState": "1",
+            "ID": "chassisNIC1(SF223D-H)",
+            "NodeId": "chassisNIC1(SF223D-H)"
+        }
+    ],
+    "t_watchdog2": [
+        {
+            "ID": "0",
+            "TimeoutAction": "1",
+            "SystemStartupState": "254",
+            "TimerUseStr": "OS Load",
+            "Running": "0",
+            "BmcSoftResetFlag": "1",
+            "DoNotLog": "0",
+            "ExpirationEventData": "16712193",
+            "InitialCountdown": "3000",
+            "TimerUse": "3"
+        }
+    ],
+    "t_bios_info": [
+        {
+            "BiosBootStage": "1",
+            "Id": "BiosInfo",
+            "SystemStartupState": "254"
+        }
+    ],
+    "t_memory_info": [
+        {
+            "SystemId": "1",
+            "Name": "Memory000",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory001",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory010",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory011",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory020",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory021",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory030",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory031",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory040",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory041",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory050",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory051",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory060",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory061",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory070",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory071",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory100",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory101",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory110",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory111",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory120",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory121",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory130",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory131",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory140",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory141",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory150",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory151",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory160",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory161",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory170",
+            "ChipBitWidth": "x4"
+        },
+        {
+            "SystemId": "1",
+            "Name": "Memory171",
+            "ChipBitWidth": "x4"
+        }
+    ],
+    "t_pcie_addr_info": [
+        {
+            "Bus": "149",
+            "Device": "0",
+            "Function": "0",
+            "GroupPosition": "PcieAddrInfo_10_"
+        },
+        {
+            "Bus": "170",
+            "Device": "0",
+            "Function": "0",
+            "GroupPosition": "PcieAddrInfo_11_"
+        },
+        {
+            "Bus": "64",
+            "Device": "0",
+            "Function": "0",
+            "GroupPosition": "PcieAddrInfo_1_"
+        },
+        {
+            "Bus": "22",
+            "Device": "0",
+            "Function": "0",
+            "GroupPosition": "PcieAddrInfo_2_"
+        },
+        {
+            "Bus": "95",
+            "Device": "0",
+            "Function": "0",
+            "GroupPosition": "PcieAddrInfo_3_"
+        },
+        {
+            "Bus": "86",
+            "Device": "0",
+            "Function": "0",
+            "GroupPosition": "PcieAddrInfo_4_"
+        },
+        {
+            "Bus": "128",
+            "Device": "4",
+            "Function": "0",
+            "GroupPosition": "PcieAddrInfo_6_"
+        },
+        {
+            "Bus": "213",
+            "Device": "0",
+            "Function": "0",
+            "GroupPosition": "PcieAddrInfo_8_"
+        },
+        {
+            "Bus": "192",
+            "Device": "0",
+            "Function": "0",
+            "GroupPosition": "PcieAddrInfo_9_"
+        },
+        {
+            "GroupPosition": "PcieAddrInfo_OCP_2_0101",
+            "Device": "4"
+        }
+    ],
+    "t_network_mgmtport": [
+        {
+            "Id": "1",
+            "LinkStatus": "Connected"
+        }
+    ],
+    "t_pcie_dev_info": [
+        {
+            "CorrectableError": "0",
+            "GroupPosition": "PCIeDevice_010105",
+            "DiagnosticFault": "0",
+            "PredictiveFault": "0",
+            "BandwidthReduction": "0",
+            "FatalError": "0",
+            "SystemError": "0",
+            "LinkSpeedReduced": "0",
+            "UCEByBIOS": "0",
+            "UncorrectableError": "0",
+            "ParityError": "0"
+        },
+        {
+            "CorrectableError": "0",
+            "GroupPosition": "PCIeDevice_01010D0101",
+            "DiagnosticFault": "0",
+            "PredictiveFault": "0",
+            "BandwidthReduction": "0",
+            "FatalError": "0",
+            "SystemError": "0",
+            "LinkSpeedReduced": "0",
+            "UCEByBIOS": "0",
+            "UncorrectableError": "0",
+            "ParityError": "0"
+        },
+        {
+            "CorrectableError": "0",
+            "GroupPosition": "PCIeDevice_01011501",
+            "UncorrectableError": "0",
+            "UCEByBIOS": "0",
+            "DiagnosticFault": "0",
+            "PredictiveFault": "0",
+            "BandwidthReduction": "0",
+            "BaseClassCode": "18",
+            "FatalError": "0",
+            "SystemError": "0",
+            "LinkSpeedReduced": "0",
+            "ParityError": "0",
+            "ProgrammingInterface": "0",
+            "SubClassCode": "0"
+        },
+        {
+            "CorrectableError": "0",
+            "GroupPosition": "PCIeDevice_01011502",
+            "UncorrectableError": "0",
+            "UCEByBIOS": "0",
+            "DiagnosticFault": "0",
+            "PredictiveFault": "0",
+            "BandwidthReduction": "0",
+            "BaseClassCode": "18",
+            "FatalError": "0",
+            "SystemError": "0",
+            "LinkSpeedReduced": "0",
+            "ParityError": "0",
+            "ProgrammingInterface": "0",
+            "SubClassCode": "0"
+        },
+        {
+            "CorrectableError": "0",
+            "GroupPosition": "PCIeDevice_01011503",
+            "UncorrectableError": "0",
+            "UCEByBIOS": "0",
+            "DiagnosticFault": "0",
+            "PredictiveFault": "0",
+            "BandwidthReduction": "0",
+            "BaseClassCode": "18",
+            "FatalError": "0",
+            "SystemError": "0",
+            "LinkSpeedReduced": "0",
+            "ParityError": "0",
+            "ProgrammingInterface": "0",
+            "SubClassCode": "0"
+        },
+        {
+            "CorrectableError": "0",
+            "GroupPosition": "PCIeDevice_01011504",
+            "UncorrectableError": "0",
+            "UCEByBIOS": "0",
+            "DiagnosticFault": "0",
+            "PredictiveFault": "0",
+            "BandwidthReduction": "0",
+            "BaseClassCode": "18",
+            "FatalError": "0",
+            "SystemError": "0",
+            "LinkSpeedReduced": "0",
+            "ParityError": "0",
+            "ProgrammingInterface": "0",
+            "SubClassCode": "0"
+        },
+        {
+            "CorrectableError": "0",
+            "GroupPosition": "PCIeDevice_01011506",
+            "UncorrectableError": "0",
+            "UCEByBIOS": "0",
+            "DiagnosticFault": "0",
+            "PredictiveFault": "0",
+            "BandwidthReduction": "0",
+            "BaseClassCode": "1",
+            "FatalError": "0",
+            "SystemError": "0",
+            "LinkSpeedReduced": "0",
+            "ParityError": "0",
+            "ProgrammingInterface": "0",
+            "SubClassCode": "4"
+        },
+        {
+            "CorrectableError": "0",
+            "GroupPosition": "PCIeDevice_01011508",
+            "UncorrectableError": "1",
+            "UCEByBIOS": "0",
+            "SystemError": "0",
+            "DiagnosticFault": "0",
+            "PredictiveFault": "0",
+            "BandwidthReduction": "0",
+            "BaseClassCode": "18",
+            "FatalError": "0",
+            "ParityError": "0",
+            "LinkSpeedReduced": "0",
+            "NonFatalErrorCount": "1",
+            "ProgrammingInterface": "0",
+            "SubClassCode": "0"
+        },
+        {
+            "CorrectableError": "0",
+            "GroupPosition": "PCIeDevice_01011509",
+            "UncorrectableError": "1",
+            "UCEByBIOS": "0",
+            "SystemError": "0",
+            "DiagnosticFault": "0",
+            "PredictiveFault": "0",
+            "BandwidthReduction": "0",
+            "BaseClassCode": "18",
+            "FatalError": "0",
+            "ParityError": "0",
+            "LinkSpeedReduced": "0",
+            "NonFatalErrorCount": "1",
+            "ProgrammingInterface": "0",
+            "SubClassCode": "0"
+        },
+        {
+            "GroupPosition": "PCIeDevice_0101150A",
+            "DiagnosticFault": "0",
+            "PredictiveFault": "0",
+            "BandwidthReduction": "0",
+            "BaseClassCode": "18",
+            "UncorrectableError": "1",
+            "UCEByBIOS": "0",
+            "LinkSpeedReduced": "0",
+            "NonFatalErrorCount": "1",
+            "ProgrammingInterface": "0",
+            "SubClassCode": "0"
+        },
+        {
+            "GroupPosition": "PCIeDevice_0101150B",
+            "DiagnosticFault": "0",
+            "PredictiveFault": "0",
+            "BandwidthReduction": "0",
+            "BaseClassCode": "18",
+            "UncorrectableError": "1",
+            "UCEByBIOS": "0",
+            "LinkSpeedReduced": "0",
+            "NonFatalErrorCount": "1",
+            "ProgrammingInterface": "0",
+            "SubClassCode": "0"
+        },
+        {
+            "CorrectableError": "0",
+            "GroupPosition": "PCIeDevice_1_00",
+            "DiagnosticFault": "0",
+            "PredictiveFault": "0",
+            "BandwidthReduction": "0",
+            "FatalError": "0",
+            "SystemError": "0",
+            "LinkSpeedReduced": "0",
+            "UCEByBIOS": "0",
+            "UncorrectableError": "0",
+            "ParityError": "0"
+        }
+    ],
+    "t_pcie_load_info": [
+        {
+            "ID": "494408981",
+            "AuxID": "494432517",
+            "DevBus": "129",
+            "DevDevice": "0",
+            "DevFunction": "0",
+            "MultihostPresence": "1",
+            "Segment": "0",
+            "SlotID": "2",
+            "SocketID": "1",
+            "Type": "OCPCard"
+        },
+        {
+            "ID": "434493442",
+            "AuxID": "434454529",
+            "DevBus": "12",
+            "DevDevice": "0",
+            "DevFunction": "0",
+            "MultihostPresence": "1",
+            "Segment": "0",
+            "SlotID": "1",
+            "SocketID": "0",
+            "Type": "PCIeCard"
+        },
+        {
+            "ID": "434493442",
+            "AuxID": "434454529",
+            "DevBus": "150",
+            "DevDevice": "0",
+            "DevFunction": "0",
+            "MultihostPresence": "1",
+            "Segment": "0",
+            "SlotID": "10",
+            "SocketID": "1",
+            "Type": "PCIeCard"
+        },
+        {
+            "ID": "434493442",
+            "AuxID": "434454529",
+            "DevBus": "171",
+            "DevDevice": "0",
+            "DevFunction": "0",
+            "MultihostPresence": "1",
+            "Segment": "0",
+            "SlotID": "11",
+            "SocketID": "1",
+            "Type": "PCIeCard"
+        },
+        {
+            "ID": "434493442",
+            "AuxID": "434454529",
+            "DevBus": "8",
+            "DevDevice": "0",
+            "DevFunction": "0",
+            "MultihostPresence": "1",
+            "Segment": "0",
+            "SlotID": "2",
+            "SocketID": "0",
+            "Type": "PCIeCard"
+        },
+        {
+            "ID": "434493442",
+            "AuxID": "434454529",
+            "DevBus": "70",
+            "DevDevice": "0",
+            "DevFunction": "0",
+            "MultihostPresence": "1",
+            "Segment": "0",
+            "SlotID": "3",
+            "SocketID": "0",
+            "Type": "PCIeCard"
+        },
+        {
+            "ID": "434493442",
+            "AuxID": "434454529",
+            "DevBus": "66",
+            "DevDevice": "0",
+            "DevFunction": "0",
+            "MultihostPresence": "1",
+            "Segment": "0",
+            "SlotID": "4",
+            "SocketID": "0",
+            "Type": "PCIeCard"
+        },
+        {
+            "ID": "268439778",
+            "AuxID": "268451840",
+            "DevBus": "131",
+            "DevDevice": "0",
+            "DevFunction": "0",
+            "MultihostPresence": "1",
+            "Segment": "0",
+            "SlotID": "6",
+            "SocketID": "1",
+            "Type": "PCIeCard"
+        },
+        {
+            "ID": "434493442",
+            "AuxID": "434454529",
+            "DevBus": "214",
+            "DevDevice": "0",
+            "DevFunction": "0",
+            "MultihostPresence": "1",
+            "Segment": "0",
+            "SlotID": "8",
+            "SocketID": "1",
+            "Type": "PCIeCard"
+        },
+        {
+            "ID": "434493442",
+            "AuxID": "434454529",
+            "DevBus": "193",
+            "DevDevice": "0",
+            "DevFunction": "0",
+            "MultihostPresence": "1",
+            "Segment": "0",
+            "SlotID": "9",
+            "SocketID": "1",
+            "Type": "PCIeCard"
+        }
+    ],
+    "t_pcie_ras_collector": [
+        {
+            "CorrectableError": "0",
+            "TimeoutError": "0",
+            "DevBus": "213",
+            "DevDevice": "0",
+            "DevFunction": "0",
+            "ParityError": "0",
+            "BandwidthReduction": "0",
+            "CorrectableErrorOverfrequency": "0",
+            "FatalError": "0",
+            "DevSegment": "0",
+            "LinkSpeedReduced": "0",
+            "SystemError": "0",
+            "UncorrectableError": "1",
+            "Id": "1"
+        }
+    ],
+    "t_cpu_ras": [
+        {
+            "FirmwareMismatched": "0",
+            "InterConnectionLaneErrorMask": "0",
+            "InterConnectionLaneFault": "0",
+            "IsolatedCoreId": "",
+            "LogicalId": "0",
+            "ConfigErrorCode": "",
+            "ConfigErrorType": "0",
+            "SystemId": "1",
+            "ModelMismatched": "0",
+            "CacheWayErrorMask": "0"
+        },
+        {
+            "FirmwareMismatched": "0",
+            "InterConnectionLaneErrorMask": "0",
+            "InterConnectionLaneFault": "0",
+            "IsolatedCoreId": "",
+            "LogicalId": "1",
+            "ConfigErrorCode": "",
+            "ConfigErrorType": "0",
+            "SystemId": "1",
+            "ModelMismatched": "0",
+            "CacheWayErrorMask": "0"
+        }
+    ],
+    "t_fdm_service": [
+        {
+            "SystemId": "1",
+            "RecordSel": "8"
+        }
+    ],
+    "t_serial_management": [
+        {
+            "Id": "2",
+            "ConnectStatusResetPer": "0"
+        },
+        {
+            "Id": "3",
+            "ConnectStatusResetPer": "0"
+        },
+        {
+            "Id": "4",
+            "ConnectStatusResetPer": "0"
+        },
+        {
+            "Id": "5",
+            "ConnectStatusResetPer": "0"
+        }
+    ],
+    "t_system_ras": [
+        {
+            "MemoryConfigErrorCode": "",
+            "MemoryConfigErrorType": "0",
+            "NoMemoryDetectedInPOST": "0",
+            "SystemId": "1"
+        }
+    ],
+    "t_optical_module": [
+        {
+            "NetworkAdapterId": "chassisNIC1(SF223D-H)",
+            "PortID": "0",
+            "Presence": "1"
+        },
+        {
+            "NetworkAdapterId": "chassisNIC1(SF223D-H)",
+            "PortID": "1",
+            "Presence": "1"
+        }
+    ],
+    "t_smbios_info": [
+        {
+            "SmBiosUpdatedFlag": "1",
+            "Id": "SmBios",
+            "SmBiosStatus": "3"
+        }
+    ],
+    "t_energy_metric_persistence": [
+        {
+            "ACBootPSCount": "3",
+            "Id": "1"
+        }
+    ],
+    "t_memory_ras": [
+        {
+            "LogicalCpuId": "0",
+            "LogicalChannelId": "0",
+            "SystemId": "1",
+            "DimmId": "0",
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "PredictiveFault": "0",
+            "ScrubingUncorrectableECC": "0",
+            "ParityError": "0",
+            "ConfigErrorCode": "",
+            "PoorContactFault": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "CorrectableECCStorm": "0"
+        },
+        {
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "CurrentPeriodUncorrectableECCErrorCount": "0",
+            "DataPoisoned": "0",
+            "LastIsolationStatus": "0",
+            "ConfigErrorCode": "",
+            "ConfigErrorType": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "LogicalChannelId": "0",
+            "LogicalCpuId": "0",
+            "DimmId": "1",
+            "SystemId": "1",
+            "ParityError": "0",
+            "ScrubingUncorrectableECC": "0",
+            "PredictiveFault": "0",
+            "PoorContactFault": "0",
+            "CorrectableECCStorm": "0",
+            "LastIsolationType": "255"
+        },
+        {
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "CurrentPeriodUncorrectableECCErrorCount": "0",
+            "DataPoisoned": "0",
+            "LastIsolationStatus": "0",
+            "ConfigErrorCode": "",
+            "ConfigErrorType": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "LogicalChannelId": "1",
+            "LogicalCpuId": "0",
+            "DimmId": "0",
+            "SystemId": "1",
+            "ParityError": "0",
+            "ScrubingUncorrectableECC": "0",
+            "PredictiveFault": "0",
+            "PoorContactFault": "0",
+            "CorrectableECCStorm": "0",
+            "LastIsolationType": "255"
+        },
+        {
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "CurrentPeriodUncorrectableECCErrorCount": "0",
+            "DataPoisoned": "0",
+            "LastIsolationStatus": "0",
+            "ConfigErrorCode": "",
+            "ConfigErrorType": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "LogicalChannelId": "1",
+            "LogicalCpuId": "0",
+            "DimmId": "1",
+            "SystemId": "1",
+            "ParityError": "0",
+            "ScrubingUncorrectableECC": "0",
+            "PredictiveFault": "0",
+            "PoorContactFault": "0",
+            "CorrectableECCStorm": "0",
+            "LastIsolationType": "255"
+        },
+        {
+            "LogicalCpuId": "0",
+            "LogicalChannelId": "2",
+            "SystemId": "1",
+            "DimmId": "0",
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "PredictiveFault": "0",
+            "ScrubingUncorrectableECC": "0",
+            "ParityError": "0",
+            "ConfigErrorCode": "",
+            "PoorContactFault": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "CorrectableECCStorm": "0"
+        },
+        {
+            "LogicalCpuId": "0",
+            "LogicalChannelId": "2",
+            "SystemId": "1",
+            "DimmId": "1",
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "PredictiveFault": "0",
+            "ScrubingUncorrectableECC": "0",
+            "ParityError": "0",
+            "ConfigErrorCode": "",
+            "PoorContactFault": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "CorrectableECCStorm": "0"
+        },
+        {
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "CurrentPeriodUncorrectableECCErrorCount": "0",
+            "DataPoisoned": "0",
+            "LastIsolationStatus": "0",
+            "ConfigErrorCode": "",
+            "ConfigErrorType": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "LogicalChannelId": "3",
+            "LogicalCpuId": "0",
+            "DimmId": "0",
+            "SystemId": "1",
+            "ParityError": "0",
+            "ScrubingUncorrectableECC": "0",
+            "PredictiveFault": "0",
+            "PoorContactFault": "0",
+            "CorrectableECCStorm": "0",
+            "LastIsolationType": "255"
+        },
+        {
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "CurrentPeriodUncorrectableECCErrorCount": "0",
+            "DataPoisoned": "0",
+            "LastIsolationStatus": "0",
+            "ConfigErrorCode": "",
+            "ConfigErrorType": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "LogicalChannelId": "3",
+            "LogicalCpuId": "0",
+            "DimmId": "1",
+            "SystemId": "1",
+            "ParityError": "0",
+            "ScrubingUncorrectableECC": "0",
+            "PredictiveFault": "0",
+            "PoorContactFault": "0",
+            "CorrectableECCStorm": "0",
+            "LastIsolationType": "255"
+        },
+        {
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "CurrentPeriodUncorrectableECCErrorCount": "0",
+            "DataPoisoned": "0",
+            "LastIsolationStatus": "0",
+            "ConfigErrorCode": "",
+            "ConfigErrorType": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "LogicalChannelId": "4",
+            "LogicalCpuId": "0",
+            "DimmId": "0",
+            "SystemId": "1",
+            "ParityError": "0",
+            "ScrubingUncorrectableECC": "0",
+            "PredictiveFault": "0",
+            "PoorContactFault": "0",
+            "CorrectableECCStorm": "0",
+            "LastIsolationType": "255"
+        },
+        {
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "CurrentPeriodUncorrectableECCErrorCount": "0",
+            "DataPoisoned": "0",
+            "LastIsolationStatus": "0",
+            "ConfigErrorCode": "",
+            "ConfigErrorType": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "LogicalChannelId": "4",
+            "LogicalCpuId": "0",
+            "DimmId": "1",
+            "SystemId": "1",
+            "ParityError": "0",
+            "ScrubingUncorrectableECC": "0",
+            "PredictiveFault": "0",
+            "PoorContactFault": "0",
+            "CorrectableECCStorm": "0",
+            "LastIsolationType": "255"
+        },
+        {
+            "LogicalCpuId": "0",
+            "LogicalChannelId": "5",
+            "SystemId": "1",
+            "DimmId": "0",
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "PredictiveFault": "0",
+            "ScrubingUncorrectableECC": "0",
+            "ParityError": "0",
+            "ConfigErrorCode": "",
+            "PoorContactFault": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "CorrectableECCStorm": "0"
+        },
+        {
+            "LogicalCpuId": "0",
+            "LogicalChannelId": "5",
+            "SystemId": "1",
+            "DimmId": "1",
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "PredictiveFault": "0",
+            "ScrubingUncorrectableECC": "0",
+            "ParityError": "0",
+            "ConfigErrorCode": "",
+            "PoorContactFault": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "CorrectableECCStorm": "0"
+        },
+        {
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "CurrentPeriodUncorrectableECCErrorCount": "0",
+            "DataPoisoned": "0",
+            "LastIsolationStatus": "0",
+            "ConfigErrorCode": "",
+            "ConfigErrorType": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "LogicalChannelId": "6",
+            "LogicalCpuId": "0",
+            "DimmId": "0",
+            "SystemId": "1",
+            "ParityError": "0",
+            "ScrubingUncorrectableECC": "0",
+            "PredictiveFault": "0",
+            "PoorContactFault": "0",
+            "CorrectableECCStorm": "0",
+            "LastIsolationType": "255"
+        },
+        {
+            "LogicalCpuId": "0",
+            "LogicalChannelId": "6",
+            "SystemId": "1",
+            "DimmId": "1",
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "PredictiveFault": "0",
+            "ScrubingUncorrectableECC": "0",
+            "ParityError": "0",
+            "ConfigErrorCode": "",
+            "PoorContactFault": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "CorrectableECCStorm": "0"
+        },
+        {
+            "LogicalCpuId": "0",
+            "LogicalChannelId": "7",
+            "SystemId": "1",
+            "DimmId": "0",
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "PredictiveFault": "0",
+            "ScrubingUncorrectableECC": "0",
+            "ParityError": "0",
+            "ConfigErrorCode": "",
+            "PoorContactFault": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "CorrectableECCStorm": "0"
+        },
+        {
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "CurrentPeriodUncorrectableECCErrorCount": "0",
+            "DataPoisoned": "0",
+            "LastIsolationStatus": "0",
+            "ConfigErrorCode": "",
+            "ConfigErrorType": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "LogicalChannelId": "7",
+            "LogicalCpuId": "0",
+            "DimmId": "1",
+            "SystemId": "1",
+            "ParityError": "0",
+            "ScrubingUncorrectableECC": "0",
+            "PredictiveFault": "0",
+            "PoorContactFault": "0",
+            "CorrectableECCStorm": "0",
+            "LastIsolationType": "255"
+        },
+        {
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "CurrentPeriodUncorrectableECCErrorCount": "0",
+            "DataPoisoned": "0",
+            "LastIsolationStatus": "0",
+            "ConfigErrorCode": "",
+            "ConfigErrorType": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "LogicalChannelId": "0",
+            "LogicalCpuId": "1",
+            "DimmId": "0",
+            "SystemId": "1",
+            "ParityError": "0",
+            "ScrubingUncorrectableECC": "0",
+            "PredictiveFault": "0",
+            "PoorContactFault": "0",
+            "CorrectableECCStorm": "0",
+            "LastIsolationType": "255"
+        },
+        {
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "CurrentPeriodUncorrectableECCErrorCount": "0",
+            "DataPoisoned": "0",
+            "LastIsolationStatus": "0",
+            "ConfigErrorCode": "",
+            "ConfigErrorType": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "LogicalChannelId": "0",
+            "LogicalCpuId": "1",
+            "DimmId": "1",
+            "SystemId": "1",
+            "ParityError": "0",
+            "ScrubingUncorrectableECC": "0",
+            "PredictiveFault": "0",
+            "PoorContactFault": "0",
+            "CorrectableECCStorm": "0",
+            "LastIsolationType": "255"
+        },
+        {
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "CurrentPeriodUncorrectableECCErrorCount": "0",
+            "DataPoisoned": "0",
+            "LastIsolationStatus": "0",
+            "ConfigErrorCode": "",
+            "ConfigErrorType": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "LogicalChannelId": "1",
+            "LogicalCpuId": "1",
+            "DimmId": "0",
+            "SystemId": "1",
+            "ParityError": "0",
+            "ScrubingUncorrectableECC": "0",
+            "PredictiveFault": "0",
+            "PoorContactFault": "0",
+            "CorrectableECCStorm": "0",
+            "LastIsolationType": "255"
+        },
+        {
+            "LogicalCpuId": "1",
+            "LogicalChannelId": "1",
+            "SystemId": "1",
+            "DimmId": "1",
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "PredictiveFault": "0",
+            "ScrubingUncorrectableECC": "0",
+            "ParityError": "0",
+            "ConfigErrorCode": "",
+            "PoorContactFault": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "CorrectableECCStorm": "0"
+        },
+        {
+            "LogicalCpuId": "1",
+            "LogicalChannelId": "2",
+            "SystemId": "1",
+            "DimmId": "0",
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "PredictiveFault": "0",
+            "ScrubingUncorrectableECC": "0",
+            "ParityError": "0",
+            "ConfigErrorCode": "",
+            "PoorContactFault": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "CorrectableECCStorm": "0"
+        },
+        {
+            "LogicalCpuId": "1",
+            "LogicalChannelId": "2",
+            "SystemId": "1",
+            "DimmId": "1",
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "PredictiveFault": "0",
+            "ScrubingUncorrectableECC": "0",
+            "ParityError": "0",
+            "ConfigErrorCode": "",
+            "PoorContactFault": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "CorrectableECCStorm": "0"
+        },
+        {
+            "LogicalCpuId": "1",
+            "LogicalChannelId": "3",
+            "SystemId": "1",
+            "DimmId": "0",
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "PredictiveFault": "0",
+            "ScrubingUncorrectableECC": "0",
+            "ParityError": "0",
+            "ConfigErrorCode": "",
+            "PoorContactFault": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "CorrectableECCStorm": "0"
+        },
+        {
+            "LogicalCpuId": "1",
+            "LogicalChannelId": "3",
+            "SystemId": "1",
+            "DimmId": "1",
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "PredictiveFault": "0",
+            "ScrubingUncorrectableECC": "0",
+            "ParityError": "0",
+            "ConfigErrorCode": "",
+            "PoorContactFault": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "CorrectableECCStorm": "0"
+        },
+        {
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "CurrentPeriodUncorrectableECCErrorCount": "0",
+            "DataPoisoned": "0",
+            "LastIsolationStatus": "0",
+            "ConfigErrorCode": "",
+            "ConfigErrorType": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "LogicalChannelId": "4",
+            "LogicalCpuId": "1",
+            "DimmId": "0",
+            "SystemId": "1",
+            "ParityError": "0",
+            "ScrubingUncorrectableECC": "0",
+            "PredictiveFault": "0",
+            "PoorContactFault": "0",
+            "CorrectableECCStorm": "0",
+            "LastIsolationType": "255"
+        },
+        {
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "CurrentPeriodUncorrectableECCErrorCount": "0",
+            "DataPoisoned": "0",
+            "LastIsolationStatus": "0",
+            "ConfigErrorCode": "",
+            "ConfigErrorType": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "LogicalChannelId": "4",
+            "LogicalCpuId": "1",
+            "DimmId": "1",
+            "SystemId": "1",
+            "ParityError": "0",
+            "ScrubingUncorrectableECC": "0",
+            "PredictiveFault": "0",
+            "PoorContactFault": "0",
+            "CorrectableECCStorm": "0",
+            "LastIsolationType": "255"
+        },
+        {
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "CurrentPeriodUncorrectableECCErrorCount": "0",
+            "DataPoisoned": "0",
+            "LastIsolationStatus": "0",
+            "ConfigErrorCode": "",
+            "ConfigErrorType": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "LogicalChannelId": "5",
+            "LogicalCpuId": "1",
+            "DimmId": "0",
+            "SystemId": "1",
+            "ParityError": "0",
+            "ScrubingUncorrectableECC": "0",
+            "PredictiveFault": "0",
+            "PoorContactFault": "0",
+            "CorrectableECCStorm": "0",
+            "LastIsolationType": "255"
+        },
+        {
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "CurrentPeriodUncorrectableECCErrorCount": "0",
+            "DataPoisoned": "0",
+            "LastIsolationStatus": "0",
+            "ConfigErrorCode": "",
+            "ConfigErrorType": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "LogicalChannelId": "5",
+            "LogicalCpuId": "1",
+            "DimmId": "1",
+            "SystemId": "1",
+            "ParityError": "0",
+            "ScrubingUncorrectableECC": "0",
+            "PredictiveFault": "0",
+            "PoorContactFault": "0",
+            "CorrectableECCStorm": "0",
+            "LastIsolationType": "255"
+        },
+        {
+            "LogicalCpuId": "1",
+            "LogicalChannelId": "6",
+            "SystemId": "1",
+            "DimmId": "0",
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "PredictiveFault": "0",
+            "ScrubingUncorrectableECC": "0",
+            "ParityError": "0",
+            "ConfigErrorCode": "",
+            "PoorContactFault": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "CorrectableECCStorm": "0"
+        },
+        {
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "CurrentPeriodUncorrectableECCErrorCount": "0",
+            "DataPoisoned": "0",
+            "LastIsolationStatus": "0",
+            "ConfigErrorCode": "",
+            "ConfigErrorType": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "LogicalChannelId": "6",
+            "LogicalCpuId": "1",
+            "DimmId": "1",
+            "SystemId": "1",
+            "ParityError": "0",
+            "ScrubingUncorrectableECC": "0",
+            "PredictiveFault": "0",
+            "PoorContactFault": "0",
+            "CorrectableECCStorm": "0",
+            "LastIsolationType": "255"
+        },
+        {
+            "LogicalCpuId": "1",
+            "LogicalChannelId": "7",
+            "SystemId": "1",
+            "DimmId": "0",
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "PredictiveFault": "0",
+            "ScrubingUncorrectableECC": "0",
+            "ParityError": "0",
+            "ConfigErrorCode": "",
+            "PoorContactFault": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "CorrectableECCStorm": "0"
+        },
+        {
+            "LogicalCpuId": "1",
+            "LogicalChannelId": "7",
+            "SystemId": "1",
+            "DimmId": "1",
+            "CorrectableECCError": "0",
+            "CorrectableECCOverfrequencyCount": "0",
+            "CorrectableECCStormBurstCount": "0",
+            "PredictiveFault": "0",
+            "ScrubingUncorrectableECC": "0",
+            "ParityError": "0",
+            "ConfigErrorCode": "",
+            "PoorContactFault": "0",
+            "UncorrectableECCError": "0",
+            "CorrectableECC": "0",
+            "CorrectableECCOverflow": "0",
+            "CorrectableECCStorm": "0"
+        }
+    ]
+}

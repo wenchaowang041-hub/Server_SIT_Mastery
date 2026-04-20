@@ -1,0 +1,610 @@
+
+
+ps6 info
+| OnePower_0_01010F03:
+--| UpgradeSupported:       true
+--| RefSMCChip:
+--| PreAlarmStatus:       0
+--| AlarmStatus:       0
+--| UnsupportedProperties:
+--| RefFrudata:
+----| object_name:       OnePower_0_01010F03
+----| prop_name:       RefFrudata
+----| path:       /bmc/kepler/Systems/1/FruDatas/FruData_Ps_01010F03
+----| prop_cache:       false
+----| obj:
+------| extra_params:
+------| props:
+------| slot:       uninitialized
+------| interface:       bmc.kepler.FrudataService.Frudata
+------| service:       bmc.kepler.frudata
+------| methods:
+------| signals:
+------| bus:
+------| data:
+------| path:       /bmc/kepler/Systems/1/FruDatas/FruData_Ps_01010F03
+--| PhysicalInterface:       pmbus_crps3200t
+--| MainCircuitVINStatus:       255
+--| TPSUStatusLow:       0
+--| TPSUStatusHigh:       0
+--| EquipmentMode:       255
+--| ScanStatus:       15
+--| InputVoltageStatus:       0
+--| DeepSleepEnabled:       1
+--| SleepMode:       DeepSleep
+--| OverTemperature:       0
+--| OutputVoltageFault:       0
+--| OutputCurrentFault:       0
+--| LossOfInput:       0
+--| InputVoltageFault:       0
+--| FanFault:       0
+--| Fan2Fault:       0
+--| Fan1Fault:       0
+--| Failure:       0
+--| CommunicationStatus:       0
+--| OutputState:       1
+--| OtherStatus:       0
+--| CMLStatus:       0
+--| MfrSpecificStatus:       1
+--| NormalAndRedundancySupported:       false
+--| IsUpgrading:       false
+--| Health:       0
+--| BackupCircuitVINStatus:       255
+--| InputPowerWatts:       4
+--| OutputPowerWatts:       0
+--| InputFrequencyHz:       0
+--| RatedCurrentAmps:       0
+--| Rate:       2700
+--| OutputCurrentAmps:       0
+--| InputCurrentAmps:       0.09
+--| OutputVoltage:       11.74
+--| InputVoltage:       230
+--| InputVoltageType:       0
+--| RedundancyGroupId:       0
+--| WorkMode:       StandbySpare
+--| Manufacturer:       Great Wall
+--| LineInputVoltageType:       Unknown
+--| TotalRunningHours:       0
+--| IsPartOfSysPower:       true
+--| Position:       EXU
+--| SourceType:       1
+--| DMTFPowerSupplyType:       4
+--| ProductionDate:       2025-01-07
+--| DeviceLocator:       PSU6
+--| FirmwareVersion:       DC:1.0 PFC:1.00
+--| PartNumber:       CRPS2700D2    
+--| SerialNumber:       1P028734CC0000100    
+--| PowerSupplyChannel:       0
+--| Presence:       1
+--| PowerSupplyType:       1
+--| Model:       CRPS2700D2    
+--| RelaySwitchedCount:       0
+--| Protocol:       pmbus
+--| SlotNumber:       6
+--| CapacityMicrofarads:       0
+--| HardwareVersion:       
+--| DepthOfDischargeVolts:       0
+--| VOUTDebounceMilliseconds:       0
+--| PowerState:       N/A
+--| PowerLevel:       N/A
+--| EfficiencyCurve:
+--| OutputPowerLimitWatts:       0
+--| InnerTemperatureCelsius:       0
+--| InletTemperatureCelsius:       0
+--| SecondaryChipTemperatureCelsius:       27
+--| PrimaryChipTemperatureCelsius:       29
+--| EnvTemperatureCelsius:       28
+--| ClassName:       OnePower
+--| ObjectName:       OnePower_0_01010F03
+--| ObjectIdentifier:
+----| 1:       1
+----| 2:       1
+----| 3:       1
+----| 4:       01010F03
+ps5 info
+| OnePower_0_01010F02:
+--| UpgradeSupported:       true
+--| RefSMCChip:
+--| PreAlarmStatus:       0
+--| AlarmStatus:       0
+--| UnsupportedProperties:
+--| RefFrudata:
+----| object_name:       OnePower_0_01010F02
+----| prop_name:       RefFrudata
+----| path:       /bmc/kepler/Systems/1/FruDatas/FruData_Ps_01010F02
+----| prop_cache:       false
+----| obj:
+------| extra_params:
+------| props:
+------| slot:       uninitialized
+------| interface:       bmc.kepler.FrudataService.Frudata
+------| service:       bmc.kepler.frudata
+------| methods:
+------| signals:
+------| bus:
+------| data:
+------| path:       /bmc/kepler/Systems/1/FruDatas/FruData_Ps_01010F02
+--| PhysicalInterface:       pmbus_crps3200t
+--| MainCircuitVINStatus:       255
+--| TPSUStatusLow:       0
+--| TPSUStatusHigh:       0
+--| EquipmentMode:       255
+--| ScanStatus:       15
+--| InputVoltageStatus:       0
+--| DeepSleepEnabled:       1
+--| SleepMode:       DeepSleep
+--| OverTemperature:       0
+--| OutputVoltageFault:       0
+--| OutputCurrentFault:       0
+--| LossOfInput:       0
+--| InputVoltageFault:       0
+--| FanFault:       0
+--| Fan2Fault:       0
+--| Fan1Fault:       0
+--| Failure:       0
+--| CommunicationStatus:       0
+--| OutputState:       1
+--| OtherStatus:       0
+--| CMLStatus:       0
+--| MfrSpecificStatus:       1
+--| NormalAndRedundancySupported:       false
+--| IsUpgrading:       false
+--| Health:       0
+--| BackupCircuitVINStatus:       255
+--| InputPowerWatts:       4
+--| OutputPowerWatts:       0
+--| InputFrequencyHz:       0
+--| RatedCurrentAmps:       0
+--| Rate:       2700
+--| OutputCurrentAmps:       0
+--| InputCurrentAmps:       0.09
+--| OutputVoltage:       11.72
+--| InputVoltage:       230
+--| InputVoltageType:       0
+--| RedundancyGroupId:       0
+--| WorkMode:       StandbySpare
+--| Manufacturer:       Great Wall
+--| LineInputVoltageType:       Unknown
+--| TotalRunningHours:       0
+--| IsPartOfSysPower:       true
+--| Position:       EXU
+--| SourceType:       1
+--| DMTFPowerSupplyType:       4
+--| ProductionDate:       2025-01-07
+--| DeviceLocator:       PSU5
+--| FirmwareVersion:       DC:1.0 PFC:1.00
+--| PartNumber:       CRPS2700D2    
+--| SerialNumber:       1P028734CC0000098    
+--| PowerSupplyChannel:       0
+--| Presence:       1
+--| PowerSupplyType:       1
+--| Model:       CRPS2700D2    
+--| RelaySwitchedCount:       0
+--| Protocol:       pmbus
+--| SlotNumber:       5
+--| CapacityMicrofarads:       0
+--| HardwareVersion:       
+--| DepthOfDischargeVolts:       0
+--| VOUTDebounceMilliseconds:       0
+--| PowerState:       N/A
+--| PowerLevel:       N/A
+--| EfficiencyCurve:
+--| OutputPowerLimitWatts:       0
+--| InnerTemperatureCelsius:       0
+--| InletTemperatureCelsius:       0
+--| SecondaryChipTemperatureCelsius:       27
+--| PrimaryChipTemperatureCelsius:       29
+--| EnvTemperatureCelsius:       27
+--| ClassName:       OnePower
+--| ObjectName:       OnePower_0_01010F02
+--| ObjectIdentifier:
+----| 1:       1
+----| 2:       1
+----| 3:       1
+----| 4:       01010F02
+ps4 info
+| OnePower_0_01010F01:
+--| UpgradeSupported:       true
+--| RefSMCChip:
+--| PreAlarmStatus:       0
+--| AlarmStatus:       0
+--| UnsupportedProperties:
+--| RefFrudata:
+----| object_name:       OnePower_0_01010F01
+----| prop_name:       RefFrudata
+----| path:       /bmc/kepler/Systems/1/FruDatas/FruData_Ps_01010F01
+----| prop_cache:       false
+----| obj:
+------| extra_params:
+------| props:
+------| slot:       uninitialized
+------| interface:       bmc.kepler.FrudataService.Frudata
+------| service:       bmc.kepler.frudata
+------| methods:
+------| signals:
+------| bus:
+------| data:
+------| path:       /bmc/kepler/Systems/1/FruDatas/FruData_Ps_01010F01
+--| PhysicalInterface:       pmbus_crps3200t
+--| MainCircuitVINStatus:       255
+--| TPSUStatusLow:       0
+--| TPSUStatusHigh:       0
+--| EquipmentMode:       255
+--| ScanStatus:       15
+--| InputVoltageStatus:       0
+--| DeepSleepEnabled:       0
+--| SleepMode:       Normal
+--| OverTemperature:       0
+--| OutputVoltageFault:       0
+--| OutputCurrentFault:       0
+--| LossOfInput:       0
+--| InputVoltageFault:       0
+--| FanFault:       0
+--| Fan2Fault:       0
+--| Fan1Fault:       0
+--| Failure:       0
+--| CommunicationStatus:       0
+--| OutputState:       1
+--| OtherStatus:       0
+--| CMLStatus:       0
+--| MfrSpecificStatus:       1
+--| NormalAndRedundancySupported:       false
+--| IsUpgrading:       false
+--| Health:       0
+--| BackupCircuitVINStatus:       255
+--| InputPowerWatts:       403
+--| OutputPowerWatts:       396
+--| InputFrequencyHz:       0
+--| RatedCurrentAmps:       0
+--| Rate:       2700
+--| OutputCurrentAmps:       33.25
+--| InputCurrentAmps:       1.88
+--| OutputVoltage:       12.19
+--| InputVoltage:       229
+--| InputVoltageType:       0
+--| RedundancyGroupId:       0
+--| WorkMode:       Enabled
+--| Manufacturer:       Great Wall
+--| LineInputVoltageType:       Unknown
+--| TotalRunningHours:       0
+--| IsPartOfSysPower:       true
+--| Position:       EXU
+--| SourceType:       1
+--| DMTFPowerSupplyType:       4
+--| ProductionDate:       2025-01-07
+--| DeviceLocator:       PSU4
+--| FirmwareVersion:       DC:1.0 PFC:1.00
+--| PartNumber:       CRPS2700D2    
+--| SerialNumber:       1P028734CC0000104    
+--| PowerSupplyChannel:       0
+--| Presence:       1
+--| PowerSupplyType:       1
+--| Model:       CRPS2700D2    
+--| RelaySwitchedCount:       0
+--| Protocol:       pmbus
+--| SlotNumber:       4
+--| CapacityMicrofarads:       0
+--| HardwareVersion:       
+--| DepthOfDischargeVolts:       0
+--| VOUTDebounceMilliseconds:       0
+--| PowerState:       N/A
+--| PowerLevel:       N/A
+--| EfficiencyCurve:
+--| OutputPowerLimitWatts:       0
+--| InnerTemperatureCelsius:       0
+--| InletTemperatureCelsius:       0
+--| SecondaryChipTemperatureCelsius:       37
+--| PrimaryChipTemperatureCelsius:       34
+--| EnvTemperatureCelsius:       25
+--| ClassName:       OnePower
+--| ObjectName:       OnePower_0_01010F01
+--| ObjectIdentifier:
+----| 1:       1
+----| 2:       1
+----| 3:       1
+----| 4:       01010F01
+ps2 info
+| OnePower_0_01011002:
+--| UpgradeSupported:       true
+--| RefSMCChip:
+--| PreAlarmStatus:       0
+--| AlarmStatus:       0
+--| UnsupportedProperties:
+--| RefFrudata:
+----| object_name:       OnePower_0_01011002
+----| prop_name:       RefFrudata
+----| path:       /bmc/kepler/Systems/1/FruDatas/FruData_Ps_01011002
+----| prop_cache:       false
+----| obj:
+------| extra_params:
+------| props:
+------| slot:       uninitialized
+------| interface:       bmc.kepler.FrudataService.Frudata
+------| service:       bmc.kepler.frudata
+------| methods:
+------| signals:
+------| bus:
+------| data:
+------| path:       /bmc/kepler/Systems/1/FruDatas/FruData_Ps_01011002
+--| PhysicalInterface:       pmbus_crps3200t
+--| MainCircuitVINStatus:       255
+--| TPSUStatusLow:       0
+--| TPSUStatusHigh:       0
+--| EquipmentMode:       255
+--| ScanStatus:       15
+--| InputVoltageStatus:       0
+--| DeepSleepEnabled:       0
+--| SleepMode:       Normal
+--| OverTemperature:       0
+--| OutputVoltageFault:       0
+--| OutputCurrentFault:       0
+--| LossOfInput:       0
+--| InputVoltageFault:       0
+--| FanFault:       0
+--| Fan2Fault:       0
+--| Fan1Fault:       0
+--| Failure:       0
+--| CommunicationStatus:       0
+--| OutputState:       1
+--| OtherStatus:       0
+--| CMLStatus:       0
+--| MfrSpecificStatus:       1
+--| NormalAndRedundancySupported:       false
+--| IsUpgrading:       false
+--| Health:       0
+--| BackupCircuitVINStatus:       255
+--| InputPowerWatts:       281
+--| OutputPowerWatts:       262
+--| InputFrequencyHz:       0
+--| RatedCurrentAmps:       0
+--| Rate:       2700
+--| OutputCurrentAmps:       20.84
+--| InputCurrentAmps:       1.27
+--| OutputVoltage:       12.2
+--| InputVoltage:       228
+--| InputVoltageType:       0
+--| RedundancyGroupId:       0
+--| WorkMode:       Enabled
+--| Manufacturer:       Great Wall
+--| LineInputVoltageType:       Unknown
+--| TotalRunningHours:       0
+--| IsPartOfSysPower:       true
+--| Position:       EXU
+--| SourceType:       1
+--| DMTFPowerSupplyType:       4
+--| ProductionDate:       2025-03-07
+--| DeviceLocator:       PSU2
+--| FirmwareVersion:       DC:1.0 PFC:1.00
+--| PartNumber:       CRPS2700D2    
+--| SerialNumber:       1P108734CC0001534    
+--| PowerSupplyChannel:       0
+--| Presence:       1
+--| PowerSupplyType:       1
+--| Model:       CRPS2700D2    
+--| RelaySwitchedCount:       0
+--| Protocol:       pmbus
+--| SlotNumber:       2
+--| CapacityMicrofarads:       0
+--| HardwareVersion:       
+--| DepthOfDischargeVolts:       0
+--| VOUTDebounceMilliseconds:       0
+--| PowerState:       N/A
+--| PowerLevel:       N/A
+--| EfficiencyCurve:
+--| OutputPowerLimitWatts:       0
+--| InnerTemperatureCelsius:       0
+--| InletTemperatureCelsius:       0
+--| SecondaryChipTemperatureCelsius:       35
+--| PrimaryChipTemperatureCelsius:       33
+--| EnvTemperatureCelsius:       24
+--| ClassName:       OnePower
+--| ObjectName:       OnePower_0_01011002
+--| ObjectIdentifier:
+----| 1:       1
+----| 2:       1
+----| 3:       1
+----| 4:       01011002
+ps3 info
+| OnePower_0_01011003:
+--| UpgradeSupported:       true
+--| RefSMCChip:
+--| PreAlarmStatus:       0
+--| AlarmStatus:       0
+--| UnsupportedProperties:
+--| RefFrudata:
+----| object_name:       OnePower_0_01011003
+----| prop_name:       RefFrudata
+----| path:       /bmc/kepler/Systems/1/FruDatas/FruData_Ps_01011003
+----| prop_cache:       false
+----| obj:
+------| extra_params:
+------| props:
+------| slot:       uninitialized
+------| interface:       bmc.kepler.FrudataService.Frudata
+------| service:       bmc.kepler.frudata
+------| methods:
+------| signals:
+------| bus:
+------| data:
+------| path:       /bmc/kepler/Systems/1/FruDatas/FruData_Ps_01011003
+--| PhysicalInterface:       pmbus_crps3200t
+--| MainCircuitVINStatus:       255
+--| TPSUStatusLow:       0
+--| TPSUStatusHigh:       0
+--| EquipmentMode:       255
+--| ScanStatus:       15
+--| InputVoltageStatus:       0
+--| DeepSleepEnabled:       0
+--| SleepMode:       Normal
+--| OverTemperature:       0
+--| OutputVoltageFault:       0
+--| OutputCurrentFault:       0
+--| LossOfInput:       0
+--| InputVoltageFault:       0
+--| FanFault:       0
+--| Fan2Fault:       0
+--| Fan1Fault:       0
+--| Failure:       0
+--| CommunicationStatus:       0
+--| OutputState:       1
+--| OtherStatus:       0
+--| CMLStatus:       0
+--| MfrSpecificStatus:       1
+--| NormalAndRedundancySupported:       false
+--| IsUpgrading:       false
+--| Health:       0
+--| BackupCircuitVINStatus:       255
+--| InputPowerWatts:       257
+--| OutputPowerWatts:       253
+--| InputFrequencyHz:       0
+--| RatedCurrentAmps:       0
+--| Rate:       2700
+--| OutputCurrentAmps:       19.53
+--| InputCurrentAmps:       1.22
+--| OutputVoltage:       12.2
+--| InputVoltage:       227
+--| InputVoltageType:       0
+--| RedundancyGroupId:       0
+--| WorkMode:       Enabled
+--| Manufacturer:       Great Wall
+--| LineInputVoltageType:       Unknown
+--| TotalRunningHours:       0
+--| IsPartOfSysPower:       true
+--| Position:       EXU
+--| SourceType:       1
+--| DMTFPowerSupplyType:       4
+--| ProductionDate:       2025-01-07
+--| DeviceLocator:       PSU3
+--| FirmwareVersion:       DC:1.0 PFC:1.00
+--| PartNumber:       CRPS2700D2    
+--| SerialNumber:       1P028734CC0000101    
+--| PowerSupplyChannel:       0
+--| Presence:       1
+--| PowerSupplyType:       1
+--| Model:       CRPS2700D2    
+--| RelaySwitchedCount:       0
+--| Protocol:       pmbus
+--| SlotNumber:       3
+--| CapacityMicrofarads:       0
+--| HardwareVersion:       
+--| DepthOfDischargeVolts:       0
+--| VOUTDebounceMilliseconds:       0
+--| PowerState:       N/A
+--| PowerLevel:       N/A
+--| EfficiencyCurve:
+--| OutputPowerLimitWatts:       0
+--| InnerTemperatureCelsius:       0
+--| InletTemperatureCelsius:       0
+--| SecondaryChipTemperatureCelsius:       33
+--| PrimaryChipTemperatureCelsius:       32
+--| EnvTemperatureCelsius:       24
+--| ClassName:       OnePower
+--| ObjectName:       OnePower_0_01011003
+--| ObjectIdentifier:
+----| 1:       1
+----| 2:       1
+----| 3:       1
+----| 4:       01011003
+ps1 info
+| OnePower_0_01011001:
+--| UpgradeSupported:       true
+--| RefSMCChip:
+--| PreAlarmStatus:       0
+--| AlarmStatus:       0
+--| UnsupportedProperties:
+--| RefFrudata:
+----| object_name:       OnePower_0_01011001
+----| prop_name:       RefFrudata
+----| path:       /bmc/kepler/Systems/1/FruDatas/FruData_Ps_01011001
+----| prop_cache:       false
+----| obj:
+------| extra_params:
+------| props:
+------| slot:       uninitialized
+------| interface:       bmc.kepler.FrudataService.Frudata
+------| service:       bmc.kepler.frudata
+------| methods:
+------| signals:
+------| bus:
+------| data:
+------| path:       /bmc/kepler/Systems/1/FruDatas/FruData_Ps_01011001
+--| PhysicalInterface:       pmbus_crps3200t
+--| MainCircuitVINStatus:       255
+--| TPSUStatusLow:       0
+--| TPSUStatusHigh:       0
+--| EquipmentMode:       255
+--| ScanStatus:       15
+--| InputVoltageStatus:       0
+--| DeepSleepEnabled:       0
+--| SleepMode:       Normal
+--| OverTemperature:       0
+--| OutputVoltageFault:       0
+--| OutputCurrentFault:       0
+--| LossOfInput:       0
+--| InputVoltageFault:       0
+--| FanFault:       0
+--| Fan2Fault:       0
+--| Fan1Fault:       0
+--| Failure:       0
+--| CommunicationStatus:       0
+--| OutputState:       1
+--| OtherStatus:       0
+--| CMLStatus:       0
+--| MfrSpecificStatus:       1
+--| NormalAndRedundancySupported:       false
+--| IsUpgrading:       false
+--| Health:       0
+--| BackupCircuitVINStatus:       255
+--| InputPowerWatts:       260
+--| OutputPowerWatts:       238
+--| InputFrequencyHz:       0
+--| RatedCurrentAmps:       0
+--| Rate:       2700
+--| OutputCurrentAmps:       19.34
+--| InputCurrentAmps:       1.18
+--| OutputVoltage:       12.2
+--| InputVoltage:       228
+--| InputVoltageType:       0
+--| RedundancyGroupId:       0
+--| WorkMode:       Enabled
+--| Manufacturer:       Great Wall
+--| LineInputVoltageType:       Unknown
+--| TotalRunningHours:       0
+--| IsPartOfSysPower:       true
+--| Position:       EXU
+--| SourceType:       1
+--| DMTFPowerSupplyType:       4
+--| ProductionDate:       2025-03-07
+--| DeviceLocator:       PSU1
+--| FirmwareVersion:       DC:1.0 PFC:1.00
+--| PartNumber:       CRPS2700D2    
+--| SerialNumber:       1P108734CC0001539    
+--| PowerSupplyChannel:       0
+--| Presence:       1
+--| PowerSupplyType:       1
+--| Model:       CRPS2700D2    
+--| RelaySwitchedCount:       0
+--| Protocol:       pmbus
+--| SlotNumber:       1
+--| CapacityMicrofarads:       0
+--| HardwareVersion:       
+--| DepthOfDischargeVolts:       0
+--| VOUTDebounceMilliseconds:       0
+--| PowerState:       N/A
+--| PowerLevel:       N/A
+--| EfficiencyCurve:
+--| OutputPowerLimitWatts:       0
+--| InnerTemperatureCelsius:       0
+--| InletTemperatureCelsius:       0
+--| SecondaryChipTemperatureCelsius:       33
+--| PrimaryChipTemperatureCelsius:       32
+--| EnvTemperatureCelsius:       24
+--| ClassName:       OnePower
+--| ObjectName:       OnePower_0_01011001
+--| ObjectIdentifier:
+----| 1:       1
+----| 2:       1
+----| 3:       1
+----| 4:       01011001
+
+

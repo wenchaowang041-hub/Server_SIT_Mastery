@@ -1,0 +1,106 @@
+{
+    ":00000008": {
+        "task": 1,
+        "name": "snlua hica/subsys/interface/service/main",
+        "cpu": 0.189856,
+        "mqlen": 0,
+        "memory": "457.07 Kb",
+        "message": 136
+    },
+    ":00000012": {
+        "message": 37995,
+        "name": "snlua route_mapper/worker_service/main",
+        "cpu": 16.697219,
+        "mqlen": 0,
+        "memory": "10418.17 Kb",
+        "task": 1
+    },
+    ":00000009": {
+        "task": 0,
+        "name": "snlua sd_bus",
+        "cpu": 0.097485,
+        "mqlen": 0,
+        "memory": "689.06 Kb",
+        "message": 11
+    },
+    ":00000010": {
+        "message": 58444,
+        "name": "snlua route_mapper/worker_service/main",
+        "cpu": 232.709123,
+        "mqlen": 0,
+        "memory": "7137.52 Kb",
+        "task": 1
+    },
+    ":0000000c": {
+        "message": 11,
+        "name": "snlua hica/subsys/interface/service/redfish",
+        "cpu": 0.045589,
+        "mqlen": 0,
+        "memory": "705.54 Kb",
+        "task": 0
+    },
+    ":00000004": {
+        "task": 0,
+        "name": "snlua cdummy",
+        "cpu": 0.045022,
+        "mqlen": 0,
+        "memory": "669.47 Kb",
+        "message": 11
+    },
+    ":0000000d": {
+        "task": 0,
+        "name": "snlua hica/subsys/interface/service/web_backend",
+        "cpu": 0.757626,
+        "mqlen": 0,
+        "memory": "451.37 Kb",
+        "message": 3001
+    },
+    ":0000000e": {
+        "message": 3863988,
+        "name": "snlua redfish/service/portal_agent",
+        "cpu": 534.382942,
+        "mqlen": 0,
+        "memory": "9321.81 Kb",
+        "task": 10
+    },
+    ":0000000b": {
+        "task": 0,
+        "name": "snlua debug_console 0.0.0.0 40040",
+        "cpu": 0.053381,
+        "mqlen": 0,
+        "memory": "764.35 Kb",
+        "message": 8
+    },
+    ":00000007": {
+        "task": 1,
+        "name": "snlua service_mgr",
+        "cpu": 0.05111,
+        "mqlen": 0,
+        "memory": "702.37 Kb",
+        "message": 17
+    },
+    ":0000000a": {
+        "task": 2,
+        "name": "snlua harbor",
+        "cpu": 13.274938,
+        "mqlen": 0,
+        "memory": "934.74 Kb",
+        "message": 42426
+    },
+    ":0000000f": {
+        "message": 101092,
+        "name": "snlua web_backend/service/portal_agent",
+        "cpu": 130.723071,
+        "mqlen": 0,
+        "memory": "5798.36 Kb",
+        "task": 7
+    },
+    ":00000006": {
+        "message": 6,
+        "name": "snlua datacenterd",
+        "cpu": 0.042711,
+        "mqlen": 0,
+        "memory": "664.92 Kb",
+        "task": 0
+    }
+}

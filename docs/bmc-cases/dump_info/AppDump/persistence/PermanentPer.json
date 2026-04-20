@@ -1,0 +1,118 @@
+{
+    "t_network_port": [
+        {
+            "PermanentMACAddress": "AC:DC:CA:7B:C3:62",
+            "PortID": 0,
+            "NetworkAdapterId": "PCIeCard4(SP670)"
+        },
+        {
+            "PermanentMACAddress": "2C:DA:3F:15:B5:0A",
+            "PortID": 0,
+            "NetworkAdapterId": "chassisNIC1(SF221Q)"
+        },
+        {
+            "PermanentMACAddress": "2C:DA:3F:15:B5:0A",
+            "PortID": 0,
+            "NetworkAdapterId": "chassisNIC1(SF223D-H)"
+        },
+        {
+            "PermanentMACAddress": "2C:DA:3F:15:B6:AE",
+            "PortID": "0",
+            "NetworkAdapterId": "chassisNIC2(SF221Q)"
+        },
+        {
+            "PermanentMACAddress": "00:00:00:00:00:00",
+            "PortID": 0,
+            "NetworkAdapterId": "chassisNIC2(SF223D-H)"
+        },
+        {
+            "PermanentMACAddress": "AC:DC:CA:7B:C3:63",
+            "PortID": 1,
+            "NetworkAdapterId": "PCIeCard4(SP670)"
+        },
+        {
+            "PermanentMACAddress": "2C:DA:3F:15:B5:0B",
+            "PortID": 1,
+            "NetworkAdapterId": "chassisNIC1(SF221Q)"
+        },
+        {
+            "PermanentMACAddress": "2C:DA:3F:15:B5:0B",
+            "PortID": 1,
+            "NetworkAdapterId": "chassisNIC1(SF223D-H)"
+        },
+        {
+            "PermanentMACAddress": "2C:DA:3F:15:B6:AF",
+            "PortID": "1",
+            "NetworkAdapterId": "chassisNIC2(SF221Q)"
+        },
+        {
+            "PermanentMACAddress": "00:00:00:00:00:00",
+            "PortID": 1,
+            "NetworkAdapterId": "chassisNIC2(SF223D-H)"
+        },
+        {
+            "PermanentMACAddress": "2C:DA:3F:15:B5:0C",
+            "PortID": 2,
+            "NetworkAdapterId": "chassisNIC1(SF221Q)"
+        },
+        {
+            "PermanentMACAddress": "2C:DA:3F:15:B6:B0",
+            "PortID": "2",
+            "NetworkAdapterId": "chassisNIC2(SF221Q)"
+        },
+        {
+            "PermanentMACAddress": "2C:DA:3F:15:B5:0D",
+            "PortID": 3,
+            "NetworkAdapterId": "chassisNIC1(SF221Q)"
+        },
+        {
+            "PermanentMACAddress": "2C:DA:3F:15:B6:B1",
+            "PortID": "3",
+            "NetworkAdapterId": "chassisNIC2(SF221Q)"
+        }
+    ],
+    "t_account_backup": [
+        {
+            "Enabled": 1,
+            "Id": 2,
+            "LoginInterface": 223,
+            "Password": "******",
+            "RoleId": 4,
+            "UserName": "Administrator"
+        },
+        {
+            "Enabled": 1,
+            "Id": 3,
+            "LoginInterface": 223,
+            "Password": "******",
+            "RoleId": 4,
+            "UserName": "ltest2"
+        },
+        {
+            "Enabled": 1,
+            "Id": 4,
+            "LoginInterface": 223,
+            "Password": "******",
+            "RoleId": 2,
+            "UserName": "test"
+        },
+        {
+            "Enabled": 1,
+            "Id": 5,
+            "LoginInterface": 223,
+            "Password": "******",
+            "RoleId": 4,
+            "UserName": "wangzy"
+        }
+    ],
+    "t_network_ethmac": [
+        {
+            "Mac": "94:d2:bc:29:bc:d5",
+            "EthId": "0"
+        },
+        {
+            "Mac": "94:d2:bc:29:bc:d4",
+            "EthId": "2"
+        }
+    ]
+}

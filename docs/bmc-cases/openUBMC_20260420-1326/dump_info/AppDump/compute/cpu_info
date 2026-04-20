@@ -1,0 +1,3 @@
+slot(col 1), presence(col 2), version(col 3),processor ID(col 4), core count(col 5), thread count(col 6), memory technology(col 7), L1 cache(col 8), L2 cache(col 9), L3 cache(col 10), part number(col 11), device name(col 12), location(col 13), SN(col 14)  
+Cpu1,present,Kunpeng 920 7260Z,20-D0-0F-48-00-00-00-00,64 cores,128 threads,64-bit Capable| Multi-Core| Hardware Thread| Execute Protection| Enhanced Virtualization| Power/Performance Control,8192 K,81920 K,114688 K,Unknown,CPU1,CpuBoard1,6B88F526202117DE
+Cpu2,present,Kunpeng 920 7260Z,20-D0-0F-48-00-00-00-00,64 cores,128 threads,64-bit Capable| Multi-Core| Hardware Thread| Execute Protection| Enhanced Virtualization| Power/Performance Control,8192 K,81920 K,114688 K,Unknown,CPU2,CpuBoard1,CA8975262081771D

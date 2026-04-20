@@ -1,0 +1,45 @@
+Device Name                             : Disk2
+Enclosure Id                            : 252
+Slot Number                             : 2
+Manufacturer                            : HUAWEI
+Serial Number                           : 034BBTN0Q3019512
+Model                                   : HWE62ST3480L003N
+Interface Type                          : SATA
+Media Type                              : SSD
+Timestamp                               : 2026-04-20 03:07:27
+-----------------------------------------------------------------------------------------
+SMART ATTRIBIUTE DATA version NO: 1
++-----+--------------------------------+--------+-------+-------+-----------+----------+-----------+-------------+--------------------------------+
+|  ID |       ATTRIBUTE_NAME           |  FLAG  | VALUE | WORST | THRESHOLD |   TYPE   |  UPDATED  | WHEN_FAILED |           RAW_VALUE            |
++-----+--------------------------------+--------+-------+-------+-----------+----------+-----------+-------------+--------------------------------+
+|   1 | Raw_Read_Error_Rate            | 0x0002 | 00100 | 00100 | 000       | Old_age  | Always    |     -       | 0                              |
+|   5 | Reallocated_Sectors_Count      | 0x0002 | 00100 | 00100 | 000       | Old_age  | Always    |     -       | 0                              |
+|   9 | Power_On_Hours                 | 0x0002 | 00100 | 00100 | 000       | Old_age  | Always    |     -       | 1677                           |
+|  12 | Power_Cycle_Count              | 0x0002 | 00100 | 00100 | 000       | Old_age  | Always    |     -       | 1068                           |
+| 160 | Unknown_Attribute              | 0x0002 | 00100 | 00100 | 000       | Old_age  | Always    |     -       | 0                              |
+| 161 | Unknown_Attribute              | 0x0002 | 00100 | 00100 | 000       | Old_age  | Always    |     -       | 302                            |
+| 163 | Unknown_Attribute              | 0x0000 | 00100 | 00100 | 000       | Old_age  | Offline   |     -       | 5                              |
+| 164 | Unknown_Attribute              | 0x0002 | 00100 | 00100 | 000       | Old_age  | Always    |     -       | 43713                          |
+| 165 | Unknown_Attribute              | 0x0002 | 00100 | 00100 | 000       | Old_age  | Always    |     -       | 62                             |
+| 166 | Unknown_Attribute              | 0x0002 | 00100 | 00100 | 000       | Old_age  | Always    |     -       | 20                             |
+| 167 | Unknown_Attribute              | 0x0002 | 00100 | 00100 | 000       | Old_age  | Always    |     -       | 44                             |
+| 168 | Unknown_Attribute              | 0x0003 | 00100 | 00100 | 060       | Pre-fail | Always    |     -       | 0                              |
+| 170 | Reserved_Block_Count           | 0x0002 | 00100 | 00100 | 000       | Old_age  | Always    |     -       | 0                              |
+| 177 | Wear_Leveling_Count            | 0x0002 | 00100 | 00100 | 000       | Old_age  | Always    |     -       | 7                              |
+| 181 | Program_Fail_Count_Total       | 0x0002 | 00100 | 00100 | 000       | Old_age  | Always    |     -       | 0                              |
+| 182 | Erase_Fail_Count_Total         | 0x0002 | 00100 | 00100 | 000       | Old_age  | Always    |     -       | 0                              |
+| 192 | Power-Off_Retract_Count        | 0x0002 | 00100 | 00100 | 000       | Old_age  | Always    |     -       | 541                            |
+| 194 | Temperature_Celsius            | 0x0002 | 00100 | 00100 | 060       | Old_age  | Always    |     -       | 37 (Lifetime Min/Max 26/64)    |
+| 195 | Hardware_ECC_Recovered         | 0x0002 | 00100 | 00100 | 000       | Old_age  | Always    |     -       | 200                            |
+| 197 | Current_Pending_Sector         | 0x0002 | 00100 | 00100 | 000       | Old_age  | Always    |     -       | 0                              |
+| 198 | Offline_Uncorrectable          | 0x0002 | 00100 | 00100 | 000       | Old_age  | Always    |     -       | 0                              |
+| 199 | UltraDMA_CRC_Error_Count       | 0x0002 | 00100 | 00100 | 000       | Old_age  | Always    |     -       | 0                              |
+| 231 | Drive_Temperature              | 0x0003 | 00100 | 00100 | 001       | Pre-fail | Always    |     -       | 100                            |
+| 232 | Avaliable_Reserved_Space       | 0x0003 | 00100 | 00100 | 060       | Pre-fail | Always    |     -       | 100                            |
+| 241 | Total_LBAS_Written             | 0x0002 | 00100 | 00100 | 000       | Old_age  | Always    |     -       | 87124                          |
+| 242 | Total_LBAS_Read                | 0x0002 | 00100 | 00100 | 000       | Old_age  | Always    |     -       | 203557                         |
+| 245 | SanDisk_SSD_Lifetim_Remain     | 0x0002 | 00100 | 00100 | 000       | Old_age  | Always    |     -       | 984521                         |
+| 250 | Read_Error_Retry_Rate          | 0x0002 | 00100 | 00100 | 000       | Old_age  | Always    |     -       | 3446                           |
+| 252 | Unknown_Attribute              | 0x0002 | 00100 | 00100 | 000       | Old_age  | Always    |     -       | 0                              |
+| 200 | Multi-Zone_Error_Rate          | 0x0003 | 00100 | 00100 | 060       | Pre-fail | Always    |     -       | 5235565592591                  |
++-----+--------------------------------+--------+-------+-------+-----------+----------+-----------+-------------+--------------------------------+

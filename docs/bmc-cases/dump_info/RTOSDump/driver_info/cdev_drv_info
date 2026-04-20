@@ -1,0 +1,60 @@
+cat /sys/module/bmc_cdev_drv/parameters/statistics
+============================CDEV_DRIVER_INFO=======================
+version      :3.28.03
+========================= CDEV SET 0 =========================
+running_time :0D 10:00:00
+===================================================
+name      :hwibmc0
+dev_id    :1ed00000
+type      :2
+status    :open
+send_pkgs :0
+send_bytes:0
+send_failed_count:0
+recv_pkgs :0
+recv_bytes:0
+recv_failed_count:0
+===================================================
+name      :hwibmc1
+dev_id    :1ec00000
+type      :3
+status    :open
+send_pkgs :0
+send_bytes:0
+send_failed_count:0
+recv_pkgs :0
+recv_bytes:0
+recv_failed_count:0
+===================================================
+name      :hwibmc2
+dev_id    :1eb00000
+type      :4
+status    :open
+send_pkgs :0
+send_bytes:0
+send_failed_count:0
+recv_pkgs :0
+recv_bytes:0
+recv_failed_count:0
+===================================================
+name      :hwibmc3
+dev_id    :1ea00000
+type      :5
+status    :open
+send_pkgs :0
+send_bytes:0
+send_failed_count:0
+recv_pkgs :0
+recv_bytes:0
+recv_failed_count:0
+===================================================
+name      :hwibmc2bios
+dev_id    :1e900000
+type      :2
+status    :close
+send_pkgs :0
+send_bytes:0
+send_failed_count:0
+recv_pkgs :0
+recv_bytes:0
+recv_failed_count:0

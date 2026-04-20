@@ -1,0 +1,170 @@
+{
+    ":0000000b": {
+        "cpu": 40.712787,
+        "name": "snlua bmc_time/service/main",
+        "task": 10,
+        "memory": "4522.33 Kb",
+        "mqlen": 0,
+        "message": 116015
+    },
+    ":00000013": {
+        "cpu": 8.441443,
+        "name": "snlua bmc_network/service/fusionpod",
+        "task": 1,
+        "memory": "2526.18 Kb",
+        "mqlen": 0,
+        "message": 37882
+    },
+    ":0000000d": {
+        "cpu": 18.157201,
+        "name": "snlua bmc_upgrade/service/main",
+        "task": 3,
+        "memory": "4368.16 Kb",
+        "mqlen": 0,
+        "message": 76544
+    },
+    ":0000000e": {
+        "cpu": 104.669439,
+        "name": "snlua fructrl/service/main",
+        "task": 4,
+        "memory": "5285.08 Kb",
+        "mqlen": 0,
+        "message": 183888
+    },
+    ":00000011": {
+        "cpu": 856.329007,
+        "name": "snlua ipmi_core/service/main",
+        "task": 6,
+        "memory": "8138.47 Kb",
+        "mqlen": 0,
+        "message": 1003804
+    },
+    ":00000014": {
+        "cpu": 0.042829,
+        "name": "snlua debug_console 0.0.0.0 40020",
+        "task": 0,
+        "memory": "727.00 Kb",
+        "mqlen": 0,
+        "message": 12
+    },
+    ":00000010": {
+        "cpu": 29.238011,
+        "name": "snlua bmc_health/service/main",
+        "task": 11,
+        "memory": "3487.70 Kb",
+        "mqlen": 0,
+        "message": 94069
+    },
+    ":00000015": {
+        "cpu": 16.871065,
+        "name": "snlua manufacture/service/main",
+        "task": 3,
+        "memory": "4555.69 Kb",
+        "mqlen": 0,
+        "message": 76480
+    },
+    ":0000001a": {
+        "cpu": 465.208588,
+        "name": "snlua ipmi_core/service/ipmb",
+        "task": 0,
+        "memory": "2659.81 Kb",
+        "mqlen": 0,
+        "message": 513555
+    },
+    ":00000018": {
+        "cpu": 0.25984,
+        "name": "snlua ipmi_core/service/btc",
+        "task": 0,
+        "memory": "1966.08 Kb",
+        "mqlen": 0,
+        "message": 108
+    },
+    ":00000017": {
+        "cpu": 2.080082,
+        "name": "snlua ipmi_core/service/btc",
+        "task": 0,
+        "memory": "2013.93 Kb",
+        "mqlen": 0,
+        "message": 2257
+    },
+    ":00000016": {
+        "cpu": 0.173809,
+        "name": "snlua ipmi_core/service/edma",
+        "task": 0,
+        "memory": "3300.40 Kb",
+        "mqlen": 0,
+        "message": 11
+    },
+    ":00000004": {
+        "cpu": 0.037317,
+        "name": "snlua cdummy",
+        "task": 0,
+        "memory": "642.48 Kb",
+        "mqlen": 0,
+        "message": 22
+    },
+    ":0000000c": {
+        "cpu": 19.638305,
+        "name": "snlua firmware_mgmt/service/main",
+        "task": 3,
+        "memory": "7612.50 Kb",
+        "mqlen": 0,
+        "message": 76699
+    },
+    ":00000007": {
+        "cpu": 0.046446,
+        "name": "snlua service_mgr",
+        "task": 1,
+        "memory": "465.16 Kb",
+        "mqlen": 0,
+        "message": 41
+    },
+    ":00000006": {
+        "cpu": 0.034886,
+        "name": "snlua datacenterd",
+        "task": 0,
+        "memory": "633.34 Kb",
+        "mqlen": 0,
+        "message": 10
+    },
+    ":00000008": {
+        "cpu": 0.132455,
+        "name": "snlua hica/subsys/bmc_core/service/main",
+        "task": 1,
+        "memory": "484.52 Kb",
+        "mqlen": 0,
+        "message": 148
+    },
+    ":0000000f": {
+        "cpu": 275.124306,
+        "name": "snlua bmc_network/service/main",
+        "task": 13,
+        "memory": "11012.90 Kb",
+        "mqlen": 0,
+        "message": 281158
+    },
+    ":00000009": {
+        "cpu": 0.094644,
+        "name": "snlua sd_bus",
+        "task": 0,
+        "memory": "656.42 Kb",
+        "mqlen": 0,
+        "message": 16
+    },
+    ":00000012": {
+        "cpu": 37.010505,
+        "name": "snlua bmc_soc/service/main",
+        "task": 8,
+        "memory": "6665.24 Kb",
+        "mqlen": 0,
+        "message": 124311
+    },
+    ":0000000a": {
+        "cpu": 13.543391,
+        "name": "snlua harbor",
+        "task": 2,
+        "memory": "855.13 Kb",
+        "mqlen": 0,
+        "message": 45419
+    }
+}

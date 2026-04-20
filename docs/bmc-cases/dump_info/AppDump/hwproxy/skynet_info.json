@@ -1,0 +1,250 @@
+{
+    ":0000001d": {
+        "task": 23,
+        "message": 7697374,
+        "cpu": 3397.308733,
+        "name": "snlua hwproxy/service/work I2c_7",
+        "mqlen": 3,
+        "memory": "3067.72 Kb"
+    },
+    ":00000022": {
+        "task": 1,
+        "message": 190799,
+        "cpu": 65.81568,
+        "name": "snlua hwproxy/service/work Jtag_1",
+        "mqlen": 0,
+        "memory": "2274.72 Kb"
+    },
+    ":00000012": {
+        "task": 1,
+        "message": 37986,
+        "cpu": 24.570872,
+        "name": "snlua hwdiscovery/service/parser_service",
+        "mqlen": 0,
+        "memory": "4246.00 Kb"
+    },
+    ":0000000d": {
+        "task": 1,
+        "message": 40482,
+        "cpu": 12.570805,
+        "name": "snlua soctrl/service/main",
+        "mqlen": 0,
+        "memory": "5767.79 Kb"
+    },
+    ":0000000f": {
+        "task": 58,
+        "message": 211694,
+        "cpu": 540.939182,
+        "name": "snlua maca/service/main",
+        "mqlen": 0,
+        "memory": "7902.08 Kb"
+    },
+    ":00000023": {
+        "task": 1,
+        "message": 190814,
+        "cpu": 66.085289,
+        "name": "snlua hwproxy/service/work JtagOverLocalBus_1",
+        "mqlen": 0,
+        "memory": "2086.81 Kb"
+    },
+    ":00000011": {
+        "task": 1,
+        "message": 39850,
+        "cpu": 29.659453,
+        "name": "snlua hwdiscovery/service/main",
+        "mqlen": 0,
+        "memory": "7889.49 Kb"
+    },
+    ":00000024": {
+        "task": 2,
+        "message": 203418,
+        "cpu": 77.447242,
+        "name": "snlua hwproxy/service/work Gpio_31",
+        "mqlen": 0,
+        "memory": "2246.03 Kb"
+    },
+    ":00000009": {
+        "task": 0,
+        "message": 18,
+        "cpu": 0.0946,
+        "name": "snlua sd_bus",
+        "mqlen": 0,
+        "memory": "657.03 Kb"
+    },
+    ":0000001e": {
+        "task": 4,
+        "message": 229551,
+        "cpu": 181.705208,
+        "name": "snlua hwproxy/service/work I2c_8",
+        "mqlen": 1,
+        "memory": "2383.51 Kb"
+    },
+    ":0000001a": {
+        "task": 26,
+        "message": 1177158,
+        "cpu": 1320.397837,
+        "name": "snlua hwproxy/service/work I2c_4",
+        "mqlen": 0,
+        "memory": "2654.11 Kb"
+    },
+    ":00000018": {
+        "task": 48,
+        "message": 2604986,
+        "cpu": 2290.132833,
+        "name": "snlua hwproxy/service/work I2c_2",
+        "mqlen": 0,
+        "memory": "3188.77 Kb"
+    },
+    ":00000014": {
+        "task": 2,
+        "message": 228365,
+        "cpu": 97.861049,
+        "name": "snlua hwproxy/service/work Gpio_74",
+        "mqlen": 0,
+        "memory": "2347.90 Kb"
+    },
+    ":00000004": {
+        "task": 0,
+        "message": 17,
+        "cpu": 0.037473,
+        "name": "snlua cdummy",
+        "mqlen": 0,
+        "memory": "638.71 Kb"
+    },
+    ":0000000e": {
+        "task": 3,
+        "message": 46205,
+        "cpu": 13.054119,
+        "name": "snlua key_mgmt/service/main",
+        "mqlen": 0,
+        "memory": "3341.47 Kb"
+    },
+    ":00000020": {
+        "task": 0,
+        "message": 1407,
+        "cpu": 0.507028,
+        "name": "snlua hwproxy/service/work I2c_11",
+        "mqlen": 0,
+        "memory": "2153.34 Kb"
+    },
+    ":00000017": {
+        "task": 5,
+        "message": 1264776,
+        "cpu": 1257.44961,
+        "name": "snlua hwproxy/service/work I2c_1",
+        "mqlen": 0,
+        "memory": "2809.33 Kb"
+    },
+    ":00000006": {
+        "task": 0,
+        "message": 12,
+        "cpu": 0.034424,
+        "name": "snlua datacenterd",
+        "mqlen": 0,
+        "memory": "633.96 Kb"
+    },
+    ":0000000b": {
+        "task": 0,
+        "message": 14,
+        "cpu": 0.041201,
+        "name": "snlua debug_console 0.0.0.0 40010",
+        "mqlen": 0,
+        "memory": "727.61 Kb"
+    },
+    ":00000016": {
+        "task": 20,
+        "message": 7518266,
+        "cpu": 2195.251989,
+        "name": "snlua hwproxy/service/work Hisport",
+        "mqlen": 5,
+        "memory": "3051.34 Kb"
+    },
+    ":0000001c": {
+        "task": 1,
+        "message": 190812,
+        "cpu": 83.270688,
+        "name": "snlua hwproxy/service/work I2c_6",
+        "mqlen": 0,
+        "memory": "2375.39 Kb"
+    },
+    ":00000007": {
+        "task": 0,
+        "message": 39,
+        "cpu": 0.048331,
+        "name": "snlua service_mgr",
+        "mqlen": 0,
+        "memory": "460.88 Kb"
+    },
+    ":0000000c": {
+        "task": 5,
+        "message": 492920,
+        "cpu": 232.56177,
+        "name": "snlua persistence/service/main",
+        "mqlen": 0,
+        "memory": "3667.88 Kb"
+    },
+    ":00000019": {
+        "task": 12,
+        "message": 1971288,
+        "cpu": 2604.225815,
+        "name": "snlua hwproxy/service/work I2c_3",
+        "mqlen": 0,
+        "memory": "2547.88 Kb"
+    },
+    ":00000010": {
+        "task": 53,
+        "message": 8031710,
+        "cpu": 4300.188946,
+        "name": "snlua hwproxy/service/main",
+        "mqlen": 0,
+        "memory": "27320.16 Kb"
+    },
+    ":00000013": {
+        "task": 64,
+        "message": 367878,
+        "cpu": 66.756416,
+        "name": "snlua hwproxy/service/monitor",
+        "mqlen": 0,
+        "memory": "2210.91 Kb"
+    },
+    ":0000000a": {
+        "task": 1,
+        "message": 47588,
+        "cpu": 15.398561,
+        "name": "snlua harbor",
+        "mqlen": 0,
+        "memory": "884.71 Kb"
+    },
+    ":0000001b": {
+        "task": 67,
+        "message": 1784199,
+        "cpu": 2876.898111,
+        "name": "snlua hwproxy/service/work I2c_5",
+        "mqlen": 0,
+        "memory": "2927.06 Kb"
+    },
+    ":00000008": {
+        "task": 1,
+        "message": 146,
+        "cpu": 0.148036,
+        "name": "snlua hica/subsys/framework/service/main",
+        "mqlen": 0,
+        "memory": "474.52 Kb"
+    },
+    ":0000001f": {
+        "task": 18,
+        "message": 827694,
+        "cpu": 1157.778956,
+        "name": "snlua hwproxy/service/work I2c_9",
+        "mqlen": 0,
+        "memory": "2554.43 Kb"
+    },
+    ":00000015": {
+        "task": 1,
+        "message": 190832,
+        "cpu": 65.523231,
+        "name": "snlua hwproxy/service/work Gpio_56",
+        "mqlen": 0,
+        "memory": "2246.28 Kb"
+    }
+}

@@ -1,0 +1,389 @@
+2026-04-19 07:44:31 Start collect info
+2026-04-20 02:55:29 Start collect info
+[    0.022154] CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+[    0.022163] CPU features: detected: CRC32 instructions
+[    0.022171] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+[    0.022180] CPU features: detected: 32-bit EL1 Support
+[    0.022191] CPU features: detected: RCpc load-acquire (LDAPR)
+[    0.022917] CPU: All CPU(s) started at EL2
+[    0.022990] alternatives: patching kernel code
+[    0.024354] devtmpfs: initialized
+[    0.028818] KASLR enabled
+[    0.029667] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.029725] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+[    0.029933] kworker/u8:0 (32) used greatest stack depth: 12992 bytes left
+[    0.030294] pinctrl core: initialized pinctrl subsystem
+[    0.031191] DMI not present or invalid.
+[    0.031297] softdog_kthread_create
+[    0.032275] NET: Registered protocol family 16
+[    0.033436] DMA: preallocated 256 KiB GFP_KERNEL pool for atomic allocations
+[    0.033511] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.033643] audit: initializing netlink subsys (disabled)
+[    0.033878] audit cpu affinity init success
+[    0.033986] audit: type=2000 audit(0.020:1): state=initialized audit_enabled=0 res=1
+[    0.035054] thermal_sys: Registered thermal governor 'step_wise'
+[    0.035975] cpuidle: using governor ladder
+[    0.036178] cpuidle: using governor menu
+[    0.036394] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.036642] ASID allocator initialised with 65536 entries
+[    0.036984] Serial: AMBA PL011 UART driver
+[    0.090648] HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.090675] HugeTLB registered 32.0 MiB page size, pre-allocated 0 pages
+[    0.090686] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.090696] HugeTLB registered 64.0 KiB page size, pre-allocated 0 pages
+[    0.094938] ACPI: Interpreter disabled.
+[    0.095071] iommu: Default domain type: Translated 
+[    0.096567] NetLabel: Initializing
+[    0.096599] NetLabel:  domain hash size = 128
+[    0.096608] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.096706] NetLabel:  unlabeled traffic allowed by default
+[    0.097726] clocksource: Switched to clocksource arch_sys_counter
+[    0.142073] VFS: Disk quotas dquot_6.6.0
+[    0.142183] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.142652] pnp: PnP ACPI: disabled
+[    0.161902] NET: Registered protocol family 2
+[    0.162178] IP idents hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.164155] tcp_listen_portaddr_hash hash table entries: 1024 (order: 3, 40960 bytes, linear)
+[    0.164219] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.164294] TCP established hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.164438] TCP bind hash table entries: 16384 (order: 7, 524288 bytes, linear)
+[    0.164663] TCP: Hash tables configured (established 16384 bind 16384)
+[    0.164876] UDP hash table entries: 1024 (order: 4, 98304 bytes, linear)
+[    0.164997] UDP-Lite hash table entries: 1024 (order: 4, 98304 bytes, linear)
+[    0.165348] NET: Registered protocol family 1
+[    0.165403] PCI: CLS 0 bytes, default 64
+[    0.165708] Trying to unpack rootfs image as initramfs...
+[    0.396404] Freeing initrd memory: 5120K
+[    0.397076] kvm [1]: KVM ncsnp disabled
+[    0.397095] kvm [1]: KVM dvmbm disabled
+[    0.397131] kvm [1]: IPA Size Limit: 40 bits
+[    0.398271] kvm [1]: GICv3: no GICV resource entry
+[    0.398292] kvm [1]: disabling GICv2 emulation
+[    0.398332] kvm [1]: GIC system register CPU interface enabled
+[    0.398585] kvm [1]: vgic interrupt IRQ16
+[    0.398834] kvm [1]: Hyp mode initialized successfully
+[    0.402914] modsign: There is no certification file
+[    0.402949] modsign: There is only one cert or no cert
+[    0.402958] Initialise system trusted keyrings
+[    0.403930] workingset: timestamp_bits=43 max_order=19 bucket_order=0
+[    0.416576] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.417022] Huawei Secure C library init
+[    0.417045] cms cbb init
+[    0.417371] modsign: create major 250 for module crl devs
+[    0.460249] Key type asymmetric registered
+[    0.460278] Asymmetric key parser 'x509' registered
+[    0.460376] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+[    0.460663] io scheduler mq-deadline registered
+[    0.512705] kworker/u8:0 (682) used greatest stack depth: 12832 bytes left
+[    0.520216] kworker/u8:0 (710) used greatest stack depth: 12784 bytes left
+[    0.584894] create /sys/kernel/tty_status_trace succ.
+[    0.584963] did not found ttyname.
+[    0.584976] default tty_suspend_mode is 0.
+[    0.584989] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    0.585204] Serial: 8250/16550 suspend register ok.
+[    0.585223] get_tty_suspend_info: mode is 0
+[    0.588483] printk: console [ttyS0] disabled
+[    0.588604] 8710000.uart: ttyS0 at MMIO 0x8710000 (irq = 23, base_baud = 6250000) is a 16550A
+[    0.589130] printk: console [ttyS0] enabled
+[    0.591200] cacheinfo: Unable to detect cache hierarchy for CPU 0
+[    0.608966] brd: module loaded
+[    0.616944] loop: module loaded
+[    0.619210] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+[    0.619841] fiq_glue_parse_source_common fiq source is 1!
+[    0.619864] fiq_glue_parse_type_common fiq type is 0!
+[    0.619875] fiq_glue_parse_buffer_offset_type fiq get cpu id type is default!
+[    0.619887] fiq_glue_parse_clean_wdt fiq clean-wdt is 0!
+[    0.619897] fiq_glue_parse_dead_loop fiq dead-loop is 1!
+[    0.619906] fiq_glue_parse_invalid_cache fiq invalid-cache is 1!
+[    0.619915] fiq_glue_parse_use_atf_under_same_image fiq use-atf-under-same-image is 0!
+[    0.619925] fiq_glue_no_info_init fiq_num is 1, fiq_num_max is 16
+[    0.619935] fiq_glue_no_info_init i 0 fiq-no 141
+[    0.621669] KBOX: ddrram: fs magic not match. It's ok if first time using this device
+[    0.630098] KBOX: kbox_exception_dump_valid abort for NULL dump_path!
+[    0.637249] KBOX: kbox:create region panic, size=65536
+[    0.638048] KBOX: kbox mem maybe destroyed, format it
+[    0.638296] KBOX: load OK
+[    0.638572] tasklock: sched_ctrl created.
+[    0.639701] registered taskstats version 1
+[    0.639725] Loading compiled-in X.509 certificates
+[    0.640165] page_owner is disabled
+[    0.640508] RTOS Process Context for RPC init success
+[    0.640719] ima: Allocated hash algorithm: sha256
+[    0.640745] ima: No architecture policies found
+[    0.640933] DIM: No measurement list to restore, it's ok
+[    0.641689] clk: Disabling unused clocks
+[    0.642621] dw-apb-uart 8710000.uart: forbid DMA for kernel console
+[    0.643814] Freeing unused kernel memory: 1856K
+[    0.717876] **** Total Boot time: 717 ms, uncompress initrd cost 230 ms ****
+[    0.724919] Run /init as init process
+[    0.724925]   with arguments:
+[    0.724932]     /init
+[    0.724938]     swift_irqsoff_enable
+[    0.724943]   with environment:
+[    0.724949]     HOME=/
+[    0.724954]     TERM=linux
+[    0.724960]     earlycon=uart8250,mmio32,0x08710000
+[    0.724965]     rdinit=/sbin/init
+[    0.724971]     kbox_mem=0x2e0000@0x84900000
+[    0.801840] load_kallsyms: loading out-of-tree module taints kernel.
+[    0.807027] rtos_kallsyms: Successfully loaded symbols!
+[    0.883185] modprobe (1097) used greatest stack depth: 12752 bytes left
+[    0.903683] hisi_request_fiq num is 1
+[    0.903721] [RTOS fiq]@@ register fiq
+[    0.907413] [RTOS fiq] FIQ register mem:(____ptrval____), FIQ dfx addr: (____ptrval____)
+[    0.907421] [RTOS fiq] FIQ reserved memory for reigsters: (____ptrval____)
+[    0.907429] [RTOS fiq]smc register: a0:83000004, a1:(____ptrval____), a2:(____ptrval____)
+[    0.907462] [request_fiq] succeed to register fiq-no 141  first func hook_for_fiq+0x0/0x2c [rtos_snapshot]
+[    0.907472] hisi_request_fiq success to request the 0 fiq 141
+[    0.907496] KBOX: kbox:create region ks_main, size=507904
+[    0.908236] KBOX: kbox:create region ks_0, size=4096
+[    0.908916] KBOX: kbox:create region ks_1, size=4096
+[    0.909595] KBOX: kbox:create region ks_2, size=4096
+[    0.910275] KBOX: kbox:create region ks_3, size=4096
+[    0.919285] KBOX: kbox:create region dying, size=131072
+[    0.919979] KBOX: kbox:create region emergency, size=65536
+[    0.930563] 1,1970-01-01 00:00:00,1107,bdinfo_boot_cfg_init,2641,board_type:0x0, platform_id:0x0, board_id:0xff, pcb_ver:0x2.
+[    0.930590] 2,1970-01-01 00:00:00,1107,bdinfo_boot_cfg_init,2644,ddr_size:0x3, ddr_bits:0x1, ddr_ecc:0x1.
+[    0.930608] 3,1970-01-01 00:00:00,1107,bdinfo_boot_cfg_init,2648,single_chip:0x0, debug_gmac:0x1, vga_type:0x0, is_espi:0x0.
+[    0.931103] 4,1970-01-01 00:00:00,1107,comm_probe,935,comm_probe success!
+[    0.932316] insmod (1107) used greatest stack depth: 12368 bytes left
+[    0.951240] 5,1970-01-01 00:00:00,1124,watchdog_probe,837,watchdog init ok!
+[    0.968624] 6,1970-01-01 00:00:00,1136,emmc_vendor_hook_init,42,emmc hook init, register ret:0.
+[    1.461388] 7,1970-01-01 00:00:01,43,emmc_close_cache,32,close emmc cache.
+[    1.461421] mmc0: new HS200 MMC card at address 0001
+[    1.462884] mmcblk0: mmc0:0001 Y2P032 27.9 GiB 
+[    1.463406] mmcblk0boot0: mmc0:0001 Y2P032 partition 1 4.00 MiB
+[    1.463935] mmcblk0boot1: mmc0:0001 Y2P032 partition 2 4.00 MiB
+[    1.464441] mmcblk0gp0: mmc0:0001 Y2P032 partition 4 384 MiB
+[    1.464981] mmcblk0gp1: mmc0:0001 Y2P032 partition 5 384 MiB
+[    1.465536] mmcblk0gp2: mmc0:0001 Y2P032 partition 6 384 MiB
+[    1.466045] mmcblk0gp3: mmc0:0001 Y2P032 partition 7 128 MiB
+[    1.471167]  mmcblk0: p1 p2 p3 < p5 p6 p7 p8 p9 >
+[    1.740386] random: date: uninitialized urandom read (8 bytes read)
+[    1.740851] random: date: uninitialized urandom read (8 bytes read)
+[    1.741347] random: date: uninitialized urandom read (8 bytes read)
+[    1.938113] EXT4-fs (mmcblk0gp0): mounted filesystem 6d2aaeba-bc48-48c4-aa16-9367a39db4b2 ro with ordered data mode. Opts: (null)
+[    1.939127] mount (1205) used greatest stack depth: 12224 bytes left
+[    2.304636] systemd[1]: Inserted module 'autofs4'
+[    2.341374] NET: Registered protocol family 10
+[    2.343095] Segment Routing with IPv6
+[    2.360271] systemd[1]: systemd 249 running in system mode (+PAM -AUDIT +SELINUX -APPARMOR +IMA +SMACK -SECCOMP -GCRYPT -GNUTLS -OPENSSL +ACL +BLKID -CURL -ELFUTILS -FIDO2 -IDN2 -IDN -IPTC +KMOD -LIBCRYPTSETUP +LIBFDISK -PCRE2 -PWQUALITY -P11KIT -QRENCODE -BZIP2 -LZ4 +XZ -ZLIB -ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=legacy)
+[    2.361335] systemd[1]: Detected architecture arm64.
+[    2.518386] systemd[1]: No hostname configured, using default hostname.
+[    2.518775] systemd[1]: Hostname set to <localhost>.
+[    2.524756] systemd[1]: Initializing machine ID from random generator.
+[    2.525156] systemd[1]: Installed transient /etc/machine-id file.
+[    2.625133] systemd-debug-g (1222) used greatest stack depth: 11808 bytes left
+[    2.627342] systemd-sysv-generator[1231]: SysV service '/etc/init.d/syslog' lacks a native systemd unit file. Automatically generating a unit file for compatibility. Please update package to include a native systemd unit file, in order to make it more safe and robust.
+[    2.627970] systemd-sysv-generator[1231]: SysV service '/etc/init.d/functions' lacks a native systemd unit file. Automatically generating a unit file for compatibility. Please update package to include a native systemd unit file, in order to make it more safe and robust.
+[    2.628403] systemd-sysv-generator[1231]: SysV service '/etc/init.d/auditd' lacks a native systemd unit file. Automatically generating a unit file for compatibility. Please update package to include a native systemd unit file, in order to make it more safe and robust.
+[    2.628839] systemd-sysv-generator[1231]: SysV service '/etc/init.d/busybox-cron' lacks a native systemd unit file. Automatically generating a unit file for compatibility. Please update package to include a native systemd unit file, in order to make it more safe and robust.
+[    2.629276] systemd-sysv-generator[1231]: SysV service '/etc/init.d/crond' lacks a native systemd unit file. Automatically generating a unit file for compatibility. Please update package to include a native systemd unit file, in order to make it more safe and robust.
+[    2.629676] systemd-sysv-generator[1231]: SysV service '/etc/init.d/mdev' lacks a native systemd unit file. Automatically generating a unit file for compatibility. Please update package to include a native systemd unit file, in order to make it more safe and robust.
+[    2.630110] systemd-sysv-generator[1231]: SysV service '/etc/init.d/network' lacks a native systemd unit file. Automatically generating a unit file for compatibility. Please update package to include a native systemd unit file, in order to make it more safe and robust.
+[    2.630552] systemd-sysv-generator[1231]: SysV service '/etc/init.d/busybox-udhcpd' lacks a native systemd unit file. Automatically generating a unit file for compatibility. Please update package to include a native systemd unit file, in order to make it more safe and robust.
+[    2.791860] systemd[1]: /lib/systemd/system/dbus.socket:5: ListenStream= references a path below legacy directory /var/run/, updating /var/run/dbus/system_bus_socket → /run/dbus/system_bus_socket; please update the unit file accordingly.
+[    2.879023] systemd[1]: multi-user.target: Wants dependency dropin /etc/systemd/system/multi-user.target.wants/lsw.service is not a symlink, ignoring.
+[    2.883999] systemd[1]: Configuration file /etc/systemd/system/trust.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+[    2.929625] systemd[1]: Configuration file /etc/systemd/system/power_strategy.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+[    2.945315] systemd[1]: Configuration file /etc/systemd/system/license.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+[    2.948943] systemd[1]: /etc/systemd/system/interface.service:11: Unknown key name 'PermittedCapabilities' in section 'Service', ignoring.
+[    2.949020] systemd[1]: /etc/systemd/system/interface.service:12: Unknown key name 'InheritableCapabilities' in section 'Service', ignoring.
+[    2.949081] systemd[1]: /etc/systemd/system/interface.service:13: Unknown key name 'EffectiveCapabilities' in section 'Service', ignoring.
+[    2.965905] systemd[1]: Configuration file /lib/systemd/system/file_transfer.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+[    2.972654] systemd[1]: Configuration file /etc/systemd/system/cooling.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+[    3.043216] random: systemd: uninitialized urandom read (16 bytes read)
+[    3.047454] systemd[1]: Queued start job for default target Multi-User System.
+[    3.049333] random: systemd: uninitialized urandom read (16 bytes read)
+[    3.119610] systemd[1]: Created slice Slice /system/getty.
+[    3.148069] random: systemd: uninitialized urandom read (16 bytes read)
+[    3.151697] systemd[1]: Created slice Slice /system/modprobe.
+[    3.191208] systemd[1]: Created slice User and Session Slice.
+[    3.228715] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[    3.258624] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    3.288230] systemd[1]: Condition check resulted in Arbitrary Executable File Formats File System Automount Point being skipped.
+[    3.288697] systemd[1]: Reached target Path Units.
+[    3.318201] systemd[1]: Reached target Slice Units.
+[    3.348256] systemd[1]: Reached target Swaps.
+[    3.378782] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[    3.409264] systemd[1]: Listening on Journal Socket (/dev/log).
+[    3.439189] systemd[1]: Listening on Journal Socket.
+[    3.474929] systemd[1]: Mounting Kernel Debug File System...
+[    3.514580] systemd[1]: Mounting Kernel Trace File System...
+[    3.556218] systemd[1]: Starting Create List of Static Device Nodes...
+[    3.595318] systemd[1]: Starting Load Kernel Module configfs...
+[    3.635099] systemd[1]: Starting Load Kernel Module drm...
+[    3.674953] systemd[1]: Starting Load Kernel Module fuse...
+[    3.710387] systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+[    3.711599] systemd[1]: systemd-journald.service: unit configures an IP firewall, but the local system does not support BPF/cgroup firewalling.
+[    3.711632] systemd[1]: (This warning is only shown for the first unit using IP firewalling.)
+[    3.721392] systemd[1]: Starting Journal Service...
+[    3.760424] systemd[1]: Condition check resulted in Load Kernel Modules being skipped.
+[    3.767046] systemd[1]: Starting Remount Root and Kernel File Systems...
+[    3.805076] systemd[1]: Starting Apply Kernel Variables...
+[    3.836321] systemd[1]: Started Journal Service.
+[    4.063037] random: systemd-cgroups: uninitialized urandom read (8 bytes read)
+[    4.063535] random: systemd-cgroups: uninitialized urandom read (8 bytes read)
+[    4.064049] random: systemd-cgroups: uninitialized urandom read (8 bytes read)
+[    4.577054] systemd-journald[1247]: Received client request to flush runtime journal.
+[    5.079553] random: systemd: uninitialized urandom read (16 bytes read)
+[    5.702062] NET: Registered protocol family 17
+[    5.707781] random: crng init done
+[    5.707801] random: 1035 urandom warning(s) missed due to ratelimiting
+[    6.433366] 8021q: 802.1Q VLAN Support v1.8
+[    6.494931] SCSI subsystem initialized
+[    6.566037] usbcore: registered new interface driver usbfs
+[    6.566349] usbcore: registered new interface driver hub
+[    6.566711] usbcore: registered new device driver usb
+[    6.596342] usbcore: registered new interface driver usb-storage
+[    7.722284] 8,1970-01-01 00:00:07,1353,gmac_phy_init,1101,mac(0) not used phy.
+[    8.771969] 9,1970-01-01 00:00:08,1353,gmac_phy_init,1101,mac(1) not used phy.
+[    9.822649] 10,1970-01-01 00:00:09,1353,gmac_phy_init,1099,mac(2)'s phy_addr is 3.
+[   10.914422] 11,1970-01-01 00:00:10,1353,gmac_phy_init,1101,mac(3) not used phy.
+[   11.942085] 12,1970-01-01 00:00:11,1353,gmac_hw_set_port_mode_all,635,SGMII auto-negotiation not complete(0x0)
+[   11.954676] 13,1970-01-01 00:00:11,1353,gmac_probe,1433,gmac init ok!
+[   11.980410] 14,1970-01-01 00:00:11,1370,sys_info_probe,1960,sys_info init ok!
+[   12.044097] 15,1970-01-01 00:00:12,1386,p80_probe,210,p80 use LPC!
+[   12.071076] 16,1970-01-01 00:00:12,1392,sol_probe,906,SOL use LPC!
+[   12.077320] 17,1970-01-01 00:00:12,1392,sol_ddrinfo_update,814,SOL[0] Init Rx-start 0x86400000, Rx-size 0x2, Tx-start 0x86000000, Tx-size 0x4.
+[   12.090972] 18,1970-01-01 00:00:12,1392,sol_ddrinfo_update,814,SOL[1] Init Rx-start 0x86600000, Rx-size 0x3, Tx-start 0x86500000, Tx-size 0x2.
+[   12.103866] 19,1970-01-01 00:00:12,1392,sol_ddrinfo_update,814,SOL[2] Init Rx-start 0x86900000, Rx-size 0x3, Tx-start 0x86800000, Tx-size 0x2.
+[   12.116748] 20,1970-01-01 00:00:12,1392,sol_ddrinfo_update,814,SOL[3] Init Rx-start 0x86c00000, Rx-size 0x3, Tx-start 0x86b00000, Tx-size 0x2.
+[   12.130328] 21,1970-01-01 00:00:12,1392,sol_probe,935,uart sol init ok!
+[   12.153786] 22,1970-01-01 00:00:12,1398,dboot_probe,545,dboot probe start.
+[   12.161143] 23,1970-01-01 00:00:12,1398,dboot_probe_info,519,boot from uboot 0
+[   12.168497] 24,1970-01-01 00:00:12,1398,dboot_probe_info,520,BMC reset count: 0
+[   12.175803] 25,1970-01-01 00:00:12,1398,dboot_probe_info,521,BMC unsec reset count: 0
+[   12.183638] 26,1970-01-01 00:00:12,1398,dboot_probe_info,522,HOST reset count: 1
+[   12.191031] 27,1970-01-01 00:00:12,1398,dboot_probe_info,523,CHIP reset count: 0
+[   12.198421] 28,1970-01-01 00:00:12,1398,dboot_probe,567,dboot init ok!
+[   12.262096] 29,1970-01-01 00:00:12,1414,bmcrtc_of_probe,189,BMCRTC Device Registered.
+[   12.316154] 8711000.uart: ttySS3 at MMIO 0x8711000 (irq = 24, base_baud = 0) is a AMBA/ttySS
+[   12.317453] 8743000.uart: ttySS4 at MMIO 0x8743000 (irq = 25, base_baud = 0) is a AMBA/ttySS
+[   12.319131] 8744000.uart: ttySS5 at MMIO 0x8744000 (irq = 26, base_baud = 0) is a AMBA/ttySS
+[   12.328876] 875d000.uart: ttySS6 at MMIO 0x875d000 (irq = 27, base_baud = 0) is a AMBA/ttySS
+[   12.329847] 875e000.uart: ttySS7 at MMIO 0x875e000 (irq = 28, base_baud = 0) is a AMBA/ttySS
+[   12.359855] 30,1970-01-01 00:00:12,1446,peci_probe,332,peci is 1 mode!
+[   12.366465] 31,1970-01-01 00:00:12,1446,peci_probe,346,peci init ok!
+[   12.450076] 32,1970-01-01 00:00:12,1464,hispi_setup_device,885,hispi_setup_device id 0x0!
+[   12.458789] 33,1970-01-01 00:00:12,1464,hispi_setup_device,885,hispi_setup_device id 0x1!
+[   12.551220] 34,1970-01-01 00:00:12,1491,pci_fix_ker_probe,527,probe OK
+[   12.578851] 35,1970-01-01 00:00:12,1495,deal_with_ext_addr,255,g_mctp_ext_mode:0 [0 Normal,1 Offset,2 Hi]
+[   12.588571] 36,1970-01-01 00:00:12,1495,mctp_reset,1477,reset mctp ok!
+[   12.596091] 37,1970-01-01 00:00:12,1495,mctp_dereset,1501,dereset mctp ok!
+[   12.907017] 38,1970-01-01 00:00:12,1537,vce_dac_param_set,244,dac param register is: 0x800820f
+[   12.915949] 39,1970-01-01 00:00:12,1537,vce_driver_probe,295,irq_mask 0xd80
+[   12.946880] insmod (1541) used greatest stack depth: 11664 bytes left
+[   12.963874] [request_fiq] succeed to register fiq-no 141 more func dfx_dying_saying+0x0/0x20 [dfx_drv]
+[   12.988434] 40,1970-01-01 00:00:12,1218,gmac_link_handle,409,eth2 link up! speed(0x8) duplex(0x1).
+[   13.549544] EXT4-fs (mmcblk0p7): recovery complete
+[   13.550157] EXT4-fs (mmcblk0p7): mounted filesystem 738c1443-4eb3-4865-81c8-8d06b616eeef r/w with ordered data mode. Opts: (null)
+[   14.042654] EXT4-fs (mmcblk0p1): mounted filesystem 12338794-cac1-4f0d-9af7-cd960527c7c8 r/w with ordered data mode. Opts: (null)
+[   14.060052] EXT4-fs (mmcblk0p7): unmounting filesystem 738c1443-4eb3-4865-81c8-8d06b616eeef.
+[   14.349758] EXT4-fs (mmcblk0p9): mounted filesystem 29623499-ab13-4d64-bdac-7b401920dd8f r/w with ordered data mode. Opts: (null)
+[   14.603710] EXT4-fs (mmcblk0p7): mounted filesystem 738c1443-4eb3-4865-81c8-8d06b616eeef r/w with ordered data mode. Opts: (null)
+[   14.806327] sed (1636) used greatest stack depth: 11632 bytes left
+[   14.842780] systemd-journald[1247]: Received client request to flush runtime journal.
+[   15.081793] EXT4-fs (mmcblk0gp3): recovery complete
+[   15.082468] EXT4-fs (mmcblk0gp3): mounted filesystem 08cfa917-2338-44e8-8298-f8a413d99344 r/w with ordered data mode. Opts: (null)
+[   15.529185] [pmfs]: pramdisk: registered block device major 254
+[   15.529349] [pmfs]: starting add gendisk!
+[   15.530407] [pmfs]: add gendisk done!
+[   15.530427] [pmfs]: pramdisk: module loaded
+[   18.876158] loop0: detected capacity change from 0 to 209715200
+[   19.123644] EXT4-fs (loop0): recovery complete
+[   19.124556] EXT4-fs (loop0): mounted filesystem 8e264243-c592-4963-b675-87536801cb2d r/w with ordered data mode. Opts: (null)
+[   20.106576] hisport_cdev: 1316, ioremap:0x40000000
+[   20.180001] edma: 2297, ==========1711 device==========
+[   20.453409] FS-Cache: Loaded
+[   20.477580] CacheFiles: Loaded
+[   20.585333] RPC: Registered named UNIX socket transport module.
+[   20.585351] RPC: Registered udp transport module.
+[   20.585358] RPC: Registered tcp transport module.
+[   20.585364] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[   20.713535] FS-Cache: Netfs 'nfs' registered for caching
+[   20.823038] FS-Cache: Netfs 'cifs' registered for caching
+[   20.829028] Key type cifs.idmap registered
+[   20.878474] device-mapper: ioctl: 4.43.0-ioctl (2020-10-01) initialised: dm-devel@redhat.com
+[   20.958688] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[   20.958740] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 1
+[   20.958961] xhci-hcd xhci-hcd.0.auto: hcc params 0x0220f66d hci version 0x100 quirks 0x0000000002010010
+[   20.959006] xhci-hcd xhci-hcd.0.auto: irq 125, io mem 0x08a00000
+[   20.960464] hub 1-0:1.0: USB hub found
+[   20.960571] hub 1-0:1.0: 1 port detected
+[   20.961837] xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+[   20.961877] xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 2
+[   20.961906] xhci-hcd xhci-hcd.0.auto: Host supports USB 3.0 SuperSpeed
+[   20.962075] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+[   20.963853] hub 2-0:1.0: USB hub found
+[   20.963973] hub 2-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[   20.979801] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[   20.979862] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 3
+[   20.980102] xhci-hcd xhci-hcd.1.auto: hcc params 0x0220f66d hci version 0x100 quirks 0x0000000002010010
+[   20.980151] xhci-hcd xhci-hcd.1.auto: irq 127, io mem 0x0cc00000
+[   20.982181] hub 3-0:1.0: USB hub found
+[   20.987825] hub 3-0:1.0: 1 port detected
+[   20.989214] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[   20.989255] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 4
+[   20.989285] xhci-hcd xhci-hcd.1.auto: Host supports USB 3.0 SuperSpeed
+[   20.989463] usb usb4: We don't know the algorithms for LPM for this host, disabling LPM.
+[   20.991189] hub 4-0:1.0: USB hub found
+[   20.991306] hub 4-0:1.0: 1 port detected
+[   21.008447] insmod (2167) used greatest stack depth: 10672 bytes left
+[   21.075936] cryptd: max_cpu_qlen set to 1000
+[   21.336180] memory_monitor. (2238): drop_caches: 4
+[   39.481442] [I2C-08-RT<-5|-5>] M<0x21|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+[   39.495654] [I2C-08-RT<-5|-5>] M<0x47|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+[   42.688414] [I2C-08-RT<-5|-5>] M<0x21|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+[   42.702238] [I2C-08-RT<-5|-5>] M<0x47|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+[   46.696594] [I2C-08-RT<-5|-5>] M<0x21|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x510|0x0>
+[   46.909858] [I2C-08-RT<-5|-5>] M<0x47|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+[   53.942957] [I2C-06-RT<-5|-5>] M<0x57|0x1|0x0|1|10> L<2|32|0> C<2|0|32> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+[   54.744751] [I2C-08-RT<-5|-5>] M<0x21|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+[   54.774120] [I2C-06-RT<-5|-5>] M<0x57|0x1|0x0|1|10> L<2|32|0> C<2|0|32> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+[   54.948292] [I2C-08-RT<-5|-5>] M<0x47|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+[   54.986895] [I2C-06-RT<-5|-5>] M<0x57|0x1|0x0|1|10> L<2|32|0> C<2|0|32> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+[   55.795569] [I2C-06-RT<-5|-5>] M<0x57|0x1|0x0|1|10> L<2|32|0> C<2|0|32> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+[   56.229659] [I2C-06-RT<-5|-5>] M<0x57|0x1|0x0|1|10> L<2|32|0> C<2|0|32> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+[   59.872301] [I2C-06-RT<-5|-5>] M<0x57|0x1|0x0|1|10> L<2|32|0> C<2|0|32> E<0x801|0x0|0x0|0x1> I<0x0|0x510|0x0>
+[   60.140921] EXT4-fs (mmcblk0gp2): mounted filesystem a578aeb2-73b2-434e-870c-5027ac60059f ro with ordered data mode. Opts: (null)
+[   60.330580] EXT4-fs (mmcblk0gp2): unmounting filesystem a578aeb2-73b2-434e-870c-5027ac60059f.
+[   60.532558] [I2C-06-RT<-5|-5>] M<0x57|0x1|0x0|1|10> L<2|32|0> C<2|0|32> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+[   60.762188] [I2C-06-RT<-5|-5>] M<0x57|0x1|0x0|1|10> L<2|32|0> C<2|0|32> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+[   61.273133] 41,1970-01-01 00:01:01,23,hw_get_hard_lock,79,hw_lock(0x2) is locked by M3
+[   61.281219] 42,1970-01-01 00:01:01,23,hw_acquire_hard_lock,141,hardware lock(2) is't locked by A55(-1)
+[   61.317849] 43,1970-01-01 00:01:01,23,hw_get_hard_lock,79,hw_lock(0x2) is locked by M3
+[   61.325914] 44,1970-01-01 00:01:01,23,hw_acquire_hard_lock,141,hardware lock(2) is't locked by A55(-1)
+[   61.367852] 45,1970-01-01 00:01:01,23,hw_get_hard_lock,79,hw_lock(0x2) is locked by M3
+[   61.375862] 46,1970-01-01 00:01:01,23,hw_acquire_hard_lock,141,hardware lock(2) is't locked by A55(-1)
+[   61.408829] 47,1970-01-01 00:01:01,23,hw_get_hard_lock,79,hw_lock(0x2) is locked by M3
+[   61.416817] 48,1970-01-01 00:01:01,23,hw_acquire_hard_lock,141,hardware lock(2) is't locked by A55(-1)
+[   61.421377] [I2C-06-RT<-5|-5>] M<0x57|0x1|0x0|1|10> L<2|32|0> C<2|0|32> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+[   61.522419] 49,1970-01-01 00:01:01,23,hw_get_hard_lock,79,hw_lock(0x2) is locked by M3
+[   61.530456] 50,1970-01-01 00:01:01,23,hw_acquire_hard_lock,141,hardware lock(2) is't locked by A55(-1)
+[   61.688667] [I2C-06-RT<-5|-5>] M<0x57|0x1|0x0|1|10> L<2|32|0> C<2|0|32> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+[   61.751158] 51,1970-01-01 00:01:01,28,hw_get_hard_lock,79,hw_lock(0x2) is locked by M3
+[   61.759155] 52,1970-01-01 00:01:01,28,hw_acquire_hard_lock,141,hardware lock(2) is't locked by A55(-1)
+[   61.797836] 53,1970-01-01 00:01:01,28,hw_get_hard_lock,79,hw_lock(0x2) is locked by M3
+[   61.805789] 54,1970-01-01 00:01:01,28,hw_acquire_hard_lock,141,hardware lock(2) is't locked by A55(-1)
+[   61.847176] 55,1970-01-01 00:01:01,23,hw_get_hard_lock,79,hw_lock(0x2) is locked by M3
+[   61.855177] 56,1970-01-01 00:01:01,23,hw_acquire_hard_lock,141,hardware lock(2) is't locked by A55(-1)
+[   63.591391] 57,2026-04-20 02:55:16,2613,msg_sec_module_cmd_cpy_to_user,523,msg copy_to_user user data error 8
+[   63.612926] 58,2026-04-20 02:55:16,2613,msg_scm3_ioctl,613,msg cmd(0xc0047301) handle error!
+[   64.159008] 59,2026-04-20 02:55:17,18,hw_get_hard_lock,79,hw_lock(0x2) is locked by M3
+[   64.167007] 60,2026-04-20 02:55:17,18,hw_acquire_hard_lock,141,hardware lock(2) is't locked by A55(-1)
+[   69.753477] 61,2026-04-20 02:55:22,2365,sol_reset,129,SOL-0 reset <0>.
+[   69.753477] 
+[   69.790201] 62,2026-04-20 02:55:22,2365,sol_set_reg_val,546,SOL[0] Set Rx-start 0x86000000, Rx-size 0x3, Tx-start 0x86200000, Tx-size 0x3.
+[   70.514852] 63,2026-04-20 02:55:23,2365,sol_reset,129,SOL-1 reset <0>.
+[   70.514852] 
+[   70.531896] 64,2026-04-20 02:55:23,2365,sol_set_reg_val,546,SOL[1] Set Rx-start 0x86400000, Rx-size 0x1, Tx-start 0x86480000, Tx-size 0x4.
+[   70.936375] [I2C-08-RT<-5|-5>] M<0x21|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+[   71.149015] [I2C-08-RT<-5|-5>] M<0x47|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x510|0x0>
+[   74.212327] 65,2026-04-20 02:55:27,2365,sol_reset,129,SOL-2 reset <0>.
+[   74.212327] 
+[   74.246044] 66,2026-04-20 02:55:27,2365,sol_set_reg_val,546,SOL[2] Set Rx-start 0x86880000, Rx-size 0x3, Tx-start 0x86a80000, Tx-size 0x1.
+[   74.382676] ext2 filesystem being remounted at /dev/shm/chroot/2883/opt/bmc/pram supports timestamps until 2038-01-19 (0x7fffffff)
+[   74.912177] 67,2026-04-20 02:55:27,2366,sol_reset,129,SOL-3 reset <0>.
+[   74.912177] 
+[   74.921580] 68,2026-04-20 02:55:27,2366,sol_set_reg_val,546,SOL[3] Set Rx-start 0x86b00000, Rx-size 0x3, Tx-start 0x86d00000, Tx-size 0x2.

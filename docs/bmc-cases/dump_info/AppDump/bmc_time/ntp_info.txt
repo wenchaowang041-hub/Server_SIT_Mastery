@@ -1,0 +1,27 @@
+Excute Command : ntpq -p
+/usr/sbin/ntpq: read: Connection refused
+
+Excute Command : ntpq -cas
+/usr/sbin/ntpq: read: Connection refused
+
+Excute Command : ntpdate -q server_address
+
+PreferServer : 
+/usr/sbin/ntpq: read: Connection refused
+
+AlternateServer : 
+/usr/sbin/ntpq: read: Connection refused
+
+ExtraServers : 
+/usr/sbin/ntpq: read: Connection refused
+2026-04-20T13:26:34+00:00
+status: disabled
+mode: Static
+PreferServer: 
+AlternateServer: 
+ExtraServers: , , , 
+Synchronize: failed
+AuthEnable: disabled
+GroupKey: not imported
+
+BMC uptime: 37947s

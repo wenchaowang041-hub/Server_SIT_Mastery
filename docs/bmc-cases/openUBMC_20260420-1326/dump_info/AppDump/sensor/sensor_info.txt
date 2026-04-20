@@ -1,0 +1,251 @@
+sensor id  | sensor name      | value      | unit         | status | lnr        | lc         | lnc        | unc      | uc         | unr        | phys   | nhys  
+0x4        | 1711 Core Temp   | 40.000     | degrees C    | ok     | na         | na         | na         | 105.000  | na         | na         | 2.000  | 2.000 
+0xc        | EXU1 VCC_12V0    | 12.120     | Volts        | ok     | na         | 10.800     | na         | na       | 13.200     | na         | 0.240  | 0.240 
+0xd        | EXU1 STBY_5V0    | 5.100      | Volts        | ok     | na         | 4.500      | na         | na       | 5.500      | na         | 0.150  | 0.150 
+0xe        | EXU1 STBY_3V3    | 3.360      | Volts        | ok     | na         | 2.940      | na         | na       | 3.660      | na         | 0.120  | 0.120 
+0xf        | EXU1 VCC_5V0     | 5.050      | Volts        | ok     | na         | 4.500      | na         | na       | 5.500      | na         | 0.150  | 0.150 
+0x10       | Inlet Temp       | 22.000     | degrees C    | ok     | na         | na         | na         | 41.000   | 43.000     | na         | 2.000  | 2.000 
+0x13       | Disks Temp       | na         | degrees C    | na     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x14       | SSD MAX Temp     | 45.000     | degrees C    | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x15       | 5902L_Temp1      | na         | degrees C    | na     | na         | na         | na         | 105.000  | na         | na         | 2.000  | 2.000 
+0x16       | NIC1 Temp        | 26.000     | degrees C    | ok     | na         | na         | na         | 115.000  | na         | na         | 2.000  | 2.000 
+0x1b       | CPU2 1V1_VDDQ    | 1.100      | Volts        | ok     | na         | 0.990      | na         | na       | 1.210      | na         | 0.020  | 0.020 
+0x1c       | CPU2 UNCORE Temp | 38.000     | degrees C    | ok     | na         | na         | na         | 120.000  | na         | na         | 2.000  | 2.000 
+0x1d       | CPU2 NBDVDD Temp | 45.000     | degrees C    | ok     | na         | na         | na         | 120.000  | na         | na         | 2.000  | 2.000 
+0x1e       | CPU2 VDDQ Temp   | 45.000     | degrees C    | ok     | na         | na         | na         | 120.000  | na         | na         | 2.000  | 2.000 
+0x1f       | CPU2 VRD Temp    | 45.000     | degrees C    | ok     | na         | na         | na         | 120.000  | na         | na         | 2.000  | 2.000 
+0x20       | CPU1 0V9_UNCORE  | 1.030      | Volts        | ok     | na         | 0.670      | na         | na       | 1.100      | na         | 0.020  | 0.020 
+0x21       | CPU1 0V9_TBCORE  | 0.940      | Volts        | ok     | na         | 0.580      | na         | na       | 1.320      | na         | 0.020  | 0.020 
+0x22       | CPU1 UNCORE Temp | 59.000     | degrees C    | ok     | na         | na         | na         | 120.000  | na         | na         | 2.000  | 2.000 
+0x23       | CPU2 NADVDD Temp | 44.000     | degrees C    | ok     | na         | na         | na         | 120.000  | na         | na         | 2.000  | 2.000 
+0x24       | CPU2 TBCORE Temp | 38.000     | degrees C    | ok     | na         | na         | na         | 120.000  | na         | na         | 2.000  | 2.000 
+0x25       | CPU2 VDD Temp    | 42.000     | degrees C    | ok     | na         | na         | na         | 120.000  | na         | na         | 2.000  | 2.000 
+0x26       | CPU2 0V9_UNCORE  | 0.810      | Volts        | ok     | na         | 0.670      | na         | na       | 1.100      | na         | 0.020  | 0.020 
+0x27       | CPU2 0V9_TBCORE  | 0.930      | Volts        | ok     | na         | 0.580      | na         | na       | 1.320      | na         | 0.020  | 0.020 
+0x28       | CPU2 0V9_TACORE  | 0.930      | Volts        | ok     | na         | 0.580      | na         | na       | 1.320      | na         | 0.020  | 0.020 
+0x29       | CPU2 0V8_NADVDD  | 0.800      | Volts        | ok     | na         | 0.720      | na         | na       | 0.880      | na         | 0.020  | 0.020 
+0x2a       | CPU1 VRD Temp    | 59.000     | degrees C    | ok     | na         | na         | na         | 120.000  | na         | na         | 2.000  | 2.000 
+0x2b       | NIC OM Temp      | 30.000     | degrees C    | ok     | na         | na         | na         | 75.000   | na         | na         | 2.000  | 2.000 
+0x2c       | CPU1 VDD Temp    | 53.000     | degrees C    | ok     | na         | na         | na         | 120.000  | na         | na         | 2.000  | 2.000 
+0x2d       | CPU1 0V8_NADVDD  | 0.800      | Volts        | ok     | na         | 0.720      | na         | na       | 0.880      | na         | 0.020  | 0.020 
+0x2e       | CPU1 0V9_TACORE  | 0.940      | Volts        | ok     | na         | 0.580      | na         | na       | 1.320      | na         | 0.020  | 0.020 
+0x2f       | BCU1 12V0_3 Pwr  | 120.000    | Watts        | ok     | na         | na         | na         | na       | na         | na         | 200.000 | 200.000
+0x30       | CPU1 TACORE Temp | 53.000     | degrees C    | ok     | na         | na         | na         | 120.000  | na         | na         | 2.000  | 2.000 
+0x31       | BCU1 3V3_RISER2  | na         | Volts        | na     | na         | 2.940      | na         | na       | 3.660      | na         | 0.120  | 0.120 
+0x32       | BCU1 3V3         | 3.360      | Volts        | ok     | na         | 2.940      | na         | na       | 3.660      | na         | 0.120  | 0.120 
+0x33       | BCU1 VCC_12V0_3  | 12.360     | Volts        | ok     | na         | 10.800     | na         | na       | 13.200     | na         | 0.240  | 0.240 
+0x34       | BCU1 VCC_12V0_2  | 12.360     | Volts        | ok     | na         | 10.800     | na         | na       | 13.200     | na         | 0.240  | 0.240 
+0x35       | BCU1 VCC_12V0_1  | 12.360     | Volts        | ok     | na         | 10.800     | na         | na       | 13.200     | na         | 0.240  | 0.240 
+0x36       | CPU2 MEM Temp    | 36.000     | degrees C    | ok     | na         | na         | na         | 95.000   | na         | na         | 2.000  | 2.000 
+0x37       | CPU2 TACORE Temp | 42.000     | degrees C    | ok     | na         | na         | na         | 120.000  | na         | na         | 2.000  | 2.000 
+0x38       | CPU2 0V8_NBDVDD  | 0.800      | Volts        | ok     | na         | 0.720      | na         | na       | 0.880      | na         | 0.020  | 0.020 
+0x39       | CPU1 MEM Temp    | 54.000     | degrees C    | ok     | na         | na         | na         | 95.000   | na         | na         | 2.000  | 2.000 
+0x3a       | CPU2 Core Rem    | 38.000     | degrees C    | ok     | na         | na         | na         | 105.000  | 110.000    | na         | 2.000  | 2.000 
+0x3b       | CPU1 Core Rem    | 59.000     | degrees C    | ok     | na         | na         | na         | 105.000  | 110.000    | na         | 2.000  | 2.000 
+0x3c       | CPU1 NBDVDD Temp | 58.000     | degrees C    | ok     | na         | na         | na         | 120.000  | na         | na         | 2.000  | 2.000 
+0x3d       | CPU1 0V8_NBDVDD  | 0.800      | Volts        | ok     | na         | 0.720      | na         | na       | 0.880      | na         | 0.020  | 0.020 
+0x3e       | CPU1 0V75_VDD    | 0.760      | Volts        | ok     | na         | 0.690      | na         | na       | 0.840      | na         | 0.020  | 0.020 
+0x3f       | BCU1 12V0_4 Pwr  | 5.000      | Watts        | ok     | na         | na         | na         | na       | na         | na         | 5.000  | 5.000 
+0x40       | CPU1 NADVDD Temp | 55.000     | degrees C    | ok     | na         | na         | na         | 120.000  | na         | na         | 2.000  | 2.000 
+0x41       | CPU2 0V75_VDD    | 0.760      | Volts        | ok     | na         | 0.690      | na         | na       | 0.840      | na         | 0.020  | 0.020 
+0x42       | CPU1 VDDQ Temp   | 58.000     | degrees C    | ok     | na         | na         | na         | 120.000  | na         | na         | 2.000  | 2.000 
+0x43       | CPU1 1V1_VDDQ    | 1.100      | Volts        | ok     | na         | 0.990      | na         | na       | 1.210      | na         | 0.020  | 0.020 
+0x44       | CPU1 TBCORE Temp | 59.000     | degrees C    | ok     | na         | na         | na         | 120.000  | na         | na         | 2.000  | 2.000 
+0x45       | BCU1 12V0_2 Pwr  | 200.000    | Watts        | ok     | na         | na         | na         | na       | na         | na         | 200.000 | 200.000
+0x46       | BCU1 Temp        | 0.000      | degrees C    | ok     | na         | na         | na         | na       | na         | na         | 2.000  | 2.000 
+0x47       | BCU1 VCC_DRMOS   | 3.350      | Volts        | ok     | na         | 3.000      | na         | na       | 3.600      | na         | 0.150  | 0.150 
+0x6a       | PS6 VOUT         | 11.000     | Volts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x6b       | Power6           | 0.000      | Watts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x6c       | PS6 Inlet Temp   | 28.000     | degrees C    | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x6d       | PS6 POut         | 0.000      | Watts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x6e       | PS6 VIN          | 230.000    | Volts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x6f       | PS6 IIn          | 1.000      | Amps         | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x70       | PS6 IOUT         | 0.000      | Amps         | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x73       | Power5           | 0.000      | Watts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x74       | PS5 Inlet Temp   | 26.000     | degrees C    | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x75       | PS5 POut         | 0.000      | Watts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x76       | PS5 VIN          | 230.000    | Volts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x77       | PS5 IIn          | 1.000      | Amps         | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x78       | PS5 IOUT         | 0.000      | Amps         | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x79       | PS5 VOUT         | 11.000     | Volts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x7c       | PS4 IIn          | 1.000      | Amps         | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x7d       | PS4 IOUT         | 31.000     | Amps         | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x7e       | PS4 VOUT         | 12.000     | Volts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x7f       | Power4           | 420.000    | Watts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x80       | PS4 Inlet Temp   | 25.000     | degrees C    | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x81       | PS4 POut         | 372.000    | Watts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x82       | PS4 VIN          | 230.000    | Volts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x85       | PS2 VIN          | 226.000    | Volts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x86       | PS2 IIn          | 1.000      | Amps         | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x87       | PS2 IOUT         | 21.000     | Amps         | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x88       | PS2 VOUT         | 12.000     | Volts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x89       | PS2 POut         | 276.000    | Watts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x8a       | Power2           | 300.000    | Watts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x8b       | PS2 Inlet Temp   | 24.000     | degrees C    | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x8e       | PS3 POut         | 252.000    | Watts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x8f       | PS3 VIN          | 226.000    | Volts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x90       | PS3 IIn          | 1.000      | Amps         | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x91       | PS3 IOUT         | 19.000     | Amps         | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x92       | PS3 VOUT         | 12.000     | Volts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x93       | Power3           | 276.000    | Watts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x94       | PS3 Inlet Temp   | 24.000     | degrees C    | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x97       | PS1 POut         | 252.000    | Watts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x98       | PS1 VIN          | 228.000    | Volts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x99       | PS1 VOUT         | 12.000     | Volts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x9a       | PS1 IOUT         | 19.000     | Amps         | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x9b       | PS1 IIn          | 1.000      | Amps         | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x9c       | Power1           | 276.000    | Watts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0x9d       | PS1 Inlet Temp   | 24.000     | degrees C    | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xa6       | FAN Middle Power | 60.000     | Watts        | ok     | na         | na         | na         | na       | na         | na         | 5.000  | 5.000 
+0xa7       | SwitchBoard Power2 | 83.200     | Watts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xa8       | SwitchBoard Temp | 25.000     | degrees C    | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xa9       | SwitchBoard Power1 | 76.800     | Watts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xbb       | CLU2 Temp        | 20.000     | degrees C    | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xbc       | FAN Front Power  | 70.000     | Watts        | ok     | na         | na         | na         | na       | na         | na         | 5.000  | 5.000 
+0xbd       | SSD Disk8 Temp   | 42.000     | degrees C    | ok     | na         | na         | na         | 84.000   | 85.000     | na         | 2.000  | 2.000 
+0xbe       | SSD Disk9 Temp   | 43.000     | degrees C    | ok     | na         | na         | na         | 84.000   | 85.000     | na         | 2.000  | 2.000 
+0xc0       | FAN2 F Speed     | 3402.000   | RPM          | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xc1       | FAN2 R Speed     | 2520.000   | RPM          | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xc2       | FAN8 R Speed     | 4536.000   | RPM          | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xc3       | FAN8 F Speed     | 6048.000   | RPM          | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xc4       | FAN7 R Speed     | 4536.000   | RPM          | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xc5       | FAN7 F Speed     | 6048.000   | RPM          | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xc6       | FAN6 R Speed     | 4536.000   | RPM          | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xc7       | FAN6 F Speed     | 6048.000   | RPM          | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xc8       | FAN5 F Speed     | 6048.000   | RPM          | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xc9       | FAN5 R Speed     | 4536.000   | RPM          | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xca       | FAN3 F Speed     | 3402.000   | RPM          | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xcb       | FAN3 R Speed     | 2520.000   | RPM          | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xcc       | FAN4 R Speed     | 2520.000   | RPM          | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xcd       | FAN4 F Speed     | 3402.000   | RPM          | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xce       | FAN1 F Speed     | 3402.000   | RPM          | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xcf       | FAN1 R Speed     | 2520.000   | RPM          | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xd1       | FAN10 F Speed    | 6048.000   | RPM          | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xd2       | FAN10 R Speed    | 4536.000   | RPM          | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xd3       | FAN11 R Speed    | 4536.000   | RPM          | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xd4       | FAN11 F Speed    | 6048.000   | RPM          | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xd5       | FAN9 F Speed     | 6048.000   | RPM          | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xd6       | FAN9 R Speed     | 4536.000   | RPM          | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xd7       | FAN12 F Speed    | 6048.000   | RPM          | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xd8       | FAN12 R Speed    | 4536.000   | RPM          | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xd9       | FAN13 F Speed    | 6048.000   | RPM          | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xda       | FAN13 R Speed    | 4536.000   | RPM          | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xdb       | NPU1 Power       | 74.400     | Watts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xdc       | NPU1 CORE Temp   | 36.000     | degrees C    | ok     | na         | na         | na         | 105.000  | na         | na         | 2.000  | 0.000 
+0xdd       | NPU1 HBM Temp    | 39.000     | degrees C    | ok     | na         | na         | na         | 105.000  | na         | na         | 2.000  | 0.000 
+0xde       | NPU1 VRD Temp    | 38.000     | degrees C    | ok     | na         | na         | na         | 118.000  | na         | na         | 2.000  | 0.000 
+0xdf       | NPU2 CORE Temp   | 37.000     | degrees C    | ok     | na         | na         | na         | 105.000  | na         | na         | 2.000  | 0.000 
+0xe0       | NPU2 HBM Temp    | 40.000     | degrees C    | ok     | na         | na         | na         | 105.000  | na         | na         | 2.000  | 0.000 
+0xe1       | NPU2 VRD Temp    | 40.000     | degrees C    | ok     | na         | na         | na         | 118.000  | na         | na         | 2.000  | 0.000 
+0xe2       | NPU2 Power       | 78.000     | Watts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xe3       | NPU3 Power       | 73.200     | Watts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xe4       | NPU3 CORE Temp   | 36.000     | degrees C    | ok     | na         | na         | na         | 105.000  | na         | na         | 2.000  | 0.000 
+0xe5       | NPU3 HBM Temp    | 38.000     | degrees C    | ok     | na         | na         | na         | 105.000  | na         | na         | 2.000  | 0.000 
+0xe6       | NPU3 VRD Temp    | 41.000     | degrees C    | ok     | na         | na         | na         | 118.000  | na         | na         | 2.000  | 0.000 
+0xe7       | NPU4 CORE Temp   | 36.000     | degrees C    | ok     | na         | na         | na         | 105.000  | na         | na         | 2.000  | 0.000 
+0xe8       | NPU4 HBM Temp    | 37.000     | degrees C    | ok     | na         | na         | na         | 105.000  | na         | na         | 2.000  | 0.000 
+0xe9       | NPU4 VRD Temp    | 40.000     | degrees C    | ok     | na         | na         | na         | 118.000  | na         | na         | 2.000  | 0.000 
+0xea       | NPU4 Power       | 69.600     | Watts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xeb       | PCIe RAID6 Temp  | 42.000     | degrees C    | ok     | na         | na         | na         | 105.000  | na         | na         | 2.000  | 2.000 
+0xec       | PCIe6 BBU Temp   | na         | degrees C    | na     | na         | na         | na         | 60.000   | na         | na         | 2.000  | 2.000 
+0xed       | NPU8 CORE Temp   | 35.000     | degrees C    | ok     | na         | na         | na         | 105.000  | na         | na         | 2.000  | 0.000 
+0xee       | NPU8 Power       | 74.400     | Watts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xef       | NPU8 HBM Temp    | 37.000     | degrees C    | ok     | na         | na         | na         | 105.000  | na         | na         | 2.000  | 0.000 
+0xf0       | NPU8 VRD Temp    | 40.000     | degrees C    | ok     | na         | na         | na         | 118.000  | na         | na         | 2.000  | 0.000 
+0xf1       | NPU9 CORE Temp   | 35.000     | degrees C    | ok     | na         | na         | na         | 105.000  | na         | na         | 2.000  | 0.000 
+0xf2       | NPU9 Power       | 68.400     | Watts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xf3       | NPU9 HBM Temp    | 38.000     | degrees C    | ok     | na         | na         | na         | 105.000  | na         | na         | 2.000  | 0.000 
+0xf4       | NPU9 VRD Temp    | 40.000     | degrees C    | ok     | na         | na         | na         | 118.000  | na         | na         | 2.000  | 0.000 
+0xf5       | NPU10 CORE Temp  | 35.000     | degrees C    | ok     | na         | na         | na         | 105.000  | na         | na         | 2.000  | 0.000 
+0xf6       | NPU10 Power      | 70.800     | Watts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xf7       | NPU10 HBM Temp   | 38.000     | degrees C    | ok     | na         | na         | na         | 105.000  | na         | na         | 2.000  | 0.000 
+0xf8       | NPU10 VRD Temp   | 40.000     | degrees C    | ok     | na         | na         | na         | 118.000  | na         | na         | 2.000  | 0.000 
+0xf9       | NPU11 CORE Temp  | 36.000     | degrees C    | ok     | na         | na         | na         | 105.000  | na         | na         | 2.000  | 0.000 
+0xfa       | NPU11 Power      | 70.800     | Watts        | ok     | na         | na         | na         | na       | na         | na         | 0.000  | 0.000 
+0xfb       | NPU11 VRD Temp   | 41.000     | degrees C    | ok     | na         | na         | na         | 118.000  | na         | na         | 2.000  | 0.000 
+0xfc       | NPU11 HBM Temp   | 38.000     | degrees C    | ok     | na         | na         | na         | 105.000  | na         | na         | 2.000  | 0.000 
+0x1        | Watchdog2        | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0x2        | Mngmnt Health    | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0x3        | SysRestart       | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0x5        | Op. Log Full     | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0x6        | SEL Status       | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0x7        | Sec. Log Full    | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0x8        | ACPI State       | 0          | discrete     | 0x8001 | na         | na         | na         | na       | na         | na         | na     | na    
+0x9        | Power Button     | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0xa        | PwrOk Sig. Drop  | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0xb        | PwrOn TimeOut    | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0x11       | PwrCap Status    | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0x12       | PS Redundant     | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0x17       | RTC Battery      | 1          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0x18       | Boot Error       | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0x19       | System Error     | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0x1a       | System Notice    | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0x48       | DIMM110          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x49       | DIMM060          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x4a       | DIMM031          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x4b       | DIMM041          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x4c       | DIMM061          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x4d       | DIMM050          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x4e       | DIMM070          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x4f       | DIMM030          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x50       | DIMM111          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x51       | DIMM010          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x52       | DIMM021          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x53       | DIMM100          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x54       | DIMM101          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x55       | DIMM120          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x56       | DIMM121          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x57       | DIMM130          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x58       | DIMM131          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x59       | DIMM000          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x5a       | DIMM040          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x5b       | DIMM001          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x5c       | DIMM011          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x5d       | DIMM020          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x5e       | DIMM171          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x5f       | DIMM161          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x60       | DIMM160          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x61       | DIMM151          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x62       | DIMM150          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x63       | DIMM141          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x64       | DIMM140          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x65       | DIMM071          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x66       | DIMM051          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x67       | DIMM170          | 0          | discrete     | 0x8040 | na         | na         | na         | na       | na         | na         | na     | na    
+0x68       | PS6 Status       | 0          | discrete     | 0x8001 | na         | na         | na         | na       | na         | na         | na     | na    
+0x69       | PS6 Temp Status  | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0x71       | PS5 Temp Status  | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0x72       | PS5 Status       | 0          | discrete     | 0x8001 | na         | na         | na         | na       | na         | na         | na     | na    
+0x7a       | PS4 Status       | 0          | discrete     | 0x8001 | na         | na         | na         | na       | na         | na         | na     | na    
+0x7b       | PS4 Temp Status  | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0x83       | PS2 Status       | 0          | discrete     | 0x8001 | na         | na         | na         | na       | na         | na         | na     | na    
+0x84       | PS2 Temp Status  | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0x8c       | PS3 Temp Status  | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0x8d       | PS3 Status       | 0          | discrete     | 0x8001 | na         | na         | na         | na       | na         | na         | na     | na    
+0x95       | PS1 Temp Status  | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0x96       | PS1 Status       | 0          | discrete     | 0x8001 | na         | na         | na         | na       | na         | na         | na     | na    
+0x9e       | FAN2 Presence    | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0x9f       | FAN1 Presence    | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0xa0       | FAN3 Presence    | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0xa1       | FAN4 Presence    | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0xa2       | FAN5 Presence    | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0xa3       | FAN6 Presence    | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0xa4       | FAN7 Presence    | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0xa5       | FAN8 Presence    | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0xaa       | DISK2            | 0          | discrete     | 0x8001 | na         | na         | na         | na       | na         | na         | na     | na    
+0xab       | DISK1            | 0          | discrete     | 0x8001 | na         | na         | na         | na       | na         | na         | na     | na    
+0xac       | DISK3            | 0          | discrete     | 0x8001 | na         | na         | na         | na       | na         | na         | na     | na    
+0xad       | DISK0            | 0          | discrete     | 0x8001 | na         | na         | na         | na       | na         | na         | na     | na    
+0xae       | DISK1            | 0          | discrete     | 0x8001 | na         | na         | na         | na       | na         | na         | na     | na    
+0xaf       | DISK2            | 0          | discrete     | 0x8001 | na         | na         | na         | na       | na         | na         | na     | na    
+0xb0       | DISK3            | 0          | discrete     | 0x8001 | na         | na         | na         | na       | na         | na         | na     | na    
+0xb1       | DISK0            | 0          | discrete     | 0x8001 | na         | na         | na         | na       | na         | na         | na     | na    
+0xb2       | DISK0            | 0          | discrete     | 0x8001 | na         | na         | na         | na       | na         | na         | na     | na    
+0xb3       | DISK2            | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0xb4       | DISK1            | 0          | discrete     | 0x8001 | na         | na         | na         | na       | na         | na         | na     | na    
+0xb5       | DISK3            | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0xb6       | FAN10 Presence   | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0xb7       | FAN11 Presence   | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0xb8       | FAN13 Presence   | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0xb9       | FAN9 Presence    | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    
+0xba       | FAN12 Presence   | 0          | discrete     | 0x8000 | na         | na         | na         | na       | na         | na         | na     | na    

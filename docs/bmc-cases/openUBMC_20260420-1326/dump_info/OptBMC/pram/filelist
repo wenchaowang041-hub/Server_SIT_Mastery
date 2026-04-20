@@ -1,0 +1,9 @@
+drwx------    3 root     root           180 Apr 20 13:28 .
+drwx------    3 root     root            60 Apr 20 13:28 ..
+-rw-------    1 secbox   secbox       23216 Apr 20 13:27 env_web_view.dat
+-rw-------    1 root     root             0 Apr 20 13:28 filelist
+drwx------    2 root     root            40 Jan  1  1970 lost+found
+-rw-------    1 root     root             0 Jan  1  1970 pflash_lock
+-rw-------    1 secbox   secbox        5055 Apr 20 13:27 powerview.txt
+-rw-------    1 secbox   secbox       35363 Apr 20 13:27 ps_web_view.dat
+lrwxrwxrwx    1 root     root            31 Apr 20 13:28 snmpd.conf -> /data/trust/etc/snmp/snmpd.conf

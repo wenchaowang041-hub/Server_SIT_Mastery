@@ -1,0 +1,25 @@
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/nvm_active         350601    231863     95391  71% /
+devtmpfs                836792         0    836792   0% /dev
+tmpfs                   334720       296    334424   0% /run
+tmpfs                     4096         0      4096   0% /sys/fs/cgroup
+tmpfs                   334720       296    334424   0% /etc/machine-id
+none                    836792        12    836780   0% /var
+tmpfs                   836792         0    836792   0% /dev
+tmpfs                   836792    136156    700636  16% /dev/shm
+none                    131072       636    130436   0% /tmp
+/dev/mmcblk0p1          998060     33912    895336   4% /data
+/dev/mmcblk0p9          329207     65177    241826  21% /var/log
+/dev/mmcblk0p7          235431      9523    208705   4% /data/trust
+/dev/mmcblk0gp3         117203      7302    100727   7% /data/backup
+/dev/pramdisk0           11507       924     10583   8% /opt/bmc/pram
+/dev/loop0              186299       110    171853   0% /data/opt/bmc/dataacquisition
+tmpfs                   836792    136156    700636  16% /dev/shm/chroot/2588
+tmpfs                   836792    136156    700636  16% /dev/shm/chroot/2595
+tmpfs                   836792    136156    700636  16% /dev/shm/chroot/2675
+tmpfs                   836792    136156    700636  16% /dev/shm/chroot/2883
+tmpfs                   836792    136156    700636  16% /dev/shm/chroot/2884
+/dev/mmcblk0p5          313940         4    313936   0% /data/ibma
+/dev/mapper/mmcblksp   3578004    535448   3042556  15% /data/sp
+tmpfs                   836792    136156    700636  16% /dev/shm/chroot/3181
+tmpfs                   836792    136156    700636  16% /dev/shm/chroot/3321

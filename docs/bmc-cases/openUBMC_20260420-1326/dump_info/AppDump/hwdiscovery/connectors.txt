@@ -1,0 +1,1837 @@
+root
+├─Connector_Sensor_01
+└─Connector_EXU_1_01
+  ├─Connector_PSR_EEP_0101
+  ├─Connector_Switch_6022_0101
+  ├─Connector_LOM_1_0101
+  ├─Connector_SEU_1_0101
+  ├─Connector_LOM_2_0101
+  ├─Connector_M2_1_0101
+  ├─Connector_PSU_2_0101
+  │ ├─Connector_PSU_3_010110
+  │ ├─Connector_PSU_1_010110
+  │ └─Connector_PSU_2_010110
+  ├─Connector_OCP_1_0101
+  ├─Connector_CLU_1_0101
+  │ ├─Connector_Fan1SingleSensor_010103
+  │ ├─Connector_Fan8SingleSensor_010103
+  │ ├─Connector_Fan6SingleSensor_010103
+  │ ├─Connector_Fan7SingleSensor_010103
+  │ ├─Connector_Fan4DualSensor_010103
+  │ ├─Connector_Fan5SingleSensor_010103
+  │ ├─Connector_Fan3SingleSensor_010103
+  │ ├─Connector_Fan5DualSensor_010103
+  │ ├─Connector_Fan4SingleSensor_010103
+  │ ├─Connector_Fan2SingleSensor_010103
+  │ ├─Connector_Fan8DualSensor_010103
+  │ ├─Connector_Fan6DualSensor_010103
+  │ ├─Connector_Fan7DualSensor_010103
+  │ ├─Connector_Fan1DualSensor_010103
+  │ ├─Connector_Fan2DualSensor_010103
+  │ └─Connector_Fan3DualSensor_010103
+  ├─Connector_PSU_1_0101
+  │ ├─Connector_PSU_1_01010F
+  │ ├─Connector_PSU_3_01010F
+  │ └─Connector_PSU_2_01010F
+  ├─Connector_BCU_1_0101
+  │ ├─Connector_A1a_010101
+  │ ├─Connector_C6a_010101
+  │ ├─Connector_BCUExtend_010101
+  │ ├─Connector_C7b_010101
+  │ ├─Connector_UbcConfig_010101
+  │ ├─Connector_A3a_010101
+  │ ├─Connector_A4a_010101
+  │ ├─Connector_D6a_010101
+  │ ├─Connector_B2a_010101
+  │ ├─Connector_B4c_010101
+  │ ├─Connector_D5a_010101
+  │ ├─Connector_B3c_010101
+  │ ├─Connector_D7a_010101
+  │ ├─Connector_Memory_010101
+  │ ├─Connector_D4b_010101
+  │ ├─Connector_B1a_010101
+  │ ├─Connector_A1c_010101
+  │ ├─Connector_B3a_010101
+  │ ├─Connector_C4a_010101
+  │ ├─Connector_B4a_010101
+  │ ├─Connector_A2c_010101
+  │ ├─Connector_TrustedModule_010101
+  │ ├─Connector_C5a_010101
+  │ ├─Connector_PsEvent_010101
+  │ └─Connector_A2a_010101
+  ├─Connector_SEU_3_0101
+  │ ├─Connector_ComVPDConnect_3_01010D
+  │ ├─Connector_ComVPDConnect_2_01010D
+  │ │ ├─Connector_ComVPD_01010D02
+  │ │ └─Connector_Policy_01010D02
+  │ ├─Connector_ComVPDConnect_4_01010D
+  │ └─Connector_ComVPDConnect_1_01010D
+  │   ├─Connector_Policy_01010D01
+  │   └─Connector_ComVPD_01010D01
+  ├─Connector_SEU_2_0101
+  ├─Connector_CLU_2_0101
+  │ ├─Connector_Fan11DualSensor_010104
+  │ ├─Connector_Fan13SingleSensor_010104
+  │ ├─Connector_Fan10DualSensor_010104
+  │ ├─Connector_Fan12DualSensor_010104
+  │ ├─Connector_Fan11SingleSensor_010104
+  │ ├─Connector_Fan10SingleSensor_010104
+  │ ├─Connector_Fan9SingleSensor_010104
+  │ ├─Connector_Fan9DualSensor_010104
+  │ ├─Connector_Fan12SingleSensor_010104
+  │ └─Connector_Fan13DualSensor_010104
+  └─Connector_OCP_2_0101
+
+Connector_Sensor_01:
+.AuxId                 : "0"
+.Bom                   : "14100513"
+.Buses                 : []
+.ChassisId             : "1"
+.GroupId               : 3
+.GroupPosition         : "0102"
+.Id                    : "Sensor"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : ""
+.Slot                  : 20
+.SystemId              : 1
+.Type                  : ""
+-SourcePath            : /opt/bmc/sr/14100513_Sensor_0.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 3.00
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 3.00
+
+Connector_EXU_1_01:
+.AuxId                 : ""
+.Bom                   : "14100513"
+.Buses                 : ["I2c_1","I2c_2","I2c_3","I2c_4","I2c_5","I2c_6","I2c_7","I2c_8","I2c_9","I2c_11","Jtag_1","JtagOverLocalBus_1","Hisport_0","Hisport_1","Hisport_2","Hisport_3","Hisport_4","Hisport_5","Hisport_6","Hisport_7","Hisport_8","Hisport_9","Hisport_10","Hisport_11","Hisport_12","Hisport_13","Hisport_14","Hisport_15","Hisport_16","Hisport_17","Hisport_18","Hisport_19","Hisport_20","Hisport_21"]
+.ChassisId             : "1"
+.GroupId               : 4
+.GroupPosition         : "0101"
+.Id                    : "00000002012000225001"
+.IdentifyMode          : 3
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "J6023"
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : "ExpandBoard"
+-SourcePath            : /bmc/kepler/Chip/Eeprom/Eeprom_3_1_01
+-SoftSourcePath        : /opt/bmc/sr/14100513_00000002012000225001_soft.sr
+-DataSource            : EEPROM
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.05
+-EepromFormatVersion   : 3.00
+-EepromDataVersion     : 5.05
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.03
+
+Connector_PSR_EEP_0101:
+.AuxId                 : ""
+.Bom                   : "14100513"
+.Buses                 : ["I2c_8","I2c_2"]
+.ChassisId             : "1"
+.GroupId               : 8
+.GroupPosition         : "01010A"
+.Id                    : "00000002082000244001"
+.IdentifyMode          : 3
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "PSR"
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : ""
+-SourcePath            : /bmc/kepler/Chip/Eeprom/Eeprom_3_10_0101
+-SoftSourcePath        : /opt/bmc/sr/14100513_00000002082000244001_soft.sr
+-DataSource            : EEPROM
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.05
+-EepromFormatVersion   : 3.00
+-EepromDataVersion     : 5.05
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.01
+
+Connector_OCP_1_0101:
+.AuxId                 : ""
+.Bom                   : "14220247"
+.Buses                 : ["I2c_2","I2cMux_Pca9545_i2c5_chip_8_0101"]
+.ChassisId             : "1"
+.GroupId               : 6
+.GroupPosition         : "010107"
+.Id                    : ""
+.IdentifyMode          : 2
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : "J6008"
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : ""
+
+Connector_SEU_2_0101:
+.AuxId                 : ""
+.Bom                   : "14100665"
+.Buses                 : ["I2c_2","I2cMux_Pca9545_i2c5_chip_2_0101","JtagMux_JtagSwitch_1_5_0101"]
+.ChassisId             : "1"
+.GroupId               : 13
+.GroupPosition         : "01010C"
+.Id                    : "00000002032000221301"
+.IdentifyMode          : 3
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "SEU"
+.Slot                  : 2
+.SystemId              : 1
+.Type                  : "DiskBackplane"
+-SourcePath            : /bmc/kepler/Chip/Eeprom/Eeprom_3_12_0101
+-SoftSourcePath        : /opt/bmc/sr/14100665_00000002032000221301_soft.sr
+-DataSource            : EEPROM
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.04
+-EepromFormatVersion   : 3.00
+-EepromDataVersion     : 5.04
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.03
+
+Connector_CLU_2_0101:
+.AuxId                 : ""
+.Bom                   : "14100363"
+.Buses                 : ["I2c_2","I2c_9","JtagMux_JtagSwitch_1_3_0101"]
+.ChassisId             : "1"
+.GroupId               : 15
+.GroupPosition         : "010104"
+.Id                    : "00000002052000223002"
+.IdentifyMode          : 3
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "CLU"
+.Slot                  : 2
+.SystemId              : 1
+.Type                  : "FanBackplane"
+-SourcePath            : /opt/bmc/sr/14100363_00000002052000223002.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.04
+-EepromFormatVersion   : 3.00
+-EepromDataVersion     : 5.04
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.04
+
+Connector_Fan12SingleSensor_010104:
+.AuxId                 : ""
+.Bom                   : "Single"
+.Buses                 : ["I2c_2","I2c_9"]
+.ChassisId             : ""
+.GroupId               : 85
+.GroupPosition         : "01010417"
+.Id                    : "Rotator"
+.IdentifyMode          : 2
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : ""
+.Slot                  : 12
+.SystemId              : 1
+.Type                  : ""
+
+Connector_Fan13SingleSensor_010104:
+.AuxId                 : ""
+.Bom                   : "Single"
+.Buses                 : ["I2c_2","I2c_9"]
+.ChassisId             : ""
+.GroupId               : 86
+.GroupPosition         : "01010419"
+.Id                    : "Rotator"
+.IdentifyMode          : 2
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : ""
+.Slot                  : 13
+.SystemId              : 1
+.Type                  : ""
+
+Connector_Fan10DualSensor_010104:
+.AuxId                 : "iss"
+.Bom                   : "Dual"
+.Buses                 : ["I2c_2","I2c_9"]
+.ChassisId             : ""
+.GroupId               : 88
+.GroupPosition         : "01010412"
+.Id                    : "Rotator"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : ""
+.Slot                  : 10
+.SystemId              : 1
+.Type                  : ""
+-SourcePath            : /opt/bmc/sr/Dual_Rotator_iss.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.02
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.02
+
+Connector_Fan11DualSensor_010104:
+.AuxId                 : "iss"
+.Bom                   : "Dual"
+.Buses                 : ["I2c_2","I2c_9"]
+.ChassisId             : ""
+.GroupId               : 89
+.GroupPosition         : "01010414"
+.Id                    : "Rotator"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : ""
+.Slot                  : 11
+.SystemId              : 1
+.Type                  : ""
+-SourcePath            : /opt/bmc/sr/Dual_Rotator_iss.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.02
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.02
+
+Connector_Fan12DualSensor_010104:
+.AuxId                 : "iss"
+.Bom                   : "Dual"
+.Buses                 : ["I2c_2","I2c_9"]
+.ChassisId             : ""
+.GroupId               : 90
+.GroupPosition         : "01010416"
+.Id                    : "Rotator"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : ""
+.Slot                  : 12
+.SystemId              : 1
+.Type                  : ""
+-SourcePath            : /opt/bmc/sr/Dual_Rotator_iss.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.02
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.02
+
+Connector_Fan13DualSensor_010104:
+.AuxId                 : "iss"
+.Bom                   : "Dual"
+.Buses                 : ["I2c_2","I2c_9"]
+.ChassisId             : ""
+.GroupId               : 91
+.GroupPosition         : "01010418"
+.Id                    : "Rotator"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : ""
+.Slot                  : 13
+.SystemId              : 1
+.Type                  : ""
+-SourcePath            : /opt/bmc/sr/Dual_Rotator_iss.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.02
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.02
+
+Connector_Fan9SingleSensor_010104:
+.AuxId                 : ""
+.Bom                   : "Single"
+.Buses                 : ["I2c_2","I2c_9"]
+.ChassisId             : ""
+.GroupId               : 82
+.GroupPosition         : "01010411"
+.Id                    : "Rotator"
+.IdentifyMode          : 2
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : ""
+.Slot                  : 9
+.SystemId              : 1
+.Type                  : ""
+
+Connector_Fan9DualSensor_010104:
+.AuxId                 : "iss"
+.Bom                   : "Dual"
+.Buses                 : ["I2c_2","I2c_9"]
+.ChassisId             : ""
+.GroupId               : 87
+.GroupPosition         : "01010410"
+.Id                    : "Rotator"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : ""
+.Slot                  : 9
+.SystemId              : 1
+.Type                  : ""
+-SourcePath            : /opt/bmc/sr/Dual_Rotator_iss.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.02
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.02
+
+Connector_Fan10SingleSensor_010104:
+.AuxId                 : ""
+.Bom                   : "Single"
+.Buses                 : ["I2c_2","I2c_9"]
+.ChassisId             : ""
+.GroupId               : 83
+.GroupPosition         : "01010413"
+.Id                    : "Rotator"
+.IdentifyMode          : 2
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : ""
+.Slot                  : 10
+.SystemId              : 1
+.Type                  : ""
+
+Connector_Fan11SingleSensor_010104:
+.AuxId                 : ""
+.Bom                   : "Single"
+.Buses                 : ["I2c_2","I2c_9"]
+.ChassisId             : ""
+.GroupId               : 84
+.GroupPosition         : "01010415"
+.Id                    : "Rotator"
+.IdentifyMode          : 2
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : ""
+.Slot                  : 11
+.SystemId              : 1
+.Type                  : ""
+
+Connector_CLU_1_0101:
+.AuxId                 : ""
+.Bom                   : "14100363"
+.Buses                 : ["I2c_2","I2c_4","JtagMux_JtagSwitch_1_2_0101"]
+.ChassisId             : "1"
+.GroupId               : 12
+.GroupPosition         : "010103"
+.Id                    : "00000002052000223001"
+.IdentifyMode          : 3
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "CLU"
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : "FanBackplane"
+-SourcePath            : /opt/bmc/sr/14100363_00000002052000223001.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.04
+-EepromFormatVersion   : 3.00
+-EepromDataVersion     : 5.04
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.04
+
+Connector_Fan4DualSensor_010103:
+.AuxId                 : "iss"
+.Bom                   : "Dual"
+.Buses                 : ["I2c_2","I2c_4"]
+.ChassisId             : ""
+.GroupId               : 62
+.GroupPosition         : "01010306"
+.Id                    : "Rotator"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : ""
+.Slot                  : 4
+.SystemId              : 1
+.Type                  : ""
+-SourcePath            : /opt/bmc/sr/Dual_Rotator_iss.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.02
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.02
+
+Connector_Fan2DualSensor_010103:
+.AuxId                 : "iss"
+.Bom                   : "Dual"
+.Buses                 : ["I2c_2","I2c_4"]
+.ChassisId             : ""
+.GroupId               : 60
+.GroupPosition         : "01010302"
+.Id                    : "Rotator"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : ""
+.Slot                  : 2
+.SystemId              : 1
+.Type                  : ""
+-SourcePath            : /opt/bmc/sr/Dual_Rotator_iss.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.02
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.02
+
+Connector_Fan1DualSensor_010103:
+.AuxId                 : "iss"
+.Bom                   : "Dual"
+.Buses                 : ["I2c_2","I2c_4"]
+.ChassisId             : ""
+.GroupId               : 59
+.GroupPosition         : "01010300"
+.Id                    : "Rotator"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : ""
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : ""
+-SourcePath            : /opt/bmc/sr/Dual_Rotator_iss.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.02
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.02
+
+Connector_Fan6DualSensor_010103:
+.AuxId                 : "iss"
+.Bom                   : "Dual"
+.Buses                 : ["I2c_2","I2c_4"]
+.ChassisId             : ""
+.GroupId               : 64
+.GroupPosition         : "0101030A"
+.Id                    : "Rotator"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : ""
+.Slot                  : 6
+.SystemId              : 1
+.Type                  : ""
+-SourcePath            : /opt/bmc/sr/Dual_Rotator_iss.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.02
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.02
+
+Connector_Fan3DualSensor_010103:
+.AuxId                 : "iss"
+.Bom                   : "Dual"
+.Buses                 : ["I2c_2","I2c_4"]
+.ChassisId             : ""
+.GroupId               : 61
+.GroupPosition         : "01010304"
+.Id                    : "Rotator"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : ""
+.Slot                  : 3
+.SystemId              : 1
+.Type                  : ""
+-SourcePath            : /opt/bmc/sr/Dual_Rotator_iss.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.02
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.02
+
+Connector_Fan1SingleSensor_010103:
+.AuxId                 : ""
+.Bom                   : "Single"
+.Buses                 : ["I2c_2","I2c_4"]
+.ChassisId             : ""
+.GroupId               : 51
+.GroupPosition         : "01010301"
+.Id                    : "Rotator"
+.IdentifyMode          : 2
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : ""
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : ""
+
+Connector_Fan7DualSensor_010103:
+.AuxId                 : "iss"
+.Bom                   : "Dual"
+.Buses                 : ["I2c_2","I2c_4"]
+.ChassisId             : ""
+.GroupId               : 65
+.GroupPosition         : "0101030C"
+.Id                    : "Rotator"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : ""
+.Slot                  : 7
+.SystemId              : 1
+.Type                  : ""
+-SourcePath            : /opt/bmc/sr/Dual_Rotator_iss.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.02
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.02
+
+Connector_Fan4SingleSensor_010103:
+.AuxId                 : ""
+.Bom                   : "Single"
+.Buses                 : ["I2c_2","I2c_4"]
+.ChassisId             : ""
+.GroupId               : 54
+.GroupPosition         : "01010307"
+.Id                    : "Rotator"
+.IdentifyMode          : 2
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : ""
+.Slot                  : 4
+.SystemId              : 1
+.Type                  : ""
+
+Connector_Fan8DualSensor_010103:
+.AuxId                 : "iss"
+.Bom                   : "Dual"
+.Buses                 : ["I2c_2","I2c_4"]
+.ChassisId             : ""
+.GroupId               : 66
+.GroupPosition         : "0101030E"
+.Id                    : "Rotator"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : ""
+.Slot                  : 8
+.SystemId              : 1
+.Type                  : ""
+-SourcePath            : /opt/bmc/sr/Dual_Rotator_iss.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.02
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.02
+
+Connector_Fan2SingleSensor_010103:
+.AuxId                 : ""
+.Bom                   : "Single"
+.Buses                 : ["I2c_2","I2c_4"]
+.ChassisId             : ""
+.GroupId               : 52
+.GroupPosition         : "01010303"
+.Id                    : "Rotator"
+.IdentifyMode          : 2
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : ""
+.Slot                  : 2
+.SystemId              : 1
+.Type                  : ""
+
+Connector_Fan5DualSensor_010103:
+.AuxId                 : "iss"
+.Bom                   : "Dual"
+.Buses                 : ["I2c_2","I2c_4"]
+.ChassisId             : ""
+.GroupId               : 63
+.GroupPosition         : "01010308"
+.Id                    : "Rotator"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : ""
+.Slot                  : 5
+.SystemId              : 1
+.Type                  : ""
+-SourcePath            : /opt/bmc/sr/Dual_Rotator_iss.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.02
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.02
+
+Connector_Fan3SingleSensor_010103:
+.AuxId                 : ""
+.Bom                   : "Single"
+.Buses                 : ["I2c_2","I2c_4"]
+.ChassisId             : ""
+.GroupId               : 53
+.GroupPosition         : "01010305"
+.Id                    : "Rotator"
+.IdentifyMode          : 2
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : ""
+.Slot                  : 3
+.SystemId              : 1
+.Type                  : ""
+
+Connector_Fan5SingleSensor_010103:
+.AuxId                 : ""
+.Bom                   : "Single"
+.Buses                 : ["I2c_2","I2c_4"]
+.ChassisId             : ""
+.GroupId               : 55
+.GroupPosition         : "01010309"
+.Id                    : "Rotator"
+.IdentifyMode          : 2
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : ""
+.Slot                  : 5
+.SystemId              : 1
+.Type                  : ""
+
+Connector_Fan7SingleSensor_010103:
+.AuxId                 : ""
+.Bom                   : "Single"
+.Buses                 : ["I2c_2","I2c_4"]
+.ChassisId             : ""
+.GroupId               : 57
+.GroupPosition         : "0101030D"
+.Id                    : "Rotator"
+.IdentifyMode          : 2
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : ""
+.Slot                  : 7
+.SystemId              : 1
+.Type                  : ""
+
+Connector_Fan6SingleSensor_010103:
+.AuxId                 : ""
+.Bom                   : "Single"
+.Buses                 : ["I2c_2","I2c_4"]
+.ChassisId             : ""
+.GroupId               : 56
+.GroupPosition         : "0101030B"
+.Id                    : "Rotator"
+.IdentifyMode          : 2
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : ""
+.Slot                  : 6
+.SystemId              : 1
+.Type                  : ""
+
+Connector_Fan8SingleSensor_010103:
+.AuxId                 : ""
+.Bom                   : "Single"
+.Buses                 : ["I2c_2","I2c_4"]
+.ChassisId             : ""
+.GroupId               : 58
+.GroupPosition         : "0101030F"
+.Id                    : "Rotator"
+.IdentifyMode          : 2
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : ""
+.Slot                  : 8
+.SystemId              : 1
+.Type                  : ""
+
+Connector_OCP_2_0101:
+.AuxId                 : "1d787105"
+.Bom                   : "14220247"
+.Buses                 : ["I2c_2","I2cMux_Pca9545_i2c5_chip_7_0101"]
+.ChassisId             : "1"
+.GroupId               : 5
+.GroupPosition         : "010108"
+.Id                    : "1d781515"
+.IdentifyMode          : 2
+.LoadStatus            : 4
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "J6014"
+.Slot                  : 2
+.SystemId              : 1
+.Type                  : ""
+
+Connector_SEU_3_0101:
+.AuxId                 : ""
+.Bom                   : "14100665"
+.Buses                 : ["I2c_2","I2cMux_Pca9545_i2c5_chip_3_0101","JtagMux_JtagSwitch_1_6_0101"]
+.ChassisId             : "1"
+.GroupId               : 14
+.GroupPosition         : "01010D"
+.Id                    : "00000002032000221201"
+.IdentifyMode          : 3
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "SEU"
+.Slot                  : 3
+.SystemId              : 1
+.Type                  : "DiskBackplane"
+-SourcePath            : /bmc/kepler/Chip/Eeprom/Eeprom_3_13_0101
+-SoftSourcePath        : /opt/bmc/sr/14100665_00000002032000221201_soft.sr
+-DataSource            : EEPROM
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.04
+-EepromFormatVersion   : 3.00
+-EepromDataVersion     : 5.04
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.03
+
+Connector_ComVPDConnect_4_01010D:
+.AuxId                 : "0"
+.Bom                   : "14140224"
+.Buses                 : ["I2cMux_SMC_4_01010D"]
+.ChassisId             : "1"
+.GroupId               : 81
+.GroupPosition         : "01010D04"
+.Id                    : "VPD"
+.IdentifyMode          : 2
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : "J16"
+.Slot                  : 11
+.SystemId              : 1
+.Type                  : "NVMe"
+
+Connector_ComVPDConnect_1_01010D:
+.AuxId                 : "0"
+.Bom                   : "14140224"
+.Buses                 : ["I2cMux_SMC_1_01010D"]
+.ChassisId             : "1"
+.GroupId               : 78
+.GroupPosition         : "01010D01"
+.Id                    : "VPD"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "J13"
+.Slot                  : 8
+.SystemId              : 1
+.Type                  : "NVMe"
+-SourcePath            : /opt/bmc/sr/14140224_VPD_0.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 1.11
+-EffectiveDataVersion  : 1.11
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 1.11
+-LocalDataVersion      : 1.11
+
+Connector_Policy_01010D01:
+.AuxId                 : "1d78"
+.Bom                   : "14140224"
+.Buses                 : ["I2cMux_SMC_1_01010D"]
+.ChassisId             : "1"
+.GroupId               : 93
+.GroupPosition         : "01010D0102"
+.Id                    : "POLICY"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : ""
+.Slot                  : 8
+.SystemId              : 1
+.Type                  : "NVMe"
+-SourcePath            : /opt/bmc/sr/14140224_POLICY_1d78.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 3.00
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 3.00
+
+Connector_ComVPD_01010D01:
+.AuxId                 : "0"
+.Bom                   : "14140224"
+.Buses                 : ["I2cMux_SMC_1_01010D"]
+.ChassisId             : "1"
+.GroupId               : 92
+.GroupPosition         : "01010D0101"
+.Id                    : "PROTOCOL"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : ""
+.Slot                  : 8
+.SystemId              : 1
+.Type                  : "NVMe"
+-SourcePath            : /opt/bmc/sr/14140224_PROTOCOL_0.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 3.00
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 3.00
+
+Connector_ComVPDConnect_2_01010D:
+.AuxId                 : "0"
+.Bom                   : "14140224"
+.Buses                 : ["I2cMux_SMC_2_01010D"]
+.ChassisId             : "1"
+.GroupId               : 79
+.GroupPosition         : "01010D02"
+.Id                    : "VPD"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "J14"
+.Slot                  : 9
+.SystemId              : 1
+.Type                  : "NVMe"
+-SourcePath            : /opt/bmc/sr/14140224_VPD_0.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 1.11
+-EffectiveDataVersion  : 1.11
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 1.11
+-LocalDataVersion      : 1.11
+
+Connector_ComVPD_01010D02:
+.AuxId                 : "0"
+.Bom                   : "14140224"
+.Buses                 : ["I2cMux_SMC_2_01010D"]
+.ChassisId             : "1"
+.GroupId               : 95
+.GroupPosition         : "01010D0201"
+.Id                    : "PROTOCOL"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : ""
+.Slot                  : 9
+.SystemId              : 1
+.Type                  : "NVMe"
+-SourcePath            : /opt/bmc/sr/14140224_PROTOCOL_0.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 3.00
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 3.00
+
+Connector_Policy_01010D02:
+.AuxId                 : "1d78"
+.Bom                   : "14140224"
+.Buses                 : ["I2cMux_SMC_2_01010D"]
+.ChassisId             : "1"
+.GroupId               : 94
+.GroupPosition         : "01010D0202"
+.Id                    : "POLICY"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : ""
+.Slot                  : 9
+.SystemId              : 1
+.Type                  : "NVMe"
+-SourcePath            : /opt/bmc/sr/14140224_POLICY_1d78.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 3.00
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 3.00
+
+Connector_ComVPDConnect_3_01010D:
+.AuxId                 : "0"
+.Bom                   : "14140224"
+.Buses                 : ["I2cMux_SMC_3_01010D"]
+.ChassisId             : "1"
+.GroupId               : 80
+.GroupPosition         : "01010D03"
+.Id                    : "VPD"
+.IdentifyMode          : 2
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : "J15"
+.Slot                  : 10
+.SystemId              : 1
+.Type                  : "NVMe"
+
+Connector_PSU_1_0101:
+.AuxId                 : ""
+.Bom                   : "14100513"
+.Buses                 : ["I2c_2","I2cMux_Pca9545_i2c3_chip_1_0101"]
+.ChassisId             : "1"
+.GroupId               : 7
+.GroupPosition         : "01010F"
+.Id                    : "00000002012000234001"
+.IdentifyMode          : 3
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "PSU1"
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : "ExpandBoard"
+-SourcePath            : /opt/bmc/sr/14100513_00000002012000234001.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.04
+-EepromFormatVersion   : 3.00
+-EepromDataVersion     : 5.04
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.04
+
+Connector_PSU_2_01010F:
+.AuxId                 : "CRPS"
+.Bom                   : "14191046"
+.Buses                 : ["I2c_2","I2cMux_Pca9545_i2c3_chip_1_0101"]
+.ChassisId             : "1"
+.GroupId               : 21
+.GroupPosition         : "01010F02"
+.Id                    : "PSU"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "psu2"
+.Slot                  : 5
+.SystemId              : 1
+.Type                  : "Psu"
+-SourcePath            : /opt/bmc/sr/14191046_PSU_CRPS.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.03
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.03
+
+Connector_PSU_1_01010F:
+.AuxId                 : "CRPS"
+.Bom                   : "14191046"
+.Buses                 : ["I2c_2","I2cMux_Pca9545_i2c3_chip_1_0101"]
+.ChassisId             : "1"
+.GroupId               : 20
+.GroupPosition         : "01010F01"
+.Id                    : "PSU"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "psu1"
+.Slot                  : 4
+.SystemId              : 1
+.Type                  : "Psu"
+-SourcePath            : /opt/bmc/sr/14191046_PSU_CRPS.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.03
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.03
+
+Connector_PSU_3_01010F:
+.AuxId                 : "CRPS"
+.Bom                   : "14191046"
+.Buses                 : ["I2c_2","I2cMux_Pca9545_i2c3_chip_1_0101"]
+.ChassisId             : "1"
+.GroupId               : 22
+.GroupPosition         : "01010F03"
+.Id                    : "PSU"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "psu3"
+.Slot                  : 6
+.SystemId              : 1
+.Type                  : "Psu"
+-SourcePath            : /opt/bmc/sr/14191046_PSU_CRPS.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.03
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.03
+
+Connector_LOM_2_0101:
+.AuxId                 : ""
+.Bom                   : "14220246"
+.Buses                 : ["I2c_2","I2cMux_Pca9545_i2c5_chip_7_0101"]
+.ChassisId             : "1"
+.GroupId               : 18
+.GroupPosition         : "010106"
+.Id                    : ""
+.IdentifyMode          : 3
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : "J6014"
+.Slot                  : 2
+.SystemId              : 1
+.Type                  : ""
+
+Connector_BCU_1_0101:
+.AuxId                 : ""
+.Bom                   : "14060876"
+.Buses                 : ["I2c_1","I2c_2","I2c_8","JtagMux_JtagSwitch_1_1_0101","Hisport_0","Hisport_1","Hisport_2","Hisport_3","Hisport_4","Hisport_5","Hisport_6","Hisport_7","Hisport_8","Hisport_9","Hisport_10","Hisport_11","Hisport_12","Hisport_13","Hisport_14","Hisport_15","Hisport_16","Hisport_17","Hisport_18","Hisport_19","Hisport_20","Hisport_21"]
+.ChassisId             : "1"
+.GroupId               : 9
+.GroupPosition         : "010101"
+.Id                    : "00000001020302031825"
+.IdentifyMode          : 3
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "BCU"
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : "CPUBoard"
+-SourcePath            : /data/opt/bmc/sr/backup/00000001020302031825_010101.bin
+-SoftSourcePath        : /opt/bmc/sr/14060876_00000001020302031825_soft.sr
+-DataSource            : EEPROM
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 3.37
+-EepromFormatVersion   : 3.00
+-EepromDataVersion     : 3.37
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 3.22
+
+Connector_BCUExtend_010101:
+.AuxId                 : "0"
+.Bom                   : "BCUExtend"
+.Buses                 : ["I2c_1","I2c_2"]
+.ChassisId             : ""
+.GroupId               : 27
+.GroupPosition         : "0101011A"
+.Id                    : "BC83AMDA"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : ""
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : ""
+-SourcePath            : /opt/bmc/sr/BCUExtend_BC83AMDA_0.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 3.00
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 3.00
+
+Connector_TrustedModule_010101:
+.AuxId                 : ""
+.Bom                   : "140500029"
+.Buses                 : []
+.ChassisId             : "1"
+.GroupId               : 30
+.GroupPosition         : "01010115"
+.Id                    : "ff"
+.IdentifyMode          : 2
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : "TPM"
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : "SecurityModule"
+
+Connector_C7b_010101:
+.AuxId                 : ""
+.Bom                   : "14100513"
+.Buses                 : ["Hisport_9"]
+.ChassisId             : ""
+.GroupId               : 49
+.GroupPosition         : "01010110"
+.Id                    : ""
+.IdentifyMode          : 3
+.LoadStatus            : 1
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "CpuBoard1"
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : ""
+
+Connector_A2c_010101:
+.AuxId                 : ""
+.Bom                   : "14100513"
+.Buses                 : ["Hisport_19"]
+.ChassisId             : ""
+.GroupId               : 38
+.GroupPosition         : "01010104"
+.Id                    : ""
+.IdentifyMode          : 3
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : "CpuBoard1"
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : "PCIeRiserCard"
+
+Connector_A2a_010101:
+.AuxId                 : ""
+.Bom                   : "14100513"
+.Buses                 : ["Hisport_18"]
+.ChassisId             : ""
+.GroupId               : 37
+.GroupPosition         : "01010103"
+.Id                    : ""
+.IdentifyMode          : 3
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : "CpuBoard1"
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : "PCIeRiserCard"
+
+Connector_Memory_010101:
+.AuxId                 : "0"
+.Bom                   : "memory"
+.Buses                 : []
+.ChassisId             : ""
+.GroupId               : 29
+.GroupPosition         : "01010117"
+.Id                    : "2p16ch32"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "CpuBoard1"
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : ""
+-SourcePath            : /opt/bmc/sr/memory_2p16ch32_0.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 3.00
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 3.00
+
+Connector_A1a_010101:
+.AuxId                 : ""
+.Bom                   : "14100513"
+.Buses                 : ["Hisport_16"]
+.ChassisId             : ""
+.GroupId               : 35
+.GroupPosition         : "01010101"
+.Id                    : ""
+.IdentifyMode          : 3
+.LoadStatus            : 1
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "CpuBoard1"
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : ""
+
+Connector_A3a_010101:
+.AuxId                 : ""
+.Bom                   : "14100513"
+.Buses                 : ["Hisport_20"]
+.ChassisId             : ""
+.GroupId               : 41
+.GroupPosition         : "01010105"
+.Id                    : ""
+.IdentifyMode          : 3
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : "CpuBoard1"
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : ""
+
+Connector_B4a_010101:
+.AuxId                 : ""
+.Bom                   : "14100513"
+.Buses                 : ["Hisport_10"]
+.ChassisId             : ""
+.GroupId               : 50
+.GroupPosition         : "0101010B"
+.Id                    : ""
+.IdentifyMode          : 3
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : "CpuBoard1"
+.Slot                  : 2
+.SystemId              : 1
+.Type                  : "PCIeRiserCard"
+
+Connector_D4b_010101:
+.AuxId                 : ""
+.Bom                   : "14100513"
+.Buses                 : ["Hisport_3"]
+.ChassisId             : ""
+.GroupId               : 45
+.GroupPosition         : "01010111"
+.Id                    : ""
+.IdentifyMode          : 3
+.LoadStatus            : 1
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "CpuBoard1"
+.Slot                  : 2
+.SystemId              : 1
+.Type                  : ""
+
+Connector_PsEvent_010101:
+.AuxId                 : "0"
+.Bom                   : "PsEvent"
+.Buses                 : ["I2c_1"]
+.ChassisId             : ""
+.GroupId               : 26
+.GroupPosition         : "01010118"
+.Id                    : "BC83AMDA"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : ""
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : ""
+-SourcePath            : /opt/bmc/sr/PsEvent_BC83AMDA_0.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 3.00
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 3.00
+
+Connector_D5a_010101:
+.AuxId                 : ""
+.Bom                   : "14100513"
+.Buses                 : ["Hisport_2"]
+.ChassisId             : ""
+.GroupId               : 44
+.GroupPosition         : "01010112"
+.Id                    : ""
+.IdentifyMode          : 3
+.LoadStatus            : 1
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "CpuBoard1"
+.Slot                  : 2
+.SystemId              : 1
+.Type                  : "PCIeRiserCard"
+
+Connector_A4a_010101:
+.AuxId                 : ""
+.Bom                   : "14100513"
+.Buses                 : ["Hisport_21"]
+.ChassisId             : ""
+.GroupId               : 31
+.GroupPosition         : "01010106"
+.Id                    : ""
+.IdentifyMode          : 3
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : "CpuBoard1"
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : ""
+
+Connector_B3a_010101:
+.AuxId                 : ""
+.Bom                   : "14100513"
+.Buses                 : ["Hisport_12"]
+.ChassisId             : ""
+.GroupId               : 33
+.GroupPosition         : "01010109"
+.Id                    : ""
+.IdentifyMode          : 3
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : "CpuBoard1"
+.Slot                  : 2
+.SystemId              : 1
+.Type                  : "PCIeRiserCard"
+
+Connector_C5a_010101:
+.AuxId                 : ""
+.Bom                   : "14100513"
+.Buses                 : ["Hisport_7"]
+.ChassisId             : ""
+.GroupId               : 47
+.GroupPosition         : "0101010E"
+.Id                    : ""
+.IdentifyMode          : 3
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : "CpuBoard1"
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : "PCIeRiserCard"
+
+Connector_UbcConfig_010101:
+.AuxId                 : "0"
+.Bom                   : "UbcConfig"
+.Buses                 : ["I2c_1"]
+.ChassisId             : ""
+.GroupId               : 28
+.GroupPosition         : "01010119"
+.Id                    : "0"
+.IdentifyMode          : 2
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : ""
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : ""
+
+Connector_C6a_010101:
+.AuxId                 : ""
+.Bom                   : "14100513"
+.Buses                 : ["Hisport_8"]
+.ChassisId             : ""
+.GroupId               : 48
+.GroupPosition         : "0101010F"
+.Id                    : ""
+.IdentifyMode          : 3
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : "CpuBoard1"
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : ""
+
+Connector_D6a_010101:
+.AuxId                 : ""
+.Bom                   : "14100513"
+.Buses                 : ["Hisport_1"]
+.ChassisId             : ""
+.GroupId               : 43
+.GroupPosition         : "01010113"
+.Id                    : ""
+.IdentifyMode          : 3
+.LoadStatus            : 1
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "CpuBoard1"
+.Slot                  : 3
+.SystemId              : 1
+.Type                  : ""
+
+Connector_D7a_010101:
+.AuxId                 : ""
+.Bom                   : "14100513"
+.Buses                 : ["Hisport_0"]
+.ChassisId             : ""
+.GroupId               : 42
+.GroupPosition         : "01010114"
+.Id                    : ""
+.IdentifyMode          : 3
+.LoadStatus            : 1
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "CpuBoard1"
+.Slot                  : 3
+.SystemId              : 1
+.Type                  : "PCIeRiserCard"
+
+Connector_B4c_010101:
+.AuxId                 : ""
+.Bom                   : "14100513"
+.Buses                 : ["Hisport_11"]
+.ChassisId             : ""
+.GroupId               : 32
+.GroupPosition         : "0101010C"
+.Id                    : ""
+.IdentifyMode          : 3
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : "CpuBoard1"
+.Slot                  : 2
+.SystemId              : 1
+.Type                  : ""
+
+Connector_A1c_010101:
+.AuxId                 : ""
+.Bom                   : "14100513"
+.Buses                 : ["Hisport_17"]
+.ChassisId             : ""
+.GroupId               : 36
+.GroupPosition         : "01010102"
+.Id                    : ""
+.IdentifyMode          : 3
+.LoadStatus            : 1
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "CpuBoard1"
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : "PCIeRiserCard"
+
+Connector_B1a_010101:
+.AuxId                 : ""
+.Bom                   : "14100513"
+.Buses                 : ["Hisport_15"]
+.ChassisId             : ""
+.GroupId               : 40
+.GroupPosition         : "01010107"
+.Id                    : ""
+.IdentifyMode          : 3
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : "CpuBoard1"
+.Slot                  : 2
+.SystemId              : 1
+.Type                  : ""
+
+Connector_C4a_010101:
+.AuxId                 : ""
+.Bom                   : "14100513"
+.Buses                 : ["Hisport_6"]
+.ChassisId             : ""
+.GroupId               : 46
+.GroupPosition         : "0101010D"
+.Id                    : ""
+.IdentifyMode          : 3
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : "CpuBoard1"
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : "PCIeRiserCard"
+
+Connector_B3c_010101:
+.AuxId                 : ""
+.Bom                   : "14100513"
+.Buses                 : ["Hisport_13"]
+.ChassisId             : ""
+.GroupId               : 39
+.GroupPosition         : "0101010A"
+.Id                    : ""
+.IdentifyMode          : 3
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : "CpuBoard1"
+.Slot                  : 2
+.SystemId              : 1
+.Type                  : ""
+
+Connector_B2a_010101:
+.AuxId                 : ""
+.Bom                   : "14100513"
+.Buses                 : ["Hisport_14"]
+.ChassisId             : ""
+.GroupId               : 34
+.GroupPosition         : "01010108"
+.Id                    : ""
+.IdentifyMode          : 3
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : "CpuBoard1"
+.Slot                  : 2
+.SystemId              : 1
+.Type                  : ""
+
+Connector_SEU_1_0101:
+.AuxId                 : ""
+.Bom                   : "14100665"
+.Buses                 : ["I2c_2","I2cMux_Pca9545_i2c5_chip_1_0101","JtagMux_JtagSwitch_1_4_0101"]
+.ChassisId             : "1"
+.GroupId               : 17
+.GroupPosition         : "010102"
+.Id                    : "00000002032000221301"
+.IdentifyMode          : 3
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "SEU"
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : "DiskBackplane"
+-SourcePath            : /bmc/kepler/Chip/Eeprom/Eeprom_3_2_0101
+-SoftSourcePath        : /opt/bmc/sr/14100665_00000002032000221301_soft.sr
+-DataSource            : EEPROM
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.04
+-EepromFormatVersion   : 3.00
+-EepromDataVersion     : 5.04
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.03
+
+Connector_M2_1_0101:
+.AuxId                 : ""
+.Bom                   : "14100665"
+.Buses                 : ["I2c_2","I2cMux_Pca9545_i2c6_chip_1_0101"]
+.ChassisId             : "1"
+.GroupId               : 16
+.GroupPosition         : "010114"
+.Id                    : ""
+.IdentifyMode          : 3
+.LoadStatus            : 1
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "SEU"
+.Slot                  : 5
+.SystemId              : 1
+.Type                  : "DiskBackplane"
+
+Connector_PSU_2_0101:
+.AuxId                 : ""
+.Bom                   : "14100513"
+.Buses                 : ["I2c_2","I2cMux_Pca9545_i2c3_chip_2_0101"]
+.ChassisId             : "1"
+.GroupId               : 10
+.GroupPosition         : "010110"
+.Id                    : "00000002012000234001"
+.IdentifyMode          : 3
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "PSU2"
+.Slot                  : 2
+.SystemId              : 1
+.Type                  : "ExpandBoard"
+-SourcePath            : /opt/bmc/sr/14100513_00000002012000234001.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.04
+-EepromFormatVersion   : 3.00
+-EepromDataVersion     : 5.04
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.04
+
+Connector_PSU_1_010110:
+.AuxId                 : "CRPS"
+.Bom                   : "14191046"
+.Buses                 : ["I2c_2","I2cMux_Pca9545_i2c3_chip_2_0101"]
+.ChassisId             : "1"
+.GroupId               : 23
+.GroupPosition         : "01011001"
+.Id                    : "PSU"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "psu1"
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : "Psu"
+-SourcePath            : /opt/bmc/sr/14191046_PSU_CRPS.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.03
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.03
+
+Connector_PSU_2_010110:
+.AuxId                 : "CRPS"
+.Bom                   : "14191046"
+.Buses                 : ["I2c_2","I2cMux_Pca9545_i2c3_chip_2_0101"]
+.ChassisId             : "1"
+.GroupId               : 24
+.GroupPosition         : "01011002"
+.Id                    : "PSU"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "psu2"
+.Slot                  : 2
+.SystemId              : 1
+.Type                  : "Psu"
+-SourcePath            : /opt/bmc/sr/14191046_PSU_CRPS.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.03
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.03
+
+Connector_PSU_3_010110:
+.AuxId                 : "CRPS"
+.Bom                   : "14191046"
+.Buses                 : ["I2c_2","I2cMux_Pca9545_i2c3_chip_2_0101"]
+.ChassisId             : "1"
+.GroupId               : 25
+.GroupPosition         : "01011003"
+.Id                    : "PSU"
+.IdentifyMode          : 2
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "psu3"
+.Slot                  : 3
+.SystemId              : 1
+.Type                  : "Psu"
+-SourcePath            : /opt/bmc/sr/14191046_PSU_CRPS.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 5.03
+-EepromFormatVersion   : NA
+-EepromDataVersion     : NA
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 5.03
+
+Connector_LOM_1_0101:
+.AuxId                 : ""
+.Bom                   : "14220246"
+.Buses                 : ["I2c_2","I2cMux_Pca9545_i2c5_chip_8_0101"]
+.ChassisId             : "1"
+.GroupId               : 19
+.GroupPosition         : "010105"
+.Id                    : "00000001100302023956"
+.IdentifyMode          : 3
+.LoadStatus            : 0
+.ManagerId             : "1"
+.Presence              : 1
+.SilkText              : "J6008"
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : ""
+-SourcePath            : /opt/bmc/sr/14220246_00000001100302023956.sr
+-SoftSourcePath        : NA
+-DataSource            : LOCAL
+-EffectiveFormatVersion: 3.00
+-EffectiveDataVersion  : 3.12
+-EepromFormatVersion   : 3.00
+-EepromDataVersion     : 3.12
+-LocalFormatVersion    : 3.00
+-LocalDataVersion      : 3.20
+
+Connector_Switch_6022_0101:
+.AuxId                 : ""
+.Bom                   : "14100665"
+.Buses                 : ["I2c_7"]
+.ChassisId             : "1"
+.GroupId               : 11
+.GroupPosition         : "010115"
+.Id                    : "00000002042000226022_0"
+.IdentifyMode          : 2
+.LoadStatus            : 255
+.ManagerId             : "1"
+.Presence              : 0
+.SilkText              : "SEU"
+.Slot                  : 1
+.SystemId              : 1
+.Type                  : "DiskBackplane"

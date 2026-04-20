@@ -1,0 +1,130 @@
+{
+    ":00000010": {
+        "memory": "14626.66 Kb",
+        "message": 1521468,
+        "cpu": 1647.108087,
+        "mqlen": 0,
+        "name": "snlua storage/service/main",
+        "task": 79
+    },
+    ":00000009": {
+        "memory": "659.47 Kb",
+        "message": 19,
+        "cpu": 0.095729,
+        "mqlen": 0,
+        "name": "snlua sd_bus",
+        "task": 0
+    },
+    ":00000013": {
+        "memory": "2181.33 Kb",
+        "message": 7436,
+        "cpu": 1.930235,
+        "mqlen": 0,
+        "name": "snlua mctpd/service/write_service",
+        "task": 0
+    },
+    ":00000008": {
+        "memory": "478.69 Kb",
+        "message": 148,
+        "cpu": 0.127881,
+        "mqlen": 0,
+        "name": "snlua hica/subsys/hardware/service/main",
+        "task": 1
+    },
+    ":0000000a": {
+        "memory": "941.72 Kb",
+        "message": 43249,
+        "cpu": 13.440734,
+        "mqlen": 0,
+        "name": "snlua harbor",
+        "task": 2
+    },
+    ":00000007": {
+        "memory": "460.82 Kb",
+        "message": 43,
+        "cpu": 0.055026,
+        "mqlen": 0,
+        "name": "snlua service_mgr",
+        "task": 1
+    },
+    ":0000000b": {
+        "memory": "731.95 Kb",
+        "message": 16,
+        "cpu": 0.050428,
+        "mqlen": 0,
+        "name": "snlua debug_console 0.0.0.0 40030",
+        "task": 0
+    },
+    ":00000006": {
+        "memory": "635.69 Kb",
+        "message": 14,
+        "cpu": 0.040201,
+        "mqlen": 0,
+        "name": "snlua datacenterd",
+        "task": 0
+    },
+    ":0000000c": {
+        "memory": "13223.07 Kb",
+        "message": 306839,
+        "cpu": 1320.558182,
+        "mqlen": 0,
+        "name": "snlua general_hardware/service/main",
+        "task": 11
+    },
+    ":00000004": {
+        "memory": "640.44 Kb",
+        "message": 19,
+        "cpu": 0.043923,
+        "mqlen": 0,
+        "name": "snlua cdummy",
+        "task": 0
+    },
+    ":0000000e": {
+        "memory": "3843.49 Kb",
+        "message": 100162,
+        "cpu": 44.544087,
+        "mqlen": 0,
+        "name": "snlua mctpd/service/main",
+        "task": 3
+    },
+    ":00000015": {
+        "memory": "808.46 Kb",
+        "message": 16,
+        "cpu": 0.046562,
+        "mqlen": 0,
+        "name": "snlua storage/service/smld",
+        "task": 0
+    },
+    ":0000000d": {
+        "memory": "9853.31 Kb",
+        "message": 282135,
+        "cpu": 449.262,
+        "mqlen": 0,
+        "name": "snlua network_adapter/service/main",
+        "task": 10
+    },
+    ":00000014": {
+        "memory": "2582.76 Kb",
+        "message": 22,
+        "cpu": 0.254322,
+        "mqlen": 0,
+        "name": "snlua mctpd/service/smbus_write_read_service",
+        "task": 0
+    },
+    ":0000000f": {
+        "memory": "3834.59 Kb",
+        "message": 38608,
+        "cpu": 10.614,
+        "mqlen": 0,
+        "name": "snlua lsw/service/main",
+        "task": 1
+    },
+    ":00000012": {
+        "memory": "6609.12 Kb",
+        "message": 143566,
+        "cpu": 195.206512,
+        "mqlen": 0,
+        "name": "snlua chassis/service/main",
+        "task": 5
+    }
+}

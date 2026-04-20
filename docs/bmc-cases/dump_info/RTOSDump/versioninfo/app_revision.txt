@@ -1,0 +1,130 @@
+------------------- openUBMC INFO -------------------
+IPMC                   CPU:         Hi1711
+IPMI               Version:         2.0
+Active openUBMC    Version:         11.02.01.14
+Active openUBMC      Build:         14
+Active openUBMC      Built:         15:28:17 Mar 19 2026
+Backup openUBMC    Version:         11.02.01.14
+Available openUBMC Version:         11.02.01.16
+Available openUBMC   Build:         16
+Active Uboot       Version:         20.1.10.2 (11:42:47 Jun 18 2025)
+Backup Uboot       Version:         20.1.10.2 (11:42:47 Jun 18 2025)
+Active Secure Bootloader Version: 20.8.10.1 (20:33:51 Sep  8 2025)
+Backup Secure Bootloader Version: 20.8.10.1 (20:33:51 Sep  8 2025)
+Active Secure Firmware   Version: 20.8.10.1 (20:33:51 Sep  8 2025)
+Backup Secure Firmware   Version: 20.8.10.1 (20:33:51 Sep  8 2025)
+Active BMCSDK      Version:         5.10.0.1
+----------------- Product INFO -----------------
+Product                 ID:         0x0000
+Product               Name:         openUBMC
+Product          Unique ID:         0x00000001030ABF00
+Active BIOS        Version:         (U75)21.23
+Backup BIOS        Version:         21.23
+PSR                Version:         5.05
+-------------- HDD Backplane INFO --------------
+DiskBP1          BoardName:         BC83HBBA
+DiskBP1            BoardID:         0xffff
+DiskBP1               CUID:         00000002032000221301
+DiskBP1                PCB:         .G
+DiskBP1       CPLD Version:         (U11)0.01
+DiskBP1                CSR:         5.04
+SwitchBoard1     BoardName:         SwitchBoard
+SwitchBoard1       BoardID:         0xffff
+SwitchBoard1          CUID:         00000002042000226001
+SwitchBoard1           PCB:         .A
+SwitchBoard1     CPLD Version:         (U0)0.01
+SwitchBoard1           CSR:         5.02
+DiskBP2          BoardName:         BC83HBBA
+DiskBP2            BoardID:         0xffff
+DiskBP2               CUID:         00000002032000221301
+DiskBP2                PCB:         .G
+DiskBP2       CPLD Version:         (U11)0.01
+DiskBP2                CSR:         5.04
+DiskBP3          BoardName:         SEUBoard
+DiskBP3            BoardID:         0xffff
+DiskBP3               CUID:         00000002032000221201
+DiskBP3                PCB:         .A
+DiskBP3       CPLD Version:         (U1010)0.01
+DiskBP3                CSR:         5.04
+---------------- CPU Board INFO ----------------
+CpuBoard1        BoardName:         BC83AMDA01
+CpuBoard1          BoardID:         0xffff
+CpuBoard1             CUID:         00000001020302031825
+CpuBoard1              PCB:         .B
+CpuBoard1    CPLD1 Version:         (U6288)6.12
+CpuBoard1    CPLD2 Version:         (U6293)6.12
+CpuBoard1              CSR:         3.37
+CpuBoard1              MCU:         2.03.02
+---------------- EXP Board INFO ----------------
+ExpBoard1        BoardName:         PSUBoard1
+ExpBoard1          BoardID:         0xffff
+ExpBoard1             CUID:         00000002012000234001
+ExpBoard1              PCB:         .A
+ExpBoard1              CSR:         5.04
+ExpBoard1        BoardName:         BC83SMMBC
+ExpBoard1          BoardID:         0xffff
+ExpBoard1             CUID:         00000002012000225001
+ExpBoard1              PCB:         .D
+ExpBoard1     CPLD Version:         (U5)0.04
+ExpBoard1              CSR:         5.05
+ExpBoard2        BoardName:         PSUBoard2
+ExpBoard2          BoardID:         0xffff
+ExpBoard2             CUID:         00000002012000234001
+ExpBoard2              PCB:         .A
+ExpBoard2              CSR:         5.04
+---------------- FAN Board INFO ----------------
+FanBoard1        BoardName:         FanBoard_1
+FanBoard1          BoardID:         0xffff
+FanBoard1             CUID:         00000002052000223001
+FanBoard1              PCB:         .I
+FanBoard1     CPLD Version:         (U1)0.04
+FanBoard1              CSR:         5.04
+FanBoard2        BoardName:         FanBoard_2
+FanBoard2          BoardID:         0xffff
+FanBoard2             CUID:         00000002052000223002
+FanBoard2              PCB:         .I
+FanBoard2     CPLD Version:         (U1)0.03
+FanBoard2              CSR:         5.04
+------------------- NIC INFO -------------------
+NIC 1 (SF223D-H)     BoardID:       0xffff
+NIC 1 (SF223D-H)      CUID:         00000001100302023956
+NIC 1 (SF223D-H)       PCB:         .A
+NIC 1 (SF223D-H)       CSR:         3.12
+---------------- PCIe Card INFO ----------------
+PCIe1          ProductName:         Atlas 300I A2 Inference Card
+PCIe1              BoardID:         0x00a0
+PCIe1                  PCB:         .A
+PCIe2          ProductName:         Atlas 300I A2 Inference Card
+PCIe2              BoardID:         0x00a0
+PCIe2                  PCB:         .A
+PCIe3          ProductName:         Atlas 300I A2 Inference Card
+PCIe3              BoardID:         0x00a0
+PCIe3                  PCB:         .A
+PCIe4          ProductName:         Atlas 300I A2 Inference Card
+PCIe4              BoardID:         0x00a0
+PCIe4                  PCB:         .A
+PCIe6          ProductName:         9560-16i
+PCIe6              BoardID:         0x0000
+PCIe6                  PCB:         N/A
+PCIe8          ProductName:         Atlas 300I A2 Inference Card
+PCIe8              BoardID:         0x00a0
+PCIe8                  PCB:         .A
+PCIe9          ProductName:         Atlas 300I A2 Inference Card
+PCIe9              BoardID:         0x00a0
+PCIe9                  PCB:         .A
+PCIe10         ProductName:         Atlas 300I A2 Inference Card
+PCIe10             BoardID:         0x00a0
+PCIe10                 PCB:         .A
+PCIe11         ProductName:         Atlas 300I A2 Inference Card
+PCIe11             BoardID:         0x00a0
+PCIe11                 PCB:         .A
+------------------- PSU INFO -------------------
+PSU1               Version:         DC:1.0 PFC:1.00
+PSU2               Version:         DC:1.0 PFC:1.00
+PSU3               Version:         DC:1.0 PFC:1.00
+PSU4               Version:         DC:1.0 PFC:1.00
+PSU5               Version:         DC:1.0 PFC:1.00
+PSU6               Version:         DC:1.0 PFC:1.00
+------------------- Power INFO -------------------
+CpuBoard1VRD       Version:         36.36.36.36.36.36.36.36
+

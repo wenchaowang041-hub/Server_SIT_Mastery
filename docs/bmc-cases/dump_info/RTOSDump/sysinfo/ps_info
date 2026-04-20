@@ -1,0 +1,134 @@
+F S UID        PID  PPID  C PRI  NI ADDR SZ WCHAN  STIME TTY          TIME CMD
+4 S root         1     0  1  80   0 - 21901 ep_pol 02:54 ?        00:10:19 /sbin/init
+1 S root         2     0  0  80   0 -     0 kthrea 02:54 ?        00:00:00 [kthreadd]
+1 I root         3     2  0  60 -20 -     0 rescue 02:54 ?        00:00:00 [rcu_gp]
+1 I root         4     2  0  60 -20 -     0 rescue 02:54 ?        00:00:00 [rcu_par_gp]
+1 I root         8     2  0  60 -20 -     0 rescue 02:54 ?        00:00:00 [mm_percpu_wq]
+1 S root         9     2  0  80   0 -     0 rcu_ta 02:54 ?        00:00:00 [rcu_tasks_kthre]
+1 S root        10     2  0  80   0 -     0 smpboo 02:54 ?        00:00:06 [ksoftirqd/0]
+1 I root        11     2  0  80   0 -     0 rcu_gp 02:54 ?        00:01:00 [rcu_preempt]
+1 S root        12     2  0 -40   - -     0 smpboo 02:54 ?        00:00:00 [migration/0]
+1 S root        13     2  0  80   0 -     0 smpboo 02:54 ?        00:00:00 [cpuhp/0]
+1 S root        14     2  0  80   0 -     0 smpboo 02:54 ?        00:00:00 [cpuhp/1]
+1 S root        15     2  0 -40   - -     0 smpboo 02:54 ?        00:00:00 [migration/1]
+1 S root        16     2  0  80   0 -     0 smpboo 02:54 ?        00:00:07 [ksoftirqd/1]
+1 S root        19     2  0  80   0 -     0 smpboo 02:54 ?        00:00:00 [cpuhp/2]
+1 S root        20     2  0 -40   - -     0 smpboo 02:54 ?        00:00:00 [migration/2]
+1 S root        21     2  0  80   0 -     0 smpboo 02:54 ?        00:00:06 [ksoftirqd/2]
+1 S root        24     2  0  80   0 -     0 smpboo 02:54 ?        00:00:00 [cpuhp/3]
+1 S root        25     2  0 -40   - -     0 smpboo 02:54 ?        00:00:00 [migration/3]
+1 S root        26     2  0  80   0 -     0 smpboo 02:54 ?        00:00:06 [ksoftirqd/3]
+5 S root        29     2  0  80   0 -     0 devtmp 02:54 ?        00:00:00 [kdevtmpfs]
+1 I root        30     2  0  60 -20 -     0 rescue 02:54 ?        00:00:00 [netns]
+1 S root        41     2  0  80   0 -     0 softdo 02:54 ?        00:00:00 [swtd]
+1 S root        44     2  0  80   0 -     0 kaudit 02:54 ?        00:00:00 [kauditd]
+1 S root       286     2  0  80   0 -     0 watchd 02:54 ?        00:00:00 [khungtaskd]
+1 S root       315     2  0  80   0 -     0 oom_re 02:54 ?        00:00:00 [oom_reaper]
+1 I root       316     2  0  60 -20 -     0 rescue 02:54 ?        00:00:00 [writeback]
+1 S root       318     2  0  80   0 -     0 kcompa 02:54 ?        00:00:03 [kcompactd0]
+1 S root       319     2  0  85   5 -     0 ksm_sc 02:54 ?        00:00:00 [ksmd]
+1 I root       332     2  0  60 -20 -     0 rescue 02:54 ?        00:00:00 [kblockd]
+1 I root       333     2  0  60 -20 -     0 rescue 02:54 ?        00:00:00 [blkcg_punt_bio]
+1 S root       349     2  0   9   - -     0 kthrea 02:54 ?        00:00:00 [watchdogd]
+1 S root       455     2  0  80   0 -     0 kswapd 02:54 ?        00:00:00 [kswapd0]
+1 I root       462     2  0  60 -20 -     0 rescue 02:54 ?        00:00:00 [kthrotld]
+1 S root      1072     2  0  80   0 -     0 kbox_c 02:54 ?        00:00:00 [kboxd]
+1 I root      1078     2  0  60 -20 -     0 worker 02:54 ?        00:00:00 [kworker/u9:0]
+1 I root      1162     2  0  60 -20 -     0 rescue 02:54 ?        00:00:00 [mmc_complete]
+1 S root      1208     2  0  80   0 -     0 kjourn 02:54 ?        00:00:00 [jbd2/mmcblk0gp0]
+1 I root      1209     2  0  60 -20 -     0 rescue 02:54 ?        00:00:00 [ext4-rsv-conver]
+1 I root      1219     2  0  60 -20 -     0 rescue 02:54 ?        00:00:00 [ipv6_addrconf]
+4 S root      1247     1  0  80   0 -  8935 ep_pol 02:54 ?        00:00:01 /lib/systemd/systemd-journald
+1 I root      1366     2  0  60 -20 -     0 rescue 02:54 ?        00:00:00 [gmac_queue]
+1 I root      1502     2  0  60 -20 -     0 rescue 02:54 ?        00:00:00 [msg_queue]
+1 S root      1527     2  0   9   - -     0 irq_th 02:54 ?        00:00:00 [irq/125-dwc3-ot]
+1 S root      1531     2  0   9   - -     0 irq_th 02:54 ?        00:00:00 [irq/127-dwc3-ot]
+0 S root      1559     1  0  80   0 -  1126 hrtime 02:54 ?        00:00:01 ./uart_flowoff
+1 S root      1578     2  0  80   0 -     0 kjourn 02:54 ?        00:00:01 [jbd2/mmcblk0p1-]
+1 I root      1579     2  0  60 -20 -     0 rescue 02:54 ?        00:00:00 [ext4-rsv-conver]
+1 S root      1593     2  0  80   0 -     0 kjourn 02:54 ?        00:00:02 [jbd2/mmcblk0p9-]
+1 I root      1594     2  0  60 -20 -     0 rescue 02:54 ?        00:00:00 [ext4-rsv-conver]
+1 S root      1612     2  0  80   0 -     0 kjourn 02:54 ?        00:00:00 [jbd2/mmcblk0p7-]
+1 I root      1613     2  0  60 -20 -     0 rescue 02:54 ?        00:00:00 [ext4-rsv-conver]
+1 S root      1653     2  0  80   0 -     0 kjourn 02:54 ?        00:00:00 [jbd2/mmcblk0gp3]
+1 I root      1654     2  0  60 -20 -     0 rescue 02:54 ?        00:00:00 [ext4-rsv-conver]
+1 S root      1983     2  0  60 -20 -     0 kthrea 02:54 ?        00:00:00 [loop0]
+1 S root      1993     2  0  80   0 -     0 kjourn 02:54 ?        00:00:00 [jbd2/loop0-8]
+1 I root      1994     2  0  60 -20 -     0 rescue 02:54 ?        00:00:00 [ext4-rsv-conver]
+1 I root      2127     2  0  60 -20 -     0 rescue 02:54 ?        00:00:00 [rpciod]
+1 I root      2128     2  0  60 -20 -     0 rescue 02:54 ?        00:00:00 [xprtiod]
+1 I root      2136     2  0  60 -20 -     0 rescue 02:54 ?        00:00:00 [nfsiod]
+1 I root      2148     2  0  60 -20 -     0 rescue 02:54 ?        00:00:00 [cifsiod]
+1 I root      2149     2  0  60 -20 -     0 rescue 02:54 ?        00:00:00 [smb3decryptd]
+1 I root      2150     2  0  60 -20 -     0 rescue 02:54 ?        00:00:00 [cifsfileinfoput]
+1 I root      2151     2  0  60 -20 -     0 rescue 02:54 ?        00:00:00 [cifsoplockd]
+1 I root      2193     2  0  60 -20 -     0 rescue 02:54 ?        00:00:00 [cryptd]
+0 S root      2232     1  0  80   0 -  1534 do_wai 02:54 ?        00:00:00 sh /opt/bmc/script/cpu_monitor.sh
+4 S root      2235     1  0  80   0 -  1880 ep_pol 02:54 ?        00:00:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+4 S root      2238     1  0  80   0 -  1534 do_wai 02:54 ?        00:00:34 /bin/sh /opt/bmc/script/memory_monitor.sh
+4 S root      2243     1  0  80   0 -  1534 do_wai 02:54 ?        00:00:00 /bin/sh /opt/bmc/script/process_memory_monitor.sh
+4 S root      2260     1  0  80   0 -  1145 poll_s 02:54 ttyS0    00:00:00 /sbin/agetty -o -p -- \u --noclear ttyS0 vt220
+5 S root      2275     1  0  80   0 -  2452 ep_pol 02:54 ?        00:00:49 /usr/bin/dbus-daemon --syslog --fork --print-pid 4 --print-address 6 --config-file /opt/bmc/dbus.config
+4 S root      2282     1  0  80   0 - 579956 hrtime 02:54 ?       00:00:49 /opt/bmc/apps/tpcm/tpcm
+4 S root      2283     1  0  80   0 - 205536 hrtime 02:54 ?       00:00:07 /opt/bmc/apps/file_transfer/file_transfer
+4 S root      2284     1  0  80   0 -  1609 poll_s 02:54 ?        00:00:00 /opt/debug/busybox telnetd -l /bin/bash -F
+4 S root      2318     1 71  80   0 - 792168 futex_ 02:54 ?       07:30:32 framework /opt/bmc/apps/hica/subsys/framework/config.cfg
+4 S root      2356     1  1  80   0 - 173091 futex_ 02:54 ?       00:08:02 /opt/bmc/skynet/skynet /opt/bmc/apps/fault_diagnosis/config.cfg
+1 S root      2459     2  0  80   0 -     0 thread 02:54 ?        00:01:16 [localbus_listen]
+4 S root      2553     1  7  80   0 - 804807 futex_ 02:55 ?       00:47:38 bmc_core /opt/bmc/apps/hica/subsys/bmc_core/config.cfg
+4 S secbox    2556     1  0  80   0 -  3255 do_wai 02:55 ?        00:00:00 secbox -f /opt/bmc/apps/hica/subsys/alarm/secbox.cfg -c exec -a alarm /opt/bmc/skynet/skynet /opt/bmc/apps/hica/subsys/alarm/config.cfg
+4 S secbox    2565     1  0  80   0 -  3255 do_wai 02:55 ?        00:00:00 secbox -f /opt/bmc/apps/hica/subsys/ras/secbox.cfg -c exec -a ras /opt/bmc/skynet/skynet /opt/bmc/apps/hica/subsys/ras/config.cfg
+4 S root      2569     1  2  80   0 - 463069 futex_ 02:55 ?       00:16:56 security /opt/bmc/apps/hica/subsys/security/config.cfg
+4 S secbox    2588  2556  9  80   0 - 235618 futex_ 02:55 ?       01:02:59 alarm /opt/bmc/apps/hica/subsys/alarm/config.cfg
+4 S secbox    2595  2565 14  80   0 - 134764 futex_ 02:55 ?       01:31:22 ras /opt/bmc/apps/hica/subsys/ras/config.cfg
+4 S secbox    2663     1  0  80   0 -  3255 do_wai 02:55 ?        00:00:00 secbox -f /opt/bmc/apps/hica/subsys/hardware/secbox.cfg -c exec -a hardware /opt/bmc/skynet/skynet /opt/bmc/apps/hica/subsys/hardware/config.cfg
+4 S secbox    2675  2663 12  80   0 - 196857 futex_ 02:55 ?       01:19:42 hardware /opt/bmc/apps/hica/subsys/hardware/config.cfg
+4 S root      2761     1  2  80   0 - 464302 futex_ 02:55 ?       00:17:02 om_priv /opt/bmc/apps/hica/subsys/om_priv/config.cfg
+4 S secbox    2860     1  0  80   0 -  3255 do_wai 02:55 ?        00:00:00 secbox -f /opt/bmc/apps/hica/subsys/om/secbox.cfg -c exec -a om /opt/bmc/skynet/skynet /opt/bmc/apps/hica/subsys/om/config.cfg
+4 S secbox    2861     1  0  80   0 -  3255 do_wai 02:55 ?        00:00:00 /usr/sbin/secbox -f /opt/bmc/apps/ssdp/secbox.cfg /opt/bmc/apps/ssdp/ssdp
+4 S secbox    2883  2860  8  80   0 - 171669 futex_ 02:55 ?       00:52:15 om /opt/bmc/apps/hica/subsys/om/config.cfg
+4 S secbox    2884  2861  0  80   0 - 610817 hrtime 02:55 ?       00:02:21 /opt/bmc/apps/ssdp/ssdp /opt/bmc/apps/ssdp/ssdp
+5 S root      2954     1  0  80   0 -  3004 poll_s 02:55 ?        00:00:00 sshd: /usr/sbin/sshd -f /etc/ssh/sshd_config [listener] 0 of 10-100 startups
+1 I root      2994     2  0  60 -20 -     0 rescue 02:55 ?        00:00:00 [kdmflush]
+1 S apache    3151     1  0  80   0 -  5724 sigsus 02:55 ?        00:00:00 nginx: master process /opt/bmc/web/nginx/sbin/nginx -p /opt/bmc/web/nginx
+1 S apache    3152  3151  0  80   0 -  5827 poll_s 02:55 ?        00:00:12 nginx: worker process
+1 S apache    3153  3151  0  80   0 -  5824 poll_s 02:55 ?        00:00:17 nginx: worker process
+4 S secbox    3169     1  0  80   0 -  3255 do_wai 02:55 ?        00:00:00 secbox -f /opt/bmc/apps/hica/subsys/interface/secbox.cfg -c exec -a interface /opt/bmc/skynet/skynet /opt/bmc/apps/hica/subsys/interface/config.cfg
+4 S secbox    3181  3169  4  80   0 - 142675 futex_ 02:55 ?       00:26:55 interface /opt/bmc/apps/hica/subsys/interface/config.cfg
+4 S secbox    3301     1  0  80   0 -  3255 do_wai 02:55 ?        00:00:00 secbox -f /opt/bmc/apps/hica/subsys/energy/secbox.cfg -c exec -a energy /opt/bmc/skynet/skynet /opt/bmc/apps/hica/subsys/energy/config.cfg
+4 S secbox    3321  3301 30  80   0 - 131692 futex_ 02:55 ?       03:12:01 energy /opt/bmc/apps/hica/subsys/energy/config.cfg
+1 S root      3437     2  0   9   - -     0 irq_th 02:55 ?        00:00:00 [irq/121-dwc3]
+4 S root      3512     1  0  80   0 - 55537 poll_s 02:55 ?        00:00:52 /usr/sbin/rsyslogd -n
+4 S snmpd_u+  3672     1  0  80   0 - 80210 poll_s 02:56 ?        00:02:04 /usr/sbin/snmpd -p /run/snmpd.pid -c /etc/snmp/snmpd.conf -g snmpd_user -u snmpd_user -I -icmp -f
+4 S root      3678     1  1  80   0 - 444619 hrtime 02:56 ?       00:07:23 /usr/sbin/intrusion-detection/seceye-agent --mgmt-socket-path /var/run/security_policy.socket --slot-id 1 --cpu-id 1 --path /usr/sbin/intrusion-detection
+1 I root      5020     2  0  80   0 -     0 worker 09:55 ?        00:00:06 [kworker/0:0-events]
+0 S root      6583  2232  0  80   0 -  1534 hrtime 03:04 ?        00:00:00 sleep 604800
+1 I root     21465     2  0  80   0 -     0 worker 11:38 ?        00:00:00 [kworker/1:1-cgroup_destroy]
+1 I root     22273     2  0  80   0 -     0 worker 11:44 ?        00:00:00 [kworker/2:2-events]
+0 S root     33041  2243  0  80   0 -  1534 hrtime 12:54 ?        00:00:00 sleep 1h
+1 I root     33318     2  0  80   0 -     0 worker 12:56 ?        00:00:00 [kworker/3:0-events]
+1 I root     35124     2  0  60 -20 -     0 worker 12:59 ?        00:00:00 [kworker/2:1H-mmc_complete]
+1 I root     35507     2  0  80   0 -     0 worker 13:02 ?        00:00:00 [kworker/0:2-cgroup_destroy]
+1 I root     35900     2  0  80   0 -     0 worker 13:05 ?        00:00:00 [kworker/u8:2-events_unbound]
+1 I root     35928     2  0  60 -20 -     0 worker 13:05 ?        00:00:00 [kworker/1:1H-mmc_complete]
+1 I root     36845     2  0  60 -20 -     0 worker 13:12 ?        00:00:00 [kworker/0:2H-mmc_complete]
+1 I root     36992     2  0  60 -20 -     0 worker 13:13 ?        00:00:00 [kworker/2:3H-mmc_complete]
+1 I root     37108     2  0  80   0 -     0 worker 13:14 ?        00:00:00 [kworker/1:2-mm_percpu_wq]
+1 I root     37301     2  0  60 -20 -     0 worker 13:16 ?        00:00:00 [kworker/3:0H-mmc_complete]
+1 I root     37683     2  0  80   0 -     0 worker 13:18 ?        00:00:00 [kworker/u8:0-events_unbound]
+1 I root     37913     2  0  80   0 -     0 worker 13:20 ?        00:00:00 [kworker/2:0-events]
+1 I root     37914     2  0  80   0 -     0 worker 13:20 ?        00:00:00 [kworker/3:1-cgroup_destroy]
+1 I root     37971     2  0  60 -20 -     0 worker 13:21 ?        00:00:00 [kworker/1:0H-mmc_complete]
+1 I root     38062     2  0  60 -20 -     0 worker 13:21 ?        00:00:00 [kworker/3:1H-mmc_complete]
+1 I root     38196     2  0  60 -20 -     0 worker 13:22 ?        00:00:00 [kworker/0:1H-mmc_complete]
+1 I root     38421     2  0  60 -20 -     0 worker 13:24 ?        00:00:00 [kworker/2:0H-mmc_complete]
+1 I root     38555     2  0  80   0 -     0 worker 13:25 ?        00:00:00 [kworker/u8:1-events_unbound]
+1 I root     38648     2  0  60 -20 -     0 worker 13:26 ?        00:00:00 [kworker/1:2H-mmc_complete]
+1 I root     38787     2  0  80   0 -     0 worker 13:26 ?        00:00:00 [kworker/2:1]
+1 I root     38791     2  0  80   0 -     0 worker 13:26 ?        00:00:00 [kworker/3:2-cgroup_pidlist_destroy]
+1 I root     38792     2  0  80   0 -     0 worker 13:26 ?        00:00:00 [kworker/3:3-cgroup_destroy]
+0 S root     39027  2238  0  80   0 -  1534 hrtime 13:27 ?        00:00:00 sleep 60
+1 I root     39048     2  0  60 -20 -     0 worker 13:27 ?        00:00:00 [kworker/3:2H-mmc_complete]
+1 I root     39052     2  0  60 -20 -     0 worker 13:27 ?        00:00:00 [kworker/0:0H-mmc_complete]
+0 S root     39082  2761  1  80   0 -  1534 do_wai 13:28 ?        00:00:00 /bin/sh /opt/bmc/script/dump.sh /dev/shm/dump_info_tmp/dump_info 1711
+4 R root     39131 39082 99  80   0 -  1685 -      13:28 ?        00:00:00 ps -elf

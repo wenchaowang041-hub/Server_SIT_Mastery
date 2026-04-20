@@ -1,0 +1,1650 @@
+[      0.000][1-0][      0][  0][IMP-info]systick init success
+[      0.000][1-0][      0][  0][IMP-info]timer init success
+[      0.000][1-0][      0][  0][IMP-info]watchdog inited success
+[      0.000][1-0][      0][  0][IMP-info]Get cpld info from header, compatible = 1.
+[      0.000][1-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 init
+[      0.015][1-0][      0][  0][IMP-info]imp chip 1 die 0 mac 0 card 0x0 ncl init success
+[      0.015][1-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 init
+[      0.015][1-0][      0][  0][IMP-info]mdio init success
+[      0.015][1-0][      0][  0][IMP-info]sgpio init entry
+[      0.070][1-0][      0][  0][IMP-error]bios setup config data verify failed.
+[      0.070][1-0][      0][  0][IMP-error]bios setup check failed.
+[      0.070][1-0][      0][  0][IMP-info]hot plug init, type: support(0), current(0)
+[      0.075][1-0][      0][  0][IMP-error]mac serdes mode 1 init error(0x11233).
+[      0.085][1-0][      0][  0][IMP-info]mac link driver register 0, type 1
+[      0.085][1-0][      0][  0][IMP-info]mac link driver register 1, type 0
+[      0.085][1-0][      0][  0][IMP-info]mac link driver register 2, type 2
+[      0.085][1-0][      0][  0][IMP-info]mac link driver register 3, type 3
+[      0.085][1-0][      0][  0][IMP-info]mac link driver register 4, type 4
+[      0.085][1-0][      0][  0][IMP-info]mac link driver register 5, type 6
+[      0.085][1-0][      0][  0][IMP-info]mac link driver register 6, type 5
+[      0.085][1-0][      0][  0][IMP-info]mac link driver register 7, type 7
+[      0.085][1-0][      0][  0][IMP-info]mac 0 init, pf 0 media type 2, phy_addr 1
+[      0.085][1-0][      0][  0][IMP-info]mac 0 phy probe driver Generic PHY
+[      0.685][1-0][      0][  0][IMP-info]mac 0 phy soft reset failed 4
+[      0.685][1-0][      0][  0][IMP-info]mac 0 init phy failed!
+[      0.685][1-0][      0][  0][IMP-info]mac 0 phy init config 0
+[      0.685][1-0][      0][  0][IMP-info]mac 0 link driver 2
+[      0.685][1-0][      0][  0][IMP-info]mac_id 0 init used 1, port_type 2 roh 0 abi 0xe
+[      0.685][1-0][      0][  0][IMP-info]mac 1 init, pf 1 media type 2, phy_addr 3
+[      0.685][1-0][      0][  0][IMP-info]mac 1 phy probe driver Generic PHY
+[      1.290][1-0][      0][  0][IMP-info]mac 1 phy soft reset failed 4
+[      1.290][1-0][      0][  0][IMP-info]mac 1 init phy failed!
+[      1.290][1-0][      0][  0][IMP-info]mac 1 phy init config 0
+[      1.290][1-0][      0][  0][IMP-info]mac 1 link driver 2
+[      1.290][1-0][      0][  0][IMP-info]mac_id 1 init used 1, port_type 2 roh 0 abi 0xe
+[      1.290][1-0][      0][  0][IMP-info]mac 2 init, pf 2 media type 2, phy_addr 5
+[      1.290][1-0][      0][  0][IMP-info]mac 2 phy probe driver Generic PHY
+[      1.890][1-0][      0][  0][IMP-info]mac 2 phy soft reset failed 4
+[      1.890][1-0][      0][  0][IMP-info]mac 2 init phy failed!
+[      1.890][1-0][      0][  0][IMP-info]mac 2 phy init config 0
+[      1.890][1-0][      0][  0][IMP-info]mac 2 link driver 2
+[      1.890][1-0][      0][  0][IMP-info]mac_id 2 init used 1, port_type 2 roh 0 abi 0xe
+[      1.890][1-0][      0][  0][IMP-info]mac 3 init, pf 3 media type 2, phy_addr 7
+[      1.890][1-0][      0][  0][IMP-info]mac 3 phy probe driver Generic PHY
+[      2.490][1-0][      0][  0][IMP-info]mac 3 phy soft reset failed 4
+[      2.490][1-0][      0][  0][IMP-info]mac 3 init phy failed!
+[      2.490][1-0][      0][  0][IMP-info]mac 3 phy init config 0
+[      2.490][1-0][      0][  0][IMP-info]mac 3 link driver 2
+[      2.490][1-0][      0][  0][IMP-info]mac_id 3 init used 1, port_type 2 roh 0 abi 0xe
+[      2.490][1-0][      0][  0][IMP-info]init intr aging 0
+[      2.490][1-0][      0][  0][IMP-info]TM not bypass
+[      2.490][1-0][      0][  0][IMP-info]not support l2 forward
+[      2.490][1-0][      0][  0][IMP-info]flow director init mode 0
+[      2.490][1-0][      0][  0][IMP-info]nic init success
+[      2.490][1-0][      0][  0][IMP-info]rocee init success
+[      2.490][1-0][      0][  0][IMP-info]period job 0 register successfully
+[      2.490][1-0][      0][  0][IMP-info]period job 1 register successfully
+[      2.490][1-0][      0][  0][IMP-info]period job 2 register successfully
+[      2.490][1-0][      0][  0][IMP-info]period job 3 register successfully
+[      2.490][1-0][      0][  0][IMP-info]period job 4 register successfully
+[      2.490][1-0][      0][  0][IMP-info]period job 5 register successfully
+[      2.490][1-0][      0][  0][IMP-info]period job 6 register successfully
+[      2.490][1-0][      0][  0][IMP-info]period job 7 register successfully
+[      2.490][1-0][      0][  0][IMP-info]period job 8 register successfully
+[      2.490][1-0][      0][  0][IMP-info]period job 9 register successfully
+[      2.490][1-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x0
+[      2.490][1-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x1
+[      2.490][1-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x2
+[      2.490][1-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x3
+[      2.490][1-0][      0][  0][IMP-info]imp version is 30a1608 
+[      2.490][1-0][      0][  0][IMP-info]mac link restart, mac 0, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      2.490][1-0][      0][  0][IMP-info]mac link restart, mac 1, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      2.490][1-0][      0][  0][IMP-info]mac link restart, mac 2, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      2.490][1-0][      0][  0][IMP-info]mac link restart, mac 3, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      0.000][1-0][      0][  0][IMP-info]systick init success
+[      0.000][1-0][      0][  0][IMP-info]timer init success
+[      0.000][1-0][      0][  0][IMP-info]watchdog inited success
+[      0.000][1-0][      0][  0][IMP-info]Get cpld info from header, compatible = 1.
+[      0.000][1-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 init
+[      0.015][1-0][      0][  0][IMP-info]imp chip 1 die 0 mac 0 card 0x0 ncl init success
+[      0.015][1-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 init
+[      0.015][1-0][      0][  0][IMP-info]mdio init success
+[      0.015][1-0][      0][  0][IMP-info]sgpio init entry
+[      0.070][1-0][      0][  0][IMP-error]bios setup config data verify failed.
+[      0.070][1-0][      0][  0][IMP-error]bios setup check failed.
+[      0.070][1-0][      0][  0][IMP-info]hot plug init, type: support(0), current(0)
+[      0.075][1-0][      0][  0][IMP-error]mac serdes mode 1 init error(0x11233).
+[      0.085][1-0][      0][  0][IMP-info]mac link driver register 0, type 1
+[      0.085][1-0][      0][  0][IMP-info]mac link driver register 1, type 0
+[      0.085][1-0][      0][  0][IMP-info]mac link driver register 2, type 2
+[      0.085][1-0][      0][  0][IMP-info]mac link driver register 3, type 3
+[      0.085][1-0][      0][  0][IMP-info]mac link driver register 4, type 4
+[      0.085][1-0][      0][  0][IMP-info]mac link driver register 5, type 6
+[      0.085][1-0][      0][  0][IMP-info]mac link driver register 6, type 5
+[      0.085][1-0][      0][  0][IMP-info]mac link driver register 7, type 7
+[      0.085][1-0][      0][  0][IMP-info]mac 0 init, pf 0 media type 2, phy_addr 1
+[      0.085][1-0][      0][  0][IMP-info]mac 0 phy probe driver Generic PHY
+[      0.685][1-0][      0][  0][IMP-info]mac 0 phy soft reset failed 4
+[      0.685][1-0][      0][  0][IMP-info]mac 0 init phy failed!
+[      0.685][1-0][      0][  0][IMP-info]mac 0 phy init config 0
+[      0.685][1-0][      0][  0][IMP-info]mac 0 link driver 2
+[      0.685][1-0][      0][  0][IMP-info]mac_id 0 init used 1, port_type 2 roh 0 abi 0xe
+[      0.685][1-0][      0][  0][IMP-info]mac 1 init, pf 1 media type 2, phy_addr 3
+[      0.685][1-0][      0][  0][IMP-info]mac 1 phy probe driver Generic PHY
+[      1.290][1-0][      0][  0][IMP-info]mac 1 phy soft reset failed 4
+[      1.290][1-0][      0][  0][IMP-info]mac 1 init phy failed!
+[      1.290][1-0][      0][  0][IMP-info]mac 1 phy init config 0
+[      1.290][1-0][      0][  0][IMP-info]mac 1 link driver 2
+[      1.290][1-0][      0][  0][IMP-info]mac_id 1 init used 1, port_type 2 roh 0 abi 0xe
+[      1.290][1-0][      0][  0][IMP-info]mac 2 init, pf 2 media type 2, phy_addr 5
+[      1.290][1-0][      0][  0][IMP-info]mac 2 phy probe driver Generic PHY
+[      1.890][1-0][      0][  0][IMP-info]mac 2 phy soft reset failed 4
+[      1.890][1-0][      0][  0][IMP-info]mac 2 init phy failed!
+[      1.890][1-0][      0][  0][IMP-info]mac 2 phy init config 0
+[      1.890][1-0][      0][  0][IMP-info]mac 2 link driver 2
+[      0.000][1-0][      0][  0][IMP-info]systick init success
+[      0.000][1-0][      0][  0][IMP-info]timer init success
+[      0.000][1-0][      0][  0][IMP-info]watchdog inited success
+[      0.000][1-0][      0][  0][IMP-info]Get cpld info from header, compatible = 1.
+[      0.000][1-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 init
+[      0.010][1-0][      0][  0][IMP-info]imp chip 1 die 0 mac 0 card 0x0 ncl init success
+[      0.010][1-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 init
+[      0.010][1-0][      0][  0][IMP-info]mdio init success
+[      0.010][1-0][      0][  0][IMP-info]sgpio init entry
+[      0.050][1-0][      0][  0][IMP-error]bios setup config data verify failed.
+[      0.050][1-0][      0][  0][IMP-error]bios setup check failed.
+[      0.050][1-0][      0][  0][IMP-info]hot plug init, type: support(0), current(0)
+[      0.055][1-0][      0][  0][IMP-error]mac serdes mode 1 init error(0x11233).
+[      0.065][1-0][      0][  0][IMP-info]mac link driver register 0, type 1
+[      0.065][1-0][      0][  0][IMP-info]mac link driver register 1, type 0
+[      0.065][1-0][      0][  0][IMP-info]mac link driver register 2, type 2
+[      0.065][1-0][      0][  0][IMP-info]mac link driver register 3, type 3
+[      0.065][1-0][      0][  0][IMP-info]mac link driver register 4, type 4
+[      0.065][1-0][      0][  0][IMP-info]mac link driver register 5, type 6
+[      0.065][1-0][      0][  0][IMP-info]mac link driver register 6, type 5
+[      0.065][1-0][      0][  0][IMP-info]mac link driver register 7, type 7
+[      0.065][1-0][      0][  0][IMP-info]mac 0 init, pf 0 media type 2, phy_addr 1
+[      0.065][1-0][      0][  0][IMP-info]mac 0 phy probe driver Generic PHY
+[      0.665][1-0][      0][  0][IMP-info]mac 0 phy soft reset failed 4
+[      0.665][1-0][      0][  0][IMP-info]mac 0 init phy failed!
+[      0.665][1-0][      0][  0][IMP-info]mac 0 phy init config 0
+[      0.665][1-0][      0][  0][IMP-info]mac 0 link driver 2
+[      0.665][1-0][      0][  0][IMP-info]mac_id 0 init used 1, port_type 2 roh 0 abi 0xe
+[      0.665][1-0][      0][  0][IMP-info]mac 1 init, pf 1 media type 2, phy_addr 3
+[      0.665][1-0][      0][  0][IMP-info]mac 1 phy probe driver Generic PHY
+[      1.265][1-0][      0][  0][IMP-info]mac 1 phy soft reset failed 4
+[      1.265][1-0][      0][  0][IMP-info]mac 1 init phy failed!
+[      1.265][1-0][      0][  0][IMP-info]mac 1 phy init config 0
+[      1.265][1-0][      0][  0][IMP-info]mac 1 link driver 2
+[      1.265][1-0][      0][  0][IMP-info]mac_id 1 init used 1, port_type 2 roh 0 abi 0xe
+[      1.265][1-0][      0][  0][IMP-info]mac 2 init, pf 2 media type 2, phy_addr 5
+[      1.265][1-0][      0][  0][IMP-info]mac 2 phy probe driver Generic PHY
+[      1.865][1-0][      0][  0][IMP-info]mac 2 phy soft reset failed 4
+[      1.865][1-0][      0][  0][IMP-info]mac 2 init phy failed!
+[      1.865][1-0][      0][  0][IMP-info]mac 2 phy init config 0
+[      1.865][1-0][      0][  0][IMP-info]mac 2 link driver 2
+[      1.865][1-0][      0][  0][IMP-info]mac_id 2 init used 1, port_type 2 roh 0 abi 0xe
+[      1.865][1-0][      0][  0][IMP-info]mac 3 init, pf 3 media type 2, phy_addr 7
+[      1.865][1-0][      0][  0][IMP-info]mac 3 phy probe driver Generic PHY
+[      2.465][1-0][      0][  0][IMP-info]mac 3 phy soft reset failed 4
+[      2.465][1-0][      0][  0][IMP-info]mac 3 init phy failed!
+[      2.465][1-0][      0][  0][IMP-info]mac 3 phy init config 0
+[      2.465][1-0][      0][  0][IMP-info]mac 3 link driver 2
+[      2.465][1-0][      0][  0][IMP-info]mac_id 3 init used 1, port_type 2 roh 0 abi 0xe
+[      2.470][1-0][      0][  0][IMP-info]init intr aging 0
+[      2.470][1-0][      0][  0][IMP-info]TM not bypass
+[      2.470][1-0][      0][  0][IMP-info]not support l2 forward
+[      2.470][1-0][      0][  0][IMP-info]flow director init mode 0
+[      2.470][1-0][      0][  0][IMP-info]nic init success
+[      2.470][1-0][      0][  0][IMP-info]rocee init success
+[      2.470][1-0][      0][  0][IMP-info]period job 0 register successfully
+[      2.470][1-0][      0][  0][IMP-info]period job 1 register successfully
+[      2.470][1-0][      0][  0][IMP-info]period job 2 register successfully
+[      2.470][1-0][      0][  0][IMP-info]period job 3 register successfully
+[      2.470][1-0][      0][  0][IMP-info]period job 4 register successfully
+[      2.470][1-0][      0][  0][IMP-info]period job 5 register successfully
+[      2.470][1-0][      0][  0][IMP-info]period job 6 register successfully
+[      2.470][1-0][      0][  0][IMP-info]period job 7 register successfully
+[      2.470][1-0][      0][  0][IMP-info]period job 8 register successfully
+[      2.470][1-0][      0][  0][IMP-info]period job 9 register successfully
+[      2.470][1-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x0
+[      2.470][1-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x1
+[      2.470][1-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x2
+[      2.470][1-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x3
+[      2.470][1-0][      0][  0][IMP-info]imp version is 30a1608 
+[      2.470][1-0][      0][  0][IMP-info]mac link restart, mac 0, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      2.470][1-0][      0][  0][IMP-info]mac link restart, mac 1, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      2.470][1-0][      0][  0][IMP-info]mac link restart, mac 2, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      2.470][1-0][      0][  0][IMP-info]mac link restart, mac 3, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      0.000][1-0][      0][  0][IMP-info]systick init success
+[      0.000][1-0][      0][  0][IMP-info]timer init success
+[      0.000][1-0][      0][  0][IMP-info]watchdog inited success
+[      0.000][1-0][      0][  0][IMP-info]Get cpld info from header, compatible = 1.
+[      0.000][1-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 init
+[      0.010][1-0][      0][  0][IMP-info]imp chip 1 die 0 mac 0 card 0x0 ncl init success
+[      0.010][1-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 init
+[      0.010][1-0][      0][  0][IMP-info]mdio init success
+[      0.010][1-0][      0][  0][IMP-info]sgpio init entry
+[      0.050][1-0][      0][  0][IMP-info]bios setup init success.
+[      0.055][1-0][      0][  0][IMP-info]hot plug init, type: support(0), current(0)
+[      0.060][1-0][      0][  0][IMP-error]mac serdes mode 1 init error(0x11233).
+[      0.070][1-0][      0][  0][IMP-info]mac link driver register 0, type 1
+[      0.070][1-0][      0][  0][IMP-info]mac link driver register 1, type 0
+[      0.070][1-0][      0][  0][IMP-info]mac link driver register 2, type 2
+[      0.070][1-0][      0][  0][IMP-info]mac link driver register 3, type 3
+[      0.070][1-0][      0][  0][IMP-info]mac link driver register 4, type 4
+[      0.070][1-0][      0][  0][IMP-info]mac link driver register 5, type 6
+[      0.070][1-0][      0][  0][IMP-info]mac link driver register 6, type 5
+[      0.070][1-0][      0][  0][IMP-info]mac link driver register 7, type 7
+[      0.070][1-0][      0][  0][IMP-info]mac 0 init, pf 0 media type 2, phy_addr 1
+[      0.070][1-0][      0][  0][IMP-info]mac 0 phy probe driver Generic PHY
+[      0.670][1-0][      0][  0][IMP-info]mac 0 phy soft reset failed 4
+[      0.670][1-0][      0][  0][IMP-info]mac 0 init phy failed!
+[      0.670][1-0][      0][  0][IMP-info]mac 0 phy init config 0
+[      0.670][1-0][      0][  0][IMP-info]mac 0 link driver 2
+[      0.670][1-0][      0][  0][IMP-info]mac_id 0 init used 1, port_type 2 roh 0 abi 0xe
+[      0.670][1-0][      0][  0][IMP-info]mac 1 init, pf 1 media type 2, phy_addr 3
+[      0.670][1-0][      0][  0][IMP-info]mac 1 phy probe driver Generic PHY
+[      1.270][1-0][      0][  0][IMP-info]mac 1 phy soft reset failed 4
+[      1.270][1-0][      0][  0][IMP-info]mac 1 init phy failed!
+[      1.270][1-0][      0][  0][IMP-info]mac 1 phy init config 0
+[      1.270][1-0][      0][  0][IMP-info]mac 1 link driver 2
+[      1.270][1-0][      0][  0][IMP-info]mac_id 1 init used 1, port_type 2 roh 0 abi 0xe
+[      1.270][1-0][      0][  0][IMP-info]mac 2 init, pf 2 media type 2, phy_addr 5
+[      1.270][1-0][      0][  0][IMP-info]mac 2 phy probe driver Generic PHY
+[      1.870][1-0][      0][  0][IMP-info]mac 2 phy soft reset failed 4
+[      1.870][1-0][      0][  0][IMP-info]mac 2 init phy failed!
+[      1.870][1-0][      0][  0][IMP-info]mac 2 phy init config 0
+[      1.870][1-0][      0][  0][IMP-info]mac 2 link driver 2
+[      1.870][1-0][      0][  0][IMP-info]mac_id 2 init used 1, port_type 2 roh 0 abi 0xe
+[      1.870][1-0][      0][  0][IMP-info]mac 3 init, pf 3 media type 2, phy_addr 7
+[      1.870][1-0][      0][  0][IMP-info]mac 3 phy probe driver Generic PHY
+[      2.470][1-0][      0][  0][IMP-info]mac 3 phy soft reset failed 4
+[      2.470][1-0][      0][  0][IMP-info]mac 3 init phy failed!
+[      2.470][1-0][      0][  0][IMP-info]mac 3 phy init config 0
+[      2.470][1-0][      0][  0][IMP-info]mac 3 link driver 2
+[      2.470][1-0][      0][  0][IMP-info]mac_id 3 init used 1, port_type 2 roh 0 abi 0xe
+[      2.475][1-0][      0][  0][IMP-info]init intr aging 0
+[      2.475][1-0][      0][  0][IMP-info]TM not bypass
+[      2.475][1-0][      0][  0][IMP-info]not support l2 forward
+[      2.475][1-0][      0][  0][IMP-info]flow director init mode 0
+[      2.475][1-0][      0][  0][IMP-info]nic init success
+[      2.475][1-0][      0][  0][IMP-info]rocee init success
+[      2.475][1-0][      0][  0][IMP-info]period job 0 register successfully
+[      2.475][1-0][      0][  0][IMP-info]period job 1 register successfully
+[      2.475][1-0][      0][  0][IMP-info]period job 2 register successfully
+[      2.475][1-0][      0][  0][IMP-info]period job 3 register successfully
+[      2.475][1-0][      0][  0][IMP-info]period job 4 register successfully
+[      2.475][1-0][      0][  0][IMP-info]period job 5 register successfully
+[      2.475][1-0][      0][  0][IMP-info]period job 6 register successfully
+[      2.475][1-0][      0][  0][IMP-info]period job 7 register successfully
+[      2.475][1-0][      0][  0][IMP-info]period job 8 register successfully
+[      2.475][1-0][      0][  0][IMP-info]period job 9 register successfully
+[      2.475][1-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x0
+[      2.475][1-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x1
+[      2.475][1-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x2
+[      2.475][1-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x3
+[      2.475][1-0][      0][  0][IMP-info]imp version is 30a1608 
+[      2.475][1-0][      0][  0][IMP-info]mac link restart, mac 0, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      2.475][1-0][      0][  0][IMP-info]mac link restart, mac 1, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      2.475][1-0][      0][  0][IMP-info]mac link restart, mac 2, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      2.475][1-0][      0][  0][IMP-info]mac link restart, mac 3, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[    107.125][1-0][      0][  0][IMP-info]imp_driver compt cmdq 0x0, val 0x4
+[    107.125][1-0][      0][  0][IMP-info]mac 0 link driver 3
+[    107.125][1-0][      0][  0][IMP-info]mac 0 phy probe driver Generic PHY
+[    107.135][1-0][      0][  1][IMP-info]set user mac 0, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[    107.155][1-0][      0][  0][IMP-info]cmdq 0, process opcode 0x850, ret 5
+[    107.155][1-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[    107.325][1-0][      0][  0][IMP-info]imp_driver compt cmdq 0x1, val 0x4
+[    107.340][1-0][      0][  1][IMP-info]set user mac 1, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[    107.365][1-0][      0][  0][IMP-info]cmdq 1, process opcode 0x850, ret 5
+[    107.365][1-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[    107.515][1-0][      0][  0][IMP-info]imp_driver compt cmdq 0x2, val 0x4
+[    110.960][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    110.960][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    110.960][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    110.960][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    110.965][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    110.965][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    110.965][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    110.965][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    110.965][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    110.965][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    113.645][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    113.645][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    113.645][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    113.645][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    113.650][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    113.650][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    113.650][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    113.650][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    113.650][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    113.650][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    116.330][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    116.330][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    116.330][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    116.330][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    116.330][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    116.335][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    116.335][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    116.335][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    116.335][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    116.335][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    119.015][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    119.015][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    119.015][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    119.015][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    119.015][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    119.015][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    119.020][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    119.020][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    119.020][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    119.020][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    121.700][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    121.700][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    121.700][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    121.700][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    121.700][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    121.700][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    121.700][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    121.705][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    121.705][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    121.705][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    124.385][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    124.385][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    124.385][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    124.385][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    124.385][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    124.385][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    124.385][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    124.385][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    124.390][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    124.390][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    127.065][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    127.070][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    127.070][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    127.070][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    127.070][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    127.070][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    127.070][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    127.070][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    127.070][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    127.075][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    129.750][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    129.750][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    129.755][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    129.755][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    129.755][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    129.755][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    129.755][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    129.755][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    129.755][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    129.755][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    132.675][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    132.675][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    132.675][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    132.675][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    132.680][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    132.680][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    132.680][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    132.680][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    132.680][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    132.680][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    135.360][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    135.360][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    135.360][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    135.360][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    135.360][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    135.365][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    135.365][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    135.365][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    135.365][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    135.365][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    138.045][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    138.045][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    138.045][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    138.045][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    138.045][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    138.045][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    138.050][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    138.050][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    138.050][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    138.050][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    140.730][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    140.730][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    140.730][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    140.730][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    140.730][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    140.730][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    140.730][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    140.735][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    140.735][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    140.735][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    143.415][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    143.415][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    143.415][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    143.415][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    143.415][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    143.415][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    143.415][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    143.415][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    143.420][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    143.420][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    146.095][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    146.100][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    146.100][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    146.100][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    146.100][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    146.100][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    146.100][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    146.100][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    146.100][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    146.105][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    148.780][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    148.780][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    148.785][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    148.785][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    148.785][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    148.785][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    148.785][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    148.785][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    148.785][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    148.785][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    151.710][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    151.710][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    151.710][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    151.710][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    151.715][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    151.715][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    151.715][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    151.715][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    151.715][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    151.715][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    154.395][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    154.395][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    154.395][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    154.395][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    154.395][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    154.400][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    154.400][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    154.400][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    154.400][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    154.400][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    157.080][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    157.080][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    157.080][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    157.080][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    157.080][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    157.080][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    157.085][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    157.085][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    157.085][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    157.085][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    159.765][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    159.765][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    159.765][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    159.765][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    159.765][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    159.765][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    159.765][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    159.770][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    159.770][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    159.770][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    162.450][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    162.450][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    162.450][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    162.450][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    162.450][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    162.450][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    162.450][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    162.450][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    162.455][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    162.455][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    165.130][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    165.135][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    165.135][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    165.135][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    165.135][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    165.135][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    165.135][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    165.135][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    165.135][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    165.140][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    167.815][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    167.815][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    167.820][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    167.820][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    167.820][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    167.820][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    167.820][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    167.820][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    167.820][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    167.820][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    170.495][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    170.495][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    170.500][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    170.500][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    170.500][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    170.500][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    170.505][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    170.505][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    170.505][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    170.505][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    173.425][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    173.425][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    173.425][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    173.425][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    173.425][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    173.430][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    173.430][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    173.430][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    173.430][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    173.430][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    176.110][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    176.110][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    176.110][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    176.110][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    176.110][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    176.110][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    176.115][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    176.115][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    176.115][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    176.115][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    178.795][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    178.795][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    178.795][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    178.795][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    178.795][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    178.795][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    178.795][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    178.800][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    178.800][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    178.800][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    181.480][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    181.480][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    181.480][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    181.480][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    181.480][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    181.480][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    181.480][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    181.480][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    181.485][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    181.485][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    184.160][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    184.165][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    184.165][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    184.165][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    184.165][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    184.165][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    184.165][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    184.165][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    184.165][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    184.170][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    186.845][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    186.845][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    186.850][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    186.850][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    186.850][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    186.850][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    186.850][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    186.850][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    186.850][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    186.850][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    189.530][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    189.530][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    189.530][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    189.535][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    189.535][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    189.535][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    189.535][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    189.535][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    189.535][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    189.535][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    192.455][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    192.455][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    192.455][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    192.455][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    192.455][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    192.460][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    192.460][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    192.460][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    192.460][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    192.460][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    195.140][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    195.140][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    195.140][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    195.140][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    195.140][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    195.140][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    195.145][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    195.145][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    195.145][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    195.145][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    197.825][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    197.825][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    197.825][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    197.825][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    197.825][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    197.825][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    197.830][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    197.830][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    197.830][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    197.830][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    200.510][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    200.510][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    200.510][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    200.510][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    200.510][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    200.510][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    200.510][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    200.515][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    200.515][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    200.515][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    203.195][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    203.195][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    203.195][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    203.195][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    203.195][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    203.195][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    203.195][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    203.195][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    203.200][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    203.200][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    205.875][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    205.880][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    205.880][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    205.880][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    205.880][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    205.880][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    205.880][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    205.880][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    205.880][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    205.885][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    208.560][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    208.560][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    208.565][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    208.565][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    208.565][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    208.565][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    208.565][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    208.565][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    208.565][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    208.565][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    211.245][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    211.245][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    211.245][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    211.250][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    211.250][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    211.250][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    211.250][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    211.250][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    211.250][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    211.250][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    214.170][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    214.175][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    214.175][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    214.175][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    214.175][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    214.180][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    214.180][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    214.180][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    214.180][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    214.180][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    216.855][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    216.855][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    216.855][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    216.855][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    216.855][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    216.855][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    216.860][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    216.860][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    216.860][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    216.860][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    219.540][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    219.540][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    219.540][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    219.540][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    219.540][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    219.540][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    219.540][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    219.545][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    219.545][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    219.545][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    222.225][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    222.225][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    222.225][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    222.225][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    222.225][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    222.225][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    222.225][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    222.225][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    222.230][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    222.230][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    224.905][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    224.910][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    224.910][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    224.910][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    224.910][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    224.910][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    224.910][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    224.910][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    224.910][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    224.915][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    227.590][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    227.590][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    227.595][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    227.595][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    227.595][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    227.595][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    227.595][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    227.595][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    227.595][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    227.595][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    230.275][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    230.275][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    230.275][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    230.280][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    230.280][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    230.280][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    230.280][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    230.280][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    230.280][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    230.280][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    233.205][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    233.205][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    233.205][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    233.205][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    233.205][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    233.210][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    233.210][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    233.210][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    233.210][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    233.210][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    235.890][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    235.890][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    235.890][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    235.890][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    235.890][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    235.890][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    235.895][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    235.895][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    235.895][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    235.895][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    238.575][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    238.575][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    238.575][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    238.575][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    238.575][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    238.575][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    238.575][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    238.580][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    238.580][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    238.580][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    241.255][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    241.255][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    241.255][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    241.255][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    241.255][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    241.255][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    241.255][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    241.255][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    241.260][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    241.260][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    243.935][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    243.940][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    243.940][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    243.940][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    243.940][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    243.940][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    243.940][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    243.940][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    243.940][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    243.945][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    246.620][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    246.620][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    246.625][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    246.625][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    246.625][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    246.625][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    246.625][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    246.625][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    246.625][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    246.625][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    249.305][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    249.305][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    249.305][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    249.310][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    249.310][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    249.310][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    249.310][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    249.310][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    249.310][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    249.310][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    251.990][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    251.990][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    251.990][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    251.990][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    251.995][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    251.995][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    251.995][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    251.995][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    251.995][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    251.995][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    254.920][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    254.920][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    254.920][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    254.920][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    254.920][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    254.920][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    254.925][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    254.925][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    254.925][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    254.925][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    257.605][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    257.605][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    257.605][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    257.605][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    257.605][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    257.605][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    257.605][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    257.610][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    257.610][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    257.610][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    260.290][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    260.290][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    260.290][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    260.290][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    260.290][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    260.290][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    260.290][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    260.290][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    260.295][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    260.295][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    262.970][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    262.970][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    262.970][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[  0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    265.655][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    265.655][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    265.655][1-o]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    268.335][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    268.335][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    268.335][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    268.340][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    268.340][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx  0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    271.020][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    271.020][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    271.020][1-o]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    273.705][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    273.705][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    273.705][1-  0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    276.635][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    276.635][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    276.635][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    276.635][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    276.635][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rxo]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    279.320][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    279.320][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    279.320][1-  0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    282.000][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    282.005][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    282.005][1-o]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    284.685][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    284.685][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    284.690][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    284.690][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    284.690][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    284.  0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    287.370][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    287.370][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    287.370][1-o]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    290.055][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    290.055][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    290.055][1-  0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    292.740][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    292.740][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    292.740][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    292.740][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    292.740][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx  0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    295.665][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    295.670][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    295.670][1-o]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    298.350][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    298.350][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    298.350][1-o]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    301.035][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    301.035][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    301.035][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    301.035][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    301.035][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    301.  0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    303.715][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    303.720][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    303.720][1-o]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    306.400][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    306.400][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    306.405][1-  0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    309.085][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    309.085][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    309.085][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    309.090][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    309.090][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rxo]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    311.770][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    311.770][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    311.770][1-  0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    314.455][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    314.455][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    314.455][1-  0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    317.385][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    317.385][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    317.385][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    317.385][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    317.385][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rxo]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    320.070][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    320.070][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    320.070][1-  0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    322.750][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    322.755][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    322.755][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    322.755][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    322.755][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    322.755][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    325.435][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    325.435][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac po]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    325.435][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    325.435][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    325.440][1-  0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    328.115][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    328.115][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    328.115][1-o]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    330.800][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    330.800][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    330.800][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    330.800][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    330.805][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    330.  0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    333.485][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    333.485][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    333.485][1-  0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    339.090][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    339.095][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    339.095][1-  0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    341.775][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    341.775][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    341.780][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    341.780][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    341.780][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 d  0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    344.460][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    344.460][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    344.460][1-  0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    347.145][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    347.145][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1  0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    349.830][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    349.830][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    349.830][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    349.830][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    349.830][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx  0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    352.515][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    352.515][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1  0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    355.200][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    355.200][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    355.200][1-  0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    358.120][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    358.125][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    358.125][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    358.125][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    358.125][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx  0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    360.805][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    360.805][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1  0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    363.490][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    363.490][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    363.490][1-  0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    366.175][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    366.175][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    366.175][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    366.175][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    366.180][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 d  0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    368.860][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    368.860][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    368.860][1-  0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    371.545][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    371.545][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1  0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    374.230][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    374.230][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    374.230][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    374.230][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    374.230][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx  0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    376.915][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    376.915][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1  0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    379.835][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    379.835][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1  0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    382.520][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    382.520][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    382.520][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    382.525][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    382.525][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx  0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    385.205][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    385.205][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1  0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    387.890][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    387.890][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    387.890][1-  0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    390.575][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    390.575][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    390.575][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    390.575][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    390.575][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 d  0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    393.260][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    393.260][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    393.260][1-  0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    395.945][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    395.945][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1  0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    398.870][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    398.870][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    401.550][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    401.550][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    401.550][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause01.555][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    401.555][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    401.555][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 220.585][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    420.585][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    420.585][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2  0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    423.270][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    423.270][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    425.950][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    425.950][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    425.950][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause25.955][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    425.955][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    425.955][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2  0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    428.640][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    428.640][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 131.325][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    431.325][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    431.325][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    434.005][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    434.005][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    434.005][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 d  0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    434.010][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    434.010][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 136.690][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    436.690][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    436.695][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2  0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    439.375][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    439.375][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    442.295][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    442.295][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    442.295][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 d  0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    442.300][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    442.300][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 144.985][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    444.985][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    444.985][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2  0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    447.670][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    447.670][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    450.350][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    450.350][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    450.350][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    450.350][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    450.350][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    450.350][1-0][      0][  0][IMP-info]ma  0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    453.035][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    453.035][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    453.035][1-  0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    455.720][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    455.720][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    455.720][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    455.720][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    455.720][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 d  0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    458.405][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    458.405][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    458.405][1-  0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    461.090][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    464.005][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1  0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    464.010][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    466.690][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    466.690][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    466.690][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    466.690][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx  0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    466.695][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    469.375][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1  0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    469.380][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    472.060][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    472.060][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    472.060][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    472.060][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    472.060][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    472.060][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    472.065][1-0][      0][  0][IMP-info]mac 0 update phy sp  0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    474.745][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    474.745][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1  0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    477.430][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    477.430][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    477.430][1-  0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    480.115][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    480.115][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    480.115][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    480.115][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    480.115][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 d  0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    483.035][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    483.035][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1  0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    485.720][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    485.720][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    485.720][1-  0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    488.405][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    488.405][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    488.405][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    488.405][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    488.410][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 d  0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    491.090][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    491.090][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    491.090][1-  0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    493.775][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    493.775][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1  0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    496.460][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    496.460][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    496.460][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    496.460][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    496.460][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx  0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    499.140][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    499.140][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1  0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    501.820][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    501.825][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    501.825][1-  0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    504.750][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    504.750][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    504.750][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    504.755][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    504.755][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx  0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    507.435][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    507.435][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    507.435][1-  0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    510.120][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    510.120][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    510.120][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    510.120][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    510.125][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    510.125][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    510.125][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    510.125][1-0][      0][  0][IMP-info]mac 1 mac_phy_updat  0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    817.055][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    817.055][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 119.740][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    819.740][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    819.740][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    822.420][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    822.420][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    822.420][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 d  0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    822.425][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    822.425][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 125.110][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    825.110][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    825.110][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2  0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    827.795][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    827.795][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    830.470][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    830.475][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    830.475][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause30.475][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    830.475][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    830.480][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    833.155][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    833.155][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    833.160][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 d  0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    833.160][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    833.160][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    836.080][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    836.080][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    836.080][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 d  0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    836.090][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    836.090][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 138.770][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    838.770][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    838.770][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2  0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    841.455][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    841.455][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    844.135][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    844.135][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    844.135][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause44.140][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    844.140][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    844.140][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2  0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    846.825][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    846.825][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 149.505][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    849.505][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    849.510][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    852.185][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    852.185][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    852.190][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 d  0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    852.190][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    852.190][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 154.875][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    854.875][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    854.875][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 257.805][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    857.805][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    857.805][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    860.480][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    860.480][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    860.480][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 d  0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    860.485][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    860.485][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 163.170][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    863.170][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    863.170][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2  0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    865.855][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    865.855][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    868.530][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    868.535][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    868.535][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause68.535][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    868.535][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    868.540][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2  0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    871.220][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    871.220][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 173.905][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    873.905][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    873.905][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    876.830][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    876.830][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    876.830][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause79.515][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    879.515][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    879.515][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 282.195][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    882.195][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    882.195][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set ma84.875][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    884.875][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    884.880][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    884.880][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    884.880][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    884.880][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause87.560][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    887.560][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    887.560][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set ma90.245][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    890.245][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    890.245][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 292.930][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    892.930][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    892.930][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    892.930][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    892.930][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    892.935][1-0][      0][  0][IMP-info]mac 0 upd95.615][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    895.615][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    895.615][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 201.220][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    901.220][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    901.220][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set ma03.905][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    903.905][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    903.905][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    903.905][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    903.910][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    903.910][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause06.590][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    906.590][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    906.590][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set ma09.270][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    909.270][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    909.275][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 211.955][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    911.955][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    911.955][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    911.955][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    911.955][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    911.955][1-0][      0][  0][IMP-info]mac 3 upd14.640][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    914.640][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    914.640][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 217.320][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    917.325][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    917.325][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set ma20.250][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    920.250][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    920.250][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    920.255][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    920.255][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    920.255][1-0][      0][  0][IMP-info]mac 1 upd22.935][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    922.935][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    922.935][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 225.620][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    925.620][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    925.620][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 228.305][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    928.305][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    928.305][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    928.305][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    928.305][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    928.310][1-0][      0][  0][IMP-info]mac 0 upd30.990][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    930.990][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    930.990][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 233.675][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    933.675][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    933.675][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set ma36.360][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    936.360][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    936.360][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    936.360][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    936.360][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    936.360][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause39.280][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    939.280][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    941.960][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    941.960][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    941.960][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    941.965][1-0][      0][  0][IMP-info]mac 0 upd44.645][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    944.645][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    944.645][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    944.645][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    944.650][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    944.650][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause47.330][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    947.330][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    947.330][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set ma50.015][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    950.015][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    950.015][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 252.700][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    952.700][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    952.700][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    952.700][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    952.700][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    952.700][1-0][      0][  0][IMP-info]mac 3 upd55.380][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    955.380][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    955.380][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 258.060][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    958.065][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    958.065][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set ma60.990][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    960.990][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    960.990][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    960.995][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    960.995][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    960.995][1-0][      0][  0][IMP-info]mac 1 upd63.675][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    963.675][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    963.675][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 266.360][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    966.360][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    966.360][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set ma69.045][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    969.045][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    969.045][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    969.045][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    969.045][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    969.045][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause71.730][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    971.730][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    971.730][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set ma74.415][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    974.415][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    974.415][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 277.095][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    977.100][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    977.100][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    977.100][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    977.100][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    977.100][1-0][      0][  0][IMP-info]mac 2 upd79.780][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    979.780][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    979.785][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 279.785][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    979.785][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    979.785][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 282.710][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    982.710][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    982.710][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    982.710][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    985.390][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[    985.390][1-0][      0][  0][IMP-info]mac 2 upd85.395][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    985.395][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    985.395][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set ma88.080][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    988.080][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    988.080][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 290.760][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    990.765][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    990.765][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    990.765][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[    993.445][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[    993.445][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause93.445][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    993.445][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[    993.450][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 296.130][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    996.130][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    996.130][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set ma98.815][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[    998.815][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[    998.815][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[    998.815][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1001.495][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1001.495][1-0][      0][  0][IMP-info]mac 3 upd01.500][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1001.500][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[   1001.500][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set ma04.425][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1004.425][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[   1004.425][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set ma07.110][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[   1007.110][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1007.110][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[   1007.110][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1009.790][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1009.790][1-0][      0][  0][IMP-info]mac 1 upd09.790][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1009.795][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[   1009.795][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set ma12.475][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[   1012.475][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1012.480][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 215.160][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1015.160][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[   1015.160][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1015.165][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[   1017.840][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[   1017.840][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause17.845][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[   1017.845][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1017.845][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 220.530][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1020.530][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[   1020.530][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set ma23.215][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[   1023.215][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1023.215][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[   1023.215][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1026.140][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[   1026.140][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause26.145][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[   1026.145][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1026.145][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 228.830][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[   1028.830][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1028.830][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 231.510][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1031.510][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[   1031.510][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1031.515][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[   1034.190][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[   1034.190][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause34.190][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[   1034.190][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1034.195][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 236.875][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1036.875][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[   1036.875][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set ma39.560][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[   1039.560][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1039.560][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[   1039.560][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1042.240][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1042.240][1-0][      0][  0][IMP-info]mac 3 upd42.245][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1042.245][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[   1042.245][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set ma44.930][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[   1044.930][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1044.930][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 247.860][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[   1047.860][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1047.860][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[   1047.860][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1050.540][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1050.540][1-0][      0][  0][IMP-info]mac 1 upd50.540][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[   1050.545][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[   1050.545][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set ma[      0.000][1-0][      0][  0][IMP-info]systick init success
+[      0.000][1-0][      0][  0][IMP-info]timer init success
+[      0.000][1-0][      0][  0][IMP-info]watchdog inited success
+[      0.000][1-0][      0][  0][IMP-info]Get cpld info from header, compatible = 1.
+[      0.000][1-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 init
+[      0.005][1-0][      0][  0][IMP-info]imp chip 1 die 0 mac 0 card 0x0 ncl init success
+[      0.005][1-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 init
+[      0.005][1-0][      0][  0][IMP-info]mdio init success
+[      0.005][1-0][      0][  0][IMP-info]sgpio init entry
+[      0.045][1-0][      0][  0][IMP-info]bios setup init success.
+[      0.050][1-0][      0][  0][IMP-info]hot plug init, type: support(0), current(0)
+[      0.055][1-0][      0][  0][IMP-error]mac serdes mode 1 init error(0x11233).
+[      0.065][1-0][      0][  0][IMP-info]mac link driver register 0, type 1
+[      0.065][1-0][      0][  0][IMP-info]mac link driver register 1, type 0
+[      0.065][1-0][      0][  0][IMP-info]mac link driver register 2, type 2
+[      0.065][1-0][      0][  0][IMP-info]mac link driver register 3, type 3
+[      0.065][1-0][      0][  0][IMP-info]mac link driver register 4, type 4
+[      0.065][1-0][      0][  0][IMP-info]mac link driver register 5, type 6
+[      0.065][1-0][      0][  0][IMP-info]mac link driver register 6, type 5
+[      0.065][1-0][      0][  0][IMP-info]mac link driver register 7, type 7
+[      0.065][1-0][      0][  0][IMP-info]mac 0 init, pf 0 media type 2, phy_addr 1
+[      0.065][1-0][      0][  0][IMP-info]mac 0 phy probe driver Generic PHY
+[      0.665][1-0][      0][  0][IMP-info]mac 0 phy soft reset failed 4
+[      0.665][1-0][      0][  0][IMP-info]mac 0 init phy failed!
+[      0.665][1-0][      0][  0][IMP-info]mac 0 phy init config 0
+[      0.665][1-0][      0][  0][IMP-info]mac 0 link driver 2
+[      0.665][1-0][      0][  0][IMP-info]mac_id 0 init used 1, port_type 2 roh 0 abi 0xe
+[      0.665][1-0][      0][  0][IMP-info]mac 1 init, pf 1 media type 2, phy_addr 3
+[      0.665][1-0][      0][  0][IMP-info]mac 1 phy probe driver Generic PHY
+[      1.265][1-0][      0][  0][IMP-info]mac 1 phy soft reset failed 4
+[      1.265][1-0][      0][  0][IMP-info]mac 1 init phy failed!
+[      1.265][1-0][      0][  0][IMP-info]mac 1 phy init config 0
+[      1.265][1-0][      0][  0][IMP-info]mac 1 link driver 2
+[      1.265][1-0][      0][  0][IMP-info]mac_id 1 init used 1, port_type 2 roh 0 abi 0xe
+[      1.265][1-0][      0][  0][IMP-info]mac 2 init, pf 2 media type 2, phy_addr 5
+[      1.265][1-0][      0][  0][IMP-info]mac 2 phy probe driver Generic PHY
+[      1.865][1-0][      0][  0][IMP-info]mac 2 phy soft reset failed 4
+[      1.865][1-0][      0][  0][IMP-info]mac 2 init phy failed!
+[      1.865][1-0][      0][  0][IMP-info]mac 2 phy init config 0
+[      1.865][1-0][      0][  0][IMP-info]mac 2 link driver 2
+[      1.865][1-0][      0][  0][IMP-info]mac_id 2 init used 1, port_type 2 roh 0 abi 0xe
+[      1.865][1-0][      0][  0][IMP-info]mac 3 init, pf 3 media type 2, phy_addr 7
+[      1.865][1-0][      0][  0][IMP-info]mac 3 phy probe driver Generic PHY
+[      2.465][1-0][      0][  0][IMP-info]mac 3 phy soft reset failed 4
+[      2.465][1-0][      0][  0][IMP-info]mac 3 init phy failed!
+[      2.465][1-0][      0][  0][IMP-info]mac 3 phy init config 0
+[      2.465][1-0][      0][  0][IMP-info]mac 3 link driver 2
+[      2.465][1-0][      0][  0][IMP-info]mac_id 3 init used 1, port_type 2 roh 0 abi 0xe
+[      2.470][1-0][      0][  0][IMP-info]init intr aging 0
+[      2.470][1-0][      0][  0][IMP-info]TM not bypass
+[      2.470][1-0][      0][  0][IMP-info]not support l2 forward
+[      2.470][1-0][      0][  0][IMP-info]flow director init mode 0
+[      2.470][1-0][      0][  0][IMP-info]nic init success
+[      2.470][1-0][      0][  0][IMP-info]rocee init success
+[      2.470][1-0][      0][  0][IMP-info]period job 0 register successfully
+[      2.470][1-0][      0][  0][IMP-info]period job 1 register successfully
+[      2.470][1-0][      0][  0][IMP-info]period job 2 register successfully
+[      2.470][1-0][      0][  0][IMP-info]period job 3 register successfully
+[      2.470][1-0][      0][  0][IMP-info]period job 4 register successfully
+[      2.470][1-0][      0][  0][IMP-info]period job 5 register successfully
+[      2.470][1-0][      0][  0][IMP-info]period job 6 register successfully
+[      2.470][1-0][      0][  0][IMP-info]period job 7 register successfully
+[      2.470][1-0][      0][  0][IMP-info]period job 8 register successfully
+[      2.470][1-0][      0][  0][IMP-info]period job 9 register successfully
+[      2.470][1-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x0
+[      2.470][1-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x1
+[      2.470][1-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x2
+[      2.470][1-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x3
+[      2.470][1-0][      0][  0][IMP-info]imp version is 30a1608 
+[      2.470][1-0][      0][  0][IMP-info]mac link restart, mac 0, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[     43.745][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[     43.745][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[     43.745][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[     43.745][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[     43.745][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[     43.745][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[     43.745][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[     43.745][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[     43.750][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[     43.750][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[     46.425][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[     46.430][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[     46.430][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[     46.430][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[     46.430][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[     46.430][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[     46.430][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[     46.430][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[     46.430][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[     46.435][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[     49.110][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[     49.110][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[     49.115][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[     49.115][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[     49.115][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[     49.115][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[     49.115][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[     49.115][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[     49.115][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[     49.115][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[     51.795][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[     51.795][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[     51.795][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[     51.800][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[     51.800][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[     51.800][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[     51.800][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[     51.800][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[     51.800][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[     51.800][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[     54.480][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[     54.480][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[     54.480][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[     54.480][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[     54.485][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[     54.485][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[     54.485][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[     54.485][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[     54.485][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[     54.485][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[     57.165][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[     57.165][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[     57.165][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[     57.165][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[     57.165][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[     57.170][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[     57.170][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[     57.170][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[     57.170][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[     57.170][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[     59.850][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[     59.850][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[     60.095][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[     62.770][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[     62.770][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[     62.770][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[     62.770][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[     62.770][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[     62.770][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[     62.775][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[     62.775][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[     62.775][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[     62.775][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[     65.455][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[     65.455][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[     65.455][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[     65.455][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[     65.455][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[     65.455][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[     65.455][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[     65.460][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[     65.460][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[     65.460][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[     68.625][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[     68.625][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[     68.630][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[     68.630][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[     68.630][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[     68.630][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[     68.630][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[     68.630][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[     68.630][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[     68.630][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[     71.310][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[     71.310][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[     71.310][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[     71.315][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[     71.315][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[     71.315][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[     71.315][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[     71.315][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[     71.315][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[     71.315][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[     73.995][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[     73.995][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[     73.995][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[     73.995][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[     74.000][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[     74.000][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[     74.000][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[     74.000][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[     74.000][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[     74.000][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[     76.925][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[     76.925][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[     76.925][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[     76.925][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[     76.925][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[     76.925][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[     76.930][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[     76.930][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[     76.930][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[     76.930][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[     79.610][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[     79.610][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[     79.610][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[     79.610][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[     79.610][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[     79.610][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[     79.610][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[     79.615][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[     79.615][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[     79.615][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[     82.295][1-0][      0][  0][IMP-info]mac 0 update phy speed 1 duplex 2
+[     82.295][1-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[     82.295][1-0][      0][  0][IMP-info]mac 1 update phy speed 1 duplex 2
+[     82.295][1-0][      0][  0][IMP-info]mac 1 mac_phy_update_pause set mac pause rx 1 tx 1
+[     82.295][1-0][      0][  0][IMP-info]mac 2 update phy speed 1 duplex 2
+[     82.295][1-0][      0][  0][IMP-info]mac 2 mac_phy_update_pause set mac pause rx 1 tx 1
+[     82.295][1-0][      0][  0][IMP-info]mac 3 update phy speed 1 duplex 2
+[     82.295][1-0][      0][  0][IMP-info]mac 3 mac_phy_update_pause set mac pause rx 1 tx 1
+[     82.300][1-0][      0][  0][IMP-info]mac 0 update [      0.000][1-0][      0][  0][IMP-info]systick init success
+[      0.000][1-0][      0][  0][IMP-info]timer init success
+[      0.000][1-0][      0][  0][IMP-info]watchdog inited success
+[      0.000][1-0][      0][  0][IMP-info]Get cpld info from header, compatible = 1.
+[      0.000][1-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 rw 0x2 init
+[      0.005][1-0][      0][  0][IMP-info]imp chip 1 die 0 mac 0 card 0x9 ncl init success
+[      0.010][1-0][      0][  0][IMP-info]i2c-0 enable, speed 0
+[      0.010][1-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 rw 0x2 init
+[      0.010][1-0][      0][  0][IMP-info]sgpio init entry
+[      0.085][1-0][      0][  0][IMP-error]bios setup config data verify failed.
+[      0.085][1-0][      0][  0][IMP-error]bios setup check failed.
+[      0.090][1-0][      0][  0][IMP-info]hot plug init, type: support(9), current(9)
+[      0.090][1-0][      0][  0][IMP-error]mac serdes mode 1 init error(0x11233).
+[      0.100][1-0][      0][  0][IMP-info]mac 0 init, pf 0 media type 1, phy_addr 0
+[      0.100][1-0][      0][  0][IMP-info]mac 0 link driver port type 5
+[      0.100][1-0][      0][  0][IMP-info]mac_id 0 init used 1, port_type 5 roh 0 abi 0x30
+[      0.100][1-0][      0][  0][IMP-info]mac 1 init, pf 1 media type 1, phy_addr 0
+[      0.100][1-0][      0][  0][IMP-info]mac 1 link driver port type 5
+[      0.100][1-0][      0][  0][IMP-info]mac_id 1 init used 1, port_type 5 roh 0 abi 0x30
+[      0.100][1-0][      0][  0][IMP-info]mac 2 link driver port type 2
+[      0.100][1-0][      0][  0][IMP-info]mac_id 2 init used 0, port_type 2 roh 0 abi 0xb0
+[      0.100][1-0][      0][  0][IMP-info]mac 3 link driver port type 2
+[      0.100][1-0][      0][  0][IMP-info]mac_id 3 init used 0, port_type 2 roh 0 abi 0xb0
+[      0.100][1-0][      0][  0][IMP-info]init intr aging 0
+[      0.100][1-0][      0][  0][IMP-info]TM not bypass
+[      0.100][1-0][      0][  0][IMP-info]not support l2 forward
+[      0.100][1-0][      0][  0][IMP-info]flow director init mode 0
+[      0.100][1-0][      0][  0][IMP-info]nic init success
+[      0.105][1-0][      0][  0][IMP-info]rocee init success
+[      0.140][1-0][      0][  0][IMP-error]cdr 0x60 get mcu init status timeout
+[      0.140][1-0][      0][  0][IMP-error]i2c0 err: fifo:0x30c, int:0x13, trans_st:0x60, err_st:0x10, tx_data:0x200
+[      0.140][1-0][      0][  0][IMP-error]i2c0 err: rd: addr:0x0, len:0x0, offset:0x0, wr: addr:0x60, len:0xe, offset:0x0
+[      0.140][1-0][      0][  0][IMP-error]cdr_a id 0 init failed, ret: 0x4
+[      0.145][1-0][      0][  0][IMP-info]cdr_a id 0 i2c 0 dev 0x60 version 0x0
+[      0.145][1-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x0
+[      0.145][1-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x1
+[      0.145][1-0][      0][  0][IMP-info]imp version is 30a1703 
+[      0.145][1-0][      0][  0][IMP-info]mac link restart, mac 0, wire 32 an 2 abi 0x30, speed 5 lanes 1 sds_rate 3 fec 1 duplex 1
+[      0.145][1-0][      0][  0][IMP-info]mac link restart, mac 1, wire 32 an 2 abi 0x30, speed 5 lanes 1 sds_rate 3 fec 1 duplex 1
+[      0.150][1-0][      0][  0][IMP-info]mac 0 xsfp present, speed 0
+[      0.150][1-0][      0][  0][IMP-info]mac 1 xsfp present, speed 0
+[      1.140][1-0][      0][  0][IMP-error]cdr_a error: heart cnt 0, health cnt 0, health status 0, init error 1
+[      1.140][1-0][      0][  0][IMP-info]cdr_a 0x60 need recovery status 0!

@@ -1,0 +1,1101 @@
+5 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-15 23:35:0 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 0:21:28 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 1:8:16 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 1:55:24 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 2:42:37 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 3:29:52 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 4:17:10 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 5:4:50 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 5:52:2 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 6:39:17 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 7:23:59 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 8:12:10 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 9:0:25 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 9:47:30 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 10:35:0 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 11:22:23 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 12:9:54 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 12:57:27 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 13:45:10 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 14:32:38 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 15:20:15 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 15:50:59 OOB:[RecodeDebugInfo:1489] Start to collect DEBUG log.
+2026-03-16 16:7:27 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 16:54:15 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 16:57:34 OOB:[board_collect_log_response_callback:1607] Finish to collect DEBUG log.
+2026-03-16 16:58:27 OOB:[RecodeDebugInfo:1489] Start to collect OPERATE log.
+2026-03-16 17:31:18 OOB:[board_collect_log_response_callback:1607] Finish to collect OPERATE log.
+2026-03-16 17:32:14 OOB:[RecodeDebugInfo:1489] Start to collect MAINT log.
+2026-03-16 17:41:51 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 18:4:12 OOB:[board_collect_log_response_callback:1607] Finish to collect MAINT log.
+2026-03-16 18:29:19 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 19:17:7 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 20:4:17 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 20:51:28 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 21:38:32 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 22:26:4 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-16 23:13:20 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 0:0:52 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 0:48:18 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 1:35:25 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 2:22:34 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 3:9:48 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 3:56:55 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 4:43:45 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 5:31:6 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 6:18:14 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 7:5:21 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 7:52:5 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 8:39:32 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 9:26:38 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 10:14:3 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 11:1:53 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 11:49:2 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 12:36:19 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 13:23:56 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 14:11:17 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 14:58:46 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 15:46:33 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 16:34:8 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 17:10:37 OOB:[RecodeDebugInfo:1489] Start to collect DEBUG log.
+2026-03-17 17:21:26 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 18:8:21 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 18:17:51 OOB:[board_collect_log_response_callback:1607] Finish to collect DEBUG log.
+2026-03-17 18:18:52 OOB:[RecodeDebugInfo:1489] Start to collect OPERATE log.
+2026-03-17 18:51:55 OOB:[board_collect_log_response_callback:1607] Finish to collect OPERATE log.
+2026-03-17 18:52:47 OOB:[RecodeDebugInfo:1489] Start to collect MAINT log.
+2026-03-17 18:55:37 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 19:25:33 OOB:[board_collect_log_response_callback:1607] Finish to collect MAINT log.
+2026-03-17 19:42:52 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 20:30:3 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 21:17:29 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 22:4:49 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 22:52:2 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-17 23:38:54 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 0:26:9 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 1:13:15 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 2:0:30 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 2:47:44 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 3:35:14 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 4:22:8 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 5:9:34 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 5:56:41 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 6:55:36 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 7:43:7 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 8:31:15 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 9:18:47 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 10:10:13 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 10:57:21 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 11:44:10 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 12:31:4 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 13:18:4 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 14:5:20 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 14:52:38 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 15:39:43 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 16:26:55 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 17:13:54 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 18:1:1 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 18:47:24 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 19:34:40 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 20:21:35 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 21:8:50 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 21:55:45 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 22:43:1 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-18 23:5:7 OOB:[RecodeDebugInfo:1489] Start to collect DEBUG log.
+2026-03-18 23:29:35 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 0:6:53 OOB:[board_collect_log_response_callback:1607] Finish to collect DEBUG log.
+2026-03-19 0:7:48 OOB:[RecodeDebugInfo:1489] Start to collect OPERATE log.
+2026-03-19 0:16:13 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 0:37:12 OOB:[board_collect_log_response_callback:1607] Finish to collect OPERATE log.
+2026-03-19 0:38:9 OOB:[RecodeDebugInfo:1489] Start to collect MAINT log.
+2026-03-19 1:2:52 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 1:7:52 OOB:[board_collect_log_response_callback:1607] Finish to collect MAINT log.
+2026-03-19 1:47:6 OOB:[RecodeDebugInfo:1489] Start to collect DEBUG log.
+2026-03-19 1:54:7 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 2:44:18 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 3:30:22 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 4:17:7 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 5:4:42 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 5:52:14 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 6:39:14 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 7:26:24 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 8:16:36 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 9:2:55 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 9:49:3 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 10:35:4 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 11:21:26 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 12:7:33 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 12:53:43 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 13:31:11 OOB:[board_collect_log_response_callback:1607] Finish to collect DEBUG log.
+2026-03-19 13:32:6 OOB:[RecodeDebugInfo:1489] Start to collect OPERATE log.
+2026-03-19 13:40:30 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 13:58:31 OOB:[board_collect_log_response_callback:1607] Finish to collect OPERATE log.
+2026-03-19 13:59:26 OOB:[RecodeDebugInfo:1489] Start to collect MAINT log.
+2026-03-19 14:25:26 OOB:[board_collect_log_response_callback:1607] Finish to collect MAINT log.
+2026-03-19 14:27:16 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 15:14:2 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 16:0:10 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 16:46:31 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 17:32:53 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 18:19:12 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 19:5:53 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 19:52:27 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 20:38:46 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 21:24:56 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 22:11:29 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 22:57:53 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-19 23:44:11 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 0:30:33 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 1:17:10 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 2:3:38 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 2:49:46 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 3:35:43 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 4:21:53 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 5:8:2 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 5:54:49 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 6:45:9 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2000-01-01 0:0:0 LOCAL:[log_test_record:1072] operate Number(0).
+2026-03-20 9:9:16 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 9:53:58 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 10:42:37 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 11:28:1 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 12:13:42 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 12:59:41 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 13:45:14 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 14:34:42 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 15:19:38 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 16:4:57 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 16:49:31 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 17:34:29 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 18:19:47 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 19:4:36 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 19:49:59 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 20:34:54 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 21:20:12 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 22:5:46 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 22:51:30 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-20 23:37:6 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 0:22:39 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 1:8:7 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 1:54:1 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 2:39:52 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 3:25:6 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 3:48:11 OOB:[RecodeDebugInfo:1489] Start to collect DEBUG log.
+2026-03-21 4:10:38 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 4:39:18 OOB:[board_collect_log_response_callback:1607] Finish to collect DEBUG log.
+2026-03-21 4:40:14 OOB:[RecodeDebugInfo:1489] Start to collect OPERATE log.
+2026-03-21 4:56:2 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 5:4:56 OOB:[board_collect_log_response_callback:1607] Finish to collect OPERATE log.
+2026-03-21 5:5:53 OOB:[RecodeDebugInfo:1489] Start to collect MAINT log.
+2026-03-21 5:30:38 OOB:[board_collect_log_response_callback:1607] Finish to collect MAINT log.
+2026-03-21 5:41:36 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 6:26:38 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 7:11:53 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 7:56:48 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 8:42:18 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 9:26:56 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 10:11:52 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 10:56:52 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 11:42:30 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 12:26:59 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 13:12:23 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 13:57:12 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 14:42:31 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 15:27:49 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 16:13:14 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 16:58:17 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 17:43:27 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 18:28:23 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 19:13:30 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 19:58:54 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 20:43:56 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 21:29:6 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 22:14:22 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 22:59:15 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-21 23:44:35 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 0:29:20 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 1:14:40 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 1:59:46 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 2:45:22 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 3:30:18 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 4:15:31 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 5:0:45 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 5:46:1 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 6:30:59 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 7:16:31 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 8:1:38 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 8:46:47 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 9:31:21 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 10:16:32 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 11:2:0 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 11:47:19 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 12:32:34 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 13:17:58 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 14:2:57 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 14:48:33 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 15:34:8 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 16:19:37 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 17:4:34 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 17:50:35 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 18:36:38 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 19:23:8 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 20:9:43 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 20:56:3 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 21:42:40 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 22:29:22 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-22 23:15:40 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 0:2:9 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 0:49:11 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 1:35:22 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 2:21:52 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 3:7:51 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 3:54:15 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 4:40:47 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 5:27:54 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 6:25:35 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2000-01-01 0:0:0 LOCAL:[log_test_record:1072] operate Number(0).
+2026-03-23 6:34:52 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 7:30:33 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 8:18:17 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 9:10:21 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 9:57:56 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 10:45:26 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 11:33:15 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 12:21:2 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 13:9:1 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 13:56:48 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 14:44:52 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 15:32:35 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 16:20:17 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 17:7:53 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 17:55:58 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 18:44:4 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 19:32:27 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 20:17:40 OOB:[RecodeDebugInfo:1489] Start to collect DEBUG log.
+2026-03-23 20:20:30 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 21:8:30 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 21:20:52 OOB:[board_collect_log_response_callback:1607] Finish to collect DEBUG log.
+2026-03-23 21:21:46 OOB:[RecodeDebugInfo:1489] Start to collect OPERATE log.
+2026-03-23 21:51:40 OOB:[board_collect_log_response_callback:1607] Finish to collect OPERATE log.
+2026-03-23 21:52:34 OOB:[RecodeDebugInfo:1489] Start to collect MAINT log.
+2026-03-23 21:56:6 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 22:22:45 OOB:[board_collect_log_response_callback:1607] Finish to collect MAINT log.
+2026-03-23 22:43:29 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-23 23:31:15 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 0:19:3 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 1:7:15 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 1:55:14 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 2:43:22 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 3:31:41 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 4:19:37 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 5:7:16 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 5:55:10 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 6:43:33 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 7:31:0 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 8:19:13 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 9:6:46 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 9:55:1 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 10:42:45 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 11:30:39 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 12:18:48 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 13:6:10 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 13:53:55 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 14:41:38 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 15:29:33 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 16:17:14 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 17:4:50 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 17:52:40 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 18:40:11 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 19:27:45 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 20:15:51 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 21:3:44 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 21:51:16 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 22:38:43 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-24 23:26:43 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-25 0:14:13 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-25 1:2:5 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-25 1:50:8 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-25 2:37:55 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-25 3:25:58 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-25 4:13:29 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-25 5:0:57 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-25 5:48:35 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-25 6:36:15 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2000-01-01 0:0:0 LOCAL:[log_test_record:1072] operate Number(0).
+2026-03-26 5:24:50 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-26 6:15:15 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-26 7:5:9 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-26 7:52:9 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-26 8:39:8 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-26 9:26:20 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-26 10:13:39 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-26 10:59:43 OOB:[RecodeDebugInfo:1489] Start to collect DEBUG log.
+2026-03-26 11:1:14 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-26 11:48:42 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-26 12:9:31 OOB:[board_collect_log_response_callback:1607] Finish to collect DEBUG log.
+2026-03-26 12:10:26 OOB:[RecodeDebugInfo:1489] Start to collect OPERATE log.
+2026-03-26 12:36:0 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-26 12:44:41 OOB:[board_collect_log_response_callback:1607] Finish to collect OPERATE log.
+2026-03-26 12:45:32 OOB:[RecodeDebugInfo:1489] Start to collect MAINT log.
+2026-03-26 13:21:36 OOB:[board_collect_log_response_callback:1607] Finish to collect MAINT log.
+2026-03-26 13:23:37 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-26 14:10:52 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-26 14:38:58 OOB:[RecodeDebugInfo:1489] Start to collect DEBUG log.
+2026-03-26 14:57:50 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-26 15:45:7 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-26 15:53:23 OOB:[board_collect_log_response_callback:1607] Finish to collect DEBUG log.
+2026-03-26 15:54:21 OOB:[RecodeDebugInfo:1489] Start to collect OPERATE log.
+2026-03-26 16:32:2 OOB:[board_collect_log_response_callback:1607] Finish to collect OPERATE log.
+2026-03-26 16:32:25 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-26 16:32:57 OOB:[RecodeDebugInfo:1489] Start to collect MAINT log.
+2026-03-26 17:11:31 OOB:[board_collect_log_response_callback:1607] Finish to collect MAINT log.
+2026-03-26 17:19:54 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-26 18:7:44 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-26 18:55:0 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-26 19:42:53 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-26 20:30:9 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-26 21:17:11 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-26 22:4:52 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-26 22:52:30 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-26 23:39:56 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 0:27:25 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 1:15:17 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 2:2:29 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 2:49:37 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2000-01-01 0:0:0 LOCAL:[log_test_record:1072] operate Number(0).
+2026-03-27 3:8:54 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 3:55:59 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 4:43:3 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 5:30:13 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 6:17:52 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 7:5:13 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 7:52:58 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2000-01-01 0:0:0 LOCAL:[log_test_record:1072] operate Number(0).
+2000-01-01 0:0:0 LOCAL:[log_test_record:1072] operate Number(0).
+2000-01-01 0:0:0 LOCAL:[log_test_record:1072] operate Number(0).
+2000-01-01 0:0:0 LOCAL:[log_test_record:1072] operate Number(0).
+2026-03-27 8:52:44 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 9:40:19 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 10:27:22 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 11:14:35 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 12:1:35 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 12:48:51 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 13:36:21 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 14:23:36 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 15:11:7 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 15:58:49 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 16:46:21 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 17:33:41 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 18:21:13 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 19:8:21 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 19:55:6 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 20:37:37 OOB:[RecodeDebugInfo:1489] Start to collect DEBUG log.
+2026-03-27 20:42:46 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 21:30:11 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 21:45:41 OOB:[board_collect_log_response_callback:1607] Finish to collect DEBUG log.
+2026-03-27 21:46:38 OOB:[RecodeDebugInfo:1489] Start to collect OPERATE log.
+2026-03-27 22:17:49 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 22:19:19 OOB:[board_collect_log_response_callback:1607] Finish to collect OPERATE log.
+2026-03-27 22:20:19 OOB:[RecodeDebugInfo:1489] Start to collect MAINT log.
+2026-03-27 22:52:45 OOB:[board_collect_log_response_callback:1607] Finish to collect MAINT log.
+2026-03-27 23:5:4 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-27 23:51:50 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 0:39:6 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 1:26:0 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 2:13:25 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 3:0:38 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 3:48:1 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 4:35:39 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 5:22:49 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 6:10:29 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 6:57:13 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 7:44:22 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 8:31:18 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 9:18:22 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 10:5:21 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 10:52:30 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 11:39:14 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 12:26:18 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 13:13:27 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 14:0:27 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 14:47:33 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 15:34:50 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 16:21:48 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 17:8:56 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 17:56:10 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 18:43:12 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 19:30:29 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 20:17:45 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 21:4:53 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 21:52:7 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 22:39:15 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-28 23:25:54 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 0:13:22 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 1:0:27 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 1:47:48 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 2:34:30 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 3:21:28 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 4:8:50 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 4:55:37 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 5:42:58 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 6:30:28 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 7:17:15 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 8:4:20 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 8:51:0 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 9:38:32 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 10:25:24 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 11:12:25 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 11:59:31 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 12:46:46 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 13:33:49 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 14:20:26 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 15:7:56 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 15:54:28 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 16:41:34 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 17:28:37 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 18:15:34 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 19:3:3 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 19:50:15 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 20:37:39 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 21:24:35 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 22:11:43 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 22:58:28 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-29 23:45:45 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 0:32:42 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 1:19:39 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 2:6:54 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 2:54:7 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 3:41:15 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 4:28:56 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 5:15:57 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 6:3:6 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 6:50:23 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 7:37:17 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 8:24:36 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 9:11:46 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 9:58:40 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 10:46:27 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 11:33:45 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 12:21:1 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 13:8:29 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 13:56:15 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 14:43:56 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 15:31:46 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 16:18:38 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 16:29:26 OOB:[RecodeDebugInfo:1489] Start to collect DEBUG log.
+2026-03-30 17:5:58 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 17:36:23 OOB:[board_collect_log_response_callback:1607] Finish to collect DEBUG log.
+2026-03-30 17:37:18 OOB:[RecodeDebugInfo:1489] Start to collect OPERATE log.
+2026-03-30 17:52:58 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 18:9:58 OOB:[board_collect_log_response_callback:1607] Finish to collect OPERATE log.
+2026-03-30 18:10:52 OOB:[RecodeDebugInfo:1489] Start to collect MAINT log.
+2026-03-30 18:40:24 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 18:43:28 OOB:[board_collect_log_response_callback:1607] Finish to collect MAINT log.
+2026-03-30 19:27:40 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 20:15:3 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 21:2:30 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 21:50:5 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 22:37:3 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-30 23:24:19 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-31 0:11:39 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-31 0:59:3 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-31 1:46:9 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-31 2:33:24 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-31 3:20:24 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-31 4:7:49 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-31 4:54:49 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-31 5:42:1 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-31 6:29:6 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-31 7:16:21 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-03-31 8:3:25 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2000-01-01 0:0:0 LOCAL:[log_test_record:1072] operate Number(0).
+2000-01-01 0:0:0 LOCAL:[log_test_record:1072] operate Number(0).
+2026-04-01 3:51:32 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-01 4:38:22 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-01 5:25:50 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-01 6:12:58 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-01 7:0:4 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-01 7:47:35 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-01 8:35:5 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-01 9:22:4 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-01 10:9:9 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-01 10:56:30 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-01 11:43:35 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-01 12:30:52 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-01 13:18:18 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-01 14:5:40 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-01 14:52:57 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-01 15:40:29 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-01 15:42:46 OOB:[RecodeDebugInfo:1489] Start to collect DEBUG log.
+2026-04-01 16:27:35 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-01 16:51:43 OOB:[board_collect_log_response_callback:1607] Finish to collect DEBUG log.
+2026-04-01 16:52:38 OOB:[RecodeDebugInfo:1489] Start to collect OPERATE log.
+2026-04-01 17:14:57 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-01 17:25:0 OOB:[board_collect_log_response_callback:1607] Finish to collect OPERATE log.
+2026-04-01 17:25:54 OOB:[RecodeDebugInfo:1489] Start to collect MAINT log.
+2026-04-01 17:58:34 OOB:[board_collect_log_response_callback:1607] Finish to collect MAINT log.
+2026-04-01 18:2:18 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-01 18:49:20 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-01 19:36:34 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-01 20:23:57 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-01 21:11:43 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-01 21:58:49 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-01 22:45:46 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-01 23:32:44 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 0:20:7 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 1:7:18 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 1:53:55 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 2:45:23 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 3:33:3 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 4:20:5 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 5:7:32 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 5:54:48 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 6:41:43 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 7:28:41 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 8:16:0 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 9:3:39 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 9:50:8 OOB:[RecodeDebugInfo:1489] Start to collect DEBUG log.
+2026-04-02 9:50:43 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 10:38:26 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 10:57:57 OOB:[board_collect_log_response_callback:1607] Finish to collect DEBUG log.
+2026-04-02 10:58:58 OOB:[RecodeDebugInfo:1489] Start to collect OPERATE log.
+2026-04-02 11:25:41 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 11:30:55 OOB:[board_collect_log_response_callback:1607] Finish to collect OPERATE log.
+2026-04-02 11:31:52 OOB:[RecodeDebugInfo:1489] Start to collect MAINT log.
+2026-04-02 12:4:4 OOB:[board_collect_log_response_callback:1607] Finish to collect MAINT log.
+2026-04-02 12:12:51 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 13:0:34 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 13:47:51 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 14:34:47 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 15:21:57 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 16:9:33 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 16:57:10 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 17:44:12 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 18:31:22 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 19:18:47 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 20:6:14 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 20:53:34 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 21:40:40 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 22:28:5 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-02 23:15:19 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 0:2:18 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 0:49:28 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 1:36:30 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 2:23:39 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 3:10:53 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 3:57:55 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 4:45:23 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 5:32:39 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 6:19:27 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 7:6:8 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 7:52:35 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 7:56:54 OOB:[RecodeDebugInfo:1489] Start to collect DEBUG log.
+2026-04-03 8:39:57 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 9:5:42 OOB:[board_collect_log_response_callback:1607] Finish to collect DEBUG log.
+2026-04-03 9:6:35 OOB:[RecodeDebugInfo:1489] Start to collect OPERATE log.
+2026-04-03 9:26:23 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 9:37:43 OOB:[board_collect_log_response_callback:1607] Finish to collect OPERATE log.
+2026-04-03 9:38:39 OOB:[RecodeDebugInfo:1489] Start to collect MAINT log.
+2026-04-03 10:13:37 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 10:14:17 OOB:[board_collect_log_response_callback:1607] Finish to collect MAINT log.
+2026-04-03 11:1:40 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 11:49:41 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 12:37:9 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 13:24:36 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 14:11:33 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 14:58:55 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 15:46:28 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 16:33:53 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 17:21:17 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 18:9:5 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 18:56:30 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 19:43:37 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 20:31:7 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 21:18:36 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 22:5:39 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 22:52:34 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-03 23:39:55 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 0:27:9 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 1:14:18 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 2:1:32 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 2:48:47 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 3:36:8 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 4:23:25 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 5:10:33 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 5:57:31 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 6:44:46 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 7:32:3 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 8:19:42 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 9:7:5 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 9:54:9 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 10:41:7 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 11:28:3 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 12:15:53 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 13:2:59 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 13:50:22 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 14:37:42 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 15:25:3 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 16:11:57 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 16:58:50 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 17:46:27 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 18:33:55 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 19:21:24 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 20:8:38 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 20:56:10 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 21:43:24 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 22:30:43 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-04 23:17:56 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 0:5:20 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 0:52:40 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 1:39:45 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 2:27:0 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 3:14:49 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 4:2:1 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 4:49:17 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 5:36:28 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 6:24:0 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 7:11:1 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 7:58:36 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 8:46:12 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 9:33:10 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 10:20:2 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 11:7:37 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 11:55:24 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 12:42:43 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 13:30:8 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 14:17:40 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 15:4:52 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 15:51:49 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 16:38:59 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 17:25:51 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 18:12:52 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 18:59:51 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 19:46:52 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 20:34:9 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 21:21:51 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 22:8:45 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 22:56:15 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-05 23:43:42 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 0:30:43 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 1:18:1 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 2:5:1 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 2:52:45 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 3:39:16 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 4:26:16 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 5:13:24 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 6:0:48 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 6:48:16 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 7:35:30 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 8:23:3 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 9:10:23 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 9:57:44 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 10:45:6 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 11:32:20 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 12:19:34 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 13:6:54 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 13:54:8 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 14:40:58 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 15:27:53 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 16:14:44 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 17:1:39 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 17:49:10 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 18:36:37 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 19:23:32 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 20:11:16 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 20:58:31 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 21:45:35 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 22:32:22 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-06 23:19:41 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 0:6:34 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 0:53:47 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 1:41:24 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 2:28:34 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 3:16:12 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 4:3:31 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 4:51:12 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 5:39:16 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 6:25:21 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 6:34:32 OOB:[RecodeDebugInfo:1489] Start to collect DEBUG log.
+2026-04-07 7:12:12 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 7:44:24 OOB:[board_collect_log_response_callback:1607] Finish to collect DEBUG log.
+2026-04-07 7:45:19 OOB:[RecodeDebugInfo:1489] Start to collect OPERATE log.
+2026-04-07 8:0:0 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 8:19:33 OOB:[board_collect_log_response_callback:1607] Finish to collect OPERATE log.
+2026-04-07 8:20:28 OOB:[RecodeDebugInfo:1489] Start to collect MAINT log.
+2026-04-07 8:47:40 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 8:54:50 OOB:[board_collect_log_response_callback:1607] Finish to collect MAINT log.
+2026-04-07 9:35:22 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 10:20:1 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 11:3:14 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 11:47:15 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 12:31:8 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 13:14:52 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 13:58:45 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 14:42:51 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 15:26:28 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 16:10:48 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 16:54:10 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 17:38:24 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 18:22:26 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 19:6:7 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 19:49:29 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 20:33:8 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 21:17:8 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 22:0:59 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 22:44:19 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 22:53:46 OOB:[RecodeDebugInfo:1489] Start to collect DEBUG log.
+2026-04-07 23:27:56 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-07 23:52:50 OOB:[board_collect_log_response_callback:1607] Finish to collect DEBUG log.
+2026-04-07 23:53:47 OOB:[RecodeDebugInfo:1489] Start to collect OPERATE log.
+2026-04-08 0:11:19 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 0:22:52 OOB:[board_collect_log_response_callback:1607] Finish to collect OPERATE log.
+2026-04-08 0:23:48 OOB:[RecodeDebugInfo:1489] Start to collect MAINT log.
+2026-04-08 0:51:49 OOB:[board_collect_log_response_callback:1607] Finish to collect MAINT log.
+2026-04-08 0:55:23 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 1:38:57 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 2:23:20 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 3:7:6 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 3:50:56 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 4:34:46 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 5:18:51 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 6:10:54 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 6:58:15 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 7:49:43 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 8:35:1 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 9:24:20 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 10:18:21 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 11:6:2 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 11:54:14 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 12:41:51 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 13:29:54 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 14:18:17 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 15:6:17 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 15:54:39 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 16:42:52 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 17:31:26 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 18:19:7 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 19:7:32 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 19:55:44 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 20:44:10 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 21:32:39 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 22:20:37 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 23:8:56 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-08 23:43:19 OOB:[RecodeDebugInfo:1489] Start to collect DEBUG log.
+2026-04-08 23:57:24 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 0:45:24 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 0:51:4 OOB:[board_collect_log_response_callback:1607] Finish to collect DEBUG log.
+2026-04-09 0:51:58 OOB:[RecodeDebugInfo:1489] Start to collect OPERATE log.
+2026-04-09 1:23:29 OOB:[board_collect_log_response_callback:1607] Finish to collect OPERATE log.
+2026-04-09 1:24:25 OOB:[RecodeDebugInfo:1489] Start to collect MAINT log.
+2026-04-09 1:33:15 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 1:56:24 OOB:[board_collect_log_response_callback:1607] Finish to collect MAINT log.
+2026-04-09 2:21:32 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 3:10:3 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 3:57:57 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 4:46:13 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 5:34:42 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 6:20:46 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 7:9:24 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 7:57:38 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 8:45:58 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 9:34:7 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 10:22:47 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 11:11:15 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 11:59:36 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 12:47:40 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 13:35:44 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 14:23:32 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 15:11:48 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 16:0:2 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 16:32:55 OOB:[RecodeDebugInfo:1489] Start to collect DEBUG log.
+2026-04-09 16:47:46 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 17:35:54 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 17:40:41 OOB:[board_collect_log_response_callback:1607] Finish to collect DEBUG log.
+2026-04-09 17:41:37 OOB:[RecodeDebugInfo:1489] Start to collect OPERATE log.
+2026-04-09 18:13:43 OOB:[board_collect_log_response_callback:1607] Finish to collect OPERATE log.
+2026-04-09 18:14:39 OOB:[RecodeDebugInfo:1489] Start to collect MAINT log.
+2026-04-09 18:23:44 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 18:47:7 OOB:[board_collect_log_response_callback:1607] Finish to collect MAINT log.
+2026-04-09 19:11:52 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 19:59:58 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 20:48:14 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 21:35:55 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 22:24:0 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-09 23:12:12 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 0:0:0 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 0:47:58 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 1:35:27 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 2:23:11 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 3:10:46 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 3:48:13 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 4:36:16 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 5:24:43 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 6:12:31 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 7:0:42 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 7:48:58 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 8:37:11 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 9:25:5 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 10:13:44 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 11:2:32 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 11:51:14 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 12:39:16 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 13:27:33 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 14:15:51 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 14:48:37 OOB:[RecodeDebugInfo:1489] Start to collect DEBUG log.
+2026-04-10 15:4:19 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 15:52:27 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 15:58:27 OOB:[board_collect_log_response_callback:1607] Finish to collect DEBUG log.
+2026-04-10 15:59:25 OOB:[RecodeDebugInfo:1489] Start to collect OPERATE log.
+2026-04-10 16:32:42 OOB:[board_collect_log_response_callback:1607] Finish to collect OPERATE log.
+2026-04-10 16:33:38 OOB:[RecodeDebugInfo:1489] Start to collect MAINT log.
+2026-04-10 16:40:47 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 17:7:25 OOB:[board_collect_log_response_callback:1607] Finish to collect MAINT log.
+2026-04-10 17:28:46 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 18:17:2 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 19:5:3 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 19:53:1 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 20:41:12 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 21:29:13 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 22:17:17 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 23:5:15 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-10 23:53:2 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 0:41:11 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 1:28:53 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 2:16:33 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 3:4:33 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 3:52:44 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 4:40:23 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 5:28:33 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 6:16:44 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 7:4:54 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 7:52:38 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 8:41:7 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 9:29:16 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 10:17:19 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 11:5:39 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 11:53:40 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 12:41:41 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 13:30:6 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 14:18:16 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 15:6:33 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 15:54:53 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 16:42:42 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 17:31:12 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 18:18:54 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 19:6:57 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 19:55:4 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 20:42:54 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 21:30:46 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 22:18:29 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 23:6:50 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-11 23:54:40 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 0:42:40 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 1:30:48 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 2:18:41 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 3:6:32 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 3:54:53 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 4:42:59 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 5:30:34 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 6:18:45 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 7:6:47 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 7:55:6 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 8:43:7 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 9:31:11 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 10:18:58 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 11:7:5 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 11:55:4 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 12:43:1 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 13:31:3 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 14:19:0 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 15:6:45 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 15:54:46 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 16:43:13 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 17:31:35 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 18:19:46 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 19:7:42 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 19:55:28 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 20:43:30 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 21:31:38 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 22:19:37 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 23:7:47 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-12 23:55:43 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 0:43:33 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 1:31:29 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 2:19:45 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 3:8:4 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 3:55:24 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 4:43:59 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 5:32:14 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 6:20:47 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 7:9:10 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 7:57:55 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 8:45:59 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 9:34:42 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 10:22:57 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 11:11:10 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 11:59:40 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 12:47:45 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 13:36:2 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 14:24:7 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 14:49:28 OOB:[RecodeDebugInfo:1489] Start to collect DEBUG log.
+2026-04-13 15:12:26 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 16:0:18 OOB:[board_collect_log_response_callback:1607] Finish to collect DEBUG log.
+2026-04-13 16:0:25 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 16:1:13 OOB:[RecodeDebugInfo:1489] Start to collect OPERATE log.
+2026-04-13 16:34:25 OOB:[board_collect_log_response_callback:1607] Finish to collect OPERATE log.
+2026-04-13 16:35:21 OOB:[RecodeDebugInfo:1489] Start to collect MAINT log.
+2026-04-13 16:48:54 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 17:8:56 OOB:[board_collect_log_response_callback:1607] Finish to collect MAINT log.
+2026-04-13 17:37:1 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 18:25:26 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 19:13:17 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 20:1:32 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 20:49:41 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 21:38:4 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 22:25:55 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-13 23:13:49 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 0:2:9 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 0:49:59 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 1:37:55 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 2:25:52 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 3:13:37 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 4:1:20 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 4:49:25 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 5:37:44 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 6:25:26 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 7:13:43 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 8:2:15 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 8:49:58 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 9:38:21 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 10:26:42 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 11:14:52 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 12:2:33 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 12:50:26 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 13:38:37 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 14:26:9 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 15:14:5 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 16:2:12 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 16:50:13 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 17:38:26 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 18:26:36 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 19:14:23 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 20:2:22 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 20:50:8 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 21:38:19 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 22:26:28 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-14 23:14:17 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 0:2:37 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 0:50:30 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 1:38:3 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 2:25:44 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 3:13:32 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 4:1:58 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 4:49:42 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 5:37:36 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 6:25:51 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 7:13:49 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 8:1:38 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 8:58:38 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 9:50:35 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 10:38:31 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 11:26:48 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 12:14:40 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 13:2:56 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 13:51:21 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 14:39:43 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 15:27:33 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 16:15:51 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 17:1:21 OOB:[RecodeDebugInfo:1489] Start to collect DEBUG log.
+2026-04-15 17:3:57 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 17:51:51 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 18:11:52 OOB:[board_collect_log_response_callback:1607] Finish to collect DEBUG log.
+2026-04-15 18:12:49 OOB:[RecodeDebugInfo:1489] Start to collect OPERATE log.
+2026-04-15 18:40:6 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 18:47:16 OOB:[board_collect_log_response_callback:1607] Finish to collect OPERATE log.
+2026-04-15 18:48:11 OOB:[RecodeDebugInfo:1489] Start to collect MAINT log.
+2026-04-15 19:22:5 OOB:[board_collect_log_response_callback:1607] Finish to collect MAINT log.
+2026-04-15 19:28:29 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 20:16:46 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 21:5:10 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 21:53:31 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 22:41:54 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-15 23:30:4 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 0:18:29 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 1:6:52 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 1:54:46 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 2:43:13 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 3:31:23 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 4:19:55 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 5:8:20 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 5:56:53 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2000-01-01 0:0:0 LOCAL:[log_test_record:1072] operate Number(0).
+2026-04-16 6:23:39 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 7:10:52 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 7:57:50 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 8:44:39 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 9:31:19 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 10:18:55 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 11:6:19 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 11:53:58 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 12:41:50 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 13:29:4 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 14:16:22 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 15:4:6 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 15:51:34 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 16:39:8 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 17:26:18 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 18:6:49 OOB:[RecodeDebugInfo:1489] Start to collect DEBUG log.
+2026-04-16 18:13:28 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 19:0:55 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 19:16:20 OOB:[board_collect_log_response_callback:1607] Finish to collect DEBUG log.
+2026-04-16 19:17:18 OOB:[RecodeDebugInfo:1489] Start to collect OPERATE log.
+2026-04-16 19:48:27 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 19:50:48 OOB:[board_collect_log_response_callback:1607] Finish to collect OPERATE log.
+2026-04-16 19:51:42 OOB:[RecodeDebugInfo:1489] Start to collect MAINT log.
+2026-04-16 20:24:25 OOB:[board_collect_log_response_callback:1607] Finish to collect MAINT log.
+2026-04-16 20:35:53 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 21:23:19 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 22:10:31 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 22:57:56 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-16 23:45:6 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 0:32:7 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 1:19:13 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 2:6:9 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 2:53:49 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 3:41:11 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 4:28:0 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 5:15:28 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 6:2:51 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2000-01-01 0:0:0 LOCAL:[log_test_record:1072] operate Number(0).
+2026-04-17 7:1:6 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2000-01-01 0:0:0 LOCAL:[log_test_record:1072] operate Number(0).
+2026-04-17 7:35:49 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2000-01-01 0:0:0 LOCAL:[log_test_record:1072] operate Number(0).
+2026-04-17 7:48:1 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 8:35:11 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 9:22:9 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 10:9:20 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 10:57:10 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 11:44:58 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 12:32:30 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 13:20:13 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 14:8:1 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 14:55:44 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 15:43:39 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 16:31:23 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 17:18:52 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 18:6:24 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 18:15:12 OOB:[RecodeDebugInfo:1489] Start to collect DEBUG log.
+2026-04-17 18:54:29 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 19:37:12 OOB:[board_collect_log_response_callback:1607] Finish to collect DEBUG log.
+2026-04-17 19:38:7 OOB:[RecodeDebugInfo:1489] Start to collect OPERATE log.
+2026-04-17 19:42:37 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 20:16:35 OOB:[board_collect_log_response_callback:1607] Finish to collect OPERATE log.
+2026-04-17 20:17:30 OOB:[RecodeDebugInfo:1489] Start to collect MAINT log.
+2026-04-17 20:30:9 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 20:55:26 OOB:[board_collect_log_response_callback:1607] Finish to collect MAINT log.
+2026-04-17 20:56:31 OOB:[RecodeDebugInfo:1489] Start to collect DEBUG log.
+2026-04-17 21:17:42 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 22:5:49 OOB:[board_set_systime_response_callback:681] set RTC time successfully.
+2026-04-17 22:14:59 OOB:[board_collect_log_response_callback:1607] Finish to collect DEBUG log.

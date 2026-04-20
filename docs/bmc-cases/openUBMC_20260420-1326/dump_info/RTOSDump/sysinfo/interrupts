@@ -1,0 +1,89 @@
+           CPU0       CPU1       CPU2       CPU3       
+ 16:          0          0          0          0     GICv3  25 Level     vgic
+ 18:   17196377   17542929   17563958   17546952     GICv3  30 Level     arch_timer
+ 19:          0          0          0          0     GICv3  27 Level     kvm guest vtimer
+ 22:          0          0          0          0     GICv3  23 Level     arm-pmu
+ 23:        885          0          0          0     GICv3  90 Level     ttyS0
+ 24:       5429          0          0          0     GICv3  91 Level     hisi_uart_irq3
+ 25:          0          0          0          0     GICv3  92 Level     hisi_uart_irq4
+ 26:        641          0          0          0     GICv3  93 Level     hisi_uart_irq5
+ 27:          0          0          0          0     GICv3  94 Level     hisi_uart_irq6
+ 28:          0          0          0          0     GICv3  95 Level     hisi_uart_irq7
+ 29:       1268          0          0          0     GICv3 175 Level     hitmr_irq0
+ 30:          0          0          0          0     GICv3 176 Level     hitmr_irq1
+ 31:          0          0          0          0     GICv3 177 Level     hitmr_irq2
+ 32:          0          0          0          0     GICv3 178 Level     hitmr_irq3
+ 33:          0          0          0          0     GICv3 179 Level     hitmr_irq4
+ 34:          0          0          0          0     GICv3 180 Level     hitmr_irq5
+ 36:          0          0          0          0     GICv3  75 Level     cpll dlock interrupt
+ 37:          0          0          0          0     GICv3  76 Level     pll0 dlock interrupt
+ 38:          0          0          0          0     GICv3  77 Level     pll1 dlock interrupt
+ 39:          0          0          0          0     GICv3  78 Level     pll2 dlock interrupt
+ 40:          0          0          0          0     GICv3 251 Level     dac dlock interrupt
+ 41:          1          0          0          0     GICv3 211 Level     subsys_rst_int5
+ 42:          0          0          0          0     GICv3 256 Level     subsys_rst_int6
+ 49:          0          0          0          0     GICv3 181 Level     gpio_irq0
+ 50:        776          0          0          0     GICv3 182 Level     gpio_irq1
+ 51:          0          0          0          0     GICv3 183 Level     gpio_irq2
+ 52:          0          0          0          0     GICv3 184 Level     gpio_irq3
+ 53:          0          0          0          0     GICv3 185 Level     gpio_irq4
+ 55:    8892946          0          0          0     GICv3 105 Level     i2c1
+ 56:    5161186          0          0          0     GICv3 106 Level     i2c2
+ 57:    6227283          0          0          0     GICv3 107 Level     i2c3
+ 58:    2497252          0          0          0     GICv3 108 Level     i2c4
+ 59:    5009492          0          0          0     GICv3 109 Level     i2c5
+ 60:         60          0          0          0     GICv3 110 Level     i2c6
+ 61:   10453568          0          0          0     GICv3 111 Level     i2c7
+ 62:     105127          0          0          0     GICv3 112 Level     i2c8
+ 63:    1785193          0          0          0     GICv3 113 Level     i2c9
+ 65:          0          0          0          0     GICv3 115 Level     i2c11
+ 72:          0          0          0          0     GICv3 146 Level     hispi_irq0
+ 73:          0          0          0          0     GICv3 171 Level     hispi_irq1
+ 74:          0          0          0          0     GICv3 147 Level     pwm
+ 75:          0          0          0          0     GICv3 173 Level     pwm
+ 76:     514841          0          0          0     GICv3 164 Level     ipmb0
+ 77:          0          0          0          0     GICv3 165 Level     ipmb1
+ 78:          0          0          0          0     GICv3 166 Level     ipmb2
+ 79:          0          0          0          0     GICv3 167 Level     ipmb3
+ 97:          0          0          0          0     GICv3 162 Level     sol1
+ 99:          0          0          0          0     GICv3  96 Level     sol2
+100:          0          0          0          0     GICv3  97 Level     sol3
+101:          0          0          0          0     GICv3  98 Level     sol4
+106:          0          0          0          0     GICv3  67 Level     ADC0
+107:          0          0          0          0     GICv3  68 Level     ADC1
+108:          0          0          0          0     GICv3 143 Level     localbus
+113:          0          0          0          0     GICv3 169 Level     mdio
+114:        139          0          0          0     GICv3  84 Level     cd00000.gmac
+115:          0          0          0          0     GICv3  85 Level     cd00000.gmac
+116:     149476          0          0          0     GICv3  86 Level     cd00000.gmac
+117:          0          0          0          0     GICv3  87 Level     cd00000.gmac
+118:     187150          0          0          0     GICv3 168 Level     8630000.mmc
+120:          0          0          0          0     GICv3 219 Level     usb_ram0
+121:        176          0          0          0     GICv3 216 Level     dwc3
+122:          0          0          0          0     GICv3 220 Level     usb_ram1
+124:          0          0          0          0     GICv3 221 Level     usb_ram2
+125:          0          0          0          0     GICv3 218 Level     dwc3-otg, xhci-hcd:usb1
+126:          0          0          0          0     GICv3 223 Level     usb_ram3
+127:          0          0          0          0     GICv3 222 Level     dwc3-otg, xhci-hcd:usb3
+130:          0          0          0          0     GICv3  71 Level     trng
+134:          0          0          0          0     GICv3 163 Level     EDMA_IRQ
+135:      23662          0          0          0     GICv3 149 Level     mctp
+136:          0          0          0          0     GICv3 145 Level     vce interrupt
+139:       1163          0          0          0     GICv3 257 Level     intercore_int
+IPI0:     20289      45201      59915      65377       Rescheduling interrupts
+IPI1:  14583468   18439769   18413424   18340103       Function call interrupts
+IPI2:         0          0          0          0       CPU stop interrupts
+IPI3:         0          0          0          0       CPU stop (for crash dump) interrupts
+IPI4:         0          0          0          0       Timer broadcast interrupts
+IPI5:         0          0          0          0       IRQ work interrupts
+IPI6:         0          0          0          0       CPU wake-up interrupts
+IPI7:         0          0          0          0       HPVISOR vnoitfy interrupts
+IPI8:         0          0          0          0 
+IPI9:         0          0          0          0 
+IPI10:         0          0          0          0 
+IPI11:         0          0          0          0 
+IPI12:         0          0          0          0 
+IPI13:         0          0          0          0 
+IPI14:         0          0          0          0 
+IPI15:         0          0          0          0 
+Err:          0

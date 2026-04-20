@@ -1,0 +1,90 @@
+{
+    ":00000009": {
+        "cpu": 0.091223,
+        "mqlen": 0,
+        "task": 0,
+        "memory": "653.62 Kb",
+        "name": "snlua sd_bus",
+        "message": 9
+    },
+    ":0000000c": {
+        "cpu": 4394.270134,
+        "mqlen": 0,
+        "task": 36,
+        "memory": "7578.67 Kb",
+        "name": "snlua power_mgmt/service/main",
+        "message": 2438715
+    },
+    ":0000000f": {
+        "cpu": 377.517691,
+        "mqlen": 0,
+        "task": 13,
+        "memory": "8311.22 Kb",
+        "name": "snlua power_strategy/service/main",
+        "message": 337001
+    },
+    ":0000000b": {
+        "cpu": 4768.120691,
+        "mqlen": 0,
+        "task": 22,
+        "memory": "13846.56 Kb",
+        "name": "snlua thermal_mgmt/service/main",
+        "message": 770482
+    },
+    ":0000000e": {
+        "cpu": 140.150411,
+        "mqlen": 0,
+        "task": 9,
+        "memory": "6525.71 Kb",
+        "name": "snlua cooling/service/main",
+        "message": 114615
+    },
+    ":0000000a": {
+        "cpu": 14.311825,
+        "mqlen": 0,
+        "task": 2,
+        "memory": "855.42 Kb",
+        "name": "snlua harbor",
+        "message": 42031
+    },
+    ":00000007": {
+        "cpu": 0.044786,
+        "mqlen": 0,
+        "task": 1,
+        "memory": "671.56 Kb",
+        "name": "snlua service_mgr",
+        "message": 21
+    },
+    ":0000000d": {
+        "cpu": 0.042279,
+        "mqlen": 0,
+        "task": 0,
+        "memory": "725.17 Kb",
+        "name": "snlua debug_console 0.0.0.0 40032",
+        "message": 6
+    },
+    ":00000004": {
+        "cpu": 0.04105,
+        "mqlen": 0,
+        "task": 0,
+        "memory": "636.68 Kb",
+        "name": "snlua cdummy",
+        "message": 10
+    },
+    ":00000006": {
+        "cpu": 0.038207,
+        "mqlen": 0,
+        "task": 0,
+        "memory": "631.48 Kb",
+        "name": "snlua datacenterd",
+        "message": 4
+    },
+    ":00000008": {
+        "cpu": 0.118489,
+        "mqlen": 0,
+        "task": 1,
+        "memory": "460.90 Kb",
+        "name": "snlua hica/subsys/energy/service/main",
+        "message": 137
+    }
+}

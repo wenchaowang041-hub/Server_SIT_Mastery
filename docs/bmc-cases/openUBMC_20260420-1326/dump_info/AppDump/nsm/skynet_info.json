@@ -1,0 +1,90 @@
+{
+    ":0000000c": {
+        "task": 7,
+        "name": "snlua nsm/service/main",
+        "memory": "7430.63 Kb",
+        "mqlen": 0,
+        "cpu": 288.95367,
+        "message": 129390
+    },
+    ":0000000f": {
+        "task": 4,
+        "name": "snlua observability/service/main",
+        "memory": "3469.70 Kb",
+        "mqlen": 0,
+        "cpu": 42.829427,
+        "message": 92436
+    },
+    ":00000007": {
+        "task": 1,
+        "name": "snlua service_mgr",
+        "memory": "676.29 Kb",
+        "mqlen": 0,
+        "cpu": 0.044495,
+        "message": 23
+    },
+    ":00000008": {
+        "task": 1,
+        "name": "snlua hica/subsys/om_priv/service/main",
+        "memory": "465.29 Kb",
+        "mqlen": 0,
+        "cpu": 0.10483,
+        "message": 138
+    },
+    ":0000000a": {
+        "task": 2,
+        "name": "snlua harbor",
+        "memory": "901.34 Kb",
+        "mqlen": 0,
+        "cpu": 16.723979,
+        "message": 44609
+    },
+    ":0000000b": {
+        "task": 0,
+        "name": "snlua debug_console 0.0.0.0 40031",
+        "memory": "725.33 Kb",
+        "mqlen": 0,
+        "cpu": 0.04191,
+        "message": 8
+    },
+    ":00000009": {
+        "task": 0,
+        "name": "snlua sd_bus",
+        "memory": "653.78 Kb",
+        "mqlen": 0,
+        "cpu": 0.089635,
+        "message": 11
+    },
+    ":0000000e": {
+        "task": 43,
+        "name": "snlua oms/service/main",
+        "memory": "7339.21 Kb",
+        "mqlen": 0,
+        "cpu": 43.810589,
+        "message": 136837
+    },
+    ":0000000d": {
+        "task": 3,
+        "name": "snlua ums/service/main",
+        "memory": "5603.16 Kb",
+        "mqlen": 0,
+        "cpu": 23.792851,
+        "message": 76531
+    },
+    ":00000006": {
+        "task": 0,
+        "name": "snlua datacenterd",
+        "memory": "631.66 Kb",
+        "mqlen": 0,
+        "cpu": 0.038375,
+        "message": 6
+    },
+    ":00000004": {
+        "task": 0,
+        "name": "snlua cdummy",
+        "memory": "636.83 Kb",
+        "mqlen": 0,
+        "cpu": 0.038184,
+        "message": 12
+    }
+}

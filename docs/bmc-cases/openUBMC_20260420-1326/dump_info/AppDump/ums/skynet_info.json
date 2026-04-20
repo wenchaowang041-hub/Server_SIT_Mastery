@@ -1,0 +1,90 @@
+{
+    ":0000000c": {
+        "memory": "7509.87 Kb",
+        "task": 6,
+        "name": "snlua nsm/service/main",
+        "mqlen": 0,
+        "message": 129428,
+        "cpu": 289.054048
+    },
+    ":0000000f": {
+        "memory": "3489.75 Kb",
+        "task": 3,
+        "name": "snlua observability/service/main",
+        "mqlen": 0,
+        "message": 92464,
+        "cpu": 42.846796
+    },
+    ":00000007": {
+        "memory": "671.64 Kb",
+        "task": 1,
+        "name": "snlua service_mgr",
+        "mqlen": 0,
+        "message": 27,
+        "cpu": 0.045901
+    },
+    ":00000008": {
+        "memory": "466.89 Kb",
+        "task": 1,
+        "name": "snlua hica/subsys/om_priv/service/main",
+        "cpu": 0.106137,
+        "message": 142,
+        "mqlen": 0
+    },
+    ":0000000a": {
+        "memory": "902.94 Kb",
+        "task": 2,
+        "name": "snlua harbor",
+        "mqlen": 0,
+        "message": 44623,
+        "cpu": 16.728506
+    },
+    ":0000000b": {
+        "memory": "726.93 Kb",
+        "task": 0,
+        "name": "snlua debug_console 0.0.0.0 40031",
+        "mqlen": 0,
+        "message": 12,
+        "cpu": 0.04284
+    },
+    ":00000009": {
+        "memory": "655.38 Kb",
+        "task": 0,
+        "name": "snlua sd_bus",
+        "cpu": 0.090641,
+        "message": 15,
+        "mqlen": 0
+    },
+    ":0000000e": {
+        "memory": "7936.20 Kb",
+        "task": 24,
+        "name": "snlua oms/service/main",
+        "mqlen": 0,
+        "message": 136949,
+        "cpu": 46.30374
+    },
+    ":0000000d": {
+        "memory": "5897.63 Kb",
+        "task": 4,
+        "name": "snlua ums/service/main",
+        "mqlen": 0,
+        "message": 76560,
+        "cpu": 23.939041
+    },
+    ":00000006": {
+        "memory": "633.26 Kb",
+        "task": 0,
+        "name": "snlua datacenterd",
+        "cpu": 0.039717,
+        "message": 10,
+        "mqlen": 0
+    },
+    ":00000004": {
+        "memory": "638.44 Kb",
+        "task": 0,
+        "name": "snlua cdummy",
+        "cpu": 0.039159,
+        "message": 16,
+        "mqlen": 0
+    }
+}

@@ -1,0 +1,1154 @@
+[      0.000][0-0][      0][  0][IMP-info]systick init success
+[      0.000][0-0][      0][  0][IMP-info]timer init success
+[      0.000][0-0][      0][  0][IMP-info]watchdog inited success
+[      0.000][0-0][      0][  0][IMP-info]Get cpld info from header, compatible = 1.
+[      0.000][0-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 init
+[      0.005][0-0][      0][  0][IMP-info]imp chip 0 die 0 mac 0 card 0x0 ncl init success
+[      0.005][0-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 init
+[      0.005][0-0][      0][  0][IMP-info]mdio init success
+[      0.005][0-0][      0][  0][IMP-info]sgpio init entry
+[      0.050][0-0][      0][  0][IMP-info]bios setup init success.
+[      0.050][0-0][      0][  0][IMP-info]hot plug init, type: support(0), current(0)
+[      0.100][0-0][      0][  0][IMP-info]mac serdes mode 1 init success.
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 0, type 1
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 1, type 0
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 2, type 2
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 3, type 3
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 4, type 4
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 5, type 6
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 6, type 5
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 7, type 7
+[      0.110][0-0][      0][  0][IMP-info]mac 0 init, pf 0 media type 2, phy_addr 1
+[      0.110][0-0][      0][  0][IMP-info]mac 0 phy probe driver YT8521SH
+[      0.210][0-0][      0][  0][IMP-iP-info]mac link driver register 7, type 7
+[      0.110][0-0][      0][  0][IMP-info]mac 0 init, pf 0 media type 2, phy_addr 1
+[      0.110][0-0][      0][  0][IMP-info]mac 0 phy probe driver YT8521SH
+[      0.210][0-0][      0][  0][IMP-info]mac 0 phy init config 0
+[      0.210][0-0][      0][  0][IMP-info]mac 0 link driver 2
+[      0.210][0-0][      0][  0][IMP-info]mac_id 0 init used 1, port_type 2 roh 0 abi 0xe
+[      0.210][0-0][      0][  0][IMP-info]mac 1 init, pf 1 media type 2, phy_addr 3
+[      0.210][0-0][      0][  0][IMP-info]mac 1 phy probe driver YT8521SH
+[      0.315][0-0][      0][  0][IMP-info]mac 1 phy init config 0
+[      0.315][0-0][      0][  0][IMP-info]mac 1 link driver 2
+[      0.315][0-0][      0][  0][IMP-info]mac_id 1 init used 1, port_type 2 roh 0 abi 0xe
+[      0.315][0-0][      0][  0][IMP-info]mac 2 init, pf 2 media type 2, phy_addr 5
+[      0.315][0-0][      0][  0][IMP-info]mac 2 phy probe driver YT8521SH
+[      0.415][0-0][      0][  0][IMP-info]mac 2 phy init config 0
+[      0.415][0-0][      0][  0][IMP-info]mac 2 link driver 2
+[      0.415][0-0][      0][  0][IMP-info]mac_id 2 init used 1, port_type 2 roh 0 abi 0xe
+[      0.415][0-0][      0][  0][IMP-info]mac 3 init, pf 3 media type 2, phy_addr 7
+[      0.415][0-0][      0][  0][IMP-info]mac 3 phy probe driver YT8521SH
+[      0.520][0-0][      0][  0][IMP-info]mac 3 phy init config 0
+[      0.520][0-0][      0][  0][IMP-info]mac 3 link driver 2
+[      0.520][0-0][      0][  0][IMP-info]mac_id 3 init used 1, port_type 2 roh 0 abi 0xe
+[      0.520][0-0][      0][  0][IMP-info]init intr aging 0
+[      0.520][0-0][      0][  0][IMP-info]TM not bypass
+[      0.520][0-0][      0][  0][IMP-info]not support l2 forward
+[      0.520][0-0][      0][  0][IMP-info]flow director init mode 0
+[      0.520][0-0][      0][  0][IMP-info]nic init success
+[      0.520][0-0][      0][  0][IMP-info]rocee init success
+[      0.520][0-0][      0][  0][IMP-info]period job 0 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 1 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 2 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 3 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 4 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 5 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 6 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 7 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 8 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 9 register successfully
+[      0.520][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x0
+[      0.520][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x1
+[      0.520][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x2
+[      0.520][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x3
+[      0.520][0-0][      0][  0][IMP-info]imp version is 30a1608 
+[      0.520][0-0][      0][  0][IMP-info]mac link restart, mac 0, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      0.520][0-0][      0][  0][IMP-info]mac link restart, mac 1, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      0.520][0-0][      0][  0][IMP-info]mac link restart, mac 2, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      0.520][0-0][      0][  0][IMP-info]mac link restart, mac 3, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[     61.775][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x0, val 0x4
+[     61.775][0-0][      0][  0][IMP-info]mac 0 link driver 3
+[     61.775][0-0][      0][  0][IMP-info]mac 0 phy probe driver YT8521SH
+[     61.790][0-0][      0][  1][IMP-info]set user mac 0, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[     61.810][0-0][      0][  0][IMP-info]cmdq 0, process opcode 0x850, ret 5
+[     61.810][0-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[     61.880][0-0][      0][  0][IMP-info]mac 0 phy usage change to 1
+[     61.880][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 0
+[     61.880][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 1
+[     61.880][0-0][      0][  0][IMP-info]mac link restart, mac 0, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[     61.980][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x1, val 0x4
+[     61.980][0-0][      0][  0][IMP-info]mac 1 link driver 3
+[     61.980][0-0][      0][  0][IMP-info]mac 1 phy probe driver YT8521SH
+[     61.990][0-0][      0][  1][IMP-info]set user mac 1, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[     62.010][0-0][      0][  0][IMP-info]cmdq 1, process opcode 0x850, ret 5
+[     62.010][0-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[     62.080][0-0][      0][  0][IMP-info]mac 1 phy usage change to 1
+[     62.080][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 0
+[     62.080][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 1
+[     62.080][0-0][      0][  0][IMP-info]mac link restart, mac 1, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[     62.165][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x2, val 0x4
+[     62.165][0-0][      0][  0][IMP-info]mac 2 link driver 3
+[     62.165][0-0][      0][  0][IMP-info]mac 2 phy probe driver YT8521SH
+[     62.175][0-0][      0][  1][IMP-info]set user mac 2, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[     62.195][0-0][      0][  0][IMP-info]cmdq 2, process opcode 0x850, ret 5
+[     62.195][0-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[     62.265][0-0][      0][  0][IMP-info]mac 2 phy usage change to 1
+[     62.265][0-0][      0][  0][IMP-info]mac_id 2 (ncsi dis)set enable 0
+[     62.265][0-0][      0][  0][IMP-info]mac_id 2 (ncsi dis)set enable 1
+[     62.265][0-0][      0][  0][IMP-info]mac link restart, mac 2, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[     62.355][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x3, val 0x4
+[     62.355][0-0][      0][  0][IMP-info]mac 3 link driver 3
+[     62.355][0-0][      0][  0][IMP-info]mac 3 phy probe driver YT8521SH
+[     62.365][0-0][      0][  1][IMP-info]set user mac 3, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[     62.385][0-0][      0][  0][IMP-info]cmdq 3, process opcode 0x850, ret 5
+[     62.385][0-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[     62.455][0-0][      0][  0][IMP-info]mac 3 phy usage change to 1
+[     62.455][0-0][      0][  0][IMP-info]mac_id 3 (ncsi dis)set enable 0
+[     62.455][0-0][      0][  0][IMP-info]mac_id 3 (ncsi dis)set enable 1
+[     62.455][0-0][      0][  0][IMP-info]mac link restart, mac 3, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[     64.605][0-0][      0][  0][IMP-info]mac 0 update phy speed 3 duplex 1
+[     64.605][0-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[     98.045][0-0][      0][  0][IMP-info]mac_id 3 (ncsi dis)set enable 0
+[     98.060][0-0][      0][  0][IMP-info]mac_id 2 (ncsi dis)set enable 0
+[     98.075][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 0
+[     98.095][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 0
+[     98.110][0-0][      0][  0][IMP-info]imp_global_reset_handle start
+[     98.120][0-0][      0][  0][IMP-info]mac link driver register 0, type 1
+[     98.120][0-0][      0][  0][IMP-info]mac link driver register 1, type 0
+[     98.120][0-0][      0][  0][IMP-info]mac link driver register 2, type 2
+[     98.120][0-0][      0][  0][IMP-info]mac link driver register 3, type 3
+[     98.120][0-0][      0][  0][IMP-info]mac link driver register 4, type 4
+[     98.120][0-0][      0][  0][IMP-info]mac link driver register 5, type 6
+[     98.120][0-0][      0][  0][IMP-info]mac link driver register 6, type 5
+[     98.120][0-0][      0][  0][IMP-info]mac link driver register 7, type 7
+[     98.120][0-0][      0][  0][IMP-info]mac 0 init, pf 0 media type 2, phy_addr 1
+[     98.120][0-0][      0][  0][IMP-info]mac 0 link driver 2
+[     98.120][0-0][      0][  0][IMP-info]mac_id 0 init used 1, port_type 2 roh 0 abi 0xe
+[     98.120][0-0][      0][  0][IMP-info]mac 1 init, pf 1 media type 2, phy_addr 3
+[     98.120][0-0][      0][  0][IMP-info]mac 1 link driver 2
+[     98.120][0-0][      0][  0][IMP-info]mac_id 1 init used 1, port_type 2 roh 0 abi 0xe
+[     98.120][0-0][      0][  0][IMP-info]mac 2 init, pf 2 media type 2, phy_addr 5
+[     98.120][0-0][      0][  0][IMP-info]mac 2 link driver 2
+[     98.120][0-0][      0][  0][IMP-info]mac_id 2 init used 1, port_type 2 roh 0 abi 0xe
+[     98.120][0-0][      0][  0][IMP-info]mac 3 init, pf 3 media type 2, phy_addr 7
+[     98.120][0-0][      0][  0][IMP-info]mac 3 link driver 2
+[     98.120][0-0][      0][  0][IMP-info]mac_id 3 init used 1, port_type 2 roh 0 abi 0xe
+[     98.120][0-0][      0][  0][IMP-info]init intr aging 0
+[     98.120][0-0][      0][  0][IMP-info]TM not bypass
+[     98.120][0-0][      0][  0][IMP-info]not support l2 forward
+[     98.120][0-0][      0][  0][IMP-info]flow director init mode 0
+[     98.120][0-0][      0][  0][IMP-info]nic init success
+[     98.125][0-0][      0][  0][IMP-info]rocee init success
+[     98.125][0-0][      0][  0][IMP-info]imp_global_reset_handle end
+[     98.125][0-0][      0][  0][IMP-info]mac link restart, mac 1, wire 32 an 1 abi 0xe, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[     98.125][0-0][      0][  0][IMP-info]mac link restart, mac 2, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[     98.125][0-0][      0][  0][IMP-info]mac link restart, mac 3, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[     98.125][0-0][      0][  0][IMP-info]mac link restart, mac 0, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[     98.125][0-0][      0][  0][IMP-info]mac link restart, mac 1, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[     99.080][0-0][      0][  0][IMP-info]imp starts to enter the OS state
+[    135.035][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x0, val 0x3f
+[    135.035][0-0][      0][  0][IMP-info]cmdq 0x0, intr ageing 1
+[    135.035][0-0][      0][  0][IMP-info]mac 0 link driver 3
+[    135.035][0-0][      0][  0][IMP-info]mac 0 phy probe driver YT8521SH
+[    135.040][0-0][      0][  0][IMP-info]set user mac 0, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[    135.040][0-0][      0][  0][IMP-info]mac 0 set loopback enable 0x0(mask 0x1) ret 0
+[    135.135][0-0][      0][  0][IMP-info]mac 0 phy usage change to 1
+[    135.135][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 0
+[    135.135][0-0][      0][  0][IMP-info]mac link restart, mac 0, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[    135.150][0-0][      0][  0][IMP-info]mac 0 set loopback enable 0x0(mask 0x4) ret 0
+[    135.175][0-0][      0][  0][IMP-info]mac_get_pfc error: ge not support pfc pause
+[    135.180][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x1, val 0x3f
+[    135.180][0-0][      0][  0][IMP-info]cmdq 0x1, intr ageing 1
+[    135.180][0-0][      0][  0][IMP-info]mac 1 link driver 3
+[    135.180][0-0][      0][  0][IMP-info]mac 1 phy probe driver YT8521SH
+[    135.185][0-0][      0][  0][IMP-info]set user mac 1, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[    135.185][0-0][      0][  0][IMP-info]mac 1 set loopback enable 0x0(mask 0x1) ret 0
+[    135.285][0-0][      0][  0][IMP-info]mac 1 phy usage change to 1
+[    135.285][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 0
+[    135.285][0-0][      0][  0][IMP-info]mac link restart, mac 1, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[    135.300][0-0][      0][  0][IMP-info]mac 1 set loopback enable 0x0(mask 0x4) ret 0
+[    135.325][0-0][      0][  0][IMP-info]mac_get_pfc error: ge not support pfc pause
+[    135.430][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x2, val 0x3f
+[    135.430][0-0][      0][  0][IMP-info]cmdq 0x2, intr ageing 1
+[    135.435][0-0][      0][  0][IMP-info]mac 2 link driver 3
+[    135.435][0-0][      0][  0][IMP-info]mac 2 phy probe driver YT8521SH
+[    135.435][0-0][      0][  0][IMP-info]set user mac 2, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[    135.435][0-0][      0][  0][IMP-info]mac 2 set loopback enable 0x0(mask 0x1) ret 0
+[    135.535][0-0][      0][  0][IMP-info]mac 2 phy usage change to 1
+[    135.535][0-0][      0][  0][IMP-info]mac_id 2 (ncsi dis)set enable 0
+[    135.535][0-0][      0][  0][IMP-info]mac link restart, mac 2, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[    135.555][0-0][      0][  0][IMP-info]mac 2 set loopback enable 0x0(mask 0x4) ret 0
+[    135.580][0-0][      0][  0][IMP-info]mac_get_pfc error: ge not support pfc pause
+[    135.610][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x3, val 0x3f
+[    135.610][0-0][      0][  0][IMP-info]cmdq 0x3, intr ageing 1
+[    135.610][0-0][      0][  0][IMP-info]mac 3 link driver 3
+[    135.610][0-0][      0][  0][IMP-info]mac 3 phy probe driver YT8521SH
+[    135.615][0-0][      0][  0][IMP-info]set user mac 3, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[    135.615][0-0][      0][  0][IMP-info]mac 3 set loopback enable 0x0(mask 0x1) ret 0
+[    135.715][0-0][      0][  0][IMP-info]mac 3 phy usage change to 1
+[    135.715][0-0][      0][  0][IMP-info]mac_id 3 (ncsi dis)set enable 0
+[    135.715][0-0][      0][  0][IMP-info]mac link restart, mac 3, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[    135.725][0-0][      0][  0][IMP-info]mac 3 set loopback enable 0x0(mask 0x4) ret 0
+[    135.745][0-0][      0][  0][IMP-info]mac_get_pfc error: ge not support pfc pause
+[    147.925][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 1
+[    147.930][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 1
+[    147.930][0-0][      0][  0][IMP-info]mac_id 2 (ncsi dis)set enable 1
+[    147.935][0-0][      0][  0][IMP-info]mac_id 3 (ncsi dis)set enable 1
+[    150.245][0-0][      0][  0][IMP-info]mac 0 update phy speed 3 duplex 1
+[    150.245][0-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    150.770][0-0][      0][  0][IMP-info]IMP report mac 0 link status 1, event 0
+[      0.000][0-0][      0][  0][IMP-info]systick init success
+[      0.000][0-0][      0][  0][IMP-info]timer init success
+[      0.000][0-0][      0][  0][IMP-info]watchdog inited success
+[      0.000][0-0][      0][  0][IMP-info]Get cpld info from header, compatible = 1.
+[      0.000][0-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 init
+[      0.005][0-0][      0][  0][IMP-info]imp chip 0 die 0 mac 0 card 0x0 ncl init success
+[      0.005][0-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 init
+[      0.005][0-0][      0][  0][IMP-info]mdio init success
+[      0.005][0-0][      0][  0][IMP-info]sgpio init entry
+[      0.050][0-0][      0][  0][IMP-info]bios setup init success.
+[      0.050][0-0][      0][  0][IMP-info]hot plug init, type: support(0), current(0)
+[      0.100][0-0][      0][  0][IMP-info]mac serdes mode 1 init success.
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 0, type 1
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 1, type 0
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 2, type 2
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 3, type 3
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 4, type 4
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 5, type 6
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 6, type 5
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 7, type 7
+[      0.110][0-0][      0][  0][IMP-info]mac 0 init, pf 0 media type 2, phy_addr 1
+[      0.110][0-0][      0][  0][IMP-info]mac 0 phy probe driver YT8521SH
+[      0.210][0-0][      0][  0][IMP-info]mac 0 phy init config 0
+[      0.210][0-0][      0][  0][IMP-info]mac 0 link driver 2
+[      0.210][0-0][      0][  0][IMP-info]mac_id 0 init used 1, port_type 2 roh 0 abi 0xe
+[      0.210][0-0][      0][  0][IMP-info]mac 1 init, pf 1 media type 2, phy_addr 3
+[      0.210][0-0][      0][  0][IMP-info]mac 1 phy probe driver YT8521SH
+[      0.315][0-0][      0][  0][IMP-info]mac 1 phy init config 0
+[      0.315][0-0][      0][  0][IMP-info]mac 1 link driver 2
+[      0.315][0-0][      0][  0][IMP-info]mac_id 1 init used 1, port_type 2 roh 0 abi 0xe
+[      0.315][0-0][      0][  0][IMP-info]mac 2 init, pf 2 media type 2, phy_addr 5
+[      0.315][0-0][      0][  0][IMP-info]mac 2 phy probe driver YT8521SH
+[      0.415][0-0][      0][  0][IMP-info]mac 2 phy init config 0
+[      0.415][0-0][      0][  0][IMP-info]mac 2 link driver 2
+[      0.415][0-0][      0][  0][IMP-info]mac_id 2 init used 1, port_type 2 roh 0 abi 0xe
+[      0.415][0-0][      0][  0][IMP-info]mac 3 init, pf 3 media type 2, phy_addr 7
+[      0.415][0-0][      0][  0][IMP-info]mac 3 phy probe driver YT8521SH
+[      0.520][0-0][      0][  0][IMP-info]mac 3 phy init config 0
+[      0.520][0-0][      0][  0][IMP-info]mac 3 link driver 2
+[      0.520][0-0][      0][  0][IMP-info]mac_id 3 init used 1, port_type 2 roh 0 abi 0xe
+[      0.520][0-0][      0][  0][IMP-info]init intr aging 0
+[      0.520][0-0][      0][  0][IMP-info]TM not bypass
+[      0.520][0-0][      0][  0][IMP-info]not support l2 forward
+[      0.520][0-0][      0][  0][IMP-info]flow director init mode 0
+[      0.520][0-0][      0][  0][IMP-info]nic init success
+[      0.520][0-0][      0][  0][IMP-info]rocee init success
+[      0.520][0-0][      0][  0][IMP-info]period job 0 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 1 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 2 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 3 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 4 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 5 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 6 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 7 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 8 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 9 register successfully
+[      0.520][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x0
+[      0.520][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x1
+[      0.520][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x2
+[      0.520][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x3
+[      0.520][0-0][      0][  0][IMP-info]imp version is 30a1608 
+[      0.520][0-0][      0][  0][IMP-info]mac link restart, mac 0, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      0.520][0-0][      0][  0][IMP-info]mac link restart, mac 1, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      0.520][0-0][      0][  0][IMP-info]mac link restart, mac 2, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      0.520][0-0][      0][  0][IMP-info]mac link restart, mac 3, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[     63.395][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x0, val 0x4
+[     63.395][0-0][      0][  0][IMP-info]mac 0 link driver 3
+[     63.395][0-0][      0][  0][IMP-info]mac 0 phy probe driver YT8521SH
+[     63.405][0-0][      0][  1][IMP-info]set user mac 0, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[     63.425][0-0][      0][  0][IMP-info]cmdq 0, process opcode 0x850, ret 5
+[     63.425][0-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[     63.495][0-0][      0][  0][IMP-info]mac 0 phy usage change to 1
+[     63.495][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 0
+[     63.495][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 1
+[     63.495][0-0][      0][  0][IMP-info]mac link restart, mac 0, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[     63.575][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x1, val 0x4
+[     63.575][0-0][      0][  0][IMP-info]mac 1 link driver 3
+[     63.575][0-0][      0][  0][IMP-info]mac 1 phy probe driver YT8521SH
+[     63.585][0-0][      0][  1][IMP-info]set user mac 1, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[     63.605][0-0][      0][  0][IMP-info]cmdq 1, process opcode 0x850, ret 5
+[     63.605][0-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[     63.675][0-0][      0][  0][IMP-info]mac 1 phy usage change to 1
+[     63.675][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 0
+[     63.675][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 1
+[     63.675][0-0][      0][  0][IMP-info]mac link restart, mac 1, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[     63.760][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x2, val 0x4
+[     63.760][0-0][      0][  0][IMP-info]mac 2 link driver 3
+[     63.760][0-0][      0][  0][IMP-info]mac 2 phy probe driver YT8521SH
+[     63.775][0-0][      0][  1][IMP-info]set user mac 2, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[     63.790][0-0][      0][  0][IMP-info]cmdq 2, process opcode 0x850, ret 5
+[     63.790][0-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[     63.865][0-0][      0][  0][IMP-info]mac 2 phy usage change to 1
+[     63.865][0-0][      0][  0][IMP-info]mac_id 2 (ncsi dis)set enable 0
+[     63.865][0-0][      0][  0][IMP-info]mac_id 2 (ncsi dis)set enable 1
+[     63.865][0-0][      0][  0][IMP-info]mac link restart, mac 2, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[     63.965][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x3, val 0x4
+[     63.965][0-0][      0][  0][IMP-info]mac 3 link driver 3
+[     63.965][0-0][      0][  0][IMP-info]mac 3 phy probe driver YT8521SH
+[     63.975][0-0][      0][  1][IMP-info]set user mac 3, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[     63.995][0-0][      0][  0][IMP-info]cmdq 3, process opcode 0x850, ret 5
+[     63.995][0-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[     64.065][0-0][      0][  0][IMP-info]mac 3 phy usage change to 1
+[     64.065][0-0][      0][  0][IMP-info]mac_id 3 (ncsi dis)set enable 0
+[     64.065][0-0][      0][  0][IMP-info]mac_id 3 (ncsi dis)set enable 1
+[     64.065][0-0][      0][  0][IMP-info]mac link restart, mac 3, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[     66.475][0-0][      0][  0][IMP-info]mac 0 update phy speed 3 duplex 1
+[     66.475][0-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[     99.975][0-0][      0][  0][IMP-info]mac_id 3 (ncsi dis)set enable 0
+[     99.990][0-0][      0][  0][IMP-info]mac_id 2 (ncsi dis)set enable 0
+[    100.010][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 0
+[    100.025][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 0
+[    100.040][0-0][      0][  0][IMP-info]imp_global_reset_handle start
+[    100.050][0-0][      0][  0][IMP-info]mac link driver register 0, type 1
+[    100.050][0-0][      0][  0][IMP-info]mac link driver register 1, type 0
+[    100.050][0-0][      0][  0][IMP-info]mac link driver register 2, type 2
+[    100.050][0-0][      0][  0][IMP-info]mac link driver register 3, type 3
+[    100.050][0-0][      0][  0][IMP-info]mac link driver register 4, type 4
+[    100.050][0-0][      0][  0][IMP-info]mac link driver register 5, type 6
+[    100.050][0-0][      0][  0][IMP-info]mac link driver register 6, type 5
+[    100.050][0-0][      0][  0][IMP-info]mac link driver register 7, type 7
+[    100.050][0-0][      0][  0][IMP-info]mac 0 init, pf 0 media type 2, phy_addr 1
+[    100.050][0-0][      0][  0][IMP-info]mac 0 link driver 2
+[    100.050][0-0][      0][  0][IMP-info]mac_id 0 init used 1, port_type 2 roh 0 abi 0xe
+[    100.050][0-0][      0][  0][IMP-info]mac 1 init, pf 1 media type 2, phy_addr 3
+[    100.050][0-0][      0][  0][IMP-info]mac 1 link driver 2
+[    100.050][0-0][      0][  0][IMP-info]mac_id 1 init used 1, port_type 2 roh 0 abi 0xe
+[    100.050][0-0][      0][  0][IMP-info]mac 2 init, pf 2 media type 2, phy_addr 5
+[    100.050][0-0][      0][  0][IMP-info]mac 2 link driver 2
+[    100.050][0-0][      0][  0][IMP-info]mac_id 2 init used 1, port_type 2 roh 0 abi 0xe
+[    100.050][0-0][      0][  0][IMP-info]mac 3 init, pf 3 media type 2, phy_addr 7
+[    100.055][0-0][      0][  0][IMP-info]mac 3 link driver 2
+[    100.055][0-0][      0][  0][IMP-info]mac_id 3 init used 1, port_type 2 roh 0 abi 0xe
+[    100.055][0-0][      0][  0][IMP-info]init intr aging 0
+[    100.055][0-0][      0][  0][IMP-info]TM not bypass
+[    100.055][0-0][      0][  0][IMP-info]not support l2 forward
+[    100.055][0-0][      0][  0][IMP-info]flow director init mode 0
+[    100.055][0-0][      0][  0][IMP-info]nic init success
+[    100.055][0-0][      0][  0][IMP-info]rocee init success
+[    100.055][0-0][      0][  0][IMP-info]imp_global_reset_handle end
+[    100.055][0-0][      0][  0][IMP-info]mac link restart, mac 0, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[    100.055][0-0][      0][  0][IMP-info]mac link restart, mac 1, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[    100.055][0-0][      0][  0][IMP-info]mac link restart, mac 2, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[    100.055][0-0][      0][  0][IMP-info]mac link restart, mac 3, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[    101.015][0-0][      0][  0][IMP-info]imp starts to enter the OS state
+[    137.735][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x0, val 0x3f
+[    137.735][0-0][      0][  0][IMP-info]cmdq 0x0, intr ageing 1
+[    137.735][0-0][      0][  0][IMP-info]mac 0 link driver 3
+[    137.735][0-0][      0][  0][IMP-info]mac 0 phy probe driver YT8521SH
+[    137.740][0-0][      0][  0][IMP-info]set user mac 0, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[    137.740][0-0][      0][  0][IMP-info]mac 0 set loopback enable 0x0(mask 0x1) ret 0
+[    137.835][0-0][      0][  0][IMP-info]mac 0 phy usage change to 1
+[    137.835][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 0
+[    137.835][0-0][      0][  0][IMP-info]mac link restart, mac 0, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[    137.850][0-0][      0][  0][IMP-info]mac 0 set loopback enable 0x0(mask 0x4) ret 0
+[    137.875][0-0][      0][  0][IMP-info]mac_get_pfc error: ge not support pfc pause
+[    137.880][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x1, val 0x3f
+[    137.880][0-0][      0][  0][IMP-info]cmdq 0x1, intr ageing 1
+[    137.880][0-0][      0][  0][IMP-info]mac 1 link driver 3
+[    137.880][0-0][      0][  0][IMP-info]mac 1 phy probe driver YT8521SH
+[    137.885][0-0][      0][  0][IMP-info]set user mac 1, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[    137.885][0-0][      0][  0][IMP-info]mac 1 set loopback enable 0x0(mask 0x1) ret 0
+[    137.985][0-0][      0][  0][IMP-info]mac 1 phy usage change to 1
+[    137.985][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 0
+[    137.985][0-0][      0][  0][IMP-info]mac link restart, mac 1, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[    138.005][0-0][      0][  0][IMP-info]mac 1 set loopback enable 0x0(mask 0x4) ret 0
+[    138.025][0-0][      0][  0][IMP-info]mac_get_pfc error: ge not support pfc pause
+[    138.030][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x2, val 0x3f
+[    138.030][0-0][      0][  0][IMP-info]cmdq 0x2, intr ageing 1
+[    138.030][0-0][      0][  0][IMP-info]mac 2 link driver 3
+[    138.030][0-0][      0][  0][IMP-info]mac 2 phy probe driver YT8521SH
+[    138.035][0-0][      0][  0][IMP-info]set user mac 2, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[    138.035][0-0][      0][  0][IMP-info]mac 2 set loopback enable 0x0(mask 0x1) ret 0
+[    138.130][0-0][      0][  0][IMP-info]mac 2 phy usage change to 1
+[    138.130][0-0][      0][  0][IMP-info]mac_id 2 (ncsi dis)set enable 0
+[    138.130][0-0][      0][  0][IMP-info]mac link restart, mac 2, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[    138.150][0-0][      0][  0][IMP-info]mac 2 set loopback enable 0x0(mask 0x4) ret 0
+[    138.175][0-0][      0][  0][IMP-info]mac_get_pfc error: ge not support pfc pause
+[    138.195][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x3, val 0x3f
+[    138.195][0-0][      0][  0][IMP-info]cmdq 0x3, intr ageing 1
+[    138.195][0-0][      0][  0][IMP-info]mac 3 link driver 3
+[    138.195][0-0][      0][  0][IMP-info]mac 3 phy probe driver YT8521SH
+[    138.200][0-0][      0][  0][IMP-info]set user mac 3, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[    138.200][0-0][      0][  0][IMP-info]mac 3 set loopback enable 0x0(mask 0x1) ret 0
+[    138.300][0-0][      0][  0][IMP-info]mac 3 phy usage change to 1
+[    138.300][0-0][      0][  0][IMP-info]mac_id 3 (ncsi dis)set enable 0
+[    138.300][0-0][      0][  0][IMP-info]mac link restart, mac 3, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[    138.310][0-0][      0][  0][IMP-info]mac 3 set loopback enable 0x0(mask 0x4) ret 0
+[    138.330][0-0][      0][  0][IMP-info]mac_get_pfc error: ge not support pfc pause
+[    151.870][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 1
+[    151.870][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 1
+[    151.875][0-0][      0][  0][IMP-info]mac_id 2 (ncsi dis)set enable 1
+[    151.875][0-0][      0][  0][IMP-info]mac_id 3 (ncsi dis)set enable 1
+[    154.360][0-0][      0][  0][IMP-info]mac 0 update phy speed 3 duplex 1
+[    154.360][0-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    154.890][0-0][      0][  0][IMP-info]IMP report mac 0 link status 1, event 0
+[      0.000][0-0][      0][  0][IMP-info]systick init success
+[      0.000][0-0][      0][  0][IMP-info]timer init success
+[      0.000][0-0][      0][  0][IMP-info]watchdog inited success
+[      0.000][0-0][      0][  0][IMP-info]Get cpld info from header, compatible = 1.
+[      0.000][0-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 init
+[      0.005][0-0][      0][  0][IMP-info]imp chip 0 die 0 mac 0 card 0x0 ncl init success
+[      0.005][0-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 init
+[      0.005][0-0][      0][  0][IMP-info]mdio init success
+[      0.005][0-0][      0][  0][IMP-info]sgpio init entry
+[      0.050][0-0][      0][  0][IMP-info]bios setup init success.
+[      0.050][0-0][      0][  0][IMP-info]hot plug init, type: support(0), current(0)
+[      0.100][0-0][      0][  0][IMP-info]mac serdes mode 1 init success.
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 0, type 1
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 1, type 0
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 2, type 2
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 3, type 3
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 4, type 4
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 5, type 6
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 6, type 5
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 7, type 7
+[      0.110][0-0][      0][  0][IMP-info]mac 0 init, pf 0 media type 2, phy_addr 1
+[      0.110][0-0][      0][  0][IMP-info]mac 0 phy probe driver YT8521SH
+[      0.210][0-0][      0][  0][IMP-info]mac 0 phy init config 0
+[      0.210][0-0][      0][  0][IMP-info]mac 0 link driver 2
+[      0.210][0-0][      0][  0][IMP-info]mac_id 0 init used 1, port_type 2 roh 0 abi 0xe
+[      0.210][0-0][      0][  0][IMP-info]mac 1 init, pf 1 media type 2, phy_addr 3
+[      0.210][0-0][      0][  0][IMP-info]mac 1 phy probe driver YT8521SH
+[      0.315][0-0][      0][  0][IMP-info]mac 1 phy init config 0
+[      0.315][0-0][      0][  0][IMP-info]mac 1 link driver 2
+[      0.315][0-0][      0][  0][IMP-info]mac_id 1 init used 1, port_type 2 roh 0 abi 0xe
+[      0.315][0-0][      0][  0][IMP-info]mac 2 init, pf 2 media type 2, phy_addr 5
+[      0.315][0-0][      0][  0][IMP-info]mac 2 phy probe driver YT8521SH
+[      0.415][0-0][      0][  0][IMP-info]mac 2 phy init config 0
+[      0.415][0-0][      0][  0][IMP-info]mac 2 link driver 2
+[      0.415][0-0][      0][  0][IMP-info]mac_id 2 init used 1, port_type 2 roh 0 abi 0xe
+[      0.415][0-0][      0][  0][IMP-info]mac 3 init, pf 3 media type 2, phy_addr 7
+[      0.415][0-0][      0][  0][IMP-info]mac 3 phy probe driver YT8521SH
+[      0.520][0-0][      0][  0][IMP-info]mac 3 phy init config 0
+[      0.520][0-0][      0][  0][IMP-info]mac 3 link driver 2
+[      0.520][0-0][      0][  0][IMP-info]mac_id 3 init used 1, port_type 2 roh 0 abi 0xe
+[      0.520][0-0][      0][  0][IMP-info]init intr aging 0
+[      0.520][0-0][      0][  0][IMP-info]TM not bypass
+[      0.520][0-0][      0][  0][IMP-info]not support l2 forward
+[      0.520][0-0][      0][  0][IMP-info]flow director init mode 0
+[      0.520][0-0][      0][  0][IMP-info]nic init success
+[      0.520][0-0][      0][  0][IMP-info]rocee init success
+[      0.520][0-0][      0][  0][IMP-info]period job 0 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 1 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 2 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 3 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 4 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 5 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 6 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 7 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 8 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 9 register successfully
+[      0.520][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x0
+[      0.520][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x1
+[      0.520][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x2
+[      0.520][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x3
+[      0.520][0-0][      0][  0][IMP-info]imp version is 30a1608 
+[      0.520][0-0][      0][  0][IMP-info]mac link restart, mac 0, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      0.520][0-0][      0][  0][IMP-info]mac link restart, mac 1, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      0.520][0-0][      0][  0][IMP-info]mac link restart, mac 2, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      0.520][0-0][      0][  0][IMP-info]mac link restart, mac 3, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[     62.295][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x0, val 0x4
+[     62.295][0-0][      0][  0][IMP-info]mac 0 link driver 3
+[     62.295][0-0][      0][  0][IMP-info]mac 0 phy probe driver YT8521SH
+[     62.305][0-0][      0][  1][IMP-info]set user mac 0, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[     62.325][0-0][      0][  0][IMP-info]cmdq 0, process opcode 0x850, ret 5
+[     62.325][0-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[     62.395][0-0][      0][  0][IMP-info]mac 0 phy usage change to 1
+[     62.395][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 0
+[     62.395][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 1
+[     62.395][0-0][      0][  0][IMP-info]mac link restart, mac 0, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[     62.475][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x1, val 0x4
+[     62.475][0-0][      0][  0][IMP-info]mac 1 link driver 3
+[     62.475][0-0][      0][  0][IMP-info]mac 1 phy probe driver YT8521SH
+[     62.490][0-0][      0][  1][IMP-info]set user mac 1, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[     62.505][0-0][      0][  0][IMP-info]cmdq 1, process opcode 0x850, ret 5
+[     62.505][0-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[     62.580][0-0][      0][  0][IMP-info]mac 1 phy usage change to 1
+[     62.580][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 0
+[    50, ret 5
+[     62.505][0-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[     62.580][0-0][      0][  0][IMP-info]mac 1 phy usage change to 1
+[     62.580][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 0
+[     62.580][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 1
+[     62.580][0-0][      0][  0][IMP-info]mac link restart, mac 1, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[     62.675][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x2, val 0x4
+[     62.675][0-0][      0][  0][IMP-info]mac 2 link driver 3
+[     62.675][0-0][      0][  0][IMP-info]mac 2 phy probe driver YT8521SH
+[     62.690][0-0][      0][  1][IMP-info]set user mac 2, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[     62.710][0-0][      0][  0][IMP-info]cmdq 2, process opcode 0x850, ret 5
+[     62.710][0-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[     62.780][0-0][      0][  0][IMP-info]mac 2 phy usage change to 1
+[     62.780][0-0][      0][  0][IMP-info]mac_id 2 (ncsi dis)set enable 0
+[     62.780][0-0][      0][  0][IMP-info]mac_id 2 (ncsi dis)set enable 1
+[     62.780][0-0][      0][  0][IMP-info]mac link restart, mac 2, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[     62.860][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x3, val 0x4
+[     62.860][0-0][      0][  0][IMP-info]mac 3 link driver 3
+[     62.860][0-0][      0][  0][IMP-info]mac 3 phy probe driver YT8521SH
+[     62.870][0-0][      0][  1][IMP-info]set user mac 3, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[     62.900][0-0][      0][  0][IMP-info]cmdq 3, process opcode 0x850, ret 5
+[     62.900][0-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[     62.960][0-0][      0][  0][IMP-info]mac 3 phy usage change to 1
+[     62.960][0-0][      0][  0][IMP-info]mac_id 3 (ncsi dis)set enable 0
+[     62.960][0-0][      0][  0][IMP-info]mac_id 3 (ncsi dis)set enable 1
+[     62.960][0-0][      0][  0][IMP-info]mac link restart, mac 3, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[     65.205][0-0][      0][  0][IMP-info]mac 0 update phy speed 3 duplex 1
+[     65.205][0-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[      0.000][0-0][      0][  0][IMP-info]systick init success
+[      0.000][0-0][      0][  0][IMP-info]timer init success
+[      0.000][0-0][      0][  0][IMP-info]watchdog inited success
+[      0.000][0-0][      0][  0][IMP-info]Get cpld info from header, compatible = 1.
+[      0.000][0-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 init
+[      0.005][0-0][      0][  0][IMP-info]imp chip 0 die 0 mac 0 card 0x0 ncl init success
+[      0.005][0-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 init
+[      0.005][0-0][      0][  0][IMP-info]mdio init success
+[      0.005][0-0][      0][  0][IMP-info]sgpio init entry
+[      0.050][0-0][      0][  0][IMP-info]bios setup init success.
+[      0.050][0-0][      0][  0][IMP-info]hot plug init, type: support(0), current(0)
+[      0.100][0-0][      0][  0][IMP-info]mac serdes mode 1 init success.
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 0, type 1
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 1, type 0
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 2, type 2
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 3, type 3
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 4, type 4
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 5, type 6
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 6, type 5
+[      0.110][0-0][      0][  0][IMP-info]mac link driver register 7, type 7
+[      0.110][0-0][      0][  0][IMP-info]mac 0 init, pf 0 media type 2, phy_addr 1
+[      0.110][0-0][      0][  0][IMP-info]mac 0 phy probe driver YT8521SH
+[      0.210][0-0][      0][  0][IMP-info]mac 0 phy init config 0
+[      0.210][0-0][      0][  0][IMP-info]mac 0 link driver 2
+[      0.210][0-0][      0][  0][IMP-info]mac_id 0 init used 1, port_type 2 roh 0 abi 0xe
+[      0.210][0-0][      0][  0][IMP-info]mac 1 init, pf 1 media type 2, phy_addr 3
+[      0.210][0-0][      0][  0][IMP-info]mac 1 phy probe driver YT8521SH
+[      0.315][0-0][      0][  0][IMP-info]mac 1 phy init config 0
+[      0.315][0-0][      0][  0][IMP-info]mac 1 link driver 2
+[      0.315][0-0][      0][  0][IMP-info]mac_id 1 init used 1, port_type 2 roh 0 abi 0xe
+[      0.315][0-0][      0][  0][IMP-info]mac 2 init, pf 2 media type 2, phy_addr 5
+[      0.315][0-0][      0][  0][IMP-info]mac 2 phy probe driver YT8521SH
+[      0.415][0-0][      0][  0][IMP-info]mac 2 phy init config 0
+[      0.415][0-0][      0][  0][IMP-info]mac 2 link driver 2
+[      0.415][0-0][      0][  0][IMP-info]mac_id 2 init used 1, port_type 2 roh 0 abi 0xe
+[      0.415][0-0][      0][  0][IMP-info]mac 3 init, pf 3 media type 2, phy_addr 7
+[      0.415][0-0][      0][  0][IMP-info]mac 3 phy probe driver YT8521SH
+[      0.520][0-0][      0][  0][IMP-info]mac 3 phy init config 0
+[      0.520][0-0][      0][  0][IMP-info]mac 3 link driver 2
+[      0.520][0-0][      0][  0][IMP-info]mac_id 3 init used 1, port_type 2 roh 0 abi 0xe
+[      0.520][0-0][      0][  0][IMP-info]init intr aging 0
+[      0.520][0-0][      0][  0][IMP-info]TM not bypass
+[      0.520][0-0][      0][  0][IMP-info]not support l2 forward
+[      0.520][0-0][      0][  0][IMP-info]flow director init mode 0
+[      0.520][0-0][      0][  0][IMP-info]nic init success
+[      0.520][0-0][      0][  0][IMP-info]rocee init success
+[      0.520][0-0][      0][  0][IMP-info]period job 0 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 1 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 2 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 3 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 4 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 5 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 6 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 7 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 8 register successfully
+[      0.520][0-0][      0][  0][IMP-info]period job 9 register successfully
+[      0.520][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x0
+[      0.520][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x1
+[      0.520][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x2
+[      0.520][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x3
+[      0.520][0-0][      0][  0][IMP-info]imp version is 30a1608 
+[      0.520][0-0][      0][  0][IMP-info]mac link restart, mac 0, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      0.520][0-0][      0][  0][IMP-info]mac link restart, mac 1, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      0.520][0-0][      0][  0][IMP-info]mac link restart, mac 2, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      0.520][0-0][      0][  0][IMP-info]mac link restart, mac 3, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[     61.255][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x0, val 0x4
+[     61.255][0-0][      0][  0][IMP-info]mac 0 link driver 3
+[     61.255][0-0][      0][  0][IMP-info]mac 0 phy probe driver YT8521SH
+[     61.265][0-0][      0][  1][IMP-info]set user mac 0, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[     61.285][0-0][      0][  0][IMP-info]cmdq 0, process opcode 0x850, ret 5
+[     61.285][0-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[     61.355][0-0][      0][  0][IMP-info]mac 0 phy usage change to 1
+[     61.355][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 0
+[     61.355][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 1
+[     61.355][0-0][      0][  0][IMP-info]mac link restart, mac 0, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[     61.435][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x1, val 0x4
+[     61.435][0-0][      0][  0][IMP-info]mac 1 link driver 3
+[     61.435][0-0][      0][  0][IMP-info]mac 1 phy probe driver YT8521SH
+[     61.450][0-0][      0][  1][IMP-info]set user mac 1, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[     61.470][0-0][      0][  0][IMP-info]cmdq 1, process opcode 0x850, ret 5
+[     61.470][0-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[     61.540][0-0][      0][  0][IMP-info]mac 1 phy usage change to 1
+[     61.540][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 0
+[     61.540][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 1
+[     61.540][0-0][      0][  0][IMP-info]mac link restart, mac 1, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[     61.625][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x2, val 0x4
+[     61.625][0-0][      0][  0][IMP-info]mac 2 link driver 3
+[     61.625][0-0][      0][  0][IMP-info]mac 2 phy probe driver YT8521SH
+[     61.635][0-0][      0][  1][IMP-info]set user mac 2, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[     61.655][0-0][      0][  0][IMP-info]cmdq 2, process opcode 0x850, ret 5
+[     61.655][0-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[     61.725][0-0][      0][  0][IMP-info]mac 2 phy usage change to 1
+[     61.725][0-0][      0][  0][IMP-info]mac_id 2 (ncsi dis)set enable 0
+[     61.725][0-0][      0][  0][IMP-info]mac_id 2 (ncsi dis)set enable 1
+[     61.725][0-0][      0][  0][IMP-info]mac link restart, mac 2, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[     61.805][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x3, val 0x4
+[     61.805][0-0][      0][  0][IMP-info]mac 3 link driver 3
+[     61.805][0-0][      0][  0][IMP-info]mac 3 phy probe driver YT8521SH
+[     61.815][0-0][      0][  1][IMP-info]set user mac 3, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[     61.845][0-0][      0][  0][IMP-info]cmdq 3, process opcode 0x850, ret 5
+[     61.845][0-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[     61.905][0-0][      0][  0][IMP-info]mac 3 phy usage change to 1
+[     61.905][0-0][      0][  0][IMP-info]mac_id 3 (ncsi dis)set enable 0
+[     61.905][0-0][      0][  0][IMP-info]mac_id 3 (ncsi dis)set enable 1
+[     61.905][0-0][      0][  0][IMP-info]mac link restart, mac 3, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[     64.115][0-0][      0][  0][IMP-info]mac 0 update phy speed 3 duplex 1
+[     64.115][0-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    102.105][0-0][      0][  0][IMP-info]mac_id 3 (ncsi dis)set enable 0
+[    102.120][0-0][      0][  0][IMP-info]mac_id 2 (ncsi dis)set enable 0
+[    102.140][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 0
+[    102.155][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 0
+[    102.175][0-0][      0][  0][IMP-info]imp_global_reset_handle start
+[    102.185][0-0][      0][  0][IMP-info]mac link driver register 0, type 1
+[    102.185][0-0][      0][  0][IMP-info]mac link driver register 1, type 0
+[    102.185][0-0][      0][  0][IMP-info]mac link driver register 2, type 2
+[    102.185][0-0][      0][  0][IMP-info]mac link driver register 3, type 3
+[    102.185][0-0][      0][  0][IMP-info]mac link driver register 4, type 4
+[    102.185][0-0][      0][  0][IMP-info]mac link driver register 5, type 6
+[    102.185][0-0][      0][  0][IMP-info]mac link driver register 6, type 5
+[    102.185][0-0][      0][  0][IMP-info]mac link driver register 7, type 7
+[    102.185][0-0][      0][  0][IMP-info]mac 0 init, pf 0 media type 2, phy_addr 1
+[    102.185][0-0][      0][  0][IMP-info]mac 0 link driver 2
+[    102.185][0-0][      0][  0][IMP-info]mac_id 0 init used 1, port_type 2 roh 0 abi 0xe
+[    102.185][0-0][      0][  0][IMP-info]mac 1 init, pf 1 media type 2, phy_addr 3
+[    102.185][0-0][      0][  0][IMP-info]mac 1 link driver 2
+[    102.185][0-0][      0][  0][IMP-info]mac_id 1 init used 1, port_type 2 roh 0 abi 0xe
+[    102.185][0-0][      0][  0][IMP-info]mac 2 init, pf 2 media type 2, phy_addr 5
+[    102.185][0-0][      0][  0][IMP-info]mac 2 link driver 2
+[    102.185][0-0][      0][  0][IMP-info]mac_id 2 init used 1, port_type 2 roh 0 abi 0xe
+[    102.185][0-0][      0][  0][IMP-info]mac 3 init, pf 3 media type 2, phy_addr 7
+[    102.185][0-0][      0][  0][IMP-info]mac 3 link driver 2
+[    102.185][0-0][      0][  0][IMP-info]mac_id 3 init used 1, port_type 2 roh 0 abi 0xe
+[    102.185][0-0][      0][  0][IMP-info]init intr aging 0
+[    102.185][0-0][      0][  0][IMP-info]TM not bypass
+[    102.185][0-0][      0][  0][IMP-info]not support l2 forward
+[    102.185][0-0][      0][  0][IMP-info]flow director init mode 0
+[    102.185][0-0][      0][  0][IMP-info]nic init success
+[    102.185][0-0][      0][  0][IMP-info]rocee init success
+[    102.185][0-0][      0][  0][IMP-info]imp_global_reset_handle end
+[    102.185][0-0][      0][  0][IMP-info]mac link restart, mac 0, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[    102.185][0-0][      0][  0][IMP-info]mac link restart, mac 1, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[    102.185][0-0][      0][  0][IMP-info]mac link restart, mac 2, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[    102.185][0-0][      0][  0][IMP-info]mac link restart, mac 3, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[    103.005][0-0][      0][  0][IMP-info]imp starts to enter the OS state
+[    138.435][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x0, val 0x3f
+[    138.435][0-0][      0][  0][IMP-info]cmdq 0x0, intr ageing 1
+[    138.435][0-0][      0][  0][IMP-info]mac 0 link driver 3
+[    138.435][0-0][      0][  0][IMP-info]mac 0 phy probe driver YT8521SH
+[    138.440][0-0][      0][  0][IMP-info]set user mac 0, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[    138.440][0-0][      0][  0][IMP-info]mac 0 set loopback enable 0x0(mask 0x1) ret 0
+[    138.540][0-0][      0][  0][IMP-info]mac 0 phy usage change to 1
+[    138.540][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 0
+[    138.540][0-0][      0][  0][IMP-info]mac link restart, mac 0, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[    138.550][0-0][      0][  0][IMP-info]mac 0 set loopback enable 0x0(mask 0x4) ret 0
+[    138.575][0-0][      0][  0][IMP-info]mac_get_pfc error: ge not support pfc pause
+[    138.630][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x1, val 0x3f
+[    138.630][0-0][      0][  0][IMP-info]cmdq 0x1, intr ageing 1
+[    138.630][0-0][      0][  0][IMP-info]mac 1 link driver 3
+[    138.630][0-0][      0][  0][IMP-info]mac 1 phy probe driver YT8521SH
+[    138.630][0-0][      0][  0][IMP-info]set user mac 1, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[    138.630][0-0][      0][  0][IMP-info]mac 1 set loopback enable 0x0(mask 0x1) ret 0
+[    138.730][0-0][      0][  0][IMP-info]mac 1 phy usage change to 1
+[    138.730][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 0
+[    138.730][0-0][      0][  0][IMP-info]mac link restart, mac 1, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[    138.750][0-0][      0][  0][IMP-info]mac 1 set loopback enable 0x0(mask 0x4) ret 0
+[    138.775][0-0][      0][  0][IMP-info]mac_get_pfc error: ge not support pfc pause
+[    138.880][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x2, val 0x3f
+[    138.880][0-0][      0][  0][IMP-info]cmdq 0x2, intr ageing 1
+[    138.880][0-0][      0][  0][IMP-info]mac 2 link driver 3
+[    138.880][0-0][      0][  0][IMP-info]mac 2 phy probe driver YT8521SH
+[    138.885][0-0][      0][  0][IMP-info]set user mac 2, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[    138.885][0-0][      0][  0][IMP-info]mac 2 set loopback enable 0x0(mask 0x1) ret 0
+[    138.980][0-0][      0][  0][IMP-info]mac 2 phy usage change to 1
+[    138.980][0-0][      0][  0][IMP-info]mac_id 2 (ncsi dis)set enable 0
+[    138.980][0-0][      0][  0][IMP-info]mac link restart, mac 2, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[    138.990][0-0][      0][  0][IMP-info]mac 2 set loopback enable 0x0(mask 0x4) ret 0
+[    139.015][0-0][      0][  0][IMP-info]mac_get_pfc error: ge not support pfc pause
+[    139.035][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x3, val 0x3f
+[    139.035][0-0][      0][  0][IMP-info]cmdq 0x3, intr ageing 1
+[    139.035][0-0][      0][  0][IMP-info]mac 3 link driver 3
+[    139.035][0-0][      0][  0][IMP-info]mac 3 phy probe driver YT8521SH
+[    139.040][0-0][      0][  0][IMP-info]set user mac 3, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[    139.040][0-0][      0][  0][IMP-info]mac 3 set loopback enable 0x0(mask 0x1) ret 0
+[    139.140][0-0][      0][  0][IMP-info]mac 3 phy usage change to 1
+[    139.140][0-0][      0][  0][IMP-info]mac_id 3 (ncsi dis)set enable 0
+[    139.140][0-0][      0][  0][IMP-info]mac link restart, mac 3, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[    139.140][0-0][      0][  0][IMP-info]mac 3 set loopback enable 0x0(mask 0x4) ret 0
+[    139.160][0-0][      0][  0][IMP-info]mac_get_pfc error: ge not support pfc pause
+[    151.420][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 1
+[    151.425][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 1
+[    151.430][0-0][      0][  0][IMP-info]mac_id 2 (ncsi dis)set enable 1
+[    151.430][0-0][      0][  0][IMP-info]mac_id 3 (ncsi dis)set enable 1
+[    153.595][0-0][      0][  0][IMP-info]mac 0 update phy speed 3 duplex 1
+[    153.595][0-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    154.120][0-0][      0][  0][IMP-info]IMP report mac 0 link status 1, event 0
+[      0.000][0-0][      0][  0][IMP-info]systick init success
+[      0.000][0-0][      0][  0][IMP-info]timer init success
+[      0.000][0-0][      0][  0][IMP-info]watchdog inited success
+[      0.000][0-0][      0][  0][IMP-info]Get cpld info from header, compatible = 1.
+[      0.000][0-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 init
+[      0.005][0-0][      0][  0][IMP-info]imp chip 0 die 0 mac 0 card 0x0 ncl init success
+[      0.005][0-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 init
+[      0.005][0-0][      0][  0][IMP-info]mdio init success
+[      0.005][0-0][      0][  0][IMP-info]sgpio init entry
+[      0.055][0-0][      0][  0][IMP-info]bios setup init success.
+[      0.060][0-0][      0][  0][IMP-info]hot plug init, type: support(0), current(0)
+[      0.105][0-0][      0][  0][IMP-info]mac serdes mode 1 init success.
+[      0.115][0-0][      0][  0][IMP-info]mac link driver register 0, type 1
+[      0.115][0-0][      0][  0][IMP-info]mac link driver register 1, type 0
+[      0.115][0-0][      0][  0][IMP-info]mac link driver register 2, type 2
+[      0.115][0-0][      0][  0][IMP-info]mac link driver register 3, type 3
+[      0.115][0-0][      0][  0][IMP-info]mac link driver register 4, type 4
+[      0.115][0-0][      0][  0][IMP-info]mac link driver register 5, type 6
+[      0.115][0-0][      0][  0][IMP-info]mac link driver register 6, type 5
+[      0.115][0-0][      0][  0][IMP-info]mac link driver register 7, type 7
+[      0.115][0-0][      0][  0][IMP-info]mac 0 init, pf 0 media type 2, phy_addr 1
+[      0.115][0-0][      0][  0][IMP-info]mac 0 phy probe driver YT8521SH
+[      0.220][0-0][      0][  0][IMP-info]mac 0 phy init config 0
+[      0.220][0-0][      0][  0][IMP-info]mac 0 link driver 2
+[      0.220][0-0][      0][  0][IMP-info]mac_id 0 init used 1, port_type 2 roh 0 abi 0xe
+[      0.220][0-0][      0][  0][IMP-info]mac 1 init, pf 1 media type 2, phy_addr 3
+[      0.220][0-0][      0][  0][IMP-info]mac 1 phy probe driver YT8521SH
+[      0.320][0-0][      0][  0][IMP-info]mac 1 phy init config 0
+[      0.320][0-0][      0][  0][IMP-info]mac 1 link driver 2
+[      0.320][0-0][      0][  0][IMP-info]mac_id 1 init used 1, port_type 2 roh 0 abi 0xe
+[      0.320][0-0][      0][  0][IMP-info]mac 2 init, pf 2 media type 2, phy_addr 5
+[      0.320][0-0][      0][  0][IMP-info]mac 2 phy probe driver YT8521SH
+[      0.420][0-0][      0][  0][IMP-info]mac 2 phy init config 0
+[      0.420][0-0][      0][  0][IMP-info]mac 2 link driver 2
+[      0.420][0-0][      0][  0][IMP-info]mac_id 2 init used 1, port_type 2 roh 0 abi 0xe
+[      0.420][0-0][      0][  0][IMP-info]mac 3 init, pf 3 media type 2, phy_addr 7
+[      0.420][0-0][      0][  0][IMP-info]mac 3 phy probe driver YT8521SH
+[      0.525][0-0][      0][  0][IMP-info]mac 3 phy init config 0
+[      0.525][0-0][      0][  0][IMP-info]mac 3 link driver 2
+[      0.525][0-0][      0][  0][IMP-info]mac_id 3 init used 1, port_type 2 roh 0 abi 0xe
+[      0.525][0-0][      0][  0][IMP-info]init intr aging 0
+[      0.525][0-0][      0][  0][IMP-info]TM not bypass
+[      0.525][0-0][      0][  0][IMP-info]not support l2 forward
+[      0.525][0-0][      0][  0][IMP-info]flow director init mode 0
+[      0.525][0-0][      0][  0][IMP-info]nic init success
+[      0.525][0-0][      0][  0][IMP-info]rocee init success
+[      0.525][0-0][      0][  0][IMP-info]period job 0 register successfully
+[      0.525][0-0][      0][  0][IMP-info]period job 1 register successfully
+[      0.525][0-0][      0][  0][IMP-info]period job 2 register successfully
+[      0.525][0-0][      0][  0][IMP-info]period job 3 register successfully
+[      0.525][0-0][      0][  0][IMP-info]period job 4 register successfully
+[      0.525][0-0][      0][  0][IMP-info]period job 5 register successfully
+[      0.525][0-0][      0][  0][IMP-info]period job 6 register successfully
+[      0.525][0-0][      0][  0][IMP-info]period job 7 register successfully
+[      0.525][0-0][      0][  0][IMP-info]period job 8 register successfully
+[      0.525][0-0][      0][  0][IMP-info]period job 9 register successfully
+[      0.525][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x0
+[      0.525][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x1
+[      0.525][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x2
+[      0.525][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x3
+[      0.525][0-0][      0][  0][IMP-info]imp version is 30a1608 
+[      0.525][0-0][      0][  0][IMP-info]mac link restart, mac 0, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      0.525][0-0][      0][  0][IMP-info]mac link restart, mac 1, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      0.525][0-0][      0][  0][IMP-info]mac link restart, mac 2, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      0.525][0-0][      0][  0][IMP-info]mac link restart, mac 3, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      0.000][0-0][      0][  0][IMP-info]systick init success
+[      0.000][0-0][      0][  0][IMP-info]timer init success
+[      0.000][0-0][      0][  0][IMP-info]watchdog inited success
+[      0.000][0-0][      0][  0][IMP-info]Get cpld info from header, compatible = 1.
+[      0.000][0-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 init
+[      0.005][0-0][      0][  0][IMP-info]imp chip 0 die 0 mac 0 card 0x0 ncl init success
+[      0.005][0-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 init
+[      0.005][0-0][      0][  0][IMP-info]mdio init success
+[      0.005][0-0][      0][  0][IMP-info]sgpio init entry
+[      0.055][0-0][      0][  0][IMP-info]bios setup init success.
+[      0.055][0-0][      0][  0][IMP-info]hot plug init, type: support(0), current(0)
+[      0.105][0-0][      0][  0][IMP-info]mac serdes mode 1 init success.
+[      0.115][0-0][      0][  0][IMP-info]mac link driver register 0, type 1
+[      0.115][0-0][      0][  0][IMP-info]mac link driver register 1, type 0
+[      0.115][0-0][      0][  0][IMP-info]mac link driver register 2, type 2
+[      0.115][0-0][      0][  0][IMP-info]mac link driver register 3, type 3
+[      0.115][0-0][      0][  0][IMP-info]mac link driver register 4, type 4
+[      0.115][0-0][      0][  0][IMP-info]mac link driver register 5, type 6
+[      0.115][0-0][      0][  0][IMP-info]mac link driver register 6, type 5
+[      0.115][0-0][      0][  0][IMP-info]mac link driver register 7, type 7
+[      0.115][0-0][      0][  0][IMP-info]mac 0 init, pf 0 media type 2, phy_addr 1
+[      0.115][0-0][      0][  0][IMP-info]mac 0 phy probe driver YT8521SH
+[      0.215][0-0][      0][  0][IMP-info]mac 0 phy init config 0
+[      0.215][0-0][      0][  0][IMP-info]mac 0 link driver 2
+[      0.215][0-0][      0][  0][IMP-info]mac_id 0 init used 1, port_type 2 roh 0 abi 0xe
+[      0.215][0-0][      0][  0][IMP-info]mac 1 init, pf 1 media type 2, phy_addr 3
+[      0.215][0-0][      0][  0][IMP-info]mac 1 phy probe driver YT8521SH
+[      0.320][0-0][      0][  0][IMP-info]mac 1 phy init config 0
+[      0.320][0-0][      0][  0][IMP-info]mac 1 link driver 2
+[      0.320][0-0][      0][  0][IMP-info]mac_id 1 init used 1, port_type 2 roh 0 abi 0xe
+[      0.320][0-0][      0][  0][IMP-info]mac 2 init, pf 2 media type 2, phy_addr 5
+[      0.320][0-0][      0][  0][IMP-info]mac 2 phy probe driver YT8521SH
+[      0.420][0-0][      0][  0][IMP-info]mac 2 phy init config 0
+[      0.420][0-0][      0][  0][IMP-info]mac 2 link driver 2
+[      0.420][0-0][      0][  0][IMP-info]mac_id 2 init used 1, port_type 2 roh 0 abi 0xe
+[      0.420][0-0][      0][  0][IMP-info]mac 3 init, pf 3 media type 2, phy_addr 7
+[      0.420][0-0][      0][  0][IMP-info]mac 3 phy probe driver YT8521SH
+[      0.525][0-0][      0][  0][IMP-info]mac 3 phy init config 0
+[      0.525][0-0][      0][  0][IMP-info]mac 3 link driver 2
+[      0.525][0-0][      0][  0][IMP-info]mac_id 3 init used 1, port_type 2 roh 0 abi 0xe
+[      0.525][0-0][      0][  0][IMP-info]init intr aging 0
+[      0.525][0-0][      0][  0][IMP-info]TM not bypass
+[      0.525][0-0][      0][  0][IMP-info]not support l2 forward
+[      0.525][0-0][      0][  0][IMP-info]flow director init mode 0
+[      0.525][0-0][      0][  0][IMP-info]nic init success
+[      0.525][0-0][      0][  0][IMP-info]rocee init success
+[      0.525][0-0][      0][  0][IMP-info]period job 0 register successfully
+[      0.525][0-0][      0][  0][IMP-info]period job 1 register successfully
+[      0.525][0-0][      0][  0][IMP-info]period job 2 register successfully
+[      0.525][0-0][      0][  0][IMP-info]period job 3 register successfully
+[      0.525][0-0][      0][  0][IMP-info]period job 4 register successfully
+[      0.525][0-0][      0][  0][IMP-info]period job 5 register successfully
+[      0.525][0-0][      0][  0][IMP-info]period job 6 register successfully
+[      0.525][0-0][      0][  0][IMP-info]period job 7 register successfully
+[      0.525][0-0][      0][  0][IMP-info]period job 8 register successfully
+[      0.525][0-0][      0][  0][IMP-info]period job 9 register successfully
+[      0.525][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x0
+[      0.525][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x1
+[      0.525][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x2
+[      0.525][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x3
+[      0.525][0-0][      0][  0][IMP-info]imp version is 30a1608 
+[      0.525][0-0][      0][  0][IMP-info]mac link restart, mac 0, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      0.525][0-0][      0][  0][IMP-info]mac link restart, mac 1, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      0.525][0-0][      0][  0][IMP-info]mac link restart, mac 2, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[      0.525][0-0][      0][  0][IMP-info]mac link restart, mac 3, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[     62.155][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x0, val 0x4
+[     62.155][0-0][      0][  0][IMP-info]mac 0 link driver 3
+[     62.155][0-0][      0][  0][IMP-info]mac 0 phy probe driver YT8521SH
+[     62.165][0-0][      0][  1][IMP-info]set user mac 0, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[     62.185][0-0][      0][  0][IMP-info]cmdq 0, process opcode 0x850, ret 5
+[     62.185][0-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[     62.255][0-0][      0][  0][IMP-info]mac 0 phy usage change to 1
+[     62.255][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 0
+[     62.255][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 1
+[     62.255][0-0][      0][  0][IMP-info]mac link restart, mac 0, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[     62.340][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x1, val 0x4
+[     62.340][0-0][      0][  0][IMP-info]mac 1 link driver 3
+[     62.340][0-0][      0][  0][IMP-info]mac 1 phy probe driver YT8521SH
+[     62.355][0-0][      0][  1][IMP-info]set user mac 1, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[     62.370][0-0][      0][  0][IMP-info]cmdq 1, process opcode 0x850, ret 5
+[     62.370][0-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[     62.440][0-0][      0][  0][IMP-info]mac 1 phy usage change to 1
+[     62.440][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 0
+[     62.445][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 1
+[     62.445][0-0][      0][  0][IMP-info]mac link restart, mac 1, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[     62.525][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x2, val 0x4
+[     62.525][0-0][      0][  0][IMP-info]mac 2 link driver 3
+[     62.525][0-0][      0][  0][IMP-info]mac 2 phy probe driver YT8521SH
+[     62.540][0-0][      0][  1][IMP-info]set user mac 2, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[     62.555][0-0][      0][  0][IMP-info]cmdq 2, process opcode 0x850, ret 5
+[     62.555][0-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[     62.625][0-0][      0][  0][IMP-info]mac 2 phy usage change to 1
+[     62.625][0-0][      0][  0][IMP-info]mac_id 2 (ncsi dis)set enable 0
+[     62.625][0-0][      0][  0][IMP-info]mac_id 2 (ncsi dis)set enable 1
+[     62.625][0-0][      0][  0][IMP-info]mac link restart, mac 2, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[     62.720][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x3, val 0x4
+[     62.720][0-0][      0][  0][IMP-info]mac 3 link driver 3
+[     62.720][0-0][      0][  0][IMP-info]mac 3 phy probe driver YT8521SH
+[     62.730][0-0][      0][  1][IMP-info]set user mac 3, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[     62.750][0-0][      0][  0][IMP-info]cmdq 3, process opcode 0x850, ret 5
+[     62.750][0-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[     62.820][0-0][      0][  0][IMP-info]mac 3 phy usage change to 1
+[     62.820][0-0][      0][  0][IMP-info]mac_id 3 (ncsi dis)set enable 0
+[     62.820][0-0][      0][  0][IMP-info]mac_id 3 (ncsi dis)set enable 1
+[     62.820][0-0][      0][  0][IMP-info]mac link restart, mac 3, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[     64.985][0-0][      0][  0][IMP-info]mac 0 update phy speed 3 duplex 1
+[     64.985][0-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    100.540][0-0][      0][  0][IMP-info]mac_id 3 (ncsi dis)set enable 0
+[    100.560][0-0][      0][  0][IMP-info]mac_id 2 (ncsi dis)set enable 0
+[    100.575][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 0
+[    100.595][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 0
+[    100.610][0-0][      0][  0][IMP-info]imp_global_reset_handle start
+[    100.620][0-0][      0][  0][IMP-info]mac link driver register 0, type 1
+[    100.620][0-0][      0][  0][IMP-info]mac link driver register 1, type 0
+[    100.620][0-0][      0][  0][IMP-info]mac link driver register 2, type 2
+[    100.620][0-0][      0][  0][IMP-info]mac link driver register 3, type 3
+[    100.620][0-0][      0][  0][IMP-info]mac link driver register 4, type 4
+[    100.620][0-0][      0][  0][IMP-info]mac link driver register 5, type 6
+[    100.620][0-0][      0][  0][IMP-info]mac link driver register 6, type 5
+[    100.620][0-0][      0][  0][IMP-info]mac link driver register 7, type 7
+[    100.620][0-0][      0][  0][IMP-info]mac 0 init, pf 0 media type 2, phy_addr 1
+[    100.620][0-0][      0][  0][IMP-info]mac 0 link driver 2
+[    100.620][0-0][      0][  0][IMP-info]mac_id 0 init used 1, port_type 2 roh 0 abi 0xe
+[    100.620][0-0][      0][  0][IMP-info]mac 1 init, pf 1 media type 2, phy_addr 3
+[    100.620][0-0][      0][  0][IMP-info]mac 1 link driver 2
+[    100.620][0-0][      0][  0][IMP-info]mac_id 1 init used 1, port_type 2 roh 0 abi 0xe
+[    100.620][0-0][      0][  0][IMP-info]mac 2 init, pf 2 media type 2, phy_addr 5
+[    100.620][0-0][      0][  0][IMP-info]mac 2 link driver 2
+[    100.620][0-0][      0][  0][IMP-info]mac_id 2 init used 1, port_type 2 roh 0 abi 0xe
+[    100.620][0-0][      0][  0][IMP-info]mac 3 init, pf 3 media type 2, phy_addr 7
+[    100.620][0-0][      0][  0][IMP-info]mac 3 link driver 2
+[    100.620][0-0][      0][  0][IMP-info]mac_id 3 init used 1, port_type 2 roh 0 abi 0xe
+[    100.620][0-0][      0][  0][IMP-info]init intr aging 0
+[    100.620][0-0][      0][  0][IMP-info]TM not bypass
+[    100.620][0-0][      0][  0][IMP-info]not support l2 forward
+[    100.620][0-0][      0][  0][IMP-info]flow director init mode 0
+[    100.620][0-0][      0][  0][IMP-info]nic init success
+[    100.625][0-0][      0][  0][IMP-info]rocee init success
+[    100.625][0-0][      0][  0][IMP-info]imp_global_reset_handle end
+[    100.625][0-0][      0][  0][IMP-info]mac link restart, mac 0, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[    100.625][0-0][      0][  0][IMP-info]mac link restart, mac 1, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[    100.625][0-0][      0][  0][IMP-info]mac link restart, mac 2, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[    100.625][0-0][      0][  0][IMP-info]mac link restart, mac 3, wire 32 an 2 abi 0xe, speed 3 lanes 1 sds_rate 1 fec 3 duplex 1
+[    101.060][0-0][      0][  0][IMP-info]imp starts to enter the OS state
+[    138.320][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x0, val 0x3f
+[    138.320][0-0][      0][  0][IMP-info]cmdq 0x0, intr ageing 1
+[    138.320][0-0][      0][  0][IMP-info]mac 0 link driver 3
+[    138.320][0-0][      0][  0][IMP-info]mac 0 phy probe driver YT8521SH
+[    138.325][0-0][      0][  0][IMP-info]set user mac 0, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[    138.325][0-0][      0][  0][IMP-info]mac 0 set loopback enable 0x0(mask 0x1) ret 0
+[    138.420][0-0][      0][  0][IMP-info]mac 0 phy usage change to 1
+[    138.420][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 0
+[    138.420][0-0][      0][  0][IMP-info]mac link restart, mac 0, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[    138.440][0-0][      0][  0][IMP-info]mac 0 set loopback enable 0x0(mask 0x4) ret 0
+[    138.460][0-0][      0][  0][IMP-info]mac_get_pfc error: ge not support pfc pause
+[    138.495][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x1, val 0x3f
+[    138.495][0-0][      0][  0][IMP-info]cmdq 0x1, intr ageing 1
+[    138.495][0-0][      0][  0][IMP-info]mac 1 link driver 3
+[    138.495][0-0][      0][  0][IMP-info]mac 1 phy probe driver YT8521SH
+[    138.500][0-0][      0][  0][IMP-info]set user mac 1, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[    138.500][0-0][      0][  0][IMP-info]mac 1 set loopback enable 0x0(mask 0x1) ret 0
+[    138.600][0-0][      0][  0][IMP-info]mac 1 phy usage change to 1
+[    138.600][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 0
+[    138.600][0-0][      0][  0][IMP-info]mac link restart, mac 1, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[    138.615][0-0][      0][  0][IMP-info]mac 1 set loopback enable 0x0(mask 0x4) ret 0
+[    138.640][0-0][      0][  0][IMP-info]mac_get_pfc error: ge not support pfc pause
+[    138.660][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x2, val 0x3f
+[    138.660][0-0][      0][  0][IMP-info]cmdq 0x2, intr ageing 1
+[    138.660][0-0][      0][  0][IMP-info]mac 2 link driver 3
+[    138.660][0-0][      0][  0][IMP-info]mac 2 phy probe driver YT8521SH
+[    138.665][0-0][      0][  0][IMP-info]set user mac 2, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[    138.665][0-0][      0][  0][IMP-info]mac 2 set loopback enable 0x0(mask 0x1) ret 0
+[    138.760][0-0][      0][  0][IMP-info]mac 2 phy usage change to 1
+[    138.760][0-0][      0][  0][IMP-info]mac_id 2 (ncsi dis)set enable 0
+[    138.765][0-0][      0][  0][IMP-info]mac link restart, mac 2, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[    138.780][0-0][      0][  0][IMP-info]mac 2 set loopback enable 0x0(mask 0x4) ret 0
+[    138.800][0-0][      0][  0][IMP-info]mac_get_pfc error: ge not support pfc pause
+[    138.850][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x3, val 0x3f
+[    138.850][0-0][      0][  0][IMP-info]cmdq 0x3, intr ageing 1
+[    138.850][0-0][      0][  0][IMP-info]mac 3 link driver 3
+[    138.850][0-0][      0][  0][IMP-info]mac 3 phy probe driver YT8521SH
+[    138.855][0-0][      0][  0][IMP-info]set user mac 3, speed 3 lanes 1(0) sds_rate 1(0) duplex 1(1).
+[    138.855][0-0][      0][  0][IMP-info]mac 3 set loopback enable 0x0(mask 0x1) ret 0
+[    138.955][0-0][      0][  0][IMP-info]mac 3 phy usage change to 1
+[    138.955][0-0][      0][  0][IMP-info]mac_id 3 (ncsi dis)set enable 0
+[    138.955][0-0][      0][  0][IMP-info]mac link restart, mac 3, wire 32 an 1 abi 0xf, speed 0 lanes 0 sds_rate 0 fec 0 duplex 0
+[    138.955][0-0][      0][  0][IMP-info]mac 3 set loopback enable 0x0(mask 0x4) ret 0
+[    138.980][0-0][      0][  0][IMP-info]mac_get_pfc error: ge not support pfc pause
+[    152.245][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 1
+[    152.250][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 1
+[    152.250][0-0][      0][  0][IMP-info]mac_id 2 (ncsi dis)set enable 1
+[    152.255][0-0][      0][  0][IMP-info]mac_id 3 (ncsi dis)set enable 1
+[    154.555][0-0][      0][  0][IMP-info]mac 0 update phy speed 3 duplex 1
+[    154.555][0-0][      0][  0][IMP-info]mac 0 mac_phy_update_pause set mac pause rx 1 tx 1
+[    155.075][0-0][      0][  0][IMP-info]IMP report mac 0 link status 1, event 0
+[      0.000][0-0][      0][  0][IMP-info]systick init success
+[      0.000][0-0][      0][  0][IMP-info]timer init success
+[      0.000][0-0][      0][  0][IMP-info]watchdog inited success
+[      0.000][0-0][      0][  0][IMP-info]Get cpld info from header, compatible = 1.
+[      0.000][0-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 init
+[      0.005][0-0][      0][  0][IMP-info]imp chip 0 die 0 mac 0 card 0x9 ncl init success
+[      0.010][0-0][      0][  0][IMP-info]i2c-0 enable, speed 0
+[      0.010][0-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 init
+[      0.010][0-0][      0][  0][IMP-info]sgpio init entry
+[      0.065][0-0][      0][  0][IMP-info]old card(0) change to new card(9), not use bios setup config
+[      0.065][0-0][      0][  0][IMP-error]bios setup check failed.
+[      0.065][0-0][      0][  0][IMP-info]hot plug init, type: support(9), current(9)
+[      0.115][0-0][      0][  0][IMP-info]mac serdes mode 1 init success.
+[      0.125][0-0][      0][  0][IMP-info]mac link driver register 0, type 1
+[      0.125][0-0][      0][  0][IMP-info]mac link driver register 1, type 0
+[      0.125][0-0][      0][  0][IMP-info]mac link driver register 2, type 2
+[      0.125][0-0][      0][  0][IMP-info]mac link driver register 3, type 3
+[      0.125][0-0][      0][  0][IMP-info]mac link driver register 4, type 4
+[      0.125][0-0][      0][  0][IMP-info]mac link driver register 5, type 6
+[      0.125][0-0][      0][  0][IMP-info]mac link driver register 6, type 5
+[      0.125][0-0][      0][  0][IMP-info]mac link driver register 7, type 7
+[      0.125][0-0][      0][  0][IMP-info]mac 0 init, pf 0 media type 1, phy_addr 0
+[      0.125][0-0][      0][  0][IMP-info]mac 0 link driver 5
+[      0.125][0-0][      0][  0][IMP-info]mac_id 0 init used 1, port_type 5 roh 0 abi 0x30
+[      0.125][0-0][      0][  0][IMP-info]mac 1 init, pf 1 media type 1, phy_addr 0
+[      0.125][0-0][      0][  0][IMP-info]mac 1 link driver 5
+[      0.125][0-0][      0][  0][IMP-info]mac_id 1 init used 1, port_type 5 roh 0 abi 0x30
+[      0.125][0-0][      0][  0][IMP-info]mac 2 link driver 2
+[      0.125][0-0][      0][  0][IMP-info]mac_id 2 init used 0, port_type 2 roh 0 abi 0xb0
+[      0.125][0-0][      0][  0][IMP-info]mac 3 link driver 2
+[      0.125][0-0][      0][  0][IMP-info]mac_id 3 init used 0, port_type 2 roh 0 abi 0xb0
+[      0.125][0-0][      0][  0][IMP-info]init intr aging 0
+[      0.125][0-0][      0][  0][IMP-info]TM not bypass
+[      0.125][0-0][      0][  0][IMP-info]not support l2 forward
+[      0.125][0-0][      0][  0][IMP-info]flow director init mode 0
+[      0.125][0-0][      0][  0][IMP-info]nic init success
+[      0.125][0-0][      0][  0][IMP-info]rocee init success
+[      0.255][0-0][      0][  0][IMP-error]smbus send update data err, ret: 0x2
+[      0.255][0-0][      0][  0][IMP-error]i2c0 err: fifo:0x30c, int:0x13, trans_st:0x60, err_st:0x1, tx_data:0x21c
+[      0.255][0-0][      0][  0][IMP-error]i2c0 err: rd: addr:0x0, len:0x0, offset:0x0, wr: addr:0x60, len:0x36, offset:0x0
+[      0.255][0-0][      0][  0][IMP-error]cdr_a id 0 init failed, ret: 0x2
+[      0.355][0-0][      0][  0][IMP-info]cdr_a id 0 i2c 0 dev 0x60 version 0x0
+[      0.355][0-0][      0][  0][IMP-info]period job 0 register successfully
+[      0.355][0-0][      0][  0][IMP-info]period job 1 register successfully
+[      0.355][0-0][      0][  0][IMP-info]period job 2 register successfully
+[      0.355][0-0][      0][  0][IMP-info]period job 3 register successfully
+[      0.355][0-0][      0][  0][IMP-info]period job 4 register successfully
+[      0.355][0-0][      0][  0][IMP-info]period job 5 register successfully
+[      0.355][0-0][      0][  0][IMP-info]period job 6 register successfully
+[      0.355][0-0][      0][  0][IMP-info]period job 7 register successfully
+[      0.355][0-0][      0][  0][IMP-info]period job 8 register successfully
+[      0.355][0-0][      0][  0][IMP-info]period job 9 register successfully
+[      0.355][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x0
+[      0.355][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x1
+[      0.355][0-0][      0][  0][IMP-info]imp version is 30a1608 
+[      0.355][0-0][      0][  0][IMP-info]mac link restart, mac 0, wire 32 an 2 abi 0x30, speed 5 lanes 1 sds_rate 3 fec 1 duplex 1
+[      0.355][0-0][      0][  0][IMP-info]mac link restart, mac 1, wire 32 an 2 abi 0x30, speed 5 lanes 1 sds_rate 3 fec 1 duplex 1
+[      0.440][0-0][      0][  0][IMP-info]mac 0 xsfp present, speed 25000
+[      0.495][0-0][      0][  0][IMP-info]mac 1 xsfp present, speed 25000
+[      0.505][0-0][      0][  0][IMP-info]mac link restart, mac 0, wire 7 an 2 abi 0x20, speed 5 lanes 1 sds_rate 3 fec 1 duplex 1
+[      0.505][0-0][      0][  0][IMP-info]mac link restart, mac 1, wire 7 an 2 abi 0x20, speed 5 lanes 1 sds_rate 3 fec 1 duplex 1
+[      1.410][0-0][      0][  0][IMP-error]cdr_a error: heart cnt 0, health cnt 0, health status 0, init error 1
+[      1.410][0-0][      0][  0][IMP-info]cdr_a 0x60 need recovery status 0!
+[    104.410][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x0, val 0x4
+[    104.420][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 0
+[    104.420][0-0][      0][  1][IMP-info]set user mac 0, speed 5 lanes 1(0) sds_rate 3(0) duplex 1(1).
+[    104.440][0-0][      0][  0][IMP-info]cmdq 0, process opcode 0x850, ret 5
+[    104.440][0-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[    104.460][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 1
+[    104.595][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x1, val 0x4
+[    104.605][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 0
+[    104.605][0-0][      0][  1][IMP-info]set user mac 1, speed 5 lanes 1(0) sds_rate 3(0) duplex 1(1).
+[    104.625][0-0][      0][  0][IMP-info]cmdq 1, process opcode 0x850, ret 5
+[    104.625][0-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[    104.645][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 1
+[      0.000][0-0][      0][  0][IMP-info]systick init success
+[      0.000][0-0][      0][  0][IMP-info]timer init success
+[      0.000][0-0][      0][  0][IMP-info]watchdog inited success
+[      0.000][0-0][      0][  0][IMP-info]Get cpld info from header, compatible = 1.
+[      0.000][0-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 init
+[      0.005][0-0][      0][  0][IMP-info]imp chip 0 die 0 mac 0 card 0x9 ncl init success
+[      0.010][0-0][      0][  0][IMP-info]i2c-0 enable, speed 0
+[      0.010][0-0][      0][  0][IMP-info]cpld id 0 i2c 0 dev 0x0 init
+[      0.010][0-0][      0][  0][IMP-info]sgpio init entry
+[      0.060][0-0][      0][  0][IMP-info]bios setup init success.
+[      0.060][0-0][      0][  0][IMP-info]hot plug init, type: support(9), current(9)
+[      0.110][0-0][      0][  0][IMP-info]mac serdes mode 1 init success.
+[      0.120][0-0][      0][  0][IMP-info]mac link driver register 0, type 1
+[      0.120][0-0][      0][  0][IMP-info]mac link driver register 1, type 0
+[      0.120][0-0][      0][  0][IMP-info]mac link driver register 2, type 2
+[      0.120][0-0][      0][  0][IMP-info]mac link driver register 3, type 3
+[      0.120][0-0][      0][  0][IMP-info]mac link driver register 4, type 4
+[      0.120][0-0][      0][  0][IMP-info]mac link driver register 5, type 6
+[      0.120][0-0][      0][  0][IMP-info]mac link driver register 6, type 5
+[      0.120][0-0][      0][  0][IMP-info]mac link driver register 7, type 7
+[      0.120][0-0][      0][  0][IMP-info]mac 0 init, pf 0 media type 1, phy_addr 0
+[      0.120][0-0][      0][  0][IMP-info]mac 0 link driver 5
+[      0.120][0-0][      0][  0][IMP-info]mac_id 0 init used 1, port_type 5 roh 0 abi 0x30
+[      0.120][0-0][      0][  0][IMP-info]mac 1 init, pf 1 media type 1, phy_addr 0
+[      0.120][0-0][      0][  0][IMP-info]mac 1 link driver 5
+[      0.120][0-0][      0][  0][IMP-info]mac_id 1 init used 1, port_type 5 roh 0 abi 0x30
+[      0.120][0-0][      0][  0][IMP-info]mac 2 link driver 2
+[      0.120][0-0][      0][  0][IMP-info]mac_id 2 init used 0, port_type 2 roh 0 abi 0xb0
+[      0.120][0-0][      0][  0][IMP-info]mac 3 link driver 2
+[      0.120][0-0][      0][  0][IMP-info]mac_id 3 init used 0, port_type 2 roh 0 abi 0xb0
+[      0.120][0-0][      0][  0][IMP-info]init intr aging 0
+[      0.120][0-0][      0][  0][IMP-info]TM not bypass
+[      0.120][0-0][      0][  0][IMP-info]not support l2 forward
+[      0.120][0-0][      0][  0][IMP-info]flow director init mode 0
+[      0.120][0-0][      0][  0][IMP-info]nic init success
+[      0.120][0-0][      0][  0][IMP-info]rocee init success
+[      1.135][0-0][      0][  0][IMP-error]smbus send update data err, ret: 0x2
+[      1.135][0-0][      0][  0][IMP-error]i2c0 err: fifo:0x30c, int:0x13, trans_st:0x60, err_st:0x1, tx_data:0x280
+[      1.135][0-0][      0][  0][IMP-error]i2c0 err: rd: addr:0x0, len:0x0, offset:0x0, wr: addr:0x60, len:0x3e, offset:0x0
+[      1.135][0-0][      0][  0][IMP-error]cdr_a id 0 init failed, ret: 0x2
+[      1.230][0-0][      0][  0][IMP-info]cdr_a id 0 i2c 0 dev 0x60 version 0x0
+[      1.230][0-0][      0][  0][IMP-info]period job 0 register successfully
+[      1.230][0-0][      0][  0][IMP-info]period job 1 register successfully
+[      1.230][0-0][      0][  0][IMP-info]period job 2 register successfully
+[      1.230][0-0][      0][  0][IMP-info]period job 3 register successfully
+[      1.230][0-0][      0][  0][IMP-info]period job 4 register successfully
+[      1.230][0-0][      0][  0][IMP-info]period job 5 register successfully
+[      1.230][0-0][      0][  0][IMP-info]period job 6 register successfully
+[      1.230][0-0][      0][  0][IMP-info]period job 7 register successfully
+[      1.230][0-0][      0][  0][IMP-info]period job 8 register successfully
+[      1.230][0-0][      0][  0][IMP-info]period job 9 register successfully
+[      1.235][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x0
+[      1.235][0-0][      0][  0][IMP-info]reset status:0x0, pf_id:0x1
+[      1.235][0-0][      0][  0][IMP-info]imp version is 30a1608 
+[      1.235][0-0][      0][  0][IMP-info]mac link restart, mac 0, wire 32 an 2 abi 0x30, speed 5 lanes 1 sds_rate 3 fec 1 duplex 1
+[      1.235][0-0][      0][  0][IMP-info]mac link restart, mac 1, wire 32 an 2 abi 0x30, speed 5 lanes 1 sds_rate 3 fec 1 duplex 1
+[      1.290][0-0][      0][  0][IMP-info]mac 0 xsfp present, speed 25000
+[      1.345][0-0][      0][  0][IMP-info]mac 1 xsfp present, speed 25000
+[      1.350][0-0][      0][  0][IMP-info]mac link restart, mac 0, wire 7 an 2 abi 0x20, speed 5 lanes 1 sds_rate 3 fec 1 duplex 1
+[      1.350][0-0][      0][  0][IMP-info]mac link restart, mac 1, wire 7 an 2 abi 0x20, speed 5 lanes 1 sds_rate 3 fec 1 duplex 1
+[      2.255][0-0][      0][  0][IMP-error]cdr_a error: heart cnt 0, health cnt 0, health status 0, init error 1
+[      2.255][0-0][      0][  0][IMP-info]cdr_a 0x60 need recovery status 0!
+[     78.305][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x0, val 0x4
+[     78.320][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 0
+[     78.320][0-0][      0][  1][IMP-info]set user mac 0, speed 5 lanes 1(0) sds_rate 3(0) duplex 1(1).
+[     78.340][0-0][      0][  0][IMP-info]cmdq 0, process opcode 0x850, ret 5
+[     78.340][0-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[     78.355][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 1
+[     78.485][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x1, val 0x4
+[     78.510][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 0
+[     78.510][0-0][      0][  1][IMP-info]set user mac 1, speed 5 lanes 1(0) sds_rate 3(0) duplex 1(1).
+[     78.525][0-0][      0][  0][IMP-info]cmdq 1, process opcode 0x850, ret 5
+[     78.525][0-0][      0][  0][IMP-error]imp cmd opcode = 0x1509 parse fail.
+[     78.545][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 1
+[    113.000][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 0
+[    113.015][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 0
+[    113.035][0-0][      0][  0][IMP-info]imp_global_reset_handle start
+[    113.045][0-0][      0][  0][IMP-info]mac link driver register 0, type 1
+[    113.045][0-0][      0][  0][IMP-info]mac link driver register 1, type 0
+[    113.045][0-0][      0][  0][IMP-info]mac link driver register 2, type 2
+[    113.045][0-0][      0][  0][IMP-info]mac link driver register 3, type 3
+[    113.045][0-0][      0][  0][IMP-info]mac link driver register 4, type 4
+[    113.045][0-0][      0][  0][IMP-info]mac link driver register 5, type 6
+[    113.045][0-0][      0][  0][IMP-info]mac link driver register 6, type 5
+[    113.045][0-0][      0][  0][IMP-info]mac link driver register 7, type 7
+[    113.045][0-0][      0][  0][IMP-info]mac 0 init, pf 0 media type 1, phy_addr 0
+[    113.045][0-0][      0][  0][IMP-info]mac 0 link driver 5
+[    113.045][0-0][      0][  0][IMP-info]mac_id 0 init used 1, port_type 5 roh 0 abi 0x30
+[    113.045][0-0][      0][  0][IMP-info]mac 1 init, pf 1 media type 1, phy_addr 0
+[    113.045][0-0][      0][  0][IMP-info]mac 1 link driver 5
+[    113.045][0-0][      0][  0][IMP-info]mac_id 1 init used 1, port_type 5 roh 0 abi 0x30
+[    113.045][0-0][      0][  0][IMP-info]mac 2 link driver 2
+[    113.045][0-0][      0][  0][IMP-info]mac_id 2 init used 0, port_type 2 roh 0 abi 0xb0
+[    113.045][0-0][      0][  0][IMP-info]mac 3 link driver 2
+[    113.045][0-0][      0][  0][IMP-info]mac_id 3 init used 0, port_type 2 roh 0 abi 0xb0
+[    113.045][0-0][      0][  0][IMP-info]init intr aging 0
+[    113.045][0-0][      0][  0][IMP-info]TM not bypass
+[    113.045][0-0][      0][  0][IMP-info]not support l2 forward
+[    113.045][0-0][      0][  0][IMP-info]flow director init mode 0
+[    113.045][0-0][      0][  0][IMP-info]nic init success
+[    113.045][0-0][      0][  0][IMP-info]rocee init success
+[    113.045][0-0][      0][  0][IMP-info]imp_global_reset_handle end
+[    113.045][0-0][      0][  0][IMP-info]mac link restart, mac 0, wire 7 an 2 abi 0x20, speed 5 lanes 1 sds_rate 3 fec 1 duplex 1
+[    113.045][0-0][      0][  0][IMP-info]mac link restart, mac 1, wire 7 an 2 abi 0x20, speed 5 lanes 1 sds_rate 3 fec 1 duplex 1
+[    113.820][0-0][      0][  0][IMP-info]imp starts to enter the OS state
+[    150.605][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x0, val 0x3b
+[    150.610][0-0][      0][  0][IMP-info]cmdq 0x0, intr ageing 1
+[    150.625][0-0][      0][  0][IMP-info]set user mac 0, speed 5 lanes 1(0) sds_rate 3(0) duplex 1(1).
+[    150.625][0-0][      0][  0][IMP-info]mac 0 set loopback enable 0x0(mask 0x1) ret 0
+[    150.625][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 0
+[    150.650][0-0][      0][  0][IMP-info]mac 0 set loopback enable 0x0(mask 0x4) ret 0
+[    150.690][0-0][      0][  0][IMP-info]imp_driver compt cmdq 0x1, val 0x3b
+[    150.690][0-0][      0][  0][IMP-info]cmdq 0x1, intr ageing 1
+[    150.700][0-0][      0][  0][IMP-info]set user mac 1, speed 5 lanes 1(0) sds_rate 3(0) duplex 1(1).
+[    150.700][0-0][      0][  0][IMP-info]mac 1 set loopback enable 0x0(mask 0x1) ret 0
+[    150.700][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 0
+[    150.725][0-0][      0][  0][IMP-info]mac 1 set loopback enable 0x0(mask 0x4) ret 0
+[    163.990][0-0][      0][  0][IMP-info]mac_id 0 (ncsi dis)set enable 1
+[    163.990][0-0][      0][  0][IMP-info]mac_id 1 (ncsi dis)set enable 1

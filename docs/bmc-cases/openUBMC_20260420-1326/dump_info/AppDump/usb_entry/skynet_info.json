@@ -1,0 +1,178 @@
+{
+    ":00000013": {
+        "message": 77209,
+        "mqlen": 0,
+        "memory": "7521.50 Kb",
+        "name": "snlua product_mgmt/service/main",
+        "task": 7,
+        "cpu": 36.410307
+    },
+    ":00000014": {
+        "message": 76479,
+        "mqlen": 0,
+        "memory": "4110.41 Kb",
+        "name": "snlua usb_entry/service/main",
+        "task": 3,
+        "cpu": 20.410499
+    },
+    ":00000006": {
+        "message": 18,
+        "mqlen": 0,
+        "memory": "636.07 Kb",
+        "name": "snlua datacenterd",
+        "task": 0,
+        "cpu": 0.040656
+    },
+    ":00000004": {
+        "message": 26,
+        "mqlen": 0,
+        "memory": "642.48 Kb",
+        "name": "snlua cdummy",
+        "task": 0,
+        "cpu": 0.04517
+    },
+    ":00000007": {
+        "message": 49,
+        "mqlen": 0,
+        "memory": "463.33 Kb",
+        "name": "snlua service_mgr",
+        "task": 1,
+        "cpu": 0.052314
+    },
+    ":00000017": {
+        "message": 12639,
+        "mqlen": 0,
+        "memory": "4024.28 Kb",
+        "name": "snlua remote_console/service/vmm_agent",
+        "task": 1,
+        "cpu": 2.178126
+    },
+    ":00000008": {
+        "message": 22,
+        "mqlen": 0,
+        "memory": "640.33 Kb",
+        "name": "snlua service_provider",
+        "task": 0,
+        "cpu": 0.042044
+    },
+    ":0000000a": {
+        "message": 154,
+        "mqlen": 0,
+        "memory": "483.73 Kb",
+        "name": "snlua hica/subsys/om/service/main",
+        "task": 1,
+        "cpu": 0.114223
+    },
+    ":00000018": {
+        "message": 75745,
+        "mqlen": 0,
+        "memory": "3976.18 Kb",
+        "name": "snlua remote_console/service/vmm_core",
+        "task": 2,
+        "cpu": 17.878885
+    },
+    ":00000009": {
+        "message": 19,
+        "mqlen": 0,
+        "memory": "642.19 Kb",
+        "name": "snlua service_cell ltls_holder",
+        "task": 0,
+        "cpu": 0.049312
+    },
+    ":00000015": {
+        "message": 104727,
+        "mqlen": 0,
+        "memory": "7735.15 Kb",
+        "name": "snlua account/service/main",
+        "task": 6,
+        "cpu": 953.497455
+    },
+    ":0000000c": {
+        "message": 42784,
+        "mqlen": 0,
+        "memory": "911.70 Kb",
+        "name": "snlua harbor",
+        "task": 2,
+        "cpu": 13.444803
+    },
+    ":00000011": {
+        "message": 77173,
+        "mqlen": 0,
+        "memory": "4316.01 Kb",
+        "name": "snlua license/service/main",
+        "task": 4,
+        "cpu": 21.169271
+    },
+    ":0000000b": {
+        "message": 23,
+        "mqlen": 0,
+        "memory": "658.18 Kb",
+        "name": "snlua sd_bus",
+        "task": 0,
+        "cpu": 0.092052
+    },
+    ":00000016": {
+        "message": 2808906,
+        "mqlen": 1,
+        "memory": "4612.79 Kb",
+        "name": "snlua remote_console/service/console_agent",
+        "task": 10,
+        "cpu": 277.194942
+    },
+    ":0000000d": {
+        "message": 20,
+        "mqlen": 0,
+        "memory": "728.94 Kb",
+        "name": "snlua debug_console 0.0.0.0 40035",
+        "task": 0,
+        "cpu": 0.048112
+    },
+    ":00000010": {
+        "message": 130530,
+        "mqlen": 0,
+        "memory": "6020.29 Kb",
+        "name": "snlua rmcpd/service/main",
+        "task": 3,
+        "cpu": 33.821259
+    },
+    ":0000000f": {
+        "message": 114891,
+        "mqlen": 0,
+        "memory": "5566.33 Kb",
+        "name": "snlua remote_console/service/main",
+        "task": 4,
+        "cpu": 27.954853
+    },
+    ":00000019": {
+        "message": 19,
+        "mqlen": 0,
+        "memory": "4042.78 Kb",
+        "name": "snlua remote_console/service/vmm_client",
+        "task": 0,
+        "cpu": 0.276833
+    },
+    ":0000001a": {
+        "message": 88342,
+        "mqlen": 0,
+        "memory": "4111.72 Kb",
+        "name": "snlua remote_console/service/videoplay_agent",
+        "task": 3,
+        "cpu": 19.961705
+    },
+    ":0000000e": {
+        "message": 102321,
+        "mqlen": 0,
+        "memory": "3891.67 Kb",
+        "name": "snlua ddns/service/main",
+        "task": 4,
+        "cpu": 294.842661
+    },
+    ":00000012": {
+        "message": 3745454,
+        "mqlen": 1,
+        "memory": "6781.64 Kb",
+        "name": "snlua event_policy/service/main",
+        "task": 6,
+        "cpu": 448.451261
+    }
+}

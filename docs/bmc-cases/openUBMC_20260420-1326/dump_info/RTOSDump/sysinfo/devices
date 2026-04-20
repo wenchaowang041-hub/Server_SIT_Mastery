@@ -1,0 +1,89 @@
+Character devices:
+  1 mem
+  2 pty
+  3 ttyp
+  4 /dev/vc/0
+  4 tty
+  4 ttyS
+  5 /dev/tty
+  5 /dev/console
+  5 /dev/ptmx
+  7 vcs
+ 10 misc
+ 13 input
+ 90 mtd
+128 ptm
+136 pts
+180 usb
+189 usb_device
+234 dboot
+235 sol
+236 p80
+237 ipmb
+238 i2c
+239 sys_info
+240 mdio
+241 gpio1711
+242 rpmb
+243 mmc
+244 hwlock
+245 wdt
+246 hitimer
+247 comm_dev
+248 cetatlbmem
+249 bsg
+250 module_crl
+251 watchdog
+252 rtc
+253 dax
+254 gpiochip
+488 btc
+489 hwibmc2bios
+490 hwibmc3
+491 hwibmc2
+492 hwibmc1
+493 hwibmc0
+494 bmc_cpld
+495 dfx
+496 usb_composite
+497 sec_module
+498 mctp
+499 efuse_dev
+500 trng
+501 djtag
+502 cpld
+503 spi
+504 localbus
+505 wdi
+506 peci
+507 uart_connect
+508 ttySS
+509 bmcrtc
+510 adc
+510 hisport
+511 pwm
+
+Block devices:
+  1 ramdisk
+  7 loop
+  8 sd
+ 31 mtdblock
+ 65 sd
+ 66 sd
+ 67 sd
+ 68 sd
+ 69 sd
+ 70 sd
+ 71 sd
+128 sd
+129 sd
+130 sd
+131 sd
+132 sd
+133 sd
+134 sd
+135 sd
+179 mmc
+253 device-mapper
+254 pramdisk
+259 blkext

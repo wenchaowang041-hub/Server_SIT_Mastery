@@ -1,0 +1,90 @@
+{
+    ":00000007": {
+        "mqlen": 0,
+        "memory": "676.06 Kb",
+        "task": 1,
+        "message": 22,
+        "cpu": 0.044072,
+        "name": "snlua service_mgr"
+    },
+    ":00000008": {
+        "mqlen": 0,
+        "memory": "465.07 Kb",
+        "task": 1,
+        "message": 137,
+        "cpu": 0.10461,
+        "name": "snlua hica/subsys/om_priv/service/main"
+    },
+    ":0000000a": {
+        "mqlen": 0,
+        "memory": "901.11 Kb",
+        "task": 2,
+        "message": 44608,
+        "cpu": 16.723653,
+        "name": "snlua harbor"
+    },
+    ":0000000b": {
+        "mqlen": 0,
+        "memory": "725.10 Kb",
+        "task": 0,
+        "message": 7,
+        "cpu": 0.041738,
+        "name": "snlua debug_console 0.0.0.0 40031"
+    },
+    ":0000000e": {
+        "mqlen": 0,
+        "memory": "7338.99 Kb",
+        "task": 43,
+        "message": 136836,
+        "cpu": 43.810406,
+        "name": "snlua oms/service/main"
+    },
+    ":00000006": {
+        "mqlen": 0,
+        "memory": "631.41 Kb",
+        "task": 0,
+        "message": 5,
+        "cpu": 0.038189,
+        "name": "snlua datacenterd"
+    },
+    ":0000000d": {
+        "mqlen": 0,
+        "memory": "5602.94 Kb",
+        "task": 3,
+        "message": 76530,
+        "cpu": 23.792644,
+        "name": "snlua ums/service/main"
+    },
+    ":00000009": {
+        "mqlen": 0,
+        "memory": "653.56 Kb",
+        "task": 0,
+        "message": 10,
+        "cpu": 0.089411,
+        "name": "snlua sd_bus"
+    },
+    ":00000004": {
+        "mqlen": 0,
+        "memory": "636.61 Kb",
+        "task": 0,
+        "message": 11,
+        "cpu": 0.038006,
+        "name": "snlua cdummy"
+    },
+    ":0000000f": {
+        "mqlen": 0,
+        "memory": "3469.34 Kb",
+        "task": 4,
+        "message": 92435,
+        "cpu": 42.829208,
+        "name": "snlua observability/service/main"
+    },
+    ":0000000c": {
+        "mqlen": 3,
+        "memory": "7430.40 Kb",
+        "task": 7,
+        "message": 129386,
+        "cpu": 288.950119,
+        "name": "snlua nsm/service/main"
+    }
+}

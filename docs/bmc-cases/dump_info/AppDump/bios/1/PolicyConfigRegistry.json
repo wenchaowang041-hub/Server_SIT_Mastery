@@ -1,0 +1,340 @@
+{
+	"Header":{
+		"Version":"1.2.0",
+		"FunctionNumber":10
+	},
+	"Registries":
+	{
+		"Attributes":
+		{
+			"CeReport":
+			{
+				"AttributeName":"CeReport",
+				"FunctionId": "2561",
+				"DisplayName": "Ce Report Policy",
+				"DisplayNameCN": "支持可纠正错误上报",
+				"MenuPath": "./RASConfig",
+				"Type": "Enumeration",
+				"Value": [
+					{"ValueName": 0, "DisplayName": "Disable", "DisplayNameCN": "停用"},
+					{"ValueName": 1, "DisplayName": "Enable", "DisplayNameCN": "启用"}
+				]
+			},
+			"Funnel":
+			{
+				"AttributeName":"Funnel",
+				"FunctionId": "2563",
+				"DisplayName": "Funnel Period",
+				"DisplayNameCN": "漏斗周期",
+				"MenuPath": "./RASConfig/MemoryRasConfig",
+				"Type": "Enumeration",
+				"Value": [
+					{"ValueName": 0, "DisplayName": "Disable", "DisplayNameCN": "停用"},
+					{"ValueName": 1, "DisplayName": "Enable", "DisplayNameCN": "启用"}
+				]
+			},
+			"PsFunnel":
+			{
+				"AttributeName":"PsFunnel",
+				"FunctionId": "2563",
+				"DisplayName": "PS Funnel Mode",
+				"DisplayNameCN": "巡检错误计入漏斗模式",
+				"MenuPath": "./RASConfig/MemoryRasConfig",
+				"Type": "Enumeration",
+				"Value": [
+					{"ValueName": 0, "DisplayName": "Disable", "DisplayNameCN": "停用"},
+					{"ValueName": 1, "DisplayName": "Enable", "DisplayNameCN": "启用"}
+				]
+			},
+			"PsEn":
+			{
+				"AttributeName":"PsEn",
+				"FunctionId": "2569",
+				"DisplayName": "Passive Scrub",
+				"DisplayNameCN": "消极巡检",
+				"MenuPath": "./RASConfig/MemoryRasConfig",
+				"Type": "Enumeration",
+				"Value": [
+					{"ValueName": 0, "DisplayName": "Disable", "DisplayNameCN": "停用"},
+					{"ValueName": 1, "DisplayName": "Enable", "DisplayNameCN": "启用"}
+				]
+			},
+			"CETh":
+			{
+				"AttributeName":"CETh",
+				"FunctionId": "2647",
+				"DisplayName": "Correct Error Threshold",
+				"DisplayNameCN": "内存可纠正错误阈值",
+				"MenuPath": "./RASConfig/MemoryRasConfig",
+				"Type": "Integer",
+				"LowerBound": 1,
+				"UpperBound": 8000
+			},
+			"RefreshRate":
+			{
+				"AttributeName":"RefreshRate",
+				"FunctionId": "2309",
+				"DisplayName": "Custom Refresh Rate",
+				"DisplayNameCN": "自定义刷新速率",
+				"MenuPath": "./MemoryConfig",
+				"Type": "Enumeration",
+				"Value": [
+					{"ValueName": 0, "DisplayName": "Auto", "DisplayNameCN": "自动"},
+					{"ValueName": 1, "DisplayName": "1x Mode", "DisplayNameCN": "1倍刷新"},
+					{"ValueName": 2, "DisplayName": "2x Mode", "DisplayNameCN": "2倍刷新"}
+				]
+			},
+			"FunnelTime":
+			{
+				"AttributeName":"FunnelTime",
+				"FunctionId": "2563",
+				"DisplayName": "Funnel Time(second)",
+				"DisplayNameCN": "设置漏斗时间（秒）",
+				"MenuPath": "./RASConfig/MemoryRasConfig",
+				"Type": "Integer",
+				"LowerBound": 1,
+				"UpperBound": 60
+			}
+		},
+		"Menus":[
+			{"MenuName": "MemoryConfig", "DisplayName": "Memory Configuration", "DisplayNameCN": "内存配置", "MenuPath": "./MemoryConfig"},
+			{"MenuName": "RASConfig", "DisplayName": "RAS Configuration", "DisplayNameCN": "RAS配置", "MenuPath": "./RASConfig"},
+			{"MenuName": "MemoryRasConfig", "DisplayName": "Memory RAS Configuration", "DisplayNameCN": "内存RAS配置", "MenuPath": "./RASConfig/MemoryRasConfig"}
+		]
+	},
+	"FunctionDetails":
+	{
+		"FunctionInfo":
+		{
+			"2560":
+			{
+				"IsSupportMulParam":0,
+				"ReqParaNum":8,
+				"ReqBody":[
+					{"Name":"Type", "Size":1, "Default":1},
+					{"Name":"Version", "Size":1, "Default":1},
+					{"Name":"Reserved", "Size": 2, "Default":0},
+					{"Name":"CallId", "Size":4, "Default":3221228032},
+					{"Name":"SenderId", "Size": 4, "Default":184549376},
+					{"Name":"ReceiverId", "Size": 4, "Default":16777216},
+					{"Name":"Reserved1", "Size": 8, "Default":0},
+					{"Name":"Crc32", "Size": 4, "Default":0}
+				],
+				"RspParaNum":4,
+				"RspBody":[
+					{"Name":"Reserved", "Size":16},
+					{"Name":"Return", "Size":4},
+					{"Name":"DataSize", "Size":4},
+					{"Name":"CeReport", "Size": 4}
+				]
+			},
+			"2561":
+			{
+				"IsSupportMulParam":0,
+				"ReqParaNum":10,
+				"ReqBody":[
+					{"Name":"Type", "Size":1, "Default":1},
+					{"Name":"Version", "Size":1, "Default":1},
+					{"Name":"Reserved", "Size": 2, "Default":0},
+					{"Name":"CallId", "Size":4, "Default":3221228033},
+					{"Name":"SenderId", "Size": 4, "Default":184549376},
+					{"Name":"ReceiverId", "Size": 4, "Default":16777216},
+					{"Name":"Reserved1", "Size": 4, "Default":0},
+					{"Name":"DataSize", "Size": 4, "Default":4},
+					{"Name":"CeReport", "Size": 4, "Default":1},
+					{"Name":"Crc32", "Size": 4, "Default":0}
+				],
+				"RspParaNum":3,
+				"RspBody":[
+					{"Name":"Reserved", "Size":16},
+					{"Name":"Return", "Size":4},
+					{"Name":"Reserved1", "Size":4}
+				]
+			},
+			"2562":
+			{
+				"IsSupportMulParam":0,
+				"ReqParaNum":8,
+				"ReqBody":[
+					{"Name":"Type", "Size":1, "Default":1},
+					{"Name":"Version", "Size":1, "Default":1},
+					{"Name":"Reserved", "Size": 2, "Default":0},
+					{"Name":"CallId", "Size":4, "Default":3221752322},
+					{"Name":"SenderId", "Size": 4, "Default":184549376},
+					{"Name":"ReceiverId", "Size": 4, "Default":16777216},
+					{"Name":"Reserved1", "Size": 8, "Default":0},
+					{"Name":"Crc32", "Size": 4, "Default":0}
+				],
+				"RspParaNum":6,
+				"RspBody":[
+					{"Name":"Reserved", "Size":16},
+					{"Name":"Return", "Size":4},
+					{"Name":"DataSize", "Size":4},
+					{"Name":"Funnel", "Size": 1},
+					{"Name":"PsFunnel", "Size": 1},
+					{"Name":"FunnelTime", "Size": 2}
+				]
+			},
+			"2563":
+			{
+				"IsSupportMulParam":1,
+				"ReqParaNum":12,
+				"ReqBody":[
+					{"Name":"Type", "Size":1, "Default":1},
+					{"Name":"Version", "Size":1, "Default":1},
+					{"Name":"Reserved", "Size": 2, "Default":0},
+					{"Name":"CallId", "Size":4, "Default":3221752323},
+					{"Name":"SenderId", "Size": 4, "Default":184549376},
+					{"Name":"ReceiverId", "Size": 4, "Default":16777216},
+					{"Name":"Reserved1", "Size": 4, "Default":0},
+					{"Name":"DataSize", "Size": 4, "Default":4},
+					{"Name":"Funnel", "Size": 1, "Default":1},
+					{"Name":"PsFunnel", "Size": 1, "Default":1},
+					{"Name":"FunnelTime", "Size": 2, "Default":1},
+					{"Name":"Crc32", "Size": 4, "Default":0}
+				],
+				"RspParaNum":3,
+				"RspBody":[
+					{"Name":"Reserved", "Size":16},
+					{"Name":"Return", "Size":4},
+					{"Name":"Reserved1", "Size":4}
+				]
+			},
+			"2568":
+			{
+				"IsSupportMulParam":0,
+				"ReqParaNum":8,
+				"ReqBody":[
+					{"Name":"Type", "Size":1, "Default":1},
+					{"Name":"Version", "Size":1, "Default":1},
+					{"Name":"Reserved", "Size": 2, "Default":0},
+					{"Name":"CallId", "Size":4, "Default":3221752328},
+					{"Name":"SenderId", "Size": 4, "Default":184549376},
+					{"Name":"ReceiverId", "Size": 4, "Default":16777216},
+					{"Name":"Reserved1", "Size": 8, "Default":0},
+					{"Name":"Crc32", "Size": 4, "Default":0}
+				],
+				"RspParaNum":4,
+				"RspBody":[
+					{"Name":"Reserved", "Size":16},
+					{"Name":"Return", "Size":4},
+					{"Name":"DataSize", "Size":4},
+					{"Name":"PsEn", "Size": 4}
+				]
+			},
+			"2569":
+			{
+				"IsSupportMulParam":0,
+				"ReqParaNum":10,
+				"ReqBody":[
+					{"Name":"Type", "Size":1, "Default":1},
+					{"Name":"Version", "Size":1, "Default":1},
+					{"Name":"Reserved", "Size": 2, "Default":0},
+					{"Name":"CallId", "Size":4, "Default":3221752329},
+					{"Name":"SenderId", "Size": 4, "Default":184549376},
+					{"Name":"ReceiverId", "Size": 4, "Default":16777216},
+					{"Name":"Reserved1", "Size": 4, "Default":0},
+					{"Name":"DataSize", "Size": 4, "Default":4},
+					{"Name":"PsEn", "Size": 4, "Default":1},
+					{"Name":"Crc32", "Size": 4, "Default":0}
+				],
+				"RspParaNum":3,
+				"RspBody":[
+					{"Name":"Reserved", "Size":16},
+					{"Name":"Return", "Size":4},
+					{"Name":"Reserved1", "Size":4}
+				]
+			},
+			"2646":
+			{
+				"IsSupportMulParam":0,
+				"ReqParaNum":8,
+				"ReqBody":[
+					{"Name":"Type", "Size":1, "Default":1},
+					{"Name":"Version", "Size":1, "Default":1},
+					{"Name":"Reserved", "Size": 2, "Default":0},
+					{"Name":"CallId", "Size":4, "Default":3221752406},
+					{"Name":"SenderId", "Size": 4, "Default":184549376},
+					{"Name":"ReceiverId", "Size": 4, "Default":16777216},
+					{"Name":"Reserved1", "Size": 8, "Default":0},
+					{"Name":"Crc32", "Size": 4, "Default":0}
+				],
+				"RspParaNum":4,
+				"RspBody":[
+					{"Name":"Reserved", "Size":16},
+					{"Name":"Return", "Size":4},
+					{"Name":"DataSize", "Size":4},
+					{"Name":"CETh", "Size": 4}
+				]
+			},
+			"2647":
+			{
+				"IsSupportMulParam":0,
+				"ReqParaNum":10,
+				"ReqBody":[
+					{"Name":"Type", "Size":1, "Default":1},
+					{"Name":"Version", "Size":1, "Default":1},
+					{"Name":"Reserved", "Size": 2, "Default":0},
+					{"Name":"CallId", "Size":4, "Default":3221752407},
+					{"Name":"SenderId", "Size": 4, "Default":184549376},
+					{"Name":"ReceiverId", "Size": 4, "Default":16777216},
+					{"Name":"Reserved1", "Size": 4, "Default":0},
+					{"Name":"DataSize", "Size": 4, "Default":4},
+					{"Name":"CETh", "Size": 4, "Default":1},
+					{"Name":"Crc32", "Size": 4, "Default":0}
+				],
+				"RspParaNum":3,
+				"RspBody":[
+					{"Name":"Reserved", "Size":16},
+					{"Name":"Return", "Size":4},
+					{"Name":"Reserved1", "Size":4}
+				]
+			},
+			"2308":
+			{
+				"IsSupportMulParam":0,
+				"ReqParaNum":8,
+				"ReqBody":[
+					{"Name":"Type", "Size":1, "Default":1},
+					{"Name":"Version", "Size":1, "Default":1},
+					{"Name":"Reserved", "Size": 2, "Default":0},
+					{"Name":"CallId", "Size":4, "Default":3221227780},
+					{"Name":"SenderId", "Size": 4, "Default":184549376},
+					{"Name":"ReceiverId", "Size": 4, "Default":16777216},
+					{"Name":"Reserved1", "Size": 8, "Default":0},
+					{"Name":"Crc32", "Size": 4, "Default":0}
+				],
+				"RspParaNum":4,
+				"RspBody":[
+					{"Name":"Reserved", "Size":16},
+					{"Name":"Return", "Size":4},
+					{"Name":"DataSize", "Size":4},
+					{"Name":"RefreshRate", "Size": 4}
+				]
+			},
+			"2309":
+			{
+				"IsSupportMulParam":0,
+				"ReqParaNum":10,
+				"ReqBody":[
+					{"Name":"Type", "Size":1, "Default":1},
+					{"Name":"Version", "Size":1, "Default":1},
+					{"Name":"Reserved", "Size": 2, "Default":0},
+					{"Name":"CallId", "Size":4, "Default":3221227781},
+					{"Name":"SenderId", "Size": 4, "Default":184549376},
+					{"Name":"ReceiverId", "Size": 4, "Default":16777216},
+					{"Name":"Reserved1", "Size": 4, "Default":0},
+					{"Name":"DataSize", "Size": 4, "Default":4},
+					{"Name":"RefreshRate", "Size": 4, "Default":0},
+					{"Name":"Crc32", "Size": 4, "Default":0}
+				],
+				"RspParaNum":3,
+				"RspBody":[
+					{"Name":"Reserved", "Size":16},
+					{"Name":"Return", "Size":4},
+					{"Name":"Reserved1", "Size":4}
+				]
+			}
+		}
+	}
+}

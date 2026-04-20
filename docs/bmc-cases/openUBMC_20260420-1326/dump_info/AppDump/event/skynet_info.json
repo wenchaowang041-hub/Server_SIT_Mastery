@@ -1,0 +1,90 @@
+{
+    ":00000008": {
+        "task": 1,
+        "name": "snlua hica/subsys/alarm/service/main",
+        "mqlen": 0,
+        "cpu": 0.256216,
+        "memory": "468.01 Kb",
+        "message": 136
+    },
+    ":00000004": {
+        "task": 0,
+        "name": "snlua cdummy",
+        "mqlen": 0,
+        "cpu": 0.038086,
+        "memory": "636.63 Kb",
+        "message": 10
+    },
+    ":0000000b": {
+        "task": 0,
+        "name": "snlua debug_console 0.0.0.0 40023",
+        "mqlen": 0,
+        "cpu": 0.038655,
+        "memory": "725.12 Kb",
+        "message": 6
+    },
+    ":0000000e": {
+        "task": 4,
+        "name": "snlua host_agent/service/main",
+        "mqlen": 0,
+        "cpu": 43.786036,
+        "memory": "3966.80 Kb",
+        "message": 77112
+    },
+    ":0000000d": {
+        "task": 7,
+        "name": "snlua event/service/main",
+        "mqlen": 0,
+        "cpu": 690.462252,
+        "memory": "38141.69 Kb",
+        "message": 231336
+    },
+    ":0000000a": {
+        "task": 2,
+        "name": "snlua harbor",
+        "mqlen": 0,
+        "cpu": 15.827409,
+        "memory": "921.73 Kb",
+        "message": 43747
+    },
+    ":00000006": {
+        "task": 0,
+        "name": "snlua datacenterd",
+        "mqlen": 0,
+        "cpu": 0.034027,
+        "memory": "631.43 Kb",
+        "message": 4
+    },
+    ":0000000f": {
+        "task": 4,
+        "name": "snlua frudata/service/main",
+        "mqlen": 0,
+        "cpu": 101.860566,
+        "memory": "12639.53 Kb",
+        "message": 105904
+    },
+    ":0000000c": {
+        "task": 3,
+        "name": "snlua sensor/service/main",
+        "mqlen": 0,
+        "cpu": 1941.99077,
+        "memory": "27668.70 Kb",
+        "message": 490260
+    },
+    ":00000009": {
+        "task": 0,
+        "name": "snlua sd_bus",
+        "mqlen": 0,
+        "cpu": 0.095254,
+        "memory": "654.53 Kb",
+        "message": 10
+    },
+    ":00000007": {
+        "task": 1,
+        "name": "snlua service_mgr",
+        "mqlen": 0,
+        "cpu": 0.041463,
+        "memory": "676.08 Kb",
+        "message": 21
+    }
+}

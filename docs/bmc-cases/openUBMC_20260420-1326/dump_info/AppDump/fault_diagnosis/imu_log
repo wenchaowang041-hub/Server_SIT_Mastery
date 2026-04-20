@@ -1,0 +1,5133 @@
+st.
+ID[0xff19709d]!
+flash 0 support sfdp.
+Interrupt 423 register OK
+Interrupt 425 register OK
+Interrupt 427 register OK
+Interrupt 429 register OK
+Interrupt 430 register OK
+Interrupt 431 register OK
+Interrupt 436 register OK
+
+cpu 0 entering scheduler
+[IMU] Watchdog Initialization done!
+ScmiTaskEntry start.
+Interrupt 456 register OK
+Interrupt 469 register OK
+Interrupt 482 register OK
+Interrupt 495 register OK
+starting Fpc Isolation Task end
+starting fdm Err Info Task end
+starting Roce recovery Task end
+starting Ce_Storm Contrl Task end
+starting Ras_Data_Update Task end
+power register ubios call id
+Interrupt 459 register OK
+Interrupt 472 register OK
+Interrupt 485 register OK
+Interrupt 498 register OK
+[0.00.03.562]Real time now 2026.4.17 10:02:57
+NIC CARD[0][0]: nicPresent = 0x1, nicType = 0x0, nicSfpPresent = 0x0
+NIC CARD[0][1]: nicPresent = 0x0, nicType = 0x0, nicSfpPresent = 0x0
+NIC CARD[1][0]: nicPresent = 0x0, nicType = 0x0, nicSfpPresent = 0x0
+NIC CARD[1][1]: nicPresent = 0x0, nicType = 0x0, nicSfpPresent = 0x0
+Init heart-beat-task end
+Init SeamlessUpdateTask end
+Get Setup Config.
+pwr cap[0]: 0, 63
+pwr cap[1]: f, 27
+pwr cap[2]: 1, 3
+[0.00.12.866]Skt 0, Die 0 imp has been released, running.
+[0.00.12.872]GET NIC0 INFO.
+Skt 0, Die 2 ImpState is 0 skip exec.
+Skt 1, Die 0 ImpState is 0 skip exec.
+Skt 1, Die 2 ImpState is 0 skip exec.
+[0.00.12.878]READ offset = 0x320000, len = 0xe8
+[0.00.12.888]READ offset = 0x3200e8, len = 0xe8
+[0.00.12.892]READ offset = 0x3201d0, len = 0xe8
+[0.00.12.896]READ offset = 0x3202b8, len = 0xe8
+[0.00.12.900]READ offset = 0x3203a0, len = 0xe8
+[0.00.12.904]READ offset = 0x320488, len = 0xe8
+[0.00.12.908]READ offset = 0x320570, len = 0xe8
+[0.00.12.912]READ offset = 0x320658, len = 0xe8
+[0.00.12.916]READ offset = 0x320740, len = 0xc0
+[0.00.31.719]DDR Rreserved for IMU: len = 3e00000
+[LOG]head = 0x69ce1, tail = 0x6f763, logSize = 0x5a82
+copy registry.json file success
+ipcMsgSend success
+[0.00.31.759]starting ras Init
+sktId = 0, dieId = 0, isSasExist = 0.
+sktId = 0, dieId = 2, isSasExist = 0.
+sktId = 1, dieId = 0, isSasExist = 0.
+sktId = 1, dieId = 2, isSasExist = 0.
+Mce Table head exist!
+RasIntRegister init 452 
+RasIntRegister init 453 
+RasIntRegister init 64 
+RasIntRegister init 65 
+RasIntRegister init 465 
+RasIntRegister init 466 
+RasIntRegister init 86 
+RasIntRegister init 87 
+RasIntRegister init 478 
+RasIntRegister init 479 
+RasIntRegister init 108 
+RasIntRegister init 109 
+RasIntRegister init 491 
+RasIntRegister init 492 
+RasIntRegister init 130 
+RasIntRegister init 131 
+RasIntRegister init 76 
+RasIntRegister init 98 
+RasIntRegister init 120 
+RasIntRegister init 142 
+[0.00.31.819]starting ras end
+[0.00.37.969]TF Heartbeat Start
+[0.00.41.581][ERR]cmd not support! cmd = 0xd
+[0.00.42.878]Skt 0, Die 0 imp has init-done.
+[0.00.49.693]PCIE INIT DONE.
+slotNum = 0xb
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[0] port:8  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[1] port:12  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[2] port:20  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[3] port:32  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[4] port:0  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[5] port:2  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[6] port:4  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[7] port:8  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[8] port:12  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[9] port:20  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[10] port:32  pcieSlotCtrl.data (after)0x14801c0.
+
+Interrupt 454 register OK
+Interrupt 467 register OK
+Interrupt 480 register OK
+Interrupt 493 register OK
+data = 0x0
+pmt Init done
+slot[0] port:8 begin to power ON.
+slot[1] port:12 begin to power ON.
+slot[2] port:20 begin to power ON.
+slot[3] port:32 begin to power ON.
+slot[4] port:0 begin to power ON.
+slot[5] port:2 begin to power ON.
+slot[6] port:4 begin to power ON.
+slot[7] port:8 begin to power ON.
+slot[8] port:12 begin to power ON.
+slot[9] port:20 begin to power ON.
+slot[10] port:32 begin to power ON.
+mctp task ok.
+[0.01.20.249]Receive ras int[86]
+First coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x400000
+Found error node[22]
+OemErrorLogReport
+report to os
+-- RAS DUMP --
+Skt[0] Totem[0] Module[L3D] Device[5] ErrorType[0x0301] 
+Error severity is RECOVERABLE[c605870000]
+ERR_FR     = 0x0000000000142aa2
+ERR_CTRL   = 0x0000000000000515
+ERR_STATUS = 0x00000000ec200301
+ERR_ADDR   = 0xe000000000000c18
+ERR_MISC0  = 0x0000007f00000000
+ERR_MISC1  = 0x0180225000030081
+ERR_MISC2  = 0x0000000000000000
+ERR_MISC3  = 0x0000000000000000
+Type0 status = 0x0
+ras int[86] end
+
+Add ep: bdf=300 eid=9 epCnt=1 eid_alloc=a
+[0.05.44.795]ext0 int trigger
+
+********Hello Huawei LiteOS********
+
+KpxxxxIMU Firmware Version : VX.X.X
+LiteOS Kernel Version : 5.7.0
+Run on ChipVersion[0] Socket[0] Die[2]
+build time : Jun 26 2025 22:00:00
+
+**********************************
+
+main core booting up...
+start set affinity
+
+mpidr = 0x81020000
+sram ecc state: 0x0, sram ecc cnt: 0x0
+[0.00.00.033]skt 0 begins init all serdes.
+BoardInfo->SocketNum 2.
+BoardInfo->SocketId 0.
+BoardInfo->InfoVersion 5.
+BoardInfo->NASerdesSceneMode 0.
+BoardInfo->NBSerdesSceneMode 3.
+BoardInfo->HccsTopologyType 0.
+BoardInfo->BoardId 0.
+ChipVersionIs920BPro: 0.
+BoardInfo Skt 0, SerdesUseMode: 1 2 5 1 1 1 1  1 1 1 4 4 1 1 
+BoardInfo Skt 1, SerdesUseMode: 1 1 1 1 1 1 1  1 1 1 4 4 1 1 
+BoardInfo Skt 0, SerdesRxPolarityReverse: 0 0 0 0 0 0 0  0 0 0 0 0 0 0 
+BoardInfo Skt 1, SerdesRxPolarityReverse: 0 0 0 0 0 0 0  0 0 0 0 0 0 0 
+BoardInfo Skt 0, SerdesTxPolarityReverse: 0 0 0 0 0 0 0  0 0 0 0 0 0 0 
+BoardInfo Skt 1, SerdesTxPolarityReverse: 0 0 0 0 0 0 0  0 0 0 0 0 0 0 
+serdessdk version: 2.0_5.0_20241203_imu
+chip_id 0, die 0, ind 0, usemode 1 begin serdes-init.
+chip_id 0, die 0, ind 1, usemode 2 begin serdes-init.
+chip_id 0, die 2, ind 0, usemode 1 begin serdes-init.
+chip_id 0, die 2, ind 1, usemode 1 begin serdes-init.
+chip serdes init status:0x0.
+[0.00.00.346]skt 0 ends init all serdes.
+link[4] freq_type:1 | peer_chip_type:1 | peer_chip_id:1 | peer_link_id:5
+link[5] freq_type:1 | peer_chip_type:1 | peer_chip_id:1 | peer_link_id:4
+register kp920b hccs done
+chip_id 0, die 2, ind 4, usemode 4 begin serdes-init.
+chip_id 0, die 2, ind 3, usemode 4 begin serdes-init.
+hccs init start...
+pa ring link down success
+reset pa success
+link[4] pcs init success
+link[5] pcs init success
+release reset pa success
+link[4] macro adapt done (lane_mask=0xff) (0ms)
+link[5] macro adapt done (lane_mask=0xff) (0ms)
+link[4] pcs training success (10ms)
+link[5] pcs training success (10ms)
+link[4] training success (20ms)
+link[5] training success (20ms)
+link[4]:
+BWAY_PCS_ST_FSM_0_REG = 0x118
+BWAY_PCS_ST_PCS_LANE_MODE_CHANGE_REG = 0xff31
+HLLC_ST_FSM_1_REG = 0x3
+link[5]:
+BWAY_PCS_ST_FSM_0_REG = 0x118
+BWAY_PCS_ST_PCS_LANE_MODE_CHANGE_REG = 0xff31
+HLLC_ST_FSM_1_REG = 0x3
+link training success
+pa[0] linkEn = 0x0
+pa[0] allSktLink0 = 0x0
+pa[0] allSktLink1 = 0x0
+pa[1] linkEn = 0x3
+pa[1] allSktLink0 = 0x30
+pa[1] allSktLink1 = 0x0
+pa init success
+COM_PAID_INTLV_REG = 0x2
+paid decode init success
+pa[0] PA_PM_BASE_INFO = 0x0
+pa[0] PA_PM_MAP_LINK_NUM = 0x0
+pa[1] PA_PM_BASE_INFO = 0x330021
+pa[1] PA_PM_MAP_LINK_NUM = 0x12
+hccs performace config success
+pa ring link up success
+hccs init done
+hccs access test start
+skt[0] IOMGMT_ICL_SUBCTRL_SC_IMU_MULTI_CTRL2 = 0x5a5a5a5a
+skt[1] IOMGMT_ICL_SUBCTRL_SC_IMU_MULTI_CTRL2 = 0x5a5a5a5a
+skt[1] IOMGMT_ICL_SUBCTRL_SC_IMU_MULTI_CTRL2 = 0xa5a5a5a5
+hccs access test success
+======hccs status======
+  skt[0] mask: expected = 0x30, link up = 0x30, width reduction = 0x0, link down = 0x0
+  skt[1] mask: expected = 0x30, link up = 0x30, width reduction = 0x0, link down = 0x0
+==========end==========
+report hccs status success
+skt[0] IOMGMT_ICL_SUBCTRL_SC_IMU_MULTI_CTRL2 = 0xa5a5a5a5
+LRDXSD_LOCK_OFFSET = 0x0
+LRDXSD_ERRIMSK_OFFSET = 0x0
+LRDXSD_DBG_OTIMSK_OFFSET = 0x0
+LRDXSD_DBG_OT_SET_OFFSET = 0xffffffff
+LRDXSD_DBG_EN_OFFSET = 0x1
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+ID[0xff19709d]!
+ID[0xff000000]!
+[ERR]Don't support the flash, CS[1] ID[0xff000000]!!
+sfdp detect, try to get dummy data from hboot1 first.
+ID[0xff19709d]!
+flash 0 support sfdp.
+Interrupt 423 register OK
+Interrupt 425 register OK
+Interrupt 427 register OK
+Interrupt 429 register OK
+Interrupt 430 register OK
+Interrupt 431 register OK
+Interrupt 436 register OK
+
+cpu 0 entering scheduler
+[IMU] Watchdog Initialization done!
+ScmiTaskEntry start.
+Interrupt 456 register OK
+Interrupt 469 register OK
+Interrupt 482 register OK
+Interrupt 495 register OK
+starting Fpc Isolation Task end
+starting fdm Err Info Task end
+starting Roce recovery Task end
+starting Ce_Storm Contrl Task end
+starting Ras_Data_Update Task end
+power register ubios call id
+Interrupt 459 register OK
+Interrupt 472 register OK
+Interrupt 485 register OK
+Interrupt 498 register OK
+[0.00.03.564]Real time now 2026.4.17 10:08:47
+NIC CARD[0][0]: nicPresent = 0x1, nicType = 0x0, nicSfpPresent = 0x0
+NIC CARD[0][1]: nicPresent = 0x0, nicType = 0x0, nicSfpPresent = 0x0
+NIC CARD[1][0]: nicPresent = 0x0, nicType = 0x0, nicSfpPresent = 0x0
+NIC CARD[1][1]: nicPresent = 0x0, nicType = 0x0, nicSfpPresent = 0x0
+Init heart-beat-task end
+Init SeamlessUpdateTask end
+Get Setup Config.
+pwr cap[0]: 0, 63
+pwr cap[1]: f, 27
+[0.00.11.984]Skt 0, Die 0 imp has been released, running.
+[0.00.11.989]GET NIC0 INFO.
+Skt 0, Die 2 ImpState is 0 skip exec.
+Skt 1, Die 0 ImpState is 0 skip exec.
+Skt 1, Die 2 ImpState is 0 skip exec.
+[0.00.11.997]READ offset = 0x320000, len = 0xe8
+[0.00.12.006]READ offset = 0x3200e8, len = 0xe8
+[0.00.12.010]READ offset = 0x3201d0, len = 0xe8
+[0.00.12.014]READ offset = 0x3202b8, len = 0xe8
+[0.00.12.018]READ offset = 0x3203a0, len = 0xe8
+[0.00.12.022]READ offset = 0x320488, len = 0xe8
+[0.00.12.026]READ offset = 0x320570, len = 0xe8
+[0.00.12.030]READ offset = 0x320658, len = 0xe8
+[0.00.12.034]READ offset = 0x320740, len = 0xc0
+pwr cap[2]: 1, 3
+[0.00.30.479]DDR Rreserved for IMU: len = 3e00000
+[LOG]head = 0x69ce1, tail = 0x71a07, logSize = 0x7d26
+copy registry.json file success
+ipcMsgSend success
+[0.00.30.517]starting ras Init
+sktId = 0, dieId = 0, isSasExist = 0.
+sktId = 0, dieId = 2, isSasExist = 0.
+sktId = 1, dieId = 0, isSasExist = 0.
+sktId = 1, dieId = 2, isSasExist = 0.
+Mce Table head exist!
+RasIntRegister init 452 
+RasIntRegister init 453 
+RasIntRegister init 64 
+RasIntRegister init 65 
+RasIntRegister init 465 
+RasIntRegister init 466 
+RasIntRegister init 86 
+RasIntRegister init 87 
+RasIntRegister init 478 
+RasIntRegister init 479 
+RasIntRegister init 108 
+RasIntRegister init 109 
+RasIntRegister init 491 
+RasIntRegister init 492 
+RasIntRegister init 130 
+RasIntRegister init 131 
+RasIntRegister init 76 
+RasIntRegister init 98 
+RasIntRegister init 120 
+RasIntRegister init 142 
+[0.00.30.577]starting ras end
+[0.00.36.684]TF Heartbeat Start
+[0.00.40.135][ERR]cmd not support! cmd = 0xd
+[0.00.41.996]Skt 0, Die 0 imp has init-done.
+[0.00.48.180]PCIE INIT DONE.
+slotNum = 0xb
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[0] port:8  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[1] port:12  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[2] port:20  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[3] port:32  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[4] port:0  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[5] port:2  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[6] port:4  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[7] port:8  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[8] port:12  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[9] port:20  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[10] port:32  pcieSlotCtrl.data (after)0x14801c0.
+
+Interrupt 454 register OK
+Interrupt 467 register OK
+Interrupt 480 register OK
+Interrupt 493 register OK
+data = 0x0
+pmt Init done
+slot[0] port:8 begin to power ON.
+slot[1] port:12 begin to power ON.
+slot[2] port:20 begin to power ON.
+slot[3] port:32 begin to power ON.
+slot[4] port:0 begin to power ON.
+slot[5] port:2 begin to power ON.
+slot[6] port:4 begin to power ON.
+slot[7] port:8 begin to power ON.
+slot[8] port:12 begin to power ON.
+slot[9] port:20 begin to power ON.
+slot[10] port:32 begin to power ON.
+mctp task ok.
+[0.01.17.907]Receive ras int[86]
+First coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x400000
+Found error node[22]
+OemErrorLogReport
+report to os
+-- RAS DUMP --
+Skt[0] Totem[0] Module[L3D] Device[5] ErrorType[0x0301] 
+Error severity is RECOVERABLE[c605870000]
+ERR_FR     = 0x0000000000142aa2
+ERR_CTRL   = 0x0000000000000515
+ERR_STATUS = 0x00000000ec200301
+ERR_ADDR   = 0xe000000000000c18
+ERR_MISC0  = 0x0000007f00000000
+ERR_MISC1  = 0x0180225000030081
+ERR_MISC2  = 0x0000000000000000
+ERR_MISC3  = 0x0000000000000000
+Type0 status = 0x0
+ras int[86] end
+
+Add ep: bdf=300 eid=9 epCnt=1 eid_alloc=a
+[0.01.54.285]BIOS POST END.
+Create SetReportPcieMmioToBmc ok.
+Start SetReportPcieMmioToBmc ok.
+Enter current value process
+[0.02.15.885]Receive ras int[452]
+First coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x1
+Found error node[0]
+-- RAS DUMP --
+PCIE AER ERROR
+Error severity is CORRECTED[302000000]
+PortType[0] PCIeInfo[08:00:00]
+VendorId[0x19e5] DeviceId[0xd802]
+AER_CAP_HEADER    = 0x0000000015020001
+UNCR_ERR_STATUS   = 0x0000000000100000
+UNCR_ERR_MASK     = 0x0000000000580000
+UNCR_ERR_SEVERITY = 0x0000000000462010
+COR_ERR_STATUS    = 0x0000000000002000
+COR_ERR_MASK      = 0x0000000000000000
+AER_CAP_HEADER    = 0x00000000000010a0
+OemErrorLogReport
+not report to os
+ras int[452] end
+
+[0.02.16.235]Receive ras int[452]
+First coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x2
+Found error node[1]
+-- RAS DUMP --
+PCIE AER ERROR
+Error severity is CORRECTED[303000000]
+PortType[0] PCIeInfo[0c:00:00]
+VendorId[0x19e5] DeviceId[0xd802]
+AER_CAP_HEADER    = 0x0000000015020001
+UNCR_ERR_STATUS   = 0x0000000000100000
+UNCR_ERR_MASK     = 0x0000000000580000
+UNCR_ERR_SEVERITY = 0x0000000000462010
+COR_ERR_STATUS    = 0x0000000000002000
+COR_ERR_MASK      = 0x0000000000000000
+AER_CAP_HEADER    = 0x00000000000010a0
+OemErrorLogReport
+not report to os
+ras int[452] end
+
+[0.02.16.585]Receive ras int[465]
+First coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x4000
+Found error node[14]
+Secondary coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x4
+Found error node[2]
+-- RAS DUMP --
+PCIE AER ERROR
+Error severity is CORRECTED[8101000000]
+PortType[0] PCIeInfo[42:00:00]
+VendorId[0x19e5] DeviceId[0xd802]
+AER_CAP_HEADER    = 0x0000000015020001
+UNCR_ERR_STATUS   = 0x0000000000100000
+UNCR_ERR_MASK     = 0x0000000000580000
+UNCR_ERR_SEVERITY = 0x0000000000462010
+COR_ERR_STATUS    = 0x0000000000002000
+COR_ERR_MASK      = 0x0000000000000000
+AER_CAP_HEADER    = 0x00000000000010a0
+OemErrorLogReport
+not report to os
+ras int[465] end
+
+[0.02.16.935]Receive ras int[465]
+First coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x2
+Found error node[1]
+-- RAS DUMP --
+PCIE AER ERROR
+Error severity is CORRECTED[8303000000]
+PortType[0] PCIeInfo[46:00:00]
+VendorId[0x19e5] DeviceId[0xd802]
+AER_CAP_HEADER    = 0x0000000015020001
+UNCR_ERR_STATUS   = 0x0000000000100000
+UNCR_ERR_MASK     = 0x0000000000580000
+UNCR_ERR_SEVERITY = 0x0000000000462010
+COR_ERR_STATUS    = 0x0000000000002000
+COR_ERR_MASK      = 0x0000000000000000
+AER_CAP_HEADER    = 0x00000000000010a0
+OemErrorLogReport
+not report to os
+ras int[465] end
+
+[0.02.20.009]Receive ras int[478]
+First coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x1
+Found error node[0]
+-- RAS DUMP --
+PCIE AER ERROR
+Error severity is CORRECTED[200302000000]
+PortType[0] PCIeInfo[96:00:00]
+VendorId[0x19e5] DeviceId[0xd802]
+AER_CAP_HEADER    = 0x0000000015020001
+UNCR_ERR_STATUS   = 0x0000000000100000
+UNCR_ERR_MASK     = 0x0000000000580000
+UNCR_ERR_SEVERITY = 0x0000000000462010
+COR_ERR_STATUS    = 0x0000000000002000
+COR_ERR_MASK      = 0x0000000000000000
+AER_CAP_HEADER    = 0x00000000000010a0
+OemErrorLogReport
+not report to os
+ras int[478] end
+
+[0.02.20.348]Receive ras int[478]
+First coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x2
+Found error node[1]
+-- RAS DUMP --
+PCIE AER ERROR
+Error severity is CORRECTED[200303000000]
+PortType[0] PCIeInfo[ab:00:00]
+VendorId[0x19e5] DeviceId[0xd802]
+AER_CAP_HEADER    = 0x0000000015020001
+UNCR_ERR_STATUS   = 0x0000000000100000
+UNCR_ERR_MASK     = 0x0000000000580000
+UNCR_ERR_SEVERITY = 0x0000000000462010
+COR_ERR_STATUS    = 0x0000000000002000
+COR_ERR_MASK      = 0x0000000000000000
+AER_CAP_HEADER    = 0x00000000000010a0
+OemErrorLogReport
+not report to os
+ras int[478] end
+
+[0.02.20.686]Receive ras int[491]
+First coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x4000
+Found error node[14]
+Secondary coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x4
+Found error node[2]
+-- RAS DUMP --
+PCIE AER ERROR
+Error severity is CORRECTED[208101000000]
+PortType[0] PCIeInfo[c1:00:00]
+VendorId[0x19e5] DeviceId[0xd802]
+AER_CAP_HEADER    = 0x0000000015020001
+UNCR_ERR_STATUS   = 0x0000000000100000
+UNCR_ERR_MASK     = 0x0000000000580000
+UNCR_ERR_SEVERITY = 0x0000000000462010
+COR_ERR_STATUS    = 0x0000000000002000
+COR_ERR_MASK      = 0x0000000000000000
+AER_CAP_HEADER    = 0x00000000000010a0
+OemErrorLogReport
+not report to os
+ras int[491] end
+
+[0.02.21.036]Receive ras int[491]
+First coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x2
+Found error node[1]
+-- RAS DUMP --
+PCIE AER ERROR
+Error severity is CORRECTED[208303000000]
+PortType[0] PCIeInfo[d6:00:00]
+VendorId[0x19e5] DeviceId[0xd802]
+AER_CAP_HEADER    = 0x0000000015020001
+UNCR_ERR_STATUS   = 0x0000000000100000
+UNCR_ERR_MASK     = 0x0000000000580000
+UNCR_ERR_SEVERITY = 0x0000000000462010
+COR_ERR_STATUS    = 0x0000000000002000
+COR_ERR_MASK      = 0x0000000000000000
+AER_CAP_HEADER    = 0x00000000000010a0
+OemErrorLogReport
+not report to os
+ras int[491] end
+
+
+
+HSM_LOG:
+[00:00:00.000][info] succeed to do thirdparty dfx_pabuk init
+[00:00:00.000][info] succeed to do thirdparty crypto_driver init
+
+
+0]mv TB[ 810]mv
+0>[1850]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+0>[1900]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+0>[1950]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+0>[2000]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+0>[2050]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+0>[2100]MHZ -> Vol TA[ 812]mv TB[ 810]mv
+0>[2150]MHZ -> Vol TA[ 825]mv TB[ 822]mv
+0>[2200]MHZ -> Vol TA[ 838]mv TB[ 835]mv
+0>[2250]MHZ -> Vol TA[ 851]mv TB[ 848]mv
+0>[2300]MHZ -> Vol TA[ 864]mv TB[ 861]mv
+0>[2350]MHZ -> Vol TA[ 877]mv TB[ 874]mv
+0>[2400]MHZ -> Vol TA[ 890]mv TB[ 887]mv
+0>[2450]MHZ -> Vol TA[ 903]mv TB[ 900]mv
+0>[2500]MHZ -> Vol TA[ 916]mv TB[ 913]mv
+0>[2550]MHZ -> Vol TA[ 929]mv TB[ 926]mv
+0>[2600]MHZ -> Vol TA[ 942]mv TB[ 939]mv
+0>[2650]MHZ -> Vol TA[ 955]mv TB[ 952]mv
+0>[2700]MHZ -> Vol TA[ 968]mv TB[ 965]mv
+0>[2750]MHZ -> Vol TA[ 986]mv TB[ 983]mv
+0>[2800]MHZ -> Vol TA[1005]mv TB[1002]mv
+0>[2850]MHZ -> Vol TA[1023]mv TB[1020]mv
+0>[2900]MHZ -> Vol TA[1042]mv TB[1039]mv
+0>[2950]MHZ -> Vol TA[1060]mv TB[1056]mv
+0>[3000]MHZ -> Vol TA[1078]mv TB[1074]mv
+0>[3050]MHZ -> Vol TA[1090]mv TB[1087]mv
+0>[3100]MHZ -> Vol TA[1103]mv TB[1100]mv
+0>Uncore VF curve:
+0>Uncore [   0]MHZ -> Vol [ 810]mv
+0>Uncore [ 100]MHZ -> Vol [ 810]mv
+0>Uncore [ 200]MHZ -> Vol [ 810]mv
+0>Uncore [ 300]MHZ -> Vol [ 810]mv
+0>Uncore [ 400]MHZ -> Vol [ 810]mv
+0>Uncore [ 500]MHZ -> Vol [ 912]mv
+0>Uncore [ 600]MHZ -> Vol [ 912]mv
+0>Uncore [ 700]MHZ -> Vol [ 912]mv
+0>Uncore [ 800]MHZ -> Vol [ 912]mv
+0>Uncore [ 900]MHZ -> Vol [ 912]mv
+0>Uncore [1000]MHZ -> Vol [ 912]mv
+0>Uncore [1100]MHZ -> Vol [ 912]mv
+0>Uncore [1200]MHZ -> Vol [ 912]mv
+0>Uncore [1300]MHZ -> Vol [ 912]mv
+0>Uncore [1400]MHZ -> Vol [ 912]mv
+0>Uncore [1500]MHZ -> Vol [ 912]mv
+0>Uncore [1600]MHZ -> Vol [ 912]mv
+0>Uncore [1700]MHZ -> Vol [ 912]mv
+0>Uncore [1800]MHZ -> Vol [ 912]mv
+0>Uncore [1900]MHZ -> Vol [ 912]mv
+0>Uncore [2000]MHZ -> Vol [ 912]mv
+0>Uncore [2100]MHZ -> Vol [ 920]mv
+0>Uncore [2200]MHZ -> Vol [ 929]mv
+0>Uncore [2300]MHZ -> Vol [ 937]mv
+0>Uncore [2400]MHZ -> Vol [ 946]mv
+0>Uncore [2500]MHZ -> Vol [ 955]mv
+0>Uncore [2600]MHZ -> Vol [ 972]mv
+0>Uncore [2700]MHZ -> Vol [ 990]mv
+0>Uncore [2800]MHZ -> Vol [1009]mv
+0>Uncore [2900]MHZ -> Vol [1029]mv
+0>Uncore [3000]MHZ -> Vol [1043]mv
+0>[TracePoint] type[  0] cmd[  1] data[  6]
+0>[TracePoint] type[  0] cmd[  1] data[  7]
+0>
+********Hello Huawei LiteOS********
+
+KpxxxxIPU Firmware Version : VX.X.X
+LiteOS Kernel Version : 5.7.0
+0>Run on ChipVersion[0] Socket[0] Die[0]
+0>build time : Jun 26 2025 22:00:00
+
+0>**********************************
+0>
+main core booting up...
+0>start set affinity
+0>
+mpidr = 0x81000000
+0>sram ecc state: 0x0, sram ecc cnt: 0x0
+0>[TracePoint] type[  0] cmd[  2] data[  1]
+0>[TracePoint] type[  0] cmd[  2] data[  2]
+0>LRDXSD_LOCK_OFFSET = 0x0
+0>LRDXSD_ERRIMSK_OFFSET = 0x0
+0>LRDXSD_DBG_OTIMSK_OFFSET = 0x0
+0>LRDXSD_DBG_OT_SET_OFFSET = 0xffffffff
+0>LRDXSD_DBG_EN_OFFSET = 0x1
+0>======tsensor params======
+0>  is_trimmed       : 1
+0>  underclocking_en : 1
+0>===========end============
+0>soc tsensor init done
+0>========vrd info from cpld========
+0>vrd_id | u64                | pmbus_en | avsbus_en | loop | pmbus_id | pmbus_addr | avs_sw | pmbus_sw | addr_9545 | domain_type | die_mask | reserved
+0>  00   | 0x0001000100002017 | 0x1      | 0x1       | 0x1  | 0x1      | 0x20       | 0x0    | 0x0      | 0x0       | 0x1         | 0x0100   | 0x0
+0>  01   | 0x000300030000201b | 0x1      | 0x1       | 0x2  | 0x1      | 0x20       | 0x0    | 0x0      | 0x0       | 0x3         | 0x0300   | 0x0
+0>  02   | 0x0000010500002b15 | 0x1      | 0x0       | 0x1  | 0x1      | 0x2b       | 0x0    | 0x0      | 0x0       | 0x5         | 0x0001   | 0x0
+0>  03   | 0x0002000100002027 | 0x1      | 0x1       | 0x1  | 0x2      | 0x20       | 0x0    | 0x0      | 0x0       | 0x1         | 0x0200   | 0x0
+0>  04   | 0x000300020000202b | 0x1      | 0x1       | 0x2  | 0x2      | 0x20       | 0x0    | 0x0      | 0x0       | 0x2         | 0x0300   | 0x0
+0>  05   | 0x0000020500002b25 | 0x1      | 0x0       | 0x1  | 0x2      | 0x2b       | 0x0    | 0x0      | 0x0       | 0x5         | 0x0002   | 0x0
+0>  06   | 0x0003000400002b29 | 0x1      | 0x0       | 0x2  | 0x2      | 0x2b       | 0x0    | 0x0      | 0x0       | 0x4         | 0x0300   | 0x0
+0>================end===============
+0>=============vrd info=============
+0>power domain num: 7
+0>power domain[00] id:0 | CORE_DVFS_TA       | PMBus NA | cap:0x3 | rail:0 | addr:0x20 | def_volt:1100 mV | min_volt: 750 mV | max_volt:1150 mV
+0>power domain[01] id:1 | DDR_VDD            | PMBus NA | cap:0x3 | rail:1 | addr:0x20 | def_volt: 765 mV | min_volt: 382 mV | max_volt: 880 mV
+0>power domain[02] id:4 | IO_DVDD_NA         | PMBus NA | cap:0x1 | rail:0 | addr:0x2b | def_volt: 800 mV | min_volt: 400 mV | max_volt: 920 mV
+0>power domain[03] id:2 | CORE_DVFS_TB       | PMBus NB | cap:0x3 | rail:0 | addr:0x20 | def_volt:1100 mV | min_volt: 750 mV | max_volt:1150 mV
+0>power domain[04] id:3 | UNCORE_DVFS        | PMBus NB | cap:0x3 | rail:1 | addr:0x20 | def_volt:1043 mV | min_volt: 750 mV | max_volt:1100 mV
+0>power domain[05] id:5 | IO_DVDD_NB         | PMBus NB | cap:0x1 | rail:0 | addr:0x2b | def_volt: 800 mV | min_volt: 400 mV | max_volt: 920 mV
+0>power domain[06] id:6 | DDR_VDDQ           | PMBus NB | cap:0x1 | rail:1 | addr:0x2b | def_volt:1100 mV | min_volt: 550 mV | max_volt:1265 mV
+0>================end===============
+0>pmbus[0] init done
+0>pmbus[1] init done
+0>power domain[0] CORE_DVFS_TA       | NA PMBus/AVSBus | rail:0 | addr:0x20 | def_volt:1100 mV | pmu:MP2882
+0>power domain[1] DDR_VDD            | NA PMBus/AVSBus | rail:1 | addr:0x20 | def_volt: 765 mV | pmu:MP2882
+0>power domain[4] IO_DVDD_NA         | NA PMBus        | rail:0 | addr:0x2b | def_volt: 800 mV | pmu:MP2882
+0>power domain[2] CORE_DVFS_TB       | NB PMBus/AVSBus | rail:0 | addr:0x20 | def_volt:1100 mV | pmu:MP2882
+0>power domain[3] UNCORE_DVFS        | NB PMBus/AVSBus | rail:1 | addr:0x20 | def_volt:1043 mV | pmu:MP2882
+0>power domain[5] IO_DVDD_NB         | NB PMBus        | rail:0 | addr:0x2b | def_volt: 800 mV | pmu:MP2882
+0>power domain[6] DDR_VDDQ           | NB PMBus        | rail:1 | addr:0x2b | def_volt:1100 mV | pmu:MP2882
+0>power domain[0] CORE_DVFS_TA       is transferred to AVSBus mode
+0>power domain[1] DDR_VDD            is transferred to AVSBus mode
+0>power domain[2] CORE_DVFS_TB       is transferred to AVSBus mode
+0>power domain[3] UNCORE_DVFS        is transferred to AVSBus mode
+0>avsbus resync success
+0>avsbus[0] init done
+0>avsbus resync success
+0>avsbus[1] init done
+0>============volt boot============
+0>power domain[0] volt =  947 mV
+0>power domain[1] volt =  765 mV
+0>power domain[4] volt =  800 mV
+0>power domain[2] volt =  945 mV
+0>power domain[3] volt = 1033 mV
+0>power domain[5] volt =  804 mV
+0>power domain[6] volt = 1105 mV
+0>===============end===============
+0>--w&h rd rail:0, 945, CORE_DVFS_TA
+0>--w&h rd rail:1, 765, CORE_DVFS_TA
+0>power domain[0] set volt --> 1103 mV success
+0>--w&h rd rail:0, 945, CORE_DVFS_TB
+0>--w&h rd rail:1, 1033, CORE_DVFS_TB
+0>power domain[2] set volt --> 1105 mV success
+0>power domain[3] set volt --> 1048 mV success
+0>============volt post============
+0>power domain[0] volt = 1103 mV
+0>power domain[1] volt =  765 mV
+0>power domain[4] volt =  802 mV
+0>power domain[2] volt = 1105 mV
+0>power domain[3] volt = 1048 mV
+0>power domain[5] volt =  804 mV
+0>power domain[6] volt = 1105 mV
+0>===============end===============
+0>Hboot1 Info RAW Dump: [0x91][0x00][0x00][0x14][0x01][0x00][0x01]
+0>PowerSensorSupport[1], Cali[5120], Loss[7200]
+0>Power Sensor Calibration Value[5120]!
+0>the power sensor : manu id = 2peak, die id = TPA626
+0>power sensor[0] init success
+0>die[0] its[0] init done
+0>die[0] its[1] init done
+0>die[0] its[2] init done
+0>die[0] its[3] init done
+0>die[0] its[4] init done
+0>die[0] its[5] init done
+0>die[0] its[6] init done
+0>die[0] its[7] init done
+0>die[0] its[8] init done
+0>die[0] its[9] init done
+0>die[1] its[0] init done
+0>die[1] its[1] init done
+0>die[1] its[2] init done
+0>die[1] its[3] init done
+0>die[1] its[4] init done
+0>die[1] its[5] init done
+0>die[1] its[6] init done
+0>die[1] its[7] init done
+0>die[1] its[8] init done
+0>die[1] its[9] init done
+0>Totem[0] Core Boot Vol [1103]mv
+0>Totem[0] Core Current Vol [1100]mv
+0>Totem[1] Core Boot Vol [1107]mv
+0>Totem[1] Core Current Vol [1100]mv
+0>NA 1620V190
+0>NB 1620V190
+0>GetCoreBaseFreq [2600000KHZ]
+0>GetCoreTurboFreq [2600000KHZ]
+0>GetCustomClusterNum [8]
+0>Ipu ACG Training Done!
+0>AP Last Time:[0.00.01.426]
+0>wait UEFI pll init...
+0>done
+0>acg trim start
+0>core trim freq:2000, avs:0 volt:810mv
+0>core trim freq:2000, avs:0 volt:810mv
+0>core trim freq:2050, avs:1 volt:810mv
+0>core trim freq:2050, avs:1 volt:810mv
+0>core trim freq:2100, avs:2 volt:812mv
+0>core trim freq:2100, avs:2 volt:810mv
+0>core trim freq:2150, avs:3 volt:825mv
+0>core trim freq:2150, avs:3 volt:822mv
+0>core trim freq:2200, avs:4 volt:838mv
+0>core trim freq:2200, avs:4 volt:835mv
+0>core trim freq:2250, avs:5 volt:851mv
+0>core trim freq:2250, avs:5 volt:848mv
+0>core trim freq:2300, avs:6 volt:864mv
+0>core trim freq:2300, avs:6 volt:861mv
+0>core trim freq:2350, avs:7 volt:877mv
+0>core trim freq:2350, avs:7 volt:874mv
+0>core trim freq:2400, avs:8 volt:890mv
+0>core trim freq:2400, avs:8 volt:887mv
+0>core trim freq:2450, avs:9 volt:903mv
+0>core trim freq:2450, avs:9 volt:900mv
+0>core trim freq:2500, avs:10 volt:916mv
+0>core trim freq:2500, avs:10 volt:913mv
+0>core trim freq:2550, avs:11 volt:929mv
+0>core trim freq:2550, avs:11 volt:926mv
+0>core trim freq:2600, avs:12 volt:942mv
+0>core trim freq:2600, avs:12 volt:939mv
+0>core trim freq:2650, avs:13 volt:955mv
+0>core trim freq:2650, avs:13 volt:952mv
+0>core trim freq:2700, avs:14 volt:968mv
+0>core trim freq:2700, avs:14 volt:965mv
+0>core trim freq:2750, avs:15 volt:986mv
+0>core trim freq:2750, avs:15 volt:983mv
+0>core trim freq:2800, avs:16 volt:1005mv
+0>core trim freq:2800, avs:16 volt:1002mv
+0>core trim freq:2850, avs:17 volt:1023mv
+0>core trim freq:2850, avs:17 volt:1020mv
+0>core trim freq:2900, avs:18 volt:1042mv
+0>core trim freq:2900, avs:18 volt:1039mv
+0>core trim freq:2950, avs:19 volt:1060mv
+0>core trim freq:2950, avs:19 volt:1056mv
+0>core trim freq:3000, avs:20 volt:1078mv
+0>core trim freq:3000, avs:20 volt:1074mv
+0>core trim freq:3050, avs:21 volt:1090mv
+0>core trim freq:3050, avs:21 volt:1087mv
+0>core trim freq:3100, avs:22 volt:1100mv
+0>core trim freq:3100, avs:22 volt:1100mv
+0>acg trim end
+0>LDO disabled
+0>[TracePoint] type[  0] cmd[  2] data[  3]
+0>Interrupt 423 register OK
+0>Interrupt 430 register OK
+0>[TracePoint] type[  0] cmd[  2] data[  4]
+0>
+0>cpu 0 entering scheduler
+0>[TracePoint] type[  0] cmd[  3] data[  1]
+0>add your ipu app init here!
+0>IpuInterfaceTaskStart Entry ...
+0>ipu interface task wait parameters from uefi...
+0>thermal soc task enabled
+0>AP Last Time:[0.00.05.691]
+0>ThermalDimmStart Entry ...
+0>wait ddr init done...
+0>power task start...
+0>[TracePoint] type[  0] cmd[  3] data[  2]
+0>ufs task wait parameters from uefi...
+0>AmuTaskStart Entry ... 
+0>amu task wait parameters from uefi...
+0>ThermalSiwStart Entry ...
+0>ThermalSiwTask idle...
+0>DemtTaskStart Entry ...
+0>[TracePoint] type[  0] cmd[  3] data[  3]
+0>HiBoostTaskStart Entry ...
+0>HiBoost task enabled
+0>Waiting for UEFI parameters...
+0>[TracePoint] type[  0] cmd[  3] data[  4]
+0>AgeTaskStart Entry ...
+0>demt task wait parameters from uefi...
+0>age task wait parameters from uefi...
+0>[TracePoint] type[  0] cmd[  3] data[  5]
+0>uefi parameters ready!
+0>UFSProfile[0]
+0>thermal soc task restore underclocking_en=1
+0>ppu alert temp div init done
+0>PowerPolicy[2] BenchMarkSelection[0]
+0>ufs task parameters from uefi ready
+0>uncore domain[0] freq:2900
+0>uncore domain[1] freq:2900
+0>nimbus uncore domain[0] freq_div:4 all_sioe_freq:3000
+0>nimbus uncore domain[1] freq_div:4 all_sioe_freq:3000
+0>======sioe status======
+0>TA_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TA_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TA_SIOE2: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TA_SIOE3: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TA_SIOE5: ASYNC, SDR, LOW_PLL, is_cdr=0
+0>TA_SIOE6: ASYNC, SDR, LOW_PLL, is_cdr=0
+0>TB_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TB_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TB_SIOE2: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TB_SIOE3: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TB_SIOE5: ASYNC, SDR, LOW_PLL, is_cdr=0
+0>TB_SIOE6: ASYNC, SDR, LOW_PLL, is_cdr=0
+0>NA_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>NA_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>NA_SIOE2: ASYNC, SDR, LOW_PLL, is_cdr=0
+0>NB_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>NB_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>NB_SIOE2: ASYNC, SDR, LOW_PLL, is_cdr=0
+0>==========end==========
+0>sioe init done
+0>ufs task enabled
+0>--> UFS profile[0]
+0>ipu interface task wait ddr init done from uefi...
+0>UEFI parameters ready
+0>UncoreMaxFreq Set to [2900 MHZ]
+0>get TDP from efuse success, value = 313500mw
+0>target power set to [313500]mw, brd:[313500]
+0>demt task parameters from uefi ready
+0>age task parameters from uefi ready
+0>age task enabled
+0>uefi ddr init finish!
+0>ipu interface task wait uefi end done from uefi...
+0>ddr init done, start thermal dimm task
+0>======dimm status======
+0>  chl[0] dimm0 2, dimm1 2
+0>  chl[1] dimm0 2, dimm1 2
+0>  chl[2] dimm0 2, dimm1 2
+0>  chl[3] dimm0 2, dimm1 2
+0>  chl[4] dimm0 2, dimm1 2
+0>  chl[5] dimm0 2, dimm1 2
+0>  chl[6] dimm0 2, dimm1 2
+0>  chl[7] dimm0 2, dimm1 2
+0>==========end==========
+0>chl[0] registered, dimm mask = 0x3
+0>chl[1] registered, dimm mask = 0x3
+0>chl[2] registered, dimm mask = 0x3
+0>chl[3] registered, dimm mask = 0x3
+0>chl[4] registered, dimm mask = 0x3
+0>chl[5] registered, dimm mask = 0x3
+0>chl[6] registered, dimm mask = 0x3
+0>chl[7] registered, dimm mask = 0x3
+0>=====dimm temp params=====
+0>  temp_threshold      : temp_mid:85,85 | temp_hi:95 | temp_cri:100
+0>  is_thermal_thro_en  : 1
+0>  is_aref_rate_auto   : 1
+0>===========end============
+0>chl[0] max_temp 39'C, aref_rate 0x5 --> 0x4
+0>chl[1] max_temp 39'C, aref_rate 0x5 --> 0x4
+0>chl[2] max_temp 39'C, aref_rate 0x5 --> 0x4
+0>chl[3] max_temp 39'C, aref_rate 0x5 --> 0x4
+0>chl[4] max_temp 39'C, aref_rate 0x5 --> 0x4
+0>chl[5] max_temp 39'C, aref_rate 0x5 --> 0x4
+0>chl[6] max_temp 39'C, aref_rate 0x5 --> 0x4
+0>chl[7] max_temp 39'C, aref_rate 0x5 --> 0x4
+0>uefi end finish!
+0>ipu interface task exit!
+0>amu task parameters from uefi ready
+TA[ 810]mv TB[ 810]mv
+1>[1850]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1900]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1950]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[2000]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[2050]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[2100]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[2150]MHZ -> Vol TA[ 818]mv TB[ 817]mv
+1>[2200]MHZ -> Vol TA[ 831]mv TB[ 830]mv
+1>[2250]MHZ -> Vol TA[ 844]mv TB[ 842]mv
+1>[2300]MHZ -> Vol TA[ 856]mv TB[ 855]mv
+1>[2350]MHZ -> Vol TA[ 869]mv TB[ 868]mv
+1>[2400]MHZ -> Vol TA[ 882]mv TB[ 880]mv
+1>[2450]MHZ -> Vol TA[ 894]mv TB[ 893]mv
+1>[2500]MHZ -> Vol TA[ 907]mv TB[ 905]mv
+1>[2550]MHZ -> Vol TA[ 920]mv TB[ 918]mv
+1>[2600]MHZ -> Vol TA[ 932]mv TB[ 930]mv
+1>[2650]MHZ -> Vol TA[ 945]mv TB[ 943]mv
+1>[2700]MHZ -> Vol TA[ 958]mv TB[ 956]mv
+1>[2750]MHZ -> Vol TA[ 976]mv TB[ 974]mv
+1>[2800]MHZ -> Vol TA[ 994]mv TB[ 992]mv
+1>[2850]MHZ -> Vol TA[1012]mv TB[1010]mv
+1>[2900]MHZ -> Vol TA[1031]mv TB[1028]mv
+1>[2950]MHZ -> Vol TA[1048]mv TB[1045]mv
+1>[3000]MHZ -> Vol TA[1065]mv TB[1063]mv
+1>[3050]MHZ -> Vol TA[1078]mv TB[1076]mv
+1>[3100]MHZ -> Vol TA[1092]mv TB[1090]mv
+1>Uncore VF curve:
+1>Uncore [   0]MHZ -> Vol [ 810]mv
+1>Uncore [ 100]MHZ -> Vol [ 810]mv
+1>Uncore [ 200]MHZ -> Vol [ 810]mv
+1>Uncore [ 300]MHZ -> Vol [ 810]mv
+1>Uncore [ 400]MHZ -> Vol [ 810]mv
+1>Uncore [ 500]MHZ -> Vol [ 909]mv
+1>Uncore [ 600]MHZ -> Vol [ 909]mv
+1>Uncore [ 700]MHZ -> Vol [ 909]mv
+1>Uncore [ 800]MHZ -> Vol [ 909]mv
+1>Uncore [ 900]MHZ -> Vol [ 909]mv
+1>Uncore [1000]MHZ -> Vol [ 909]mv
+1>Uncore [1100]MHZ -> Vol [ 909]mv
+1>Uncore [1200]MHZ -> Vol [ 909]mv
+1>Uncore [1300]MHZ -> Vol [ 909]mv
+1>Uncore [1400]MHZ -> Vol [ 909]mv
+1>Uncore [1500]MHZ -> Vol [ 909]mv
+1>Uncore [1600]MHZ -> Vol [ 909]mv
+1>Uncore [1700]MHZ -> Vol [ 909]mv
+1>Uncore [1800]MHZ -> Vol [ 909]mv
+1>Uncore [1900]MHZ -> Vol [ 909]mv
+1>Uncore [2000]MHZ -> Vol [ 909]mv
+1>Uncore [2100]MHZ -> Vol [ 916]mv
+1>Uncore [2200]MHZ -> Vol [ 924]mv
+1>Uncore [2300]MHZ -> Vol [ 932]mv
+1>Uncore [2400]MHZ -> Vol [ 940]mv
+1>Uncore [2500]MHZ -> Vol [ 948]mv
+1>Uncore [2600]MHZ -> Vol [ 965]mv
+1>Uncore [2700]MHZ -> Vol [ 983]mv
+1>Uncore [2800]MHZ -> Vol [1001]mv
+1>Uncore [2900]MHZ -> Vol [1019]mv
+1>Uncore [3000]MHZ -> Vol [1033]mv
+1>[TracePoint] type[  0] cmd[  1] data[  6]
+1>[TracePoint] type[  0] cmd[  1] data[  7]
+1>
+********Hello Huawei LiteOS********
+
+KpxxxxIPU Firmware Version : VX.X.X
+LiteOS Kernel Version : 5.7.0
+1>Run on ChipVersion[0] Socket[1] Die[0]
+1>build time : Jun 26 2025 22:00:00
+
+1>**********************************
+1>
+main core booting up...
+1>start set affinity
+1>
+mpidr = 0x81040000
+1>sram ecc state: 0x0, sram ecc cnt: 0x0
+1>[TracePoint] type[  0] cmd[  2] data[  1]
+1>[TracePoint] type[  0] cmd[  2] data[  2]
+1>LRDXSD_LOCK_OFFSET = 0x0
+1>LRDXSD_ERRIMSK_OFFSET = 0x0
+1>LRDXSD_DBG_OTIMSK_OFFSET = 0x0
+1>LRDXSD_DBG_OT_SET_OFFSET = 0xffffffff
+1>LRDXSD_DBG_EN_OFFSET = 0x1
+1>======tsensor params======
+1>  is_trimmed       : 1
+1>  underclocking_en : 1
+1>===========end============
+1>soc tsensor init done
+1>========vrd info from cpld========
+1>vrd_id | u64                | pmbus_en | avsbus_en | loop | pmbus_id | pmbus_addr | avs_sw | pmbus_sw | addr_9545 | domain_type | die_mask | reserved
+1>  00   | 0x0001000100002017 | 0x1      | 0x1       | 0x1  | 0x1      | 0x20       | 0x0    | 0x0      | 0x0       | 0x1         | 0x0100   | 0x0
+1>  01   | 0x000300030000201b | 0x1      | 0x1       | 0x2  | 0x1      | 0x20       | 0x0    | 0x0      | 0x0       | 0x3         | 0x0300   | 0x0
+1>  02   | 0x0000010500002b15 | 0x1      | 0x0       | 0x1  | 0x1      | 0x2b       | 0x0    | 0x0      | 0x0       | 0x5         | 0x0001   | 0x0
+1>  03   | 0x0002000100002027 | 0x1      | 0x1       | 0x1  | 0x2      | 0x20       | 0x0    | 0x0      | 0x0       | 0x1         | 0x0200   | 0x0
+1>  04   | 0x000300020000202b | 0x1      | 0x1       | 0x2  | 0x2      | 0x20       | 0x0    | 0x0      | 0x0       | 0x2         | 0x0300   | 0x0
+1>  05   | 0x0000020500002b25 | 0x1      | 0x0       | 0x1  | 0x2      | 0x2b       | 0x0    | 0x0      | 0x0       | 0x5         | 0x0002   | 0x0
+1>  06   | 0x0003000400002b29 | 0x1      | 0x0       | 0x2  | 0x2      | 0x2b       | 0x0    | 0x0      | 0x0       | 0x4         | 0x0300   | 0x0
+1>================end===============
+1>=============vrd info=============
+1>power domain num: 7
+1>power domain[00] id:0 | CORE_DVFS_TA       | PMBus NA | cap:0x3 | rail:0 | addr:0x20 | def_volt:1100 mV | min_volt: 750 mV | max_volt:1150 mV
+1>power domain[01] id:1 | DDR_VDD            | PMBus NA | cap:0x3 | rail:1 | addr:0x20 | def_volt: 765 mV | min_volt: 382 mV | max_volt: 880 mV
+1>power domain[02] id:4 | IO_DVDD_NA         | PMBus NA | cap:0x1 | rail:0 | addr:0x2b | def_volt: 800 mV | min_volt: 400 mV | max_volt: 920 mV
+1>power domain[03] id:2 | CORE_DVFS_TB       | PMBus NB | cap:0x3 | rail:0 | addr:0x20 | def_volt:1100 mV | min_volt: 750 mV | max_volt:1150 mV
+1>power domain[04] id:3 | UNCORE_DVFS        | PMBus NB | cap:0x3 | rail:1 | addr:0x20 | def_volt:1033 mV | min_volt: 750 mV | max_volt:1100 mV
+1>power domain[05] id:5 | IO_DVDD_NB         | PMBus NB | cap:0x1 | rail:0 | addr:0x2b | def_volt: 800 mV | min_volt: 400 mV | max_volt: 920 mV
+1>power domain[06] id:6 | DDR_VDDQ           | PMBus NB | cap:0x1 | rail:1 | addr:0x2b | def_volt:1100 mV | min_volt: 550 mV | max_volt:1265 mV
+1>================end===============
+1>pmbus[0] init done
+1>pmbus[1] init done
+1>power domain[0] CORE_DVFS_TA       | NA PMBus/AVSBus | rail:0 | addr:0x20 | def_volt:1100 mV | pmu:MP2882
+1>power domain[1] DDR_VDD            | NA PMBus/AVSBus | rail:1 | addr:0x20 | def_volt: 765 mV | pmu:MP2882
+1>power domain[4] IO_DVDD_NA         | NA PMBus        | rail:0 | addr:0x2b | def_volt: 800 mV | pmu:MP2882
+1>power domain[2] CORE_DVFS_TB       | NB PMBus/AVSBus | rail:0 | addr:0x20 | def_volt:1100 mV | pmu:MP2882
+1>power domain[3] UNCORE_DVFS        | NB PMBus/AVSBus | rail:1 | addr:0x20 | def_volt:1033 mV | pmu:MP2882
+1>power domain[5] IO_DVDD_NB         | NB PMBus        | rail:0 | addr:0x2b | def_volt: 800 mV | pmu:MP2882
+1>power domain[6] DDR_VDDQ           | NB PMBus        | rail:1 | addr:0x2b | def_volt:1100 mV | pmu:MP2882
+1>power domain[0] CORE_DVFS_TA       is transferred to AVSBus mode
+1>power domain[1] DDR_VDD            is transferred to AVSBus mode
+1>power domain[2] CORE_DVFS_TB       is transferred to AVSBus mode
+1>power domain[3] UNCORE_DVFS        is transferred to AVSBus mode
+1>avsbus resync success
+1>avsbus[0] init done
+1>avsbus resync success
+1>avsbus[1] init done
+1>============volt boot============
+1>power domain[0] volt =  935 mV
+1>power domain[1] volt =  767 mV
+1>power domain[4] volt =  802 mV
+1>power domain[2] volt =  931 mV
+1>power domain[3] volt =  816 mV
+1>power domain[5] volt =  802 mV
+1>power domain[6] volt = 1101 mV
+1>===============end===============
+1>--w&h rd rail:0, 935, CORE_DVFS_TA
+1>--w&h rd rail:1, 765, CORE_DVFS_TA
+1>power domain[0] set volt --> 1103 mV success
+1>--w&h rd rail:0, 933, CORE_DVFS_TB
+1>--w&h rd rail:1, 816, CORE_DVFS_TB
+1>power domain[2] set volt --> 1103 mV success
+1>power domain[3] set volt --> 1037 mV success
+1>============volt post============
+1>power domain[0] volt = 1105 mV
+1>power domain[1] volt =  767 mV
+1>power domain[4] volt =  802 mV
+1>power domain[2] volt = 1101 mV
+1>power domain[3] volt = 1037 mV
+1>power domain[5] volt =  802 mV
+1>power domain[6] volt = 1099 mV
+1>===============end===============
+1>Hboot1 Info RAW Dump: [0x01][0x00][0x00][0x14][0x01][0x00][0x01]
+1>PowerSensorSupport[1], Cali[5120], Loss[0]
+1>Power Sensor Calibration Value[5120]!
+1>the power sensor : manu id = 2peak, die id = TPA626
+1>power sensor[0] init success
+1>die[0] its[0] init done
+1>die[0] its[1] init done
+1>die[0] its[2] init done
+1>die[0] its[3] init done
+1>die[0] its[4] init done
+1>die[0] its[5] init done
+1>die[0] its[6] init done
+1>die[0] its[7] init done
+1>die[0] its[8] init done
+1>die[0] its[9] init done
+1>die[1] its[0] init done
+1>die[1] its[1] init done
+1>die[1] its[2] init done
+1>die[1] its[3] init done
+1>die[1] its[4] init done
+1>die[1] its[5] init done
+1>die[1] its[6] init done
+1>die[1] its[7] init done
+1>die[1] its[8] init done
+1>die[1] its[9] init done
+1>Totem[0] Core Boot Vol [1105]mv
+1>Totem[0] Core Current Vol [1100]mv
+1>Totem[1] Core Boot Vol [1103]mv
+1>Totem[1] Core Current Vol [1100]mv
+1>NA 1620V190
+1>NB 1620V190
+1>GetCoreBaseFreq [2600000KHZ]
+1>GetCoreTurboFreq [2600000KHZ]
+1>GetCustomClusterNum [8]
+1>Ipu ACG Training Done!
+1>AP Last Time:[0.00.01.322]
+1>wait UEFI pll init...
+1>done
+1>acg trim start
+1>core trim freq:2000, avs:0 volt:810mv
+1>core trim freq:2000, avs:0 volt:810mv
+1>core trim freq:2050, avs:1 volt:810mv
+1>core trim freq:2050, avs:1 volt:810mv
+1>core trim freq:2100, avs:2 volt:810mv
+1>core trim freq:2100, avs:2 volt:810mv
+1>core trim freq:2150, avs:3 volt:818mv
+1>core trim freq:2150, avs:3 volt:817mv
+1>core trim freq:2200, avs:4 volt:831mv
+1>core trim freq:2200, avs:4 volt:830mv
+1>core trim freq:2250, avs:5 volt:844mv
+1>core trim freq:2250, avs:5 volt:842mv
+1>core trim freq:2300, avs:6 volt:856mv
+1>core trim freq:2300, avs:6 volt:855mv
+1>core trim freq:2350, avs:7 volt:869mv
+1>core trim freq:2350, avs:7 volt:868mv
+1>core trim freq:2400, avs:8 volt:882mv
+1>core trim freq:2400, avs:8 volt:880mv
+1>core trim freq:2450, avs:9 volt:894mv
+1>core trim freq:2450, avs:9 volt:893mv
+1>core trim freq:2500, avs:10 volt:907mv
+1>core trim freq:2500, avs:10 volt:905mv
+1>core trim freq:2550, avs:11 volt:920mv
+1>core trim freq:2550, avs:11 volt:918mv
+1>core trim freq:2600, avs:12 volt:932mv
+1>core trim freq:2600, avs:12 volt:930mv
+1>core trim freq:2650, avs:13 volt:945mv
+1>core trim freq:2650, avs:13 volt:943mv
+1>core trim freq:2700, avs:14 volt:958mv
+1>core trim freq:2700, avs:14 volt:956mv
+1>core trim freq:2750, avs:15 volt:976mv
+1>core trim freq:2750, avs:15 volt:974mv
+1>core trim freq:2800, avs:16 volt:994mv
+1>core trim freq:2800, avs:16 volt:992mv
+1>core trim freq:2850, avs:17 volt:1012mv
+1>core trim freq:2850, avs:17 volt:1010mv
+1>core trim freq:2900, avs:18 volt:1031mv
+1>core trim freq:2900, avs:18 volt:1028mv
+1>core trim freq:2950, avs:19 volt:1048mv
+1>core trim freq:2950, avs:19 volt:1045mv
+1>core trim freq:3000, avs:20 volt:1065mv
+1>core trim freq:3000, avs:20 volt:1063mv
+1>core trim freq:3050, avs:21 volt:1078mv
+1>core trim freq:3050, avs:21 volt:1076mv
+1>core trim freq:3100, avs:22 volt:1092mv
+1>core trim freq:3100, avs:22 volt:1090mv
+1>acg trim end
+1>LDO disabled
+1>[TracePoint] type[  0] cmd[  2] data[  3]
+1>Interrupt 423 register OK
+1>Interrupt 430 register OK
+1>[TracePoint] type[  0] cmd[  2] data[  4]
+1>
+1>cpu 0 entering scheduler
+1>[TracePoint] type[  0] cmd[  3] data[  1]
+1>add your ipu app init here!
+1>IpuInterfaceTaskStart Entry ...
+1>ipu interface task wait parameters from uefi...
+1>thermal soc task enabled
+1>AP Last Time:[0.00.05.786]
+1>ThermalDimmStart Entry ...
+1>wait ddr init done...
+1>power task start...
+1>[TracePoint] type[  0] cmd[  3] data[  2]
+1>ufs task wait parameters from uefi...
+1>AmuTaskStart Entry ... 
+1>amu task wait parameters from uefi...
+1>ThermalSiwStart Entry ...
+1>ThermalSiwTask idle...
+1>DemtTaskStart Entry ...
+1>demt task wait parameters from uefi...
+1>[TracePoint] type[  0] cmd[  3] data[  3]
+1>HiBoostTaskStart Entry ...
+1>HiBoost task enabled
+1>Waiting for UEFI parameters...
+1>[TracePoint] type[  0] cmd[  3] data[  4]
+1>AgeTaskStart Entry ...
+1>[TracePoint] type[  0] cmd[  3] data[  5]
+1>age task wait parameters from uefi...
+1>uefi parameters ready!
+1>UFSProfile[0]
+1>thermal soc task restore underclocking_en=1
+1>ppu alert temp div init done
+1>PowerPolicy[2] BenchMarkSelection[0]
+1>ufs task parameters from uefi ready
+1>uncore domain[0] freq:2900
+1>uncore domain[1] freq:2900
+1>nimbus uncore domain[0] freq_div:4 all_sioe_freq:3000
+1>nimbus uncore domain[1] freq_div:4 all_sioe_freq:3000
+1>======sioe status======
+1>TA_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TA_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TA_SIOE2: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TA_SIOE3: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TA_SIOE5: ASYNC, SDR, LOW_PLL, is_cdr=0
+1>TA_SIOE6: ASYNC, SDR, LOW_PLL, is_cdr=0
+1>TB_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TB_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TB_SIOE2: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TB_SIOE3: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TB_SIOE5: ASYNC, SDR, LOW_PLL, is_cdr=0
+1>TB_SIOE6: ASYNC, SDR, LOW_PLL, is_cdr=0
+1>NA_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>NA_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>NA_SIOE2: ASYNC, SDR, LOW_PLL, is_cdr=0
+1>NB_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>NB_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>NB_SIOE2: ASYNC, SDR, LOW_PLL, is_cdr=0
+1>==========end==========
+1>sioe init done
+1>ufs task enabled
+1>--> UFS profile[0]
+1>ipu interface task wait ddr init done from uefi...
+1>UEFI parameters ready
+1>UncoreMaxFreq Set to [2900 MHZ]
+1>get TDP from efuse success, value = 313500mw
+1>target power set to [313500]mw, brd:[313500]
+1>demt task parameters from uefi ready
+1>age task parameters from uefi ready
+1>age task enabled
+1>uefi ddr init finish!
+1>ipu interface task wait uefi end done from uefi...
+1>ddr init done, start thermal dimm task
+1>======dimm status======
+1>  chl[0] dimm0 2, dimm1 2
+1>  chl[1] dimm0 2, dimm1 2
+1>  chl[2] dimm0 2, dimm1 2
+1>  chl[3] dimm0 2, dimm1 2
+1>  chl[4] dimm0 2, dimm1 2
+1>  chl[5] dimm0 2, dimm1 2
+1>  chl[6] dimm0 2, dimm1 2
+1>  chl[7] dimm0 2, dimm1 2
+1>==========end==========
+1>chl[0] registered, dimm mask = 0x3
+1>chl[1] registered, dimm mask = 0x3
+1>chl[2] registered, dimm mask = 0x3
+1>chl[3] registered, dimm mask = 0x3
+1>chl[4] registered, dimm mask = 0x3
+1>chl[5] registered, dimm mask = 0x3
+1>chl[6] registered, dimm mask = 0x3
+1>chl[7] registered, dimm mask = 0x3
+1>=====dimm temp params=====
+1>  temp_threshold      : temp_mid:85,85 | temp_hi:95 | temp_cri:100
+1>  is_thermal_thro_en  : 1
+1>  is_aref_rate_auto   : 1
+1>===========end============
+1>chl[0] max_temp 37'C, aref_rate 0x5 --> 0x4
+1>chl[1] max_temp 37'C, aref_rate 0x5 --> 0x4
+1>chl[2] max_temp 37'C, aref_rate 0x5 --> 0x4
+1>chl[3] max_temp 37'C, aref_rate 0x5 --> 0x4
+1>chl[4] max_temp 37'C, aref_rate 0x5 --> 0x4
+1>chl[5] max_temp 37'C, aref_rate 0x5 --> 0x4
+1>chl[6] max_temp 37'C, aref_rate 0x5 --> 0x4
+1>chl[7] max_temp 37'C, aref_rate 0x5 --> 0x4
+1>uefi end finish!
+1>ipu interface task exit!
+1>amu task parameters from uefi ready
+
+
+HSM_LOG:
+[00:00:00.010][info] os_mem_system_init default pool done
+[00:00:00.016][info] succeed to do thirdparty otpc_pabuk init
+[00:00
+
+
+
+HSM_LOG:
+:00.017][info] succeed to do thirdparty boot_profile_driver init
+[00:00:00.017][info] succeed to do thirdparty measure_value_ma
+
+
+
+HSM_LOG:
+nage_driver init
+[00:00:00.018][info] succeed to do thirdparty period_driver init
+[00:00:00.018][info]  start loading internal
+
+
+
+HSM_LOG:
+ task ...
+[00:00:00.018][info]  task name is ccm_task
+[00:00:00.019][info]  hm_dynamic_loadelf successfully!
+[00:00:00.019][i
+
+
+
+HSM_LOG:
+nfo] internal task[1] task_name=ccm_task load successfully
+[00:00:00.020][info]  task name is upgrade_task
+[00:00:00.020][info
+
+
+
+HSM_LOG:
+]  hm_dynamic_loadelf successfully!
+[00:00:00.021][info] internal task[2] task_name=upgrade_task load successfully
+[00:00:00.0
+
+
+
+HSM_LOG:
+22][info]  task name is hes_task
+[00:00:00.022][info]  hm_dynamic_loadelf successfully!
+[00:00:00.023][info] internal task[3] 
+
+
+
+HSM_LOG:
+task_name=hes_task load successfully
+[00:00:00.024][info] created task ccm_task success!
+[00:00:00.025][info] created task upg
+
+
+
+HSM_LOG:
+rade_task success!
+[00:00:00.026][info] created task hes_task success!
+[00:00:00.026][info] Init start.
+[1970-01-01 00:00:00.
+
+
+
+HSM_LOG:
+027][HSM][INFO][54] Platform init 0x20250523 0x4e.
+[1970-01-01 00:00:00.027][HSM][INFO][197] ccm start.
+[1970-01-01 00:00:00
+
+
+
+HSM_LOG:
+.028][HSM][INFO][86] upgrade task init success.
+[1970-01-01 00:00:00.028][HSM][INFO][95] upgrade recv cmd, 0x181.
+[1970-01-0
+
+
+
+HSM_LOG:
+1 00:00:00.029][HSM][INFO][103] upgrade res, 0x3a5aa5a3.
+[1970-01-01 00:00:00.030][HSM][INFO][75] hes tee_task_entry.
+[1970-
+
+
+
+HSM_LOG:
+01-01 00:00:00.553][HSM][INFO][44] hes init success.
+[00:00:00.553][info] Init over.
+[1970-01-01 00:00:27.852][HSM][INFO][281
+
+
+
+HSM_LOG:
+] -------------11------------
+[00:00:00.000][info] succeed to do thirdparty dfx_pabuk init
+[00:00:00.000][info] succeed to do
+
+
+
+HSM_LOG:
+ thirdparty crypto_driver init
+[00:00:00.010][info] os_mem_system_init default pool done
+[00:00:00.016][info] succeed to do th
+
+
+
+HSM_LOG:
+irdparty otpc_pabuk init
+[00:00:00.017][info] succeed to do thirdparty boot_profile_driver init
+[00:00:00.017][info] succeed t
+
+
+
+HSM_LOG:
+o do thirdparty measure_value_manage_driver init
+[00:00:00.018][info] succeed to do thirdparty period_driver init
+[00:00:00.01
+
+0>amu task activated
+0>BootCore: Skt[0] Totem[3] Cluster[0] Core[0]!
+1>amu task activated
+1>BootCore: Skt[0] Totem[3] Cluster[0] Core[0]!
+
+
+HSM_LOG:
+8][info]  start loading internal task ...
+[00:00:00.018][info]  task name is ccm_task
+[00:00:00.019][info]  hm_dynamic_loadelf
+
+
+
+HSM_LOG:
+ successfully!
+[00:00:00.019][info] internal task[1] task_name=ccm_task load successfully
+[00:00:00.020][info]  task name is u
+
+
+
+HSM_LOG:
+pgrade_task
+[00:00:00.020][info]  hm_dynamic_loadelf successfully!
+[00:00:00.021][info] internal task[2] task_name=upgrade_tas
+
+
+
+HSM_LOG:
+k load successfully
+[00:00:00.022][info]  task name is hes_task
+[00:00:00.022][info]  hm_dynamic_loadelf successfully!
+[00:00
+
+
+
+HSM_LOG:
+:00.023][info] internal task[3] task_name=hes_task load successfully
+[00:00:00.024][info] created task ccm_task success!
+[00:0
+
+
+
+HSM_LOG:
+0:00.025][info] created task upgrade_task success!
+[00:00:00.026][info] created task hes_task success!
+[00:00:00.026][info] In
+
+
+
+HSM_LOG:
+it start.
+[1970-01-01 00:00:00.027][HSM][INFO][54] Platform init 0x20250523 0x4e.
+[1970-01-01 00:00:00.027][HSM][INFO][197] c
+
+
+
+HSM_LOG:
+cm start.
+[1970-01-01 00:00:00.028][HSM][INFO][86] upgrade task init success.
+[1970-01-01 00:00:00.028][HSM][INFO][95] upgra
+
+
+
+HSM_LOG:
+de recv cmd, 0x181.
+[1970-01-01 00:00:00.029][HSM][INFO][103] upgrade res, 0x3a5aa5a3.
+[1970-01-01 00:00:00.030][HSM][INFO][
+
+
+
+HSM_LOG:
+75] hes tee_task_entry.
+[1970-01-01 00:00:00.555][HSM][INFO][44] hes init success.
+[00:00:00.555][info] Init over.
+[1970-01
+
+
+
+HSM_LOG:
+-01 00:00:26.608][HSM][INFO][281] -------------12------------
+
+
+[0.06.54.285]IpmiCmdReportPcieMMIO start
+[0.07.04.643]IpmiCmdReportPcieMMIO end
+
+********Hello Huawei LiteOS********
+
+KpxxxxIMU Firmware Version : VX.X.X
+LiteOS Kernel Version : 5.7.0
+Run on ChipVersion[0] Socket[0] Die[2]
+build time : Jun 26 2025 22:00:00
+
+**********************************
+
+main core booting up...
+start set affinity
+
+mpidr = 0x81020000
+sram ecc state: 0x0, sram ecc cnt: 0x0
+[0.00.00.033]skt 0 begins init all serdes.
+BoardInfo->SocketNum 2.
+BoardInfo->SocketId 0.
+BoardInfo->InfoVersion 5.
+BoardInfo->NASerdesSceneMode 0.
+BoardInfo->NBSerdesSceneMode 3.
+BoardInfo->HccsTopologyType 0.
+BoardInfo->BoardId 0.
+ChipVersionIs920BPro: 0.
+BoardInfo Skt 0, SerdesUseMode: 1 2 5 1 1 1 1  1 1 1 4 4 1 1 
+BoardInfo Skt 1, SerdesUseMode: 1 1 1 1 1 1 1  1 1 1 4 4 1 1 
+BoardInfo Skt 0, SerdesRxPolarityReverse: 0 0 0 0 0 0 0  0 0 0 0 0 0 0 
+BoardInfo Skt 1, SerdesRxPolarityReverse: 0 0 0 0 0 0 0  0 0 0 0 0 0 0 
+BoardInfo Skt 0, SerdesTxPolarityReverse: 0 0 0 0 0 0 0  0 0 0 0 0 0 0 
+BoardInfo Skt 1, SerdesTxPolarityReverse: 0 0 0 0 0 0 0  0 0 0 0 0 0 0 
+serdessdk version: 2.0_5.0_20241203_imu
+chip_id 0, die 0, ind 0, usemode 1 begin serdes-init.
+chip_id 0, die 0, ind 1, usemode 2 begin serdes-init.
+chip_id 0, die 2, ind 0, usemode 1 begin serdes-init.
+chip_id 0, die 2, ind 1, usemode 1 begin serdes-init.
+chip serdes init status:0x0.
+[0.00.00.344]skt 0 ends init all serdes.
+link[4] freq_type:1 | peer_chip_type:1 | peer_chip_id:1 | peer_link_id:5
+link[5] freq_type:1 | peer_chip_type:1 | peer_chip_id:1 | peer_link_id:4
+register kp920b hccs done
+chip_id 0, die 2, ind 4, usemode 4 begin serdes-init.
+chip_id 0, die 2, ind 3, usemode 4 begin serdes-init.
+hccs init start...
+pa ring link down success
+reset pa success
+link[4] pcs init success
+link[5] pcs init success
+release reset pa success
+link[4] macro adapt done (lane_mask=0xff) (0ms)
+link[5] macro adapt done (lane_mask=0xff) (0ms)
+link[4] pcs training success (10ms)
+link[5] pcs training success (10ms)
+link[4] training success (20ms)
+link[5] training success (20ms)
+link[4]:
+BWAY_PCS_ST_FSM_0_REG = 0x118
+BWAY_PCS_ST_PCS_LANE_MODE_CHANGE_REG = 0xff31
+HLLC_ST_FSM_1_REG = 0x3
+link[5]:
+BWAY_PCS_ST_FSM_0_REG = 0x118
+BWAY_PCS_ST_PCS_LANE_MODE_CHANGE_REG = 0xff31
+HLLC_ST_FSM_1_REG = 0x3
+link training success
+pa[0] linkEn = 0x0
+pa[0] allSktLink0 = 0x0
+pa[0] allSktLink1 = 0x0
+pa[1] linkEn = 0x3
+pa[1] allSktLink0 = 0x30
+pa[1] allSktLink1 = 0x0
+pa init success
+COM_PAID_INTLV_REG = 0x2
+paid decode init success
+pa[0] PA_PM_BASE_INFO = 0x0
+pa[0] PA_PM_MAP_LINK_NUM = 0x0
+pa[1] PA_PM_BASE_INFO = 0x330021
+pa[1] PA_PM_MAP_LINK_NUM = 0x12
+hccs performace config success
+pa ring link up success
+hccs init done
+hccs access test start
+skt[0] IOMGMT_ICL_SUBCTRL_SC_IMU_MULTI_CTRL2 = 0x5a5a5a5a
+skt[1] IOMGMT_ICL_SUBCTRL_SC_IMU_MULTI_CTRL2 = 0x5a5a5a5a
+skt[1] IOMGMT_ICL_SUBCTRL_SC_IMU_MULTI_CTRL2 = 0xa5a5a5a5
+hccs access test success
+======hccs status======
+  skt[0] mask: expected = 0x30, link up = 0x30, width reduction = 0x0, link down = 0x0
+  skt[1] mask: expected = 0x30, link up = 0x30, width reduction = 0x0, link down = 0x0
+==========end==========
+report hccs status success
+skt[0] IOMGMT_ICL_SUBCTRL_SC_IMU_MULTI_CTRL2 = 0xa5a5a5a5
+LRDXSD_LOCK_OFFSET = 0x0
+LRDXSD_ERRIMSK_OFFSET = 0x0
+LRDXSD_DBG_OTIMSK_OFFSET = 0x0
+LRDXSD_DBG_OT_SET_OFFSET = 0xffffffff
+LRDXSD_DBG_EN_OFFSET = 0x1
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+ID[0x19709d]!
+ID[0xffffff]!
+[ERR]Don't support the flash, CS[1] ID[0xffffff]!!
+sfdp detect, try to get dummy data from hboot1 first.
+ID[0x19709d]!
+flash 0 support sfdp.
+Interrupt 423 register OK
+Interrupt 425 register OK
+Interrupt 427 register OK
+Interrupt 429 register OK
+Interrupt 430 register OK
+Interrupt 431 register OK
+Interrupt 436 register OK
+
+cpu 0 entering scheduler
+[IMU] Watchdog Initialization done!
+ScmiTaskEntry start.
+Interrupt 456 register OK
+Interrupt 469 register OK
+Interrupt 482 register OK
+Interrupt 495 register OK
+starting Fpc Isolation Task end
+starting fdm Err Info Task end
+starting Roce recovery Task end
+starting Ce_Storm Contrl Task end
+starting Ras_Data_Update Task end
+power register ubios call id
+Interrupt 459 register OK
+Interrupt 472 register OK
+Interrupt 485 register OK
+Interrupt 498 register OK
+[0.00.19.561]Real time now 2026.4.20 02:14:10
+NIC CARD[0][0]: nicPresent = 0x1, nicType = 0x0, nicSfpPresent = 0x0
+NIC CARD[0][1]: nicPresent = 0x0, nicType = 0x0, nicSfpPresent = 0x0
+NIC CARD[1][0]: nicPresent = 0x0, nicType = 0x0, nicSfpPresent = 0x0
+NIC CARD[1][1]: nicPresent = 0x0, nicType = 0x0, nicSfpPresent = 0x0
+Init heart-beat-task end
+Init SeamlessUpdateTask end
+Get Setup Config.
+pwr cap[0]: 0, 63
+pwr cap[1]: f, 27
+[0.00.26.749]Skt 0, Die 0 imp has been released, running.
+[0.00.26.757]GET NIC0 INFO.
+Skt 0, Die 2 ImpState is 0 skip exec.
+Skt 1, Die 0 ImpState is 0 skip exec.
+[0.00.26.765]READ offset = 0x320000, len = 0xe8
+Skt 1, Die 2 ImpState is 0 skip exec.
+[0.00.26.771]READ offset = 0x3200e8, len = 0xe8
+[0.00.26.777]READ offset = 0x3201d0, len = 0xe8
+[0.00.26.783]READ offset = 0x3202b8, len = 0xe8
+[0.00.26.789]READ offset = 0x3203a0, len = 0xe8
+[0.00.26.793]READ offset = 0x320488, len = 0xe8
+[0.00.26.798]READ offset = 0x320570, len = 0xe8
+[0.00.26.802]READ offset = 0x320658, len = 0xe8
+[0.00.26.806]READ offset = 0x320740, len = 0xc0
+pwr cap[2]: 1, 3
+[0.00.56.768]Skt 0, Die 0 imp has init-done.
+[0.03.25.638]DDR Rreserved for IMU: len = 3e00000
+[LOG]head = 0x0, tail = 0x183e, logSize = 0x183e
+copy registry.json file success
+ipcMsgSend success
+[0.03.25.675]starting ras Init
+sktId = 0, dieId = 0, isSasExist = 0.
+sktId = 0, dieId = 2, isSasExist = 0.
+sktId = 1, dieId = 0, isSasExist = 0.
+sktId = 1, dieId = 2, isSasExist = 0.
+Mce Table head exist!
+RasIntRegister init 452 
+RasIntRegister init 453 
+RasIntRegister init 64 
+RasIntRegister init 65 
+RasIntRegister init 465 
+RasIntRegister init 466 
+RasIntRegister init 86 
+RasIntRegister init 87 
+RasIntRegister init 478 
+RasIntRegister init 479 
+RasIntRegister init 108 
+RasIntRegister init 109 
+RasIntRegister init 491 
+RasIntRegister init 492 
+RasIntRegister init 130 
+RasIntRegister init 131 
+RasIntRegister init 76 
+RasIntRegister init 98 
+RasIntRegister init 120 
+RasIntRegister init 142 
+[0.03.25.735]starting ras end
+[0.03.33.192]TF Heartbeat Start
+[0.03.38.489][ERR]cmd not support! cmd = 0xd
+[0.03.48.471]ext0 int trigger
+
+********Hello Huawei LiteOS********
+
+KpxxxxIMU Firmware Version : VX.X.X
+LiteOS Kernel Version : 5.7.0
+Run on ChipVersion[0] Socket[0] Die[2]
+build time : Jun 26 2025 22:00:00
+
+**********************************
+
+main core booting up...
+start set affinity
+
+mpidr = 0x81020000
+sram ecc state: 0x0, sram ecc cnt: 0x0
+[0.00.00.033]skt 0 begins init all serdes.
+BoardInfo->SocketNum 2.
+BoardInfo->SocketId 0.
+BoardInfo->InfoVersion 5.
+BoardInfo->NASerdesSceneMode 0.
+BoardInfo->NBSerdesSceneMode 3.
+BoardInfo->HccsTopologyType 0.
+BoardInfo->BoardId 0.
+ChipVersionIs920BPro: 0.
+BoardInfo Skt 0, SerdesUseMode: 1 2 5 1 1 1 1  1 1 1 4 4 1 1 
+BoardInfo Skt 1, SerdesUseMode: 1 1 1 1 1 1 1  1 1 1 4 4 1 1 
+BoardInfo Skt 0, SerdesRxPolarityReverse: 0 0 0 0 0 0 0  0 0 0 0 0 0 0 
+BoardInfo Skt 1, SerdesRxPolarityReverse: 0 0 0 0 0 0 0  0 0 0 0 0 0 0 
+BoardInfo Skt 0, SerdesTxPolarityReverse: 0 0 0 0 0 0 0  0 0 0 0 0 0 0 
+BoardInfo Skt 1, SerdesTxPolarityReverse: 0 0 0 0 0 0 0  0 0 0 0 0 0 0 
+serdessdk version: 2.0_5.0_20241203_imu
+chip_id 0, die 0, ind 0, usemode 1 begin serdes-init.
+chip_id 0, die 0, ind 1, usemode 2 begin serdes-init.
+chip_id 0, die 2, ind 0, usemode 1 begin serdes-init.
+chip_id 0, die 2, ind 1, usemode 1 begin serdes-init.
+chip serdes init status:0x0.
+[0.00.00.345]skt 0 ends init all serdes.
+link[4] freq_type:1 | peer_chip_type:1 | peer_chip_id:1 | peer_link_id:5
+link[5] freq_type:1 | peer_chip_type:1 | peer_chip_id:1 | peer_link_id:4
+register kp920b hccs done
+chip_id 0, die 2, ind 4, usemode 4 begin serdes-init.
+chip_id 0, die 2, ind 3, usemode 4 begin serdes-init.
+hccs init start...
+pa ring link down success
+reset pa success
+link[4] pcs init success
+link[5] pcs init success
+release reset pa success
+link[4] macro adapt done (lane_mask=0xff) (0ms)
+link[5] macro adapt done (lane_mask=0xff) (0ms)
+link[4] pcs training success (10ms)
+link[5] pcs training success (10ms)
+link[4] training success (20ms)
+link[5] training success (20ms)
+link[4]:
+BWAY_PCS_ST_FSM_0_REG = 0x118
+BWAY_PCS_ST_PCS_LANE_MODE_CHANGE_REG = 0xff31
+HLLC_ST_FSM_1_REG = 0x3
+link[5]:
+BWAY_PCS_ST_FSM_0_REG = 0x118
+BWAY_PCS_ST_PCS_LANE_MODE_CHANGE_REG = 0xff31
+HLLC_ST_FSM_1_REG = 0x3
+link training success
+pa[0] linkEn = 0x0
+pa[0] allSktLink0 = 0x0
+pa[0] allSktLink1 = 0x0
+pa[1] linkEn = 0x3
+pa[1] allSktLink0 = 0x30
+pa[1] allSktLink1 = 0x0
+pa init success
+COM_PAID_INTLV_REG = 0x2
+paid decode init success
+pa[0] PA_PM_BASE_INFO = 0x0
+pa[0] PA_PM_MAP_LINK_NUM = 0x0
+pa[1] PA_PM_BASE_INFO = 0x330021
+pa[1] PA_PM_MAP_LINK_NUM = 0x12
+hccs performace config success
+pa ring link up success
+hccs init done
+hccs access test start
+skt[0] IOMGMT_ICL_SUBCTRL_SC_IMU_MULTI_CTRL2 = 0x5a5a5a5a
+skt[1] IOMGMT_ICL_SUBCTRL_SC_IMU_MULTI_CTRL2 = 0x5a5a5a5a
+skt[1] IOMGMT_ICL_SUBCTRL_SC_IMU_MULTI_CTRL2 = 0xa5a5a5a5
+hccs access test success
+======hccs status======
+  skt[0] mask: expected = 0x30, link up = 0x30, width reduction = 0x0, link down = 0x0
+  skt[1] mask: expected = 0x30, link up = 0x30, width reduction = 0x0, link down = 0x0
+==========end==========
+report hccs status success
+skt[0] IOMGMT_ICL_SUBCTRL_SC_IMU_MULTI_CTRL2 = 0xa5a5a5a5
+LRDXSD_LOCK_OFFSET = 0x0
+LRDXSD_ERRIMSK_OFFSET = 0x0
+LRDXSD_DBG_OTIMSK_OFFSET = 0x0
+LRDXSD_DBG_OT_SET_OFFSET = 0xffffffff
+LRDXSD_DBG_EN_OFFSET = 0x1
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+ID[0xff19709d]!
+ID[0xffffffff]!
+[ERR]Don't support the flash, CS[1] ID[0xffffffff]!!
+sfdp detect, try to get dummy data from hboot1 first.
+ID[0xff19709d]!
+flash 0 support sfdp.
+Interrupt 423 register OK
+Interrupt 425 register OK
+Interrupt 427 register OK
+Interrupt 429 register OK
+Interrupt 430 register OK
+Interrupt 431 register OK
+Interrupt 436 register OK
+
+cpu 0 entering scheduler
+[IMU] Watchdog Initialization done!
+ScmiTaskEntry start.
+Interrupt 456 register OK
+Interrupt 469 register OK
+Interrupt 482 register OK
+Interrupt 495 register OK
+starting Fpc Isolation Task end
+starting fdm Err Info Task end
+starting Roce recovery Task end
+starting Ce_Storm Contrl Task end
+starting Ras_Data_Update Task end
+power register ubios call id
+Interrupt 459 register OK
+Interrupt 472 register OK
+Interrupt 485 register OK
+Interrupt 498 register OK
+[0.00.03.663]Real time now 2026.4.20 02:17:47
+NIC CARD[0][0]: nicPresent = 0x1, nicType = 0x0, nicSfpPresent = 0x0
+NIC CARD[0][1]: nicPresent = 0x0, nicType = 0x0, nicSfpPresent = 0x0
+NIC CARD[1][0]: nicPresent = 0x0, nicType = 0x0, nicSfpPresent = 0x0
+NIC CARD[1][1]: nicPresent = 0x0, nicType = 0x0, nicSfpPresent = 0x0
+Init heart-beat-task end
+Init SeamlessUpdateTask end
+Get Setup Config.
+pwr cap[0]: 0, 63
+pwr cap[1]: f, 27
+pwr cap[2]: 1, 3
+[0.00.12.846]Skt 0, Die 0 imp has been released, running.
+[0.00.12.853]GET NIC0 INFO.
+Skt 0, Die 2 ImpState is 0 skip exec.
+Skt 1, Die 0 ImpState is 0 skip exec.
+[0.00.12.859]Skt 1, Die 2 ImpState is 0 skip exec.
+READ offset = 0x320000, len = 0xe8
+[0.00.12.871]READ offset = 0x3200e8, len = 0xe8
+[0.00.12.875]READ offset = 0x3201d0, len = 0xe8
+[0.00.12.880]READ offset = 0x3202b8, len = 0xe8
+[0.00.12.884]READ offset = 0x3203a0, len = 0xe8
+[0.00.12.889]READ offset = 0x320488, len = 0xe8
+[0.00.12.893]READ offset = 0x320570, len = 0xe8
+[0.00.12.897]READ offset = 0x320658, len = 0xe8
+[0.00.12.902]READ offset = 0x320740, len = 0xc0
+[0.00.31.898]DDR Rreserved for IMU: len = 3e00000
+[LOG]head = 0x0, tail = 0x30d1, logSize = 0x30d1
+copy registry.json file success
+ipcMsgSend success
+[0.00.31.935]starting ras Init
+sktId = 0, dieId = 0, isSasExist = 0.
+sktId = 0, dieId = 2, isSasExist = 0.
+sktId = 1, dieId = 0, isSasExist = 0.
+sktId = 1, dieId = 2, isSasExist = 0.
+Mce Table head exist!
+RasIntRegister init 452 
+RasIntRegister init 453 
+RasIntRegister init 64 
+RasIntRegister init 65 
+RasIntRegister init 465 
+RasIntRegister init 466 
+RasIntRegister init 86 
+RasIntRegister init 87 
+RasIntRegister init 478 
+RasIntRegister init 479 
+RasIntRegister init 108 
+RasIntRegister init 109 
+RasIntRegister init 491 
+RasIntRegister init 492 
+RasIntRegister init 130 
+RasIntRegister init 131 
+RasIntRegister init 76 
+RasIntRegister init 98 
+RasIntRegister init 120 
+RasIntRegister init 142 
+[0.00.31.996]starting ras end
+[0.00.37.580]TF Heartbeat Start
+[0.00.41.319][ERR]cmd not support! cmd = 0xd
+[0.00.42.862]Skt 0, Die 0 imp has init-done.
+[0.00.49.418]PCIE INIT DONE.
+slotNum = 0xb
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[0] port:8  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[1] port:12  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[2] port:20  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[3] port:32  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[4] port:0  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[5] port:2  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[6] port:4  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[7] port:8  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[8] port:12  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[9] port:20  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[10] port:32  pcieSlotCtrl.data (after)0x14801c0.
+
+Interrupt 454 register OK
+Interrupt 467 register OK
+Interrupt 480 register OK
+Interrupt 493 register OK
+data = 0x0
+pmt Init done
+slot[0] port:8 begin to power ON.
+slot[1] port:12 begin to power ON.
+slot[2] port:20 begin to power ON.
+slot[3] port:32 begin to power ON.
+slot[4] port:0 begin to power ON.
+slot[5] port:2 begin to power ON.
+slot[6] port:4 begin to power ON.
+slot[7] port:8 begin to power ON.
+slot[8] port:12 begin to power ON.
+slot[9] port:20 begin to power ON.
+slot[10] port:32 begin to power ON.
+mctp task ok.
+Add ep: bdf=300 eid=9 epCnt=1 eid_alloc=a
+[0.01.53.584]BIOS POST END.
+Create SetReportPcieMmioToBmc ok.
+Start SetReportPcieMmioToBmc ok.
+Enter current value process
+[0.02.14.979]Receive ras int[452]
+First coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x1
+Found error node[0]
+-- RAS DUMP --
+PCIE AER ERROR
+Error severity is CORRECTED[302000000]
+PortType[0] PCIeInfo[08:00:00]
+VendorId[0x19e5] DeviceId[0xd802]
+AER_CAP_HEADER    = 0x0000000015020001
+UNCR_ERR_STATUS   = 0x0000000000100000
+UNCR_ERR_MASK     = 0x0000000000580000
+UNCR_ERR_SEVERITY = 0x0000000000462010
+COR_ERR_STATUS    = 0x0000000000002000
+COR_ERR_MASK      = 0x0000000000000000
+AER_CAP_HEADER    = 0x00000000000010a0
+OemErrorLogReport
+not report to os
+ras int[452] end
+
+[0.02.15.329]Receive ras int[452]
+First coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x2
+Found error node[1]
+-- RAS DUMP --
+PCIE AER ERROR
+Error severity is CORRECTED[303000000]
+PortType[0] PCIeInfo[0c:00:00]
+VendorId[0x19e5] DeviceId[0xd802]
+AER_CAP_HEADER    = 0x0000000015020001
+UNCR_ERR_STATUS   = 0x0000000000100000
+UNCR_ERR_MASK     = 0x0000000000580000
+UNCR_ERR_SEVERITY = 0x0000000000462010
+COR_ERR_STATUS    = 0x0000000000002000
+COR_ERR_MASK      = 0x0000000000000000
+AER_CAP_HEADER    = 0x00000000000010a0
+OemErrorLogReport
+not report to os
+ras int[452] end
+
+[0.02.15.679]Receive ras int[465]
+First coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x4000
+Found error node[14]
+Secondary coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x4
+Found error node[2]
+-- RAS DUMP --
+PCIE AER ERROR
+Error severity is CORRECTED[8101000000]
+PortType[0] PCIeInfo[42:00:00]
+VendorId[0x19e5] DeviceId[0xd802]
+AER_CAP_HEADER    = 0x0000000015020001
+UNCR_ERR_STATUS   = 0x0000000000100000
+UNCR_ERR_MASK     = 0x0000000000580000
+UNCR_ERR_SEVERITY = 0x0000000000462010
+COR_ERR_STATUS    = 0x0000000000002000
+COR_ERR_MASK      = 0x0000000000000000
+AER_CAP_HEADER    = 0x00000000000010a0
+OemErrorLogReport
+not report to os
+ras int[465] end
+
+[0.02.16.029]Receive ras int[465]
+First coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x2
+Found error node[1]
+-- RAS DUMP --
+PCIE AER ERROR
+Error severity is CORRECTED[8303000000]
+PortType[0] PCIeInfo[46:00:00]
+VendorId[0x19e5] DeviceId[0xd802]
+AER_CAP_HEADER    = 0x0000000015020001
+UNCR_ERR_STATUS   = 0x0000000000100000
+UNCR_ERR_MASK     = 0x0000000000580000
+UNCR_ERR_SEVERITY = 0x0000000000462010
+COR_ERR_STATUS    = 0x0000000000002000
+COR_ERR_MASK      = 0x0000000000000000
+AER_CAP_HEADER    = 0x00000000000010a0
+OemErrorLogReport
+not report to os
+ras int[465] end
+
+[0.02.19.905]Receive ras int[478]
+First coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x1
+Found error node[0]
+-- RAS DUMP --
+PCIE AER ERROR
+Error severity is CORRECTED[200302000000]
+PortType[0] PCIeInfo[96:00:00]
+VendorId[0x19e5] DeviceId[0xd802]
+AER_CAP_HEADER    = 0x0000000015020001
+UNCR_ERR_STATUS   = 0x0000000000100000
+UNCR_ERR_MASK     = 0x0000000000580000
+UNCR_ERR_SEVERITY = 0x0000000000462010
+COR_ERR_STATUS    = 0x0000000000002000
+COR_ERR_MASK      = 0x0000000000000000
+AER_CAP_HEADER    = 0x00000000000010a0
+OemErrorLogReport
+not report to os
+ras int[478] end
+
+[0.02.20.243]Receive ras int[478]
+First coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x2
+Found error node[1]
+-- RAS DUMP --
+PCIE AER ERROR
+Error severity is CORRECTED[200303000000]
+PortType[0] PCIeInfo[ab:00:00]
+VendorId[0x19e5] DeviceId[0xd802]
+AER_CAP_HEADER    = 0x0000000015020001
+UNCR_ERR_STATUS   = 0x0000000000100000
+UNCR_ERR_MASK     = 0x0000000000580000
+UNCR_ERR_SEVERITY = 0x0000000000462010
+COR_ERR_STATUS    = 0x0000000000002000
+COR_ERR_MASK      = 0x0000000000000000
+AER_CAP_HEADER    = 0x00000000000010a0
+OemErrorLogReport
+not report to os
+ras int[478] end
+
+[0.02.20.582]Receive ras int[491]
+First coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x4000
+Found error node[14]
+Secondary coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x4
+Found error node[2]
+-- RAS DUMP --
+PCIE AER ERROR
+Error severity is CORRECTED[208101000000]
+PortType[0] PCIeInfo[c1:00:00]
+VendorId[0x19e5] DeviceId[0xd802]
+AER_CAP_HEADER    = 0x0000000015020001
+UNCR_ERR_STATUS   = 0x0000000000100000
+UNCR_ERR_MASK     = 0x0000000000580000
+UNCR_ERR_SEVERITY = 0x0000000000462010
+COR_ERR_STATUS    = 0x0000000000002000
+COR_ERR_MASK      = 0x0000000000000000
+AER_CAP_HEADER    = 0x00000000000010a0
+OemErrorLogReport
+not report to os
+ras int[491] end
+
+[0.02.20.932]Receive ras int[491]
+First coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x2
+Found error node[1]
+-- RAS DUMP --
+PCIE AER ERROR
+Error severity is CORRECTED[208303000000]
+PortType[0] PCIeInfo[d6:00:00]
+VendorId[0x19e5] DeviceId[0xd802]
+AER_CAP_HEADER    = 0x0000000015020001
+UNCR_ERR_STATUS   = 0x0000000000100000
+UNCR_ERR_MASK     = 0x0000000000580000
+UNCR_ERR_SEVERITY = 0x0000000000462010
+COR_ERR_STATUS    = 0x0000000000002000
+COR_ERR_MASK      = 0x0000000000000000
+AER_CAP_HEADER    = 0x00000000000010a0
+OemErrorLogReport
+not report to os
+ras int[491] end
+
+
+
+HSM_LOG:
+[00:00:00.000][info] succeed to do thirdparty dfx_pabuk init
+[00:00:00.000][info] succeed to do thirdparty crypto_driver init
+
+
+> Vol TA[ 810]mv TB[ 810]mv
+0>[1950]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+0>[2000]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+0>[2050]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+0>[2100]MHZ -> Vol TA[ 812]mv TB[ 810]mv
+0>[2150]MHZ -> Vol TA[ 825]mv TB[ 822]mv
+0>[2200]MHZ -> Vol TA[ 838]mv TB[ 835]mv
+0>[2250]MHZ -> Vol TA[ 851]mv TB[ 848]mv
+0>[2300]MHZ -> Vol TA[ 864]mv TB[ 861]mv
+0>[2350]MHZ -> Vol TA[ 877]mv TB[ 874]mv
+0>[2400]MHZ -> Vol TA[ 890]mv TB[ 887]mv
+0>[2450]MHZ -> Vol TA[ 903]mv TB[ 900]mv
+0>[2500]MHZ -> Vol TA[ 916]mv TB[ 913]mv
+0>[2550]MHZ -> Vol TA[ 929]mv TB[ 926]mv
+0>[2600]MHZ -> Vol TA[ 942]mv TB[ 939]mv
+0>[2650]MHZ -> Vol TA[ 955]mv TB[ 952]mv
+0>[2700]MHZ -> Vol TA[ 968]mv TB[ 965]mv
+0>[2750]MHZ -> Vol TA[ 986]mv TB[ 983]mv
+0>[2800]MHZ -> Vol TA[1005]mv TB[1002]mv
+0>[2850]MHZ -> Vol TA[1023]mv TB[1020]mv
+0>[2900]MHZ -> Vol TA[1042]mv TB[1039]mv
+0>[2950]MHZ -> Vol TA[1060]mv TB[1056]mv
+0>[3000]MHZ -> Vol TA[1078]mv TB[1074]mv
+0>[3050]MHZ -> Vol TA[1090]mv TB[1087]mv
+0>[3100]MHZ -> Vol TA[1103]mv TB[1100]mv
+0>Uncore VF curve:
+0>Uncore [   0]MHZ -> Vol [ 810]mv
+0>Uncore [ 100]MHZ -> Vol [ 810]mv
+0>Uncore [ 200]MHZ -> Vol [ 810]mv
+0>Uncore [ 300]MHZ -> Vol [ 810]mv
+0>Uncore [ 400]MHZ -> Vol [ 810]mv
+0>Uncore [ 500]MHZ -> Vol [ 912]mv
+0>Uncore [ 600]MHZ -> Vol [ 912]mv
+0>Uncore [ 700]MHZ -> Vol [ 912]mv
+0>Uncore [ 800]MHZ -> Vol [ 912]mv
+0>Uncore [ 900]MHZ -> Vol [ 912]mv
+0>Uncore [1000]MHZ -> Vol [ 912]mv
+0>Uncore [1100]MHZ -> Vol [ 912]mv
+0>Uncore [1200]MHZ -> Vol [ 912]mv
+0>Uncore [1300]MHZ -> Vol [ 912]mv
+0>Uncore [1400]MHZ -> Vol [ 912]mv
+0>Uncore [1500]MHZ -> Vol [ 912]mv
+0>Uncore [1600]MHZ -> Vol [ 912]mv
+0>Uncore [1700]MHZ -> Vol [ 912]mv
+0>Uncore [1800]MHZ -> Vol [ 912]mv
+0>Uncore [1900]MHZ -> Vol [ 912]mv
+0>Uncore [2000]MHZ -> Vol [ 912]mv
+0>Uncore [2100]MHZ -> Vol [ 920]mv
+0>Uncore [2200]MHZ -> Vol [ 929]mv
+0>Uncore [2300]MHZ -> Vol [ 937]mv
+0>Uncore [2400]MHZ -> Vol [ 946]mv
+0>Uncore [2500]MHZ -> Vol [ 955]mv
+0>Uncore [2600]MHZ -> Vol [ 972]mv
+0>Uncore [2700]MHZ -> Vol [ 990]mv
+0>Uncore [2800]MHZ -> Vol [1009]mv
+0>Uncore [2900]MHZ -> Vol [1029]mv
+0>Uncore [3000]MHZ -> Vol [1043]mv
+0>[TracePoint] type[  0] cmd[  1] data[  6]
+0>[TracePoint] type[  0] cmd[  1] data[  7]
+0>
+********Hello Huawei LiteOS********
+
+KpxxxxIPU Firmware Version : VX.X.X
+LiteOS Kernel Version : 5.7.0
+0>Run on ChipVersion[0] Socket[0] Die[0]
+0>build time : Jun 26 2025 22:00:00
+
+0>**********************************
+0>
+main core booting up...
+0>start set affinity
+0>
+mpidr = 0x81000000
+0>sram ecc state: 0x0, sram ecc cnt: 0x0
+0>[TracePoint] type[  0] cmd[  2] data[  1]
+0>[TracePoint] type[  0] cmd[  2] data[  2]
+0>LRDXSD_LOCK_OFFSET = 0x0
+0>LRDXSD_ERRIMSK_OFFSET = 0x0
+0>LRDXSD_DBG_OTIMSK_OFFSET = 0x0
+0>LRDXSD_DBG_OT_SET_OFFSET = 0xffffffff
+0>LRDXSD_DBG_EN_OFFSET = 0x1
+0>======tsensor params======
+0>  is_trimmed       : 1
+0>  underclocking_en : 1
+0>===========end============
+0>soc tsensor init done
+0>========vrd info from cpld========
+0>vrd_id | u64                | pmbus_en | avsbus_en | loop | pmbus_id | pmbus_addr | avs_sw | pmbus_sw | addr_9545 | domain_type | die_mask | reserved
+0>  00   | 0x0001000100002017 | 0x1      | 0x1       | 0x1  | 0x1      | 0x20       | 0x0    | 0x0      | 0x0       | 0x1         | 0x0100   | 0x0
+0>  01   | 0x000300030000201b | 0x1      | 0x1       | 0x2  | 0x1      | 0x20       | 0x0    | 0x0      | 0x0       | 0x3         | 0x0300   | 0x0
+0>  02   | 0x0000010500002b15 | 0x1      | 0x0       | 0x1  | 0x1      | 0x2b       | 0x0    | 0x0      | 0x0       | 0x5         | 0x0001   | 0x0
+0>  03   | 0x0002000100002027 | 0x1      | 0x1       | 0x1  | 0x2      | 0x20       | 0x0    | 0x0      | 0x0       | 0x1         | 0x0200   | 0x0
+0>  04   | 0x000300020000202b | 0x1      | 0x1       | 0x2  | 0x2      | 0x20       | 0x0    | 0x0      | 0x0       | 0x2         | 0x0300   | 0x0
+0>  05   | 0x0000020500002b25 | 0x1      | 0x0       | 0x1  | 0x2      | 0x2b       | 0x0    | 0x0      | 0x0       | 0x5         | 0x0002   | 0x0
+0>  06   | 0x0003000400002b29 | 0x1      | 0x0       | 0x2  | 0x2      | 0x2b       | 0x0    | 0x0      | 0x0       | 0x4         | 0x0300   | 0x0
+0>================end===============
+0>=============vrd info=============
+0>power domain num: 7
+0>power domain[00] id:0 | CORE_DVFS_TA       | PMBus NA | cap:0x3 | rail:0 | addr:0x20 | def_volt:1100 mV | min_volt: 750 mV | max_volt:1150 mV
+0>power domain[01] id:1 | DDR_VDD            | PMBus NA | cap:0x3 | rail:1 | addr:0x20 | def_volt: 765 mV | min_volt: 382 mV | max_volt: 880 mV
+0>power domain[02] id:4 | IO_DVDD_NA         | PMBus NA | cap:0x1 | rail:0 | addr:0x2b | def_volt: 800 mV | min_volt: 400 mV | max_volt: 920 mV
+0>power domain[03] id:2 | CORE_DVFS_TB       | PMBus NB | cap:0x3 | rail:0 | addr:0x20 | def_volt:1100 mV | min_volt: 750 mV | max_volt:1150 mV
+0>power domain[04] id:3 | UNCORE_DVFS        | PMBus NB | cap:0x3 | rail:1 | addr:0x20 | def_volt:1043 mV | min_volt: 750 mV | max_volt:1100 mV
+0>power domain[05] id:5 | IO_DVDD_NB         | PMBus NB | cap:0x1 | rail:0 | addr:0x2b | def_volt: 800 mV | min_volt: 400 mV | max_volt: 920 mV
+0>power domain[06] id:6 | DDR_VDDQ           | PMBus NB | cap:0x1 | rail:1 | addr:0x2b | def_volt:1100 mV | min_volt: 550 mV | max_volt:1265 mV
+0>================end===============
+0>pmbus[0] init done
+0>pmbus[1] init done
+0>power domain[0] CORE_DVFS_TA       | NA PMBus/AVSBus | rail:0 | addr:0x20 | def_volt:1100 mV | pmu:MP2882
+0>power domain[1] DDR_VDD            | NA PMBus/AVSBus | rail:1 | addr:0x20 | def_volt: 765 mV | pmu:MP2882
+0>power domain[4] IO_DVDD_NA         | NA PMBus        | rail:0 | addr:0x2b | def_volt: 800 mV | pmu:MP2882
+0>power domain[2] CORE_DVFS_TB       | NB PMBus/AVSBus | rail:0 | addr:0x20 | def_volt:1100 mV | pmu:MP2882
+0>power domain[3] UNCORE_DVFS        | NB PMBus/AVSBus | rail:1 | addr:0x20 | def_volt:1043 mV | pmu:MP2882
+0>power domain[5] IO_DVDD_NB         | NB PMBus        | rail:0 | addr:0x2b | def_volt: 800 mV | pmu:MP2882
+0>power domain[6] DDR_VDDQ           | NB PMBus        | rail:1 | addr:0x2b | def_volt:1100 mV | pmu:MP2882
+0>power domain[0] CORE_DVFS_TA       is transferred to AVSBus mode
+0>power domain[1] DDR_VDD            is transferred to AVSBus mode
+0>power domain[2] CORE_DVFS_TB       is transferred to AVSBus mode
+0>power domain[3] UNCORE_DVFS        is transferred to AVSBus mode
+0>avsbus resync success
+0>avsbus[0] init done
+0>avsbus resync success
+0>avsbus[1] init done
+0>============volt boot============
+0>power domain[0] volt =  947 mV
+0>power domain[1] volt =  767 mV
+0>power domain[4] volt =  800 mV
+0>power domain[2] volt =  945 mV
+0>power domain[3] volt = 1033 mV
+0>power domain[5] volt =  804 mV
+0>power domain[6] volt = 1105 mV
+0>===============end===============
+0>--w&h rd rail:0, 945, CORE_DVFS_TA
+0>--w&h rd rail:1, 765, CORE_DVFS_TA
+0>power domain[0] set volt --> 1103 mV success
+0>--w&h rd rail:0, 943, CORE_DVFS_TB
+0>--w&h rd rail:1, 1033, CORE_DVFS_TB
+0>power domain[2] set volt --> 1105 mV success
+0>power domain[3] set volt --> 1046 mV success
+0>============volt post============
+0>power domain[0] volt = 1103 mV
+0>power domain[1] volt =  767 mV
+0>power domain[4] volt =  802 mV
+0>power domain[2] volt = 1105 mV
+0>power domain[3] volt = 1048 mV
+0>power domain[5] volt =  804 mV
+0>power domain[6] volt = 1105 mV
+0>===============end===============
+0>Hboot1 Info RAW Dump: [0x91][0x00][0x00][0x14][0x01][0x00][0x01]
+0>PowerSensorSupport[1], Cali[5120], Loss[7200]
+0>Power Sensor Calibration Value[5120]!
+0>the power sensor : manu id = 2peak, die id = TPA626
+0>power sensor[0] init success
+0>die[0] its[0] init done
+0>die[0] its[1] init done
+0>die[0] its[2] init done
+0>die[0] its[3] init done
+0>die[0] its[4] init done
+0>die[0] its[5] init done
+0>die[0] its[6] init done
+0>die[0] its[7] init done
+0>die[0] its[8] init done
+0>die[0] its[9] init done
+0>die[1] its[0] init done
+0>die[1] its[1] init done
+0>die[1] its[2] init done
+0>die[1] its[3] init done
+0>die[1] its[4] init done
+0>die[1] its[5] init done
+0>die[1] its[6] init done
+0>die[1] its[7] init done
+0>die[1] its[8] init done
+0>die[1] its[9] init done
+0>Totem[0] Core Boot Vol [1105]mv
+0>Totem[0] Core Current Vol [1100]mv
+0>Totem[1] Core Boot Vol [1105]mv
+0>Totem[1] Core Current Vol [1100]mv
+0>NA 1620V190
+0>NB 1620V190
+0>GetCoreBaseFreq [2600000KHZ]
+0>GetCoreTurboFreq [2600000KHZ]
+0>GetCustomClusterNum [8]
+0>Ipu ACG Training Done!
+0>AP Last Time:[0.00.01.426]
+0>wait UEFI pll init...
+0>done
+0>acg trim start
+0>core trim freq:2000, avs:0 volt:810mv
+0>core trim freq:2000, avs:0 volt:810mv
+0>core trim freq:2050, avs:1 volt:810mv
+0>core trim freq:2050, avs:1 volt:810mv
+0>core trim freq:2100, avs:2 volt:812mv
+0>core trim freq:2100, avs:2 volt:810mv
+0>core trim freq:2150, avs:3 volt:825mv
+0>core trim freq:2150, avs:3 volt:822mv
+0>core trim freq:2200, avs:4 volt:838mv
+0>core trim freq:2200, avs:4 volt:835mv
+0>core trim freq:2250, avs:5 volt:851mv
+0>core trim freq:2250, avs:5 volt:848mv
+0>core trim freq:2300, avs:6 volt:864mv
+0>core trim freq:2300, avs:6 volt:861mv
+0>core trim freq:2350, avs:7 volt:877mv
+0>core trim freq:2350, avs:7 volt:874mv
+0>core trim freq:2400, avs:8 volt:890mv
+0>core trim freq:2400, avs:8 volt:887mv
+0>core trim freq:2450, avs:9 volt:903mv
+0>core trim freq:2450, avs:9 volt:900mv
+0>core trim freq:2500, avs:10 volt:916mv
+0>core trim freq:2500, avs:10 volt:913mv
+0>core trim freq:2550, avs:11 volt:929mv
+0>core trim freq:2550, avs:11 volt:926mv
+0>core trim freq:2600, avs:12 volt:942mv
+0>core trim freq:2600, avs:12 volt:939mv
+0>core trim freq:2650, avs:13 volt:955mv
+0>core trim freq:2650, avs:13 volt:952mv
+0>core trim freq:2700, avs:14 volt:968mv
+0>core trim freq:2700, avs:14 volt:965mv
+0>core trim freq:2750, avs:15 volt:986mv
+0>core trim freq:2750, avs:15 volt:983mv
+0>core trim freq:2800, avs:16 volt:1005mv
+0>core trim freq:2800, avs:16 volt:1002mv
+0>core trim freq:2850, avs:17 volt:1023mv
+0>core trim freq:2850, avs:17 volt:1020mv
+0>core trim freq:2900, avs:18 volt:1042mv
+0>core trim freq:2900, avs:18 volt:1039mv
+0>core trim freq:2950, avs:19 volt:1060mv
+0>core trim freq:2950, avs:19 volt:1056mv
+0>core trim freq:3000, avs:20 volt:1078mv
+0>core trim freq:3000, avs:20 volt:1074mv
+0>core trim freq:3050, avs:21 volt:1090mv
+0>core trim freq:3050, avs:21 volt:1087mv
+0>core trim freq:3100, avs:22 volt:1100mv
+0>core trim freq:3100, avs:22 volt:1100mv
+0>acg trim end
+0>LDO disabled
+0>[TracePoint] type[  0] cmd[  2] data[  3]
+0>Interrupt 423 register OK
+0>Interrupt 430 register OK
+0>[TracePoint] type[  0] cmd[  2] data[  4]
+0>
+0>cpu 0 entering scheduler
+0>[TracePoint] type[  0] cmd[  3] data[  1]
+0>add your ipu app init here!
+0>IpuInterfaceTaskStart Entry ...
+0>ipu interface task wait parameters from uefi...
+0>uefi parameters ready!
+0>UFSProfile[0]
+0>PowerPolicy[2] BenchMarkSelection[0]
+0>ipu interface task wait ddr init done from uefi...
+0>thermal soc task enabled
+0>AP Last Time:[0.00.05.703]
+0>thermal soc task restore underclocking_en=1
+0>ppu alert temp div init done
+0>ThermalDimmStart Entry ...
+0>wait ddr init done...
+0>power task start...
+0>[TracePoint] type[  0] cmd[  3] data[  2]
+0>ufs task wait parameters from uefi...
+0>ufs task parameters from uefi ready
+0>uncore domain[0] freq:2900
+0>uncore domain[1] freq:2900
+0>nimbus uncore domain[0] freq_div:4 all_sioe_freq:3000
+0>nimbus uncore domain[1] freq_div:4 all_sioe_freq:3000
+0>======sioe status======
+0>TA_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TA_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TA_SIOE2: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TA_SIOE3: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TA_SIOE5: ASYNC, SDR, LOW_PLL, is_cdr=0
+0>TA_SIOE6: ASYNC, SDR, LOW_PLL, is_cdr=0
+0>TB_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TB_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TB_SIOE2: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TB_SIOE3: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TB_SIOE5: ASYNC, SDR, LOW_PLL, is_cdr=0
+0>TB_SIOE6: ASYNC, SDR, LOW_PLL, is_cdr=0
+0>NA_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>NA_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>NA_SIOE2: ASYNC, SDR, LOW_PLL, is_cdr=0
+0>NB_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>NB_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>NB_SIOE2: ASYNC, SDR, LOW_PLL, is_cdr=0
+0>==========end==========
+0>sioe init done
+0>ufs task enabled
+0>--> UFS profile[0]
+0>AmuTaskStart Entry ... 
+0>amu task wait parameters from uefi...
+0>ThermalSiwStart Entry ...
+0>DemtTaskStart Entry ...
+0>ThermalSiwTask idle...
+0>demt task wait parameters from uefi...
+0>demt task parameters from uefi ready
+0>[TracePoint] type[  0] cmd[  3] data[  3]
+0>HiBoostTaskStart Entry ...
+0>HiBoost task enabled
+0>Waiting for UEFI parameters...
+0>UEFI parameters ready
+0>UncoreMaxFreq Set to [2900 MHZ]
+0>get TDP from efuse success, value = 313500mw
+0>target power set to [313500]mw, brd:[313500]
+0>[TracePoint] type[  0] cmd[  3] data[  4]
+0>AgeTaskStart Entry ...
+0>age task wait parameters from uefi...
+0>[TracePoint] type[  0] cmd[  3] data[  5]
+0>age task parameters from uefi ready
+0>age task enabled
+0>uefi ddr init finish!
+0>ipu interface task wait uefi end done from uefi...
+0>ddr init done, start thermal dimm task
+0>======dimm status======
+0>  chl[0] dimm0 2, dimm1 2
+0>  chl[1] dimm0 2, dimm1 2
+0>  chl[2] dimm0 2, dimm1 2
+0>  chl[3] dimm0 2, dimm1 2
+0>  chl[4] dimm0 2, dimm1 2
+0>  chl[5] dimm0 2, dimm1 2
+0>  chl[6] dimm0 2, dimm1 2
+0>  chl[7] dimm0 2, dimm1 2
+0>==========end==========
+0>chl[0] registered, dimm mask = 0x3
+0>chl[1] registered, dimm mask = 0x3
+0>chl[2] registered, dimm mask = 0x3
+0>chl[3] registered, dimm mask = 0x3
+0>chl[4] registered, dimm mask = 0x3
+0>chl[5] registered, dimm mask = 0x3
+0>chl[6] registered, dimm mask = 0x3
+0>chl[7] registered, dimm mask = 0x3
+0>=====dimm temp params=====
+0>  temp_threshold      : temp_mid:85,85 | temp_hi:95 | temp_cri:100
+0>  is_thermal_thro_en  : 1
+0>  is_aref_rate_auto   : 1
+0>===========end============
+0>chl[0] max_temp 37'C, aref_rate 0x5 --> 0x4
+0>chl[1] max_temp 37'C, aref_rate 0x5 --> 0x4
+0>chl[2] max_temp 37'C, aref_rate 0x5 --> 0x4
+0>chl[3] max_temp 37'C, aref_rate 0x5 --> 0x4
+0>chl[4] max_temp 37'C, aref_rate 0x5 --> 0x4
+0>chl[5] max_temp 37'C, aref_rate 0x5 --> 0x4
+0>chl[6] max_temp 37'C, aref_rate 0x5 --> 0x4
+0>chl[7] max_temp 37'C, aref_rate 0x5 --> 0x4
+0>uefi end finish!
+0>ipu interface task exit!
+0>amu task parameters from uefi ready
+0>amu task activated
+0>BootCore: Skt[0] Totem[3] Cluster[0] Core[0]!
+]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1950]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[2000]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[2050]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[2100]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[2150]MHZ -> Vol TA[ 818]mv TB[ 817]mv
+1>[2200]MHZ -> Vol TA[ 831]mv TB[ 830]mv
+1>[2250]MHZ -> Vol TA[ 844]mv TB[ 842]mv
+1>[2300]MHZ -> Vol TA[ 856]mv TB[ 855]mv
+1>[2350]MHZ -> Vol TA[ 869]mv TB[ 868]mv
+1>[2400]MHZ -> Vol TA[ 882]mv TB[ 880]mv
+1>[2450]MHZ -> Vol TA[ 894]mv TB[ 893]mv
+1>[2500]MHZ -> Vol TA[ 907]mv TB[ 905]mv
+1>[2550]MHZ -> Vol TA[ 920]mv TB[ 918]mv
+1>[2600]MHZ -> Vol TA[ 932]mv TB[ 930]mv
+1>[2650]MHZ -> Vol TA[ 945]mv TB[ 943]mv
+1>[2700]MHZ -> Vol TA[ 958]mv TB[ 956]mv
+1>[2750]MHZ -> Vol TA[ 976]mv TB[ 974]mv
+1>[2800]MHZ -> Vol TA[ 994]mv TB[ 992]mv
+1>[2850]MHZ -> Vol TA[1012]mv TB[1010]mv
+1>[2900]MHZ -> Vol TA[1031]mv TB[1028]mv
+1>[2950]MHZ -> Vol TA[1048]mv TB[1045]mv
+1>[3000]MHZ -> Vol TA[1065]mv TB[1063]mv
+1>[3050]MHZ -> Vol TA[1078]mv TB[1076]mv
+1>[3100]MHZ -> Vol TA[1092]mv TB[1090]mv
+1>Uncore VF curve:
+1>Uncore [   0]MHZ -> Vol [ 810]mv
+1>Uncore [ 100]MHZ -> Vol [ 810]mv
+1>Uncore [ 200]MHZ -> Vol [ 810]mv
+1>Uncore [ 300]MHZ -> Vol [ 810]mv
+1>Uncore [ 400]MHZ -> Vol [ 810]mv
+1>Uncore [ 500]MHZ -> Vol [ 909]mv
+1>Uncore [ 600]MHZ -> Vol [ 909]mv
+1>Uncore [ 700]MHZ -> Vol [ 909]mv
+1>Uncore [ 800]MHZ -> Vol [ 909]mv
+1>Uncore [ 900]MHZ -> Vol [ 909]mv
+1>Uncore [1000]MHZ -> Vol [ 909]mv
+1>Uncore [1100]MHZ -> Vol [ 909]mv
+1>Uncore [1200]MHZ -> Vol [ 909]mv
+1>Uncore [1300]MHZ -> Vol [ 909]mv
+1>Uncore [1400]MHZ -> Vol [ 909]mv
+1>Uncore [1500]MHZ -> Vol [ 909]mv
+1>Uncore [1600]MHZ -> Vol [ 909]mv
+1>Uncore [1700]MHZ -> Vol [ 909]mv
+1>Uncore [1800]MHZ -> Vol [ 909]mv
+1>Uncore [1900]MHZ -> Vol [ 909]mv
+1>Uncore [2000]MHZ -> Vol [ 909]mv
+1>Uncore [2100]MHZ -> Vol [ 916]mv
+1>Uncore [2200]MHZ -> Vol [ 924]mv
+1>Uncore [2300]MHZ -> Vol [ 932]mv
+1>Uncore [2400]MHZ -> Vol [ 940]mv
+1>Uncore [2500]MHZ -> Vol [ 948]mv
+1>Uncore [2600]MHZ -> Vol [ 965]mv
+1>Uncore [2700]MHZ -> Vol [ 983]mv
+1>Uncore [2800]MHZ -> Vol [1001]mv
+1>Uncore [2900]MHZ -> Vol [1019]mv
+1>Uncore [3000]MHZ -> Vol [1033]mv
+1>[TracePoint] type[  0] cmd[  1] data[  6]
+1>[TracePoint] type[  0] cmd[  1] data[  7]
+1>
+********Hello Huawei LiteOS********
+
+KpxxxxIPU Firmware Version : VX.X.X
+LiteOS Kernel Version : 5.7.0
+1>Run on ChipVersion[0] Socket[1] Die[0]
+1>build time : Jun 26 2025 22:00:00
+
+1>**********************************
+1>
+main core booting up...
+1>start set affinity
+1>
+mpidr = 0x81040000
+1>sram ecc state: 0x0, sram ecc cnt: 0x0
+1>[TracePoint] type[  0] cmd[  2] data[  1]
+1>[TracePoint] type[  0] cmd[  2] data[  2]
+1>LRDXSD_LOCK_OFFSET = 0x0
+1>LRDXSD_ERRIMSK_OFFSET = 0x0
+1>LRDXSD_DBG_OTIMSK_OFFSET = 0x0
+1>LRDXSD_DBG_OT_SET_OFFSET = 0xffffffff
+1>LRDXSD_DBG_EN_OFFSET = 0x1
+1>======tsensor params======
+1>  is_trimmed       : 1
+1>  underclocking_en : 1
+1>===========end============
+1>soc tsensor init done
+1>========vrd info from cpld========
+1>vrd_id | u64                | pmbus_en | avsbus_en | loop | pmbus_id | pmbus_addr | avs_sw | pmbus_sw | addr_9545 | domain_type | die_mask | reserved
+1>  00   | 0x0001000100002017 | 0x1      | 0x1       | 0x1  | 0x1      | 0x20       | 0x0    | 0x0      | 0x0       | 0x1         | 0x0100   | 0x0
+1>  01   | 0x000300030000201b | 0x1      | 0x1       | 0x2  | 0x1      | 0x20       | 0x0    | 0x0      | 0x0       | 0x3         | 0x0300   | 0x0
+1>  02   | 0x0000010500002b15 | 0x1      | 0x0       | 0x1  | 0x1      | 0x2b       | 0x0    | 0x0      | 0x0       | 0x5         | 0x0001   | 0x0
+1>  03   | 0x0002000100002027 | 0x1      | 0x1       | 0x1  | 0x2      | 0x20       | 0x0    | 0x0      | 0x0       | 0x1         | 0x0200   | 0x0
+1>  04   | 0x000300020000202b | 0x1      | 0x1       | 0x2  | 0x2      | 0x20       | 0x0    | 0x0      | 0x0       | 0x2         | 0x0300   | 0x0
+1>  05   | 0x0000020500002b25 | 0x1      | 0x0       | 0x1  | 0x2      | 0x2b       | 0x0    | 0x0      | 0x0       | 0x5         | 0x0002   | 0x0
+1>  06   | 0x0003000400002b29 | 0x1      | 0x0       | 0x2  | 0x2      | 0x2b       | 0x0    | 0x0      | 0x0       | 0x4         | 0x0300   | 0x0
+1>================end===============
+1>=============vrd info=============
+1>power domain num: 7
+1>power domain[00] id:0 | CORE_DVFS_TA       | PMBus NA | cap:0x3 | rail:0 | addr:0x20 | def_volt:1100 mV | min_volt: 750 mV | max_volt:1150 mV
+1>power domain[01] id:1 | DDR_VDD            | PMBus NA | cap:0x3 | rail:1 | addr:0x20 | def_volt: 765 mV | min_volt: 382 mV | max_volt: 880 mV
+1>power domain[02] id:4 | IO_DVDD_NA         | PMBus NA | cap:0x1 | rail:0 | addr:0x2b | def_volt: 800 mV | min_volt: 400 mV | max_volt: 920 mV
+1>power domain[03] id:2 | CORE_DVFS_TB       | PMBus NB | cap:0x3 | rail:0 | addr:0x20 | def_volt:1100 mV | min_volt: 750 mV | max_volt:1150 mV
+1>power domain[04] id:3 | UNCORE_DVFS        | PMBus NB | cap:0x3 | rail:1 | addr:0x20 | def_volt:1033 mV | min_volt: 750 mV | max_volt:1100 mV
+1>power domain[05] id:5 | IO_DVDD_NB         | PMBus NB | cap:0x1 | rail:0 | addr:0x2b | def_volt: 800 mV | min_volt: 400 mV | max_volt: 920 mV
+1>power domain[06] id:6 | DDR_VDDQ           | PMBus NB | cap:0x1 | rail:1 | addr:0x2b | def_volt:1100 mV | min_volt: 550 mV | max_volt:1265 mV
+1>================end===============
+1>pmbus[0] init done
+1>pmbus[1] init done
+1>power domain[0] CORE_DVFS_TA       | NA PMBus/AVSBus | rail:0 | addr:0x20 | def_volt:1100 mV | pmu:MP2882
+1>power domain[1] DDR_VDD            | NA PMBus/AVSBus | rail:1 | addr:0x20 | def_volt: 765 mV | pmu:MP2882
+1>power domain[4] IO_DVDD_NA         | NA PMBus        | rail:0 | addr:0x2b | def_volt: 800 mV | pmu:MP2882
+1>power domain[2] CORE_DVFS_TB       | NB PMBus/AVSBus | rail:0 | addr:0x20 | def_volt:1100 mV | pmu:MP2882
+1>power domain[3] UNCORE_DVFS        | NB PMBus/AVSBus | rail:1 | addr:0x20 | def_volt:1033 mV | pmu:MP2882
+1>power domain[5] IO_DVDD_NB         | NB PMBus        | rail:0 | addr:0x2b | def_volt: 800 mV | pmu:MP2882
+1>power domain[6] DDR_VDDQ           | NB PMBus        | rail:1 | addr:0x2b | def_volt:1100 mV | pmu:MP2882
+1>power domain[0] CORE_DVFS_TA       is transferred to AVSBus mode
+1>power domain[1] DDR_VDD            is transferred to AVSBus mode
+1>power domain[2] CORE_DVFS_TB       is transferred to AVSBus mode
+1>power domain[3] UNCORE_DVFS        is transferred to AVSBus mode
+1>avsbus resync success
+1>avsbus[0] init done
+1>avsbus resync success
+1>avsbus[1] init done
+1>============volt boot============
+1>power domain[0] volt =  935 mV
+1>power domain[1] volt =  767 mV
+1>power domain[4] volt =  802 mV
+1>power domain[2] volt =  931 mV
+1>power domain[3] volt =  814 mV
+1>power domain[5] volt =  802 mV
+1>power domain[6] volt = 1101 mV
+1>===============end===============
+1>--w&h rd rail:0, 935, CORE_DVFS_TA
+1>--w&h rd rail:1, 765, CORE_DVFS_TA
+1>power domain[0] set volt --> 1103 mV success
+1>--w&h rd rail:0, 931, CORE_DVFS_TB
+1>--w&h rd rail:1, 816, CORE_DVFS_TB
+1>power domain[2] set volt --> 1105 mV success
+1>power domain[3] set volt --> 1037 mV success
+1>============volt post============
+1>power domain[0] volt = 1103 mV
+1>power domain[1] volt =  767 mV
+1>power domain[4] volt =  802 mV
+1>power domain[2] volt = 1101 mV
+1>power domain[3] volt = 1035 mV
+1>power domain[5] volt =  800 mV
+1>power domain[6] volt = 1101 mV
+1>===============end===============
+1>Hboot1 Info RAW Dump: [0x01][0x00][0x00][0x14][0x01][0x00][0x01]
+1>PowerSensorSupport[1], Cali[5120], Loss[0]
+1>Power Sensor Calibration Value[5120]!
+1>the power sensor : manu id = 2peak, die id = TPA626
+1>power sensor[0] init success
+1>die[0] its[0] init done
+1>die[0] its[1] init done
+1>die[0] its[2] init done
+1>die[0] its[3] init done
+1>die[0] its[4] init done
+1>die[0] its[5] init done
+1>die[0] its[6] init done
+1>die[0] its[7] init done
+1>die[0] its[8] init done
+1>die[0] its[9] init done
+1>die[1] its[0] init done
+1>die[1] its[1] init done
+1>die[1] its[2] init done
+1>die[1] its[3] init done
+1>die[1] its[4] init done
+1>die[1] its[5] init done
+1>die[1] its[6] init done
+1>die[1] its[7] init done
+1>die[1] its[8] init done
+1>die[1] its[9] init done
+1>Totem[0] Core Boot Vol [1103]mv
+1>Totem[0] Core Current Vol [1100]mv
+1>Totem[1] Core Boot Vol [1103]mv
+1>Totem[1] Core Current Vol [1100]mv
+1>NA 1620V190
+1>NB 1620V190
+1>GetCoreBaseFreq [2600000KHZ]
+1>GetCoreTurboFreq [2600000KHZ]
+1>GetCustomClusterNum [8]
+1>Ipu ACG Training Done!
+1>AP Last Time:[0.00.01.321]
+1>wait UEFI pll init...
+1>done
+1>acg trim start
+1>core trim freq:2000, avs:0 volt:810mv
+1>core trim freq:2000, avs:0 volt:810mv
+1>core trim freq:2050, avs:1 volt:810mv
+1>core trim freq:2050, avs:1 volt:810mv
+1>core trim freq:2100, avs:2 volt:810mv
+1>core trim freq:2100, avs:2 volt:810mv
+1>core trim freq:2150, avs:3 volt:818mv
+1>core trim freq:2150, avs:3 volt:817mv
+1>core trim freq:2200, avs:4 volt:831mv
+1>core trim freq:2200, avs:4 volt:830mv
+1>core trim freq:2250, avs:5 volt:844mv
+1>core trim freq:2250, avs:5 volt:842mv
+1>core trim freq:2300, avs:6 volt:856mv
+1>core trim freq:2300, avs:6 volt:855mv
+1>core trim freq:2350, avs:7 volt:869mv
+1>core trim freq:2350, avs:7 volt:868mv
+1>core trim freq:2400, avs:8 volt:882mv
+1>core trim freq:2400, avs:8 volt:880mv
+1>core trim freq:2450, avs:9 volt:894mv
+1>core trim freq:2450, avs:9 volt:893mv
+1>core trim freq:2500, avs:10 volt:907mv
+1>core trim freq:2500, avs:10 volt:905mv
+1>core trim freq:2550, avs:11 volt:920mv
+1>core trim freq:2550, avs:11 volt:918mv
+1>core trim freq:2600, avs:12 volt:932mv
+1>core trim freq:2600, avs:12 volt:930mv
+1>core trim freq:2650, avs:13 volt:945mv
+1>core trim freq:2650, avs:13 volt:943mv
+1>core trim freq:2700, avs:14 volt:958mv
+1>core trim freq:2700, avs:14 volt:956mv
+1>core trim freq:2750, avs:15 volt:976mv
+1>core trim freq:2750, avs:15 volt:974mv
+1>core trim freq:2800, avs:16 volt:994mv
+1>core trim freq:2800, avs:16 volt:992mv
+1>core trim freq:2850, avs:17 volt:1012mv
+1>core trim freq:2850, avs:17 volt:1010mv
+1>core trim freq:2900, avs:18 volt:1031mv
+1>core trim freq:2900, avs:18 volt:1028mv
+1>core trim freq:2950, avs:19 volt:1048mv
+1>core trim freq:2950, avs:19 volt:1045mv
+1>core trim freq:3000, avs:20 volt:1065mv
+1>core trim freq:3000, avs:20 volt:1063mv
+1>core trim freq:3050, avs:21 volt:1078mv
+1>core trim freq:3050, avs:21 volt:1076mv
+1>core trim freq:3100, avs:22 volt:1092mv
+1>core trim freq:3100, avs:22 volt:1090mv
+1>acg trim end
+1>LDO disabled
+1>[TracePoint] type[  0] cmd[  2] data[  3]
+1>Interrupt 423 register OK
+1>Interrupt 430 register OK
+1>[TracePoint] type[  0] cmd[  2] data[  4]
+1>
+1>cpu 0 entering scheduler
+1>[TracePoint] type[  0] cmd[  3] data[  1]
+1>add your ipu app init here!
+1>IpuInterfaceTaskStart Entry ...
+1>ipu interface task wait parameters from uefi...
+1>uefi parameters ready!
+1>UFSProfile[0]
+1>PowerPolicy[2] BenchMarkSelection[0]
+1>ipu interface task wait ddr init done from uefi...
+1>thermal soc task enabled
+1>AP Last Time:[0.00.05.795]
+1>thermal soc task restore underclocking_en=1
+1>ppu alert temp div init done
+1>ThermalDimmStart Entry ...
+1>wait ddr init done...
+1>power task start...
+1>[TracePoint] type[  0] cmd[  3] data[  2]
+1>ufs task wait parameters from uefi...
+1>ufs task parameters from uefi ready
+1>uncore domain[0] freq:2900
+1>uncore domain[1] freq:2900
+1>nimbus uncore domain[0] freq_div:4 all_sioe_freq:3000
+1>nimbus uncore domain[1] freq_div:4 all_sioe_freq:3000
+1>======sioe status======
+1>TA_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TA_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TA_SIOE2: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TA_SIOE3: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TA_SIOE5: ASYNC, SDR, LOW_PLL, is_cdr=0
+1>TA_SIOE6: ASYNC, SDR, LOW_PLL, is_cdr=0
+1>TB_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TB_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TB_SIOE2: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TB_SIOE3: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TB_SIOE5: ASYNC, SDR, LOW_PLL, is_cdr=0
+1>TB_SIOE6: ASYNC, SDR, LOW_PLL, is_cdr=0
+1>NA_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>NA_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>NA_SIOE2: ASYNC, SDR, LOW_PLL, is_cdr=0
+1>NB_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>NB_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>NB_SIOE2: ASYNC, SDR, LOW_PLL, is_cdr=0
+1>==========end==========
+1>sioe init done
+1>ufs task enabled
+1>--> UFS profile[0]
+1>AmuTaskStart Entry ... 
+1>amu task wait parameters from uefi...
+1>ThermalSiwStart Entry ...
+1>DemtTaskStart Entry ...
+1>ThermalSiwTask idle...
+1>demt task wait parameters from uefi...
+1>demt task parameters from uefi ready
+1>[TracePoint] type[  0] cmd[  3] data[  3]
+1>HiBoostTaskStart Entry ...
+1>HiBoost task enabled
+1>Waiting for UEFI parameters...
+1>UEFI parameters ready
+1>UncoreMaxFreq Set to [2900 MHZ]
+1>get TDP from efuse success, value = 313500mw
+1>target power set to [313500]mw, brd:[313500]
+1>[TracePoint] type[  0] cmd[  3] data[  4]
+1>AgeTaskStart Entry ...
+1>age task wait parameters from uefi...
+1>[TracePoint] type[  0] cmd[  3] data[  5]
+1>age task parameters from uefi ready
+1>age task enabled
+1>uefi ddr init finish!
+1>ipu interface task wait uefi end done from uefi...
+1>ddr init done, start thermal dimm task
+1>======dimm status======
+1>  chl[0] dimm0 2, dimm1 2
+1>  chl[1] dimm0 2, dimm1 2
+1>  chl[2] dimm0 2, dimm1 2
+1>  chl[3] dimm0 2, dimm1 2
+1>  chl[4] dimm0 2, dimm1 2
+1>  chl[5] dimm0 2, dimm1 2
+1>  chl[6] dimm0 2, dimm1 2
+1>  chl[7] dimm0 2, dimm1 2
+1>==========end==========
+1>chl[0] registered, dimm mask = 0x3
+1>chl[1] registered, dimm mask = 0x3
+1>chl[2] registered, dimm mask = 0x3
+1>chl[3] registered, dimm mask = 0x3
+1>chl[4] registered, dimm mask = 0x3
+1>chl[5] registered, dimm mask = 0x3
+1>chl[6] registered, dimm mask = 0x3
+1>chl[7] registered, dimm mask = 0x3
+1>=====dimm temp params=====
+1>  temp_threshold      : temp_mid:85,85 | temp_hi:95 | temp_cri:100
+1>  is_thermal_thro_en  : 1
+1>  is_aref_rate_auto   : 1
+1>===========end============
+1>chl[0] max_temp 34'C, aref_rate 0x5 --> 0x4
+1>chl[1] max_temp 34'C, aref_rate 0x5 --> 0x4
+1>chl[2] max_temp 34'C, aref_rate 0x5 --> 0x4
+1>chl[3] max_temp 34'C, aref_rate 0x5 --> 0x4
+1>chl[4] max_temp 34'C, aref_rate 0x5 --> 0x4
+1>chl[5] max_temp 34'C, aref_rate 0x5 --> 0x4
+1>chl[6] max_temp 34'C, aref_rate 0x5 --> 0x4
+1>chl[7] max_temp 34'C, aref_rate 0x5 --> 0x4
+1>uefi end finish!
+1>ipu interface task exit!
+1>amu task parameters from uefi ready
+1>amu task activated
+1>BootCore: Skt[0] Totem[3] Cluster[0] Core[0]!
+
+
+HSM_LOG:
+[00:00:00.010][info] os_mem_system_init default pool done
+[00:00:00.016][info] succeed to do thirdparty otpc_pabuk init
+[00:00
+
+
+
+HSM_LOG:
+:00.017][info] succeed to do thirdparty boot_profile_driver init
+[00:00:00.017][info] succeed to do thirdparty measure_value_ma
+
+
+
+HSM_LOG:
+nage_driver init
+[00:00:00.018][info] succeed to do thirdparty period_driver init
+[00:00:00.018][info]  start loading internal
+
+
+
+HSM_LOG:
+ task ...
+[00:00:00.018][info]  task name is ccm_task
+[00:00:00.019][info]  hm_dynamic_loadelf successfully!
+[00:00:00.019][i
+
+
+
+HSM_LOG:
+nfo] internal task[1] task_name=ccm_task load successfully
+[00:00:00.020][info]  task name is upgrade_task
+[00:00:00.020][info
+
+
+
+HSM_LOG:
+]  hm_dynamic_loadelf successfully!
+[00:00:00.021][info] internal task[2] task_name=upgrade_task load successfully
+[00:00:00.0
+
+
+
+HSM_LOG:
+22][info]  task name is hes_task
+[00:00:00.022][info]  hm_dynamic_loadelf successfully!
+[00:00:00.023][info] internal task[3] 
+
+
+
+HSM_LOG:
+task_name=hes_task load successfully
+[00:00:00.024][info] created task ccm_task success!
+[00:00:00.025][info] created task upg
+
+
+
+HSM_LOG:
+rade_task success!
+[00:00:00.026][info] created task hes_task success!
+[00:00:00.026][info] Init start.
+[1970-01-01 00:00:00.
+
+
+
+HSM_LOG:
+027][HSM][INFO][54] Platform init 0x20250523 0x4e.
+[1970-01-01 00:00:00.027][HSM][INFO][197] ccm start.
+[1970-01-01 00:00:00
+
+
+
+HSM_LOG:
+.028][HSM][INFO][86] upgrade task init success.
+[1970-01-01 00:00:00.028][HSM][INFO][95] upgrade recv cmd, 0x181.
+[1970-01-0
+
+
+
+HSM_LOG:
+1 00:00:00.029][HSM][INFO][103] upgrade res, 0x3a5aa5a3.
+[1970-01-01 00:00:00.030][HSM][INFO][75] hes tee_task_entry.
+[1970-
+
+
+
+HSM_LOG:
+01-01 00:00:00.554][HSM][INFO][44] hes init success.
+[00:00:00.555][info] Init over.
+[00:00:00.000][info] succeed to do third
+
+
+
+HSM_LOG:
+party dfx_pabuk init
+[00:00:00.000][info] succeed to do thirdparty crypto_driver init
+[00:00:00.010][info] os_mem_system_init 
+
+
+
+HSM_LOG:
+default pool done
+[00:00:00.016][info] succeed to do thirdparty otpc_pabuk init
+[00:00:00.017][info] succeed to do thirdparty 
+
+
+
+HSM_LOG:
+boot_profile_driver init
+[00:00:00.017][info] succeed to do thirdparty measure_value_manage_driver init
+[00:00:00.018][info] s
+
+
+
+HSM_LOG:
+ucceed to do thirdparty period_driver init
+[00:00:00.018][info]  start loading internal task ...
+[00:00:00.018][info]  task na
+
+
+
+HSM_LOG:
+me is ccm_task
+[00:00:00.019][info]  hm_dynamic_loadelf successfully!
+[00:00:00.019][info] internal task[1] task_name=ccm_task
+
+
+
+HSM_LOG:
+ load successfully
+[00:00:00.020][info]  task name is upgrade_task
+[00:00:00.020][info]  hm_dynamic_loadelf successfully!
+[00
+
+
+
+HSM_LOG:
+:00:00.021][info] internal task[2] task_name=upgrade_task load successfully
+[00:00:00.022][info]  task name is hes_task
+[00:00
+
+
+
+HSM_LOG:
+:00.022][info]  hm_dynamic_loadelf successfully!
+[00:00:00.023][info] internal task[3] task_name=hes_task load successfully
+[0
+
+
+
+HSM_LOG:
+0:00:00.024][info] created task ccm_task success!
+[00:00:00.025][info] created task upgrade_task success!
+[00:00:00.026][info]
+
+
+
+HSM_LOG:
+ created task hes_task success!
+[00:00:00.026][info] Init start.
+[1970-01-01 00:00:00.027][HSM][INFO][54] Platform init 0x2025
+
+
+
+HSM_LOG:
+0523 0x4e.
+[1970-01-01 00:00:00.027][HSM][INFO][197] ccm start.
+[1970-01-01 00:00:00.028][HSM][INFO][86] upgrade task init s
+
+
+
+HSM_LOG:
+uccess.
+[1970-01-01 00:00:00.028][HSM][INFO][95] upgrade recv cmd, 0x181.
+[1970-01-01 00:00:00.029][HSM][INFO][103] upgrade 
+
+
+
+HSM_LOG:
+res, 0x3a5aa5a3.
+[1970-01-01 00:00:00.030][HSM][INFO][75] hes tee_task_entry.
+[1970-01-01 00:00:00.551][HSM][INFO][44] hes i
+
+
+
+HSM_LOG:
+nit success.
+[00:00:00.551][info] Init over.
+[1970-01-01 00:00:28.032][HSM][INFO][281] -------------1------------
+.
+
+[0.06.53.583]IpmiCmdReportPcieMMIO start
+[0.07.03.931]IpmiCmdReportPcieMMIO end
+
+********Hello Huawei LiteOS********
+
+KpxxxxIMU Firmware Version : VX.X.X
+LiteOS Kernel Version : 5.7.0
+Run on ChipVersion[0] Socket[0] Die[2]
+build time : Jun 26 2025 22:00:00
+
+**********************************
+
+main core booting up...
+start set affinity
+
+mpidr = 0x81020000
+sram ecc state: 0x0, sram ecc cnt: 0x0
+[0.00.00.033]skt 0 begins init all serdes.
+BoardInfo->SocketNum 2.
+BoardInfo->SocketId 0.
+BoardInfo->InfoVersion 5.
+BoardInfo->NASerdesSceneMode 0.
+BoardInfo->NBSerdesSceneMode 3.
+BoardInfo->HccsTopologyType 0.
+BoardInfo->BoardId 0.
+ChipVersionIs920BPro: 0.
+BoardInfo Skt 0, SerdesUseMode: 1 2 5 1 1 1 1  1 1 1 4 4 1 1 
+BoardInfo Skt 1, SerdesUseMode: 1 1 1 1 1 1 1  1 1 1 4 4 1 1 
+BoardInfo Skt 0, SerdesRxPolarityReverse: 0 0 0 0 0 0 0  0 0 0 0 0 0 0 
+BoardInfo Skt 1, SerdesRxPolarityReverse: 0 0 0 0 0 0 0  0 0 0 0 0 0 0 
+BoardInfo Skt 0, SerdesTxPolarityReverse: 0 0 0 0 0 0 0  0 0 0 0 0 0 0 
+BoardInfo Skt 1, SerdesTxPolarityReverse: 0 0 0 0 0 0 0  0 0 0 0 0 0 0 
+serdessdk version: 2.0_5.0_20241203_imu
+chip_id 0, die 0, ind 0, usemode 1 begin serdes-init.
+chip_id 0, die 0, ind 1, usemode 2 begin serdes-init.
+chip_id 0, die 2, ind 0, usemode 1 begin serdes-init.
+chip_id 0, die 2, ind 1, usemode 1 begin serdes-init.
+chip serdes init status:0x0.
+[0.00.00.345]skt 0 ends init all serdes.
+link[4] freq_type:1 | peer_chip_type:1 | peer_chip_id:1 | peer_link_id:5
+link[5] freq_type:1 | peer_chip_type:1 | peer_chip_id:1 | peer_link_id:4
+register kp920b hccs done
+chip_id 0, die 2, ind 4, usemode 4 begin serdes-init.
+chip_id 0, die 2, ind 3, usemode 4 begin serdes-init.
+hccs init start...
+pa ring link down success
+reset pa success
+link[4] pcs init success
+link[5] pcs init success
+release reset pa success
+link[4] macro adapt done (lane_mask=0xff) (0ms)
+link[5] macro adapt done (lane_mask=0xff) (0ms)
+link[4] pcs training success (10ms)
+link[5] pcs training success (10ms)
+link[4] training success (20ms)
+link[5] training success (20ms)
+link[4]:
+BWAY_PCS_ST_FSM_0_REG = 0x118
+BWAY_PCS_ST_PCS_LANE_MODE_CHANGE_REG = 0xff31
+HLLC_ST_FSM_1_REG = 0x3
+link[5]:
+BWAY_PCS_ST_FSM_0_REG = 0x118
+BWAY_PCS_ST_PCS_LANE_MODE_CHANGE_REG = 0xff31
+HLLC_ST_FSM_1_REG = 0x3
+link training success
+pa[0] linkEn = 0x0
+pa[0] allSktLink0 = 0x0
+pa[0] allSktLink1 = 0x0
+pa[1] linkEn = 0x3
+pa[1] allSktLink0 = 0x30
+pa[1] allSktLink1 = 0x0
+pa init success
+COM_PAID_INTLV_REG = 0x2
+paid decode init success
+pa[0] PA_PM_BASE_INFO = 0x0
+pa[0] PA_PM_MAP_LINK_NUM = 0x0
+pa[1] PA_PM_BASE_INFO = 0x330021
+pa[1] PA_PM_MAP_LINK_NUM = 0x12
+hccs performace config success
+pa ring link up success
+hccs init done
+hccs access test start
+skt[0] IOMGMT_ICL_SUBCTRL_SC_IMU_MULTI_CTRL2 = 0x5a5a5a5a
+skt[1] IOMGMT_ICL_SUBCTRL_SC_IMU_MULTI_CTRL2 = 0x5a5a5a5a
+skt[1] IOMGMT_ICL_SUBCTRL_SC_IMU_MULTI_CTRL2 = 0xa5a5a5a5
+hccs access test success
+======hccs status======
+  skt[0] mask: expected = 0x30, link up = 0x30, width reduction = 0x0, link down = 0x0
+  skt[1] mask: expected = 0x30, link up = 0x30, width reduction = 0x0, link down = 0x0
+==========end==========
+report hccs status success
+skt[0] IOMGMT_ICL_SUBCTRL_SC_IMU_MULTI_CTRL2 = 0xa5a5a5a5
+LRDXSD_LOCK_OFFSET = 0x0
+LRDXSD_ERRIMSK_OFFSET = 0x0
+LRDXSD_DBG_OTIMSK_OFFSET = 0x0
+LRDXSD_DBG_OT_SET_OFFSET = 0xffffffff
+LRDXSD_DBG_EN_OFFSET = 0x1
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+Master Imu wait the UEFI to finish some-init done.
+ID[0x19709d]!
+ID[0xffffff]!
+[ERR]Don't support the flash, CS[1] ID[0xffffff]!!
+sfdp detect, try to get dummy data from hboot1 first.
+ID[0x19709d]!
+flash 0 support sfdp.
+Interrupt 423 register OK
+Interrupt 425 register OK
+Interrupt 427 register OK
+Interrupt 429 register OK
+Interrupt 430 register OK
+Interrupt 431 register OK
+Interrupt 436 register OK
+
+cpu 0 entering scheduler
+[IMU] Watchdog Initialization done!
+ScmiTaskEntry start.
+Interrupt 456 register OK
+Interrupt 469 register OK
+Interrupt 482 register OK
+Interrupt 495 register OK
+starting Fpc Isolation Task end
+starting fdm Err Info Task end
+starting Roce recovery Task end
+starting Ce_Storm Contrl Task end
+starting Ras_Data_Update Task end
+power register ubios call id
+Interrupt 459 register OK
+Interrupt 472 register OK
+Interrupt 485 register OK
+Interrupt 498 register OK
+[0.00.19.564]Real time now 2026.4.20 02:56:50
+NIC CARD[0][0]: nicPresent = 0x1, nicType = 0x9, nicSfpPresent = 0x3
+NIC CARD[0][1]: nicPresent = 0x0, nicType = 0x0, nicSfpPresent = 0x0
+NIC CARD[1][0]: nicPresent = 0x0, nicType = 0x0, nicSfpPresent = 0x0
+NIC CARD[1][1]: nicPresent = 0x0, nicType = 0x0, nicSfpPresent = 0x0
+Init heart-beat-task end
+Init SeamlessUpdateTask end
+Get Setup Config.
+pwr cap[0]: 0, 63
+pwr cap[1-w&h rd rail:1, 765, CORE_DVFS_TA
+0>power domain[0] set volt --> 1103 mV success
+0>--w&h rd rail:0, 945, CORE_DVFS_TB
+0>--w&h rd rail:1, 814, CORE_DVFS_TB
+0>power domain[2] set volt --> 1105 mV success
+0>power domain[3] set volt --> 1048 mV success
+0>============volt post============
+0>power domain[0] volt = 1105 mV
+0>power domain[1] volt =  767 mV
+0>power domain[4] volt =  802 mV
+0>power domain[2] volt = 1105 mV
+0>power domain[3] volt = 1048 mV
+0>power domain[5] volt =  804 mV
+0>power domain[6] volt = 1105 mV
+0>===============end===============
+0>Hboot1 Info RAW Dump: [0x91][0x00][0x00][0x14][0x01][0x00][0x01]
+0>PowerSensorSupport[1], Cali[5120], Loss[7200]
+0>Power Sensor Calibration Value[5120]!
+0>the power sensor : manu id = 2peak, die id = TPA626
+0>power sensor[0] init success
+0>die[0] its[0] init done
+0>die[0] its[1] init done
+0>die[0] its[2] init done
+0>die[0] its[3] init done
+0>die[0] its[4] init done
+0>die[0] its[5] init done
+0>die[0] its[6] init done
+0>die[0] its[7] init done
+0>die[0] its[8] init done
+0>die[0] its[9] init done
+0>die[1] its[0] init done
+0>die[1] its[1] init done
+0>die[1] its[2] init done
+0>die[1] its[3] init done
+0>die[1] its[4] init done
+0>die[1] its[5] init done
+0>die[1] its[6] init done
+0>die[1] its[7] init done
+0>die[1] its[8] init done
+0>die[1] its[9] init done
+0>Totem[0] Core Boot Vol [1103]mv
+0>Totem[0] Core Current Vol [1100]mv
+0>Totem[1] Core Boot Vol [1105]mv
+0>Totem[1] Core Current Vol [1100]mv
+0>NA 1620V190
+0>NB 1620V190
+0>GetCoreBaseFreq [2600000KHZ]
+0>GetCoreTurboFreq [2600000KHZ]
+0>GetCustomClusterNum [8]
+0>Ipu ACG Training Done!
+0>AP Last Time:[0.00.01.425]
+0>wait UEFI pll init...
+0>done
+0>acg trim start
+0>core trim freq:2000, avs:0 volt:810mv
+0>core trim freq:2000, avs:0 volt:810mv
+0>core trim freq:2050, avs:1 volt:810mv
+0>core trim freq:2050, avs:1 volt:810mv
+0>core trim freq:2100, avs:2 volt:812mv
+0>core trim freq:2100, avs:2 volt:810mv
+0>core trim freq:2150, avs:3 volt:825mv
+0>core trim freq:2150, avs:3 volt:822mv
+0>core trim freq:2200, avs:4 volt:838mv
+0>core trim freq:2200, avs:4 volt:835mv
+0>core trim freq:2250, avs:5 volt:851mv
+0>core trim freq:2250, avs:5 volt:848mv
+0>core trim freq:2300, avs:6 volt:864mv
+0>core trim freq:2300, avs:6 volt:861mv
+0>core trim freq:2350, avs:7 volt:877mv
+0>core trim freq:2350, avs:7 volt:874mv
+0>core trim freq:2400, avs:8 volt:890mv
+0>core trim fre]: f, 27
+pwr cap[2]: 1, 3
+[0.00.28.826]Skt 0, Die 0 imp has been released, running.
+[0.00.28.833]GET NIC0 INFO.
+Skt 0, Die 2 ImpState is 0 skip exec.
+Skt 1, Die 0 ImpState is 0 skip exec.
+Skt 1, Die 2 ImpState is 0 skip exec.
+[0.00.28.845]READ offset = 0x320000, len = 0xe8
+[0.00.28.851]READ offset = 0x3200e8, len = 0xe8
+[0.00.28.857]READ offset = 0x3201d0, len = 0xe8
+[0.00.28.863]READ offset = 0x3202b8, len = 0xe8
+[0.00.28.869]READ offset = 0x3203a0, len = 0xe8
+[0.00.28.875]READ offset = 0x320488, len = 0xe8
+[0.00.28.881]READ offset = 0x320570, len = 0xe8
+[0.00.28.887]READ offset = 0x320658, len = 0xe8
+[0.00.28.893]READ offset = 0x320740, len = 0xc0
+[0.00.28.971]READ offset = 0x390000, len = 0x14
+[0.00.28.977]READ offset = 0x390000, len = 0xe8
+[0.00.29.014]READ offset = 0x3900e8, len = 0xe8
+[0.00.29.050]READ offset = 0x3901d0, len = 0xe8
+[0.00.58.843]Skt 0, Die 0 imp has init-done.
+[0.01.33.021]DDR Rreserved for IMU: len = 3e00000
+[LOG]head = 0x0, tail = 0x18fe, logSize = 0x18fe
+copy registry.json file success
+ipcMsgSend success
+[0.01.33.058]starting ras Init
+sktId = 0, dieId = 0, isSasExist = 0.
+sktId = 0, dieId = 2, isSasExist = 0.
+sktId = 1, dieId = 0, isSasExist = 0.
+sktId = 1, dieId = 2, isSasExist = 0.
+Mce Table head exist!
+RasIntRegister init 452 
+RasIntRegister init 453 
+RasIntRegister init 64 
+RasIntRegister init 65 
+RasIntRegister init 465 
+RasIntRegister init 466 
+RasIntRegister init 86 
+RasIntRegister init 87 
+RasIntRegister init 478 
+RasIntRegister init 479 
+RasIntRegister init 108 
+RasIntRegister init 109 
+RasIntRegister init 491 
+RasIntRegister init 492 
+RasIntRegister init 130 
+RasIntRegister init 131 
+RasIntRegister init 76 
+RasIntRegister init 98 
+RasIntRegister init 120 
+RasIntRegister init 142 
+[0.01.33.118]starting ras end
+
+
+HSM_LOG:
+[00:00:00.000][info] succeed to do thirdparty dfx_pabuk init
+[00:00:00.000][info] succeed to do thirdparty crypto_driver init
+
+
+]mv TB[ 810]mv
+0>[1300]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+0>[1350]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+0>[1400]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+0>[1450]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+0>[1500]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+0>[1550]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+0>[1600]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+0>[1650]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+0>[1700]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+0>[1750]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+0>[1800]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+0>[1850]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+0>[1900]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+0>[1950]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+0>[2000]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+0>[2050]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+0>[2100]MHZ -> Vol TA[ 812]mv TB[ 810]mv
+0>[2150]MHZ -> Vol TA[ 825]mv TB[ 822]mv
+0>[2200]MHZ -> Vol TA[ 838]mv TB[ 835]mv
+0>[2250]MHZ -> Vol TA[ 851]mv TB[ 848]mv
+0>[2300]MHZ -> Vol TA[ 864]mv TB[ 861]mv
+0>[2350]MHZ -> Vol TA[ 877]mv TB[ 874]mv
+0>[2400]MHZ -> Vol TA[ 890]mv TB[ 887]mv
+0>[2450]MHZ -> Vol TA[ 903]mv TB[ 900]mv
+0>[2500]MHZ -> Vol TA[ 916]mv TB[ 913]mv
+0>[2550]MHZ -> Vol TA[ 929]mv TB[ 926]mv
+0>[2600]MHZ -> Vol TA[ 942]mv TB[ 939]mv
+0>[2650]MHZ -> Vol TA[ 955]mv TB[ 952]mv
+0>[2700]MHZ -> Vol TA[ 968]mv TB[ 965]mv
+0>[2750]MHZ -> Vol TA[ 986]mv TB[ 983]mv
+0>[2800]MHZ -> Vol TA[1005]mv TB[1002]mv
+0>[2850]MHZ -> Vol TA[1023]mv TB[1020]mv
+0>[2900]MHZ -> Vol TA[1042]mv TB[1039]mv
+0>[2950]MHZ -> Vol TA[1060]mv TB[1056]mv
+0>[3000]MHZ -> Vol TA[1078]mv TB[1074]mv
+0>[3050]MHZ -> Vol TA[1090]mv TB[1087]mv
+0>[3100]MHZ -> Vol TA[1103]mv TB[1100]mv
+0>Uncore VF curve:
+0>Uncore [   0]MHZ -> Vol [ 810]mv
+0>Uncore [ 100]MHZ -> Vol [ 810]mv
+0>Uncore [ 200]MHZ -> Vol [ 810]mv
+0>Uncore [ 300]MHZ -> Vol [ 810]mv
+0>Uncore [ 400]MHZ -> Vol [ 810]mv
+0>Uncore [ 500]MHZ -> Vol [ 912]mv
+0>Uncore [ 600]MHZ -> Vol [ 912]mv
+0>Uncore [ 700]MHZ -> Vol [ 912]mv
+0>Uncore [ 800]MHZ -> Vol [ 912]mv
+0>Uncore [ 900]MHZ -> Vol [ 912]mv
+0>Uncore [1000]MHZ -> Vol [ 912]mv
+0>Uncore [1100]MHZ -> Vol [ 912]mv
+0>Uncore [1200]MHZ -> Vol [ 912]mv
+0>Uncore [1300]MHZ -> Vol [ 912]mv
+0>Uncore [1400]MHZ -> Vol [ 912]mv
+0>Uncore [1500]MHZ -> Vol [ 912]mv
+0>Uncore [1600]MHZ -> Vol [ 912]mv
+0>Uncore [1700]MHZ -> Vol [ 912]mv
+0>Uncore [1800]MHZ -> Vol [ 912]mv
+0>Uncore [1900]MHZ -> Vol [ 912]mv
+0>Uncore [2000]MHZ -> Vol [ 912]mv
+0>Uncore [2100]MHZ -> Vol [ 920]mv
+0>Uncore [2200]MHZ -> Vol [ 929]mv
+0>Uncore [2300]MHZ -> Vol [ 937]mv
+0>Uncore [2400]MHZ -> Vol [ 946]mv
+0>Uncore [2500]MHZ -> Vol [ 955]mv
+0>Uncore [2600]MHZ -> Vol [ 972]mv
+0>Uncore [2700]MHZ -> Vol [ 990]mv
+0>Uncore [2800]MHZ -> Vol [1009]mv
+0>Uncore [2900]MHZ -> Vol [1029]mv
+0>Uncore [3000]MHZ -> Vol [1043]mv
+0>[TracePoint] type[  0] cmd[  1] data[  6]
+0>[TracePoint] type[  0] cmd[  1] data[  7]
+0>
+********Hello Huawei LiteOS********
+
+KpxxxxIPU Firmware Version : VX.X.X
+LiteOS Kernel Version : 5.7.0
+0>Run on ChipVersion[0] Socket[0] Die[0]
+0>build time : Jun 26 2025 22:00:00
+
+0>**********************************
+0>
+main core booting up...
+0>start set affinity
+0>
+mpidr = 0x81000000
+0>sram ecc state: 0x0, sram ecc cnt: 0x0
+0>[TracePoint] type[  0] cmd[  2] data[  1]
+0>[TracePoint] type[  0] cmd[  2] data[  2]
+0>LRDXSD_LOCK_OFFSET = 0x0
+0>LRDXSD_ERRIMSK_OFFSET = 0x0
+0>LRDXSD_DBG_OTIMSK_OFFSET = 0x0
+0>LRDXSD_DBG_OT_SET_OFFSET = 0xffffffff
+0>LRDXSD_DBG_EN_OFFSET = 0x1
+0>======tsensor params======
+0>  is_trimmed       : 1
+0>  underclocking_en : 1
+0>===========end============
+0>soc tsensor init done
+0>========vrd info from cpld========
+0>vrd_id | u64                | pmbus_en | avsbus_en | loop | pmbus_id | pmbus_addr | avs_sw | pmbus_sw | addr_9545 | domain_type | die_mask | reserved
+0>  00   | 0x0001000100002017 | 0x1      | 0x1       | 0x1  | 0x1      | 0x20       | 0x0    | 0x0      | 0x0       | 0x1         | 0x0100   | 0x0
+0>  01   | 0x000300030000201b | 0x1      | 0x1       | 0x2  | 0x1      | 0x20       | 0x0    | 0x0      | 0x0       | 0x3         | 0x0300   | 0x0
+0>  02   | 0x0000010500002b15 | 0x1      | 0x0       | 0x1  | 0x1      | 0x2b       | 0x0    | 0x0      | 0x0       | 0x5         | 0x0001   | 0x0
+0>  03   | 0x0002000100002027 | 0x1      | 0x1       | 0x1  | 0x2      | 0x20       | 0x0    | 0x0      | 0x0       | 0x1         | 0x0200   | 0x0
+0>  04   | 0x000300020000202b | 0x1      | 0x1       | 0x2  | 0x2      | 0x20       | 0x0    | 0x0      | 0x0       | 0x2         | 0x0300   | 0x0
+0>  05   | 0x0000020500002b25 | 0x1      | 0x0       | 0x1  | 0x2      | 0x2b       | 0x0    | 0x0      | 0x0       | 0x5         | 0x0002   | 0x0
+0>  06   | 0x0003000400002b29 | 0x1      | 0x0       | 0x2  | 0x2      | 0x2b       | 0x0    | 0x0      | 0x0       | 0x4         | 0x0300   | 0x0
+0>================end===============
+0>=============vrd info=============
+0>power domain num: 7
+0>power domain[00] id:0 | CORE_DVFS_TA       | PMBus NA | cap:0x3 | rail:0 | addr:0x20 | def_volt:1100 mV | min_volt: 750 mV | max_volt:1150 mV
+0>power domain[01] id:1 | DDR_VDD            | PMBus NA | cap:0x3 | rail:1 | addr:0x20 | def_volt: 765 mV | min_volt: 382 mV | max_volt: 880 mV
+0>power domain[02] id:4 | IO_DVDD_NA         | PMBus NA | cap:0x1 | rail:0 | addr:0x2b | def_volt: 800 mV | min_volt: 400 mV | max_volt: 920 mV
+0>power domain[03] id:2 | CORE_DVFS_TB       | PMBus NB | cap:0x3 | rail:0 | addr:0x20 | def_volt:1100 mV | min_volt: 750 mV | max_volt:1150 mV
+0>power domain[04] id:3 | UNCORE_DVFS        | PMBus NB | cap:0x3 | rail:1 | addr:0x20 | def_volt:1043 mV | min_volt: 750 mV | max_volt:1100 mV
+0>power domain[05] id:5 | IO_DVDD_NB         | PMBus NB | cap:0x1 | rail:0 | addr:0x2b | def_volt: 800 mV | min_volt: 400 mV | max_volt: 920 mV
+0>power domain[06] id:6 | DDR_VDDQ           | PMBus NB | cap:0x1 | rail:1 | addr:0x2b | def_volt:1100 mV | min_volt: 550 mV | max_volt:1265 mV
+0>================end===============
+0>pmbus[0] init done
+0>pmbus[1] init done
+0>power domain[0] CORE_DVFS_TA       | NA PMBus/AVSBus | rail:0 | addr:0x20 | def_volt:1100 mV | pmu:MP2882
+0>power domain[1] DDR_VDD            | NA PMBus/AVSBus | rail:1 | addr:0x20 | def_volt: 765 mV | pmu:MP2882
+0>power domain[4] IO_DVDD_NA         | NA PMBus        | rail:0 | addr:0x2b | def_volt: 800 mV | pmu:MP2882
+0>power domain[2] CORE_DVFS_TB       | NB PMBus/AVSBus | rail:0 | addr:0x20 | def_volt:1100 mV | pmu:MP2882
+0>power domain[3] UNCORE_DVFS        | NB PMBus/AVSBus | rail:1 | addr:0x20 | def_volt:1043 mV | pmu:MP2882
+0>power domain[5] IO_DVDD_NB         | NB PMBus        | rail:0 | addr:0x2b | def_volt: 800 mV | pmu:MP2882
+0>power domain[6] DDR_VDDQ           | NB PMBus        | rail:1 | addr:0x2b | def_volt:1100 mV | pmu:MP2882
+0>power domain[0] CORE_DVFS_TA       is transferred to AVSBus mode
+0>power domain[1] DDR_VDD            is transferred to AVSBus mode
+0>power domain[2] CORE_DVFS_TB       is transferred to AVSBus mode
+0>power domain[3] UNCORE_DVFS        is transferred to AVSBus mode
+0>avsbus resync success
+0>avsbus[0] init done
+0>avsbus resync success
+0>avsbus[1] init done
+0>============volt boot============
+0>power domain[0] volt = 1103 mV
+0>power domain[1] volt =  769 mV
+0>power domain[4] volt =  802 mV
+0>power domain[2] volt = 1107 mV
+0>power domain[3] volt = 1009 mV
+0>power domain[5] volt =  804 mV
+0>power domain[6] volt = 1105 mV
+0>===============end===============
+0>--w&h rd rail:0, 1103, CORE_DVFS_TA
+0>--w&h rd rail:1, 765, CORE_DVFS_TA
+0>power domain[0] set volt --> 1103 mV success
+0>--w&h rd rail:0, 1105, CORE_DVFS_TB
+0>--w&h rd rail:1, 1009, CORE_DVFS_TB
+0>power domain[2] set volt --> 1105 mV success
+0>power domain[3] set volt --> 1048 mV success
+0>============volt post============
+0>power domain[0] volt = 1103 mV
+0>power domain[1] volt =  767 mV
+0>power domain[4] volt =  800 mV
+0>power domain[2] volt = 1105 mV
+0>power domain[3] volt = 1048 mV
+0>power domain[5] volt =  806 mV
+0>power domain[6] volt = 1107 mV
+0>===============end===============
+0>Hboot1 Info RAW Dump: [0x91][0x00][0x00][0x14][0x01][0x00][0x01]
+0>PowerSensorSupport[1], Cali[5120], Loss[7200]
+0>Power Sensor Calibration Value[5120]!
+0>the power sensor : manu id = 2peak, die id = TPA626
+0>power sensor[0] init success
+0>die[0] its[0] init done
+0>die[0] its[1] init done
+0>die[0] its[2] init done
+0>die[0] its[3] init done
+0>die[0] its[4] init done
+0>die[0] its[5] init done
+0>die[0] its[6] init done
+0>die[0] its[7] init done
+0>die[0] its[8] init done
+0>die[0] its[9] init done
+0>die[1] its[0] init done
+0>die[1] its[1] init done
+0>die[1] its[2] init done
+0>die[1] its[3] init done
+0>die[1] its[4] init done
+0>die[1] its[5] init done
+0>die[1] its[6] init done
+0>die[1] its[7] init done
+0>die[1] its[8] init done
+0>die[1] its[9] init done
+0>Totem[0] Core Boot Vol [1103]mv
+0>Totem[0] Core Current Vol [1100]mv
+0>Totem[1] Core Boot Vol [1105]mv
+0>Totem[1] Core Current Vol [1100]mv
+0>NA 1620V190
+0>NB 1620V190
+0>GetCoreBaseFreq [2600000KHZ]
+0>GetCoreTurboFreq [2600000KHZ]
+0>GetCustomClusterNum [8]
+0>Ipu ACG Training Done!
+0>AP Last Time:[0.00.01.626]
+0>wait UEFI pll init...
+0>done
+0>acg trim start
+0>core trim freq:2000, avs:0 volt:810mv
+0>core trim freq:2000, avs:0 volt:810mv
+0>core trim freq:2050, avs:1 volt:810mv
+0>core trim freq:2050, avs:1 volt:810mv
+0>core trim freq:2100, avs:2 volt:812mv
+0>core trim freq:2100, avs:2 volt:810mv
+0>core trim freq:2150, avs:3 volt:825mv
+0>core trim freq:2150, avs:3 volt:822mv
+0>core trim freq:2200, avs:4 volt:838mv
+0>core trim freq:2200, avs:4 volt:835mv
+0>core trim freq:2250, avs:5 volt:851mv
+0>core trim freq:2250, avs:5 volt:848mv
+0>core trim freq:2300, avs:6 volt:864mv
+0>core trim freq:2300, avs:6 volt:861mv
+0>core trim freq:2350, avs:7 volt:877mv
+0>core trim freq:2350, avs:7 volt:874mv
+0>core trim freq:2400, avs:8 volt:890mv
+0>core trim freq:2400, avs:8 volt:887mv
+0>core trim freq:2450, avs:9 volt:903mv
+0>core trim freq:2450, avs:9 volt:900mv
+0>core trim freq:2500, avs:10 volt:916mv
+0>core trim freq:2500, avs:10 volt:913mv
+0>core trim freq:2550, avs:11 volt:929mv
+0>core trim freq:2550, avs:11 volt:926mv
+0>core trim freq:2600, avs:12 volt:942mv
+0>core trim freq:2600, avs:12 volt:939mv
+0>core trim freq:2650, avs:13 volt:955mv
+0>core trim freq:2650, avs:13 volt:952mv
+0>core trim freq:2700, avs:14 volt:968mv
+0>core trim freq:2700, avs:14 volt:965mv
+0>core trim freq:2750, avs:15 volt:986mv
+0>core trim freq:2750, avs:15 volt:983mv
+0>core trim freq:2800, avs:16 volt:1005mv
+0>core trim freq:2800, avs:16 volt:1002mv
+0>core trim freq:2850, avs:17 volt:1023mv
+0>core trim freq:2850, avs:17 volt:1020mv
+0>core trim freq:2900, avs:18 volt:1042mv
+0>core trim freq:2900, avs:18 volt:1039mv
+0>core trim freq:2950, avs:19 volt:1060mv
+0>core trim freq:2950, avs:19 volt:1056mv
+0>core trim freq:3000, avs:20 volt:1078mv
+0>core trim freq:3000, avs:20 volt:1074mv
+0>core trim freq:3050, avs:21 volt:1090mv
+0>core trim freq:3050, avs:21 volt:1087mv
+0>core trim freq:3100, avs:22 volt:1100mv
+0>core trim freq:3100, avs:22 volt:1100mv
+0>acg trim end
+0>LDO disabled
+0>[TracePoint] type[  0] cmd[  2] data[  3]
+0>Interrupt 423 register OK
+0>Interrupt 430 register OK
+0>[TracePoint] type[  0] cmd[  2] data[  4]
+0>
+0>cpu 0 entering scheduler
+0>[TracePoint] type[  0] cmd[  3] data[  1]
+0>add your ipu app init here!
+0>IpuInterfaceTaskStart Entry ...
+0>ipu interface task wait parameters from uefi...
+0>thermal soc task enabled
+0>AP Last Time:[0.00.19.222]
+0>ThermalDimmStart Entry ...
+0>wait ddr init done...
+0>power task start...
+0>[TracePoint] type[  0] cmd[  3] data[  2]
+0>ufs task wait parameters from uefi...
+0>AmuTaskStart Entry ... 
+0>amu task wait parameters from uefi...
+0>ThermalSiwStart Entry ...
+0>ThermalSiwTask idle...
+0>DemtTaskStart Entry ...
+0>[TracePoint] type[  0] cmd[  3] data[  3]
+0>HiBoostTaskStart Entry ...
+0>HiBoost task enabled
+0>Waiting for UEFI parameters...
+0>[TracePoint] type[  0] cmd[  3] data[  4]
+0>AgeTaskStart Entry ...
+0>demt task wait parameters from uefi...
+0>age task wait parameters from uefi...
+0>[TracePoint] type[  0] cmd[  3] data[  5]
+0>uefi parameters ready!
+0>UFSProfile[0]
+0>thermal soc task restore underclocking_en=1
+0>ppu alert temp div init done
+0>PowerPolicy[2] BenchMarkSelection[0]
+0>ipu interface task wait ddr init done from uefi...
+0>ufs task parameters from uefi ready
+0>uncore domain[0] freq:2900
+0>uncore domain[1] freq:2900
+0>nimbus uncore domain[0] freq_div:4 all_sioe_freq:3000
+0>nimbus uncore domain[1] freq_div:4 all_sioe_freq:3000
+0>======sioe status======
+0>TA_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TA_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TA_SIOE2: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TA_SIOE3: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TA_SIOE5: ASYNC, SDR, LOW_PLL, is_cdr=0
+0>TA_SIOE6: ASYNC, SDR, LOW_PLL, is_cdr=0
+0>TB_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TB_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TB_SIOE2: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TB_SIOE3: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TB_SIOE5: ASYNC, SDR, LOW_PLL, is_cdr=0
+0>TB_SIOE6: ASYNC, SDR, LOW_PLL, is_cdr=0
+0>NA_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>NA_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>NA_SIOE2: ASYNC, SDR, LOW_PLL, is_cdr=0
+0>NB_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>NB_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>NB_SIOE2: ASYNC, SDR, LOW_PLL, is_cdr=0
+0>==========end==========
+0>sioe init done
+0>ufs task enabled
+0>--> UFS profile[0]
+0>UEFI parameters ready
+0>UncoreMaxFreq Set to [2900 MHZ]
+0>get TDP from efuse success, value = 313500mw
+0>target power set to [313500]mw, brd:[313500]
+0>demt task parameters from uefi ready
+0>age task parameters from uefi ready
+0>age task enabled
+0>uefi ddr init finish!
+0>ipu interface task wait uefi end done from uefi...
+0>ddr init done, start thermal dimm task
+0>======dimm status======
+0>  chl[0] dimm0 2, dimm1 2
+0>  chl[1] dimm0 2, dimm1 2
+0>  chl[2] dimm0 2, dimm1 2
+0>  chl[3] dimm0 2, dimm1 2
+0>  chl[4] dimm0 2, dimm1 2
+0>  chl[5] dimm0 2, dimm1 2
+0>  chl[6] dimm0 2, dimm1 2
+0>  chl[7] dimm0 2, dimm1 2
+0>==========end==========
+0>chl[0] registered, dimm mask = 0x3
+0>chl[1] registered, dimm mask = 0x3
+0>chl[2] registered, dimm mask = 0x3
+0>chl[3] registered, dimm mask = 0x3
+0>chl[4] registered, dimm mask = 0x3
+0>chl[5] registered, dimm mask = 0x3
+0>chl[6] registered, dimm mask = 0x3
+0>chl[7] registered, dimm mask = 0x3
+0>=====dimm temp params=====
+0>  temp_threshold      : temp_mid:85,85 | temp_hi:95 | temp_cri:100
+0>  is_thermal_thro_en  : 1
+0>  is_aref_rate_auto   : 1
+0>===========end============
+[ 810]mv TB[ 810]mv
+1>[1300]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1350]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1400]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1450]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1500]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1550]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1600]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1650]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1700]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1750]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1800]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1850]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1900]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1950]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[2000]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[2050]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[2100]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[2150]MHZ -> Vol TA[ 818]mv TB[ 817]mv
+1>[2200]MHZ -> Vol TA[ 831]mv TB[ 830]mv
+1>[2250]MHZ -> Vol TA[ 844]mv TB[ 842]mv
+1>[2300]MHZ -> Vol TA[ 856]mv TB[ 855]mv
+1>[2350]MHZ -> Vol TA[ 869]mv TB[ 868]mv
+1>[2400]MHZ -> Vol TA[ 882]mv TB[ 880]mv
+1>[2450]MHZ -> Vol TA[ 894]mv TB[ 893]mv
+1>[2500]MHZ -> Vol TA[ 907]mv TB[ 905]mv
+1>[2550]MHZ -> Vol TA[ 920]mv TB[ 918]mv
+1>[2600]MHZ -> Vol TA[ 932]mv TB[ 930]mv
+1>[2650]MHZ -> Vol TA[ 945]mv TB[ 943]mv
+1>[2700]MHZ -> Vol TA[ 958]mv TB[ 956]mv
+1>[2750]MHZ -> Vol TA[ 976]mv TB[ 974]mv
+1>[2800]MHZ -> Vol TA[ 994]mv TB[ 992]mv
+1>[2850]MHZ -> Vol TA[1012]mv TB[1010]mv
+1>[2900]MHZ -> Vol TA[1031]mv TB[1028]mv
+1>[2950]MHZ -> Vol TA[1048]mv TB[1045]mv
+1>[3000]MHZ -> Vol TA[1065]mv TB[1063]mv
+1>[3050]MHZ -> Vol TA[1078]mv TB[1076]mv
+1>[3100]MHZ -> Vol TA[1092]mv TB[1090]mv
+1>Uncore VF curve:
+1>Uncore [   0]MHZ -> Vol [ 810]mv
+1>Uncore [ 100]MHZ -> Vol [ 810]mv
+1>Uncore [ 200]MHZ -> Vol [ 810]mv
+1>Uncore [ 300]MHZ -> Vol [ 810]mv
+1>Uncore [ 400]MHZ -> Vol [ 810]mv
+1>Uncore [ 500]MHZ -> Vol [ 909]mv
+1>Uncore [ 600]MHZ -> Vol [ 909]mv
+1>Uncore [ 700]MHZ -> Vol [ 909]mv
+1>Uncore [ 800]MHZ -> Vol [ 909]mv
+1>Uncore [ 900]MHZ -> Vol [ 909]mv
+1>Uncore [1000]MHZ -> Vol [ 909]mv
+1>Uncore [1100]MHZ -> Vol [ 909]mv
+1>Uncore [1200]MHZ -> Vol [ 909]mv
+1>Uncore [1300]MHZ -> Vol [ 909]mv
+1>Uncore [1400]MHZ -> Vol [ 909]mv
+1>Uncore [1500]MHZ -> Vol [ 909]mv
+1>Uncore [1600]MHZ -> Vol [ 909]mv
+1>Uncore [1700]MHZ -> Vol [ 909]mv
+1>Uncore [1800]MHZ -> Vol [ 909]mv
+1>Uncore [1900]MHZ -> Vol [ 909]mv
+1>Uncore [2000]MHZ -> Vol [ 909]mv
+1>Uncore [2100]MHZ -> Vol [ 916]mv
+1>Uncore [2200]MHZ -> Vol [ 924]mv
+1>Uncore [2300]MHZ -> Vol [ 932]mv
+1>Uncore [2400]MHZ -> Vol [ 940]mv
+1>Uncore [2500]MHZ -> Vol [ 948]mv
+1>Uncore [2600]MHZ -> Vol [ 965]mv
+1>Uncore [2700]MHZ -> Vol [ 983]mv
+1>Uncore [2800]MHZ -> Vol [1001]mv
+1>Uncore [2900]MHZ -> Vol [1019]mv
+1>Uncore [3000]MHZ -> Vol [1033]mv
+1>[TracePoint] type[  0] cmd[  1] data[  6]
+1>[TracePoint] type[  0] cmd[  1] data[  7]
+1>
+********Hello Huawei LiteOS********
+
+KpxxxxIPU Firmware Version : VX.X.X
+LiteOS Kernel Version : 5.7.0
+1>Run on ChipVersion[0] Socket[1] Die[0]
+1>build time : Jun 26 2025 22:00:00
+
+1>**********************************
+1>
+main core booting up...
+1>start set affinity
+1>
+mpidr = 0x81040000
+1>sram ecc state: 0x0, sram ecc cnt: 0x0
+1>[TracePoint] type[  0] cmd[  2] data[  1]
+1>[TracePoint] type[  0] cmd[  2] data[  2]
+1>LRDXSD_LOCK_OFFSET = 0x0
+1>LRDXSD_ERRIMSK_OFFSET = 0x0
+1>LRDXSD_DBG_OTIMSK_OFFSET = 0x0
+1>LRDXSD_DBG_OT_SET_OFFSET = 0xffffffff
+1>LRDXSD_DBG_EN_OFFSET = 0x1
+1>======tsensor params======
+1>  is_trimmed       : 1
+1>  underclocking_en : 1
+1>===========end============
+1>soc tsensor init done
+1>========vrd info from cpld========
+1>vrd_id | u64                | pmbus_en | avsbus_en | loop | pmbus_id | pmbus_addr | avs_sw | pmbus_sw | addr_9545 | domain_type | die_mask | reserved
+1>  00   | 0x0001000100002017 | 0x1      | 0x1       | 0x1  | 0x1      | 0x20       | 0x0    | 0x0      | 0x0       | 0x1         | 0x0100   | 0x0
+1>  01   | 0x000300030000201b | 0x1      | 0x1       | 0x2  | 0x1      | 0x20       | 0x0    | 0x0      | 0x0       | 0x3         | 0x0300   | 0x0
+1>  02   | 0x0000010500002b15 | 0x1      | 0x0       | 0x1  | 0x1      | 0x2b       | 0x0    | 0x0      | 0x0       | 0x5         | 0x0001   | 0x0
+1>  03   | 0x0002000100002027 | 0x1      | 0x1       | 0x1  | 0x2      | 0x20       | 0x0    | 0x0      | 0x0       | 0x1         | 0x0200   | 0x0
+1>  04   | 0x000300020000202b | 0x1      | 0x1       | 0x2  | 0x2      | 0x20       | 0x0    | 0x0      | 0x0       | 0x2         | 0x0300   | 0x0
+1>  05   | 0x0000020500002b25 | 0x1      | 0x0       | 0x1  | 0x2      | 0x2b       | 0x0    | 0x0      | 0x0       | 0x5         | 0x0002   | 0x0
+1>  06   | 0x0003000400002b29 | 0x1      | 0x0       | 0x2  | 0x2      | 0x2b       | 0x0    | 0x0      | 0x0       | 0x4         | 0x0300   | 0x0
+1>================end===============
+1>=============vrd info=============
+1>power domain num: 7
+1>power domain[00] id:0 | CORE_DVFS_TA       | PMBus NA | cap:0x3 | rail:0 | addr:0x20 | def_volt:1100 mV | min_volt: 750 mV | max_volt:1150 mV
+1>power domain[01] id:1 | DDR_VDD            | PMBus NA | cap:0x3 | rail:1 | addr:0x20 | def_volt: 765 mV | min_volt: 382 mV | max_volt: 880 mV
+1>power domain[02] id:4 | IO_DVDD_NA         | PMBus NA | cap:0x1 | rail:0 | addr:0x2b | def_volt: 800 mV | min_volt: 400 mV | max_volt: 920 mV
+1>power domain[03] id:2 | CORE_DVFS_TB       | PMBus NB | cap:0x3 | rail:0 | addr:0x20 | def_volt:1100 mV | min_volt: 750 mV | max_volt:1150 mV
+1>power domain[04] id:3 | UNCORE_DVFS        | PMBus NB | cap:0x3 | rail:1 | addr:0x20 | def_volt:1033 mV | min_volt: 750 mV | max_volt:1100 mV
+1>power domain[05] id:5 | IO_DVDD_NB         | PMBus NB | cap:0x1 | rail:0 | addr:0x2b | def_volt: 800 mV | min_volt: 400 mV | max_volt: 920 mV
+1>power domain[06] id:6 | DDR_VDDQ           | PMBus NB | cap:0x1 | rail:1 | addr:0x2b | def_volt:1100 mV | min_volt: 550 mV | max_volt:1265 mV
+1>================end===============
+1>pmbus[0] init done
+1>pmbus[1] init done
+1>power domain[0] CORE_DVFS_TA       | NA PMBus/AVSBus | rail:0 | addr:0x20 | def_volt:1100 mV | pmu:MP2882
+1>power domain[1] DDR_VDD            | NA PMBus/AVSBus | rail:1 | addr:0x20 | def_volt: 765 mV | pmu:MP2882
+1>power domain[4] IO_DVDD_NA         | NA PMBus        | rail:0 | addr:0x2b | def_volt: 800 mV | pmu:MP2882
+1>power domain[2] CORE_DVFS_TB       | NB PMBus/AVSBus | rail:0 | addr:0x20 | def_volt:1100 mV | pmu:MP2882
+1>power domain[3] UNCORE_DVFS        | NB PMBus/AVSBus | rail:1 | addr:0x20 | def_volt:1033 mV | pmu:MP2882
+1>power domain[5] IO_DVDD_NB         | NB PMBus        | rail:0 | addr:0x2b | def_volt: 800 mV | pmu:MP2882
+1>power domain[6] DDR_VDDQ           | NB PMBus        | rail:1 | addr:0x2b | def_volt:1100 mV | pmu:MP2882
+1>power domain[0] CORE_DVFS_TA       is transferred to AVSBus mode
+1>power domain[1] DDR_VDD            is transferred to AVSBus mode
+1>power domain[2] CORE_DVFS_TB       is transferred to AVSBus mode
+1>power domain[3] UNCORE_DVFS        is transferred to AVSBus mode
+1>avsbus resync success
+1>avsbus[0] init done
+1>avsbus resync success
+1>avsbus[1] init done
+1>============volt boot============
+1>power domain[0] volt = 1103 mV
+1>power domain[1] volt =  769 mV
+1>power domain[4] volt =  802 mV
+1>power domain[2] volt = 1101 mV
+1>power domain[3] volt = 1007 mV
+1>power domain[5] volt =  802 mV
+1>power domain[6] volt = 1101 mV
+1>===============end===============
+1>--w&h rd rail:0, 1103, CORE_DVFS_TA
+1>--w&h rd rail:1, 765, CORE_DVFS_TA
+1>power domain[0] set volt --> 1103 mV success
+1>--w&h rd rail:0, 1101, CORE_DVFS_TB
+1>--w&h rd rail:1, 1007, CORE_DVFS_TB
+1>power domain[2] set volt --> 1103 mV success
+1>power domain[3] set volt --> 1037 mV success
+1>============volt post============
+1>power domain[0] volt = 1103 mV
+1>power domain[1] volt =  767 mV
+1>power domain[4] volt =  802 mV
+1>power domain[2] volt = 1103 mV
+1>power domain[3] volt = 1037 mV
+1>power domain[5] volt =  802 mV
+1>power domain[6] volt = 1099 mV
+1>===============end===============
+1>Hboot1 Info RAW Dump: [0x01][0x00][0x00][0x14][0x01][0x00][0x01]
+1>PowerSensorSupport[1], Cali[5120], Loss[0]
+1>Power Sensor Calibration Value[5120]!
+1>the power sensor : manu id = 2peak, die id = TPA626
+1>power sensor[0] init success
+1>die[0] its[0] init done
+1>die[0] its[1] init done
+1>die[0] its[2] init done
+1>die[0] its[3] init done
+1>die[0] its[4] init done
+1>die[0] its[5] init done
+1>die[0] its[6] init done
+1>die[0] its[7] init done
+1>die[0] its[8] init done
+1>die[0] its[9] init done
+1>die[1] its[0] init done
+1>die[1] its[1] init done
+1>die[1] its[2] init done
+1>die[1] its[3] init done
+1>die[1] its[4] init done
+1>die[1] its[5] init done
+1>die[1] its[6] init done
+1>die[1] its[7] init done
+1>die[1] its[8] init done
+1>die[1] its[9] init done
+1>Totem[0] Core Boot Vol [1103]mv
+1>Totem[0] Core Current Vol [1100]mv
+1>Totem[1] Core Boot Vol [1101]mv
+1>Totem[1] Core Current Vol [1100]mv
+1>NA 1620V190
+1>NB 1620V190
+1>GetCoreBaseFreq [2600000KHZ]
+1>GetCoreTurboFreq [2600000KHZ]
+1>GetCustomClusterNum [8]
+1>Ipu ACG Training Done!
+1>AP Last Time:[0.00.01.525]
+1>wait UEFI pll init...
+1>done
+1>acg trim start
+1>core trim freq:2000, avs:0 volt:810mv
+1>core trim freq:2000, avs:0 volt:810mv
+1>core trim freq:2050, avs:1 volt:810mv
+1>core trim freq:2050, avs:1 volt:810mv
+1>core trim freq:2100, avs:2 volt:810mv
+1>core trim freq:2100, avs:2 volt:810mv
+1>core trim freq:2150, avs:3 volt:818mv
+1>core trim freq:2150, avs:3 volt:817mv
+1>core trim freq:2200, avs:4 volt:831mv
+1>core trim freq:2200, avs:4 volt:830mv
+1>core trim freq:2250, avs:5 volt:844mv
+1>core trim freq:2250, avs:5 volt:842mv
+1>core trim freq:2300, avs:6 volt:856mv
+1>core trim freq:2300, avs:6 volt:855mv
+1>core trim freq:2350, avs:7 volt:869mv
+1>core trim freq:2350, avs:7 volt:868mv
+1>core trim freq:2400, avs:8 volt:882mv
+1>core trim freq:2400, avs:8 volt:880mv
+1>core trim freq:2450, avs:9 volt:894mv
+1>core trim freq:2450, avs:9 volt:893mv
+1>core trim freq:2500, avs:10 volt:907mv
+1>core trim freq:2500, avs:10 volt:905mv
+1>core trim freq:2550, avs:11 volt:920mv
+1>core trim freq:2550, avs:11 volt:918mv
+1>core trim freq:2600, avs:12 volt:932mv
+1>core trim freq:2600, avs:12 volt:930mv
+1>core trim freq:2650, avs:13 volt:945mv
+1>core trim freq:2650, avs:13 volt:943mv
+1>core trim freq:2700, avs:14 volt:958mv
+1>core trim freq:2700, avs:14 volt:956mv
+1>core trim freq:2750, avs:15 volt:976mv
+1>core trim freq:2750, avs:15 volt:974mv
+1>core trim freq:2800, avs:16 volt:994mv
+1>core trim freq:2800, avs:16 volt:992mv
+1>core trim freq:2850, avs:17 volt:1012mv
+1>core trim freq:2850, avs:17 volt:1010mv
+1>core trim freq:2900, avs:18 volt:1031mv
+1>core trim freq:2900, avs:18 volt:1028mv
+1>core trim freq:2950, avs:19 volt:1048mv
+1>core trim freq:2950, avs:19 volt:1045mv
+1>core trim freq:3000, avs:20 volt:1065mv
+1>core trim freq:3000, avs:20 volt:1063mv
+1>core trim freq:3050, avs:21 volt:1078mv
+1>core trim freq:3050, avs:21 volt:1076mv
+1>core trim freq:3100, avs:22 volt:1092mv
+1>core trim freq:3100, avs:22 volt:1090mv
+1>acg trim end
+1>LDO disabled
+1>[TracePoint] type[  0] cmd[  2] data[  3]
+1>Interrupt 423 register OK
+1>Interrupt 430 register OK
+1>[TracePoint] type[  0] cmd[  2] data[  4]
+1>
+1>cpu 0 entering scheduler
+1>[TracePoint] type[  0] cmd[  3] data[  1]
+1>add your ipu app init here!
+1>IpuInterfaceTaskStart Entry ...
+1>ipu interface task wait parameters from uefi...
+1>thermal soc task enabled
+1>AP Last Time:[0.00.19.316]
+1>ThermalDimmStart Entry ...
+1>wait ddr init done...
+1>power task start...
+1>[TracePoint] type[  0] cmd[  3] data[  2]
+1>ufs task wait parameters from uefi...
+1>AmuTaskStart Entry ... 
+1>amu task wait parameters from uefi...
+1>ThermalSiwStart Entry ...
+1>ThermalSiwTask idle...
+1>DemtTaskStart Entry ...
+1>demt task wait parameters from uefi...
+1>[TracePoint] type[  0] cmd[  3] data[  3]
+1>HiBoostTaskStart Entry ...
+1>HiBoost task enabled
+1>Waiting for UEFI parameters...
+1>[TracePoint] type[  0] cmd[  3] data[  4]
+1>AgeTaskStart Entry ...
+1>[TracePoint] type[  0] cmd[  3] data[  5]
+1>age task wait parameters from uefi...
+1>uefi parameters ready!
+1>UFSProfile[0]
+1>thermal soc task restore underclocking_en=1
+1>ppu alert temp div init done
+1>PowerPolicy[2] BenchMarkSelection[0]
+1>ipu interface task wait ddr init done from uefi...
+1>ufs task parameters from uefi ready
+1>uncore domain[0] freq:2900
+1>uncore domain[1] freq:2900
+1>nimbus uncore domain[0] freq_div:4 all_sioe_freq:3000
+1>nimbus uncore domain[1] freq_div:4 all_sioe_freq:3000
+1>======sioe status======
+1>TA_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TA_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TA_SIOE2: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TA_SIOE3: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TA_SIOE5: ASYNC, SDR, LOW_PLL, is_cdr=0
+1>TA_SIOE6: ASYNC, SDR, LOW_PLL, is_cdr=0
+1>TB_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TB_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TB_SIOE2: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TB_SIOE3: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TB_SIOE5: ASYNC, SDR, LOW_PLL, is_cdr=0
+1>TB_SIOE6: ASYNC, SDR, LOW_PLL, is_cdr=0
+1>NA_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>NA_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>NA_SIOE2: ASYNC, SDR, LOW_PLL, is_cdr=0
+1>NB_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>NB_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>NB_SIOE2: ASYNC, SDR, LOW_PLL, is_cdr=0
+1>==========end==========
+1>sioe init done
+1>ufs task enabled
+1>--> UFS profile[0]
+1>UEFI parameters ready
+1>UncoreMaxFreq Set to [2900 MHZ]
+1>get TDP from efuse success, value = 313500mw
+1>target power set to [313500]mw, brd:[313500]
+1>demt task parameters from uefi ready
+1>age task parameters from uefi ready
+1>age task enabled
+1>uefi ddr init finish!
+1>ipu interface task wait uefi end done from uefi...
+1>ddr init done, start thermal dimm task
+1>======dimm status======
+1>  chl[0] dimm0 2, dimm1 2
+1>  chl[1] dimm0 2, dimm1 2
+1>  chl[2] dimm0 2, dimm1 2
+1>  chl[3] dimm0 2, dimm1 2
+1>  chl[4] dimm0 2, dimm1 2
+1>  chl[5] dimm0 2, dimm1 2
+1>  chl[6] dimm0 2, dimm1 2
+1>  chl[7] dimm0 2, dimm1 2
+1>==========end==========
+1>chl[0] registered, dimm mask = 0x3
+1>chl[1] registered, dimm mask = 0x3
+1>chl[2] registered, dimm mask = 0x3
+1>chl[3] registered, dimm mask = 0x3
+1>chl[4] registered, dimm mask = 0x3
+1>chl[5] registered, dimm mask = 0x3
+1>chl[6] registered, dimm mask = 0x3
+1>chl[7] registered, dimm mask = 0x3
+1>=====dimm temp params=====
+1>  temp_threshold      : temp_mid:85,85 | temp_hi:95 | temp_cri:100
+1>  is_thermal_thro_en  : 1
+1>  is_aref_rate_auto   : 1
+1>===========end============
+
+
+HSM_LOG:
+[00:00:00.010][info] os_mem_system_init default pool done
+[00:00:00.016][info] succeed to do thirdparty otpc_pabuk init
+[00:00
+
+
+
+HSM_LOG:
+:00.017][info] succeed to do thirdparty boot_profile_driver init
+[00:00:00.017][info] succeed to do thirdparty measure_value_ma
+
+
+
+HSM_LOG:
+nage_driver init
+[00:00:00.018][info] succeed to do thirdparty period_driver init
+[00:00:00.018][info]  start loading internal
+
+[0.01.40.126]TF Heartbeat Start
+
+
+HSM_LOG:
+ task ...
+[00:00:00.018][info]  task name is ccm_task
+[00:00:00.019][info]  hm_dynamic_loadelf successfully!
+[00:00:00.019][i
+
+
+
+HSM_LOG:
+nfo] internal task[1] task_name=ccm_task load successfully
+[00:00:00.020][info]  task name is upgrade_task
+[00:00:00.020][info
+
+
+
+HSM_LOG:
+]  hm_dynamic_loadelf successfully!
+[00:00:00.021][info] internal task[2] task_name=upgrade_task load successfully
+[00:00:00.0
+
+
+
+HSM_LOG:
+22][info]  task name is hes_task
+[00:00:00.022][info]  hm_dynamic_loadelf successfully!
+[00:00:00.023][info] internal task[3] 
+
+
+
+HSM_LOG:
+task_name=hes_task load successfully
+[00:00:00.024][info] created task ccm_task success!
+[00:00:00.025][info] created task upg
+
+[0.01.51.436][ERR]cmd not support! cmd = 0xd
+
+
+HSM_LOG:
+rade_task success!
+[00:00:00.026][info] created task hes_task success!
+[00:00:00.026][info] Init start.
+[1970-01-01 00:00:00.
+
+
+
+HSM_LOG:
+027][HSM][INFO][54] Platform init 0x20250523 0x4e.
+[1970-01-01 00:00:00.027][HSM][INFO][197] ccm start.
+[1970-01-01 00:00:00
+
+
+
+HSM_LOG:
+.028][HSM][INFO][86] upgrade task init success.
+[1970-01-01 00:00:00.028][HSM][INFO][95] upgrade recv cmd, 0x181.
+[1970-01-0
+
+
+
+HSM_LOG:
+1 00:00:00.029][HSM][INFO][103] upgrade res, 0x3a5aa5a3.
+[1970-01-01 00:00:00.030][HSM][INFO][75] hes tee_task_entry.
+[1970-
+
+[0.01.59.508]PCIE INIT DONE.
+slotNum = 0xb
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[0] port:8  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[1] port:12  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[2] port:20  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[3] port:32  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[4] port:0  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[5] port:2  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[6] port:4  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[7] port:8  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[8] port:12  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[9] port:20  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[10] port:32  pcieSlotCtrl.data (after)0x14801c0.
+
+Interrupt 454 register OK
+Interrupt 467 register OK
+Interrupt 480 register OK
+Interrupt 493 register OK
+data = 0x0
+pmt Init done
+slot[0] port:8 begin to power ON.
+slot[1] port:12 begin to power ON.
+slot[2] port:20 begin to power ON.
+slot[3] port:32 begin to power ON.
+slot[4] port:0 begin to power ON.
+slot[5] port:2 begin to power ON.
+slot[6] port:4 begin to power ON.
+slot[7] port:8 begin to power ON.
+slot[8] port:12 begin to power ON.
+slot[9] port:20 begin to power ON.
+slot[10] port:32 begin to power ON.
+Add ep: bdf=300 eid=9 epCnt=1 eid_alloc=a
+
+
+HSM_LOG:
+01-01 00:00:00.555][HSM][INFO][44] hes init success.
+[00:00:00.556][info] Init over.
+
+
+mctp task ok.
+[0.02.37.177]ext0 int trigger
+q:2400, avs:8 volt:887mv
+0>core trim freq:2450, avs:9 volt:903mv
+0>core trim freq:2450, avs:9 volt:900mv
+0>core trim freq:2500, avs:10 volt:916mv
+0>core trim freq:2500, avs:10 volt:913mv
+0>core trim freq:2550, avs:11 volt:929mv
+0>core trim freq:2550, avs:11 volt:926mv
+0>core trim freq:2600, avs:12 volt:942mv
+0>core trim freq:2600, avs:12 volt:939mv
+0>core trim freq:2650, avs:13 volt:955mv
+0>core trim freq:2650, avs:13 volt:952mv
+0>core trim freq:2700, avs:14 volt:968mv
+0>core trim freq:2700, avs:14 volt:965mv
+0>core trim freq:2750, avs:15 volt:986mv
+0>core trim freq:2750, avs:15 volt:983mv
+0>core trim freq:2800, avs:16 volt:1005mv
+0>core trim freq:2800, avs:16 volt:1002mv
+0>core trim freq:2850, avs:17 volt:1023mv
+0>core trim freq:2850, avs:17 volt:1020mv
+0>core trim freq:2900, avs:18 volt:1042mv
+0>core trim freq:2900, avs:18 volt:1039mv
+0>core trim freq:2950, avs:19 volt:1060mv
+0>core trim freq:2950, avs:19 volt:1056mv
+0>core trim freq:3000, avs:20 volt:1078mv
+0>core trim freq:3000, avs:20 volt:1074mv
+0>core trim freq:3050, avs:21 volt:1090mv
+0>core trim freq:3050, avs:21 volt:1087mv
+0>core trim freq:3100, avs:22 volt:1100mv
+0>core trim freq:3100, avs:22 volt:1100mv
+0>acg trim end
+0>LDO disabled
+0>[TracePoint] type[  0] cmd[  2] data[  3]
+0>Interrupt 423 register OK
+0>Interrupt 430 register OK
+0>[TracePoint] type[  0] cmd[  2] data[  4]
+0>
+0>cpu 0 entering scheduler
+0>[TracePoint] type[  0] cmd[  3] data[  1]
+0>add your ipu app init here!
+0>IpuInterfaceTaskStart Entry ...
+0>ipu interface task wait parameters from uefi...
+0>uefi parameters ready!
+0>UFSProfile[0]
+0>PowerPolicy[2] BenchMarkSelection[0]
+0>ipu interface task wait ddr init done from uefi...
+0>thermal soc task enabled
+0>AP Last Time:[0.00.05.703]
+0>thermal soc task restore underclocking_en=1
+0>ppu alert temp div init done
+0>ThermalDimmStart Entry ...
+0>wait ddr init done...
+0>power task start...
+0>[TracePoint] type[  0] cmd[  3] data[  2]
+0>ufs task wait parameters from uefi...
+0>ufs task parameters from uefi ready
+0>uncore domain[0] freq:2900
+0>uncore domain[1] freq:2900
+0>nimbus uncore domain[0] freq_div:4 all_sioe_freq:3000
+0>nimbus uncore domain[1] freq_div:4 all_sioe_freq:3000
+0>======sioe status======
+0>TA_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TA_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TA_SIOE2: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TA_SIOE3: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TA_SIOE5: ASYNC, SDR, LOW_PLL, is_cdr=0
+0>TA_SIOE6: ASYNC, SDR, LOW_PLL, is_cdr=0
+0>TB_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TB_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TB_SIOE2: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TB_SIOE3: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>TB_SIOE5: ASYNC, SDR, LOW_PLL, is_cdr=0
+0>TB_SIOE6: ASYNC, SDR, LOW_PLL, is_cdr=0
+0>NA_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>NA_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>NA_SIOE2: ASYNC, SDR, LOW_PLL, is_cdr=0
+0>NB_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>NB_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+0>NB_SIOE2: ASYNC, SDR, LOW_PLL, is_cdr=0
+0>==========end==========
+0>sioe init done
+0>ufs task enabled
+0>--> UFS profile[0]
+0>AmuTaskStart Entry ... 
+0>amu task wait parameters from uefi...
+0>ThermalSiwStart Entry ...
+0>DemtTaskStart Entry ...
+0>ThermalSiwTask idle...
+0>demt task wait parameters from uefi...
+0>demt task parameters from uefi ready
+0>[TracePoint] type[  0] cmd[  3] data[  3]
+0>HiBoostTaskStart Entry ...
+0>HiBoost task enabled
+0>Waiting for UEFI parameters...
+0>UEFI parameters ready
+0>UncoreMaxFreq Set to [2900 MHZ]
+0>get TDP from efuse success, value = 313500mw
+0>target power set to [313500]mw, brd:[313500]
+0>[TracePoint] type[  0] cmd[  3] data[  4]
+0>AgeTaskStart Entry ...
+0>age task wait parameters from uefi...
+0>[TracePoint] type[  0] cmd[  3] data[  5]
+0>age task parameters from uefi ready
+0>age task enabled
+e 2500MHZ -> Vol[948] mv
+1>Totem Uncore 2700MHZ -> Vol[983] mv
+1>Totem Uncore 2900MHZ -> Vol[1019] mv
+1>Totem Uncore 3000MHZ -> Vol[1033] mv
+1>Core VF curve:
+1>[ 400]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[ 450]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[ 500]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[ 550]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[ 600]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[ 650]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[ 700]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[ 750]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[ 800]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[ 850]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[ 900]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[ 950]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1000]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1050]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1100]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1150]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1200]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1250]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1300]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1350]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1400]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1450]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1500]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1550]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1600]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1650]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1700]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1750]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1800]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1850]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1900]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[1950]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[2000]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[2050]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[2100]MHZ -> Vol TA[ 810]mv TB[ 810]mv
+1>[2150]MHZ -> Vol TA[ 818]mv TB[ 817]mv
+1>[2200]MHZ -> Vol TA[ 831]mv TB[ 830]mv
+1>[2250]MHZ -> Vol TA[ 844]mv TB[ 842]mv
+1>[2300]MHZ -> Vol TA[ 856]mv TB[ 855]mv
+1>[2350]MHZ -> Vol TA[ 869]mv TB[ 868]mv
+1>[2400]MHZ -> Vol TA[ 882]mv TB[ 880]mv
+1>[2450]MHZ -> Vol TA[ 894]mv TB[ 893]mv
+1>[2500]MHZ -> Vol TA[ 907]mv TB[ 905]mv
+1>[2550]MHZ -> Vol TA[ 920]mv TB[ 918]mv
+1>[2600]MHZ -> Vol TA[ 932]mv TB[ 930]mv
+1>[2650]MHZ -> Vol TA[ 945]mv TB[ 943]mv
+1>[2700]MHZ -> Vol TA[ 958]mv TB[ 956]mv
+1>[2750]MHZ -> Vol TA[ 976]mv TB[ 974]mv
+1>[2800]MHZ -> Vol TA[ 994]mv TB[ 992]mv
+1>[2850]MHZ -> Vol TA[1012]mv TB[1010]mv
+1>[2900]MHZ -> Vol TA[1031]mv TB[1028]mv
+1>[2950]MHZ -> Vol TA[1048]mv TB[1045]mv
+1>[3000]MHZ -> Vol TA[1065]mv TB[1063]mv
+1>[3050]MHZ -> Vol TA[1078]mv TB[1076]mv
+1>[3100]MHZ -> Vol TA[1092]mv TB[1090]mv
+1>Uncore VF curve:
+1>Uncore [   0]MHZ -> Vol [ 810]mv
+1>Uncore [ 100]MHZ -> Vol [ 810]mv
+1>Uncore [ 200]MHZ -> Vol [ 810]mv
+1>Uncore [ 300]MHZ -> Vol [ 810]mv
+1>Uncore [ 400]MHZ -> Vol [ 810]mv
+1>Uncore [ 500]MHZ -> Vol [ 909]mv
+1>Uncore [ 600]MHZ -> Vol [ 909]mv
+1>Uncore [ 700]MHZ -> Vol [ 909]mv
+1>Uncore [ 800]MHZ -> Vol [ 909]mv
+1>Uncore [ 900]MHZ -> Vol [ 909]mv
+1>Uncore [1000]MHZ -> Vol [ 909]mv
+1>Uncore [1100]MHZ -> Vol [ 909]mv
+1>Uncore [1200]MHZ -> Vol [ 909]mv
+1>Uncore [1300]MHZ -> Vol [ 909]mv
+1>Uncore [1400]MHZ -> Vol [ 909]mv
+1>Uncore [1500]MHZ -> Vol [ 909]mv
+1>Uncore [1600]MHZ -> Vol [ 909]mv
+1>Uncore [1700]MHZ -> Vol [ 909]mv
+1>Uncore [1800]MHZ -> Vol [ 909]mv
+1>Uncore [1900]MHZ -> Vol [ 909]mv
+1>Uncore [2000]MHZ -> Vol [ 909]mv
+1>Uncore [2100]MHZ -> Vol [ 916]mv
+1>Uncore [2200]MHZ -> Vol [ 924]mv
+1>Uncore [2300]MHZ -> Vol [ 932]mv
+1>Uncore [2400]MHZ -> Vol [ 940]mv
+1>Uncore [2500]MHZ -> Vol [ 948]mv
+1>Uncore [2600]MHZ -> Vol [ 965]mv
+1>Uncore [2700]MHZ -> Vol [ 983]mv
+1>Uncore [2800]MHZ -> Vol [1001]mv
+1>Uncore [2900]MHZ -> Vol [1019]mv
+1>Uncore [3000]MHZ -> Vol [1033]mv
+1>[TracePoint] type[  0] cmd[  1] data[  6]
+1>[TracePoint] type[  0] cmd[  1] data[  7]
+1>
+********Hello Huawei LiteOS********
+
+KpxxxxIPU Firmware Version : VX.X.X
+LiteOS Kernel Version : 5.7.0
+1>Run on ChipVersion[0] Socket[1] Die[0]
+1>build time : Jun 26 2025 22:00:00
+
+1>**********************************
+1>
+main core booting up...
+1>start set affinity
+1>
+mpidr = 0x81040000
+1>sram ecc state: 0x0, sram ecc cnt: 0x0
+1>[TracePoint] type[  0] cmd[  2] data[  1]
+1>[TracePoint] type[  0] cmd[  2] data[  2]
+1>LRDXSD_LOCK_OFFSET = 0x0
+1>LRDXSD_ERRIMSK_OFFSET = 0x0
+1>LRDXSD_DBG_OTIMSK_OFFSET = 0x0
+1>LRDXSD_DBG_OT_SET_OFFSET = 0xffffffff
+1>LRDXSD_DBG_EN_OFFSET = 0x1
+1>======tsensor params======
+1>  is_trimmed       : 1
+1>  underclocking_en : 1
+1>===========end============
+1>soc tsensor init done
+1>========vrd info from cpld========
+1>vrd_id | u64                | pmbus_en | avsbus_en | loop | pmbus_id | pmbus_addr | avs_sw | pmbus_sw | addr_9545 | domain_type | die_mask | reserved
+1>  00   | 0x0001000100002017 | 0x1      | 0x1       | 0x1  | 0x1      | 0x20       | 0x0    | 0x0      | 0x0       | 0x1         | 0x0100   | 0x0
+1>  01   | 0x000300030000201b | 0x1      | 0x1       | 0x2  | 0x1      | 0x20       | 0x0    | 0x0      | 0x0       | 0x3         | 0x0300   | 0x0
+1>  02   | 0x0000010500002b15 | 0x1      | 0x0       | 0x1  | 0x1      | 0x2b       | 0x0    | 0x0      | 0x0       | 0x5         | 0x0001   | 0x0
+1>  03   | 0x0002000100002027 | 0x1      | 0x1       | 0x1  | 0x2      | 0x20       | 0x0    | 0x0      | 0x0       | 0x1         | 0x0200   | 0x0
+1>  04   | 0x000300020000202b | 0x1      | 0x1       | 0x2  | 0x2      | 0x20       | 0x0    | 0x0      | 0x0       | 0x2         | 0x0300   | 0x0
+1>  05   | 0x0000020500002b25 | 0x1      | 0x0       | 0x1  | 0x2      | 0x2b       | 0x0    | 0x0      | 0x0       | 0x5         | 0x0002   | 0x0
+1>  06   | 0x0003000400002b29 | 0x1      | 0x0       | 0x2  | 0x2      | 0x2b       | 0x0    | 0x0      | 0x0       | 0x4         | 0x0300   | 0x0
+1>================end===============
+1>=============vrd info=============
+1>power domain num: 7
+1>power domain[00] id:0 | CORE_DVFS_TA       | PMBus NA | cap:0x3 | rail:0 | addr:0x20 | def_volt:1100 mV | min_volt: 750 mV | max_volt:1150 mV
+1>power domain[01] id:1 | DDR_VDD            | PMBus NA | cap:0x3 | rail:1 | addr:0x20 | def_volt: 765 mV | min_volt: 382 mV | max_volt: 880 mV
+1>power domain[02] id:4 | IO_DVDD_NA         | PMBus NA | cap:0x1 | rail:0 | addr:0x2b | def_volt: 800 mV | min_volt: 400 mV | max_volt: 920 mV
+1>power domain[03] id:2 | CORE_DVFS_TB       | PMBus NB | cap:0x3 | rail:0 | addr:0x20 | def_volt:1100 mV | min_volt: 750 mV | max_volt:1150 mV
+1>power domain[04] id:3 | UNCORE_DVFS        | PMBus NB | cap:0x3 | rail:1 | addr:0x20 | def_volt:1033 mV | min_volt: 750 mV | max_volt:1100 mV
+1>power domain[05] id:5 | IO_DVDD_NB         | PMBus NB | cap:0x1 | rail:0 | addr:0x2b | def_volt: 800 mV | min_volt: 400 mV | max_volt: 920 mV
+1>power domain[06] id:6 | DDR_VDDQ           | PMBus NB | cap:0x1 | rail:1 | addr:0x2b | def_volt:1100 mV | min_volt: 550 mV | max_volt:1265 mV
+1>================end===============
+1>pmbus[0] init done
+1>pmbus[1] init done
+1>power domain[0] CORE_DVFS_TA       | NA PMBus/AVSBus | rail:0 | addr:0x20 | def_volt:1100 mV | pmu:MP2882
+1>power domain[1] DDR_VDD            | NA PMBus/AVSBus | rail:1 | addr:0x20 | def_volt: 765 mV | pmu:MP2882
+1>power domain[4] IO_DVDD_NA         | NA PMBus        | rail:0 | addr:0x2b | def_volt: 800 mV | pmu:MP2882
+1>power domain[2] CORE_DVFS_TB       | NB PMBus/AVSBus | rail:0 | addr:0x20 | def_volt:1100 mV | pmu:MP2882
+1>power domain[3] UNCORE_DVFS        | NB PMBus/AVSBus | rail:1 | addr:0x20 | def_volt:1033 mV | pmu:MP2882
+1>power domain[5] IO_DVDD_NB         | NB PMBus        | rail:0 | addr:0x2b | def_volt: 800 mV | pmu:MP2882
+1>power domain[6] DDR_VDDQ           | NB PMBus        | rail:1 | addr:0x2b | def_volt:1100 mV | pmu:MP2882
+1>power domain[0] CORE_DVFS_TA       is transferred to AVSBus mode
+1>power domain[1] DDR_VDD            is transferred to AVSBus mode
+1>power domain[2] CORE_DVFS_TB       is transferred to AVSBus mode
+1>power domain[3] UNCORE_DVFS        is transferred to AVSBus mode
+1>avsbus resync success
+1>avsbus[0] init done
+1>avsbus resync success
+1>avsbus[1] init done
+1>============volt boot============
+1>power domain[0] volt =  935 mV
+1>power domain[1] volt =  767 mV
+1>power domain[4] volt =  802 mV
+1>power domain[2] volt =  931 mV
+1>power domain[3] volt =  812 mV
+1>power domain[5] volt =  802 mV
+1>power domain[6] volt = 1101 mV
+1>===============end===============
+1>--w&h rd rail:0, 935, CORE_DVFS_TA
+1>--w&h rd rail:1, 765, CORE_DVFS_TA
+1>power domain[0] set volt --> 1103 mV success
+1>--w&h rd rail:0, 933, CORE_DVFS_TB
+1>--w&h rd rail:1, 816, CORE_DVFS_TB
+1>power domain[2] set volt --> 1103 mV success
+1>power domain[3] set volt --> 1035 mV success
+1>============volt post============
+1>power domain[0] volt = 1103 mV
+1>power domain[1] volt =  767 mV
+1>power domain[4] volt =  802 mV
+1>power domain[2] volt = 1103 mV
+1>power domain[3] volt = 1037 mV
+1>power domain[5] volt =  802 mV
+1>power domain[6] volt = 1101 mV
+1>===============end===============
+1>Hboot1 Info RAW Dump: [0x01][0x00][0x00][0x14][0x01][0x00][0x01]
+1>PowerSensorSupport[1], Cali[5120], Loss[0]
+1>Power Sensor Calibration Value[5120]!
+1>the power sensor : manu id = 2peak, die id = TPA626
+1>power sensor[0] init success
+1>die[0] its[0] init done
+1>die[0] its[1] init done
+1>die[0] its[2] init done
+1>die[0] its[3] init done
+1>die[0] its[4] init done
+1>die[0] its[5] init done
+1>die[0] its[6] init done
+1>die[0] its[7] init done
+1>die[0] its[8] init done
+1>die[0] its[9] init done
+1>die[1] its[0] init done
+1>die[1] its[1] init done
+1>die[1] its[2] init done
+1>die[1] its[3] init done
+1>die[1] its[4] init done
+1>die[1] its[5] init done
+1>die[1] its[6] init done
+1>die[1] its[7] init done
+1>die[1] its[8] init done
+1>die[1] its[9] init done
+1>Totem[0] Core Boot Vol [1103]mv
+1>Totem[0] Core Current Vol [1100]mv
+1>Totem[1] Core Boot Vol [1103]mv
+1>Totem[1] Core Current Vol [1100]mv
+1>NA 1620V190
+1>NB 1620V190
+1>GetCoreBaseFreq [2600000KHZ]
+1>GetCoreTurboFreq [2600000KHZ]
+1>GetCustomClusterNum [8]
+1>Ipu ACG Training Done!
+1>AP Last Time:[0.00.01.322]
+1>wait UEFI pll init...
+1>done
+1>acg trim start
+1>core trim freq:2000, avs:0 volt:810mv
+1>core trim freq:2000, avs:0 volt:810mv
+1>core trim freq:2050, avs:1 volt:810mv
+1>core trim freq:2050, avs:1 volt:810mv
+1>core trim freq:2100, avs:2 volt:810mv
+1>core trim freq:2100, avs:2 volt:810mv
+1>core trim freq:2150, avs:3 volt:818mv
+1>core trim freq:2150, avs:3 volt:817mv
+1>core trim freq:2200, avs:4 volt:831mv
+1>core trim freq:2200, avs:4 volt:830mv
+1>core trim freq:2250, avs:5 volt:844mv
+1>core trim freq:2250, avs:5 volt:842mv
+1>core trim freq:2300, avs:6 volt:856mv
+1>core trim freq:2300, avs:6 volt:855mv
+1>core trim freq:2350, avs:7 volt:869mv
+1>core trim freq:2350, avs:7 volt:868mv
+1>core trim freq:2400, avs:8 volt:882mv
+1>core trim freq:2400, avs:8 volt:880mv
+1>core trim freq:2450, avs:9 volt:894mv
+1>core trim freq:2450, avs:9 volt:893mv
+1>core trim freq:2500, avs:10 volt:907mv
+1>core trim freq:2500, avs:10 volt:905mv
+1>core trim freq:2550, avs:11 volt:920mv
+1>core trim freq:2550, avs:11 volt:918mv
+1>core trim freq:2600, avs:12 volt:932mv
+1>core trim freq:2600, avs:12 volt:930mv
+1>core trim freq:2650, avs:13 volt:945mv
+1>core trim freq:2650, avs:13 volt:943mv
+1>core trim freq:2700, avs:14 volt:958mv
+1>core trim freq:2700, avs:14 volt:956mv
+1>core trim freq:2750, avs:15 volt:976mv
+1>core trim freq:2750, avs:15 volt:974mv
+1>core trim freq:2800, avs:16 volt:994mv
+1>core trim freq:2800, avs:16 volt:992mv
+1>core trim freq:2850, avs:17 volt:1012mv
+1>core trim freq:2850, avs:17 volt:1010mv
+1>core trim freq:2900, avs:18 volt:1031mv
+1>core trim freq:2900, avs:18 volt:1028mv
+1>core trim freq:2950, avs:19 volt:1048mv
+1>core trim freq:2950, avs:19 volt:1045mv
+1>core trim freq:3000, avs:20 volt:1065mv
+1>core trim freq:3000, avs:20 volt:1063mv
+1>core trim freq:3050, avs:21 volt:1078mv
+1>core trim freq:3050, avs:21 volt:1076mv
+1>core trim freq:3100, avs:22 volt:1092mv
+1>core trim freq:3100, avs:22 volt:1090mv
+1>acg trim end
+1>LDO disabled
+1>[TracePoint] type[  0] cmd[  2] data[  3]
+1>Interrupt 423 register OK
+1>Interrupt 430 register OK
+1>[TracePoint] type[  0] cmd[  2] data[  4]
+1>
+1>cpu 0 entering scheduler
+1>[TracePoint] type[  0] cmd[  3] data[  1]
+1>add your ipu app init here!
+1>IpuInterfaceTaskStart Entry ...
+1>ipu interface task wait parameters from uefi...
+1>uefi parameters ready!
+1>UFSProfile[0]
+1>PowerPolicy[2] BenchMarkSelection[0]
+1>ipu interface task wait ddr init done from uefi...
+1>thermal soc task enabled
+1>AP Last Time:[0.00.05.796]
+1>thermal soc task restore underclocking_en=1
+1>ppu alert temp div init done
+1>ThermalDimmStart Entry ...
+1>wait ddr init done...
+1>power task start...
+1>[TracePoint] type[  0] cmd[  3] data[  2]
+1>ufs task wait parameters from uefi...
+1>ufs task parameters from uefi ready
+1>uncore domain[0] freq:2900
+1>uncore domain[1] freq:2900
+1>nimbus uncore domain[0] freq_div:4 all_sioe_freq:3000
+1>nimbus uncore domain[1] freq_div:4 all_sioe_freq:3000
+1>======sioe status======
+1>TA_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TA_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TA_SIOE2: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TA_SIOE3: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TA_SIOE5: ASYNC, SDR, LOW_PLL, is_cdr=0
+1>TA_SIOE6: ASYNC, SDR, LOW_PLL, is_cdr=0
+1>TB_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TB_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TB_SIOE2: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TB_SIOE3: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>TB_SIOE5: ASYNC, SDR, LOW_PLL, is_cdr=0
+1>TB_SIOE6: ASYNC, SDR, LOW_PLL, is_cdr=0
+1>NA_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>NA_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>NA_SIOE2: ASYNC, SDR, LOW_PLL, is_cdr=0
+1>NB_SIOE0: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>NB_SIOE1: ASYNC, QDR, SIO_PLL, is_cdr=0
+1>NB_SIOE2: ASYNC, SDR, LOW_PLL, is_cdr=0
+1>==========end==========
+1>sioe init done
+1>ufs task enabled
+1>--> UFS profile[0]
+1>AmuTaskStart Entry ... 
+1>amu task wait parameters from uefi...
+1>ThermalSiwStart Entry ...
+1>DemtTaskStart Entry ...
+1>ThermalSiwTask idle...
+1>demt task wait parameters from uefi...
+1>demt task parameters from uefi ready
+1>[TracePoint] type[  0] cmd[  3] data[  3]
+1>HiBoostTaskStart Entry ...
+1>HiBoost task enabled
+1>Waiting for UEFI parameters...
+1>UEFI parameters ready
+1>UncoreMaxFreq Set to [2900 MHZ]
+1>get TDP from efuse success, value = 313500mw
+1>target power set to [313500]mw, brd:[313500]
+1>[TracePoint] type[  0] cmd[  3] data[  4]
+1>AgeTaskStart Entry ...
+1>age task wait parameters from uefi...
+1>[TracePoint] type[  0] cmd[  3] data[  5]
+1>age task parameters from uefi ready
+1>age task enabled
+[0.00.42.966]Skt 0, Die 0 imp has init-done.
+0>uefi ddr init finish!
+0>ipu interface task wait uefi end done from uefi...
+1>uefi ddr init finish!
+1>ipu interface task wait uefi end done from uefi...
+0>ddr init done, start thermal dimm task
+0>======dimm status======
+0>  chl[0] dimm0 2, dimm1 2
+0>  chl[1] dimm0 2, dimm1 2
+0>  chl[2] dimm0 2, dimm1 2
+0>  chl[3] dimm0 2, dimm1 2
+0>  chl[4] dimm0 2, dimm1 2
+0>  chl[5] dimm0 2, dimm1 2
+0>  chl[6] dimm0 2, dimm1 2
+0>  chl[7] dimm0 2, dimm1 2
+0>==========end==========
+0>chl[0] registered, dimm mask = 0x3
+0>chl[1] registered, dimm mask = 0x3
+0>chl[2] registered, dimm mask = 0x3
+0>chl[3] registered, dimm mask = 0x3
+0>chl[4] registered, dimm mask = 0x3
+0>chl[5] registered, dimm mask = 0x3
+0>chl[6] registered, dimm mask = 0x3
+0>chl[7] registered, dimm mask = 0x3
+0>=====dimm temp params=====
+0>  temp_threshold      : temp_mid:85,85 | temp_hi:95 | temp_cri:100
+0>  is_thermal_thro_en  : 1
+0>  is_aref_rate_auto   : 1
+0>===========end============
+1>ddr init done, start thermal dimm task
+1>======dimm status======
+1>  chl[0] dimm0 2, dimm1 2
+1>  chl[1] dimm0 2, dimm1 2
+1>  chl[2] dimm0 2, dimm1 2
+1>  chl[3] dimm0 2, dimm1 2
+1>  chl[4] dimm0 2, dimm1 2
+1>  chl[5] dimm0 2, dimm1 2
+1>  chl[6] dimm0 2, dimm1 2
+1>  chl[7] dimm0 2, dimm1 2
+1>==========end==========
+1>chl[0] registered, dimm mask = 0x3
+1>chl[1] registered, dimm mask = 0x3
+1>chl[2] registered, dimm mask = 0x3
+1>chl[3] registered, dimm mask = 0x3
+1>chl[4] registered, dimm mask = 0x3
+1>chl[5] registered, dimm mask = 0x3
+1>chl[6] registered, dimm mask = 0x3
+1>chl[7] registered, dimm mask = 0x3
+1>=====dimm temp params=====
+1>  temp_threshold      : temp_mid:85,85 | temp_hi:95 | temp_cri:100
+1>  is_thermal_thro_en  : 1
+1>  is_aref_rate_auto   : 1
+1>===========end============
+[0.00.46.275]DDR Rreserved for IMU: len = 3e00000
+[LOG]head = 0x154b, tail = 0xe99f, logSize = 0xd454
+copy registry.json file success
+ipcMsgSend success
+[0.00.46.319]starting ras Init
+sktId = 0, dieId = 0, isSasExist = 0.
+sktId = 0, dieId = 2, isSasExist = 0.
+sktId = 1, dieId = 0, isSasExist = 0.
+sktId = 1, dieId = 2, isSasExist = 0.
+Mce Table head exist!
+RasIntRegister init 452 
+RasIntRegister init 453 
+RasIntRegister init 64 
+RasIntRegister init 65 
+RasIntRegister init 465 
+RasIntRegister init 466 
+RasIntRegister init 86 
+RasIntRegister init 87 
+RasIntRegister init 478 
+RasIntRegister init 479 
+RasIntRegister init 108 
+RasIntRegister init 109 
+RasIntRegister init 491 
+RasIntRegister init 492 
+RasIntRegister init 130 
+RasIntRegister init 131 
+RasIntRegister init 76 
+RasIntRegister init 98 
+RasIntRegister init 120 
+RasIntRegister init 142 
+[0.00.46.382]starting ras end
+
+
+HSM_LOG:
+[00:00:00.000][info] succeed to do thirdparty dfx_pabuk init
+[00:00:00.000][info] succeed to do thirdparty crypto_driver init
+
+
+
+
+HSM_LOG:
+[00:00:00.010][info] os_mem_system_init default pool done
+[00:00:00.016][info] succeed to do thirdparty otpc_pabuk init
+[00:00
+
+
+
+HSM_LOG:
+:00.017][info] succeed to do thirdparty boot_profile_driver init
+[00:00:00.017][info] succeed to do thirdparty measure_value_ma
+
+
+
+HSM_LOG:
+nage_driver init
+[00:00:00.018][info] succeed to do thirdparty period_driver init
+[00:00:00.018][info]  start loading internal
+
+[0.00.53.500]TF Heartbeat Start
+
+
+HSM_LOG:
+ task ...
+[00:00:00.018][info]  task name is ccm_task
+[00:00:00.019][info]  hm_dynamic_loadelf successfully!
+[00:00:00.019][i
+
+
+
+HSM_LOG:
+nfo] internal task[1] task_name=ccm_task load successfully
+[00:00:00.020][info]  task name is upgrade_task
+[00:00:00.020][info
+
+[0.00.57.949][ERR]cmd not support! cmd = 0xd
+
+
+HSM_LOG:
+]  hm_dynamic_loadelf successfully!
+[00:00:00.021][info] internal task[2] task_name=upgrade_task load successfully
+[00:00:00.0
+
+
+
+HSM_LOG:
+22][info]  task name is hes_task
+[00:00:00.022][info]  hm_dynamic_loadelf successfully!
+[00:00:00.023][info] internal task[3] 
+
+
+
+HSM_LOG:
+task_name=hes_task load successfully
+[00:00:00.024][info] created task ccm_task success!
+[00:00:00.025][info] created task upg
+
+
+
+HSM_LOG:
+rade_task success!
+[00:00:00.026][info] created task hes_task success!
+[00:00:00.026][info] Init start.
+[1970-01-01 00:00:00.
+
+[0.01.05.989]PCIE INIT DONE.
+slotNum = 0xb
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[0] port:8  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[1] port:12  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[2] port:20  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[3] port:32  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[4] port:0  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[5] port:2  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[6] port:4  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[7] port:8  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[8] port:12  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[9] port:20  pcieSlotCtrl.data (after)0x14801c0.
+
+pcieSlotCtrl.bits.presencd_det_st = 1
+present:1, pwr_en:0.
+Pcie slot[10] port:32  pcieSlotCtrl.data (after)0x14801c0.
+
+Interrupt 454 register OK
+Interrupt 467 register OK
+Interrupt 480 register OK
+Interrupt 493 register OK
+data = 0x0
+pmt Init done
+slot[0] port:8 begin to power ON.
+slot[1] port:12 begin to power ON.
+slot[2] port:20 begin to power ON.
+slot[3] port:32 begin to power ON.
+slot[4] port:0 begin to power ON.
+slot[5] port:2 begin to power ON.
+slot[6] port:4 begin to power ON.
+slot[7] port:8 begin to power ON.
+slot[8] port:12 begin to power ON.
+slot[9] port:20 begin to power ON.
+slot[10] port:32 begin to power ON.
+
+
+HSM_LOG:
+027][HSM][INFO][54] Platform init 0x20250523 0x4e.
+[1970-01-01 00:00:00.027][HSM][INFO][197] ccm start.
+[1970-01-01 00:00:00
+
+
+
+HSM_LOG:
+.028][HSM][INFO][86] upgrade task init success.
+[1970-01-01 00:00:00.028][HSM][INFO][95] upgrade recv cmd, 0x181.
+[1970-01-0
+
+
+
+HSM_LOG:
+1 00:00:00.029][HSM][INFO][103] upgrade res, 0x3a5aa5a3.
+[1970-01-01 00:00:00.030][HSM][INFO][75] hes tee_task_entry.
+[1970-
+
+
+
+HSM_LOG:
+01-01 00:00:00.552][HSM][INFO][44] hes init success.
+[00:00:00.552][info] Init over.
+[1970-01-01 00:00:42.416][HSM][INFO][281
+
+
+
+HSM_LOG:
+] -------------1------------
+.
+
+mctp task ok.
+Add ep: bdf=300 eid=9 epCnt=1 eid_alloc=a
+0>chl[0] max_temp 35'C, aref_rate 0x5 --> 0x4
+0>chl[1] max_temp 35'C, aref_rate 0x5 --> 0x4
+0>chl[2] max_temp 35'C, aref_rate 0x5 --> 0x4
+0>chl[3] max_temp 35'C, aref_rate 0x5 --> 0x4
+0>chl[4] max_temp 35'C, aref_rate 0x5 --> 0x4
+0>chl[5] max_temp 35'C, aref_rate 0x5 --> 0x4
+0>chl[6] max_temp 35'C, aref_rate 0x5 --> 0x4
+0>chl[7] max_temp 35'C, aref_rate 0x5 --> 0x4
+1>chl[0] max_temp 32'C, aref_rate 0x5 --> 0x4
+1>chl[1] max_temp 32'C, aref_rate 0x5 --> 0x4
+1>chl[2] max_temp 32'C, aref_rate 0x5 --> 0x4
+1>chl[3] max_temp 32'C, aref_rate 0x5 --> 0x4
+1>chl[4] max_temp 32'C, aref_rate 0x5 --> 0x4
+1>chl[5] max_temp 32'C, aref_rate 0x5 --> 0x4
+1>chl[6] max_temp 32'C, aref_rate 0x5 --> 0x4
+1>chl[7] max_temp 32'C, aref_rate 0x5 --> 0x4
+[0.02.06.113]BIOS POST END.
+Create SetReportPcieMmioToBmc ok.
+Start SetReportPcieMmioToBmc ok.
+0>uefi end finish!
+0>ipu interface task exit!
+0>amu task parameters from uefi ready
+1>uefi end finish!
+1>ipu interface task exit!
+1>amu task parameters from uefi ready
+Enter current value process
+[0.02.27.703]Receive ras int[452]
+First coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x1
+Found error node[0]
+-- RAS DUMP --
+PCIE AER ERROR
+Error severity is CORRECTED[302000000]
+PortType[0] PCIeInfo[08:00:00]
+VendorId[0x19e5] DeviceId[0xd802]
+AER_CAP_HEADER    = 0x0000000015020001
+UNCR_ERR_STATUS   = 0x0000000000100000
+UNCR_ERR_MASK     = 0x0000000000580000
+UNCR_ERR_SEVERITY = 0x0000000000462010
+COR_ERR_STATUS    = 0x0000000000002000
+COR_ERR_MASK      = 0x0000000000000000
+AER_CAP_HEADER    = 0x00000000000010a0
+OemErrorLogReport
+not report to os
+ras int[452] end
+
+[0.02.28.053]Receive ras int[452]
+First coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x2
+Found error node[1]
+-- RAS DUMP --
+PCIE AER ERROR
+Error severity is CORRECTED[303000000]
+PortType[0] PCIeInfo[0c:00:00]
+VendorId[0x19e5] DeviceId[0xd802]
+AER_CAP_HEADER    = 0x0000000015020001
+UNCR_ERR_STATUS   = 0x0000000000100000
+UNCR_ERR_MASK     = 0x0000000000580000
+UNCR_ERR_SEVERITY = 0x0000000000462010
+COR_ERR_STATUS    = 0x0000000000002000
+COR_ERR_MASK      = 0x0000000000000000
+AER_CAP_HEADER    = 0x00000000000010a0
+OemErrorLogReport
+not report to os
+ras int[452] end
+
+[0.02.28.403]Receive ras int[465]
+First coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x4000
+Found error node[14]
+Secondary coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x4
+Found error node[2]
+-- RAS DUMP --
+PCIE AER ERROR
+Error severity is CORRECTED[8101000000]
+PortType[0] PCIeInfo[42:00:00]
+VendorId[0x19e5] DeviceId[0xd802]
+AER_CAP_HEADER    = 0x0000000015020001
+UNCR_ERR_STATUS   = 0x0000000000100000
+UNCR_ERR_MASK     = 0x0000000000580000
+UNCR_ERR_SEVERITY = 0x0000000000462010
+COR_ERR_STATUS    = 0x0000000000002000
+COR_ERR_MASK      = 0x0000000000000000
+AER_CAP_HEADER    = 0x00000000000010a0
+OemErrorLogReport
+not report to os
+ras int[465] end
+
+[0.02.28.753]Receive ras int[465]
+First coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x2
+Found error node[1]
+-- RAS DUMP --
+PCIE AER ERROR
+Error severity is CORRECTED[8303000000]
+PortType[0] PCIeInfo[46:00:00]
+VendorId[0x19e5] DeviceId[0xd802]
+AER_CAP_HEADER    = 0x0000000015020001
+UNCR_ERR_STATUS   = 0x0000000000100000
+UNCR_ERR_MASK     = 0x0000000000580000
+UNCR_ERR_SEVERITY = 0x0000000000462010
+COR_ERR_STATUS    = 0x0000000000002000
+COR_ERR_MASK      = 0x0000000000000000
+AER_CAP_HEADER    = 0x00000000000010a0
+OemErrorLogReport
+not report to os
+ras int[465] end
+
+[0.02.32.337]Receive ras int[478]
+First coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x1
+Found error node[0]
+-- RAS DUMP --
+PCIE AER ERROR
+Error severity is CORRECTED[200302000000]
+PortType[0] PCIeInfo[96:00:00]
+VendorId[0x19e5] DeviceId[0xd802]
+AER_CAP_HEADER    = 0x0000000015020001
+UNCR_ERR_STATUS   = 0x0000000000100000
+UNCR_ERR_MASK     = 0x0000000000580000
+UNCR_ERR_SEVERITY = 0x0000000000462010
+COR_ERR_STATUS    = 0x0000000000002000
+COR_ERR_MASK      = 0x0000000000000000
+AER_CAP_HEADER    = 0x00000000000010a0
+OemErrorLogReport
+not report to os
+ras int[478] end
+
+[0.02.32.676]Receive ras int[478]
+First coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x2
+Found error node[1]
+-- RAS DUMP --
+PCIE AER ERROR
+Error severity is CORRECTED[200303000000]
+PortType[0] PCIeInfo[ab:00:00]
+VendorId[0x19e5] DeviceId[0xd802]
+AER_CAP_HEADER    = 0x0000000015020001
+UNCR_ERR_STATUS   = 0x0000000000100000
+UNCR_ERR_MASK     = 0x0000000000580000
+UNCR_ERR_SEVERITY = 0x0000000000462010
+COR_ERR_STATUS    = 0x0000000000002000
+COR_ERR_MASK      = 0x0000000000000000
+AER_CAP_HEADER    = 0x00000000000010a0
+OemErrorLogReport
+not report to os
+ras int[478] end
+
+[0.02.33.014]Receive ras int[491]
+First coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x4000
+Found error node[14]
+Secondary coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x4
+Found error node[2]
+-- RAS DUMP --
+PCIE AER ERROR
+Error severity is CORRECTED[208101000000]
+PortType[0] PCIeInfo[c1:00:00]
+VendorId[0x19e5] DeviceId[0xd802]
+AER_CAP_HEADER    = 0x0000000015020001
+UNCR_ERR_STATUS   = 0x0000000000100000
+UNCR_ERR_MASK     = 0x0000000000580000
+UNCR_ERR_SEVERITY = 0x0000000000462010
+COR_ERR_STATUS    = 0x0000000000002000
+COR_ERR_MASK      = 0x0000000000000000
+AER_CAP_HEADER    = 0x00000000000010a0
+OemErrorLogReport
+not report to os
+ras int[491] end
+
+[0.02.33.365]Receive ras int[491]
+First coalesce handler start
+Type2 status = 0x0
+Type1 status = 0x0
+Type0 status = 0x2
+Found error node[1]
+-- RAS DUMP --
+PCIE AER ERROR
+Error severity is CORRECTED[208303000000]
+PortType[0] PCIeInfo[d6:00:00]
+VendorId[0x19e5] DeviceId[0xd802]
+AER_CAP_HEADER    = 0x0000000015020001
+UNCR_ERR_STATUS   = 0x0000000000100000
+UNCR_ERR_MASK     = 0x0000000000580000
+UNCR_ERR_SEVERITY = 0x0000000000462010
+COR_ERR_STATUS    = 0x0000000000002000
+COR_ERR_MASK      = 0x0000000000000000
+AER_CAP_HEADER    = 0x00000000000010a0
+OemErrorLogReport
+not report to os
+ras int[491] end
+
+0>amu task activated
+0>BootCore: Skt[0] Totem[3] Cluster[0] Core[0]!
+1>amu task activated
+1>BootCore: Skt[0] Totem[3] Cluster[0] Core[0]!
+[0.07.06.112]IpmiCmdReportPcieMMIO start
+[0.07.16.254]IpmiCmdReportPcieMMIO end

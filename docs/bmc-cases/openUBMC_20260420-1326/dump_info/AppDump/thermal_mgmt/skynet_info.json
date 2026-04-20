@@ -1,0 +1,90 @@
+{
+    ":00000009": {
+        "task": 0,
+        "message": 15,
+        "cpu": 0.092596,
+        "mqlen": 0,
+        "name": "snlua sd_bus",
+        "memory": "655.45 Kb"
+    },
+    ":0000000b": {
+        "task": 26,
+        "message": 770926,
+        "cpu": 4772.577197,
+        "mqlen": 0,
+        "name": "snlua thermal_mgmt/service/main",
+        "memory": "14699.27 Kb"
+    },
+    ":0000000f": {
+        "task": 13,
+        "message": 337209,
+        "cpu": 378.010616,
+        "mqlen": 0,
+        "name": "snlua power_strategy/service/main",
+        "memory": "9208.81 Kb"
+    },
+    ":0000000d": {
+        "task": 0,
+        "message": 12,
+        "cpu": 0.043713,
+        "mqlen": 0,
+        "name": "snlua debug_console 0.0.0.0 40032",
+        "memory": "726.99 Kb"
+    },
+    ":0000000e": {
+        "task": 8,
+        "message": 114692,
+        "cpu": 140.284367,
+        "mqlen": 0,
+        "name": "snlua cooling/service/main",
+        "memory": "6674.29 Kb"
+    },
+    ":00000007": {
+        "task": 1,
+        "message": 27,
+        "cpu": 0.046446,
+        "mqlen": 0,
+        "name": "snlua service_mgr",
+        "memory": "673.38 Kb"
+    },
+    ":0000000a": {
+        "task": 2,
+        "message": 42061,
+        "cpu": 14.321589,
+        "mqlen": 0,
+        "name": "snlua harbor",
+        "memory": "857.91 Kb"
+    },
+    ":00000004": {
+        "task": 0,
+        "message": 16,
+        "cpu": 0.042511,
+        "mqlen": 0,
+        "name": "snlua cdummy",
+        "memory": "638.52 Kb"
+    },
+    ":00000006": {
+        "task": 0,
+        "message": 10,
+        "cpu": 0.039732,
+        "mqlen": 0,
+        "name": "snlua datacenterd",
+        "memory": "633.34 Kb"
+    },
+    ":00000008": {
+        "task": 1,
+        "message": 143,
+        "cpu": 0.119745,
+        "mqlen": 0,
+        "name": "snlua hica/subsys/energy/service/main",
+        "memory": "462.73 Kb"
+    },
+    ":0000000c": {
+        "task": 37,
+        "message": 2440029,
+        "cpu": 4397.320438,
+        "mqlen": 0,
+        "name": "snlua power_mgmt/service/main",
+        "memory": "8557.19 Kb"
+    }
+}

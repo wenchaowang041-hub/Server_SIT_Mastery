@@ -1,0 +1,90 @@
+{
+    ":0000000f": {
+        "name": "snlua iam/service/main",
+        "task": 13,
+        "message": 687605,
+        "cpu": 312.104737,
+        "mqlen": 0,
+        "memory": "7806.21 Kb"
+    },
+    ":00000007": {
+        "name": "snlua service_mgr",
+        "task": 1,
+        "message": 25,
+        "cpu": 0.041333,
+        "mqlen": 0,
+        "memory": "677.33 Kb"
+    },
+    ":00000008": {
+        "name": "snlua hica/subsys/security/service/main",
+        "task": 1,
+        "message": 140,
+        "cpu": 0.094824,
+        "mqlen": 0,
+        "memory": "466.30 Kb"
+    },
+    ":0000000b": {
+        "name": "snlua debug_console 0.0.0.0 40021",
+        "task": 0,
+        "message": 10,
+        "cpu": 0.039274,
+        "mqlen": 0,
+        "memory": "726.36 Kb"
+    },
+    ":0000000d": {
+        "name": "snlua capability_proxy/service/main",
+        "task": 2,
+        "message": 43752,
+        "cpu": 21.396408,
+        "mqlen": 0,
+        "memory": "2764.51 Kb"
+    },
+    ":00000006": {
+        "name": "snlua datacenterd",
+        "task": 0,
+        "message": 8,
+        "cpu": 0.035037,
+        "mqlen": 0,
+        "memory": "632.69 Kb"
+    },
+    ":0000000c": {
+        "name": "snlua certificate/service/main",
+        "task": 4,
+        "message": 78084,
+        "cpu": 40.778658,
+        "mqlen": 0,
+        "memory": "5744.34 Kb"
+    },
+    ":00000004": {
+        "name": "snlua cdummy",
+        "task": 0,
+        "message": 11,
+        "cpu": 0.038136,
+        "mqlen": 0,
+        "memory": "635.90 Kb"
+    },
+    ":00000009": {
+        "name": "snlua sd_bus",
+        "task": 0,
+        "message": 13,
+        "cpu": 0.08401,
+        "mqlen": 0,
+        "memory": "655.02 Kb"
+    },
+    ":0000000e": {
+        "name": "snlua trust/service/main",
+        "task": 3,
+        "message": 76749,
+        "cpu": 27.887062,
+        "mqlen": 0,
+        "memory": "4971.75 Kb"
+    },
+    ":0000000a": {
+        "name": "snlua harbor",
+        "task": 2,
+        "message": 45385,
+        "cpu": 15.277397,
+        "mqlen": 0,
+        "memory": "843.83 Kb"
+    }
+}

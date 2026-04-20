@@ -1,0 +1,1147 @@
+1970-01-01T00:00:03.745763+0000 localhost kernel: Booting Linux on physical CPU 0x0000000000 [0x411fd050]
+1970-01-01T00:00:03.746006+0000 localhost kernel: Linux version 5.10.0 (oe-user@oe-host) (aarch64-euler-linux-gcc (BiSheng Embedded CPU 303.0.0.3.B001) 7.3.0, GNU ld (BiSheng Embedded CPU 303.0.0.3.B001) 2.41) #1 SMP PREEMPT Thu Sep 4 20:41:29 CST 2025
+1970-01-01T00:00:03.746144+0000 localhost kernel: Machine model: Hisilicon Hi1711 ASIC
+1970-01-01T00:00:03.746256+0000 localhost kernel: efi: UEFI not found.
+1970-01-01T00:00:03.746406+0000 localhost kernel: NUMA: No NUMA configuration found
+1970-01-01T00:00:03.746514+0000 localhost kernel: NUMA: Faking a node at [mem 0x0000000084be0000-0x00000000efffffff]
+1970-01-01T00:00:03.746632+0000 localhost kernel: NUMA: NODE_DATA [mem 0xeffe6640-0xeffe7fff]
+1970-01-01T00:00:03.746775+0000 localhost kernel: Zone ranges:
+1970-01-01T00:00:03.746889+0000 localhost kernel:   DMA      [mem 0x0000000084be0000-0x00000000efffffff]
+1970-01-01T00:00:03.746997+0000 localhost kernel:   Normal   empty
+1970-01-01T00:00:03.747107+0000 localhost kernel: Movable zone start for each node
+1970-01-01T00:00:03.747217+0000 localhost kernel: Early memory node ranges
+1970-01-01T00:00:03.747321+0000 localhost kernel:   node   0: [mem 0x0000000084be0000-0x0000000084bfefff]
+1970-01-01T00:00:03.747426+0000 localhost kernel:   node   0: [mem 0x0000000087200000-0x00000000efffffff]
+1970-01-01T00:00:03.747538+0000 localhost kernel: Initmem setup node 0 [mem 0x0000000084be0000-0x00000000efffffff]
+1970-01-01T00:00:03.747676+0000 localhost kernel: On node 0 totalpages: 429599
+1970-01-01T00:00:03.747793+0000 localhost kernel:   DMA zone: 6865 pages used for memmap
+1970-01-01T00:00:03.747902+0000 localhost kernel:   DMA zone: 0 pages reserved
+1970-01-01T00:00:03.748010+0000 localhost kernel:   DMA zone: 429599 pages, LIFO batch:63
+1970-01-01T00:00:03.748117+0000 localhost kernel: psci: probing for conduit method from DT.
+1970-01-01T00:00:03.748225+0000 localhost kernel: psci: PSCIv1.1 detected in firmware.
+1970-01-01T00:00:03.748332+0000 localhost kernel: psci: Using standard PSCI v0.2 function IDs
+1970-01-01T00:00:03.748478+0000 localhost kernel: psci: MIGRATE_INFO_TYPE not supported.
+1970-01-01T00:00:03.748598+0000 localhost kernel: psci: SMC Calling Convention v1.4
+1970-01-01T00:00:03.748710+0000 localhost kernel: [dts]:cpu type is 1711
+1970-01-01T00:00:03.748818+0000 localhost kernel: can't find led ctrl node, please check it
+1970-01-01T00:00:03.748963+0000 localhost kernel: percpu: Embedded 30 pages/cpu s85160 r8192 d29528 u122880
+1970-01-01T00:00:03.749084+0000 localhost kernel: pcpu-alloc: s85160 r8192 d29528 u122880 alloc=30*4096
+1970-01-01T00:00:03.749198+0000 localhost kernel: pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+1970-01-01T00:00:03.749310+0000 localhost kernel: Detected VIPT I-cache on CPU0
+1970-01-01T00:00:03.749419+0000 localhost kernel: CPU features: detected: GIC system register CPU interface
+1970-01-01T00:00:03.749534+0000 localhost kernel: CPU features: kernel page table isolation disabled by kernel configuration
+1970-01-01T00:00:03.749647+0000 localhost kernel: CPU features: detected: ARM errata 1165522, 1319367, or 1530923
+1970-01-01T00:00:03.749756+0000 localhost kernel: Built 1 zonelists, mobility grouping on.  Total pages: 422734
+1970-01-01T00:00:03.749863+0000 localhost kernel: Policy zone: DMA
+1970-01-01T00:00:03.749982+0000 localhost kernel: Kernel command line: console=ttyS0,115200n8N earlycon=uart8250,mmio32,0x08710000 initrd=${initrd_load_addr},${initrd_size} rdinit=/sbin/init rw ekbox=0x20000$0x84be0000 kbox_mem=0x2e0000@0x84900000 swift_irqsoff_enable swxn=1
+1970-01-01T00:00:03.750175+0000 localhost kernel: Fallback order for Node 0: 0 
+1970-01-01T00:00:03.750333+0000 localhost kernel: printk: log_buf_len individual max cpu contribution: 4096 bytes
+1970-01-01T00:00:03.750453+0000 localhost kernel: printk: log_buf_len total cpu_extra contributions: 12288 bytes
+1970-01-01T00:00:03.750567+0000 localhost kernel: printk: log_buf_len min size: 16384 bytes
+1970-01-01T00:00:03.750767+0000 localhost kernel: printk: log_buf_len: 32768 bytes
+1970-01-01T00:00:03.750894+0000 localhost kernel: printk: early log buf free: 13904(84%)
+1970-01-01T00:00:03.751012+0000 localhost kernel: Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+1970-01-01T00:00:03.751128+0000 localhost kernel: Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+1970-01-01T00:00:03.751240+0000 localhost kernel: mem auto-init: stack:off, heap alloc:off, heap free:off
+1970-01-01T00:00:03.751354+0000 localhost kernel: Memory: 1666608K/1718396K available (7808K kernel code, 922K rwdata, 1520K rodata, 1856K init, 2375K bss, 51788K reserved, 0K cma-reserved)
+1970-01-01T00:00:03.751501+0000 localhost kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+1970-01-01T00:00:03.751630+0000 localhost kernel: kmemleak: Kernel memory leak detector disabled
+1970-01-01T00:00:03.751746+0000 localhost kernel: rcu: Preemptible hierarchical RCU implementation.
+1970-01-01T00:00:03.751863+0000 localhost kernel: rcu:         RCU restricting CPUs from NR_CPUS=128 to nr_cpu_ids=4.
+1970-01-01T00:00:03.751980+0000 localhost kernel:         Trampoline variant of Tasks RCU enabled.
+1970-01-01T00:00:03.752098+0000 localhost kernel: rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+1970-01-01T00:00:03.752208+0000 localhost kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+1970-01-01T00:00:03.752320+0000 localhost kernel: NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+1970-01-01T00:00:03.752432+0000 localhost kernel: GICv3: GIC: Using split EOI/Deactivate mode
+1970-01-01T00:00:03.752547+0000 localhost kernel: GICv3: 256 SPIs implemented
+1970-01-01T00:00:03.752691+0000 localhost kernel: GICv3: 0 Extended SPIs implemented
+1970-01-01T00:00:03.752812+0000 localhost kernel: GICv3: Distributor has no Range Selector support
+1970-01-01T00:00:03.752971+0000 localhost kernel: GICv3: 16 PPIs implemented
+1970-01-01T00:00:03.753093+0000 localhost kernel: GICv3: CPU0: found redistributor 0 region 0:0x0000000024040000
+1970-01-01T00:00:03.753208+0000 localhost kernel: rcu:         Offload RCU callbacks from CPUs: (none).
+1970-01-01T00:00:03.753316+0000 localhost kernel: arch_timer: cp15 timer(s) running at 25.00MHz (phys).
+1970-01-01T00:00:03.753427+0000 localhost kernel: clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x5c40939b5, max_idle_ns: 440795202646 ns
+1970-01-01T00:00:03.753547+0000 localhost kernel: sched_clock: 56 bits at 25MHz, resolution 40ns, wraps every 4398046511100ns
+1970-01-01T00:00:03.753663+0000 localhost kernel: can't find led node, please check it
+1970-01-01T00:00:03.753778+0000 localhost kernel: Can't find led info in dtb,make sure there is no led on board
+1970-01-01T00:00:03.753894+0000 localhost kernel: Console: colour dummy device 80x25
+1970-01-01T00:00:03.754048+0000 localhost kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 50.00 BogoMIPS (lpj=250000)
+1970-01-01T00:00:03.754178+0000 localhost kernel: pid_max: default: 32768 minimum: 301
+1970-01-01T00:00:03.754291+0000 localhost kernel: LSM: Security Framework initializing
+1970-01-01T00:00:03.754405+0000 localhost kernel: Yama: becoming mindful.
+1970-01-01T00:00:03.754525+0000 localhost kernel: Mount-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+1970-01-01T00:00:03.754638+0000 localhost kernel: Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+1970-01-01T00:00:03.754754+0000 localhost kernel: early_panic_init: Missing panic_core_isolate device node.
+1970-01-01T00:00:03.754868+0000 localhost kernel: rcu: Hierarchical SRCU implementation.
+1970-01-01T00:00:03.754983+0000 localhost kernel: dyndbg: Ignore empty _ddebug table in a CONFIG_DYNAMIC_DEBUG_CORE build
+1970-01-01T00:00:03.755179+0000 localhost kernel: EFI services will not be available.
+1970-01-01T00:00:03.755302+0000 localhost kernel: page_attr_early_init succeed
+1970-01-01T00:00:03.755414+0000 localhost kernel: smp: Bringing up secondary CPUs ...
+1970-01-01T00:00:03.755529+0000 localhost kernel: Detected VIPT I-cache on CPU1
+1970-01-01T00:00:03.755642+0000 localhost kernel: GICv3: CPU1: found redistributor 100 region 0:0x0000000024060000
+1970-01-01T00:00:03.755755+0000 localhost kernel: CPU1: Booted secondary processor 0x0000000100 [0x411fd050]
+1970-01-01T00:00:03.755870+0000 localhost kernel: Detected VIPT I-cache on CPU2
+1970-01-01T00:00:03.755989+0000 localhost kernel: GICv3: CPU2: found redistributor 200 region 0:0x0000000024080000
+1970-01-01T00:00:03.756111+0000 localhost kernel: CPU2: Booted secondary processor 0x0000000200 [0x411fd050]
+1970-01-01T00:00:03.756260+0000 localhost kernel: Detected VIPT I-cache on CPU3
+1970-01-01T00:00:03.756394+0000 localhost kernel: GICv3: CPU3: found redistributor 300 region 0:0x00000000240a0000
+1970-01-01T00:00:03.756515+0000 localhost kernel: CPU3: Booted secondary processor 0x0000000300 [0x411fd050]
+1970-01-01T00:00:03.756633+0000 localhost kernel: smp: Brought up 1 node, 4 CPUs
+1970-01-01T00:00:03.756752+0000 localhost kernel: SMP: Total of 4 processors activated.
+1970-01-01T00:00:03.756872+0000 localhost kernel: CPU features: detected: Privileged Access Never
+1970-01-01T00:00:03.756996+0000 localhost kernel: CPU features: detected: 32-bit EL0 Support
+1970-01-01T00:00:03.757118+0000 localhost kernel: CPU features: detected: Common not Private translations
+1970-01-01T00:00:03.757235+0000 localhost kernel: CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+1970-01-01T00:00:03.757403+0000 localhost kernel: CPU features: detected: CRC32 instructions
+1970-01-01T00:00:03.757565+0000 localhost kernel: CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+1970-01-01T00:00:03.757694+0000 localhost kernel: CPU features: detected: 32-bit EL1 Support
+1970-01-01T00:00:03.757814+0000 localhost kernel: CPU features: detected: RCpc load-acquire (LDAPR)
+1970-01-01T00:00:03.757934+0000 localhost kernel: CPU: All CPU(s) started at EL2
+1970-01-01T00:00:03.758051+0000 localhost kernel: alternatives: patching kernel code
+1970-01-01T00:00:03.758167+0000 localhost kernel: devtmpfs: initialized
+1970-01-01T00:00:03.758285+0000 localhost kernel: KASLR enabled
+1970-01-01T00:00:03.758416+0000 localhost kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+1970-01-01T00:00:03.758550+0000 localhost kernel: futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+1970-01-01T00:00:03.758706+0000 localhost kernel: kworker/u8:0 (32) used greatest stack depth: 12992 bytes left
+1970-01-01T00:00:03.758837+0000 localhost kernel: pinctrl core: initialized pinctrl subsystem
+1970-01-01T00:00:03.758956+0000 localhost kernel: DMI not present or invalid.
+1970-01-01T00:00:03.759075+0000 localhost kernel: softdog_kthread_create
+1970-01-01T00:00:03.759198+0000 localhost kernel: NET: Registered protocol family 16
+1970-01-01T00:00:03.759319+0000 localhost kernel: DMA: preallocated 256 KiB GFP_KERNEL pool for atomic allocations
+1970-01-01T00:00:03.759439+0000 localhost kernel: DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+1970-01-01T00:00:03.759557+0000 localhost kernel: audit: initializing netlink subsys (disabled)
+1970-01-01T00:00:03.759723+0000 localhost kernel: audit cpu affinity init success
+1970-01-01T00:00:03.759847+0000 localhost kernel: audit: type=2000 audit(0.020:1): state=initialized audit_enabled=0 res=1
+1970-01-01T00:00:03.760121+0000 localhost kernel: thermal_sys: Registered thermal governor 'step_wise'
+1970-01-01T00:00:03.760313+0000 localhost kernel: cpuidle: using governor ladder
+1970-01-01T00:00:03.760448+0000 localhost kernel: cpuidle: using governor menu
+1970-01-01T00:00:03.760578+0000 localhost kernel: hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+1970-01-01T00:00:03.760779+0000 localhost kernel: ASID allocator initialised with 65536 entries
+1970-01-01T00:00:03.760921+0000 localhost kernel: Serial: AMBA PL011 UART driver
+1970-01-01T00:00:03.761046+0000 localhost kernel: HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+1970-01-01T00:00:03.761202+0000 localhost kernel: HugeTLB registered 32.0 MiB page size, pre-allocated 0 pages
+1970-01-01T00:00:03.761336+0000 localhost kernel: HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+1970-01-01T00:00:03.761461+0000 localhost kernel: HugeTLB registered 64.0 KiB page size, pre-allocated 0 pages
+1970-01-01T00:00:03.761585+0000 localhost kernel: ACPI: Interpreter disabled.
+1970-01-01T00:00:03.761709+0000 localhost kernel: iommu: Default domain type: Translated 
+1970-01-01T00:00:03.761835+0000 localhost kernel: NetLabel: Initializing
+1970-01-01T00:00:03.761960+0000 localhost kernel: NetLabel:  domain hash size = 128
+1970-01-01T00:00:03.762084+0000 localhost kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+1970-01-01T00:00:03.762210+0000 localhost kernel: NetLabel:  unlabeled traffic allowed by default
+1970-01-01T00:00:03.762425+0000 localhost kernel: clocksource: Switched to clocksource arch_sys_counter
+1970-01-01T00:00:03.762561+0000 localhost kernel: VFS: Disk quotas dquot_6.6.0
+1970-01-01T00:00:03.762685+0000 localhost kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+1970-01-01T00:00:03.762809+0000 localhost kernel: pnp: PnP ACPI: disabled
+1970-01-01T00:00:03.762931+0000 localhost kernel: NET: Registered protocol family 2
+1970-01-01T00:00:03.763054+0000 localhost kernel: IP idents hash table entries: 32768 (order: 6, 262144 bytes, linear)
+1970-01-01T00:00:03.763215+0000 localhost kernel: tcp_listen_portaddr_hash hash table entries: 1024 (order: 3, 40960 bytes, linear)
+1970-01-01T00:00:03.763349+0000 localhost kernel: Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+1970-01-01T00:00:03.763477+0000 localhost kernel: TCP established hash table entries: 16384 (order: 5, 131072 bytes, linear)
+1970-01-01T00:00:03.763604+0000 localhost kernel: TCP bind hash table entries: 16384 (order: 7, 524288 bytes, linear)
+1970-01-01T00:00:03.763732+0000 localhost kernel: TCP: Hash tables configured (established 16384 bind 16384)
+1970-01-01T00:00:03.763858+0000 localhost kernel: UDP hash table entries: 1024 (order: 4, 98304 bytes, linear)
+1970-01-01T00:00:03.763980+0000 localhost kernel: UDP-Lite hash table entries: 1024 (order: 4, 98304 bytes, linear)
+1970-01-01T00:00:03.764103+0000 localhost kernel: NET: Registered protocol family 1
+1970-01-01T00:00:03.764224+0000 localhost kernel: PCI: CLS 0 bytes, default 64
+1970-01-01T00:00:03.764384+0000 localhost kernel: Trying to unpack rootfs image as initramfs...
+1970-01-01T00:00:03.764515+0000 localhost kernel: Freeing initrd memory: 5120K
+1970-01-01T00:00:03.764643+0000 localhost kernel: kvm [1]: KVM ncsnp disabled
+1970-01-01T00:00:03.764815+0000 localhost kernel: kvm [1]: KVM dvmbm disabled
+1970-01-01T00:00:03.764938+0000 localhost kernel: kvm [1]: IPA Size Limit: 40 bits
+1970-01-01T00:00:03.765057+0000 localhost kernel: kvm [1]: GICv3: no GICV resource entry
+1970-01-01T00:00:03.765176+0000 localhost kernel: kvm [1]: disabling GICv2 emulation
+1970-01-01T00:00:03.765293+0000 localhost kernel: kvm [1]: GIC system register CPU interface enabled
+1970-01-01T00:00:03.765411+0000 localhost kernel: kvm [1]: vgic interrupt IRQ16
+1970-01-01T00:00:03.765558+0000 localhost kernel: kvm [1]: Hyp mode initialized successfully
+1970-01-01T00:00:03.765683+0000 localhost kernel: modsign: There is no certification file
+1970-01-01T00:00:03.765803+0000 localhost kernel: modsign: There is only one cert or no cert
+1970-01-01T00:00:03.765919+0000 localhost kernel: Initialise system trusted keyrings
+1970-01-01T00:00:03.766042+0000 localhost kernel: workingset: timestamp_bits=43 max_order=19 bucket_order=0
+1970-01-01T00:00:03.766157+0000 localhost kernel: squashfs: version 4.0 (2009/01/31) Phillip Lougher
+1970-01-01T00:00:03.766269+0000 localhost kernel: Huawei Secure C library init
+1970-01-01T00:00:03.766380+0000 localhost kernel: cms cbb init
+1970-01-01T00:00:03.766492+0000 localhost kernel: modsign: create major 250 for module crl devs
+1970-01-01T00:00:03.766606+0000 localhost kernel: Key type asymmetric registered
+1970-01-01T00:00:03.766760+0000 localhost kernel: Asymmetric key parser 'x509' registered
+1970-01-01T00:00:03.766891+0000 localhost kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+1970-01-01T00:00:03.767058+0000 localhost kernel: io scheduler mq-deadline registered
+1970-01-01T00:00:03.767189+0000 localhost kernel: create /sys/kernel/tty_status_trace succ.
+1970-01-01T00:00:03.767313+0000 localhost kernel: did not found ttyname.
+1970-01-01T00:00:03.767440+0000 localhost kernel: default tty_suspend_mode is 0.
+1970-01-01T00:00:03.767566+0000 localhost kernel: Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+1970-01-01T00:00:03.767692+0000 localhost kernel: Serial: 8250/16550 suspend register ok.
+1970-01-01T00:00:03.767818+0000 localhost kernel: get_tty_suspend_info: mode is 0
+1970-01-01T00:00:03.767989+0000 localhost kernel: printk: console [ttyS0] disabled
+1970-01-01T00:00:03.768156+0000 localhost kernel: 8710000.uart: ttyS0 at MMIO 0x8710000 (irq = 23, base_baud = 6250000) is a 16550A
+1970-01-01T00:00:03.768296+0000 localhost kernel: printk: console [ttyS0] enabled
+1970-01-01T00:00:03.768427+0000 localhost kernel: cacheinfo: Unable to detect cache hierarchy for CPU 0
+1970-01-01T00:00:03.768552+0000 localhost kernel: brd: module loaded
+1970-01-01T00:00:03.768681+0000 localhost kernel: loop: module loaded
+1970-01-01T00:00:03.768806+0000 localhost kernel: hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+1970-01-01T00:00:03.768930+0000 localhost kernel: fiq_glue_parse_source_common fiq source is 1!
+1970-01-01T00:00:03.769057+0000 localhost kernel: fiq_glue_parse_type_common fiq type is 0!
+1970-01-01T00:00:03.769192+0000 localhost kernel: fiq_glue_parse_buffer_offset_type fiq get cpu id type is default!
+1970-01-01T00:00:03.769366+0000 localhost kernel: fiq_glue_parse_clean_wdt fiq clean-wdt is 0!
+1970-01-01T00:00:03.769568+0000 localhost kernel: fiq_glue_parse_dead_loop fiq dead-loop is 1!
+1970-01-01T00:00:03.769703+0000 localhost kernel: fiq_glue_parse_invalid_cache fiq invalid-cache is 1!
+1970-01-01T00:00:03.769838+0000 localhost kernel: fiq_glue_parse_use_atf_under_same_image fiq use-atf-under-same-image is 0!
+1970-01-01T00:00:03.769976+0000 localhost kernel: fiq_glue_no_info_init fiq_num is 1, fiq_num_max is 16
+1970-01-01T00:00:03.770219+0000 localhost kernel: fiq_glue_no_info_init i 0 fiq-no 141
+1970-01-01T00:00:03.770361+0000 localhost kernel: KBOX: ddrram: fs magic not match. It's ok if first time using this device
+1970-01-01T00:00:03.770498+0000 localhost kernel: KBOX: kbox_exception_dump_valid abort for NULL dump_path!
+1970-01-01T00:00:03.770622+0000 localhost kernel: KBOX: kbox:create region panic, size=65536
+1970-01-01T00:00:03.770781+0000 localhost kernel: KBOX: kbox mem maybe destroyed, format it
+1970-01-01T00:00:03.770906+0000 localhost kernel: KBOX: load OK
+1970-01-01T00:00:03.771028+0000 localhost kernel: tasklock: sched_ctrl created.
+1970-01-01T00:00:03.771151+0000 localhost kernel: registered taskstats version 1
+1970-01-01T00:00:03.771269+0000 localhost kernel: Loading compiled-in X.509 certificates
+1970-01-01T00:00:03.771386+0000 localhost kernel: page_owner is disabled
+1970-01-01T00:00:03.771510+0000 localhost kernel: RTOS Process Context for RPC init success
+1970-01-01T00:00:03.771632+0000 localhost kernel: ima: Allocated hash algorithm: sha256
+1970-01-01T00:00:03.771750+0000 localhost kernel: ima: No architecture policies found
+1970-01-01T00:00:03.771921+0000 localhost kernel: DIM: No measurement list to restore, it's ok
+1970-01-01T00:00:03.772104+0000 localhost kernel: clk: Disabling unused clocks
+1970-01-01T00:00:03.773427+0000 localhost kernel: dw-apb-uart 8710000.uart: forbid DMA for kernel console
+1970-01-01T00:00:03.773649+0000 localhost kernel: Freeing unused kernel memory: 1856K
+1970-01-01T00:00:03.773782+0000 localhost kernel: **** Total Boot time: 783 ms, uncompress initrd cost 232 ms ****
+1970-01-01T00:00:03.773916+0000 localhost kernel: Run /init as init process
+1970-01-01T00:00:03.774052+0000 localhost kernel:   with arguments:
+1970-01-01T00:00:03.774171+0000 localhost kernel:     /init
+1970-01-01T00:00:03.774285+0000 localhost kernel:     swift_irqsoff_enable
+1970-01-01T00:00:03.774447+0000 localhost kernel:   with environment:
+1970-01-01T00:00:03.774613+0000 localhost kernel:     HOME=/
+1970-01-01T00:00:03.774736+0000 localhost kernel:     TERM=linux
+1970-01-01T00:00:03.774857+0000 localhost kernel:     earlycon=uart8250,mmio32,0x08710000
+1970-01-01T00:00:03.774982+0000 localhost kernel:     rdinit=/sbin/init
+1970-01-01T00:00:03.775109+0000 localhost kernel:     kbox_mem=0x2e0000@0x84900000
+1970-01-01T00:00:03.775239+0000 localhost kernel: load_kallsyms: loading out-of-tree module taints kernel.
+1970-01-01T00:00:03.775367+0000 localhost kernel: rtos_kallsyms: Successfully loaded symbols!
+1970-01-01T00:00:03.775501+0000 localhost kernel: modprobe (1098) used greatest stack depth: 12752 bytes left
+1970-01-01T00:00:03.775670+0000 localhost kernel: hisi_request_fiq num is 1
+1970-01-01T00:00:03.775818+0000 localhost kernel: [RTOS fiq]@@ register fiq
+1970-01-01T00:00:03.775943+0000 localhost kernel: [RTOS fiq] FIQ register mem:(____ptrval____), FIQ dfx addr: (____ptrval____)
+1970-01-01T00:00:03.776075+0000 localhost kernel: [RTOS fiq] FIQ reserved memory for reigsters: (____ptrval____)
+1970-01-01T00:00:03.776211+0000 localhost kernel: [RTOS fiq]smc register: a0:83000004, a1:(____ptrval____), a2:(____ptrval____)
+1970-01-01T00:00:03.776347+0000 localhost kernel: [request_fiq] succeed to register fiq-no 141  first func hook_for_fiq+0x0/0x2c [rtos_snapshot]
+1970-01-01T00:00:03.776472+0000 localhost kernel: hisi_request_fiq success to request the 0 fiq 141
+1970-01-01T00:00:03.776597+0000 localhost kernel: KBOX: kbox:create region ks_main, size=507904
+1970-01-01T00:00:03.776723+0000 localhost kernel: KBOX: kbox:create region ks_0, size=4096
+1970-01-01T00:00:03.776874+0000 localhost kernel: KBOX: kbox:create region ks_1, size=4096
+1970-01-01T00:00:03.777046+0000 localhost kernel: KBOX: kbox:create region ks_2, size=4096
+1970-01-01T00:00:03.777170+0000 localhost kernel: KBOX: kbox:create region ks_3, size=4096
+1970-01-01T00:00:03.777294+0000 localhost kernel: KBOX: kbox:create region dying, size=131072
+1970-01-01T00:00:03.777417+0000 localhost kernel: KBOX: kbox:create region emergency, size=65536
+1970-01-01T00:00:03.777536+0000 localhost kernel: 1,1970-01-01 00:00:00,1108,bdinfo_boot_cfg_init,2641,board_type:0x0, platform_id:0x0, board_id:0xff, pcb_ver:0x2.
+1970-01-01T00:00:03.777658+0000 localhost kernel: 2,1970-01-01 00:00:00,1108,bdinfo_boot_cfg_init,2644,ddr_size:0x3, ddr_bits:0x1, ddr_ecc:0x1.
+1970-01-01T00:00:03.777782+0000 localhost kernel: 3,1970-01-01 00:00:00,1108,bdinfo_boot_cfg_init,2648,single_chip:0x0, debug_gmac:0x1, vga_type:0x0, is_espi:0x0.
+1970-01-01T00:00:03.777902+0000 localhost kernel: 4,1970-01-01 00:00:00,1108,comm_probe,935,comm_probe success!
+1970-01-01T00:00:03.778055+0000 localhost kernel: insmod (1108) used greatest stack depth: 12368 bytes left
+1970-01-01T00:00:03.778178+0000 localhost kernel: insmod (1114) used greatest stack depth: 11920 bytes left
+1970-01-01T00:00:03.778302+0000 localhost kernel: 5,1970-01-01 00:00:01,1125,watchdog_probe,837,watchdog init ok!
+1970-01-01T00:00:03.778419+0000 localhost kernel: 6,1970-01-01 00:00:01,1137,emmc_vendor_hook_init,42,emmc hook init, register ret:0.
+1970-01-01T00:00:03.778537+0000 localhost kernel: 7,1970-01-01 00:00:01,1090,emmc_close_cache,32,close emmc cache.
+1970-01-01T00:00:03.778655+0000 localhost kernel: mmc0: new HS200 MMC card at address 0001
+1970-01-01T00:00:03.778774+0000 localhost kernel: mmcblk0: mmc0:0001 Y2P032 27.9 GiB 
+1970-01-01T00:00:03.778890+0000 localhost kernel: mmcblk0boot0: mmc0:0001 Y2P032 partition 1 4.00 MiB
+1970-01-01T00:00:03.779041+0000 localhost kernel: mmcblk0boot1: mmc0:0001 Y2P032 partition 2 4.00 MiB
+1970-01-01T00:00:03.779174+0000 localhost kernel: mmcblk0gp0: mmc0:0001 Y2P032 partition 4 384 MiB
+1970-01-01T00:00:03.779342+0000 localhost kernel: mmcblk0gp1: mmc0:0001 Y2P032 partition 5 384 MiB
+1970-01-01T00:00:03.779471+0000 localhost kernel: mmcblk0gp2: mmc0:0001 Y2P032 partition 6 384 MiB
+1970-01-01T00:00:03.779596+0000 localhost kernel: mmcblk0gp3: mmc0:0001 Y2P032 partition 7 128 MiB
+1970-01-01T00:00:03.779721+0000 localhost kernel:  mmcblk0: p1 p2 p3 < p5 p6 p7 p8 p9 >
+1970-01-01T00:00:03.779843+0000 localhost kernel: random: date: uninitialized urandom read (8 bytes read)
+1970-01-01T00:00:03.779964+0000 localhost kernel: random: date: uninitialized urandom read (8 bytes read)
+1970-01-01T00:00:03.780301+0000 localhost kernel: random: date: uninitialized urandom read (8 bytes read)
+1970-01-01T00:00:03.780452+0000 localhost kernel: EXT4-fs (mmcblk0gp0): mounted filesystem 6d2aaeba-bc48-48c4-aa16-9367a39db4b2 ro with ordered data mode. Opts: (null)
+1970-01-01T00:00:03.780634+0000 localhost systemd[1]: Inserted module 'autofs4'
+1970-01-01T00:00:03.780805+0000 localhost kernel: NET: Registered protocol family 10
+1970-01-01T00:00:03.780935+0000 localhost kernel: Segment Routing with IPv6
+1970-01-01T00:00:03.781081+0000 localhost systemd[1]: systemd 249 running in system mode (+PAM -AUDIT +SELINUX -APPARMOR +IMA +SMACK -SECCOMP -GCRYPT -GNUTLS -OPENSSL +ACL +BLKID -CURL -ELFUTILS -FIDO2 -IDN2 -IDN -IPTC +KMOD -LIBCRYPTSETUP +LIBFDISK -PCRE2 -PWQUALITY -P11KIT -QRENCODE -BZIP2 -LZ4 +XZ -ZLIB -ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=legacy)
+1970-01-01T00:00:03.781223+0000 localhost systemd[1]: Detected architecture arm64.
+1970-01-01T00:00:03.781362+0000 localhost systemd[1]: No hostname configured, using default hostname.
+1970-01-01T00:00:03.781497+0000 localhost systemd[1]: Hostname set to <localhost>.
+1970-01-01T00:00:03.781628+0000 localhost systemd[1]: Initializing machine ID from random generator.
+1970-01-01T00:00:03.781811+0000 localhost systemd[1]: Installed transient /etc/machine-id file.
+1970-01-01T00:00:03.781955+0000 localhost kernel: systemd-debug-g (1223) used greatest stack depth: 11888 bytes left
+1970-01-01T00:00:03.782082+0000 localhost kernel: systemd-fstab-g (1224) used greatest stack depth: 11808 bytes left
+1970-01-01T00:00:03.782225+0000 localhost systemd-sysv-generator[1232]: SysV service '/etc/init.d/syslog' lacks a native systemd unit file. Automatically generating a unit file for compatibility. Please update package to include a native systemd unit file, in order to make it more safe and robust.
+1970-01-01T00:00:03.782382+0000 localhost systemd-sysv-generator[1232]: SysV service '/etc/init.d/functions' lacks a native systemd unit file. Automatically generating a unit file for compatibility. Please update package to include a native systemd unit file, in order to make it more safe and robust.
+1970-01-01T00:00:03.782527+0000 localhost systemd-sysv-generator[1232]: SysV service '/etc/init.d/auditd' lacks a native systemd unit file. Automatically generating a unit file for compatibility. Please update package to include a native systemd unit file, in order to make it more safe and robust.
+1970-01-01T00:00:03.782694+0000 localhost systemd-sysv-generator[1232]: SysV service '/etc/init.d/busybox-cron' lacks a native systemd unit file. Automatically generating a unit file for compatibility. Please update package to include a native systemd unit file, in order to make it more safe and robust.
+1970-01-01T00:00:03.782842+0000 localhost systemd-sysv-generator[1232]: SysV service '/etc/init.d/crond' lacks a native systemd unit file. Automatically generating a unit file for compatibility. Please update package to include a native systemd unit file, in order to make it more safe and robust.
+1970-01-01T00:00:03.782984+0000 localhost systemd-sysv-generator[1232]: SysV service '/etc/init.d/mdev' lacks a native systemd unit file. Automatically generating a unit file for compatibility. Please update package to include a native systemd unit file, in order to make it more safe and robust.
+1970-01-01T00:00:03.783133+0000 localhost systemd-sysv-generator[1232]: SysV service '/etc/init.d/network' lacks a native systemd unit file. Automatically generating a unit file for compatibility. Please update package to include a native systemd unit file, in order to make it more safe and robust.
+1970-01-01T00:00:03.783279+0000 localhost systemd-sysv-generator[1232]: SysV service '/etc/init.d/busybox-udhcpd' lacks a native systemd unit file. Automatically generating a unit file for compatibility. Please update package to include a native systemd unit file, in order to make it more safe and robust.
+1970-01-01T00:00:03.783423+0000 localhost systemd[1]: /lib/systemd/system/dbus.socket:5: ListenStream= references a path below legacy directory /var/run/, updating /var/run/dbus/system_bus_socket → /run/dbus/system_bus_socket; please update the unit file accordingly.
+1970-01-01T00:00:03.783591+0000 localhost systemd[1]: multi-user.target: Wants dependency dropin /etc/systemd/system/multi-user.target.wants/lsw.service is not a symlink, ignoring.
+1970-01-01T00:00:03.783738+0000 localhost systemd[1]: Configuration file /etc/systemd/system/trust.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+1970-01-01T00:00:03.783878+0000 localhost systemd[1]: Configuration file /etc/systemd/system/power_strategy.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+1970-01-01T00:00:03.784019+0000 localhost systemd[1]: Configuration file /etc/systemd/system/license.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+1970-01-01T00:00:03.784153+0000 localhost systemd[1]: /etc/systemd/system/interface.service:11: Unknown key name 'PermittedCapabilities' in section 'Service', ignoring.
+1970-01-01T00:00:03.784291+0000 localhost systemd[1]: /etc/systemd/system/interface.service:12: Unknown key name 'InheritableCapabilities' in section 'Service', ignoring.
+1970-01-01T00:00:03.784427+0000 localhost systemd[1]: /etc/systemd/system/interface.service:13: Unknown key name 'EffectiveCapabilities' in section 'Service', ignoring.
+1970-01-01T00:00:03.784601+0000 localhost systemd[1]: Configuration file /lib/systemd/system/file_transfer.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+1970-01-01T00:00:03.784751+0000 localhost systemd[1]: Configuration file /etc/systemd/system/cooling.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+1970-01-01T00:00:03.784881+0000 localhost kernel: random: systemd: uninitialized urandom read (16 bytes read)
+1970-01-01T00:00:03.785011+0000 localhost systemd[1]: Queued start job for default target Multi-User System.
+1970-01-01T00:00:03.785145+0000 localhost kernel: random: systemd: uninitialized urandom read (16 bytes read)
+1970-01-01T00:00:03.785275+0000 localhost systemd[1]: Created slice Slice /system/getty.
+1970-01-01T00:00:03.785459+0000 localhost kernel: random: systemd: uninitialized urandom read (16 bytes read)
+1970-01-01T00:00:03.785599+0000 localhost systemd[1]: Created slice Slice /system/modprobe.
+1970-01-01T00:00:03.785747+0000 localhost systemd[1]: Created slice User and Session Slice.
+1970-01-01T00:00:03.785923+0000 localhost systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+1970-01-01T00:00:03.786086+0000 localhost systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+1970-01-01T00:00:03.786243+0000 localhost systemd[1]: Condition check resulted in Arbitrary Executable File Formats File System Automount Point being skipped.
+1970-01-01T00:00:03.786384+0000 localhost systemd[1]: Reached target Path Units.
+1970-01-01T00:00:03.786529+0000 localhost systemd[1]: Reached target Slice Units.
+1970-01-01T00:00:03.786670+0000 localhost systemd[1]: Reached target Swaps.
+1970-01-01T00:00:03.786821+0000 localhost systemd[1]: Listening on initctl Compatibility Named Pipe.
+1970-01-01T00:00:03.786964+0000 localhost systemd[1]: Listening on Journal Socket (/dev/log).
+1970-01-01T00:00:03.787102+0000 localhost systemd[1]: Listening on Journal Socket.
+1970-01-01T00:00:03.787262+0000 localhost systemd[1]: Mounting Kernel Debug File System...
+1970-01-01T00:00:03.787393+0000 localhost systemd[1]: Mounting Kernel Trace File System...
+1970-01-01T00:00:03.787526+0000 localhost systemd[1]: Starting Create List of Static Device Nodes...
+1970-01-01T00:00:03.787653+0000 localhost systemd[1]: Starting Load Kernel Module configfs...
+1970-01-01T00:00:03.787779+0000 localhost systemd[1]: Starting Load Kernel Module drm...
+1970-01-01T00:00:03.787901+0000 localhost systemd[1]: Starting Load Kernel Module fuse...
+1970-01-01T00:00:03.788080+0000 localhost systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.
+1970-01-01T00:00:03.788247+0000 localhost systemd[1]: systemd-journald.service: unit configures an IP firewall, but the local system does not support BPF/cgroup firewalling.
+1970-01-01T00:00:03.788390+0000 localhost systemd[1]: (This warning is only shown for the first unit using IP firewalling.)
+1970-01-01T00:00:03.788524+0000 localhost systemd[1]: Starting Journal Service...
+1970-01-01T00:00:03.788665+0000 localhost systemd[1]: Condition check resulted in Load Kernel Modules being skipped.
+1970-01-01T00:00:03.788803+0000 localhost systemd[1]: Starting Remount Root and Kernel File Systems...
+1970-01-01T00:00:03.788942+0000 localhost systemd[1]: Starting Apply Kernel Variables...
+1970-01-01T00:00:03.789080+0000 localhost systemd-journald[1249]: Journal started
+1970-01-01T00:00:03.789579+0000 localhost systemd-journald[1249]: Runtime Journal (/run/log/journal/70ecf60f9afa4b15b1efbfafe7fcbf86) is 4.0M, max 8.0M, 4.0M free.
+1970-01-01T00:00:03.810274+0000 localhost systemd[1]: Started Journal Service.
+1970-01-01T00:00:03.838645+0000 localhost systemd[1]: Mounted Kernel Debug File System.
+1970-01-01T00:00:03.841096+0000 localhost systemd-sysctl[1256]: Couldn't write '1' to 'net/ipv4/conf/eth0/arp_ignore', ignoring: No such file or directory
+1970-01-01T00:00:03.841270+0000 localhost systemd-sysctl[1256]: Couldn't write '2' to 'net/ipv4/conf/eth0/arp_announce', ignoring: No such file or directory
+1970-01-01T00:00:03.841356+0000 localhost systemd-sysctl[1256]: Couldn't write '1' to 'net/ipv4/conf/eth1/arp_ignore', ignoring: No such file or directory
+1970-01-01T00:00:03.841436+0000 localhost systemd-sysctl[1256]: Couldn't write '2' to 'net/ipv4/conf/eth1/arp_announce', ignoring: No such file or directory
+1970-01-01T00:00:03.861379+0000 localhost systemd[1]: Mounted Kernel Trace File System.
+1970-01-01T00:00:03.895114+0000 localhost systemd[1]: Finished Create List of Static Device Nodes.
+1970-01-01T00:00:03.923166+0000 localhost systemd[1]: modprobe@configfs.service: Deactivated successfully.
+1970-01-01T00:00:03.926997+0000 localhost systemd[1]: Finished Load Kernel Module configfs.
+1970-01-01T00:00:03.953261+0000 localhost systemd[1]: modprobe@drm.service: Deactivated successfully.
+1970-01-01T00:00:03.956976+0000 localhost systemd[1]: Finished Load Kernel Module drm.
+1970-01-01T00:00:03.983295+0000 localhost systemd[1]: modprobe@fuse.service: Deactivated successfully.
+1970-01-01T00:00:03.987209+0000 localhost systemd[1]: Finished Load Kernel Module fuse.
+1970-01-01T00:00:04.014322+0000 localhost systemd[1]: Finished Remount Root and Kernel File Systems.
+1970-01-01T00:00:04.044411+0000 localhost systemd[1]: Finished Apply Kernel Variables.
+1970-01-01T00:00:04.072950+0000 localhost systemd[1]: Condition check resulted in FUSE Control File System being skipped.
+1970-01-01T00:00:04.074384+0000 localhost systemd[1]: Condition check resulted in Kernel Configuration File System being skipped.
+1970-01-01T00:00:04.075561+0000 localhost systemd[1]: Condition check resulted in First Boot Wizard being skipped.
+1970-01-01T00:00:04.076771+0000 localhost systemd[1]: Condition check resulted in Create System Users being skipped.
+1970-01-01T00:00:04.080116+0000 localhost kernel: random: systemd: uninitialized urandom read (16 bytes read)
+1970-01-01T00:00:04.084883+0000 localhost systemd[1]: Starting Create Static Device Nodes in /dev...
+1970-01-01T00:00:04.090269+0000 localhost kernel: random: systemd-journal: uninitialized urandom read (16 bytes read)
+1970-01-01T00:00:04.100068+0000 localhost kernel: random: systemd-tmpfile: uninitialized urandom read (8 bytes read)
+1970-01-01T00:00:04.134640+0000 localhost systemd-tmpfiles[1261]: /usr/lib/tmpfiles.d/static-nodes-permissions.conf:12: Failed to resolve group 'audio'.
+1970-01-01T00:00:04.134883+0000 localhost systemd-tmpfiles[1261]: /usr/lib/tmpfiles.d/static-nodes-permissions.conf:13: Failed to resolve group 'audio'.
+1970-01-01T00:00:04.135037+0000 localhost systemd-tmpfiles[1261]: /usr/lib/tmpfiles.d/static-nodes-permissions.conf:14: Failed to resolve group 'disk'.
+1970-01-01T00:00:04.135314+0000 localhost systemd-tmpfiles[1261]: /usr/lib/tmpfiles.d/static-nodes-permissions.conf:17: Failed to resolve group 'kvm'.
+1970-01-01T00:00:04.135463+0000 localhost systemd-tmpfiles[1261]: /usr/lib/tmpfiles.d/static-nodes-permissions.conf:18: Failed to resolve group 'kvm'.
+1970-01-01T00:00:04.135629+0000 localhost systemd-tmpfiles[1261]: /usr/lib/tmpfiles.d/static-nodes-permissions.conf:19: Failed to resolve group 'kvm'.
+1970-01-01T00:00:04.141273+0000 localhost systemd-tmpfiles[1261]: Failed to parse ACL "d:group::r-x,d:group:adm:r-x,d:group:wheel:r-x,group::r-x,group:adm:r-x,group:wheel:r-x": No such file or directory. Ignoring
+1970-01-01T00:00:04.141485+0000 localhost systemd-tmpfiles[1261]: Failed to parse ACL "d:group:adm:r-x,d:group:wheel:r-x,group:adm:r-x,group:wheel:r-x": No such file or directory. Ignoring
+1970-01-01T00:00:04.141651+0000 localhost systemd-tmpfiles[1261]: Failed to parse ACL "group:adm:r--,group:wheel:r--": No such file or directory. Ignoring
+1970-01-01T00:00:04.141918+0000 localhost systemd-tmpfiles[1261]: Failed to parse ACL "d:group::r-x,d:group:adm:r-x,d:group:wheel:r-x,group::r-x,group:adm:r-x,group:wheel:r-x": No such file or directory. Ignoring
+1970-01-01T00:00:04.142092+0000 localhost systemd-tmpfiles[1261]: Failed to parse ACL "d:group:adm:r-x,d:group:wheel:r-x,group:adm:r-x,group:wheel:r-x": No such file or directory. Ignoring
+1970-01-01T00:00:04.142254+0000 localhost systemd-tmpfiles[1261]: Failed to parse ACL "group:adm:r--,group:wheel:r--": No such file or directory. Ignoring
+1970-01-01T00:00:04.152550+0000 localhost systemd[1]: Finished Create Static Device Nodes in /dev.
+1970-01-01T00:00:04.181886+0000 localhost systemd[1]: Reached target Preparation for Local File Systems.
+1970-01-01T00:00:04.217550+0000 localhost systemd[1]: Mounting /tmp...
+1970-01-01T00:00:04.246838+0000 localhost systemd[1]: Mounting /var...
+1970-01-01T00:00:04.275511+0000 localhost systemd[1]: Mounted /tmp.
+1970-01-01T00:00:04.301832+0000 localhost systemd[1]: Mounted /var.
+1970-01-01T00:00:04.341076+0000 localhost systemd[1]: Reached target Local File Systems.
+1970-01-01T00:00:04.387234+0000 localhost systemd[1]: Starting Rebuild Dynamic Linker Cache...
+1970-01-01T00:00:04.390211+0000 localhost (ldconfig)[1267]: ldconfig.service: Failed to locate executable /sbin/ldconfig: No such file or directory
+1970-01-01T00:00:04.390509+0000 localhost (ldconfig)[1267]: ldconfig.service: Failed at step EXEC spawning /sbin/ldconfig: No such file or directory
+1970-01-01T00:00:04.427079+0000 localhost systemd[1]: Starting Flush Journal to Persistent Storage...
+1970-01-01T00:00:04.467369+0000 localhost systemd[1]: Starting Load/Save Random Seed...
+1970-01-01T00:00:04.469020+0000 localhost systemd-journald[1249]: Runtime Journal (/run/log/journal/70ecf60f9afa4b15b1efbfafe7fcbf86) is 4.0M, max 8.0M, 4.0M free.
+1970-01-01T00:00:04.494150+0000 localhost systemd-random-seed[1270]: Kernel entropy pool is not initialized yet, waiting until it is.
+1970-01-01T00:00:04.503491+0000 localhost systemd[1]: ldconfig.service: Main process exited, code=exited, status=203/EXEC
+1970-01-01T00:00:04.505418+0000 localhost systemd[1]: ldconfig.service: Failed with result 'exit-code'.
+1970-01-01T00:00:04.508766+0000 localhost systemd[1]: Failed to start Rebuild Dynamic Linker Cache.
+1970-01-01T00:00:04.594144+0000 localhost systemd[1]: Finished Flush Journal to Persistent Storage.
+1970-01-01T00:00:04.637364+0000 localhost systemd[1]: Starting Create Volatile Files and Directories...
+1970-01-01T00:00:04.671626+0000 localhost systemd-tmpfiles[1272]: /usr/lib/tmpfiles.d/systemd.conf:11: Failed to resolve group 'utmp'.
+1970-01-01T00:00:04.672337+0000 localhost systemd-tmpfiles[1272]: /usr/lib/tmpfiles.d/systemd.conf:19: Failed to resolve user 'systemd-network': No such file or directory
+1970-01-01T00:00:04.672529+0000 localhost systemd-tmpfiles[1272]: /usr/lib/tmpfiles.d/systemd.conf:20: Failed to resolve user 'systemd-network': No such file or directory
+1970-01-01T00:00:04.672686+0000 localhost systemd-tmpfiles[1272]: /usr/lib/tmpfiles.d/systemd.conf:21: Failed to resolve user 'systemd-network': No such file or directory
+1970-01-01T00:00:04.672865+0000 localhost systemd-tmpfiles[1272]: /usr/lib/tmpfiles.d/systemd.conf:22: Failed to resolve user 'systemd-network': No such file or directory
+1970-01-01T00:00:04.673075+0000 localhost systemd-tmpfiles[1272]: /usr/lib/tmpfiles.d/systemd.conf:26: Failed to resolve group 'systemd-journal'.
+1970-01-01T00:00:04.673224+0000 localhost systemd-tmpfiles[1272]: /usr/lib/tmpfiles.d/systemd.conf:27: Failed to resolve group 'systemd-journal'.
+1970-01-01T00:00:04.673539+0000 localhost systemd-tmpfiles[1272]: Failed to parse ACL "d:group::r-x,d:group:adm:r-x,d:group:wheel:r-x,group::r-x,group:adm:r-x,group:wheel:r-x": No such file or directory. Ignoring
+1970-01-01T00:00:04.673792+0000 localhost systemd-tmpfiles[1272]: Failed to parse ACL "d:group:adm:r-x,d:group:wheel:r-x,group:adm:r-x,group:wheel:r-x": No such file or directory. Ignoring
+1970-01-01T00:00:04.673984+0000 localhost systemd-tmpfiles[1272]: Failed to parse ACL "group:adm:r--,group:wheel:r--": No such file or directory. Ignoring
+1970-01-01T00:00:04.674161+0000 localhost systemd-tmpfiles[1272]: /usr/lib/tmpfiles.d/systemd.conf:32: Failed to resolve group 'systemd-journal'.
+1970-01-01T00:00:04.674318+0000 localhost systemd-tmpfiles[1272]: /usr/lib/tmpfiles.d/systemd.conf:33: Failed to resolve group 'systemd-journal'.
+1970-01-01T00:00:04.674469+0000 localhost systemd-tmpfiles[1272]: /usr/lib/tmpfiles.d/systemd.conf:34: Failed to resolve group 'systemd-journal'.
+1970-01-01T00:00:04.674653+0000 localhost systemd-tmpfiles[1272]: Failed to parse ACL "d:group::r-x,d:group:adm:r-x,d:group:wheel:r-x,group::r-x,group:adm:r-x,group:wheel:r-x": No such file or directory. Ignoring
+1970-01-01T00:00:04.674843+0000 localhost systemd-tmpfiles[1272]: Failed to parse ACL "d:group:adm:r-x,d:group:wheel:r-x,group:adm:r-x,group:wheel:r-x": No such file or directory. Ignoring
+1970-01-01T00:00:04.675017+0000 localhost systemd-tmpfiles[1272]: Failed to parse ACL "group:adm:r--,group:wheel:r--": No such file or directory. Ignoring
+1970-01-01T00:00:04.676136+0000 localhost systemd-tmpfiles[1272]: /usr/lib/tmpfiles.d/var.conf:14: Duplicate line for path "/var/log", ignoring.
+1970-01-01T00:00:04.676303+0000 localhost systemd-tmpfiles[1272]: /usr/lib/tmpfiles.d/var.conf:15: Failed to resolve group 'utmp'.
+1970-01-01T00:00:04.676443+0000 localhost systemd-tmpfiles[1272]: /usr/lib/tmpfiles.d/var.conf:16: Failed to resolve group 'utmp'.
+1970-01-01T00:00:04.676580+0000 localhost systemd-tmpfiles[1272]: /usr/lib/tmpfiles.d/var.conf:17: Failed to resolve group 'utmp'.
+1970-01-01T00:00:04.688954+0000 localhost systemd-tmpfiles[1272]: symlink(../proc/self/mounts, /etc/mtab) failed: Read-only file system
+1970-01-01T00:00:04.696062+0000 localhost systemd-tmpfiles[1272]: "/home" already exists and is not a directory.
+1970-01-01T00:00:04.696272+0000 localhost systemd-tmpfiles[1272]: /srv does not exist and cannot be created as the file system is read-only.
+1970-01-01T00:00:04.713134+0000 localhost systemd[1]: Finished Create Volatile Files and Directories.
+1970-01-01T00:00:04.758439+0000 localhost systemd[1]: Starting Rebuild Journal Catalog...
+1970-01-01T00:00:04.796983+0000 localhost systemd[1]: Starting Record System Boot/Shutdown in UTMP...
+1970-01-01T00:00:04.849416+0000 localhost systemd[1]: Finished Rebuild Journal Catalog.
+1970-01-01T00:00:04.885768+0000 localhost systemd[1]: Finished Record System Boot/Shutdown in UTMP.
+1970-01-01T00:00:04.928065+0000 localhost systemd[1]: Starting Update is Completed...
+1970-01-01T00:00:04.964526+0000 localhost systemd[1]: Finished Update is Completed.
+1970-01-01T00:00:05.002148+0000 localhost systemd[1]: Reached target System Initialization.
+1970-01-01T00:00:05.030866+0000 localhost systemd[1]: Started Daily Cleanup of Temporary Directories.
+1970-01-01T00:00:05.063554+0000 localhost systemd[1]: Listening on D-Bus System Message Bus Socket.
+1970-01-01T00:00:05.100574+0000 localhost systemd[1]: Reached target Socket Units.
+1970-01-01T00:00:05.110072+0000 localhost kernel: random: systemd: uninitialized urandom read (16 bytes read)
+1970-01-01T00:00:05.130752+0000 localhost systemd[1]: Reached target Basic System.
+1970-01-01T00:00:05.160729+0000 localhost systemd[1]: System is tainted: cgroupsv1
+1970-01-01T00:00:05.165432+0000 localhost systemd[1]: cooling.service: Failed to load environment files: No such file or directory
+1970-01-01T00:00:05.165490+0000 localhost systemd[1]: cooling.service: Failed to run 'start-pre' task: No such file or directory
+1970-01-01T00:00:05.165553+0000 localhost systemd[1]: cooling.service: Failed with result 'resources'.
+1970-01-01T00:00:05.168800+0000 localhost systemd[1]: Failed to start cooling service.
+1970-01-01T00:00:05.238414+0000 localhost systemd[1]: Starting Update RTC With System Clock...
+1970-01-01T00:00:05.241222+0000 localhost (true)[1281]: hwclock-save.service: Failed to locate executable /usr/bin/true: No such file or directory
+1970-01-01T00:00:05.241489+0000 localhost (true)[1281]: hwclock-save.service: Failed at step EXEC spawning /usr/bin/true: No such file or directory
+1970-01-01T00:00:05.275031+0000 localhost systemd[1]: license.service: Failed to load environment files: No such file or directory
+1970-01-01T00:00:05.275094+0000 localhost systemd[1]: license.service: Failed to run 'start-pre' task: No such file or directory
+1970-01-01T00:00:05.275157+0000 localhost systemd[1]: license.service: Failed with result 'resources'.
+1970-01-01T00:00:05.278471+0000 localhost systemd[1]: Failed to start license service.
+1970-01-01T00:00:05.347513+0000 localhost systemd[1]: power_strategy.service: Failed to load environment files: No such file or directory
+1970-01-01T00:00:05.347573+0000 localhost systemd[1]: power_strategy.service: Failed to run 'start-pre' task: No such file or directory
+1970-01-01T00:00:05.347635+0000 localhost systemd[1]: power_strategy.service: Failed with result 'resources'.
+1970-01-01T00:00:05.350974+0000 localhost systemd[1]: Failed to start power_strategy service.
+1970-01-01T00:00:05.418166+0000 localhost systemd[1]: Starting /etc/rc.local Compatibility...
+1970-01-01T00:00:05.436309+0000 localhost rc.local[1283]:                         -=#  RTOS 1.0  #=-
+1970-01-01T00:00:05.438308+0000 localhost rc.local[1283]: mount file system
+1970-01-01T00:00:05.451492+0000 localhost systemd[1]: Finished rmmod driver service.
+1970-01-01T00:00:05.482691+0000 localhost rc.local[1287]: mount: mounting sysfs on /sys failed: Device or resource busy
+1970-01-01T00:00:05.495315+0000 localhost systemd[1]: Starting User Login Management...
+1970-01-01T00:00:05.497184+0000 localhost (d-logind)[1289]: systemd-logind.service: Failed to set up standard input: No such file or directory
+1970-01-01T00:00:05.497621+0000 localhost (d-logind)[1289]: systemd-logind.service: Failed at step STDIN spawning /lib/systemd/systemd-logind: No such file or directory
+1970-01-01T00:00:05.530580+0000 localhost systemd[1]: trust.service: Failed to generate invocation ID for unit: Function not implemented
+1970-01-01T00:00:05.530694+0000 localhost systemd[1]: Failed to start trust service.
+1970-01-01T00:00:05.533348+0000 localhost systemd[1]: tmp.mount: Deactivated successfully.
+1970-01-01T00:00:05.541820+0000 localhost systemd[1]: hwclock-save.service: Main process exited, code=exited, status=203/EXEC
+1970-01-01T00:00:05.543859+0000 localhost systemd[1]: hwclock-save.service: Failed with result 'exit-code'.
+1970-01-01T00:00:05.547259+0000 localhost systemd[1]: Failed to start Update RTC With System Clock.
+1970-01-01T00:00:05.548387+0000 localhost systemd[1]: systemd-logind.service: Main process exited, code=exited, status=208/STDIN
+1970-01-01T00:00:05.550770+0000 localhost systemd[1]: systemd-logind.service: Failed with result 'exit-code'.
+1970-01-01T00:00:05.554273+0000 localhost systemd[1]: Failed to start User Login Management.
+1970-01-01T00:00:05.558729+0000 localhost systemd[1]: systemd-logind.service: Scheduled restart job, restart counter is at 1.
+1970-01-01T00:00:05.558971+0000 localhost systemd[1]: Stopped User Login Management.
+1970-01-01T00:00:05.559798+0000 localhost systemd[1]: modprobe@drm.service: Failed to generate invocation ID for unit: Function not implemented
+1970-01-01T00:00:05.559886+0000 localhost systemd[1]: Failed to start Load Kernel Module drm.
+1970-01-01T00:00:05.560264+0000 localhost systemd[1]: systemd-logind.service: Failed to generate invocation ID for unit: Function not implemented
+1970-01-01T00:00:05.560339+0000 localhost systemd[1]: Failed to start User Login Management.
+1970-01-01T00:00:05.588240+0000 localhost systemd[1]: tmp.mount: Failed to generate invocation ID for unit: Function not implemented
+1970-01-01T00:00:05.589888+0000 localhost rc.local[1283]: Loading the kernel modules:
+1970-01-01T00:00:05.602269+0000 localhost rc.local[1303]: Loading module: xt-masquerade
+1970-01-01T00:00:05.613683+0000 localhost rc.local[1304]: modprobe: module xt-masquerade not found in modules.dep
+1970-01-01T00:00:05.615268+0000 localhost rc.local[1303]: Loading module: af-packet
+1970-01-01T00:00:05.633848+0000 localhost rc.local[1283]: Making device instances:
+1970-01-01T00:00:05.640098+0000 localhost kernel: NET: Registered protocol family 17
+1970-01-01T00:00:06.166293+0000 localhost systemd[1]: Finished Load/Save Random Seed.
+1970-01-01T00:00:06.170145+0000 localhost kernel: random: crng init done
+1970-01-01T00:00:06.170435+0000 localhost kernel: random: 1034 urandom warning(s) missed due to ratelimiting
+1970-01-01T00:00:06.212068+0000 localhost systemd[1]: Condition check resulted in First Boot Complete being skipped.
+1970-01-01T00:00:06.212418+0000 localhost systemd[1]: Condition check resulted in Commit a transient machine-id on disk being skipped.
+1970-01-01T00:00:06.360187+0000 localhost kernel: 8021q: 802.1Q VLAN Support v1.8
+1970-01-01T00:00:06.430132+0000 localhost kernel: SCSI subsystem initialized
+1970-01-01T00:00:06.480683+0000 localhost systemd[1]: cooling.service: Failed to schedule restart job: Unit hica.service not found.
+1970-01-01T00:00:06.480768+0000 localhost systemd[1]: cooling.service: Failed with result 'resources'.
+1970-01-01T00:00:06.482760+0000 localhost systemd[1]: license.service: Failed to schedule restart job: Unit persistence.service not found.
+1970-01-01T00:00:06.482844+0000 localhost systemd[1]: license.service: Failed with result 'resources'.
+1970-01-01T00:00:06.484950+0000 localhost systemd[1]: power_strategy.service: Failed to schedule restart job: Unit hica.service not found.
+1970-01-01T00:00:06.485027+0000 localhost systemd[1]: power_strategy.service: Failed with result 'resources'.
+1970-01-01T00:00:06.490188+0000 localhost kernel: usbcore: registered new interface driver usbfs
+1970-01-01T00:00:06.490495+0000 localhost kernel: usbcore: registered new interface driver hub
+1970-01-01T00:00:06.490694+0000 localhost kernel: usbcore: registered new device driver usb
+1970-01-01T00:00:06.510120+0000 localhost kernel: usbcore: registered new interface driver usb-storage
+1970-01-01T00:00:07.640049+0000 localhost kernel: 8,1970-01-01 00:00:07,1356,gmac_phy_init,1101,mac(0) not used phy.
+1970-01-01T00:00:08.690052+0000 localhost kernel: 9,1970-01-01 00:00:08,1356,gmac_phy_init,1101,mac(1) not used phy.
+1970-01-01T00:00:09.740057+0000 localhost kernel: 10,1970-01-01 00:00:09,1356,gmac_phy_init,1099,mac(2)'s phy_addr is 3.
+1970-01-01T00:00:10.830047+0000 localhost kernel: 11,1970-01-01 00:00:10,1356,gmac_phy_init,1101,mac(3) not used phy.
+1970-01-01T00:00:11.865398+0000 localhost kernel: 12,1970-01-01 00:00:11,1356,gmac_hw_set_port_mode_all,635,SGMII auto-negotiation not complete(0x0)
+1970-01-01T00:00:11.865828+0000 localhost kernel: 13,1970-01-01 00:00:11,1356,gmac_probe,1433,gmac init ok!
+1970-01-01T00:00:11.900141+0000 localhost kernel: 14,1970-01-01 00:00:11,1373,sys_info_probe,1960,sys_info init ok!
+1970-01-01T00:00:11.960340+0000 localhost kernel: 15,1970-01-01 00:00:11,1389,p80_probe,210,p80 use LPC!
+1970-01-01T00:00:11.995433+0000 localhost kernel: 16,1970-01-01 00:00:11,1395,sol_probe,906,SOL use LPC!
+1970-01-01T00:00:11.995796+0000 localhost kernel: 17,1970-01-01 00:00:11,1395,sol_ddrinfo_update,814,SOL[0] Init Rx-start 0x86400000, Rx-size 0x2, Tx-start 0x86000000, Tx-size 0x4.
+1970-01-01T00:00:11.996008+0000 localhost kernel: 18,1970-01-01 00:00:11,1395,sol_ddrinfo_update,814,SOL[1] Init Rx-start 0x86600000, Rx-size 0x3, Tx-start 0x86500000, Tx-size 0x2.
+1970-01-01T00:00:12.021407+0000 localhost kernel: 19,1970-01-01 00:00:12,1395,sol_ddrinfo_update,814,SOL[2] Init Rx-start 0x86900000, Rx-size 0x3, Tx-start 0x86800000, Tx-size 0x2.
+1970-01-01T00:00:12.021664+0000 localhost kernel: 20,1970-01-01 00:00:12,1395,sol_ddrinfo_update,814,SOL[3] Init Rx-start 0x86c00000, Rx-size 0x3, Tx-start 0x86b00000, Tx-size 0x2.
+1970-01-01T00:00:12.041722+0000 localhost kernel: 21,1970-01-01 00:00:12,1395,sol_probe,935,uart sol init ok!
+1970-01-01T00:00:12.077221+0000 localhost kernel: 22,1970-01-01 00:00:12,1401,dboot_probe,545,dboot probe start.
+1970-01-01T00:00:12.077525+0000 localhost kernel: 23,1970-01-01 00:00:12,1401,dboot_probe_info,519,boot from uboot 0
+1970-01-01T00:00:12.077725+0000 localhost kernel: 24,1970-01-01 00:00:12,1401,dboot_probe_info,520,BMC reset count: 0
+1970-01-01T00:00:12.077947+0000 localhost kernel: 25,1970-01-01 00:00:12,1401,dboot_probe_info,521,BMC unsec reset count: 0
+1970-01-01T00:00:12.092472+0000 localhost kernel: 26,1970-01-01 00:00:12,1401,dboot_probe_info,522,HOST reset count: 1
+1970-01-01T00:00:12.092720+0000 localhost kernel: 27,1970-01-01 00:00:12,1401,dboot_probe_info,523,CHIP reset count: 0
+1970-01-01T00:00:12.106380+0000 localhost kernel: 28,1970-01-01 00:00:12,1401,dboot_probe,567,dboot init ok!
+1970-01-01T00:00:12.180300+0000 localhost kernel: 29,1970-01-01 00:00:12,1417,bmcrtc_of_probe,189,BMCRTC Device Registered.
+1970-01-01T00:00:12.230186+0000 localhost kernel: 8711000.uart: ttySS3 at MMIO 0x8711000 (irq = 24, base_baud = 0) is a AMBA/ttySS
+1970-01-01T00:00:12.230516+0000 localhost kernel: 8743000.uart: ttySS4 at MMIO 0x8743000 (irq = 25, base_baud = 0) is a AMBA/ttySS
+1970-01-01T00:00:12.230790+0000 localhost kernel: 8744000.uart: ttySS5 at MMIO 0x8744000 (irq = 26, base_baud = 0) is a AMBA/ttySS
+1970-01-01T00:00:12.231005+0000 localhost kernel: 875d000.uart: ttySS6 at MMIO 0x875d000 (irq = 27, base_baud = 0) is a AMBA/ttySS
+1970-01-01T00:00:12.231234+0000 localhost kernel: 875e000.uart: ttySS7 at MMIO 0x875e000 (irq = 28, base_baud = 0) is a AMBA/ttySS
+1970-01-01T00:00:12.300129+0000 localhost kernel: 30,1970-01-01 00:00:12,1449,peci_probe,332,peci is 1 mode!
+1970-01-01T00:00:12.300451+0000 localhost kernel: 31,1970-01-01 00:00:12,1449,peci_probe,346,peci init ok!
+1970-01-01T00:00:12.373567+0000 localhost kernel: 32,1970-01-01 00:00:12,1467,hispi_setup_device,885,hispi_setup_device id 0x0!
+1970-01-01T00:00:12.373855+0000 localhost kernel: 33,1970-01-01 00:00:12,1467,hispi_setup_device,885,hispi_setup_device id 0x1!
+1970-01-01T00:00:12.470408+0000 localhost kernel: 34,1970-01-01 00:00:12,1494,pci_fix_ker_probe,527,probe OK
+1970-01-01T00:00:12.503586+0000 localhost kernel: 35,1970-01-01 00:00:12,1498,deal_with_ext_addr,255,g_mctp_ext_mode:0 [0 Normal,1 Offset,2 Hi]
+1970-01-01T00:00:12.503925+0000 localhost kernel: 36,1970-01-01 00:00:12,1498,mctp_reset,1477,reset mctp ok!
+1970-01-01T00:00:12.511449+0000 localhost kernel: 37,1970-01-01 00:00:12,1498,mctp_dereset,1501,dereset mctp ok!
+1970-01-01T00:00:12.852432+0000 localhost kernel: 38,1970-01-01 00:00:12,1540,vce_dac_param_set,244,dac param register is: 0x800820f
+1970-01-01T00:00:12.852785+0000 localhost kernel: 39,1970-01-01 00:00:12,1540,vce_driver_probe,295,irq_mask 0xd80
+1970-01-01T00:00:12.880140+0000 localhost kernel: insmod (1544) used greatest stack depth: 11664 bytes left
+1970-01-01T00:00:12.900133+0000 localhost kernel: 40,1970-01-01 00:00:12,1090,gmac_link_handle,409,eth2 link up! speed(0x8) duplex(0x1).
+1970-01-01T00:00:12.910207+0000 localhost kernel: [request_fiq] succeed to register fiq-no 141 more func dfx_dying_saying+0x0/0x20 [dfx_drv]
+1970-01-01T00:00:12.937462+0000 localhost rc.local[1552]: /dev/mmcblk0gp0
+1970-01-01T00:00:12.972351+0000 localhost rc.local[1552]: /dev/mmcblk0gp1
+1970-01-01T00:00:13.005880+0000 localhost rc.local[1552]: /dev/mmcblk0gp2
+1970-01-01T00:00:13.063497+0000 localhost rc.local[1563]: ifconfig: SIOCGIFFLAGS: No such device
+1970-01-01T00:00:13.100092+0000 localhost rc.local[1566]: /dev/mmcblk0p1: recovering journal
+1970-01-01T00:00:13.372682+0000 localhost rc.local[1566]: /dev/mmcblk0p1: clean, 384/65536 files, 21035/262144 blocks
+1970-01-01T00:00:13.402818+0000 localhost rc.local[1568]: insmod: can't insert '/lib/modules/5.10.0/rtos_snapshot.ko': File exists
+1970-01-01T00:00:13.410396+0000 localhost rc.local[1283]: Setting console log message level:
+1970-01-01T00:00:13.434156+0000 localhost rc.local[1570]: /dev/mmcblk0
+1970-01-01T00:00:13.434156+0000 localhost rc.local[1570]: /dev/mmcblk0boot0
+1970-01-01T00:00:13.434156+0000 localhost rc.local[1570]: /dev/mmcblk0boot1
+1970-01-01T00:00:13.434156+0000 localhost rc.local[1570]: /dev/mmcblk0gp0
+1970-01-01T00:00:13.434156+0000 localhost rc.local[1570]: /dev/mmcblk0gp1
+1970-01-01T00:00:13.434156+0000 localhost rc.local[1570]: /dev/mmcblk0gp2
+1970-01-01T00:00:13.434156+0000 localhost rc.local[1570]: /dev/mmcblk0gp3
+1970-01-01T00:00:13.434156+0000 localhost rc.local[1570]: /dev/mmcblk0p1
+1970-01-01T00:00:13.434156+0000 localhost rc.local[1570]: /dev/mmcblk0p2
+1970-01-01T00:00:13.434156+0000 localhost rc.local[1570]: /dev/mmcblk0p3
+1970-01-01T00:00:13.434156+0000 localhost rc.local[1570]: /dev/mmcblk0p5
+1970-01-01T00:00:13.434156+0000 localhost rc.local[1570]: /dev/mmcblk0p6
+1970-01-01T00:00:13.434156+0000 localhost rc.local[1570]: /dev/mmcblk0p7
+1970-01-01T00:00:13.434156+0000 localhost rc.local[1570]: /dev/mmcblk0p8
+1970-01-01T00:00:13.434156+0000 localhost rc.local[1570]: /dev/mmcblk0p9
+1970-01-01T00:00:13.446471+0000 localhost rc.local[1571]: FBS
+1970-01-01T00:00:13.446471+0000 localhost rc.local[1571]: bin
+1970-01-01T00:00:13.446471+0000 localhost rc.local[1571]: boot
+1970-01-01T00:00:13.446471+0000 localhost rc.local[1571]: data
+1970-01-01T00:00:13.446471+0000 localhost rc.local[1571]: dev
+1970-01-01T00:00:13.446471+0000 localhost rc.local[1571]: etc
+1970-01-01T00:00:13.446471+0000 localhost rc.local[1571]: home
+1970-01-01T00:00:13.446471+0000 localhost rc.local[1571]: init
+1970-01-01T00:00:13.446471+0000 localhost rc.local[1571]: lib
+1970-01-01T00:00:13.446471+0000 localhost rc.local[1571]: lib64
+1970-01-01T00:00:13.446471+0000 localhost rc.local[1571]: linuxrc
+1970-01-01T00:00:13.446471+0000 localhost rc.local[1571]: lost+found
+1970-01-01T00:00:13.446471+0000 localhost rc.local[1571]: media
+1970-01-01T00:00:13.446471+0000 localhost rc.local[1571]: mnt
+1970-01-01T00:00:13.446471+0000 localhost rc.local[1571]: opt
+1970-01-01T00:00:13.446471+0000 localhost rc.local[1571]: package_info
+1970-01-01T00:00:13.446471+0000 localhost rc.local[1571]: proc
+1970-01-01T00:00:13.446471+0000 localhost rc.local[1571]: root
+1970-01-01T00:00:13.446471+0000 localhost rc.local[1571]: run
+1970-01-01T00:00:13.446471+0000 localhost rc.local[1571]: sbin
+1970-01-01T00:00:13.446471+0000 localhost rc.local[1571]: sys
+1970-01-01T00:00:13.446471+0000 localhost rc.local[1571]: tmp
+1970-01-01T00:00:13.446471+0000 localhost rc.local[1571]: usr
+1970-01-01T00:00:13.446471+0000 localhost rc.local[1571]: v1
+1970-01-01T00:00:13.446471+0000 localhost rc.local[1571]: v2
+1970-01-01T00:00:13.446471+0000 localhost rc.local[1571]: var
+1970-01-01T00:00:13.690148+0000 localhost kernel: EXT4-fs (mmcblk0p7): recovery complete
+1970-01-01T00:00:13.690477+0000 localhost kernel: EXT4-fs (mmcblk0p7): mounted filesystem 738c1443-4eb3-4865-81c8-8d06b616eeef r/w with ordered data mode. Opts: (null)
+1970-01-01T00:00:13.702710+0000 localhost rc.local[1578]: e2fsck 1.47.0 (5-Feb-2023)
+1970-01-01T00:00:13.714222+0000 localhost rc.local[1578]: Pass 1: Checking inodes, blocks, and sizes
+1970-01-01T00:00:14.058017+0000 localhost rc.local[1578]: Pass 2: Checking directory structure
+1970-01-01T00:00:14.077538+0000 localhost rc.local[1578]: Pass 3: Checking directory connectivity
+1970-01-01T00:00:14.078021+0000 localhost rc.local[1578]: Pass 4: Checking reference counts
+1970-01-01T00:00:14.084628+0000 localhost rc.local[1578]: Pass 5: Checking group summary information
+1970-01-01T00:00:14.111784+0000 localhost rc.local[1578]:          384 inodes used (0.59%, out of 65536)
+1970-01-01T00:00:14.111784+0000 localhost rc.local[1578]:           39 non-contiguous files (10.2%)
+1970-01-01T00:00:14.111784+0000 localhost rc.local[1578]:            0 non-contiguous directories (0.0%)
+1970-01-01T00:00:14.111784+0000 localhost rc.local[1578]:              # of inodes with ind/dind/tind blocks: 0/0/0
+1970-01-01T00:00:14.113007+0000 localhost rc.local[1578]:              Extent depth histogram: 370/6
+1970-01-01T00:00:14.113007+0000 localhost rc.local[1578]:        21035 blocks used (8.02%, out of 262144)
+1970-01-01T00:00:14.113007+0000 localhost rc.local[1578]:            0 bad blocks
+1970-01-01T00:00:14.113007+0000 localhost rc.local[1578]:            1 large file
+1970-01-01T00:00:14.113007+0000 localhost rc.local[1578]:          266 regular files
+1970-01-01T00:00:14.113007+0000 localhost rc.local[1578]:          109 directories
+1970-01-01T00:00:14.113007+0000 localhost rc.local[1578]:            0 character device files
+1970-01-01T00:00:14.113007+0000 localhost rc.local[1578]:            0 block device files
+1970-01-01T00:00:14.113007+0000 localhost rc.local[1578]:            0 fifos
+1970-01-01T00:00:14.113007+0000 localhost rc.local[1578]:            0 links
+1970-01-01T00:00:14.113007+0000 localhost rc.local[1578]:            0 symbolic links (0 fast symbolic links)
+1970-01-01T00:00:14.113007+0000 localhost rc.local[1578]:            0 sockets
+1970-01-01T00:00:14.113007+0000 localhost rc.local[1578]: ------------
+1970-01-01T00:00:14.113007+0000 localhost rc.local[1578]:          375 files
+1970-01-01T00:00:14.150092+0000 localhost kernel: EXT4-fs (mmcblk0p1): mounted filesystem 12338794-cac1-4f0d-9af7-cd960527c7c8 r/w with ordered data mode. Opts: (null)
+1970-01-01T00:00:14.167411+0000 localhost systemd[1]: dev-shm-trust.mount: Deactivated successfully.
+1970-01-01T00:00:14.170174+0000 localhost kernel: EXT4-fs (mmcblk0p7): unmounting filesystem 738c1443-4eb3-4865-81c8-8d06b616eeef.
+1970-01-01T00:00:14.289652+0000 localhost rc.local[1594]: e2fsck 1.47.0 (5-Feb-2023)
+1970-01-01T00:00:14.301222+0000 localhost rc.local[1594]: /dev/mmcblk0p9: recovering journal
+1970-01-01T00:00:14.342301+0000 localhost rc.local[1594]: Pass 1: Checking inodes, blocks, and sizes
+1970-01-01T00:00:14.382165+0000 localhost rc.local[1594]: Pass 2: Checking directory structure
+1970-01-01T00:00:14.388878+0000 localhost rc.local[1594]: Pass 3: Checking directory connectivity
+1970-01-01T00:00:14.390522+0000 localhost rc.local[1594]: Pass 4: Checking reference counts
+1970-01-01T00:00:14.404574+0000 localhost rc.local[1594]: Pass 5: Checking group summary information
+1970-01-01T00:00:14.409618+0000 localhost rc.local[1594]: Free blocks count wrong (269126, counted=268467).
+1970-01-01T00:00:14.410225+0000 localhost rc.local[1594]: Fix? yes
+1970-01-01T00:00:14.415416+0000 localhost rc.local[1594]: /dev/mmcblk0p9: ***** FILE SYSTEM WAS MODIFIED *****
+1970-01-01T00:00:14.416033+0000 localhost rc.local[1594]:          172 inodes used (0.19%, out of 90360)
+1970-01-01T00:00:14.416582+0000 localhost rc.local[1594]:           41 non-contiguous files (23.8%)
+1970-01-01T00:00:14.417122+0000 localhost rc.local[1594]:            1 non-contiguous directory (0.6%)
+1970-01-01T00:00:14.417705+0000 localhost rc.local[1594]:              # of inodes with ind/dind/tind blocks: 0/0/0
+1970-01-01T00:00:14.418711+0000 localhost rc.local[1594]:              Extent depth histogram: 137/27
+1970-01-01T00:00:14.419249+0000 localhost rc.local[1594]:        93693 blocks used (25.87%, out of 362160)
+1970-01-01T00:00:14.419790+0000 localhost rc.local[1594]:            0 bad blocks
+1970-01-01T00:00:14.420404+0000 localhost rc.local[1594]:            0 large files
+1970-01-01T00:00:14.420999+0000 localhost rc.local[1594]:          139 regular files
+1970-01-01T00:00:14.421540+0000 localhost rc.local[1594]:           24 directories
+1970-01-01T00:00:14.422072+0000 localhost rc.local[1594]:            0 character device files
+1970-01-01T00:00:14.422604+0000 localhost rc.local[1594]:            0 block device files
+1970-01-01T00:00:14.423127+0000 localhost rc.local[1594]:            0 fifos
+1970-01-01T00:00:14.423655+0000 localhost rc.local[1594]:            0 links
+1970-01-01T00:00:14.424330+0000 localhost rc.local[1594]:            0 symbolic links (0 fast symbolic links)
+1970-01-01T00:00:14.424845+0000 localhost rc.local[1594]:            0 sockets
+1970-01-01T00:00:14.425724+0000 localhost rc.local[1594]: ------------
+1970-01-01T00:00:14.425724+0000 localhost rc.local[1594]:          163 files
+1970-01-01T00:00:14.450133+0000 localhost kernel: EXT4-fs (mmcblk0p9): mounted filesystem 29623499-ab13-4d64-bdac-7b401920dd8f r/w with ordered data mode. Opts: (null)
+1970-01-01T00:00:14.472208+0000 localhost rc.local[1599]: Recover datafs begin
+1970-01-01T00:00:14.508812+0000 localhost rc.local[1599]: Recover datafs no need ubootrecoverflag=0
+1970-01-01T00:00:14.580720+0000 localhost rc.local[1611]: e2fsck 1.47.0 (5-Feb-2023)
+1970-01-01T00:00:14.594799+0000 localhost rc.local[1611]: Pass 1: Checking inodes, blocks, and sizes
+1970-01-01T00:00:14.615079+0000 localhost rc.local[1611]: Pass 2: Checking directory structure
+1970-01-01T00:00:14.632528+0000 localhost rc.local[1611]: Pass 3: Checking directory connectivity
+1970-01-01T00:00:14.633746+0000 localhost rc.local[1611]: Pass 4: Checking reference counts
+1970-01-01T00:00:14.641697+0000 localhost rc.local[1611]: Pass 5: Checking group summary information
+1970-01-01T00:00:14.651521+0000 localhost rc.local[1611]:          105 inodes used (0.16%, out of 65536)
+1970-01-01T00:00:14.652188+0000 localhost rc.local[1611]:           10 non-contiguous files (9.5%)
+1970-01-01T00:00:14.652781+0000 localhost rc.local[1611]:            0 non-contiguous directories (0.0%)
+1970-01-01T00:00:14.653316+0000 localhost rc.local[1611]:              # of inodes with ind/dind/tind blocks: 0/0/0
+1970-01-01T00:00:14.654320+0000 localhost rc.local[1611]:              Extent depth histogram: 96/1
+1970-01-01T00:00:14.654861+0000 localhost rc.local[1611]:        36236 blocks used (13.82%, out of 262144)
+1970-01-01T00:00:14.655407+0000 localhost rc.local[1611]:            0 bad blocks
+1970-01-01T00:00:14.655942+0000 localhost rc.local[1611]:            0 large files
+1970-01-01T00:00:14.656534+0000 localhost rc.local[1611]:           66 regular files
+1970-01-01T00:00:14.657077+0000 localhost rc.local[1611]:           30 directories
+1970-01-01T00:00:14.657626+0000 localhost rc.local[1611]:            0 character device files
+1970-01-01T00:00:14.658153+0000 localhost rc.local[1611]:            0 block device files
+1970-01-01T00:00:14.658678+0000 localhost rc.local[1611]:            0 fifos
+1970-01-01T00:00:14.659202+0000 localhost rc.local[1611]:            0 links
+1970-01-01T00:00:14.659885+0000 localhost rc.local[1611]:            0 symbolic links (0 fast symbolic links)
+1970-01-01T00:00:14.660532+0000 localhost rc.local[1611]:            0 sockets
+1970-01-01T00:00:14.661430+0000 localhost rc.local[1611]: ------------
+1970-01-01T00:00:14.661430+0000 localhost rc.local[1611]:           96 files
+1970-01-01T00:00:14.710090+0000 localhost kernel: EXT4-fs (mmcblk0p7): mounted filesystem 738c1443-4eb3-4865-81c8-8d06b616eeef r/w with ordered data mode. Opts: (null)
+1970-01-01T00:00:14.781181+0000 localhost rc.local[1622]: Recover log partition begin
+1970-01-01T00:00:14.832406+0000 localhost rc.local[1631]: /dev/mmcblk0p9 on /var/log type ext4 (rw,relatime)
+1970-01-01T00:00:14.910116+0000 localhost kernel: sed (1639) used greatest stack depth: 11632 bytes left
+1970-01-01T00:00:14.943348+0000 localhost systemd-journald[1249]: Time spent on flushing to /var/log/journal/70ecf60f9afa4b15b1efbfafe7fcbf86 is 54.991ms for 646 entries.
+1970-01-01T00:00:14.943348+0000 localhost systemd-journald[1249]: System Journal (/var/log/journal/70ecf60f9afa4b15b1efbfafe7fcbf86) is 4.0M, max 8.0M, 4.0M free.
+1970-01-01T00:00:15.035447+0000 localhost rc.local[1643]: Recover trust partition begin
+1970-01-01T00:00:15.086480+0000 localhost rc.local[1652]: /dev/mmcblk0p7 on /data/trust type ext4 (rw,relatime)
+1970-01-01T00:00:15.150099+0000 localhost kernel: EXT4-fs (mmcblk0gp3): recovery complete
+1970-01-01T00:00:15.150662+0000 localhost kernel: EXT4-fs (mmcblk0gp3): mounted filesystem 08cfa917-2338-44e8-8298-f8a413d99344 r/w with ordered data mode. Opts: (null)
+1970-01-01T00:00:15.193077+0000 localhost rc.local[1283]: The content of the ksf file is identical
+1970-01-01T00:00:15.251139+0000 localhost rc.local[1667]: chmod: /data/var/lock: No such file or directory
+1970-01-01T00:00:15.264673+0000 localhost rc.local[1668]: chmod: /data/var/run: No such file or directory
+1970-01-01T00:00:15.275838+0000 localhost rc.local[1669]: chmod: /data/var/run/syslog-ng: No such file or directory
+1970-01-01T00:00:15.289340+0000 localhost rc.local[1670]: touch: /data/var/run/utmp: No such file or directory
+1970-01-01T00:00:15.291433+0000 localhost rc.local[1283]: Setting hostname:
+1970-01-01T00:00:15.300895+0000 localhost rc.local[1671]: cat: can't open '/etc/HOSTNAME': No such file or directory
+1970-01-01T00:00:15.302549+0000 localhost rc.local[1283]: Settingup the sysctl configurations:
+1970-01-01T00:00:15.327517+0000 localhost rc.local[1283]: Setting up interface lo:
+1970-01-01T00:00:15.411731+0000 localhost rc.local[1679]: cp: can't stat '/etc/crond_cfg/*': No such file or directory
+1970-01-01T00:00:15.423073+0000 localhost rc.local[1680]: chmod: /data/var/spool/cron/crontabs/*: No such file or directory
+1970-01-01T00:00:15.514281+0000 localhost rc.local[1688]: chmod: /data/opt/bmc/save: No such file or directory
+1970-01-01T00:00:15.600089+0000 localhost kernel: [pmfs]: pramdisk: registered block device major 254
+1970-01-01T00:00:15.600443+0000 localhost kernel: [pmfs]: starting add gendisk!
+1970-01-01T00:00:15.600852+0000 localhost kernel: [pmfs]: add gendisk done!
+1970-01-01T00:00:15.601117+0000 localhost kernel: [pmfs]: pramdisk: module loaded
+1970-01-01T00:00:15.777188+0000 localhost rc.local[1704]: mke2fs 1.47.0 (5-Feb-2023)
+1970-01-01T00:00:15.779151+0000 localhost rc.local[1704]: /dev/pramdisk0 is capable of DAX but current block size 1024 is different from system page size 4096 so filesystem will not support DAX.
+1970-01-01T00:00:15.779687+0000 localhost rc.local[1704]: Creating filesystem with 12284 1k blocks and 3072 inodes
+1970-01-01T00:00:15.779687+0000 localhost rc.local[1704]: Filesystem UUID: f289b8b7-b60b-4f95-a4fd-18e5ca6a4ebb
+1970-01-01T00:00:15.779687+0000 localhost rc.local[1704]: Superblock backups stored on blocks:
+1970-01-01T00:00:15.779687+0000 localhost rc.local[1704]:         8193
+1970-01-01T00:00:15.779687+0000 localhost rc.local[1704]: [41B blob data]
+1970-01-01T00:00:15.781947+0000 localhost rc.local[1704]: [38B blob data]
+1970-01-01T00:00:15.785925+0000 localhost rc.local[1704]: [75B blob data]
+1970-01-01T00:00:15.811600+0000 localhost rc.local[1283]: load pmfs done
+1970-01-01T00:00:15.849449+0000 localhost rc.local[1283]: Running local startup scripts.
+1970-01-01T00:00:16.259364+0000 localhost rc.local[1750]: net.ipv6.ip_nonlocal_bind = 1
+1970-01-01T00:00:16.447263+0000 localhost rc.local[1752]: srcFile=/etc/passwd
+1970-01-01T00:00:16.495313+0000 localhost rc.local[1752]: date: Thu Jan  1 00:00:16 CGP 1970, root or 0 is exist!
+1970-01-01T00:00:16.530758+0000 localhost rc.local[1752]: date: Thu Jan  1 00:00:16 CGP 1970, apache or 98 is exist!
+1970-01-01T00:00:16.565310+0000 localhost rc.local[1752]: date: Thu Jan  1 00:00:16 CGP 1970, snmpd_user or 95 is exist!
+1970-01-01T00:00:16.600268+0000 localhost rc.local[1752]: date: Thu Jan  1 00:00:16 CGP 1970, ipmi_user or 96 is exist!
+1970-01-01T00:00:16.635266+0000 localhost rc.local[1752]: date: Thu Jan  1 00:00:16 CGP 1970, kvm_user or 97 is exist!
+1970-01-01T00:00:16.671075+0000 localhost rc.local[1752]: date: Thu Jan  1 00:00:16 CGP 1970, discovery_user or 100 is exist!
+1970-01-01T00:00:16.705758+0000 localhost rc.local[1752]: date: Thu Jan  1 00:00:16 CGP 1970, comm_user or 101 is exist!
+1970-01-01T00:00:16.740965+0000 localhost rc.local[1752]: date: Thu Jan  1 00:00:16 CGP 1970, sshd or 74 is exist!
+1970-01-01T00:00:16.775869+0000 localhost rc.local[1752]: date: Thu Jan  1 00:00:16 CGP 1970, redfish_user or 102 is exist!
+1970-01-01T00:00:16.811119+0000 localhost rc.local[1752]: date: Thu Jan  1 00:00:16 CGP 1970, secbox or 104 is exist!
+1970-01-01T00:00:16.822457+0000 localhost rc.local[1752]: date: Thu Jan  1 00:00:16 CGP 1970, all users have been added
+1970-01-01T00:00:16.852050+0000 localhost rc.local[1752]: srcFile=/etc/group
+1970-01-01T00:00:16.899073+0000 localhost rc.local[1752]: date: Thu Jan  1 00:00:16 CGP 1970, root or 0 is exist!
+1970-01-01T00:00:16.934011+0000 localhost rc.local[1752]: date: Thu Jan  1 00:00:16 CGP 1970, sshd or 74 is exist!
+1970-01-01T00:00:16.969180+0000 localhost rc.local[1752]: date: Thu Jan  1 00:00:16 CGP 1970, operator or 200 is exist!
+1970-01-01T00:00:17.004558+0000 localhost rc.local[1752]: date: Thu Jan  1 00:00:17 CGP 1970, user or 201 is exist!
+1970-01-01T00:00:17.039842+0000 localhost rc.local[1752]: date: Thu Jan  1 00:00:17 CGP 1970, no_access or 202 is exist!
+1970-01-01T00:00:17.075141+0000 localhost rc.local[1752]: date: Thu Jan  1 00:00:17 CGP 1970, admin or 204 is exist!
+1970-01-01T00:00:17.110472+0000 localhost rc.local[1752]: date: Thu Jan  1 00:00:17 CGP 1970, apache or 98 is exist!
+1970-01-01T00:00:17.144963+0000 localhost rc.local[1752]: date: Thu Jan  1 00:00:17 CGP 1970, apps or 103 is exist!
+1970-01-01T00:00:17.180276+0000 localhost rc.local[1752]: date: Thu Jan  1 00:00:17 CGP 1970, snmpd_user or 95 is exist!
+1970-01-01T00:00:17.215387+0000 localhost rc.local[1752]: date: Thu Jan  1 00:00:17 CGP 1970, ipmi_user or 96 is exist!
+1970-01-01T00:00:17.251013+0000 localhost rc.local[1752]: date: Thu Jan  1 00:00:17 CGP 1970, kvm_user or 97 is exist!
+1970-01-01T00:00:17.286126+0000 localhost rc.local[1752]: date: Thu Jan  1 00:00:17 CGP 1970, discovery_user or 100 is exist!
+1970-01-01T00:00:17.321587+0000 localhost rc.local[1752]: date: Thu Jan  1 00:00:17 CGP 1970, comm_user or 101 is exist!
+1970-01-01T00:00:17.356878+0000 localhost rc.local[1752]: date: Thu Jan  1 00:00:17 CGP 1970, redfish_user or 102 is exist!
+1970-01-01T00:00:17.391869+0000 localhost rc.local[1752]: date: Thu Jan  1 00:00:17 CGP 1970, secbox or 104 is exist!
+1970-01-01T00:00:17.921223+0000 localhost rc.local[1897]: kernel.core_pattern = |/usr/sbin/coredump_transfer %p %e-%s
+1970-01-01T00:00:17.993142+0000 localhost rc.local[1902]: chown: /data/trust/persistence.local/event.db: No such file or directory
+1970-01-01T00:00:18.017603+0000 localhost rc.local[1904]: chown: /opt/bmc/pram/persistence.local/event.db: No such file or directory
+1970-01-01T00:00:18.115687+0000 localhost rc.local[1912]: chown: /opt/bmc/pram/persistence.local/sensor.db: No such file or directory
+1970-01-01T00:00:18.140372+0000 localhost rc.local[1914]: chown: /data/opt/bmc/persistence.local/sensor.db_b: No such file or directory
+1970-01-01T00:00:18.250733+0000 localhost rc.local[1923]: chown: /data/opt/SMBIOS_DIFF: No such file or directory
+1970-01-01T00:00:18.262645+0000 localhost rc.local[1925]: date: invalid date '%Y-%m-%d %T.%N'
+1970-01-01T00:00:18.417368+0000 localhost rc.local[1936]: chown: /opt/bmc/pram/persistence.local/compute.db: No such file or directory
+1970-01-01T00:00:18.429543+0000 localhost rc.local[1937]: chown: /dev/shm/upgrade: No such file or directory
+1970-01-01T00:00:18.537738+0000 localhost rc.local[1946]: chown: /data/backup/fpga/tmp/fpga.hpm: No such file or directory
+1970-01-01T00:00:18.550481+0000 localhost rc.local[1947]: chown: /data/backup/fpga/gold/fpga.hpm: No such file or directory
+1970-01-01T00:00:18.562555+0000 localhost rc.local[1948]: chown: /dev/shm/upgrade: No such file or directory
+1970-01-01T00:00:18.574747+0000 localhost rc.local[1949]: chown: /dev/shm/dump_info_tmp/dump_info/LogDump/socboard: No such file or directory
+1970-01-01T00:00:18.587941+0000 localhost rc.local[1950]: chown: /data/backup/vrd/up_cfg: No such file or directory
+1970-01-01T00:00:18.600557+0000 localhost rc.local[1951]: chown: /data/opt/bmc/up_cfg: No such file or directory
+1970-01-01T00:00:18.612841+0000 localhost rc.local[1952]: chown: /data/opt/bmc/hot_up_cfg: No such file or directory
+1970-01-01T00:00:18.637705+0000 localhost rc.local[1954]: chown: /tmp/smm_down.sh: No such file or directory
+1970-01-01T00:00:18.650100+0000 localhost rc.local[1955]: chown: /sbin/udhcpc: Read-only file system
+1970-01-01T00:00:18.674507+0000 localhost rc.local[1957]: chown: /opt/bmc/pram/persistence.local/network_adapter.db: No such file or directory
+1970-01-01T00:00:18.688745+0000 localhost rc.local[1958]: chown: /data/var/log/bmc/optical_module/optical_module_history_info_log.csv: No such file or directory
+1970-01-01T00:00:18.700963+0000 localhost rc.local[1959]: chown: /data/var/log/bmc/optical_module: No such file or directory
+1970-01-01T00:00:18.739331+0000 localhost rc.local[1962]: chown: /opt/bmc/pram/persistence.local/pcie_device.db: No such file or directory
+1970-01-01T00:00:18.764047+0000 localhost rc.local[1964]: chown: /opt/bmc/pram/persistence.local/storage.db: No such file or directory
+1970-01-01T00:00:18.790413+0000 localhost rc.local[1966]: chown: /data/var/log/storage/ctrllog: No such file or directory
+1970-01-01T00:00:18.960087+0000 localhost kernel: loop0: detected capacity change from 0 to 209715200
+1970-01-01T00:00:19.180104+0000 localhost kernel: EXT4-fs (loop0): recovery complete
+1970-01-01T00:00:19.180477+0000 localhost kernel: EXT4-fs (loop0): mounted filesystem 8e264243-c592-4963-b675-87536801cb2d r/w with ordered data mode. Opts: (null)
+1970-01-01T00:00:19.366053+0000 localhost rc.local[2014]: mkdir: can't create directory '/data/persistence': File exists
+1970-01-01T00:00:19.378405+0000 localhost rc.local[2015]: mkdir: can't create directory '/data/persistence/file_transfer': File exists
+1970-01-01T00:00:20.170162+0000 localhost kernel: hisport_cdev: 1316, ioremap:0x40000000
+1970-01-01T00:00:20.240636+0000 localhost kernel: edma: 2297, ==========1711 device==========
+1970-01-01T00:00:20.319451+0000 localhost rc.local[2110]: insmod: can't insert '/lib/modules/ko/bmc_tpcm_drv.ko': No such file or directory
+1970-01-01T00:00:20.392356+0000 localhost rc.local[2111]: Flag path does not exist!
+1970-01-01T00:00:20.520134+0000 localhost kernel: FS-Cache: Loaded
+1970-01-01T00:00:20.540137+0000 localhost kernel: CacheFiles: Loaded
+1970-01-01T00:00:20.640097+0000 localhost kernel: RPC: Registered named UNIX socket transport module.
+1970-01-01T00:00:20.640472+0000 localhost kernel: RPC: Registered udp transport module.
+1970-01-01T00:00:20.640710+0000 localhost kernel: RPC: Registered tcp transport module.
+1970-01-01T00:00:20.640942+0000 localhost kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+1970-01-01T00:00:20.780144+0000 localhost kernel: FS-Cache: Netfs 'nfs' registered for caching
+1970-01-01T00:00:20.884074+0000 localhost kernel: FS-Cache: Netfs 'cifs' registered for caching
+1970-01-01T00:00:20.884460+0000 localhost kernel: Key type cifs.idmap registered
+1970-01-01T00:00:20.930121+0000 localhost kernel: device-mapper: ioctl: 4.43.0-ioctl (2020-10-01) initialised: dm-devel@redhat.com
+1970-01-01T00:00:20.941940+0000 localhost rc.local[2162]: insmod: can't insert '/lib/modules/5.10.0/kernel/net/netfilter/x_tables.ko': File exists
+1970-01-01T00:00:20.981408+0000 localhost rc.local[2167]: insmod: can't insert '/lib/modules/5.10.0/kernel/net/ipv6/netfilter/ip6_tables.ko': No such file or directory
+1970-01-01T00:00:21.010119+0000 localhost kernel: xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+1970-01-01T00:00:21.011617+0000 localhost kernel: xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 1
+1970-01-01T00:00:21.012928+0000 localhost kernel: xhci-hcd xhci-hcd.0.auto: hcc params 0x0220f66d hci version 0x100 quirks 0x0000000002010010
+1970-01-01T00:00:21.014253+0000 localhost kernel: xhci-hcd xhci-hcd.0.auto: irq 125, io mem 0x08a00000
+1970-01-01T00:00:21.015436+0000 localhost kernel: hub 1-0:1.0: USB hub found
+1970-01-01T00:00:21.016911+0000 localhost kernel: hub 1-0:1.0: 1 port detected
+1970-01-01T00:00:21.018252+0000 localhost kernel: xhci-hcd xhci-hcd.0.auto: xHCI Host Controller
+1970-01-01T00:00:21.019356+0000 localhost kernel: xhci-hcd xhci-hcd.0.auto: new USB bus registered, assigned bus number 2
+1970-01-01T00:00:21.020586+0000 localhost kernel: xhci-hcd xhci-hcd.0.auto: Host supports USB 3.0 SuperSpeed
+1970-01-01T00:00:21.022163+0000 localhost kernel: usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+1970-01-01T00:00:21.023833+0000 localhost kernel: hub 2-0:1.0: USB hub found
+1970-01-01T00:00:21.031862+0000 localhost kernel: hub 2-0:1.0: config failed, hub doesn't have any ports! (err -19)
+1970-01-01T00:00:21.033322+0000 localhost kernel: xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+1970-01-01T00:00:21.034630+0000 localhost kernel: xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 3
+1970-01-01T00:00:21.035790+0000 localhost kernel: xhci-hcd xhci-hcd.1.auto: hcc params 0x0220f66d hci version 0x100 quirks 0x0000000002010010
+1970-01-01T00:00:21.037016+0000 localhost kernel: xhci-hcd xhci-hcd.1.auto: irq 127, io mem 0x0cc00000
+1970-01-01T00:00:21.038136+0000 localhost kernel: hub 3-0:1.0: USB hub found
+1970-01-01T00:00:21.039555+0000 localhost kernel: hub 3-0:1.0: 1 port detected
+1970-01-01T00:00:21.050419+0000 localhost kernel: xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+1970-01-01T00:00:21.061319+0000 localhost kernel: xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 4
+1970-01-01T00:00:21.062535+0000 localhost kernel: xhci-hcd xhci-hcd.1.auto: Host supports USB 3.0 SuperSpeed
+1970-01-01T00:00:21.063733+0000 localhost kernel: usb usb4: We don't know the algorithms for LPM for this host, disabling LPM.
+1970-01-01T00:00:21.065184+0000 localhost kernel: hub 4-0:1.0: USB hub found
+1970-01-01T00:00:21.066674+0000 localhost kernel: hub 4-0:1.0: 1 port detected
+1970-01-01T00:00:21.068161+0000 localhost kernel: insmod (2170) used greatest stack depth: 10240 bytes left
+1970-01-01T00:00:21.080166+0000 localhost rc.local[2193]: insmod: can't insert '/lib/modules/5.10.0/kernel/lib/crc-ccitt.ko': File exists
+1970-01-01T00:00:21.130271+0000 localhost kernel: cryptd: max_cpu_qlen set to 1000
+1970-01-01T00:00:21.231746+0000 localhost rc.local[2227]: chown: /dev/mtd0: No such file or directory
+1970-01-01T00:00:21.342467+0000 localhost systemd[1]: Started /etc/rc.local Compatibility.
+1970-01-01T00:00:21.343536+0000 localhost systemd[1]: Started start logrotate timer.
+1970-01-01T00:00:21.343949+0000 localhost systemd[1]: Started start partition usage monitor timer.
+1970-01-01T00:00:21.344359+0000 localhost systemd[1]: Reached target Timer Units.
+1970-01-01T00:00:21.351354+0000 localhost systemd[1]: Starting D-Bus System Message Bus...
+1970-01-01T00:00:21.359677+0000 localhost systemd[1]: Started start logrotate service.
+1970-01-01T00:00:21.368059+0000 localhost systemd[1]: Started system memory monitor.
+1970-01-01T00:00:21.376656+0000 localhost systemd[1]: Started start partition usage monitor service.
+1970-01-01T00:00:21.390131+0000 localhost kernel: memory_monitor. (2243): drop_caches: 4
+1970-01-01T00:00:21.390663+0000 localhost systemd[1]: Started system process memory monitor.
+1970-01-01T00:00:21.417469+0000 localhost systemd[1]: Starting Rsyslog Logging Service...
+1970-01-01T00:00:21.425987+0000 localhost systemd[1]: Starting Permit User Sessions...
+1970-01-01T00:00:21.431018+0000 localhost dbus-daemon[2239]: dbus[2239]: Unknown username "systemd-timesync" in message bus configuration file
+1970-01-01T00:00:21.436293+0000 localhost dbus-daemon[2239]: dbus[2239]: Unknown username "systemd-network" in message bus configuration file
+1970-01-01T00:00:21.446633+0000 localhost dbus-daemon[2239]: dbus[2239]: Unknown username "systemd-resolve" in message bus configuration file
+1970-01-01T00:00:21.519824+0000 localhost systemd[1]: logrotate.service: Deactivated successfully.
+1970-01-01T00:00:21.597206+0000 localhost systemd[1]: Finished Permit User Sessions.
+1970-01-01T00:00:21.606200+0000 localhost systemd[1]: Started Getty on ttyS0.
+1970-01-01T00:00:21.608004+0000 localhost systemd[1]: Reached target Login Prompts.
+1970-01-01T00:00:21.701685+0000 localhost systemd[1]: Started Rsyslog Logging Service.
+1970-01-01T00:00:21.705528+0000 localhost systemd[1]: cgroup compatibility translation between legacy and unified hierarchy settings activated. See cgroup-compat debug messages for details.
+1970-01-01T00:00:21.709282+0000 localhost systemd[1]: Started ibmc tpcm module.
+1970-01-01T00:00:21.718563+0000 localhost systemd[1]: Started ibmc file transfer module.
+1970-01-01T00:00:21.729734+0000 localhost systemd[1]: Started A server which supports the DARPA telnet interactive communication protocol.
+1970-01-01T00:00:21.986920+0000 localhost systemd[1]: partition_monitor.service: Deactivated successfully.
+1970-01-01T00:00:22.710851+0000 localhost systemd[1]: Started D-Bus System Message Bus.
+1970-01-01T00:00:22.733223+0000 localhost systemd[1]: Starting framework service...
+1970-01-01T00:00:23.238427+0000 localhost systemd[1]: Started framework service.
+1970-01-01T00:00:23.246510+0000 localhost systemd[1]: Starting alarm service...
+1970-01-01T00:00:23.254538+0000 localhost systemd[1]: Starting bmc_core service...
+1970-01-01T00:00:23.262658+0000 localhost systemd[1]: Starting energy service...
+1970-01-01T00:00:23.271102+0000 localhost systemd[1]: Starting fault_diagnosis service...
+1970-01-01T00:00:23.279504+0000 localhost systemd[1]: Starting security service...
+1970-01-01T00:00:24.812839+0000 localhost systemd[1]: Started fault_diagnosis service.
+1970-01-01T00:00:32.609564+0000 localhost tpcm[2286]: g_error_free: assertion 'error != NULL' failed
+1970-01-01T00:00:39.890130+0000 localhost kernel: [I2C-08-RT<-5|-5>] M<0x47|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+1970-01-01T00:00:39.910521+0000 localhost kernel: [I2C-08-RT<-5|-5>] M<0x21|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+1970-01-01T00:00:43.080130+0000 localhost kernel: [I2C-08-RT<-5|-5>] M<0x47|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+1970-01-01T00:00:43.080563+0000 localhost kernel: [I2C-08-RT<-5|-5>] M<0x21|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+1970-01-01T00:00:47.090108+0000 localhost kernel: [I2C-08-RT<-5|-5>] M<0x47|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+1970-01-01T00:00:47.290143+0000 localhost kernel: [I2C-08-RT<-5|-5>] M<0x21|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+1970-01-01T00:00:49.641548+0000 localhost kernel: [I2C-06-RT<-5|-5>] M<0x57|0x1|0x0|1|10> L<2|32|0> C<2|0|32> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+1970-01-01T00:00:50.650121+0000 localhost kernel: [I2C-06-RT<-5|-5>] M<0x57|0x1|0x0|1|10> L<2|32|0> C<2|0|32> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+1970-01-01T00:00:51.450132+0000 localhost kernel: [I2C-06-RT<-5|-5>] M<0x57|0x1|0x0|1|10> L<2|32|0> C<2|0|32> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+1970-01-01T00:00:52.060159+0000 localhost kernel: [I2C-06-RT<-5|-5>] M<0x57|0x1|0x0|1|10> L<2|32|0> C<2|0|32> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+1970-01-01T00:00:52.270171+0000 localhost kernel: [I2C-06-RT<-5|-5>] M<0x57|0x1|0x0|1|10> L<2|32|0> C<2|0|32> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+1970-01-01T00:00:52.480104+0000 localhost kernel: [I2C-06-RT<-5|-5>] M<0x57|0x1|0x0|1|10> L<2|32|0> C<2|0|32> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+1970-01-01T00:00:52.690127+0000 localhost kernel: [I2C-06-RT<-5|-5>] M<0x57|0x1|0x0|1|10> L<2|32|0> C<2|0|32> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+1970-01-01T00:00:52.900127+0000 localhost kernel: [I2C-06-RT<-5|-5>] M<0x57|0x1|0x0|1|10> L<2|32|0> C<2|0|32> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+1970-01-01T00:00:53.110087+0000 localhost kernel: [I2C-06-RT<-5|-5>] M<0x57|0x1|0x0|1|10> L<2|32|0> C<2|0|32> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+1970-01-01T00:00:53.320400+0000 localhost kernel: [I2C-06-RT<-5|-5>] M<0x57|0x1|0x0|1|10> L<2|32|0> C<2|0|32> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+1970-01-01T00:00:53.364271+0000 localhost systemd[1]: Started alarm service.
+1970-01-01T00:00:53.365800+0000 localhost systemd[1]: Started bmc_core service.
+1970-01-01T00:00:53.395093+0000 localhost systemd[1]: Starting hardware service...
+1970-01-01T00:00:53.413602+0000 localhost systemd[1]: Starting om service...
+1970-01-01T00:00:53.439059+0000 localhost systemd[1]: Starting om_priv service...
+1970-01-01T00:00:53.461759+0000 localhost systemd[1]: Starting ras service...
+1970-01-01T00:00:53.465607+0000 localhost systemd[1]: Started security service.
+1970-01-01T00:00:53.525912+0000 localhost systemd[1]: Started ras service.
+1970-01-01T00:00:55.160724+0000 localhost kernel: [I2C-08-RT<-5|-5>] M<0x47|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+1970-01-01T00:00:55.340322+0000 localhost kernel: [I2C-08-RT<-5|-5>] M<0x21|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+1970-01-01T00:00:58.572895+0000 localhost systemd[1]: Started energy service.
+1970-01-01T00:00:58.634501+0000 localhost systemd[1]: Started hardware service.
+1970-01-01T00:00:59.106263+0000 localhost kernel: 41,1970-01-01 00:00:59,1208,hw_get_hard_lock,79,hw_lock(0x2) is locked by M3
+1970-01-01T00:00:59.106792+0000 localhost kernel: 42,1970-01-01 00:00:59,1208,hw_acquire_hard_lock,141,hardware lock(2) is't locked by A55(-1)
+1970-01-01T00:00:59.171909+0000 localhost kernel: 43,1970-01-01 00:00:59,1208,hw_get_hard_lock,79,hw_lock(0x2) is locked by M3
+1970-01-01T00:00:59.172419+0000 localhost kernel: 44,1970-01-01 00:00:59,1208,hw_acquire_hard_lock,141,hardware lock(2) is't locked by A55(-1)
+1970-01-01T00:00:59.218087+0000 localhost kernel: 45,1970-01-01 00:00:59,1208,hw_get_hard_lock,79,hw_lock(0x2) is locked by M3
+1970-01-01T00:00:59.218641+0000 localhost kernel: 46,1970-01-01 00:00:59,1208,hw_acquire_hard_lock,141,hardware lock(2) is't locked by A55(-1)
+1970-01-01T00:00:59.268064+0000 localhost kernel: 47,1970-01-01 00:00:59,1208,hw_get_hard_lock,79,hw_lock(0x2) is locked by M3
+1970-01-01T00:00:59.268426+0000 localhost kernel: 48,1970-01-01 00:00:59,1208,hw_acquire_hard_lock,141,hardware lock(2) is't locked by A55(-1)
+1970-01-01T00:00:59.401805+0000 localhost kernel: 49,1970-01-01 00:00:59,18,hw_get_hard_lock,79,hw_lock(0x2) is locked by M3
+1970-01-01T00:00:59.402256+0000 localhost kernel: 50,1970-01-01 00:00:59,18,hw_acquire_hard_lock,141,hardware lock(2) is't locked by A55(-1)
+1970-01-01T00:00:59.531316+0000 localhost kernel: EXT4-fs (mmcblk0gp2): mounted filesystem a578aeb2-73b2-434e-870c-5027ac60059f ro with ordered data mode. Opts: (null)
+1970-01-01T00:00:59.583310+0000 localhost kernel: 51,1970-01-01 00:00:59,1208,hw_get_hard_lock,79,hw_lock(0x2) is locked by M3
+1970-01-01T00:00:59.584568+0000 localhost kernel: 52,1970-01-01 00:00:59,1208,hw_acquire_hard_lock,141,hardware lock(2) is't locked by A55(-1)
+1970-01-01T00:00:59.699943+0000 localhost systemd[1]: dev-shm-bmc_mount.mount: Deactivated successfully.
+1970-01-01T00:00:59.725992+0000 localhost kernel: 53,1970-01-01 00:00:59,18,hw_get_hard_lock,79,hw_lock(0x2) is locked by M3
+1970-01-01T00:00:59.726467+0000 localhost kernel: 54,1970-01-01 00:00:59,18,hw_acquire_hard_lock,141,hardware lock(2) is't locked by A55(-1)
+1970-01-01T00:00:59.740343+0000 localhost kernel: EXT4-fs (mmcblk0gp2): unmounting filesystem a578aeb2-73b2-434e-870c-5027ac60059f.
+1970-01-01T00:01:03.791427+0000 localhost systemd[1]: Started om_priv service.
+2026-04-17T07:31:17.079721+0000 localhost systemd[1]: Time has been changed
+2026-04-17T07:31:17.314116+0000 localhost kernel: 55,2026-04-17 07:31:17,2607,msg_sec_module_cmd_cpy_to_user,523,msg copy_to_user user data error 8
+2026-04-17T07:31:17.314776+0000 localhost kernel: 56,2026-04-17 07:31:17,2607,msg_scm3_ioctl,613,msg cmd(0xc0047301) handle error!
+2026-04-17T07:31:19.192581+0000 localhost kernel: 57,2026-04-17 07:31:19,2373,sol_reset,129,SOL-0 reset <0>.
+2026-04-17T07:31:19.192958+0000 localhost kernel: 58,2026-04-17 07:31:19,2373,sol_set_reg_val,546,SOL[0] Set Rx-start 0x86000000, Rx-size 0x3, Tx-start 0x86200000, Tx-size 0x3.
+2026-04-17T07:31:20.169897+0000 localhost kernel: 59,2026-04-17 07:31:20,2373,sol_reset,129,SOL-1 reset <0>.
+2026-04-17T07:31:20.170348+0000 localhost kernel: 60,2026-04-17 07:31:20,2373,sol_set_reg_val,546,SOL[1] Set Rx-start 0x86400000, Rx-size 0x1, Tx-start 0x86480000, Tx-size 0x4.
+2026-04-17T07:31:20.340365+0000 localhost kernel: [I2C-08-RT<-5|-5>] M<0x47|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+2026-04-17T07:31:20.539699+0000 localhost kernel: [I2C-08-RT<-5|-5>] M<0x21|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+2026-04-17T07:31:20.773539+0000 localhost kernel: 61,2026-04-17 07:31:20,2374,sol_reset,129,SOL-2 reset <0>.
+2026-04-17T07:31:20.773928+0000 localhost kernel: 62,2026-04-17 07:31:20,2374,sol_set_reg_val,546,SOL[2] Set Rx-start 0x86880000, Rx-size 0x3, Tx-start 0x86a80000, Tx-size 0x1.
+2026-04-17T07:31:20.923790+0000 localhost kernel: 63,2026-04-17 07:31:20,2374,sol_reset,129,SOL-3 reset <0>.
+2026-04-17T07:31:20.924186+0000 localhost kernel: 64,2026-04-17 07:31:20,2374,sol_set_reg_val,546,SOL[3] Set Rx-start 0x86b00000, Rx-size 0x3, Tx-start 0x86d00000, Tx-size 0x2.
+2026-04-17T07:31:22.539758+0000 localhost systemd[1]: Started om service.
+2026-04-17T07:31:22.557355+0000 localhost systemd[1]: Started ibmc ssdp module.
+2026-04-17T07:31:22.600745+0000 localhost systemd[1]: Starting interface service...
+2026-04-17T07:31:22.989897+0000 localhost kernel: ext2 filesystem being remounted at /dev/shm/chroot/2889/opt/bmc/pram supports timestamps until 2038-01-19 (0x7fffffff)
+2026-04-17T07:31:26.979885+0000 localhost kernel: FAT-fs (mmcblk0p5): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+2026-04-17T07:31:27.420789+0000 localhost kernel: 65,2026-04-17 07:31:27,2863,mctp_reset,1477,reset mctp ok!
+2026-04-17T07:31:27.439796+0000 localhost kernel: 66,2026-04-17 07:31:27,2863,mctp_dereset,1501,dereset mctp ok!
+2026-04-17T07:31:28.509840+0000 2102315QMAN0RB100622 kernel: device-mapper: ioctl: dmsetup[2964]: dm-0 (mmcblksp) is created successfully
+2026-04-17T07:31:28.679698+0000 2102315QMAN0RB100622 kernel: device-mapper: ioctl: dmsetup[2969]: dm-0 (mmcblksp) is removed successfully
+2026-04-17T07:31:29.269689+0000 2102315QMAN0RB100622 kernel: device-mapper: ioctl: dmsetup[2974]: dm-0 (mmcblksp) is created successfully
+2026-04-17T07:31:37.819708+0000 2102315QMAN0RB100622 kernel: IPv6: ADDRCONF(NETDEV_CHANGE): veth: link becomes ready
+2026-04-17T07:31:37.913615+0000 2102315QMAN0RB100622 systemd[1]: Started interface service.
+2026-04-17T07:31:37.914422+0000 2102315QMAN0RB100622 systemd[1]: Reached target Multi-User System.
+2026-04-17T07:31:37.925153+0000 2102315QMAN0RB100622 systemd[1]: Starting Record Runlevel Change in UTMP...
+2026-04-17T07:31:38.030467+0000 2102315QMAN0RB100622 systemd[1]: systemd-update-utmp-runlevel.service: Deactivated successfully.
+2026-04-17T07:31:38.034341+0000 2102315QMAN0RB100622 systemd[1]: Finished Record Runlevel Change in UTMP.
+2026-04-17T07:31:38.038118+0000 2102315QMAN0RB100622 systemd[1]: Startup finished in 2.260s (kernel) + 1min 26.778s (userspace) = 1min 29.038s.
+2026-04-17T07:31:42.511605+0000 2102315QMAN0RB100622 kernel: usbcore: registered new interface driver cdc_ether
+2026-04-17T07:31:43.219761+0000 2102315QMAN0RB100622 kernel: usbcore: registered new interface driver rndis_host
+2026-04-17T07:31:51.519721+0000 2102315QMAN0RB100622 kernel: usb device-0: command connect. function count 2 
+2026-04-17T07:31:51.739698+0000 2102315QMAN0RB100622 kernel: usb device-0: attach driver 
+2026-04-17T07:31:51.740086+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget bind 
+2026-04-17T07:31:51.740461+0000 2102315QMAN0RB100622 kernel: usb device-0: Bind speed 2.0 
+2026-04-17T07:31:51.749686+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget suspend 
+2026-04-17T07:31:52.519711+0000 2102315QMAN0RB100622 kernel: [I2C-08-RT<-5|-5>] M<0x47|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+2026-04-17T07:31:52.714908+0000 2102315QMAN0RB100622 kernel: [I2C-08-RT<-5|-5>] M<0x21|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+2026-04-17T07:32:01.861930+0000 2102315QMAN0RB100622 secbox[2891]: (process:2891): GLib-CRITICAL **: 07:32:01.847: g_error_free: assertion 'error != NULL' failed
+2026-04-17T07:32:07.827396+0000 2102315QMAN0RB100622 secbox[2891]: (process:2891): GLib-CRITICAL **: 07:32:07.827: g_error_free: assertion 'error != NULL' failed
+2026-04-17T07:32:08.350028+0000 2102315QMAN0RB100622 kernel: 67,2026-04-17 07:32:08,3560,init_btc_mode,434,btc mode(2)
+2026-04-17T07:32:08.350555+0000 2102315QMAN0RB100622 kernel: 68,2026-04-17 07:32:08,3560,btc_lb_int_pin_init,439,pin(63) is reused as gpio
+2026-04-17T07:32:08.350876+0000 2102315QMAN0RB100622 kernel: 69,2026-04-17 07:32:08,ISR,sysctrl_rst_int_handle,436,Receive subsys_rst_irq(41), int_reg(0x13c) int_sts(0x17b)!
+2026-04-17T07:32:08.371407+0000 2102315QMAN0RB100622 kernel: ####dump test 0####
+2026-04-17T07:32:08.371847+0000 2102315QMAN0RB100622 kernel: btc dev mode:2
+2026-04-17T07:32:08.372235+0000 2102315QMAN0RB100622 kernel: btc priv:0 0
+2026-04-17T07:32:08.381286+0000 2102315QMAN0RB100622 kernel: btc priv param:61 63
+2026-04-17T07:32:08.381629+0000 2102315QMAN0RB100622 kernel: ####dump test 1####
+2026-04-17T07:32:08.382000+0000 2102315QMAN0RB100622 kernel: btc dev mode:2
+2026-04-17T07:32:08.400358+0000 2102315QMAN0RB100622 kernel: btc priv:1 0
+2026-04-17T07:32:08.413133+0000 2102315QMAN0RB100622 kernel: btc priv param:61 63
+2026-04-17T07:32:08.413666+0000 2102315QMAN0RB100622 kernel: 70,2026-04-17 07:32:08,3560,btc_probe,555,btc init ok!
+2026-04-17T07:32:10.731678+0000 2102315QMAN0RB100622 systemd[1]: Stopping Rsyslog Logging Service...
+2026-04-17T07:32:10.780422+0000 2102315QMAN0RB100622 systemd[1]: rsyslog.service: Main process exited, code=killed, status=9/KILL
+2026-04-17T07:32:10.786381+0000 2102315QMAN0RB100622 systemd[1]: rsyslog.service: Failed with result 'signal'.
+2026-04-17T07:32:10.791721+0000 2102315QMAN0RB100622 systemd[1]: Stopped Rsyslog Logging Service.
+2026-04-17T07:32:10.819720+0000 2102315QMAN0RB100622 systemd[1]: Starting Rsyslog Logging Service...
+2026-04-17T07:32:11.017632+0000 2102315QMAN0RB100622 systemd[1]: Started Rsyslog Logging Service.
+2026-04-17T07:32:12.082789+0000 2102315QMAN0RB100622 systemd[1]: Starting Simple Network Management Protocol (SNMP) Daemon....
+2026-04-17T07:32:12.127112+0000 2102315QMAN0RB100622 systemd[1]: Started Simple Network Management Protocol (SNMP) Daemon..
+2026-04-17T07:32:13.435512+0000 2102315QMAN0RB100622 kernel: 71,2026-04-17 07:32:13,3605,hisfc_drv_probe,834,probe bus 0
+2026-04-17T07:32:13.435939+0000 2102315QMAN0RB100622 kernel: 72,2026-04-17 07:32:13,3605,hisfc_drv_request_permission,628,sfc0 use hwid 4
+2026-04-17T07:32:13.444868+0000 2102315QMAN0RB100622 kernel: 73,2026-04-17 07:32:13,3605,hisfc_flash_scan_init,1050,hisfc_probe start bus 0
+2026-04-17T07:32:13.464929+0000 2102315QMAN0RB100622 kernel: 74,2026-04-17 07:32:13,3605,sfc_sys_set_controller_clk,246,bus 0 clock frequency of is all set!
+2026-04-17T07:32:13.477513+0000 2102315QMAN0RB100622 kernel: 75,2026-04-17 07:32:13,3605,sfc_sys_clock_operator,213,CLOSE 1711 SFC Clock Success!
+2026-04-17T07:32:13.491128+0000 2102315QMAN0RB100622 kernel: 76,2026-04-17 07:32:13,3605,sfc_sys_clock_operator,223,Open 1711 SFC Clock Success!
+2026-04-17T07:32:13.504577+0000 2102315QMAN0RB100622 kernel: 77,2026-04-17 07:32:13,3605,sfc_core_spi_probe,2053,Spi(cs0) ID: 0x00000000 0x00000000
+2026-04-17T07:32:13.524357+0000 2102315QMAN0RB100622 kernel: 78,2026-04-17 07:32:13,3605,sfc_core_spi_probe,2056,Spi(cs0): RDID not right!
+2026-04-17T07:32:13.538573+0000 2102315QMAN0RB100622 kernel: 79,2026-04-17 07:32:13,3605,sfc_core_spi_probe,2053,Spi(cs1) ID: 0x9d70199d 0x70199d70
+2026-04-17T07:32:13.551990+0000 2102315QMAN0RB100622 kernel: 80,2026-04-17 07:32:13,3605,sfc_spi_search_rw,125,dump[1] isread(1) iftype:1
+2026-04-17T07:32:13.560811+0000 2102315QMAN0RB100622 kernel: 81,2026-04-17 07:32:13,3605,sfc_spi_search_rw,125,dump[1] isread(0) iftype:1
+2026-04-17T07:32:13.569781+0000 2102315QMAN0RB100622 kernel: 82,2026-04-17 07:32:13,3605,sfc_core_show_spi,1690,Spi(cs 1): 
+2026-04-17T07:32:13.579712+0000 2102315QMAN0RB100622 kernel: 83,2026-04-17 07:32:13,3605,sfc_core_show_spi,1691,Name:"IS25WP256E"
+2026-04-17T07:32:13.620987+0000 2102315QMAN0RB100622 kernel: Creating 1 MTD partitions on "hi_sfc0.1":
+2026-04-17T07:32:13.621515+0000 2102315QMAN0RB100622 kernel: 0x000000000000-0x000002000000 : "sfc0cs1"
+2026-04-17T07:32:13.983715+0000 2102315QMAN0RB100622 kernel: 84,2026-04-17 07:32:13,3618,hisfc_drv_remove,888,hisfc_drv_remove
+2026-04-17T07:32:13.984158+0000 2102315QMAN0RB100622 kernel: 85,2026-04-17 07:32:13,3618,hisfc_drv_remove,896,hisfc_drv_remove bus 0
+2026-04-17T07:32:13.984456+0000 2102315QMAN0RB100622 kernel: Deleting MTD partitions on "hi_sfc0.1":
+2026-04-17T07:32:13.984764+0000 2102315QMAN0RB100622 kernel: Deleting sfc0cs1 MTD partition
+2026-04-17T07:32:21.119094+0000 2102315QMAN0RB100622 secbox[2891]: (process:2891): GLib-CRITICAL **: 07:32:21.118: g_error_free: assertion 'error != NULL' failed
+2026-04-17T07:32:21.152444+0000 2102315QMAN0RB100622 secbox[2891]: (process:2891): GLib-CRITICAL **: 07:32:21.152: g_error_free: assertion 'error != NULL' failed
+2026-04-17T07:32:21.161095+0000 2102315QMAN0RB100622 secbox[2891]: (process:2891): GLib-CRITICAL **: 07:32:21.160: g_error_free: assertion 'error != NULL' failed
+2026-04-17T07:32:21.173380+0000 2102315QMAN0RB100622 secbox[2891]: (process:2891): GLib-CRITICAL **: 07:32:21.172: g_error_free: assertion 'error != NULL' failed
+2026-04-17T07:32:21.173380+0000 2102315QMAN0RB100622 secbox[2891]: (process:2891): GLib-CRITICAL **: 07:32:21.172: g_error_free: assertion 'error != NULL' failed
+2026-04-17T07:32:21.177696+0000 2102315QMAN0RB100622 secbox[2891]: (process:2891): GLib-CRITICAL **: 07:32:21.177: g_error_free: assertion 'error != NULL' failed
+2026-04-17T07:32:21.184290+0000 2102315QMAN0RB100622 secbox[2891]: (process:2891): GLib-CRITICAL **: 07:32:21.183: g_error_free: assertion 'error != NULL' failed
+2026-04-17T07:32:21.207053+0000 2102315QMAN0RB100622 secbox[2891]: (process:2891): GLib-CRITICAL **: 07:32:21.206: g_error_free: assertion 'error != NULL' failed
+2026-04-17T07:32:21.253995+0000 2102315QMAN0RB100622 secbox[2891]: (process:2891): GLib-CRITICAL **: 07:32:21.253: g_error_free: assertion 'error != NULL' failed
+2026-04-17T07:32:21.828278+0000 2102315QMAN0RB100622 tpcm[2286]: g_error_free: assertion 'error != NULL' failed
+2026-04-17T07:32:21.840144+0000 2102315QMAN0RB100622 tpcm[2286]: g_error_free: assertion 'error != NULL' failed
+2026-04-17T07:32:21.854253+0000 2102315QMAN0RB100622 tpcm[2286]: g_error_free: assertion 'error != NULL' failed
+2026-04-17T07:32:21.861059+0000 2102315QMAN0RB100622 tpcm[2286]: g_error_free: assertion 'error != NULL' failed
+2026-04-17T07:32:21.874880+0000 2102315QMAN0RB100622 tpcm[2286]: g_error_free: assertion 'error != NULL' failed
+2026-04-17T07:32:25.444362+0000 2102315QMAN0RB100622 systemd[1]: Stopping Simple Network Management Protocol (SNMP) Daemon....
+2026-04-17T07:32:25.500915+0000 2102315QMAN0RB100622 systemd[1]: snmpd.service: Main process exited, code=killed, status=9/KILL
+2026-04-17T07:32:25.502068+0000 2102315QMAN0RB100622 systemd[1]: snmpd.service: Failed with result 'signal'.
+2026-04-17T07:32:25.505766+0000 2102315QMAN0RB100622 systemd[1]: Stopped Simple Network Management Protocol (SNMP) Daemon..
+2026-04-17T07:32:26.996498+0000 2102315QMAN0RB100622 systemd[1]: Starting Simple Network Management Protocol (SNMP) Daemon....
+2026-04-17T07:32:27.056284+0000 2102315QMAN0RB100622 systemd[1]: Started Simple Network Management Protocol (SNMP) Daemon..
+2026-04-17T07:32:48.754477+0000 2102315QMAN0RB100622 secbox[2891]: (process:2891): GLib-CRITICAL **: 07:32:48.754: g_error_free: assertion 'error != NULL' failed
+2026-04-17T07:32:48.800771+0000 2102315QMAN0RB100622 secbox[2891]: (process:2891): GLib-CRITICAL **: 07:32:48.800: g_error_free: assertion 'error != NULL' failed
+2026-04-17T07:32:48.802813+0000 2102315QMAN0RB100622 secbox[2891]: (process:2891): GLib-CRITICAL **: 07:32:48.801: g_error_free: assertion 'error != NULL' failed
+2026-04-17T07:32:49.149680+0000 2102315QMAN0RB100622 kernel: 86,2026-04-17 07:32:49,2753,mctp_reset,1477,reset mctp ok!
+2026-04-17T07:32:49.173962+0000 2102315QMAN0RB100622 kernel: 87,2026-04-17 07:32:49,2753,mctp_dereset,1501,dereset mctp ok!
+2026-04-17T07:32:52.621310+0000 2102315QMAN0RB100622 kernel: [I2C-08-RT<-5|-5>] M<0x47|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+2026-04-17T07:32:52.810503+0000 2102315QMAN0RB100622 kernel: [I2C-08-RT<-5|-5>] M<0x21|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+2026-04-17T07:33:52.749758+0000 2102315QMAN0RB100622 kernel: [I2C-08-RT<-5|-5>] M<0x47|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+2026-04-17T07:33:52.939706+0000 2102315QMAN0RB100622 kernel: [I2C-08-RT<-5|-5>] M<0x21|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+2026-04-17T07:34:33.863870+0000 2102315QMAN0RB100622 kernel: usb device-0: command disconnect 
+2026-04-17T07:34:33.870817+0000 2102315QMAN0RB100622 kernel: usb device-0: detach driver
+2026-04-17T07:34:33.871244+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget disconnect 
+2026-04-17T07:34:33.871550+0000 2102315QMAN0RB100622 kernel: usb device-0: reset configuration. gadget state <0> 
+2026-04-17T07:34:33.872469+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget unbind 
+2026-04-17T07:34:33.872803+0000 2102315QMAN0RB100622 kernel: dwc3 8800000.dwc3: request ffff72cc0f32b840 was not queued to ep1in
+2026-04-17T07:34:33.875450+0000 2102315QMAN0RB100622 kernel: dwc3 8800000.dwc3: request ffff72cc0f32b000 was not queued to ep2in
+2026-04-17T07:34:34.579691+0000 2102315QMAN0RB100622 kernel: usb device-0: command connect. function count 2 
+2026-04-17T07:34:34.799742+0000 2102315QMAN0RB100622 kernel: usb device-0: attach driver 
+2026-04-17T07:34:34.800268+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget bind 
+2026-04-17T07:34:34.800648+0000 2102315QMAN0RB100622 kernel: usb device-0: Bind speed 2.0 
+2026-04-17T07:34:34.809775+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget suspend 
+2026-04-17T07:34:41.179730+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x80 0x06 0x00 0x01 0x00 0x00 0x08 0x00 
+2026-04-17T07:34:41.180579+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x80 0x06 0x00 0x01 0x00 0x00 0x12 0x00 
+2026-04-17T07:34:41.181012+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x80 0x06 0x00 0x02 0x00 0x00 0x08 0x00 
+2026-04-17T07:34:41.181362+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x80 0x06 0x00 0x02 0x00 0x00 0x3b 0x00 
+2026-04-17T07:34:41.181769+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x80 0x06 0x00 0x03 0x00 0x00 0x02 0x00 
+2026-04-17T07:34:41.182103+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x80 0x06 0x00 0x03 0x00 0x00 0x04 0x00 
+2026-04-17T07:34:41.182540+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x00 0x09 0x01 0x00 0x00 0x00 0x00 0x00 
+2026-04-17T07:34:41.182957+0000 2102315QMAN0RB100622 kernel: usb device-0: setup configuration. gadget state <6> 
+2026-04-17T07:34:41.183292+0000 2102315QMAN0RB100622 kernel: usb device-0: Keyboard configured 
+2026-04-17T07:34:41.183625+0000 2102315QMAN0RB100622 kernel: usb device-0: Mouse configured 
+2026-04-17T07:34:41.183933+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x80 0x08 0x00 0x00 0x00 0x00 0x01 0x00 
+2026-04-17T07:34:41.184217+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x21 0x0b 0x00 0x00 0x00 0x00 0x00 0x00 
+2026-04-17T07:34:41.184509+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x21 0x09 0x00 0x02 0x00 0x00 0x01 0x00 
+2026-04-17T07:34:41.184852+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x21 0x09 0x00 0x02 0x00 0x00 0x01 0x00 
+2026-04-17T07:34:52.949854+0000 2102315QMAN0RB100622 kernel: [I2C-08-RT<-5|-5>] M<0x47|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+2026-04-17T07:34:53.149679+0000 2102315QMAN0RB100622 kernel: [I2C-08-RT<-5|-5>] M<0x21|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+2026-04-17T07:34:57.299677+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x80 0x06 0x00 0x02 0x00 0x00 0x3b 0x00 
+2026-04-17T07:34:57.300307+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x81 0x06 0x00 0x22 0x01 0x00 0x3c 0x00 
+2026-04-17T07:34:57.300667+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0xa1 0x03 0x00 0x00 0x01 0x00 0x01 0x00 
+2026-04-17T07:34:57.300970+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x21 0x0b 0x00 0x00 0x01 0x00 0x00 0x00 
+2026-04-17T07:35:43.379785+0000 2102315QMAN0RB100622 kernel: dwc3 8800000.dwc3: failed to send remote wakeup
+2026-04-17T07:35:43.404512+0000 2102315QMAN0RB100622 kernel: ------------[ cut here ]------------
+2026-04-17T07:35:43.404925+0000 2102315QMAN0RB100622 kernel: dwc3 8800000.dwc3: wakeup failed --> -22
+2026-04-17T07:35:43.405330+0000 2102315QMAN0RB100622 kernel: Kernel BUG at dwc3_send_gadget_ep_cmd+0x224/0x8a8 [dwc3]
+2026-04-17T07:35:43.405942+0000 2102315QMAN0RB100622 kernel: WARNING: CPU: 0 PID: 3036 at dwc3_send_gadget_ep_cmd+0x224/0x8a8 [dwc3]
+2026-04-17T07:35:43.415926+0000 2102315QMAN0RB100622 kernel: Modules linked in: btc_drv(O) usb_f_rndis(O) usb_f_ecm(O) u_ether(O) rndis_host(O) cdc_ether(O) usbnet(O) mii(O) ip6table_nat aes_ce_blk aes_ce_cipher libaes crypto_simd cryptd xhci_plat_hcd ip6table_filter xt_MASQUERADE xt_limit dm_mod isofs cdrom cifs libdes libarc4 md4 ccm nfsv3 nfs lockd nfs_acl sunrpc grace cachefiles fscache bmc_veth_drv(O) bmc_cdev_drv(O) bmc_edma_drv(O) bmc_cpld_drv(O) bmc_hisport_drv(O) ip6_tables xt_tcpudp xt_nat iptable_nat nf_nat nf_conntrack nf_defrag_ipv6 nf_defrag_ipv4 iptable_filter ip_tables x_tables pramdisk(O) dfx_drv(O) virtual_usb_device(O) vce_drv(O) dwc3(O) usb_drv(O) libcomposite(O) configfs(O) udc_core(O) msg_scm3_drv(O) mctp_drv(O) pci_fix_drv(O) efuse_drv(O) trng_drv(O) djtag_drv(O) cpld_drv(O) spi_drv(O) localbus_drv(O) wdi_drv(O) peci_drv(O) uart_drv(O) uartconnect_drv(O) uart_core(O) bmcrtc_drv(O) adc_drv(O) pwm_drv(O) dboot_drv(O) sol_drv(O) p80_drv(O) ipmb_drv(O) i2c_drv(O) sys_info_drv(O) gmac_drv(O) mdio_drv(O) gpio_drv(O)
+2026-04-17T07:35:43.426506+0000 2102315QMAN0RB100622 kernel:  xhci_hcd usb_storage usbcore usb_common sd_mod scsi_mod vfat fat 8021q garp stp llc af_packet ipv6 crc_ccitt autofs4 mmc_block(O) emmc_drv(O) mmc_core(O) emmc_hook(O) hw_lock_drv(O) watchdog_drv(O) hitimer_drv(O) comm_drv(O) log_drv(O) rtos_snapshot(O) ext2 ext4 mbcache jbd2 mtdblock mtd_blkdevs mtd load_kallsyms(O) [last unloaded: sfc0_drv]
+2026-04-17T07:35:43.426988+0000 2102315QMAN0RB100622 kernel: CPU: 0 PID: 3036 Comm: skynet Tainted: G           O      5.10.0 #1
+2026-04-17T07:35:43.427398+0000 2102315QMAN0RB100622 kernel: Hardware name: Hisilicon Hi1711 ASIC (DT)
+2026-04-17T07:35:43.427743+0000 2102315QMAN0RB100622 kernel: pstate: 40400085 (nZcv daIf +PAN -UAO -TCO BTYPE=--)
+2026-04-17T07:35:43.440206+0000 2102315QMAN0RB100622 kernel: pc : dwc3_send_gadget_ep_cmd+0x224/0x8a8 [dwc3]
+2026-04-17T07:35:43.440680+0000 2102315QMAN0RB100622 kernel: lr : dwc3_send_gadget_ep_cmd+0x224/0x8a8 [dwc3]
+2026-04-17T07:35:43.441006+0000 2102315QMAN0RB100622 kernel: sp : ffff800017633b00
+2026-04-17T07:35:43.441249+0000 2102315QMAN0RB100622 kernel: x29: ffff800017633b00 x28: ffffb023cb1cf1a0 
+2026-04-17T07:35:43.441471+0000 2102315QMAN0RB100622 kernel: x27: ffff72cc20bd3d80 x26: 0000000000000006 
+2026-04-17T07:35:43.441735+0000 2102315QMAN0RB100622 kernel: x25: ffff800017633bd8 x24: 0000000000000140 
+2026-04-17T07:35:43.441960+0000 2102315QMAN0RB100622 kernel: x23: 0000000000000006 x22: 00000000ffffffea 
+2026-04-17T07:35:43.442265+0000 2102315QMAN0RB100622 kernel: x21: ffff72cc0b406300 x20: ffff72cc0b30d840 
+2026-04-17T07:35:43.442612+0000 2102315QMAN0RB100622 kernel: x19: 0000000000102540 x18: ffff72cc35104460 
+2026-04-17T07:35:43.444986+0000 2102315QMAN0RB100622 kernel: x17: 0000000000000000 x16: ffffb023fe48d758 
+2026-04-17T07:35:43.445494+0000 2102315QMAN0RB100622 kernel: x15: 0000000000000004 x14: 0000000000000000 
+2026-04-17T07:35:43.445782+0000 2102315QMAN0RB100622 kernel: x13: 0000000000000000 x12: 0000000000000030 
+2026-04-17T07:35:43.446022+0000 2102315QMAN0RB100622 kernel: x11: 000000000000022f x10: 00000000ffffffea 
+2026-04-17T07:35:43.446349+0000 2102315QMAN0RB100622 kernel: x9 : ffff72cc6ff57768 x8 : ffff800017633768 
+2026-04-17T07:35:43.446686+0000 2102315QMAN0RB100622 kernel: x7 : ffff800017633770 x6 : 0000000000000001 
+2026-04-17T07:35:43.447071+0000 2102315QMAN0RB100622 kernel: x5 : ffff72cc6ff69190 x4 : 0000000000000000 
+2026-04-17T07:35:43.447468+0000 2102315QMAN0RB100622 kernel: x3 : 0000000000000027 x2 : 0000000000000027 
+2026-04-17T07:35:43.447746+0000 2102315QMAN0RB100622 kernel: x1 : 24f61a3365375800 x0 : 0000000000000000 
+2026-04-17T07:35:43.448125+0000 2102315QMAN0RB100622 kernel: Call trace:
+2026-04-17T07:35:43.449429+0000 2102315QMAN0RB100622 kernel:  dwc3_send_gadget_ep_cmd+0x224/0x8a8 [dwc3]
+2026-04-17T07:35:43.450061+0000 2102315QMAN0RB100622 kernel:  __dwc3_gadget_kick_transfer+0x220/0x328 [dwc3]
+2026-04-17T07:35:43.450371+0000 2102315QMAN0RB100622 kernel:  dwc3_gadget_ep_queue+0x1e0/0x214 [dwc3]
+2026-04-17T07:35:43.450614+0000 2102315QMAN0RB100622 kernel:  usb_ep_queue+0x5c/0x128 [udc_core]
+2026-04-17T07:35:43.450958+0000 2102315QMAN0RB100622 kernel:  usb_dev_write_queue+0xa0/0x10c [virtual_usb_device]
+2026-04-17T07:35:43.451280+0000 2102315QMAN0RB100622 kernel:  usb_dev_ioctl+0xba8/0x189c [virtual_usb_device]
+2026-04-17T07:35:43.451536+0000 2102315QMAN0RB100622 kernel:  vfs_ioctl+0x6c/0xa8
+2026-04-17T07:35:43.451777+0000 2102315QMAN0RB100622 kernel:  __arm64_sys_ioctl+0x7c/0xb4
+2026-04-17T07:35:43.452102+0000 2102315QMAN0RB100622 kernel:  el0_svc_common.constprop.0+0x78/0x1a0
+2026-04-17T07:35:43.452357+0000 2102315QMAN0RB100622 kernel:  do_el0_svc+0x78/0x90
+2026-04-17T07:35:43.454061+0000 2102315QMAN0RB100622 kernel:  el0_svc+0x20/0x38
+2026-04-17T07:35:43.454383+0000 2102315QMAN0RB100622 kernel:  el0_sync_handler+0xf0/0x140
+2026-04-17T07:35:43.455356+0000 2102315QMAN0RB100622 kernel:  normal+0x3d8/0x400
+2026-04-17T07:35:43.455676+0000 2102315QMAN0RB100622 kernel: ---[ end trace 70e4e44c7567e744 ]---
+2026-04-17T07:35:53.050222+0000 2102315QMAN0RB100622 kernel: [I2C-08-RT<-5|-5>] M<0x47|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x510|0x0>
+2026-04-17T07:35:53.249718+0000 2102315QMAN0RB100622 kernel: [I2C-08-RT<-5|-5>] M<0x21|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+2026-04-17T07:35:54.142190+0000 2102315QMAN0RB100622 kernel: usb device-0: command disconnect 
+2026-04-17T07:35:54.142812+0000 2102315QMAN0RB100622 kernel: usb device-0: detach driver
+2026-04-17T07:35:54.143113+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget disconnect 
+2026-04-17T07:35:54.143429+0000 2102315QMAN0RB100622 kernel: usb device-0: reset configuration. gadget state <7> 
+2026-04-17T07:35:54.143683+0000 2102315QMAN0RB100622 kernel: usb device-0: Keyboard disabled 
+2026-04-17T07:35:54.143983+0000 2102315QMAN0RB100622 kernel: usb device-0: Mouse disabled 
+2026-04-17T07:35:54.144228+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget unbind 
+2026-04-17T07:35:54.145128+0000 2102315QMAN0RB100622 kernel: dwc3 8800000.dwc3: request ffff72cc08a05000 was not queued to ep1in
+2026-04-17T07:35:54.146937+0000 2102315QMAN0RB100622 kernel: dwc3 8800000.dwc3: request ffff72cc08a05900 was not queued to ep2in
+2026-04-17T07:35:54.859700+0000 2102315QMAN0RB100622 kernel: usb device-0: command connect. function count 2 
+2026-04-17T07:35:55.079724+0000 2102315QMAN0RB100622 kernel: usb device-0: attach driver 
+2026-04-17T07:35:55.080297+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget bind 
+2026-04-17T07:35:55.080593+0000 2102315QMAN0RB100622 kernel: usb device-0: Bind speed 2.0 
+2026-04-17T07:35:55.090708+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget suspend 
+2026-04-17T07:35:56.023985+0000 2102315QMAN0RB100622 kernel: usb device-0: command disconnect 
+2026-04-17T07:35:56.024398+0000 2102315QMAN0RB100622 kernel: usb device-0: detach driver
+2026-04-17T07:35:56.024675+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget disconnect 
+2026-04-17T07:35:56.024904+0000 2102315QMAN0RB100622 kernel: usb device-0: reset configuration. gadget state <8> 
+2026-04-17T07:35:56.025192+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget unbind 
+2026-04-17T07:35:56.026049+0000 2102315QMAN0RB100622 kernel: dwc3 8800000.dwc3: request ffff72cc0e34c600 was not queued to ep1in
+2026-04-17T07:35:56.027952+0000 2102315QMAN0RB100622 kernel: dwc3 8800000.dwc3: request ffff72cc0e34ca80 was not queued to ep2in
+2026-04-17T07:35:56.759859+0000 2102315QMAN0RB100622 kernel: usb device-0: command connect. function count 2 
+2026-04-17T07:35:56.979965+0000 2102315QMAN0RB100622 kernel: usb device-0: attach driver 
+2026-04-17T07:35:56.980322+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget bind 
+2026-04-17T07:35:56.980719+0000 2102315QMAN0RB100622 kernel: usb device-0: Bind speed 2.0 
+2026-04-17T07:35:56.989891+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget suspend 
+2026-04-17T07:35:57.800848+0000 2102315QMAN0RB100622 kernel: usb device-0: command disconnect 
+2026-04-17T07:35:57.801611+0000 2102315QMAN0RB100622 kernel: usb device-0: detach driver
+2026-04-17T07:35:57.818021+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget disconnect 
+2026-04-17T07:35:57.818509+0000 2102315QMAN0RB100622 kernel: usb device-0: reset configuration. gadget state <8> 
+2026-04-17T07:35:57.818979+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget unbind 
+2026-04-17T07:35:57.819317+0000 2102315QMAN0RB100622 kernel: dwc3 8800000.dwc3: request ffff72cc08a05f00 was not queued to ep1in
+2026-04-17T07:35:57.821211+0000 2102315QMAN0RB100622 kernel: dwc3 8800000.dwc3: request ffff72cc08a056c0 was not queued to ep2in
+2026-04-17T07:35:58.549910+0000 2102315QMAN0RB100622 kernel: usb device-0: command connect. function count 2 
+2026-04-17T07:35:58.770078+0000 2102315QMAN0RB100622 kernel: usb device-0: attach driver 
+2026-04-17T07:35:58.770568+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget bind 
+2026-04-17T07:35:58.770887+0000 2102315QMAN0RB100622 kernel: usb device-0: Bind speed 2.0 
+2026-04-17T07:35:58.779892+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget suspend 
+2026-04-17T07:35:59.683189+0000 2102315QMAN0RB100622 kernel: usb device-0: command disconnect 
+2026-04-17T07:35:59.684156+0000 2102315QMAN0RB100622 kernel: usb device-0: detach driver
+2026-04-17T07:35:59.684633+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget disconnect 
+2026-04-17T07:35:59.684893+0000 2102315QMAN0RB100622 kernel: usb device-0: reset configuration. gadget state <8> 
+2026-04-17T07:35:59.685258+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget unbind 
+2026-04-17T07:35:59.685512+0000 2102315QMAN0RB100622 kernel: dwc3 8800000.dwc3: request ffff72cc0f32ba80 was not queued to ep1in
+2026-04-17T07:35:59.687093+0000 2102315QMAN0RB100622 kernel: dwc3 8800000.dwc3: request ffff72cc0f32bf00 was not queued to ep2in
+2026-04-17T07:36:00.410048+0000 2102315QMAN0RB100622 kernel: usb device-0: command connect. function count 2 
+2026-04-17T07:36:00.630206+0000 2102315QMAN0RB100622 kernel: usb device-0: attach driver 
+2026-04-17T07:36:00.630544+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget bind 
+2026-04-17T07:36:00.630864+0000 2102315QMAN0RB100622 kernel: usb device-0: Bind speed 2.0 
+2026-04-17T07:36:00.639883+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget suspend 
+2026-04-17T07:36:01.548291+0000 2102315QMAN0RB100622 kernel: usb device-0: command disconnect 
+2026-04-17T07:36:01.548910+0000 2102315QMAN0RB100622 kernel: usb device-0: detach driver
+2026-04-17T07:36:01.549218+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget disconnect 
+2026-04-17T07:36:01.549742+0000 2102315QMAN0RB100622 kernel: usb device-0: reset configuration. gadget state <8> 
+2026-04-17T07:36:01.550089+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget unbind 
+2026-04-17T07:36:01.550523+0000 2102315QMAN0RB100622 kernel: dwc3 8800000.dwc3: request ffff72cc08a05c00 was not queued to ep1in
+2026-04-17T07:36:01.552428+0000 2102315QMAN0RB100622 kernel: dwc3 8800000.dwc3: request ffff72cc08a056c0 was not queued to ep2in
+2026-04-17T07:36:02.279746+0000 2102315QMAN0RB100622 kernel: usb device-0: command connect. function count 2 
+2026-04-17T07:36:02.499701+0000 2102315QMAN0RB100622 kernel: usb device-0: attach driver 
+2026-04-17T07:36:02.500215+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget bind 
+2026-04-17T07:36:02.500538+0000 2102315QMAN0RB100622 kernel: usb device-0: Bind speed 2.0 
+2026-04-17T07:36:02.509732+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget suspend 
+2026-04-17T07:36:10.030266+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget reset 
+2026-04-17T07:36:10.031143+0000 2102315QMAN0RB100622 kernel: usb device-0: reset configuration. gadget state <8> 
+2026-04-17T07:36:10.190237+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x80 0x06 0x00 0x01 0x00 0x00 0x40 0x00 
+2026-04-17T07:36:10.190847+0000 2102315QMAN0RB100622 kernel: usb device-0: gadget reset 
+2026-04-17T07:36:10.191217+0000 2102315QMAN0RB100622 kernel: usb device-0: reset configuration. gadget state <5> 
+2026-04-17T07:36:10.339745+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x80 0x06 0x00 0x01 0x00 0x00 0x12 0x00 
+2026-04-17T07:36:10.340438+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x80 0x06 0x00 0x02 0x00 0x00 0x09 0x00 
+2026-04-17T07:36:10.340920+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x80 0x06 0x00 0x02 0x00 0x00 0x3b 0x00 
+2026-04-17T07:36:10.341265+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x80 0x06 0x00 0x03 0x00 0x00 0xff 0x00 
+2026-04-17T07:36:10.341601+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x80 0x06 0x01 0x03 0x09 0x04 0xff 0x00 
+2026-04-17T07:36:10.341922+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x80 0x06 0x02 0x03 0x09 0x04 0xff 0x00 
+2026-04-17T07:36:10.449739+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x00 0x09 0x01 0x00 0x00 0x00 0x00 0x00 
+2026-04-17T07:36:10.450534+0000 2102315QMAN0RB100622 kernel: usb device-0: setup configuration. gadget state <6> 
+2026-04-17T07:36:10.450900+0000 2102315QMAN0RB100622 kernel: usb device-0: Keyboard configured 
+2026-04-17T07:36:10.451230+0000 2102315QMAN0RB100622 kernel: usb device-0: Mouse configured 
+2026-04-17T07:36:11.749750+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x80 0x06 0x02 0x03 0x09 0x04 0xff 0x00 
+2026-04-17T07:36:11.750365+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x21 0x0a 0x00 0x00 0x00 0x00 0x00 0x00 
+2026-04-17T07:36:11.750768+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x81 0x06 0x00 0x22 0x00 0x00 0x3f 0x00 
+2026-04-17T07:36:11.751160+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x21 0x09 0x00 0x02 0x00 0x00 0x01 0x00 
+2026-04-17T07:36:11.840034+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x80 0x06 0x02 0x03 0x09 0x04 0xff 0x00 
+2026-04-17T07:36:11.840406+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x21 0x0a 0x00 0x00 0x01 0x00 0x00 0x00 
+2026-04-17T07:36:11.840703+0000 2102315QMAN0RB100622 kernel: usb device-0: setup-request[T:8][0]:0x81 0x06 0x00 0x22 0x01 0x00 0x3c 0x00 
+2026-04-17T07:36:19.800567+0000 2102315QMAN0RB100622 kernel: edma: 1851, host is registered.
+2026-04-17T07:36:30.532062+0000 2102315QMAN0RB100622 systemd[1]: Started start logrotate service.
+2026-04-17T07:36:31.738536+0000 2102315QMAN0RB100622 systemd[1]: logrotate.service: Deactivated successfully.
+2026-04-17T07:36:53.169732+0000 2102315QMAN0RB100622 kernel: [I2C-08-RT<-5|-5>] M<0x47|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+2026-04-17T07:36:53.379690+0000 2102315QMAN0RB100622 kernel: [I2C-08-RT<-5|-5>] M<0x21|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+2026-04-17T07:37:53.209939+0000 2102315QMAN0RB100622 kernel: [I2C-08-RT<-5|-5>] M<0x47|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+2026-04-17T07:37:53.409902+0000 2102315QMAN0RB100622 kernel: [I2C-08-RT<-5|-5>] M<0x21|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+2026-04-17T07:38:53.339724+0000 2102315QMAN0RB100622 kernel: [I2C-08-RT<-5|-5>] M<0x47|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+2026-04-17T07:38:53.549876+0000 2102315QMAN0RB100622 kernel: [I2C-08-RT<-5|-5>] M<0x21|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+2026-04-17T07:39:53.419739+0000 2102315QMAN0RB100622 kernel: [I2C-08-RT<-5|-5>] M<0x47|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+2026-04-17T07:39:53.629707+0000 2102315QMAN0RB100622 kernel: [I2C-08-RT<-5|-5>] M<0x21|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+2026-04-17T07:40:53.529686+0000 2102315QMAN0RB100622 kernel: [I2C-08-RT<-5|-5>] M<0x47|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x510|0x0>
+2026-04-17T07:40:53.719682+0000 2102315QMAN0RB100622 kernel: [I2C-08-RT<-5|-5>] M<0x21|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+2026-04-17T07:41:53.659722+0000 2102315QMAN0RB100622 kernel: [I2C-08-RT<-5|-5>] M<0x47|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>
+2026-04-17T07:41:53.859800+0000 2102315QMAN0RB100622 kernel: [I2C-08-RT<-5|-5>] M<0x21|0x1|0x0|1|10> L<1|1|0> C<1|0|1> E<0x801|0x0|0x0|0x1> I<0x0|0x710|0x0>

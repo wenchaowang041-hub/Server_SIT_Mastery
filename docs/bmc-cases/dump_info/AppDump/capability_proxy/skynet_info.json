@@ -1,0 +1,90 @@
+{
+    ":00000004": {
+        "mqlen": 0,
+        "name": "snlua cdummy",
+        "memory": "634.69 Kb",
+        "message": 7,
+        "cpu": 0.037214,
+        "task": 0
+    },
+    ":0000000e": {
+        "mqlen": 0,
+        "name": "snlua trust/service/main",
+        "memory": "4970.53 Kb",
+        "message": 76733,
+        "cpu": 27.883349,
+        "task": 3
+    },
+    ":0000000f": {
+        "mqlen": 0,
+        "name": "snlua iam/service/main",
+        "memory": "7144.02 Kb",
+        "message": 687456,
+        "cpu": 311.806797,
+        "task": 12
+    },
+    ":00000007": {
+        "mqlen": 0,
+        "name": "snlua service_mgr",
+        "memory": "676.11 Kb",
+        "message": 21,
+        "cpu": 0.040467,
+        "task": 1
+    },
+    ":00000008": {
+        "mqlen": 0,
+        "name": "snlua hica/subsys/security/service/main",
+        "memory": "465.08 Kb",
+        "message": 136,
+        "cpu": 0.094073,
+        "task": 1
+    },
+    ":0000000b": {
+        "mqlen": 0,
+        "name": "snlua debug_console 0.0.0.0 40021",
+        "memory": "725.14 Kb",
+        "message": 6,
+        "cpu": 0.038465,
+        "task": 0
+    },
+    ":0000000c": {
+        "mqlen": 0,
+        "name": "snlua certificate/service/main",
+        "memory": "5552.15 Kb",
+        "message": 78062,
+        "cpu": 40.692529,
+        "task": 5
+    },
+    ":0000000d": {
+        "mqlen": 0,
+        "name": "snlua capability_proxy/service/main",
+        "memory": "2748.80 Kb",
+        "message": 43739,
+        "cpu": 21.388389,
+        "task": 3
+    },
+    ":00000009": {
+        "mqlen": 0,
+        "name": "snlua sd_bus",
+        "memory": "653.59 Kb",
+        "message": 9,
+        "cpu": 0.083015,
+        "task": 0
+    },
+    ":00000006": {
+        "mqlen": 0,
+        "name": "snlua datacenterd",
+        "memory": "631.45 Kb",
+        "message": 4,
+        "cpu": 0.034142,
+        "task": 0
+    },
+    ":0000000a": {
+        "mqlen": 0,
+        "name": "snlua harbor",
+        "memory": "842.61 Kb",
+        "message": 45375,
+        "cpu": 15.274805,
+        "task": 2
+    }
+}
