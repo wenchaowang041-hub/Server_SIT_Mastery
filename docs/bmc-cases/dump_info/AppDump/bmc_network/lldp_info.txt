@@ -1,6 +1,0 @@
-lldp information: 
-LLDPEnable: false
-WorkMode: Tx
-TxIntervalSeconds: 30
-TxDelaySeconds: 2
-TxHold: 4

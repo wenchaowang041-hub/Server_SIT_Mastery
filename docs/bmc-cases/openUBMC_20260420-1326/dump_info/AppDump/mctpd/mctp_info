@@ -1,6 +1,0 @@
-[MCTP Registry Info]
-idx:0, module_name = MCTP, phy_addr = 0, msg_src_eid = 0, msg_type = 0, pid = 2675, process_tag = 3224632059
-[MCTP ROUTE TABLE Info]
-EID:0x09, PHYADDR:0x0003, PHYSICAL_MEDIA_IDENTIFIER:0x0f(RESERVED)
-the number of entry  in route table is 1
-[MCTP_SEND_RECV_STATE_REGISTER Info]
