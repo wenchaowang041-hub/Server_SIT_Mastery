@@ -1,81 +1,64 @@
 # Server-SIT-Mastery
 
-## 项目定位
-
-这个仓库用于持续沉淀服务器硬件整合测试（SIT）学习、现场问题、方法论手册和百日计划资料。
-
-当前主线目标：
-
-- 6个月内提升到服务器硬件整合测试高级工程师水平
-- 主攻方向：鲲鹏 / 昇腾 / AI 服务器 / 整机 SIT
+这个仓库用于持续沉淀服务器硬件整合测试（SIT）相关的学习资料、现场记录、脚本和正式文档。
 
 ## 先看哪里
 
-如果你是回来继续学习或继续整理，建议按这个顺序进入：
-
-1. [docs/README.md](E:/72785/Codex/SIT提升/Server-SIT-Mastery/docs/README.md)
-2. [docs/manual/README.md](E:/72785/Codex/SIT提升/Server-SIT-Mastery/docs/manual/README.md)
-3. [docs/100-day-plan/README.md](E:/72785/Codex/SIT提升/Server-SIT-Mastery/docs/100-day-plan/README.md)
-4. [daily-work-学习总结/README.md](E:/72785/Codex/SIT提升/Server-SIT-Mastery/daily-work-学习总结/README.md)
+1. [docs/README.md](docs/README.md)
+2. [docs/manual/README.md](docs/manual/README.md)
+3. [docs/100-day-plan/README.md](docs/100-day-plan/README.md)
+4. [daily-work-学习总结/README.md](daily-work-学习总结/README.md)
+5. [practice/scripts-练手脚本/README.md](practice/scripts-练手脚本/README.md)
 
 ## 目录分工
 
-### 1. `docs/manual/`
+### `docs/`
 
-主知识库。
+正式知识库，放长期可复用的内容：
 
-适合放：
+- 手册
+- 项目案例
+- 百日计划资料
+- SOP 和速查表
 
-- 整机 SIT 方法论
-- CPU / 内存 / 网络 / 存储 / BMC / NPU 等专题手册
-- 项目 bring-up 流程
-- 标准检查清单
+### `daily-work-学习总结/`
 
-### 2. `docs/100-day-plan/`
+日常沉淀区，放当天输入和阶段记录：
 
-百日计划资料库。
+- 每日工作记录
+- Day 学习笔记
+- 临时分析和复盘
+- 现场案例草稿
 
-适合放：
+### `practice/`
 
-- 训练计划表
-- Day 原始文档
-- 已发表博客
-- 复习提纲
-- 配套手册资料
+练手脚本和自动化实验区，按测试主题分类收纳。
 
-### 3. `daily-work-学习总结/`
+### `interview/`
 
-日常沉淀区。
+面试题、问答整理和表达训练材料。
 
-适合放：
+### `local/`
 
-- 每日复盘
-- 在家补习稿
-- 当天学习稿
-- 现场案例
+本地私有区，不纳入 Git：
 
-### 4. `practice/`
+- 本机缓存文件
+- 临时连接信息
+- 不适合提交到仓库的个人环境内容
 
-练手脚本、自动化脚本、临时实验代码。
+## 当前整理约定
 
-### 5. `interview/`
+- 每日工作记录统一命名为 `YYYY-MM-DD-工作记录.md`
+- Day 学习笔记统一命名为 `DayN-主题.md`
+- 正式案例优先沉淀到 `docs/bmc-cases/`
+- 脚本按功能放到 `practice/scripts-练手脚本/` 的对应子目录
 
-面试题、问答沉淀、标准回答。
+## 顶层只保留什么
 
-## 推荐使用规则
+根目录尽量只保留：
 
-### 规则1：聊天里形成的内容，尽量落文件
+- 总入口文件
+- 项目级配置
+- 一级分类目录
 
-不要长期只放在对话里。
-
-### 规则2：先分“手册 / 计划 / 复盘 / 案例”
-
-这样不会把知识库和当天现场内容混在一起。
-
-### 规则3：先提交到 Git，再切电脑
-
-保证公司电脑和家里电脑都能续上。
-
-## 一句话原则
-
-线程可以换，仓库不能乱；记忆会模糊，Git 里的沉淀不能断。
+不再把数据库缓存、连接信息、临时导出文件直接放在顶层。
