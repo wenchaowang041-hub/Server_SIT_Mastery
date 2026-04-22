@@ -58,6 +58,7 @@ scripts-练手脚本/
 | `fru-info.sh` | FRU 信息批量查询和表格输出 |
 | `ipmi-sel-monitor.sh` | SEL 日志实时监控和导出 |
 | `bmc_sel_check.js` | BMC SEL 日志快速检查脚本 |
+| `baseline_collect.sh` | 基准配置信息一键收集（软件/工具/部件规格与预填表） |
 
 ### `network/`
 
@@ -82,5 +83,6 @@ scripts-练手脚本/
 - FRU 查询：`check/fru-info.sh -k "PSU" --table`
 - SEL 监控：`check/ipmi-sel-monitor.sh -c`
 - BMC SEL 快查：`check/bmc_sel_check.js`
+- 基准配置收集：`check/baseline_collect.sh`
 - 静态 IP：`network/static-ip-setup.sh --fix-eno1`
 - PCIe 清点：`check/check_pcie.py`
