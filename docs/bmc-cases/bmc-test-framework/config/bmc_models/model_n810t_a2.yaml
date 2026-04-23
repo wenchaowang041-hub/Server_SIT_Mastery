@@ -1,0 +1,5 @@
+# N810T A2 机型配置
+model_name: "n810t_a2"
+
+bmc:
+  default_ip: "10.121.176.137"

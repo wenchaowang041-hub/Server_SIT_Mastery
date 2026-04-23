@@ -1,0 +1,26 @@
+playwright:
+  browser: chromium
+  headless: false
+  viewport: { width: 1920, height: 1080 }
+  timeout: 30000
+  slow_mo: 0
+
+remote:
+  url: null
+
+bmc:
+  url_pattern: "https://{ip}"
+  default_ip: "10.121.176.73"
+
+credentials:
+  username: "admin"
+  password: "admin"
+
+allure:
+  enabled: true
+  results_dir: reports/allure-results
+  report_dir: reports/allure-report
+
+logging:
+  level: INFO
+  screenshot_on_failure: true

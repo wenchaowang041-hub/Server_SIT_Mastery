@@ -1,0 +1,64 @@
+# BMC 机型配置主模板
+
+model_name: "default"
+
+login:
+  username_selector: "xpath=//input[@id='userid']"
+  password_selector: "xpath=//input[@id='password']"
+  submit_button_selector: "xpath=//button[@id='btn-login']"
+  login_success_indicator: "xpath=//span[normalize-space(text())='BMC 配置']"
+
+sidebar:
+  info_menu: "信息"
+  system_info_submenu: "系统信息"
+  bmc_config_menu: "BMC 配置"
+  user_management_submenu: "用户管理"
+  system_maintenance_menu: "系统维护"
+  firmware_update_submenu: "固件更新"
+  logs_menu: "日志和告警"
+  log_detail_submenu: "日志"
+  home_menu: "首页"
+
+user_management:
+  help_icon_selector: "xpath=//h1[contains(text(), '用户管理')]//i[@class='fa fa-question-circle']"
+  help_dialog_selector: "xpath=//div[contains(@class, 'alert-info') and contains(text(), '密码最小长度帮助')]"
+  expected_texts:
+    password_min_length: "密码最小长度帮助： 输入的数字应在8~16之间"
+    complexity_enable: "启用复杂度帮助： 点击启用复杂度可设置密码复杂度的细节，如需要密码中必须包含大写字母时，勾选大写字母即可"
+    validity_period: "密码有效期帮助： 以下可设置密码的定期更改时间，超期将提示用户更改密码"
+    history_record: "历史密码记录帮助： 以下可设置历史密码记录中保存的条数，最多5条，历史密码将被禁止重新使用"
+    retry_count: "登录失败重试次数帮助: 以下可设置用户登录失败时重试的最多次数，最多5次，登录失败后用户将被锁定"
+    lock_period: "锁定时长帮助： 以下可设置锁定时长，用户被锁定时，锁定时长决定用户锁定时间，最长60分钟"
+    mass_help: "点击启用检查密码复杂度功能"
+    user_manage_help: "用户管理帮助： 以下可设置用户：添加，修改或者删除： 点击右侧的更改用户或者添加用户进入用户设置页面，如需删除用户，进入用户设置页面点击删除按钮或者直接点击表格右侧的删除用户按钮均可。用户组主要用于限制Web页面的访问权限，可能与IPMI权限不一致。如果新增ipmi用户要用于snmp服务，需要密码长度大于等于８并开启snmpv3，设置完成1分钟后该用户信息会同步到snmp配置中"
+    user_manage_root_help: "用户组权限管理帮助：管理员、操作员、普通用户,这三个用户组包括的功能权限如下:\n管理员：用户配置、常规配置、电源控制、远程媒体、远程KVM、安全配置、调试诊断、查询功能、配置自身\n操作员：常规配置、电源控制、远程媒体、远程KVM、查询功能、配置自身\n普通用户：查询功能、配置自身\n每一项功能权限包括的具体功能项名称：\n用户配置：用户组权限管理、用户管理、服务会话、一般LDAP设定、角色群组。\n常规配置：dns配置、密码复杂度设置、AFL日志清除、系统事件日志清除、服务配置、一般防火墙设置、IP地址防火墙规则、端口防火墙规则、日期&时间、PAM顺序、sel日志设置策略、syslog日志设置、snmptrap设置、snmp set/get设置、邮箱告警、传感器阈值、HPM/IMG固件更新、固件镜像位置、恢复出厂设置、备份配置、还原配置、前控制面板电源键设置、风扇管理、网络自适应配置、共享网卡配置、网络绑定配置、网络IP设置、bios启动选项\n电源控制：电源控制\n远程媒体：KVM鼠标设置、本地镜像、远程镜像、一般设置、VMedia实体装置设置、远程会话、VNC、主动重定向\n远程KVM：KVM jviewer\n安全配置：生成SSL凭证、上传SSL凭证、系统管理员、审计日志\n调试诊断：宕机截屏、手动截屏、视频触发设置、视频远程存储、Pre-Event视频录制、模块重启\n查询功能：可以登录以及查看除安全配置、用户配置信息\n配置自身：可以配置账户自身的密码、电子邮箱以及管理ssh公钥\n在本页面内点击需要选择的复选框并点击右侧按钮保存修改即可\n新建或修改用户为Administrator、Operator、User用户组，用户默认拥有对应的IPMI权限\n新建或修改用户为OEM1、OEM2、OEM3、OEM4用户组，用户默认拥有Operator IPMI权限。"
+
+change_user:
+  change_user_link: "xpath=//span[normalize-space(text())='更改用户']"
+  page_url_pattern: "change_user"
+  expected_texts:
+    username_rule1: "用户名是一个长度为 1 到 16 个数字及字母组成的字符串。"
+    username_rule2: "必须要以字母作为起始的字符。"
+    username_rule3: "区分大小写。"
+    username_rule4: "允许特殊字符 '-'(hyphen), '_'(underscore), '@'(at sign)。"
+    change_password: "选择此选项以变更密码"
+    admin_password: "请输入当前管理员的密码"
+    password_rule: "若启用密码复杂度检查，密码校验规则以密码复杂度设置为准并且不能与用户名相同或包含用户名。\n密码长度8-20。\n密码不支持不可见字符和空格符。\n针对snmp服务，密码长度必须大于等于8。"
+    confirm_password: "再一次确认密码"
+    network_access: "选中复选框以启用用户的网络访问。启用后，将为用户分配相应的IPMI消息传递权限。\n注意：如果用户是通过IPMI创建的，建议启用该权限。"
+    user_group: "用户组名称帮助：请选择该用户所属的用户组。共有七个可用的用户组可供选择，每个用户组均有不同的权限。用户组权限的详情请参考用户管理页面中，用户组设置一栏的帮助"
+    email_format: "指定电子邮件格式。此格式将会在传送电子邮件时使用。两种格式 均可使用:\nAMI-格式: 电子邮件格式标题为 'Alert from (your Hostname)'。此封邮件会显示传感器信息, 例如: 传感器类型和描述。\nFixedSubject-格式: 此格式显示消息根据用户的设置。 您必须设置电子邮件通知的主题和消息。"
+    email_id: "输入用户的电子邮件 ID。如果用户忘记密码，新密码将会发送到配置的电子邮件 ID。 注意: SMTP 服务器必须要配置为发送电子邮件。\n电子邮件ID长度最长为63个字符（包括使用者名称和域名)"
+    ssh_key: "显示有效的已上传的 SSH 密钥信息 (read only)."
+    ssh_source: "使用搜寻按钮来浏览公用的 SSH 密钥文件。\nSSH 密钥文件应该要为公用类型。"
+    certificate: "本栏位显示已有的用户证书"
+    upload_certificate: "点击搜寻按钮选择要上传的用户证书"
+
+firmware:
+  update_mode_button: "xpath=//button[contains(text(), '进入更新模式')]"
+  file_input: "xpath=//input[@type='file']"
+  parse_button: "xpath=//button[contains(text(), '解析文件')]"
+  upload_button: "xpath=//button[contains(text(), '上传镜像')]"
+
+homepage:
+  home_link: "xpath=//a[contains(text(), '首页')] | //a[contains(@href, 'home')]"
