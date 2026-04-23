@@ -1,5 +1,0 @@
-mdbctl
-ipmcget -d version
-mdbctl
-ipmitool
-mdbctl

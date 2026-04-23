@@ -1,3 +1,0 @@
-PowerLimitEnabled : false
-PowerLimitValue : 9999
-PowerLimitException : NoAction
