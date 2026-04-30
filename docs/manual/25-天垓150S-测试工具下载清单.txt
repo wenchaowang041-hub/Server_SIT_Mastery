@@ -1,0 +1,14 @@
+天数智芯/天垓150S 测试工具下载清单
+source: iftp.iluvatar.com.cn:/SDK_4.4.0/x86
+note: account and password are not recorded here.
+
+corex-toolbox-x86_64-1.0.0.run
+  remote: /SDK_4.4.0/x86/sdk/corex-toolbox-x86_64-1.0.0.run
+  size: 7202455 bytes
+  local_size: 7202455 bytes
+
+ixgpu-vm-p2p_2.0.7_x86_64.run
+  remote: /SDK_4.4.0/x86/tools/ixgpu-vm-p2p_2.0.7_x86_64.run
+  size: 432926 bytes
+  local_size: 432926 bytes
+
