@@ -1,0 +1,13 @@
+# 1. fio磁盘测试
+fio --name=random-write --ioengine=libaio --iodepth=32 \
+    --rw=randwrite --bs=4k --direct=1 --size=10G --numjobs=4 \
+    --runtime=7200 --time_based --group_reporting
+
+# 2. stress磁盘测试
+stress --io 8 --timeout 7200
+
+# 3. dd磁盘测试
+dd if=/dev/zero of=/tmp/testfile bs=1G count=10 oflag=direct
+
+# 4. iozone
+iozone -a -i 0 -i 1 -s 4G -r 4k -t 8 -F /tmp/test.*

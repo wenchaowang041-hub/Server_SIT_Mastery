@@ -1,0 +1,14 @@
+RAID Card Information:
+Component Name       : PCIe Card 21 (9560-8i)
+Product Name         : PCIe Card 21 (9560-8i)
+Board Serial Number  : N/A
+PHY error statistics :
+PHY#,     Timestamp,               InvalidDwordCount,       LossDwordSynchCount,     PhyResetProblemCount,    RunningDisparityErrorCount
+0,        2026-05-06 07:34:43,     0,                       0,                       0,                       0,
+1,        2026-05-06 07:34:43,     0,                       0,                       0,                       0,
+2,        2026-05-06 07:34:43,     0,                       0,                       0,                       0,
+3,        2026-05-06 07:34:43,     0,                       0,                       0,                       0,
+4,        2026-05-06 07:34:43,     0,                       0,                       0,                       0,
+5,        2026-05-06 07:34:43,     0,                       0,                       0,                       0,
+6,        2026-05-06 07:34:43,     0,                       0,                       0,                       0,
+7,        2026-05-06 07:34:43,     0,                       0,                       0,                       0,

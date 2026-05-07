@@ -1,0 +1,73 @@
+cat > analyze_crash.sh << 'EOF'
+#!/bin/bash
+# DC cycles崩溃分析脚本
+
+LOG_DIR="/tmp/crash_analysis_$(date +%Y%m%d_%H%M%S)"
+mkdir -p $LOG_DIR
+
+echo "收集系统信息..." > $LOG_DIR/analysis.log
+
+# 1. 系统基本信息
+echo "=== 系统基本信息 ===" >> $LOG_DIR/analysis.log
+uname -a >> $LOG_DIR/analysis.log
+cat /etc/os-release >> $LOG_DIR/analysis.log 2>/dev/null
+
+# 2. 硬件信息
+echo -e "\n=== 硬件信息 ===" >> $LOG_DIR/analysis.log
+lscpu | grep -E "Model name|CPU\(s\)" >> $LOG_DIR/analysis.log
+free -h >> $LOG_DIR/analysis.log
+
+# 3. NPU信息
+echo -e "\n=== NPU信息 ===" >> $LOG_DIR/analysis.log
+which npu-smi >/dev/null 2>&1 && npu-smi info 2>/dev/null | head -20 >> $LOG_DIR/analysis.log
+
+# 4. 最近的内核错误
+echo -e "\n=== 最近的内核错误（最后100行）===" >> $LOG_DIR/analysis.log
+dmesg -T | tail -100 | grep -i "error\|warn\|fail" >> $LOG_DIR/analysis.log
+
+# 5. 检查OOM记录
+echo -e "\n=== OOM Killer记录 ===" >> $LOG_DIR/analysis.log
+dmesg -T | grep -i "oom\|out of memory\|killed process" >> $LOG_DIR/analysis.log
+
+# 6. 检查硬件错误
+echo -e "\n=== 硬件错误记录 ===" >> $LOG_DIR/analysis.log
+dmesg -T | grep -B 5 -A 5 "Hardware error" >> $LOG_DIR/analysis.log
+
+# 7. 检查温度/电源错误
+echo -e "\n=== 温度/电源错误 ===" >> $LOG_DIR/analysis.log
+dmesg -T | grep -i "thermal\|temperature\|power\|voltage" >> $LOG_DIR/analysis.log
+
+# 8. 系统日志中的关键错误
+echo -e "\n=== 系统日志关键错误 ===" >> $LOG_DIR/analysis.log
+journalctl -k -n 50 | grep -i "error\|crit\|alert\|emerg" >> $LOG_DIR/analysis.log 2>/dev/null
+
+# 9. 进程状态（如果DC cycles还在运行）
+echo -e "\n=== DC cycles进程状态 ===" >> $LOG_DIR/analysis.log
+pgrep -f "dc_cycles" >/dev/null 2>&1 && \
+    ps aux | grep -E "dc_cycles|python.*reboot" >> $LOG_DIR/analysis.log
+
+# 10. 存储空间
+echo -e "\n=== 存储空间 ===" >> $LOG_DIR/analysis.log
+df -h >> $LOG_DIR/analysis.log
+
+# 11. IPMI SEL日志
+echo -e "\n=== IPMI SEL日志（最近20条）===" >> $LOG_DIR/analysis.log
+which ipmitool >/dev/null 2>&1 && \
+    ipmitool sel list | tail -20 >> $LOG_DIR/analysis.log 2>/dev/null
+
+echo -e "\n=== 分析完成 ===" >> $LOG_DIR/analysis.log
+echo "详细日志已保存到: $LOG_DIR/analysis.log"
+echo "关键错误摘要:"
+grep -i "error\|panic\|oom\|hardware" $LOG_DIR/analysis.log | head -20
+
+# 保存原始dmesg和journal
+dmesg > $LOG_DIR/dmesg_full.log
+journalctl -b 0 > $LOG_DIR/journal_current.log 2>/dev/null
+journalctl -b -1 > $LOG_DIR/journal_previous.log 2>/dev/null 2>/dev/null
+
+echo -e "\n完整日志文件:"
+ls -la $LOG_DIR/
+EOF
+
+chmod +x analyze_crash.sh
+sudo ./analyze_crash.sh

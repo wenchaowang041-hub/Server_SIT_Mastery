@@ -1,0 +1,4 @@
+# COMMAND: curl -ksu 'Administrator:Admin@9000' 'https://10.121.176.138/redfish/v1/UpdateService/FirmwareInventory/CpuBoard1VRD'
+# TIME: 2026-04-22 17:04:24
+
+{"@odata.context":"/redfish/v1/$metadata#SoftwareInventory.SoftwareInventory","@odata.id":"/redfish/v1/UpdateService/FirmwareInventory/CpuBoard1VRD","@odata.type":"#SoftwareInventory.v1_2_0.SoftwareInventory","Id":"CpuBoard1VRD","Name":"CpuBoard1 VRD","Status":{"State":"Enabled","Oem":{"openUBMC":{"Severity":"Informational"}},"Health":"OK"},"Version":"36.36.36.36.36.36.36.36","ReleaseDate":null,"Updateable":true,"RelatedItem":[{"@odata.id":"/redfish/v1/Chassis/1/Boards/BCU1CpuBoard1"}],"Oem":{"openUBMC":{"PositionId":"","Manufacturer":"Huawei","ActiveMode":null,"ActiveModeSupported":null}},"SoftwareId":"VRD-BC83AMDA"}

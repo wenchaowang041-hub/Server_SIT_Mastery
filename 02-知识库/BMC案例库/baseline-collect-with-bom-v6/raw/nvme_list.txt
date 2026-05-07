@@ -1,0 +1,17 @@
+# COMMAND: LC_ALL=C nvme list
+# TIME: 2026-04-22 17:04:04
+
+Node                  SN                   Model                                    Namespace Usage                      Format           FW Rev  
+--------------------- -------------------- ---------------------------------------- --------- -------------------------- ---------------- --------
+/dev/nvme0n1          034XESZERC000419     HWE6AP441T9L00KN                         1           1.92  TB /   1.92  TB    512   B +  0 B   2020    
+/dev/nvme1n1          034XESZERC000508     HWE6AP441T9L00KN                         1           1.92  TB /   1.92  TB    512   B +  0 B   2020    
+/dev/nvme10n1         034XESZERC000235     HWE6AP441T9L00KN                         1           1.92  TB /   1.92  TB    512   B +  0 B   2020    
+/dev/nvme11n1         034XESZERC000474     HWE6AP441T9L00KN                         1           1.92  TB /   1.92  TB    512   B +  0 B   2020    
+/dev/nvme2n1          034XESZERC000354     HWE6AP441T9L00KN                         1           1.92  TB /   1.92  TB    512   B +  0 B   2020    
+/dev/nvme3n1          034XESZERC000041     HWE6AP441T9L00KN                         1           1.92  TB /   1.92  TB    512   B +  0 B   2020    
+/dev/nvme4n1          034XESZERB003970     HWE6AP441T9L00KN                         1           1.92  TB /   1.92  TB    512   B +  0 B   2020    
+/dev/nvme5n1          034XESZERC000359     HWE6AP441T9L00KN                         1           1.92  TB /   1.92  TB    512   B +  0 B   2020    
+/dev/nvme6n1          034XESZERC000485     HWE6AP441T9L00KN                         1           1.92  TB /   1.92  TB    512   B +  0 B   2020    
+/dev/nvme7n1          034XESD9R6000101     HWE6AP441T9L00KN                         1           1.92  TB /   1.92  TB    512   B +  0 B   1073    
+/dev/nvme8n1          034XESZERC000513     HWE6AP441T9L00KN                         1           1.92  TB /   1.92  TB    512   B +  0 B   2020    
+/dev/nvme9n1          034XESD9R6000189     HWE6AP441T9L00KN                         1           1.92  TB /   1.92  TB    512   B +  0 B   1073    

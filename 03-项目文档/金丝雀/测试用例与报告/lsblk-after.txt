@@ -1,0 +1,2 @@
+NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+nvme0n1 259:0    0  1.7T  0 disk 

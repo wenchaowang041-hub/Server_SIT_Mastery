@@ -1,0 +1,1128 @@
+
+[root@davinci-mini ~]# ping 10.121.156.146
+PING 10.121.156.146 (10.121.156.146) 56(84) bytes of data.
+From 192.168.0.2 icmp_seq=1 Destination Host Unreachable
+From 192.168.0.2 icmp_seq=2 Destination Host Unreachable
+From 192.168.0.2 icmp_seq=3 Destination Host Unreachable
+
+--- 10.121.156.146 ping statistics ---
+6 packets transmitted, 0 received, +3 errors, 100% packet loss, time 5107ms
+pipe 4
+[root@davinci-mini ~]# ifconfig
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.0.2  netmask 255.255.255.0  broadcast 192.168.0.255
+        inet6 fe80::462:e8ff:feed:c78e  prefixlen 64  scopeid 0x20<link>
+        ether 06:62:e8:ed:c7:8e  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 21  bytes 1398 (1.3 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 56
+
+eth1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether a2:77:93:12:27:8a  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 65
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 6  bytes 672 (672.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 6  bytes 672 (672.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[root@davinci-mini ~]# nmcli connection show
+NAME                UUID                                  TYPE      DEVICE
+eth0                5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03  ethernet  eth0
+Wired connection 1  d56a602c-be2a-3d00-8220-917b82ef5645  ethernet  --
+[root@davinci-mini ~]# sudo nmcli connection modify eth0 ipv4.addresses 192.168.0.9/24
+.8.4.4"
+sudo nmcli connection modify eth0 ipv4.method manual[root@davinci-mini ~]# sudo nmcli connection modify eth0 ipv4.gateway 192.168.0.1
+[root@davinci-mini ~]# sudo nmcli connection modify eth0 ipv4.dns "8.8.8.8,8.8.4.4"
+[root@davinci-mini ~]# sudo nmcli connection modify eth0 ipv4.method manual
+[root@davinci-mini ~]# sudo nmcli connection down eth0 && sudo nmcli connection up eth0
+Connection 'eth0' successfully deactivated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/1)
+Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/6)
+[root@davinci-mini ~]#ifconfig
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.0.9  netmask 255.255.255.0  broadcast 192.168.0.255
+        inet6 fe80::462:e8ff:feed:c78e  prefixlen 64  scopeid 0x20<link>
+        ether 06:62:e8:ed:c7:8e  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 32  bytes 2224 (2.1 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 56
+
+eth1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether a2:77:93:12:27:8a  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 65
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 6  bytes 672 (672.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 6  bytes 672 (672.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[root@davinci-mini ~]# ping 192.168.0.2
+PING 192.168.0.2 (192.168.0.2) 56(84) bytes of data.
+64 bytes from 192.168.0.2: icmp_seq=1 ttl=64 time=0.659 ms
+64 bytes from 192.168.0.2: icmp_seq=2 ttl=64 time=0.274 ms
+
+--- 192.168.0.2 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1009ms
+rtt min/avg/max/mdev = 0.274/0.466/0.659/0.192 ms
+[root@davinci-mini ~]# yum install iperf3
+Last metadata expiration check: -20465 days, 16:03:56 ago on Sun Jan 11 08:03:41 2026.
+Dependencies resolved.
+================================================================================
+ Package     Architecture Version                    Repository            Size
+================================================================================
+Installing:
+ iperf3      aarch64      3.10.1-3.oe2203sp3         openeuler-local       82 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 82 k
+Installed size: 311 k
+Is this ok [y/N]: y
+Downloading Packages:
+Error opening /cdtmp/Packages/iperf3-3.10.1-3.oe2203sp3.aarch64.rpm: No such file or directory
+Package "iperf3-3.10.1-3.oe2203sp3.aarch64" from local repository "openeuler-local" has incorrect checksum
+Error: Some packages from local repository have incorrect checksum
+[root@davinci-mini ~]# yum install fio
+
+Last metadata expiration check: -20465 days, 16:04:12 ago on Sun Jan 11 08:03:41 2026.
+Dependencies resolved.
+================================================================================
+ Package          Arch       Version                   Repository          Size
+================================================================================
+Installing:
+ fio              aarch64    3.29-2.oe2203sp3          openeuler-local    385 k
+Installing dependencies:
+ fmt              aarch64    8.0.1-2.oe2203sp3         openeuler-local     97 k
+ libaio           aarch64    0.3.113-9.oe2203sp3       openeuler-local     21 k
+ libnl3           aarch64    3.7.0-2.oe2203sp3         openeuler-local    385 k
+ librados2        aarch64    2:16.2.7-19.oe2203sp3     openeuler-local    3.2 M
+ librbd1          aarch64    2:16.2.7-19.oe2203sp3     openeuler-local    2.6 M
+ lttng-ust        aarch64    2.10.1-11.oe2203sp3       openeuler-local    176 k
+ numactl-libs     aarch64    2.0.16-8.oe2203sp3        openeuler-local     27 k
+ rdma-core        aarch64    41.0-25.oe2203sp3         openeuler-local    824 k
+ userspace-rcu    aarch64    0.13.0-5.oe2203sp3        openeuler-local     87 k
+
+Transaction Summary
+================================================================================
+Install  10 Packages
+
+Total download size: 7.8 M
+Installed size: 37 M
+Is this ok [y/N]: Operation aborted.
+[root@davinci-mini ~]# yum install iperf
+Last metadata expiration check: -20465 days, 16:04:23 ago on Sun Jan 11 08:03:41 2026.
+No match for argument: iperf
+Error: Unable to find a match: iperf
+[root@davinci-mini ~]# yum install stress
+Last metadata expiration check: -20465 days, 16:04:31 ago on Sun Jan 11 08:03:41 2026.
+No match for argument: stress
+Error: Unable to find a match: stress
+[root@davinci-mini ~]# yum install fio
+Last metadata expiration check: -20465 days, 16:04:39 ago on Sun Jan 11 08:03:41 2026.
+Dependencies resolved.
+================================================================================
+ Package          Arch       Version                   Repository          Size
+================================================================================
+Installing:
+ fio              aarch64    3.29-2.oe2203sp3          openeuler-local    385 k
+Installing dependencies:
+ fmt              aarch64    8.0.1-2.oe2203sp3         openeuler-local     97 k
+ libaio           aarch64    0.3.113-9.oe2203sp3       openeuler-local     21 k
+ libnl3           aarch64    3.7.0-2.oe2203sp3         openeuler-local    385 k
+ librados2        aarch64    2:16.2.7-19.oe2203sp3     openeuler-local    3.2 M
+ librbd1          aarch64    2:16.2.7-19.oe2203sp3     openeuler-local    2.6 M
+ lttng-ust        aarch64    2.10.1-11.oe2203sp3       openeuler-local    176 k
+ numactl-libs     aarch64    2.0.16-8.oe2203sp3        openeuler-local     27 k
+ rdma-core        aarch64    41.0-25.oe2203sp3         openeuler-local    824 k
+ userspace-rcu    aarch64    0.13.0-5.oe2203sp3        openeuler-local     87 k
+
+Transaction Summary
+================================================================================
+Install  10 Packages
+
+Total download size: 7.8 M
+Installed size: 37 M
+Is this ok [y/N]: y
+Downloading Packages:
+Error opening /cdtmp/Packages/fio-3.29-2.oe2203sp3.aarch64.rpm: No such file or directory
+Package "fio-3.29-2.oe2203sp3.aarch64" from local repository "openeuler-local" has incorrect checksum
+Error opening /cdtmp/Packages/fmt-8.0.1-2.oe2203sp3.aarch64.rpm: No such file or directory
+Package "fmt-8.0.1-2.oe2203sp3.aarch64" from local repository "openeuler-local" has incorrect checksum
+Error opening /cdtmp/Packages/libaio-0.3.113-9.oe2203sp3.aarch64.rpm: No such file or directory
+Package "libaio-0.3.113-9.oe2203sp3.aarch64" from local repository "openeuler-local" has incorrect checksum
+Error opening /cdtmp/Packages/libnl3-3.7.0-2.oe2203sp3.aarch64.rpm: No such file or directory
+Package "libnl3-3.7.0-2.oe2203sp3.aarch64" from local repository "openeuler-local" has incorrect checksum
+Error opening /cdtmp/Packages/librados2-16.2.7-19.oe2203sp3.aarch64.rpm: No such file or directory
+Package "librados2-2:16.2.7-19.oe2203sp3.aarch64" from local repository "openeuler-local" has incorrect checksum
+Error opening /cdtmp/Packages/librbd1-16.2.7-19.oe2203sp3.aarch64.rpm: No such file or directory
+Package "librbd1-2:16.2.7-19.oe2203sp3.aarch64" from local repository "openeuler-local" has incorrect checksum
+Error opening /cdtmp/Packages/lttng-ust-2.10.1-11.oe2203sp3.aarch64.rpm: No such file or directory
+Package "lttng-ust-2.10.1-11.oe2203sp3.aarch64" from local repository "openeuler-local" has incorrect checksum
+Error opening /cdtmp/Packages/numactl-libs-2.0.16-8.oe2203sp3.aarch64.rpm: No such file or directory
+Package "numactl-libs-2.0.16-8.oe2203sp3.aarch64" from local repository "openeuler-local" has incorrect checksum
+Error opening /cdtmp/Packages/rdma-core-41.0-25.oe2203sp3.aarch64.rpm: No such file or directory
+Package "rdma-core-41.0-25.oe2203sp3.aarch64" from local repository "openeuler-local" has incorrect checksum
+Error opening /cdtmp/Packages/userspace-rcu-0.13.0-5.oe2203sp3.aarch64.rpm: No such file or directory
+Package "userspace-rcu-0.13.0-5.oe2203sp3.aarch64" from local repository "openeuler-local" has incorrect checksum
+Error: Some packages from local repository have incorrect checksum
+[root@davinci-mini ~]# ls
+log
+[root@davinci-mini ~]# cd /root/
+[root@davinci-mini ~]# ls
+log
+[root@davinci-mini ~]# yum install iperf3
+Last metadata expiration check: -20465 days, 16:05:31 ago on Sun Jan 11 08:03:41 2026.
+Dependencies resolved.
+================================================================================
+ Package     Architecture Version                    Repository            Size
+================================================================================
+Installing:
+ iperf3      aarch64      3.10.1-3.oe2203sp3         openeuler-local       82 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 82 k
+Installed size: 311 k
+Is this ok [y/N]: y
+Downloading Packages:
+Error opening /cdtmp/Packages/iperf3-3.10.1-3.oe2203sp3.aarch64.rpm: No such file or directory
+Package "iperf3-3.10.1-3.oe2203sp3.aarch64" from local repository "openeuler-local" has incorrect checksum
+Error: Some packages from local repository have incorrect checksum
+[root@davinci-mini ~]# yum install --disablerepo=openeuler-local iperf3
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+[root@davinci-mini ~]# wget http://mirror.centos.org/altarch/7/os/aarch64/Packages/iperf3-3.1.3-1.el7.aarch64.rpm
+-bash: wget: command not found
+[root@davinci-mini ~]# sudo rpm -ivh iperf3-3.1.3-1.el7.aarch64.rpm
+error: open of iperf3-3.1.3-1.el7.aarch64.rpm failed: No such file or directory
+[root@davinci-mini ~]# wget https://downloads.es.net/pub/iperf/iperf-3.10.1.tar.gz
+-bash: wget: command not found
+[root@davinci-mini ~]# yum install wget
+Last metadata expiration check: -20465 days, 16:06:36 ago on Sun Jan 11 08:03:41 2026.
+Dependencies resolved.
+================================================================================
+ Package         Arch        Version                  Repository           Size
+================================================================================
+Installing:
+ wget            aarch64     1.21.2-3.oe2203sp3       openeuler-local     658 k
+Installing dependencies:
+ libmetalink     aarch64     0.1.3-10.oe2203sp3       openeuler-local      26 k
+
+Transaction Summary
+================================================================================
+Install  2 Packages
+
+Total download size: 684 k
+Installed size: 3.2 M
+Is this ok [y/N]: y
+Downloading Packages:
+Error opening /cdtmp/Packages/libmetalink-0.1.3-10.oe2203sp3.aarch64.rpm: No such file or directory
+Package "libmetalink-0.1.3-10.oe2203sp3.aarch64" from local repository "openeuler-local" has incorrect checksum
+Error opening /cdtmp/Packages/wget-1.21.2-3.oe2203sp3.aarch64.rpm: No such file or directory
+Package "wget-1.21.2-3.oe2203sp3.aarch64" from local repository "openeuler-local" has incorrect checksum
+Error: Some packages from local repository have incorrect checksum
+[root@davinci-mini ~]# ls
+log
+[root@davinci-mini ~]# cd /tmp/
+[root@davinci-mini tmp]# ls
+iperf-3.10.1.tar.gz
+systemd-private-f4b5b0e024404a6d80c12652309a1803-systemd-logind.service-9VCGHT
+[root@davinci-mini tmp]# cd iperf-3.10.1.tar.gz
+-bash: cd: iperf-3.10.1.tar.gz: Not a directory
+[root@davinci-mini tmp]# untar iperf-3.10.1.tar.gz
+-bash: untar: command not found
+[root@davinci-mini tmp]# tar -xzf iperf-3.10.1.tar.gz
+tar: iperf-3.10.1/.github/CONTRIBUTING.md: time stamp 2021-06-02 22:29:24 is 1622671843.693159459 s in the future
+tar: iperf-3.10.1/.github/ISSUE_TEMPLATE.md: time stamp 2021-06-02 22:29:24 is 1622671843.693023235 s in the future
+tar: iperf-3.10.1/.github/PULL_REQUEST_TEMPLATE.md: time stamp 2021-06-02 22:29:24 is 1622671843.692950969 s in the future
+tar: iperf-3.10.1/.github: time stamp 2021-06-02 22:29:24 is 1622671843.69288886 s in the future
+tar: iperf-3.10.1/.gitignore: time stamp 2021-06-02 22:29:24 is 1622671843.692786803 s in the future
+tar: iperf-3.10.1/.travis.yml: time stamp 2021-06-02 22:29:24 is 1622671843.692719199 s in the future
+tar: iperf-3.10.1/INSTALL: time stamp 2021-06-02 22:29:24 is 1622671843.692637454 s in the future
+tar: iperf-3.10.1/LICENSE: time stamp 2021-06-02 22:29:24 is 1622671843.692110214 s in the future
+tar: iperf-3.10.1/Makefile.am: time stamp 2021-06-02 22:29:24 is 1622671843.692033756 s in the future
+tar: iperf-3.10.1/Makefile.in: time stamp 2021-06-02 22:29:24 is 1622671843.691262532 s in the future
+tar: iperf-3.10.1/README.md: time stamp 2021-06-02 22:29:24 is 1622671843.691170032 s in the future
+tar: iperf-3.10.1/RELNOTES.md: time stamp 2021-06-02 22:29:24 is 1622671843.690597141 s in the future
+tar: iperf-3.10.1/aclocal.m4: time stamp 2021-06-02 22:29:24 is 1622671843.68610899 s in the future
+tar: iperf-3.10.1/bootstrap.sh: time stamp 2021-06-02 22:29:24 is 1622671843.686005579 s in the future
+tar: iperf-3.10.1/config/ax_check_openssl.m4: time stamp 2021-06-02 22:29:24 is 1622671843.685901699 s in the future
+tar: iperf-3.10.1/config/compile: time stamp 2021-06-02 22:29:24 is 1622671843.68541662 s in the future
+tar: iperf-3.10.1/config/config.guess: time stamp 2021-06-02 22:29:24 is 1622671843.684800553 s in the future
+tar: iperf-3.10.1/config/config.sub: time stamp 2021-06-02 22:29:24 is 1622671843.6842211 s in the future
+tar: iperf-3.10.1/config/depcomp: time stamp 2021-06-02 22:29:24 is 1622671843.683566412 s in the future
+tar: iperf-3.10.1/config/install-sh: time stamp 2021-06-02 22:29:24 is 1622671843.683019094 s in the future
+tar: iperf-3.10.1/config/iperf_config_static_bin.m4: time stamp 2021-06-02 22:29:24 is 1622671843.682940214 s in the future
+tar: iperf-3.10.1/config/ltmain.sh: time stamp 2021-06-02 22:29:24 is 1622671843.678522115 s in the future
+tar: iperf-3.10.1/config/missing: time stamp 2021-06-02 22:29:24 is 1622671843.677911829 s in the future
+tar: iperf-3.10.1/config/mkinstalldirs: time stamp 2021-06-02 22:29:24 is 1622671843.677820683 s in the future
+tar: iperf-3.10.1/config/test-driver: time stamp 2021-06-02 22:29:24 is 1622671843.677722402 s in the future
+tar: iperf-3.10.1/config: time stamp 2021-06-02 22:29:24 is 1622671843.677669042 s in the future
+tar: iperf-3.10.1/configure: time stamp 2021-06-02 22:29:24 is 1622671843.671502376 s in the future
+tar: iperf-3.10.1/configure.ac: time stamp 2021-06-02 22:29:24 is 1622671843.671358704 s in the future
+tar: iperf-3.10.1/contrib/Dockerfile: time stamp 2021-06-02 22:29:24 is 1622671843.670818808 s in the future
+tar: iperf-3.10.1/contrib/README.txt: time stamp 2021-06-02 22:29:24 is 1622671843.670743495 s in the future
+tar: iperf-3.10.1/contrib/iperf3.gp: time stamp 2021-06-02 22:29:24 is 1622671843.670679094 s in the future
+tar: iperf-3.10.1/contrib/iperf3.service: time stamp 2021-06-02 22:29:24 is 1622671843.670618001 s in the future
+tar: iperf-3.10.1/contrib/iperf3_to_gnuplot.py: time stamp 2021-06-02 22:29:24 is 1622671843.670557376 s in the future
+tar: iperf-3.10.1/contrib: time stamp 2021-06-02 22:29:24 is 1622671843.670502975 s in the future
+tar: iperf-3.10.1/docs/2017-04-27.txt: time stamp 2021-06-02 22:29:24 is 1622671843.670410032 s in the future
+tar: iperf-3.10.1/docs/2017-06-06.txt: time stamp 2021-06-02 22:29:24 is 1622671843.670346881 s in the future
+tar: iperf-3.10.1/docs/Makefile: time stamp 2021-06-02 22:29:24 is 1622671843.670269094 s in the future
+tar: iperf-3.10.1/docs/_esnet/LICENSE: time stamp 2021-06-02 22:29:24 is 1622671843.670195058 s in the future
+tar: iperf-3.10.1/docs/_esnet/README.rst: time stamp 2021-06-02 22:29:24 is 1622671843.669818287 s in the future
+tar: iperf-3.10.1/docs/_esnet/deploy.sh: time stamp 2021-06-02 22:29:24 is 1622671843.669744563 s in the future
+tar: iperf-3.10.1/docs/_esnet/static/ESnet_Final_Logos_All_Blue_Circle_Stamp_RGB.png: time stamp 2021-06-02 22:29:24 is 1622671843.669629303 s in the future
+tar: iperf-3.10.1/docs/_esnet/static/esnet.css: time stamp 2021-06-02 22:29:24 is 1622671843.336237662 s in the future
+tar: iperf-3.10.1/docs/_esnet/static/favicon.ico: time stamp 2021-06-02 22:29:24 is 1622671843.336130214 s in the future
+tar: iperf-3.10.1/docs/_esnet/static/icon-github.png: time stamp 2021-06-02 22:29:24 is 1622671843.336037427 s in the future
+tar: iperf-3.10.1/docs/_esnet/static/logo-esnet-ball-sm.png: time stamp 2021-06-02 22:29:24 is 1622671843.335869433 s in the future
+tar: iperf-3.10.1/docs/_esnet/static/logo-esnet-ball.png: time stamp 2021-06-02 22:29:24 is 1622671843.335796308 s in the future
+tar: iperf-3.10.1/docs/_esnet/static/logo-esnet-name.png: time stamp 2021-06-02 22:29:24 is 1622671843.335697662 s in the future
+tar: iperf-3.10.1/docs/_esnet/static/logo-esnet.png: time stamp 2021-06-02 22:29:24 is 1622671843.334974901 s in the future
+tar: iperf-3.10.1/docs/_esnet/static: time stamp 2021-06-02 22:29:24 is 1622671843.334904355 s in the future
+tar: iperf-3.10.1/docs/_esnet/templates/layout.html: time stamp 2021-06-02 22:29:24 is 1622671843.334794849 s in the future
+tar: iperf-3.10.1/docs/_esnet/templates/navbar.html: time stamp 2021-06-02 22:29:24 is 1622671843.334728469 s in the future
+tar: iperf-3.10.1/docs/_esnet/templates/relations.html: time stamp 2021-06-02 22:29:24 is 1622671843.334658573 s in the future
+tar: iperf-3.10.1/docs/_esnet/templates: time stamp 2021-06-02 22:29:24 is 1622671843.33461123 s in the future
+tar: iperf-3.10.1/docs/_esnet: time stamp 2021-06-02 22:29:24 is 1622671843.33455498 s in the future
+tar: iperf-3.10.1/docs/building.rst: time stamp 2021-06-02 22:29:24 is 1622671843.33448024 s in the future
+tar: iperf-3.10.1/docs/conf.py: time stamp 2021-06-02 22:29:24 is 1622671843.333903547 s in the future
+tar: iperf-3.10.1/docs/dev.rst: time stamp 2021-06-02 22:29:24 is 1622671843.333809329 s in the future
+tar: iperf-3.10.1/docs/faq.rst: time stamp 2021-06-02 22:29:24 is 1622671843.333723834 s in the future
+tar: iperf-3.10.1/docs/index.rst: time stamp 2021-06-02 22:29:24 is 1622671843.333660917 s in the future
+tar: iperf-3.10.1/docs/invoking.rst: time stamp 2021-06-02 22:29:24 is 1622671843.333078365 s in the future
+tar: iperf-3.10.1/docs/news.rst: time stamp 2021-06-02 22:29:24 is 1622671843.33258412 s in the future
+tar: iperf-3.10.1/docs/obtaining.rst: time stamp 2021-06-02 22:29:24 is 1622671843.332501646 s in the future
+tar: iperf-3.10.1/docs: time stamp 2021-06-02 22:29:24 is 1622671843.332451073 s in the future
+tar: iperf-3.10.1/examples/Makefile.am: time stamp 2021-06-02 22:29:24 is 1622671843.332362896 s in the future
+tar: iperf-3.10.1/examples/Makefile.in: time stamp 2021-06-02 22:29:24 is 1622671843.331856464 s in the future
+tar: iperf-3.10.1/examples/mic.c: time stamp 2021-06-02 22:29:24 is 1622671843.331779016 s in the future
+tar: iperf-3.10.1/examples/mis.c: time stamp 2021-06-02 22:29:24 is 1622671843.33171412 s in the future
+tar: iperf-3.10.1/examples: time stamp 2021-06-02 22:29:24 is 1622671843.331666776 s in the future
+tar: iperf-3.10.1/iperf3.spec.in: time stamp 2021-06-02 22:29:24 is 1622671843.331581177 s in the future
+tar: iperf-3.10.1/make_release: time stamp 2021-06-02 22:29:24 is 1622671843.331490318 s in the future
+tar: iperf-3.10.1/src/Makefile.am: time stamp 2021-06-02 22:29:24 is 1622671843.331412454 s in the future
+tar: iperf-3.10.1/src/Makefile.in: time stamp 2021-06-02 22:29:24 is 1622671843.330440214 s in the future
+tar: iperf-3.10.1/src/cjson.c: time stamp 2021-06-02 22:29:24 is 1622671843.32926761 s in the future
+tar: iperf-3.10.1/src/cjson.h: time stamp 2021-06-02 22:29:24 is 1622671843.329145839 s in the future
+tar: iperf-3.10.1/src/dscp.c: time stamp 2021-06-02 22:29:24 is 1622671843.329067401 s in the future
+tar: iperf-3.10.1/src/flowlabel.h: time stamp 2021-06-02 22:29:24 is 1622671843.328996099 s in the future
+tar: iperf-3.10.1/src/iperf.h: time stamp 2021-06-02 22:29:24 is 1622671842.995503964 s in the future
+tar: iperf-3.10.1/src/iperf3.1: time stamp 2021-06-02 22:29:24 is 1622671842.99536399 s in the future
+tar: iperf-3.10.1/src/iperf_api.c: time stamp 2021-06-02 22:29:24 is 1622671842.994085422 s in the future
+tar: iperf-3.10.1/src/iperf_api.h: time stamp 2021-06-02 22:29:24 is 1622671842.99363399 s in the future
+tar: iperf-3.10.1/src/iperf_auth.c: time stamp 2021-06-02 22:29:24 is 1622671842.993534328 s in the future
+tar: iperf-3.10.1/src/iperf_auth.h: time stamp 2021-06-02 22:29:24 is 1622671842.99346688 s in the future
+tar: iperf-3.10.1/src/iperf_client_api.c: time stamp 2021-06-02 22:29:24 is 1622671842.993058703 s in the future
+tar: iperf-3.10.1/src/iperf_config.h.in: time stamp 2021-06-02 22:29:24 is 1622671842.99298563 s in the future
+tar: iperf-3.10.1/src/iperf_error.c: time stamp 2021-06-02 22:29:24 is 1622671842.992555266 s in the future
+tar: iperf-3.10.1/src/iperf_locale.c: time stamp 2021-06-02 22:29:24 is 1622671842.992430552 s in the future
+tar: iperf-3.10.1/src/iperf_locale.h: time stamp 2021-06-02 22:29:24 is 1622671842.992071073 s in the future
+tar: iperf-3.10.1/src/iperf_sctp.c: time stamp 2021-06-02 22:29:24 is 1622671842.991886776 s in the future
+tar: iperf-3.10.1/src/iperf_sctp.h: time stamp 2021-06-02 22:29:24 is 1622671842.991808807 s in the future
+tar: iperf-3.10.1/src/iperf_server_api.c: time stamp 2021-06-02 22:29:24 is 1622671842.991429927 s in the future
+tar: iperf-3.10.1/src/iperf_tcp.c: time stamp 2021-06-02 22:29:24 is 1622671842.991089979 s in the future
+tar: iperf-3.10.1/src/iperf_tcp.h: time stamp 2021-06-02 22:29:24 is 1622671842.991018104 s in the future
+tar: iperf-3.10.1/src/iperf_time.c: time stamp 2021-06-02 22:29:24 is 1622671842.990940266 s in the future
+tar: iperf-3.10.1/src/iperf_time.h: time stamp 2021-06-02 22:29:24 is 1622671842.990877479 s in the future
+tar: iperf-3.10.1/src/iperf_udp.c: time stamp 2021-06-02 22:29:24 is 1622671842.990450604 s in the future
+tar: iperf-3.10.1/src/iperf_udp.h: time stamp 2021-06-02 22:29:24 is 1622671842.990371568 s in the future
+tar: iperf-3.10.1/src/iperf_util.c: time stamp 2021-06-02 22:29:24 is 1622671842.990285813 s in the future
+tar: iperf-3.10.1/src/iperf_util.h: time stamp 2021-06-02 22:29:24 is 1622671842.99021386 s in the future
+tar: iperf-3.10.1/src/libiperf.3: time stamp 2021-06-02 22:29:24 is 1622671842.990153886 s in the future
+tar: iperf-3.10.1/src/main.c: time stamp 2021-06-02 22:29:24 is 1622671842.989728781 s in the future
+tar: iperf-3.10.1/src/net.c: time stamp 2021-06-02 22:29:24 is 1622671842.989639745 s in the future
+tar: iperf-3.10.1/src/net.h: time stamp 2021-06-02 22:29:24 is 1622671842.989575083 s in the future
+tar: iperf-3.10.1/src/portable_endian.h: time stamp 2021-06-02 22:29:24 is 1622671842.989501542 s in the future
+tar: iperf-3.10.1/src/private.pem: time stamp 2021-06-02 22:29:24 is 1622671842.989441099 s in the future
+tar: iperf-3.10.1/src/public.pem: time stamp 2021-06-02 22:29:24 is 1622671842.989382115 s in the future
+tar: iperf-3.10.1/src/queue.h: time stamp 2021-06-02 22:29:24 is 1622671842.989074823 s in the future
+tar: iperf-3.10.1/src/t_api.c: time stamp 2021-06-02 22:29:24 is 1622671842.989003886 s in the future
+tar: iperf-3.10.1/src/t_auth.c: time stamp 2021-06-02 22:29:24 is 1622671842.988876151 s in the future
+tar: iperf-3.10.1/src/t_timer.c: time stamp 2021-06-02 22:29:24 is 1622671842.988810031 s in the future
+tar: iperf-3.10.1/src/t_units.c: time stamp 2021-06-02 22:29:24 is 1622671842.98873938 s in the future
+tar: iperf-3.10.1/src/t_uuid.c: time stamp 2021-06-02 22:29:24 is 1622671842.988677714 s in the future
+tar: iperf-3.10.1/src/tcp_info.c: time stamp 2021-06-02 22:29:24 is 1622671842.988294927 s in the future
+tar: iperf-3.10.1/src/timer.c: time stamp 2021-06-02 22:29:24 is 1622671842.988219485 s in the future
+tar: iperf-3.10.1/src/timer.h: time stamp 2021-06-02 22:29:24 is 1622671842.65474912 s in the future
+tar: iperf-3.10.1/src/units.c: time stamp 2021-06-02 22:29:24 is 1622671842.654620031 s in the future
+tar: iperf-3.10.1/src/units.h: time stamp 2021-06-02 22:29:24 is 1622671842.654549979 s in the future
+tar: iperf-3.10.1/src/version.h.in: time stamp 2021-06-02 22:29:24 is 1622671842.654490161 s in the future
+tar: iperf-3.10.1/src: time stamp 2021-06-02 22:29:24 is 1622671842.654444016 s in the future
+tar: iperf-3.10.1/test_commands.sh: time stamp 2021-06-02 22:29:24 is 1622671842.654362844 s in the future
+tar: iperf-3.10.1: time stamp 2021-06-02 22:29:24 is 1622671842.65428326 s in the future
+[root@davinci-mini tmp]# cd iperf-3.10.1
+[root@davinci-mini iperf-3.10.1]# ./configure
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... configure: error: newly created file is older than distributed files!
+Check your system clock
+[root@davinci-mini iperf-3.10.1]# find . -type f -exec touch {} +
+[root@davinci-mini iperf-3.10.1]# ./configure
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking build system type... aarch64-unknown-linux-gnu
+checking host system type... aarch64-unknown-linux-gnu
+checking how to print strings... printf
+checking whether make supports the include directive... yes (GNU style)
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking how to convert aarch64-unknown-linux-gnu file names to aarch64-unknown-linux-gnu format... func_convert_file_noop
+checking how to convert aarch64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for gcc... (cached) gcc
+checking whether the compiler supports GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to enable C11 features... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) gcc3
+checking for ranlib... (cached) ranlib
+checking whether ln -s works... yes
+checking for library containing floor... -lm
+checking for library containing socket... none required
+checking for library containing inet_ntop... none required
+checking for an ANSI C-conforming const... yes
+checking for poll.h... yes
+checking for linux/tcp.h... yes
+checking for sys/socket.h... yes
+checking for netinet/sctp.h... no
+checking for endian.h... yes
+checking for pkg-config... pkg-config
+checking for openssl/ssl.h in /usr/local/ssl... no
+checking for openssl/ssl.h in /usr/lib/ssl... no
+checking for openssl/ssl.h in /usr/ssl... no
+checking for openssl/ssl.h in /usr/pkg... no
+checking for openssl/ssl.h in /usr/local... no
+checking for openssl/ssl.h in /usr... no
+checking whether compiling and linking against OpenSSL works... no
+checking TCP_CONGESTION socket option... yes
+checking IPv6 flowlabel support... yes
+checking for cpuset_setaffinity... no
+checking for sched_setaffinity... yes
+checking for SetProcessAffinityMask... no
+checking for daemon... yes
+checking for sendfile... yes
+checking for getline... yes
+checking SO_MAX_PACING_RATE socket option... yes
+checking SO_BINDTODEVICE socket option... yes
+checking IP_MTU_DISCOVER socket option... yes
+checking IP_DONTFRAG socket option... no
+checking IP_DONTFRAGMENT socket option... no
+checking any kind of DF socket option... yes
+checking for struct tcp_info.tcpi_snd_wnd... yes
+checking for library containing clock_gettime... none required
+checking for clock_gettime... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating src/version.h
+config.status: creating examples/Makefile
+config.status: creating iperf3.spec
+config.status: creating src/iperf_config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+[root@davinci-mini iperf-3.10.1]# make
+Making all in src
+make[1]: Entering directory '/tmp/iperf-3.10.1/src'
+make  all-am
+make[2]: Entering directory '/tmp/iperf-3.10.1/src'
+  CC       iperf3-main.o
+  CC       cjson.lo
+  CC       iperf_api.lo
+
+  CC       iperf_error.lo
+  CC       iperf_auth.lo
+  CC       iperf_client_api.lo
+  CC       iperf_locale.lo
+  CC       iperf_server_api.lo
+  CC       iperf_tcp.lo
+  CC       iperf_udp.lo
+  CC       iperf_sctp.lo
+  CC       iperf_util.lo
+  CC       iperf_time.lo
+  CC       dscp.lo
+  CC       net.lo
+  CC       tcp_info.lo
+  CC       timer.lo
+  CC       units.lo
+  CCLD     libiperf.la
+  CCLD     iperf3
+  CC       t_timer-t_timer.o
+  CCLD     t_timer
+  CC       t_units-t_units.o
+  CCLD     t_units
+  CC       t_uuid-t_uuid.o
+  CCLD     t_uuid
+  CC       t_api-t_api.o
+  CCLD     t_api
+  CC       t_auth-t_auth.o
+  CCLD     t_auth
+make[2]: Leaving directory '/tmp/iperf-3.10.1/src'
+make[1]: Leaving directory '/tmp/iperf-3.10.1/src'
+Making all in examples
+make[1]: Entering directory '/tmp/iperf-3.10.1/examples'
+  CC       mic-mic.o
+  CCLD     mic
+  CC       mis-mis.o
+  CCLD     mis
+make[1]: Leaving directory '/tmp/iperf-3.10.1/examples'
+make[1]: Entering directory '/tmp/iperf-3.10.1'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/tmp/iperf-3.10.1'
+[root@davinci-mini iperf-3.10.1]#
+[root@davinci-mini iperf-3.10.1]# make install
+Making install in src
+make[1]: Entering directory '/tmp/iperf-3.10.1/src'
+make[1]: Warning: File '/usr/include/stdc-predef.h' has modification time 1703742433 s in the future
+  CC       iperf3-main.o
+  CC       cjson.lo
+  CC       iperf_api.lo
+  CC       iperf_error.lo
+  CC       iperf_auth.lo
+  CC       iperf_client_api.lo
+  CC       iperf_locale.lo
+  CC       iperf_server_api.lo
+  CC       iperf_tcp.lo
+  CC       iperf_udp.lo
+  CC       iperf_sctp.lo
+  CC       iperf_util.lo
+  CC       iperf_time.lo
+  CC       dscp.lo
+  CC       net.lo
+  CC       tcp_info.lo
+  CC       timer.lo
+  CC       units.lo
+  CCLD     libiperf.la
+  CCLD     iperf3
+  CC       t_timer-t_timer.o
+  CCLD     t_timer
+  CC       t_units-t_units.o
+  CCLD     t_units
+  CC       t_uuid-t_uuid.o
+  CCLD     t_uuid
+  CC       t_api-t_api.o
+  CCLD     t_api
+  CC       t_auth-t_auth.o
+  CCLD     t_auth
+make[2]: Entering directory '/tmp/iperf-3.10.1/src'
+make[2]: Warning: File '/usr/include/stdc-predef.h' has modification time 1703742404 s in the future
+  CC       iperf3-main.o
+  CC       cjson.lo
+  CC       iperf_api.lo
+  CC       iperf_error.lo
+  CC       iperf_auth.lo
+  CC       iperf_client_api.lo
+  CC       iperf_locale.lo
+  CC       iperf_server_api.lo
+  CC       iperf_tcp.lo
+  CC       iperf_udp.lo
+  CC       iperf_sctp.lo
+  CC       iperf_util.lo
+  CC       iperf_time.lo
+  CC       dscp.lo
+  CC       net.lo
+  CC       tcp_info.lo
+  CC       timer.lo
+  CC       units.lo
+  CCLD     libiperf.la
+  CCLD     iperf3
+ /usr/bin/mkdir -p '/usr/local/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libiperf.la '/usr/local/lib'
+libtool: install: /usr/bin/install -c .libs/libiperf.so.0.0.0 /usr/local/lib/libiperf.so.0.0.0
+libtool: install: (cd /usr/local/lib && { ln -s -f libiperf.so.0.0.0 libiperf.so.0 || { rm -f libiperf.so.0 && ln -s libiperf.so.0.0.0 libiperf.so.0; }; })
+libtool: install: (cd /usr/local/lib && { ln -s -f libiperf.so.0.0.0 libiperf.so || { rm -f libiperf.so && ln -s libiperf.so.0.0.0 libiperf.so; }; })
+libtool: install: /usr/bin/install -c .libs/libiperf.lai /usr/local/lib/libiperf.la
+libtool: install: /usr/bin/install -c .libs/libiperf.a /usr/local/lib/libiperf.a
+libtool: install: chmod 644 /usr/local/lib/libiperf.a
+libtool: install: ranlib /usr/local/lib/libiperf.a
+libtool: finish: PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin" ldconfig -n /usr/local/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/local/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/usr/local/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c iperf3 '/usr/local/bin'
+libtool: install: /usr/bin/install -c .libs/iperf3 /usr/local/bin/iperf3
+ /usr/bin/mkdir -p '/usr/local/include'
+ /usr/bin/install -c -m 644 iperf_api.h '/usr/local/include'
+ /usr/bin/mkdir -p '/usr/local/share/man/man1'
+ /usr/bin/install -c -m 644 iperf3.1 '/usr/local/share/man/man1'
+ /usr/bin/mkdir -p '/usr/local/share/man/man3'
+ /usr/bin/install -c -m 644 libiperf.3 '/usr/local/share/man/man3'
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+make[2]: Leaving directory '/tmp/iperf-3.10.1/src'
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Leaving directory '/tmp/iperf-3.10.1/src'
+Making install in examples
+make[1]: Entering directory '/tmp/iperf-3.10.1/examples'
+make[1]: Warning: File '/usr/include/stdc-predef.h' has modification time 1703742376 s in the future
+  CC       mic-mic.o
+  CCLD     mic
+  CC       mis-mis.o
+  CCLD     mis
+make[2]: Entering directory '/tmp/iperf-3.10.1/examples'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/tmp/iperf-3.10.1/examples'
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Leaving directory '/tmp/iperf-3.10.1/examples'
+make[1]: Entering directory '/tmp/iperf-3.10.1'
+make[2]: Entering directory '/tmp/iperf-3.10.1'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/tmp/iperf-3.10.1'
+make[1]: Leaving directory '/tmp/iperf-3.10.1'
+[root@davinci-mini iperf-3.10.1]# cd
+[root@davinci-mini ~]# iperf3 -s
+-----------------------------------------------------------
+Server listening on 5201 (test #1)
+-----------------------------------------------------------
+Accepted connection from 192.168.0.2, port 40690
+[  5] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40696
+[  8] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40704
+[ 10] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40720
+[ 12] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40734
+[ 14] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40736
+[ 16] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40738
+[ 18] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40752
+[ 20] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40760
+[ 22] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40768
+[ 24] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40770
+[ 26] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40784
+[ 28] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40792
+[ 30] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40802
+[ 32] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40810
+[ 34] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40818
+[ 36] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40828
+[ 38] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40836
+[ 40] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40848
+[ 42] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40850
+[ 44] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40862
+[ 46] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40866
+[ 48] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40882
+[ 50] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40890
+[ 52] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40902
+[ 54] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40908
+[ 56] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40918
+[ 58] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40932
+[ 60] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40948
+[ 62] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40964
+[ 64] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40980
+[ 66] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 40990
+[ 68] local 192.168.0.9 port 5201 connected to 192.168.0.2 port 41002
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.00   sec  4.33 MBytes  36.4 Mbits/sec
+[  8]   0.00-1.00   sec  3.07 MBytes  25.8 Mbits/sec
+[ 10]   0.00-1.00   sec  1.97 MBytes  16.6 Mbits/sec
+[ 12]   0.00-1.00   sec  2.33 MBytes  19.5 Mbits/sec
+[ 14]   0.00-1.00   sec  5.34 MBytes  44.8 Mbits/sec
+[ 16]   0.00-1.00   sec  5.20 MBytes  43.6 Mbits/sec
+[ 18]   0.00-1.00   sec  3.49 MBytes  29.3 Mbits/sec
+[ 20]   0.00-1.00   sec  1.89 MBytes  15.8 Mbits/sec
+[ 22]   0.00-1.00   sec  3.15 MBytes  26.4 Mbits/sec
+[ 24]   0.00-1.00   sec  3.49 MBytes  29.3 Mbits/sec
+[ 26]   0.00-1.00   sec  4.32 MBytes  36.2 Mbits/sec
+[ 28]   0.00-1.00   sec  3.88 MBytes  32.6 Mbits/sec
+[ 30]   0.00-1.00   sec  4.15 MBytes  34.8 Mbits/sec
+[ 32]   0.00-1.00   sec  4.04 MBytes  33.9 Mbits/sec
+[ 34]   0.00-1.00   sec  3.38 MBytes  28.3 Mbits/sec
+[ 36]   0.00-1.00   sec  4.16 MBytes  34.9 Mbits/sec
+[ 38]   0.00-1.00   sec  1.94 MBytes  16.3 Mbits/sec
+[ 40]   0.00-1.00   sec  1.93 MBytes  16.2 Mbits/sec
+[ 42]   0.00-1.00   sec  1.92 MBytes  16.1 Mbits/sec
+[ 44]   0.00-1.00   sec  1.93 MBytes  16.2 Mbits/sec
+[ 46]   0.00-1.00   sec  1.87 MBytes  15.7 Mbits/sec
+[ 48]   0.00-1.00   sec  1.94 MBytes  16.2 Mbits/sec
+[ 50]   0.00-1.00   sec  4.20 MBytes  35.3 Mbits/sec
+[ 52]   0.00-1.00   sec  1.90 MBytes  15.9 Mbits/sec
+[ 54]   0.00-1.00   sec  4.04 MBytes  33.9 Mbits/sec
+[ 56]   0.00-1.00   sec  4.17 MBytes  34.9 Mbits/sec
+[ 58]   0.00-1.00   sec  1.85 MBytes  15.5 Mbits/sec
+[ 60]   0.00-1.00   sec  5.03 MBytes  42.2 Mbits/sec
+[ 62]   0.00-1.00   sec  1.85 MBytes  15.5 Mbits/sec
+[ 64]   0.00-1.00   sec  6.33 MBytes  53.1 Mbits/sec
+[ 66]   0.00-1.00   sec  1.93 MBytes  16.2 Mbits/sec
+[ 68]   0.00-1.00   sec  11.1 MBytes  93.4 Mbits/sec
+[SUM]   0.00-1.00   sec   112 MBytes   941 Mbits/sec
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   1.00-2.00   sec  4.21 MBytes  35.3 Mbits/sec
+[  8]   1.00-2.00   sec  3.00 MBytes  25.1 Mbits/sec
+[ 10]   1.00-2.00   sec  1.92 MBytes  16.1 Mbits/sec
+[ 12]   1.00-2.00   sec  2.26 MBytes  18.9 Mbits/sec
+[ 14]   1.00-2.00   sec  5.35 MBytes  44.9 Mbits/sec
+[ 16]   1.00-2.00   sec  5.31 MBytes  44.6 Mbits/sec
+[ 18]   1.00-2.00   sec  3.50 MBytes  29.4 Mbits/sec
+[ 20]   1.00-2.00   sec  1.84 MBytes  15.5 Mbits/sec
+[ 22]   1.00-2.00   sec  3.16 MBytes  26.5 Mbits/sec
+[ 24]   1.00-2.00   sec  3.50 MBytes  29.4 Mbits/sec
+[ 26]   1.00-2.00   sec  4.25 MBytes  35.7 Mbits/sec
+[ 28]   1.00-2.00   sec  3.95 MBytes  33.1 Mbits/sec
+[ 30]   1.00-2.00   sec  4.28 MBytes  35.9 Mbits/sec
+[ 32]   1.00-2.00   sec  4.07 MBytes  34.2 Mbits/sec
+[ 34]   1.00-2.00   sec  3.41 MBytes  28.6 Mbits/sec
+[ 36]   1.00-2.00   sec  4.20 MBytes  35.3 Mbits/sec
+[ 38]   1.00-2.00   sec  1.91 MBytes  16.0 Mbits/sec
+[ 40]   1.00-2.00   sec  1.92 MBytes  16.1 Mbits/sec
+[ 42]   1.00-2.00   sec  1.91 MBytes  16.0 Mbits/sec
+[ 44]   1.00-2.00   sec  1.92 MBytes  16.1 Mbits/sec
+[ 46]   1.00-2.00   sec  1.85 MBytes  15.5 Mbits/sec
+[ 48]   1.00-2.00   sec  1.92 MBytes  16.1 Mbits/sec
+[ 50]   1.00-2.00   sec  4.24 MBytes  35.6 Mbits/sec
+[ 52]   1.00-2.00   sec  1.92 MBytes  16.1 Mbits/sec
+[ 54]   1.00-2.00   sec  4.08 MBytes  34.3 Mbits/sec
+[ 56]   1.00-2.00   sec  4.25 MBytes  35.7 Mbits/sec
+[ 58]   1.00-2.00   sec  1.85 MBytes  15.5 Mbits/sec
+[ 60]   1.00-2.00   sec  5.12 MBytes  43.0 Mbits/sec
+[ 62]   1.00-2.00   sec  1.85 MBytes  15.5 Mbits/sec
+[ 64]   1.00-2.00   sec  6.87 MBytes  57.7 Mbits/sec
+[ 66]   1.00-2.00   sec  1.89 MBytes  15.9 Mbits/sec
+[ 68]   1.00-2.00   sec  10.5 MBytes  88.3 Mbits/sec
+[SUM]   1.00-2.00   sec   112 MBytes   941 Mbits/sec
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   2.00-3.00   sec  4.16 MBytes  34.9 Mbits/sec
+[  8]   2.00-3.00   sec  2.96 MBytes  24.8 Mbits/sec
+[ 10]   2.00-3.00   sec  1.91 MBytes  16.0 Mbits/sec
+[ 12]   2.00-3.00   sec  2.27 MBytes  19.1 Mbits/sec
+[ 14]   2.00-3.00   sec  5.26 MBytes  44.1 Mbits/sec
+[ 16]   2.00-3.00   sec  5.29 MBytes  44.4 Mbits/sec
+[ 18]   2.00-3.00   sec  3.58 MBytes  30.1 Mbits/sec
+[ 20]   2.00-3.00   sec  1.86 MBytes  15.6 Mbits/sec
+[ 22]   2.00-3.00   sec  3.12 MBytes  26.2 Mbits/sec
+[ 24]   2.00-3.00   sec  3.49 MBytes  29.3 Mbits/sec
+[ 26]   2.00-3.00   sec  4.29 MBytes  36.0 Mbits/sec
+[ 28]   2.00-3.00   sec  3.97 MBytes  33.3 Mbits/sec
+[ 30]   2.00-3.00   sec  4.29 MBytes  36.0 Mbits/sec
+[ 32]   2.00-3.00   sec  4.07 MBytes  34.1 Mbits/sec
+[ 34]   2.00-3.00   sec  3.43 MBytes  28.8 Mbits/sec
+[ 36]   2.00-3.00   sec  4.16 MBytes  34.9 Mbits/sec
+[ 38]   2.00-3.00   sec  1.92 MBytes  16.1 Mbits/sec
+[ 40]   2.00-3.00   sec  1.92 MBytes  16.1 Mbits/sec
+[ 42]   2.00-3.00   sec  1.93 MBytes  16.1 Mbits/sec
+[ 44]   2.00-3.00   sec  1.91 MBytes  16.0 Mbits/sec
+[ 46]   2.00-3.00   sec  1.85 MBytes  15.5 Mbits/sec
+[ 48]   2.00-3.00   sec  1.92 MBytes  16.1 Mbits/sec
+[ 50]   2.00-3.00   sec  4.27 MBytes  35.8 Mbits/sec
+[ 52]   2.00-3.00   sec  1.87 MBytes  15.7 Mbits/sec
+[ 54]   2.00-3.00   sec  4.16 MBytes  34.9 Mbits/sec
+[ 56]   2.00-3.00   sec  4.18 MBytes  35.0 Mbits/sec
+[ 58]   2.00-3.00   sec  1.85 MBytes  15.5 Mbits/sec
+[ 60]   2.00-3.00   sec  5.13 MBytes  43.0 Mbits/sec
+[ 62]   2.00-3.00   sec  1.84 MBytes  15.5 Mbits/sec
+[ 64]   2.00-3.00   sec  6.96 MBytes  58.4 Mbits/sec
+[ 66]   2.00-3.00   sec  1.87 MBytes  15.7 Mbits/sec
+[ 68]   2.00-3.00   sec  10.5 MBytes  88.5 Mbits/sec
+[SUM]   2.00-3.00   sec   112 MBytes   942 Mbits/sec
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   3.00-4.00   sec  4.12 MBytes  34.5 Mbits/sec
+[  8]   3.00-4.00   sec  2.94 MBytes  24.6 Mbits/sec
+[ 10]   3.00-4.00   sec  1.86 MBytes  15.6 Mbits/sec
+[ 12]   3.00-4.00   sec  2.27 MBytes  19.1 Mbits/sec
+[ 14]   3.00-4.00   sec  5.31 MBytes  44.5 Mbits/sec
+[ 16]   3.00-4.00   sec  5.29 MBytes  44.4 Mbits/sec
+[ 18]   3.00-4.00   sec  4.07 MBytes  34.2 Mbits/sec
+[ 20]   3.00-4.00   sec  1.86 MBytes  15.6 Mbits/sec
+[ 22]   3.00-4.00   sec  3.14 MBytes  26.3 Mbits/sec
+[ 24]   3.00-4.00   sec  3.47 MBytes  29.1 Mbits/sec
+[ 26]   3.00-4.00   sec  4.42 MBytes  37.1 Mbits/sec
+[ 28]   3.00-4.00   sec  3.92 MBytes  32.9 Mbits/sec
+[ 30]   3.00-4.00   sec  4.20 MBytes  35.2 Mbits/sec
+[ 32]   3.00-4.00   sec  4.10 MBytes  34.4 Mbits/sec
+[ 34]   3.00-4.00   sec  3.43 MBytes  28.8 Mbits/sec
+[ 36]   3.00-4.00   sec  4.02 MBytes  33.7 Mbits/sec
+[ 38]   3.00-4.00   sec  1.88 MBytes  15.8 Mbits/sec
+[ 40]   3.00-4.00   sec  1.87 MBytes  15.7 Mbits/sec
+[ 42]   3.00-4.00   sec  1.93 MBytes  16.1 Mbits/sec
+[ 44]   3.00-4.00   sec  1.86 MBytes  15.6 Mbits/sec
+[ 46]   3.00-4.00   sec  1.85 MBytes  15.6 Mbits/sec
+[ 48]   3.00-4.00   sec  1.88 MBytes  15.8 Mbits/sec
+[ 50]   3.00-4.00   sec  4.32 MBytes  36.2 Mbits/sec
+[ 52]   3.00-4.00   sec  1.85 MBytes  15.5 Mbits/sec
+[ 54]   3.00-4.00   sec  4.17 MBytes  34.9 Mbits/sec
+[ 56]   3.00-4.00   sec  4.10 MBytes  34.4 Mbits/sec
+[ 58]   3.00-4.00   sec  1.85 MBytes  15.5 Mbits/sec
+[ 60]   3.00-4.00   sec  5.06 MBytes  42.5 Mbits/sec
+[ 62]   3.00-4.00   sec  1.85 MBytes  15.5 Mbits/sec
+[ 64]   3.00-4.00   sec  6.90 MBytes  57.9 Mbits/sec
+[ 66]   3.00-4.00   sec  1.88 MBytes  15.7 Mbits/sec
+[ 68]   3.00-4.00   sec  10.6 MBytes  88.6 Mbits/sec
+[SUM]   3.00-4.00   sec   112 MBytes   941 Mbits/sec
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   4.00-5.00   sec  4.85 MBytes  40.7 Mbits/sec
+[  8]   4.00-5.00   sec  2.94 MBytes  24.7 Mbits/sec
+[ 10]   4.00-5.00   sec  1.89 MBytes  15.9 Mbits/sec
+[ 12]   4.00-5.00   sec  2.26 MBytes  19.0 Mbits/sec
+[ 14]   4.00-5.00   sec  5.25 MBytes  44.1 Mbits/sec
+[ 16]   4.00-5.00   sec  5.28 MBytes  44.3 Mbits/sec
+[ 18]   4.00-5.00   sec  4.06 MBytes  34.1 Mbits/sec
+[ 20]   4.00-5.00   sec  1.85 MBytes  15.5 Mbits/sec
+[ 22]   4.00-5.00   sec  3.15 MBytes  26.4 Mbits/sec
+[ 24]   4.00-5.00   sec  3.45 MBytes  28.9 Mbits/sec
+[ 26]   4.00-5.00   sec  4.25 MBytes  35.6 Mbits/sec
+[ 28]   4.00-5.00   sec  3.97 MBytes  33.3 Mbits/sec
+[ 30]   4.00-5.00   sec  4.29 MBytes  36.0 Mbits/sec
+[ 32]   4.00-5.00   sec  4.08 MBytes  34.2 Mbits/sec
+[ 34]   4.00-5.00   sec  3.42 MBytes  28.7 Mbits/sec
+[ 36]   4.00-5.00   sec  3.95 MBytes  33.2 Mbits/sec
+[ 38]   4.00-5.00   sec  1.86 MBytes  15.6 Mbits/sec
+[ 40]   4.00-5.00   sec  1.87 MBytes  15.7 Mbits/sec
+[ 42]   4.00-5.00   sec  1.92 MBytes  16.1 Mbits/sec
+[ 44]   4.00-5.00   sec  1.87 MBytes  15.7 Mbits/sec
+[ 46]   4.00-5.00   sec  1.85 MBytes  15.5 Mbits/sec
+[ 48]   4.00-5.00   sec  1.86 MBytes  15.6 Mbits/sec
+[ 50]   4.00-5.00   sec  4.10 MBytes  34.4 Mbits/sec
+[ 52]   4.00-5.00   sec  1.85 MBytes  15.5 Mbits/sec
+[ 54]   4.00-5.00   sec  3.93 MBytes  33.0 Mbits/sec
+[ 56]   4.00-5.00   sec  4.14 MBytes  34.7 Mbits/sec
+[ 58]   4.00-5.00   sec  1.85 MBytes  15.5 Mbits/sec
+[ 60]   4.00-5.00   sec  4.97 MBytes  41.7 Mbits/sec
+[ 62]   4.00-5.00   sec  1.85 MBytes  15.5 Mbits/sec
+[ 64]   4.00-5.00   sec  6.91 MBytes  57.9 Mbits/sec
+[ 66]   4.00-5.00   sec  1.82 MBytes  15.3 Mbits/sec
+[ 68]   4.00-5.00   sec  10.6 MBytes  89.1 Mbits/sec
+[SUM]   4.00-5.00   sec   112 MBytes   941 Mbits/sec
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   5.00-6.00   sec  5.62 MBytes  47.2 Mbits/sec
+[  8]   5.00-6.00   sec  2.80 MBytes  23.5 Mbits/sec
+[ 10]   5.00-6.00   sec  3.69 MBytes  30.9 Mbits/sec
+[ 12]   5.00-6.00   sec  2.26 MBytes  19.0 Mbits/sec
+[ 14]   5.00-6.00   sec  5.29 MBytes  44.4 Mbits/sec
+[ 16]   5.00-6.00   sec  5.25 MBytes  44.1 Mbits/sec
+[ 18]   5.00-6.00   sec  3.82 MBytes  32.0 Mbits/sec
+[ 20]   5.00-6.00   sec  1.86 MBytes  15.6 Mbits/sec
+[ 22]   5.00-6.00   sec  3.17 MBytes  26.6 Mbits/sec
+[ 24]   5.00-6.00   sec  3.05 MBytes  25.6 Mbits/sec
+[ 26]   5.00-6.00   sec  4.11 MBytes  34.5 Mbits/sec
+[ 28]   5.00-6.00   sec  3.91 MBytes  32.8 Mbits/sec
+[ 30]   5.00-6.00   sec  3.97 MBytes  33.3 Mbits/sec
+[ 32]   5.00-6.00   sec  4.09 MBytes  34.3 Mbits/sec
+[ 34]   5.00-6.00   sec  3.44 MBytes  28.9 Mbits/sec
+[ 36]   5.00-6.00   sec  3.54 MBytes  29.7 Mbits/sec
+[ 38]   5.00-6.00   sec  1.80 MBytes  15.1 Mbits/sec
+[ 40]   5.00-6.00   sec  1.80 MBytes  15.1 Mbits/sec
+[ 42]   5.00-6.00   sec  1.92 MBytes  16.1 Mbits/sec
+[ 44]   5.00-6.00   sec  1.80 MBytes  15.1 Mbits/sec
+[ 46]   5.00-6.00   sec  1.84 MBytes  15.5 Mbits/sec
+[ 48]   5.00-6.00   sec  1.80 MBytes  15.1 Mbits/sec
+[ 50]   5.00-6.00   sec  4.00 MBytes  33.6 Mbits/sec
+[ 52]   5.00-6.00   sec  1.85 MBytes  15.5 Mbits/sec
+[ 54]   5.00-6.00   sec  3.78 MBytes  31.7 Mbits/sec
+[ 56]   5.00-6.00   sec  3.94 MBytes  33.0 Mbits/sec
+[ 58]   5.00-6.00   sec  1.85 MBytes  15.5 Mbits/sec
+[ 60]   5.00-6.00   sec  4.82 MBytes  40.4 Mbits/sec
+[ 62]   5.00-6.00   sec  1.85 MBytes  15.5 Mbits/sec
+[ 64]   5.00-6.00   sec  6.95 MBytes  58.3 Mbits/sec
+[ 66]   5.00-6.00   sec  1.79 MBytes  15.0 Mbits/sec
+[ 68]   5.00-6.00   sec  10.6 MBytes  88.6 Mbits/sec
+[SUM]   5.00-6.00   sec   112 MBytes   942 Mbits/sec
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   6.00-7.00   sec  5.78 MBytes  48.5 Mbits/sec
+[  8]   6.00-7.00   sec  2.77 MBytes  23.3 Mbits/sec
+[ 10]   6.00-7.00   sec  3.91 MBytes  32.8 Mbits/sec
+[ 12]   6.00-7.00   sec  2.32 MBytes  19.4 Mbits/sec
+[ 14]   6.00-7.00   sec  5.28 MBytes  44.3 Mbits/sec
+[ 16]   6.00-7.00   sec  5.28 MBytes  44.3 Mbits/sec
+[ 18]   6.00-7.00   sec  3.74 MBytes  31.4 Mbits/sec
+[ 20]   6.00-7.00   sec  1.76 MBytes  14.8 Mbits/sec
+[ 22]   6.00-7.00   sec  4.58 MBytes  38.4 Mbits/sec
+[ 24]   6.00-7.00   sec  3.01 MBytes  25.2 Mbits/sec
+[ 26]   6.00-7.00   sec  4.08 MBytes  34.2 Mbits/sec
+[ 28]   6.00-7.00   sec  3.38 MBytes  28.4 Mbits/sec
+[ 30]   6.00-7.00   sec  3.99 MBytes  33.5 Mbits/sec
+[ 32]   6.00-7.00   sec  3.80 MBytes  31.9 Mbits/sec
+[ 34]   6.00-7.00   sec  3.25 MBytes  27.2 Mbits/sec
+[ 36]   6.00-7.00   sec  3.45 MBytes  28.9 Mbits/sec
+[ 38]   6.00-7.00   sec  1.79 MBytes  15.0 Mbits/sec
+[ 40]   6.00-7.00   sec  1.80 MBytes  15.1 Mbits/sec
+[ 42]   6.00-7.00   sec  1.85 MBytes  15.5 Mbits/sec
+[ 44]   6.00-7.00   sec  1.80 MBytes  15.1 Mbits/sec
+[ 46]   6.00-7.00   sec  1.79 MBytes  15.0 Mbits/sec
+[ 48]   6.00-7.00   sec  1.81 MBytes  15.2 Mbits/sec
+[ 50]   6.00-7.00   sec  3.99 MBytes  33.5 Mbits/sec
+[ 52]   6.00-7.00   sec  1.78 MBytes  14.9 Mbits/sec
+[ 54]   6.00-7.00   sec  3.67 MBytes  30.8 Mbits/sec
+[ 56]   6.00-7.00   sec  3.94 MBytes  33.1 Mbits/sec
+[ 58]   6.00-7.00   sec  1.78 MBytes  14.9 Mbits/sec
+[ 60]   6.00-7.00   sec  4.81 MBytes  40.3 Mbits/sec
+[ 62]   6.00-7.00   sec  1.77 MBytes  14.9 Mbits/sec
+[ 64]   6.00-7.00   sec  6.94 MBytes  58.2 Mbits/sec
+[ 66]   6.00-7.00   sec  1.79 MBytes  15.0 Mbits/sec
+[ 68]   6.00-7.00   sec  10.6 MBytes  88.6 Mbits/sec
+[SUM]   6.00-7.00   sec   112 MBytes   941 Mbits/sec
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   7.00-8.00   sec  5.69 MBytes  47.7 Mbits/sec
+[  8]   7.00-8.00   sec  2.74 MBytes  23.0 Mbits/sec
+[ 10]   7.00-8.00   sec  3.94 MBytes  33.0 Mbits/sec
+[ 12]   7.00-8.00   sec  3.39 MBytes  28.5 Mbits/sec
+[ 14]   7.00-8.00   sec  5.04 MBytes  42.3 Mbits/sec
+[ 16]   7.00-8.00   sec  5.20 MBytes  43.6 Mbits/sec
+[ 18]   7.00-8.00   sec  3.79 MBytes  31.8 Mbits/sec
+[ 20]   7.00-8.00   sec  1.58 MBytes  13.2 Mbits/sec
+[ 22]   7.00-8.00   sec  4.75 MBytes  39.8 Mbits/sec
+[ 24]   7.00-8.00   sec  3.02 MBytes  25.3 Mbits/sec
+[ 26]   7.00-8.00   sec  4.05 MBytes  34.0 Mbits/sec
+[ 28]   7.00-8.00   sec  3.15 MBytes  26.4 Mbits/sec
+[ 30]   7.00-8.00   sec  3.93 MBytes  32.9 Mbits/sec
+[ 32]   7.00-8.00   sec  3.32 MBytes  27.9 Mbits/sec
+[ 34]   7.00-8.00   sec  3.17 MBytes  26.6 Mbits/sec
+[ 36]   7.00-8.00   sec  3.49 MBytes  29.3 Mbits/sec
+[ 38]   7.00-8.00   sec  1.79 MBytes  15.0 Mbits/sec
+[ 40]   7.00-8.00   sec  1.79 MBytes  15.0 Mbits/sec
+[ 42]   7.00-8.00   sec  1.80 MBytes  15.1 Mbits/sec
+[ 44]   7.00-8.00   sec  1.79 MBytes  15.0 Mbits/sec
+[ 46]   7.00-8.00   sec  1.72 MBytes  14.4 Mbits/sec
+[ 48]   7.00-8.00   sec  1.79 MBytes  15.0 Mbits/sec
+[ 50]   7.00-8.00   sec  3.91 MBytes  32.8 Mbits/sec
+[ 52]   7.00-8.00   sec  1.73 MBytes  14.5 Mbits/sec
+[ 54]   7.00-8.00   sec  3.80 MBytes  31.9 Mbits/sec
+[ 56]   7.00-8.00   sec  4.03 MBytes  33.8 Mbits/sec
+[ 58]   7.00-8.00   sec  1.72 MBytes  14.5 Mbits/sec
+[ 60]   7.00-8.00   sec  4.80 MBytes  40.3 Mbits/sec
+[ 62]   7.00-8.00   sec  1.73 MBytes  14.5 Mbits/sec
+[ 64]   7.00-8.00   sec  6.71 MBytes  56.3 Mbits/sec
+[ 66]   7.00-8.00   sec  1.77 MBytes  14.9 Mbits/sec
+[ 68]   7.00-8.00   sec  11.1 MBytes  93.2 Mbits/sec
+[SUM]   7.00-8.00   sec   112 MBytes   942 Mbits/sec
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   8.00-9.00   sec  5.82 MBytes  48.9 Mbits/sec
+[  8]   8.00-9.00   sec  2.81 MBytes  23.6 Mbits/sec
+[ 10]   8.00-9.00   sec  3.95 MBytes  33.1 Mbits/sec
+[ 12]   8.00-9.00   sec  3.43 MBytes  28.8 Mbits/sec
+[ 14]   8.00-9.00   sec  4.37 MBytes  36.6 Mbits/sec
+[ 16]   8.00-9.00   sec  4.80 MBytes  40.3 Mbits/sec
+[ 18]   8.00-9.00   sec  3.68 MBytes  30.9 Mbits/sec
+[ 20]   8.00-9.00   sec  1.56 MBytes  13.1 Mbits/sec
+[ 22]   8.00-9.00   sec  4.66 MBytes  39.1 Mbits/sec
+[ 24]   8.00-9.00   sec  3.05 MBytes  25.6 Mbits/sec
+[ 26]   8.00-9.00   sec  3.95 MBytes  33.2 Mbits/sec
+[ 28]   8.00-9.00   sec  3.19 MBytes  26.7 Mbits/sec
+[ 30]   8.00-9.00   sec  3.95 MBytes  33.2 Mbits/sec
+[ 32]   8.00-9.00   sec  3.35 MBytes  28.1 Mbits/sec
+[ 34]   8.00-9.00   sec  3.20 MBytes  26.8 Mbits/sec
+[ 36]   8.00-9.00   sec  3.42 MBytes  28.7 Mbits/sec
+[ 38]   8.00-9.00   sec  1.80 MBytes  15.1 Mbits/sec
+[ 40]   8.00-9.00   sec  1.80 MBytes  15.1 Mbits/sec
+[ 42]   8.00-9.00   sec  1.77 MBytes  14.9 Mbits/sec
+[ 44]   8.00-9.00   sec  1.80 MBytes  15.1 Mbits/sec
+[ 46]   8.00-9.00   sec  1.74 MBytes  14.6 Mbits/sec
+[ 48]   8.00-9.00   sec  1.80 MBytes  15.1 Mbits/sec
+[ 50]   8.00-9.00   sec  3.99 MBytes  33.5 Mbits/sec
+[ 52]   8.00-9.00   sec  1.71 MBytes  14.4 Mbits/sec
+[ 54]   8.00-9.00   sec  3.82 MBytes  32.1 Mbits/sec
+[ 56]   8.00-9.00   sec  3.86 MBytes  32.4 Mbits/sec
+[ 58]   8.00-9.00   sec  1.73 MBytes  14.5 Mbits/sec
+[ 60]   8.00-9.00   sec  4.83 MBytes  40.6 Mbits/sec
+[ 62]   8.00-9.00   sec  1.72 MBytes  14.4 Mbits/sec
+[ 64]   8.00-9.00   sec  8.90 MBytes  74.6 Mbits/sec
+[ 66]   8.00-9.00   sec  1.77 MBytes  14.8 Mbits/sec
+[ 68]   8.00-9.00   sec  9.99 MBytes  83.8 Mbits/sec
+[SUM]   8.00-9.00   sec   112 MBytes   941 Mbits/sec
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   9.00-10.00  sec  5.73 MBytes  48.1 Mbits/sec
+[  8]   9.00-10.00  sec  2.80 MBytes  23.5 Mbits/sec
+[ 10]   9.00-10.00  sec  3.91 MBytes  32.8 Mbits/sec
+[ 12]   9.00-10.00  sec  3.40 MBytes  28.5 Mbits/sec
+[ 14]   9.00-10.00  sec  5.51 MBytes  46.2 Mbits/sec
+[ 16]   9.00-10.00  sec  4.11 MBytes  34.5 Mbits/sec
+[ 18]   9.00-10.00  sec  3.67 MBytes  30.8 Mbits/sec
+[ 20]   9.00-10.00  sec  1.58 MBytes  13.3 Mbits/sec
+[ 22]   9.00-10.00  sec  4.70 MBytes  39.4 Mbits/sec
+[ 24]   9.00-10.00  sec  3.14 MBytes  26.3 Mbits/sec
+[ 26]   9.00-10.00  sec  4.00 MBytes  33.5 Mbits/sec
+[ 28]   9.00-10.00  sec  3.16 MBytes  26.5 Mbits/sec
+[ 30]   9.00-10.00  sec  3.91 MBytes  32.8 Mbits/sec
+[ 32]   9.00-10.00  sec  3.42 MBytes  28.7 Mbits/sec
+[ 34]   9.00-10.00  sec  3.15 MBytes  26.5 Mbits/sec
+[ 36]   9.00-10.00  sec  3.46 MBytes  29.1 Mbits/sec
+[ 38]   9.00-10.00  sec  1.79 MBytes  15.0 Mbits/sec
+[ 40]   9.00-10.00  sec  1.80 MBytes  15.1 Mbits/sec
+[ 42]   9.00-10.00  sec  1.78 MBytes  14.9 Mbits/sec
+[ 44]   9.00-10.00  sec  1.79 MBytes  15.0 Mbits/sec
+[ 46]   9.00-10.00  sec  1.72 MBytes  14.4 Mbits/sec
+[ 48]   9.00-10.00  sec  1.79 MBytes  15.0 Mbits/sec
+[ 50]   9.00-10.00  sec  3.96 MBytes  33.2 Mbits/sec
+[ 52]   9.00-10.00  sec  1.71 MBytes  14.4 Mbits/sec
+[ 54]   9.00-10.00  sec  3.79 MBytes  31.8 Mbits/sec
+[ 56]   9.00-10.00  sec  3.99 MBytes  33.5 Mbits/sec
+[ 58]   9.00-10.00  sec  1.73 MBytes  14.5 Mbits/sec
+[ 60]   9.00-10.00  sec  4.81 MBytes  40.3 Mbits/sec
+[ 62]   9.00-10.00  sec  1.72 MBytes  14.4 Mbits/sec
+[ 64]   9.00-10.00  sec  9.58 MBytes  80.3 Mbits/sec
+[ 66]   9.00-10.00  sec  1.78 MBytes  14.9 Mbits/sec
+[ 68]   9.00-10.00  sec  8.86 MBytes  74.3 Mbits/sec
+[SUM]   9.00-10.00  sec   112 MBytes   941 Mbits/sec
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]  10.00-10.01  sec  33.9 KBytes  38.2 Mbits/sec
+[  8]  10.00-10.01  sec  17.0 KBytes  19.1 Mbits/sec
+[ 10]  10.00-10.01  sec  36.8 KBytes  41.4 Mbits/sec
+[ 12]  10.00-10.01  sec  22.6 KBytes  25.5 Mbits/sec
+[ 14]  10.00-10.01  sec  45.2 KBytes  51.0 Mbits/sec
+[ 16]  10.00-10.01  sec  48.1 KBytes  54.4 Mbits/sec
+[ 18]  10.00-10.01  sec  26.9 KBytes  30.3 Mbits/sec
+[ 20]  10.00-10.01  sec  14.1 KBytes  16.0 Mbits/sec
+[ 22]  10.00-10.01  sec  21.2 KBytes  24.0 Mbits/sec
+[ 24]  10.00-10.01  sec  19.8 KBytes  22.4 Mbits/sec
+[ 26]  10.00-10.01  sec  28.3 KBytes  31.9 Mbits/sec
+[ 28]  10.00-10.01  sec  19.8 KBytes  22.4 Mbits/sec
+[ 30]  10.00-10.01  sec  22.6 KBytes  25.6 Mbits/sec
+[ 32]  10.00-10.01  sec  25.5 KBytes  28.8 Mbits/sec
+[ 34]  10.00-10.01  sec  19.8 KBytes  22.4 Mbits/sec
+[ 36]  10.00-10.01  sec  32.5 KBytes  36.7 Mbits/sec
+[ 38]  10.00-10.01  sec  11.3 KBytes  12.8 Mbits/sec
+[ 40]  10.00-10.01  sec  12.7 KBytes  14.4 Mbits/sec
+[ 42]  10.00-10.01  sec  19.8 KBytes  22.4 Mbits/sec
+[ 44]  10.00-10.01  sec  12.7 KBytes  14.4 Mbits/sec
+[ 46]  10.00-10.01  sec  11.3 KBytes  12.8 Mbits/sec
+[ 48]  10.00-10.01  sec  12.7 KBytes  14.4 Mbits/sec
+[ 50]  10.00-10.01  sec  41.0 KBytes  46.3 Mbits/sec
+[ 52]  10.00-10.01  sec  12.7 KBytes  14.4 Mbits/sec
+[ 54]  10.00-10.01  sec  21.2 KBytes  24.0 Mbits/sec
+[ 56]  10.00-10.01  sec  22.6 KBytes  25.6 Mbits/sec
+[ 58]  10.00-10.01  sec  22.6 KBytes  25.6 Mbits/sec
+[ 60]  10.00-10.01  sec  42.4 KBytes  48.0 Mbits/sec
+[ 62]  10.00-10.01  sec  15.6 KBytes  17.6 Mbits/sec
+[ 64]  10.00-10.01  sec  49.5 KBytes  55.9 Mbits/sec
+[ 66]  10.00-10.01  sec  17.0 KBytes  19.2 Mbits/sec
+[ 68]  10.00-10.01  sec  63.6 KBytes  71.9 Mbits/sec
+[SUM]  10.00-10.01  sec   823 KBytes   926 Mbits/sec
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-10.01  sec  50.4 MBytes  42.2 Mbits/sec                  receiver
+[  8]   0.00-10.01  sec  28.8 MBytes  24.2 Mbits/sec                  receiver
+[ 10]   0.00-10.01  sec  29.0 MBytes  24.3 Mbits/sec                  receiver
+[ 12]   0.00-10.01  sec  26.2 MBytes  22.0 Mbits/sec                  receiver
+[ 14]   0.00-10.01  sec  52.0 MBytes  43.6 Mbits/sec                  receiver
+[ 16]   0.00-10.01  sec  51.1 MBytes  42.8 Mbits/sec                  receiver
+[ 18]   0.00-10.01  sec  37.4 MBytes  31.4 Mbits/sec                  receiver
+[ 20]   0.00-10.01  sec  17.6 MBytes  14.8 Mbits/sec                  receiver
+[ 22]   0.00-10.01  sec  37.6 MBytes  31.5 Mbits/sec                  receiver
+[ 24]   0.00-10.01  sec  32.7 MBytes  27.4 Mbits/sec                  receiver
+[ 26]   0.00-10.01  sec  41.8 MBytes  35.0 Mbits/sec                  receiver
+[ 28]   0.00-10.01  sec  36.5 MBytes  30.6 Mbits/sec                  receiver
+[ 30]   0.00-10.01  sec  41.0 MBytes  34.4 Mbits/sec                  receiver
+[ 32]   0.00-10.01  sec  38.4 MBytes  32.2 Mbits/sec                  receiver
+[ 34]   0.00-10.01  sec  33.3 MBytes  27.9 Mbits/sec                  receiver
+[ 36]   0.00-10.01  sec  37.9 MBytes  31.8 Mbits/sec                  receiver
+[ 38]   0.00-10.01  sec  18.5 MBytes  15.5 Mbits/sec                  receiver
+[ 40]   0.00-10.01  sec  18.5 MBytes  15.5 Mbits/sec                  receiver
+[ 42]   0.00-10.01  sec  18.7 MBytes  15.7 Mbits/sec                  receiver
+[ 44]   0.00-10.01  sec  18.5 MBytes  15.5 Mbits/sec                  receiver
+[ 46]   0.00-10.01  sec  18.1 MBytes  15.2 Mbits/sec                  receiver
+[ 48]   0.00-10.01  sec  18.5 MBytes  15.5 Mbits/sec                  receiver
+[ 50]   0.00-10.01  sec  41.0 MBytes  34.4 Mbits/sec                  receiver
+[ 52]   0.00-10.01  sec  18.2 MBytes  15.2 Mbits/sec                  receiver
+[ 54]   0.00-10.01  sec  39.3 MBytes  32.9 Mbits/sec                  receiver
+[ 56]   0.00-10.01  sec  40.6 MBytes  34.0 Mbits/sec                  receiver
+[ 58]   0.00-10.01  sec  18.1 MBytes  15.2 Mbits/sec                  receiver
+[ 60]   0.00-10.01  sec  49.4 MBytes  41.4 Mbits/sec                  receiver
+[ 62]   0.00-10.01  sec  18.1 MBytes  15.1 Mbits/sec                  receiver
+[ 64]   0.00-10.01  sec  73.1 MBytes  61.3 Mbits/sec                  receiver
+[ 66]   0.00-10.01  sec  18.3 MBytes  15.3 Mbits/sec                  receiver
+[ 68]   0.00-10.01  sec   105 MBytes  87.6 Mbits/sec                  receiver
+[SUM]   0.00-10.01  sec  1.10 GBytes   941 Mbits/sec                  receiver
+-----------------------------------------------------------
+Server listening on 5201 (test #2)
+-----------------------------------------------------------
+iperf3: interrupt - the server has terminated
+[root@davinci-mini ~]# cd

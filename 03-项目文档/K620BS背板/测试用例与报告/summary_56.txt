@@ -1,0 +1,10 @@
+文件: 128K_Seq_write_result.txt
+
+[nvme2n1]
+采样点数: 2881
+盘类型: SSD
+曲线图: ./all_nvme_analysis/nvme2n1/128K_Seq_write_result/plots/nvme2n1.png
+跌零点数: 0 (阈值 1.0 MB/s)
+稳态分析类型: SSD
+整体波动点占比: 98/2881 = 3.40%
+最终判定: FAIL

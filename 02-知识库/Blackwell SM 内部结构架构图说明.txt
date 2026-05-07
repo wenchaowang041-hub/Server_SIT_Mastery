@@ -1,0 +1,13 @@
+图中核心模块对应说明
+Warp 调度集群
+4 个独立 Warp 调度器
+支持双发射 Dual-Issue + 深度分支栈，优化 SIMT 分支发散
+执行数据通路
+CUDA Core：FP32/FP64 通用计算
+第五代 Tensor Core：原生 FP4 + 硬件稀疏化零值跳过
+Load/Store 单元：负责显式访存指令
+内存子系统
+Shared Memory：SM 内高速共享存储
+第五代 TMA：独立硬件异步搬运，解耦计算与内存访问
+超大寄存器文件支撑高 ILP 与高占用率平衡
+外部存储接口连接 L2 Cache + HBM3e，实现计算 - 访存全流水线重叠

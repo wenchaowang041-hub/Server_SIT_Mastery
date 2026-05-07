@@ -1,0 +1,4 @@
+# COMMAND: curl -ksu 'Administrator:Admin@9000' 'https://10.121.176.138/redfish/v1/UpdateService/FirmwareInventory/chassisBMCPSR'
+# TIME: 2026-04-22 17:04:16
+
+{"@odata.context":"/redfish/v1/$metadata#SoftwareInventory.SoftwareInventory","@odata.id":"/redfish/v1/UpdateService/FirmwareInventory/chassisBMCPSR","@odata.type":"#SoftwareInventory.v1_2_0.SoftwareInventory","Id":"chassisBMCPSR","Name":"Product CSR","Status":{"State":"Enabled","Oem":{"openUBMC":{"Severity":"Informational"}},"Health":"OK"},"Version":"5.05","ReleaseDate":null,"Updateable":true,"RelatedItem":[{"@odata.id":"/redfish/v1/Chassis/1/Boards/chassisBMC"}],"Oem":{"openUBMC":{"PositionId":"","Manufacturer":"Huawei","ActiveMode":"Immediately","ActiveModeSupported":true}},"SoftwareId":"HWSR-BC83RCIA"}

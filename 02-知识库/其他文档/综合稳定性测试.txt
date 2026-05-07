@@ -1,0 +1,8 @@
+# 1. 全系统压力测试
+stress-ng --cpu 4 --io 4 --vm 4 --vm-bytes 1G --fork 4 --timeout 7200
+
+# 2. Linux Test Project (LTP)
+cd /opt/ltp && ./runltp -t 7200
+
+# 3. Phoronix Test Suite
+phoronix-test-suite benchmark pts/system

@@ -1,0 +1,8 @@
+# 删除原有 IP 地址
+sudo ip addr del 192.168.0.2/24 dev eth0
+
+# 添加新的 IP 地址（假设子网掩码为 /24）
+sudo ip addr add 10.121.179.1/24 dev eth0
+
+# 启动接口（如果未启动）
+sudo ip link set eth0 up

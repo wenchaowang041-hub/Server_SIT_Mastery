@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>基准配置汇总</title>
+  <style>
+    body { font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; margin: 12px; color: #333; background: #fff; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    h2 { font-size: 16px; margin: 22px 0 8px; }
+    table { border-collapse: collapse; width: 100%; table-layout: auto; margin-bottom: 18px; }
+    th, td { border: 1px solid #cfd6df; padding: 8px 10px; font-size: 14px; vertical-align: top; word-break: break-word; }
+    th { background: #eef2f6; font-weight: 700; text-align: left; }
+    tr:nth-child(even) td { background: #fafbfd; }
+    .wrap { max-width: 1600px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>基准配置汇总</h1>
+    <h2>软件信息</h2>
+    <table>
+      <thead><tr>
+        <th>类别</th>
+        <th>版本</th>
+        <th>发布时间</th>
+        <th>备注</th>
+      </tr></thead>
+      <tbody>
+      <tr>
+        <td>OS</td>
+        <td>openEuler 22.03 (LTS-SP4)</td>
+        <td></td>
+        <td>Kernel: 5.10.0-216.0.0.115.oe2203sp4.aarch64</td>
+      </tr>
+      <tr>
+        <td>GCC</td>
+        <td>gcc (GCC) 10.3.1</td>
+        <td></td>
+        <td>自动采集</td>
+      </tr>
+      <tr>
+        <td>BIOS</td>
+        <td>6.02.01.05</td>
+        <td></td>
+        <td>dmidecode；固件库存版本：32.70.0</td>
+      </tr>
+      <tr>
+        <td>BMC</td>
+        <td>11.02.01.18</td>
+        <td></td>
+        <td>from Redfish /Managers/1</td>
+      </tr>
+      <tr>
+        <td>MB CPLD</td>
+        <td>6.12</td>
+        <td></td>
+        <td>Redfish FirmwareInventory</td>
+      </tr>
+      <tr>
+        <td>前置 FAN CPLD</td>
+        <td>0.04</td>
+        <td></td>
+        <td>Redfish FirmwareInventory</td>
+      </tr>
+      <tr>
+        <td>中置 FAN CPLD</td>
+        <td>0.03</td>
+        <td></td>
+        <td>Redfish FirmwareInventory</td>
+      </tr>
+      <tr>
+        <td>SCM CPLD</td>
+        <td>11.02.01.18</td>
+        <td></td>
+        <td>Redfish FirmwareInventory 近似映射</td>
+      </tr>
+      <tr>
+        <td>NVMe BP1 CPLD</td>
+        <td>0.02</td>
+        <td></td>
+        <td>Redfish FirmwareInventory</td>
+      </tr>
+      <tr>
+        <td>NVMe BP2 CPLD</td>
+        <td>0.02</td>
+        <td></td>
+        <td>Redfish FirmwareInventory</td>
+      </tr>
+      <tr>
+        <td>NVMe BP3 CPLD</td>
+        <td>0.02</td>
+        <td></td>
+        <td>Redfish FirmwareInventory</td>
+      </tr>
+      <tr>
+        <td>PSU Board CSR</td>
+        <td>5.04</td>
+        <td></td>
+        <td>Redfish FirmwareInventory</td>
+      </tr>
+      </tbody>
+    </table>
+    <h2>板卡信息</h2>
+    <table>
+      <thead><tr>
+        <th>类别</th>
+        <th>物料号</th>
+        <th>批次号</th>
+        <th>物料描述</th>
+        <th>位置</th>
+        <th>版本</th>
+        <th>数量</th>
+        <th>备注（*为必填项）</th>
+      </tr></thead>
+      <tbody>
+      <tr>
+        <td>MB</td>
+        <td></td>
+        <td></td>
+        <td>iSoftStone BC83AMDA01-7260Z</td>
+        <td>-</td>
+        <td>V200R023C10</td>
+        <td>1</td>
+        <td>*SN 待人工补；来源：BOM+dmidecode</td>
+      </tr>
+      <tr>
+        <td>NVMe BP</td>
+        <td></td>
+        <td></td>
+        <td>NVMe Disk Backplane</td>
+        <td>前置</td>
+        <td>0.02/0.02/0.02</td>
+        <td>3</td>
+        <td>当前环境为 NVMe 背板，不沿用 SATA 背板 BOM</td>
+      </tr>
+      <tr>
+        <td>Mid Riser</td>
+        <td></td>
+        <td></td>
+        <td>Mid/IO Riser</td>
+        <td>中置/后置</td>
+        <td>0.04</td>
+        <td></td>
+        <td>需结合实物标签确认</td>
+      </tr>
+      <tr>
+        <td>FAN BP</td>
+        <td></td>
+        <td></td>
+        <td>前置风扇板</td>
+        <td>前置</td>
+        <td>0.04</td>
+        <td>1</td>
+        <td>前置风扇板，单独列示</td>
+      </tr>
+      <tr>
+        <td>FAN BP</td>
+        <td></td>
+        <td></td>
+        <td>中置风扇板</td>
+        <td>中置</td>
+        <td>0.03</td>
+        <td>1</td>
+        <td>中置风扇板，单独列示</td>
+      </tr>
+      <tr>
+        <td>SCM Card</td>
+        <td></td>
+        <td></td>
+        <td>BMC/SCM board</td>
+        <td>后置</td>
+        <td>11.02.01.18</td>
+        <td>1</td>
+        <td>版本来自 Redfish /Managers/1</td>
+      </tr>
+      <tr>
+        <td>PSU Board</td>
+        <td></td>
+        <td></td>
+        <td>PSU board</td>
+        <td>电源区域</td>
+        <td>5.04</td>
+        <td>2</td>
+        <td>版本来自 Redfish；不使用 PSU 模块 BOM 近似替代</td>
+      </tr>
+      </tbody>
+    </table>
+    <h2>部件信息</h2>
+    <table>
+      <thead><tr>
+        <th>类别</th>
+        <th>物料号</th>
+        <th>批次号</th>
+        <th>物料描述</th>
+        <th>Firmware</th>
+        <th>Driver</th>
+        <th>位置</th>
+        <th>数量</th>
+        <th>备注</th>
+      </tr></thead>
+      <tbody>
+      <tr>
+        <td>CPU</td>
+        <td></td>
+        <td></td>
+        <td>Kunpeng 920 7260Z</td>
+        <td></td>
+        <td></td>
+        <td>CPU Socket</td>
+        <td>2</td>
+        <td>CPU 型号以当前环境识别为准；未找到可直接对应的 BOM CPU 行</td>
+      </tr>
+      <tr>
+        <td>MEM</td>
+        <td>1000010708</td>
+        <td>HW02</td>
+        <td>内存_64G_D5_5600_2Rx4_E</td>
+        <td></td>
+        <td></td>
+        <td>DIMM</td>
+        <td>32</td>
+        <td>总容量 2014.1 GiB；BOM 仅补单条料号信息</td>
+      </tr>
+      <tr>
+        <td>NVMe SSD</td>
+        <td></td>
+        <td></td>
+        <td>HWE6AP441T9L00KN</td>
+        <td></td>
+        <td>nvme</td>
+        <td>PCIe/NVMe</td>
+        <td>1</td>
+        <td>/dev/nvme4n1 034XESZERB003970 1.7T</td>
+      </tr>
+      <tr>
+        <td>NVMe SSD</td>
+        <td></td>
+        <td></td>
+        <td>HWE6AP441T9L00KN</td>
+        <td></td>
+        <td>nvme</td>
+        <td>PCIe/NVMe</td>
+        <td>1</td>
+        <td>/dev/nvme1n1 034XESZERC000508 1.7T</td>
+      </tr>
+      <tr>
+        <td>NVMe SSD</td>
+        <td></td>
+        <td></td>
+        <td>HWE6AP441T9L00KN</td>
+        <td></td>
+        <td>nvme</td>
+        <td>PCIe/NVMe</td>
+        <td>1</td>
+        <td>/dev/nvme0n1 034XESZERC000419 1.7T</td>
+      </tr>
+      <tr>
+        <td>NVMe SSD</td>
+        <td></td>
+        <td></td>
+        <td>HWE6AP441T9L00KN</td>
+        <td></td>
+        <td>nvme</td>
+        <td>PCIe/NVMe</td>
+        <td>1</td>
+        <td>/dev/nvme3n1 034XESZERC000041 1.7T</td>
+      </tr>
+      <tr>
+        <td>NVMe SSD</td>
+        <td></td>
+        <td></td>
+        <td>HWE6AP441T9L00KN</td>
+        <td></td>
+        <td>nvme</td>
+        <td>PCIe/NVMe</td>
+        <td>1</td>
+        <td>/dev/nvme2n1 034XESZERC000354 1.7T</td>
+      </tr>
+      <tr>
+        <td>NVMe SSD</td>
+        <td></td>
+        <td></td>
+        <td>HWE6AP441T9L00KN</td>
+        <td></td>
+        <td>nvme</td>
+        <td>PCIe/NVMe</td>
+        <td>1</td>
+        <td>/dev/nvme11n1 034XESZERC000474 1.7T</td>
+      </tr>
+      <tr>
+        <td>NVMe SSD</td>
+        <td></td>
+        <td></td>
+        <td>HWE6AP441T9L00KN</td>
+        <td></td>
+        <td>nvme</td>
+        <td>PCIe/NVMe</td>
+        <td>1</td>
+        <td>/dev/nvme8n1 034XESZERC000513 1.7T</td>
+      </tr>
+      <tr>
+        <td>NVMe SSD</td>
+        <td></td>
+        <td></td>
+        <td>HWE6AP441T9L00KN</td>
+        <td></td>
+        <td>nvme</td>
+        <td>PCIe/NVMe</td>
+        <td>1</td>
+        <td>/dev/nvme7n1 034XESD9R6000101 1.7T</td>
+      </tr>
+      <tr>
+        <td>NVMe SSD</td>
+        <td></td>
+        <td></td>
+        <td>HWE6AP441T9L00KN</td>
+        <td></td>
+        <td>nvme</td>
+        <td>PCIe/NVMe</td>
+        <td>1</td>
+        <td>/dev/nvme6n1 034XESZERC000485 1.7T</td>
+      </tr>
+      <tr>
+        <td>NVMe SSD</td>
+        <td></td>
+        <td></td>
+        <td>HWE6AP441T9L00KN</td>
+        <td></td>
+        <td>nvme</td>
+        <td>PCIe/NVMe</td>
+        <td>1</td>
+        <td>/dev/nvme10n1 034XESZERC000235 1.7T</td>
+      </tr>
+      <tr>
+        <td>NVMe SSD</td>
+        <td></td>
+        <td></td>
+        <td>HWE6AP441T9L00KN</td>
+        <td></td>
+        <td>nvme</td>
+        <td>PCIe/NVMe</td>
+        <td>1</td>
+        <td>/dev/nvme9n1 034XESD9R6000189 1.7T</td>
+      </tr>
+      <tr>
+        <td>NVMe SSD</td>
+        <td></td>
+        <td></td>
+        <td>HWE6AP441T9L00KN</td>
+        <td></td>
+        <td>nvme</td>
+        <td>PCIe/NVMe</td>
+        <td>1</td>
+        <td>/dev/nvme5n1 034XESZERC000359 1.7T</td>
+      </tr>
+      <tr>
+        <td>OCP NIC</td>
+        <td></td>
+        <td></td>
+        <td>四口10G电口灵活网卡</td>
+        <td>2.00</td>
+        <td></td>
+        <td>OCP/Flex</td>
+        <td>1</td>
+        <td>来自当前环境物理卡识别：35:00，4口</td>
+      </tr>
+      <tr>
+        <td>PCIe NIC</td>
+        <td></td>
+        <td></td>
+        <td>100G双口PCIe网卡</td>
+        <td></td>
+        <td></td>
+        <td>PCIe</td>
+        <td>1</td>
+        <td>来自当前环境物理卡识别：68:00，函数数 2</td>
+      </tr>
+      <tr>
+        <td>OCP NIC</td>
+        <td>1000007914</td>
+        <td>HW00</td>
+        <td>SF223D-H灵活网卡25G/10G 双口 _无模块</td>
+        <td>1.18</td>
+        <td></td>
+        <td>OCP/Flex</td>
+        <td>1</td>
+        <td>来自当前环境物理卡识别：75:00，2口</td>
+      </tr>
+      </tbody>
+    </table>
+    <h2>固件清单</h2>
+    <table>
+      <thead><tr>
+        <th>类别</th>
+        <th>名称</th>
+        <th>版本</th>
+      </tr></thead>
+      <tbody>
+      <tr>
+        <td>ActiveBMCSDK</td>
+        <td>ActiveBMCSDK</td>
+        <td>5.10.0.1</td>
+      </tr>
+      <tr>
+        <td>ActiveBMC</td>
+        <td>ActiveBMC</td>
+        <td>11.02.01.18</td>
+      </tr>
+      <tr>
+        <td>ActiveSecureBootloader</td>
+        <td>ActiveSecureBootloader</td>
+        <td>20.8.10.1</td>
+      </tr>
+      <tr>
+        <td>ActiveSecureFirmware</td>
+        <td>ActiveSecureFirmware</td>
+        <td>20.8.10.1</td>
+      </tr>
+      <tr>
+        <td>ActiveUboot</td>
+        <td>ActiveUboot</td>
+        <td>20.1.10.2 (11:42:47 Jun 18 2025)</td>
+      </tr>
+      <tr>
+        <td>AvailableBMCSDK</td>
+        <td>AvailableBMCSDK</td>
+        <td>5.10.0.1</td>
+      </tr>
+      <tr>
+        <td>AvailableBMC</td>
+        <td>AvailableBMC</td>
+        <td>11.02.01.18</td>
+      </tr>
+      <tr>
+        <td>BackupBMCSDK</td>
+        <td>BackupBMCSDK</td>
+        <td>5.10.0.1</td>
+      </tr>
+      <tr>
+        <td>BackupBMC</td>
+        <td>BackupBMC</td>
+        <td>11.02.01.18</td>
+      </tr>
+      <tr>
+        <td>BackupSecureBootloader</td>
+        <td>BackupSecureBootloader</td>
+        <td>20.8.10.1</td>
+      </tr>
+      <tr>
+        <td>BackupSecureFirmware</td>
+        <td>BackupSecureFirmware</td>
+        <td>20.8.10.1</td>
+      </tr>
+      <tr>
+        <td>BackupUboot</td>
+        <td>BackupUboot</td>
+        <td>20.1.10.2 (11:42:47 Jun 18 2025)</td>
+      </tr>
+      <tr>
+        <td>BCU1CpuBoard1CPLD1</td>
+        <td>CpuBoard1 CPLD1</td>
+        <td>6.12</td>
+      </tr>
+      <tr>
+        <td>BCU1CpuBoard1CPLD2</td>
+        <td>CpuBoard1 CPLD2</td>
+        <td>6.12</td>
+      </tr>
+      <tr>
+        <td>BCU1CpuBoard1HWSR</td>
+        <td>CpuBoard1 CSR</td>
+        <td>3.37</td>
+      </tr>
+      <tr>
+        <td>BCU1CpuBoard1MCU</td>
+        <td>CpuBoard1 MCU</td>
+        <td>2.03.02</td>
+      </tr>
+      <tr>
+        <td>Bios</td>
+        <td>TF</td>
+        <td>32.70.0</td>
+      </tr>
+      <tr>
+        <td>chassisBMCPSR</td>
+        <td>Product CSR</td>
+        <td>5.05</td>
+      </tr>
+      <tr>
+        <td>chassisNIC1(SF221Q)HWSR</td>
+        <td>NIC 1 (SF221Q) CSR</td>
+        <td>2.00</td>
+      </tr>
+      <tr>
+        <td>chassisNIC2(SF223D-H)HWSR</td>
+        <td>NIC 2 (SF223D-H) CSR</td>
+        <td>1.18</td>
+      </tr>
+      <tr>
+        <td>chassisNIC2(SF223D-H)Retimer</td>
+        <td>chassisNIC2(SF223D-H)Retimer</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td>chassisPSU1</td>
+        <td>PSU1</td>
+        <td>DC:1.0 PFC:1.00</td>
+      </tr>
+      <tr>
+        <td>chassisPSU2</td>
+        <td>PSU2</td>
+        <td>DC:1.0 PFC:1.00</td>
+      </tr>
+      <tr>
+        <td>chassisPSU3</td>
+        <td>PSU3</td>
+        <td>DC:1.0 PFC:1.00</td>
+      </tr>
+      <tr>
+        <td>chassisPSU4</td>
+        <td>PSU4</td>
+        <td>DC:1.112 PFC:1.1120</td>
+      </tr>
+      <tr>
+        <td>chassisPSU5</td>
+        <td>PSU5</td>
+        <td>DC:1.0 PFC:1.00</td>
+      </tr>
+      <tr>
+        <td>chassisPSU6</td>
+        <td>PSU6</td>
+        <td>DC:1.0 PFC:1.00</td>
+      </tr>
+      <tr>
+        <td>chassisPSUBoard1HWSR</td>
+        <td>PSUBoard1 CSR</td>
+        <td>5.04</td>
+      </tr>
+      <tr>
+        <td>chassisPSUBoard2HWSR</td>
+        <td>PSUBoard2 CSR</td>
+        <td>5.04</td>
+      </tr>
+      <tr>
+        <td>chassisSwitchBoard1HWSR</td>
+        <td>SwitchBoard1 CSR</td>
+        <td>5.01</td>
+      </tr>
+      <tr>
+        <td>CLU1FanBoard1CPLD</td>
+        <td>FanBoard1 CPLD</td>
+        <td>0.04</td>
+      </tr>
+      <tr>
+        <td>CLU1FanBoard1HWSR</td>
+        <td>FanBoard1 CSR</td>
+        <td>5.04</td>
+      </tr>
+      <tr>
+        <td>CLU2FanBoard2CPLD</td>
+        <td>FanBoard2 CPLD</td>
+        <td>0.03</td>
+      </tr>
+      <tr>
+        <td>CLU2FanBoard2HWSR</td>
+        <td>FanBoard2 CSR</td>
+        <td>5.04</td>
+      </tr>
+      <tr>
+        <td>CpuBoard1VRD</td>
+        <td>CpuBoard1 VRD</td>
+        <td>36.36.36.36.36.36.36.36</td>
+      </tr>
+      <tr>
+        <td>Efuse</td>
+        <td>Efuse</td>
+        <td>N/A</td>
+      </tr>
+      <tr>
+        <td>EXU1ExpBoard1CPLD</td>
+        <td>ExpBoard1 CPLD</td>
+        <td>0.04</td>
+      </tr>
+      <tr>
+        <td>EXU1ExpBoard1HWSR</td>
+        <td>ExpBoard1 CSR</td>
+        <td>5.05</td>
+      </tr>
+      <tr>
+        <td>PCIeCard10MCU</td>
+        <td>PCIe10 MCU</td>
+        <td>3.3.0</td>
+      </tr>
+      <tr>
+        <td>PCIeCard11MCU</td>
+        <td>PCIe11 MCU</td>
+        <td>3.3.0</td>
+      </tr>
+      <tr>
+        <td>PCIeCard12MCU</td>
+        <td>PCIe12 MCU</td>
+        <td>23.2.2</td>
+      </tr>
+      <tr>
+        <td>PCIeCard13MCU</td>
+        <td>PCIe13 MCU</td>
+        <td>3.3.0</td>
+      </tr>
+      <tr>
+        <td>PCIeCard1MCU</td>
+        <td>PCIe1 MCU</td>
+        <td>3.3.0</td>
+      </tr>
+      <tr>
+        <td>PCIeCard2MCU</td>
+        <td>PCIe2 MCU</td>
+        <td>3.3.0</td>
+      </tr>
+      <tr>
+        <td>PCIeCard3MCU</td>
+        <td>PCIe3 MCU</td>
+        <td>23.2.2</td>
+      </tr>
+      <tr>
+        <td>PCIeCard4MCU</td>
+        <td>PCIe4 MCU</td>
+        <td>23.2.2</td>
+      </tr>
+      <tr>
+        <td>PCIeCard5MCU</td>
+        <td>PCIe5 MCU</td>
+        <td>23.2.2</td>
+      </tr>
+      <tr>
+        <td>PCIeCard8MCU</td>
+        <td>PCIe8 MCU</td>
+        <td>3.3.0</td>
+      </tr>
+      <tr>
+        <td>SEU1DiskBP1CPLD</td>
+        <td>DiskBP1 CPLD</td>
+        <td>0.02</td>
+      </tr>
+      <tr>
+        <td>SEU1DiskBP1HWSR</td>
+        <td>DiskBP1 CSR</td>
+        <td>5.04</td>
+      </tr>
+      <tr>
+        <td>SEU2DiskBP2CPLD</td>
+        <td>DiskBP2 CPLD</td>
+        <td>0.02</td>
+      </tr>
+      <tr>
+        <td>SEU2DiskBP2HWSR</td>
+        <td>DiskBP2 CSR</td>
+        <td>5.04</td>
+      </tr>
+      <tr>
+        <td>SEU3DiskBP3CPLD</td>
+        <td>DiskBP3 CPLD</td>
+        <td>0.02</td>
+      </tr>
+      <tr>
+        <td>SEU3DiskBP3HWSR</td>
+        <td>DiskBP3 CSR</td>
+        <td>5.04</td>
+      </tr>
+      <tr>
+        <td>TeeOS</td>
+        <td>TeeOS</td>
+        <td>N/A</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

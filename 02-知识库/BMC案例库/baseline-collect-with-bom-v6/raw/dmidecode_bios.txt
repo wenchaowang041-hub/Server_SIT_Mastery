@@ -1,0 +1,37 @@
+# COMMAND: LC_ALL=C dmidecode -t bios
+# TIME: 2026-04-22 17:04:03
+
+# dmidecode 3.4
+Getting SMBIOS data from sysfs.
+SMBIOS 3.3.0 present.
+
+Handle 0x0033, DMI type 0, 26 bytes
+BIOS Information
+	Vendor: Byosoft
+	Version: 6.02.01.05
+	Release Date: 04/08/2026
+	Address: 0x10000
+	Runtime Size: 960 kB
+	ROM Size: 7936 kB
+	Characteristics:
+		PCI is supported
+		PNP is supported
+		BIOS is upgradeable
+		BIOS shadowing is allowed
+		Boot from CD is supported
+		Selectable boot is supported
+		EDD is supported
+		Serial services are supported (int 14h)
+		ACPI is supported
+		BIOS boot specification is supported
+		UEFI is supported
+	BIOS Revision: 6.2
+
+Handle 0x0037, DMI type 13, 22 bytes
+BIOS Language Information
+	Language Description Format: Long
+	Installable Languages: 2
+		en|US|iso8859-1
+		zh|CN|unicode
+	Currently Installed Language: en|US|iso8859-1
+

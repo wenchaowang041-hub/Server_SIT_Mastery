@@ -1,0 +1,4 @@
+# COMMAND: curl -ksu 'Administrator:Admin@9000' 'https://10.121.176.138/redfish/v1/UpdateService/FirmwareInventory/BackupBMCSDK'
+# TIME: 2026-04-22 17:04:11
+
+{"@odata.context":"/redfish/v1/$metadata#SoftwareInventory.SoftwareInventory","@odata.id":"/redfish/v1/UpdateService/FirmwareInventory/BackupBMCSDK","@odata.type":"#SoftwareInventory.v1_2_0.SoftwareInventory","Id":"BackupBMCSDK","Name":"BackupBMCSDK","Status":{"State":"StandbySpare","Oem":{"openUBMC":{"Severity":"Informational"}},"Health":"OK"},"Version":"5.10.0.1","ReleaseDate":"2026-04-15T08:39:46Z","Updateable":true,"RelatedItem":[{"@odata.id":"/redfish/v1/Managers/1"}],"Oem":{"openUBMC":{"PositionId":"","Manufacturer":"Huawei","ActiveMode":null,"ActiveModeSupported":null}},"SoftwareId":"BMC-SDK"}

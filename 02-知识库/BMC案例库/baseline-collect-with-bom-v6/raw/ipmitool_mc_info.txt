@@ -1,0 +1,25 @@
+# COMMAND: LC_ALL=C ipmitool mc info
+# TIME: 2026-04-22 17:04:04
+
+Device ID                 : 1
+Device Revision           : 1
+Firmware Revision         : 11.02
+IPMI Version              : 2.0
+Manufacturer ID           : 2011
+Manufacturer Name         : Unknown (0x7DB)
+Product ID                : 0 (0x0000)
+Product Name              : Unknown (0x0)
+Device Available          : yes
+Provides Device SDRs      : yes
+Additional Device Support :
+    Sensor Device
+    SDR Repository Device
+    SEL Device
+    FRU Inventory Device
+    IPMB Event Generator
+    Chassis Device
+Aux Firmware Rev Info     : 
+    0x00
+    0x00
+    0x01
+    0x18

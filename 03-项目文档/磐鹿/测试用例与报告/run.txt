@@ -1,0 +1,4 @@
+# 执行DC Cycle自动化
+python3 dc_cycle_auto.py
+# 执行重启自动化
+python3 dc_cycle_auto.py （修改main函数中的op_type为"reboot"）

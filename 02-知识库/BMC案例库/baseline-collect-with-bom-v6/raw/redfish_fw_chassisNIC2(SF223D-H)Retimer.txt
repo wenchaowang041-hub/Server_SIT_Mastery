@@ -1,0 +1,4 @@
+# COMMAND: curl -ksu 'Administrator:Admin@9000' 'https://10.121.176.138/redfish/v1/UpdateService/FirmwareInventory/chassisNIC2(SF223D-H)Retimer'
+# TIME: 2026-04-22 17:04:17
+
+{"error":{"code":"Base.1.0.GeneralError","message":"A general error has occurred. See ExtendedInfo for more information.","@Message.ExtendedInfo":[{"@odata.type":"#Message.v1_0_0.Message","MessageId":"Base.1.0.ResourceMissingAtURI","RelatedProperties":[],"Message":"The resource at the URI /redfish/v1/UpdateService/FirmwareInventory/chassisNIC2(SF223D-H)Retimer was not found.","MessageArgs":["/redfish/v1/UpdateService/FirmwareInventory/chassisNIC2(SF223D-H)Retimer"],"Severity":"Critical","Resolution":"Place a valid resource at the URI or correct the URI and resubmit the request."}]}}

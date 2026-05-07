@@ -1,0 +1,4 @@
+# COMMAND: curl -ksu 'Administrator:Admin@9000' 'https://10.121.176.138/redfish/v1/UpdateService/FirmwareInventory/PCIeCard2MCU'
+# TIME: 2026-04-22 17:04:28
+
+{"@odata.context":"/redfish/v1/$metadata#SoftwareInventory.SoftwareInventory","@odata.id":"/redfish/v1/UpdateService/FirmwareInventory/PCIeCard2MCU","@odata.type":"#SoftwareInventory.v1_2_0.SoftwareInventory","Id":"PCIeCard2MCU","Name":"PCIe2 MCU","Status":{"State":"Enabled","Oem":{"openUBMC":{"Severity":"Informational"}},"Health":"OK"},"Version":"3.3.0","ReleaseDate":null,"Updateable":true,"RelatedItem":[{"@odata.id":"/redfish/v1/Chassis/1/PCIeDevices/PCIeCard2"}],"Oem":{"openUBMC":{"PositionId":"","Manufacturer":"Huawei","ActiveMode":null,"ActiveModeSupported":null}},"SoftwareId":""}

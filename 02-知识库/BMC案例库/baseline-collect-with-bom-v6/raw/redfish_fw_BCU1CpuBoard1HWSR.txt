@@ -1,0 +1,4 @@
+# COMMAND: curl -ksu 'Administrator:Admin@9000' 'https://10.121.176.138/redfish/v1/UpdateService/FirmwareInventory/BCU1CpuBoard1HWSR'
+# TIME: 2026-04-22 17:04:14
+
+{"@odata.context":"/redfish/v1/$metadata#SoftwareInventory.SoftwareInventory","@odata.id":"/redfish/v1/UpdateService/FirmwareInventory/BCU1CpuBoard1HWSR","@odata.type":"#SoftwareInventory.v1_2_0.SoftwareInventory","Id":"BCU1CpuBoard1HWSR","Name":"CpuBoard1 CSR","Status":{"State":"Enabled","Oem":{"openUBMC":{"Severity":"Informational"}},"Health":"OK"},"Version":"3.37","ReleaseDate":null,"Updateable":true,"RelatedItem":[{"@odata.id":"/redfish/v1/Chassis/1/Boards/BCU1CpuBoard1"}],"Oem":{"openUBMC":{"PositionId":"","Manufacturer":"Huawei","ActiveMode":"Immediately","ActiveModeSupported":true}},"SoftwareId":"HWSR-BC83AMDA"}

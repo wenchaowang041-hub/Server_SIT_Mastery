@@ -1,0 +1,5 @@
+dmesg | grep -i "disk\|io\|error" > fio_errors.log && echo "日志已保存到: fio_errors.log"
+
+快速清理命令（仅清理日志）
+bash
+rm -f *.log *.out && sudo journalctl --rotate 2>/dev/null && sudo journalctl --vacuum-time=10m 2>/dev/null && echo "日志已清理"

@@ -1,0 +1,2 @@
+fio --name=mix_workload --filename=/dev/sda --rw=randrw --rwmixread=70 --bs=4k --size=50G --numjobs=8 --runtime=43200 --ioengine=libaio --direct=1 >>fio_sda.log
+

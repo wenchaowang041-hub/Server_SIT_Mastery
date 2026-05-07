@@ -1,0 +1,12 @@
+cat > dpu_stability_test.sh << 'EOF'
+#!/bin/bash
+# CPU测试
+stress-ng --cpu $(nproc) --cpu-method all --timeout 7200 &
+# 内存测试
+stress-ng --vm $(($(nproc)/2)) --vm-bytes 90% --timeout 7200 &
+# I/O测试
+fio --name=test --ioengine=libaio --rw=randrw --bs=4k --numjobs=4 --size=10G --runtime=7200 --time_based &
+# 网络测试
+iperf3 -s -D && iperf3 -c localhost -t 7200 -P 4 &
+EOF
+chmod +x dpu_stability_test.sh

@@ -1,0 +1,4 @@
+# COMMAND: curl -ksu 'Administrator:Admin@9000' 'https://10.121.176.138/redfish/v1/UpdateService/FirmwareInventory/ActiveUboot'
+# TIME: 2026-04-22 17:04:09
+
+{"@odata.context":"/redfish/v1/$metadata#SoftwareInventory.SoftwareInventory","@odata.id":"/redfish/v1/UpdateService/FirmwareInventory/ActiveUboot","@odata.type":"#SoftwareInventory.v1_2_0.SoftwareInventory","Id":"ActiveUboot","Name":"ActiveUboot","Status":{"State":"Enabled","Oem":{"openUBMC":{"Severity":"Informational"}},"Health":"OK"},"Version":"20.1.10.2 (11:42:47 Jun 18 2025)","ReleaseDate":"2025-06-18T11:42:47Z","Updateable":false,"RelatedItem":[],"Oem":{"openUBMC":{"PositionId":"","Manufacturer":"Huawei","ActiveMode":null,"ActiveModeSupported":null}},"SoftwareId":"UBOOT-UBOOT"}

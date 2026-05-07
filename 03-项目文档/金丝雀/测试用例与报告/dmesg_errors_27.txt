@@ -1,0 +1,63 @@
+# Command: dmesg -T --level=err,warn,crit,alert,emerg
+# Time: 2026-02-05 21:05:35
+
+[四 2月  5 21:04:34 2026] ITS@0x000000c660000000: Virtual CPUs too large, reduce ITS pages 512->256
+[四 2月  5 21:04:34 2026] ITS@0x0000004660000000: Virtual CPUs too large, reduce ITS pages 512->256
+[四 2月  5 21:04:34 2026] ITS@0x000020c660000000: Virtual CPUs too large, reduce ITS pages 512->256
+[四 2月  5 21:04:34 2026] ITS@0x0000204660000000: Virtual CPUs too large, reduce ITS pages 512->256
+[四 2月  5 21:04:35 2026] ipmi:dmi: Invalid IPMI type: 0
+[四 2月  5 21:04:36 2026] {1}[Hardware Error]: Hardware error from APEI Generic Hardware Error Source: 0
+[四 2月  5 21:04:36 2026] {1}[Hardware Error]: event severity: recoverable
+[四 2月  5 21:04:36 2026] {1}[Hardware Error]:  Error 0, type: recoverable
+[四 2月  5 21:04:36 2026] {1}[Hardware Error]:   section type: unknown, c8b328a8-9917-4af6-9a13-2e08ab2e7586
+[四 2月  5 21:04:36 2026] {1}[Hardware Error]:   section length: 0x60
+[四 2月  5 21:04:36 2026] {1}[Hardware Error]:   00000000: 00001aa7 00000102 00120000 03010005  ................
+[四 2月  5 21:04:36 2026] {1}[Hardware Error]:   00000010: 00000000 00000000 00000000 00000040  ............@...
+[四 2月  5 21:04:36 2026] {1}[Hardware Error]:   00000020: 00142aa2 00000000 00000515 00000000  .*..............
+[四 2月  5 21:04:36 2026] {1}[Hardware Error]:   00000030: ec200301 00000000 00000c18 e0000000  .. .............
+[四 2月  5 21:04:36 2026] {1}[Hardware Error]:   00000040: 00000000 0000007f 00030081 01802250  ............P"..
+[四 2月  5 21:04:36 2026] {1}[Hardware Error]:   00000050: 00000000 00000000 00000000 00000000  ................
+[四 2月  5 21:04:36 2026] ahci 0000:38:05.0: both AHCI_HFLAG_MULTI_MSI flag set and custom irq handler implemented
+[四 2月  5 21:04:36 2026] hub 2-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[四 2月  5 21:04:36 2026] hub 6-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[四 2月  5 21:04:36 2026] hub 10-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[四 2月  5 21:04:36 2026] hub 14-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[四 2月  5 21:04:53 2026] FAT-fs (nvme0n1p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[四 2月  5 21:04:54 2026] systemd: 22 output lines suppressed due to ratelimiting
+[四 2月  5 21:04:54 2026] spi-nor spi-PRP0001:00: unrecognized JEDEC id bytes: c8, 60, 18
+[四 2月  5 21:04:54 2026] spi-nor: probe of spi-PRP0001:00 failed with error -2
+[四 2月  5 21:04:54 2026] drv_vascend_stub: loading out-of-tree module taints kernel.
+[四 2月  5 21:04:54 2026] (null): set HEM step last failed!
+[四 2月  5 21:04:54 2026] (null): set HEM address to HW failed!
+[四 2月  5 21:04:54 2026] hns3 0000:35:00.0: failed to get gmv table, ret = -5.
+[四 2月  5 21:04:54 2026] hns3 0000:35:00.0: hw_init failed!
+[四 2月  5 21:04:54 2026] hns3 0000:35:00.0: RoCE Engine init failed!
+[四 2月  5 21:04:54 2026] arm_spe_pmu arm,spe-v1: profiling buffer inaccessible. Try passing "kpti=off" on the kernel command line
+[四 2月  5 21:04:54 2026] hns3 0000:35:00.0: RoCE instance init failed! ret = -5
+[四 2月  5 21:04:54 2026] arm_spe_pmu: probe of arm,spe-v1 failed with error -1
+[四 2月  5 21:04:54 2026] hns3 0000:35:00.0: fail to instantiate client, ret = -5
+[四 2月  5 21:04:54 2026] hns3 0000:35:00.0: match and instantiation failed for port, ret = -5
+[四 2月  5 21:04:54 2026] (null): set HEM step last failed!
+[四 2月  5 21:04:54 2026] (null): set HEM address to HW failed!
+[四 2月  5 21:04:54 2026] hns3 0000:35:00.1: failed to get gmv table, ret = -5.
+[四 2月  5 21:04:54 2026] hns3 0000:35:00.1: hw_init failed!
+[四 2月  5 21:04:54 2026] hns3 0000:35:00.1: RoCE Engine init failed!
+[四 2月  5 21:04:54 2026] hns3 0000:35:00.1: RoCE instance init failed! ret = -5
+[四 2月  5 21:04:54 2026] hns3 0000:35:00.1: fail to instantiate client, ret = -5
+[四 2月  5 21:04:54 2026] hns3 0000:35:00.1: match and instantiation failed for port, ret = -5
+[四 2月  5 21:04:54 2026] (null): set HEM step last failed!
+[四 2月  5 21:04:54 2026] (null): set HEM address to HW failed!
+[四 2月  5 21:04:54 2026] hns3 0000:35:00.2: failed to get gmv table, ret = -5.
+[四 2月  5 21:04:54 2026] hns3 0000:35:00.2: hw_init failed!
+[四 2月  5 21:04:54 2026] hns3 0000:35:00.2: RoCE Engine init failed!
+[四 2月  5 21:04:54 2026] hns3 0000:35:00.2: RoCE instance init failed! ret = -5
+[四 2月  5 21:04:54 2026] hns3 0000:35:00.2: fail to instantiate client, ret = -5
+[四 2月  5 21:04:54 2026] hns3 0000:35:00.2: match and instantiation failed for port, ret = -5
+[四 2月  5 21:04:54 2026] (null): set HEM step last failed!
+[四 2月  5 21:04:54 2026] (null): set HEM address to HW failed!
+[四 2月  5 21:04:54 2026] hns3 0000:35:00.3: failed to get gmv table, ret = -5.
+[四 2月  5 21:04:54 2026] hns3 0000:35:00.3: hw_init failed!
+[四 2月  5 21:04:54 2026] hns3 0000:35:00.3: RoCE Engine init failed!
+[四 2月  5 21:04:54 2026] hns3 0000:35:00.3: RoCE instance init failed! ret = -5
+[四 2月  5 21:04:54 2026] hns3 0000:35:00.3: fail to instantiate client, ret = -5
+[四 2月  5 21:04:54 2026] hns3 0000:35:00.3: match and instantiation failed for port, ret = -5

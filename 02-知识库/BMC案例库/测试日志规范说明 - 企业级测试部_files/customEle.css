@@ -1,0 +1,53 @@
+.bloghao-pdf{
+    border-radius: 5px;
+    margin: 15px auto;
+}
+.bloghao-pdf .iframe-dom{
+    width: 98%;
+    margin: 0px auto;
+    border-radius: 5px;
+}
+.bilibili-iframe-dom{
+    margin: 15px auto;
+}
+
+.swiper {
+    margin: 10px auto;
+    height: auto;
+    padding: 0;
+}
+.swiper .swiper-slide{
+    margin-left: 3px;
+    padding: 0;
+}
+
+.swiper .swiper-slide img{
+    margin: 0 auto;
+}
+
+#gallery-thumbs {
+    height: 120px;
+    line-height: 120px;
+    box-sizing: border-box;
+    padding: 15px 0 0;
+}
+.swiper-wrapper .swiper-slide{
+    margin: 0 auto;
+}
+#gallery-thumbs .swiper-wrapper .swiper-slide img{
+    height: 100px !important;
+    border-radius: 8px;
+}
+
+/*#bloghao-img-card{*/
+/*    margin: 0 auto;*/
+/*    text-align: center;*/
+/*}*/
+#bloghao-img-thumb{
+    margin-bottom: -15px;
+}
+
+#reveal-slide{
+    border-radius: 12px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}

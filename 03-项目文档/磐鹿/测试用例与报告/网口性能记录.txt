@@ -1,0 +1,961 @@
+[root@davinci-mini ~]# ip route show
+default via 10.121.156.1 dev wlp9s0 proto dhcp metric 600
+10.121.156.0/24 dev wlp9s0 proto kernel scope link src 10.121.156.146 metric 600
+192.168.0.0/24 dev eth0 proto kernel scope link src 192.168.0.2 metric 100
+[root@davinci-mini ~]# ping www.baidu.com
+PING www.baidu.com (39.156.70.239) 56(84) bytes of data.
+64 bytes from 39.156.70.239 (39.156.70.239): icmp_seq=1 ttl=49 time=101 ms
+64 bytes from 39.156.70.239 (39.156.70.239): icmp_seq=2 ttl=49 time=20.3 ms
+64 bytes from 39.156.70.239: icmp_seq=3 ttl=49 time=16.1 ms
+
+--- www.baidu.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 20135ms
+rtt min/avg/max/mdev = 16.057/45.826/101.111/39.130 ms
+[root@davinci-mini ~]# sudo yum install -y stress
+Last metadata expiration check: 1:17:01 ago on Thu Jan 15 06:57:53 2026.
+No match for argument: stress
+Error: Unable to find a match: stress
+[root@davinci-mini ~]# wget https://dl.fedoraproject.org/pub/epel/7/x86_64/Packges/s/stress-1.0.4-16.el7.x86_64.rpm
+-bash: wget: command not found
+[root@davinci-mini ~]# yum install -y wget
+Last metadata expiration check: 1:17:50 ago on Thu Jan 15 06:57:53 2026.
+Dependencies resolved.
+================================================================================
+ Package             Architecture    Version                 Repository    Size
+================================================================================
+Installing:
+ wget                aarch64         1.21.2-1.oe2203         base         659 k
+Installing dependencies:
+ libmetalink         aarch64         0.1.3-9.oe2203          base          26 k
+
+Transaction Summary
+================================================================================
+Install  2 Packages
+
+Total download size: 686 k
+Installed size: 3.2 M
+Downloading Packages:
+(1/2): libmetalink-0.1.3-9.oe2203.aarch64.rpm    55 kB/s |  26 kB     00:00
+(2/2): wget-1.21.2-1.oe2203.aarch64.rpm         656 kB/s | 659 kB     00:01
+--------------------------------------------------------------------------------
+Total                                           675 kB/s | 686 kB     00:01    
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1
+  Installing       : libmetalink-0.1.3-9.oe2203.aarch64                     1/2
+  Installing       : wget-1.21.2-1.oe2203.aarch64                           2/2
+  Running scriptlet: wget-1.21.2-1.oe2203.aarch64                           2/2
+  Verifying        : libmetalink-0.1.3-9.oe2203.aarch64                     1/2
+  Verifying        : wget-1.21.2-1.oe2203.aarch64                           2/2
+
+Installed:
+  libmetalink-0.1.3-9.oe2203.aarch64        wget-1.21.2-1.oe2203.aarch64
+
+Complete!
+[root@davinci-mini ~]# wget https://dl.fedoraproject.org/pub/epel/7/x86_64/Packges/s/stress-1.0.4-16.el7.x86_64.rpm
+--2026-01-15 08:15:47--  https://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/s/stress-1.0.4-16.el7.x86_64.rpm
+Resolving dl.fedoraproject.org (dl.fedoraproject.org)... 38.145.32.24, 38.145.32.23, 38.145.32.22
+Connecting to dl.fedoraproject.org (dl.fedoraproject.org)|38.145.32.24|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-01-15 08:15:49 ERROR 404: Not Found.
+
+[root@davinci-mini ~]# wget https://dl.fedoraproject.org/pub/epel/7/x86_64/Packges/s/stress-1.0.4-16.el7.x86_64.rpm
+--2026-01-15 08:16:09--  https://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/s/stress-1.0.4-16.el7.x86_64.rpm
+Resolving dl.fedoraproject.org (dl.fedoraproject.org)... 38.145.32.22, 38.145.32.24, 38.145.32.23
+Connecting to dl.fedoraproject.org (dl.fedoraproject.org)|38.145.32.22|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-01-15 08:16:11 ERROR 404: Not Found.
+
+[root@davinci-mini ~]# wget http://mirror.centos.org/centos/7/extras/x86_64/Pacages/stress-1.0.4-16.el7.x86_64.rpm
+--2026-01-15 08:16:34--  http://mirror.centos.org/centos/7/extras/x86_64/Packages/stress-1.0.4-16.el7.x86_64.rpm
+Resolving mirror.centos.org (mirror.centos.org)... 111.90.139.139, 2406:da18:39f:a01:ad53:d67:8e75:43ef
+Connecting to mirror.centos.org (mirror.centos.org)|111.90.139.139|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-01-15 08:16:35 ERROR 404: Not Found.
+
+[root@davinci-mini ~]# sudo yum install -y https://dl.fedoraproject.org/pub/epe/epel-release-latest-7.noarch.rpm
+Last metadata expiration check: 1:18:52 ago on Thu Jan 15 06:57:53 2026.
+[MIRROR] epel-release-latest-7.noarch.rpm: Status code: 404 for https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm (IP: 38.145.32.24)
+[MIRROR] epel-release-latest-7.noarch.rpm: Status code: 404 for https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm (IP: 38.145.32.24)
+[MIRROR] epel-release-latest-7.noarch.rpm: Status code: 404 for https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm (IP: 38.145.32.24)
+[MIRROR] epel-release-latest-7.noarch.rpm: Status code: 404 for https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm (IP: 38.145.32.24)
+[FAILED] epel-release-latest-7.noarch.rpm: Status code: 404 for https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm (IP: 38.145.32.24)
+Status code: 404 for https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm (IP: 38.145.32.24)
+[root@davinci-mini ~]# dnf install -y stress
+Last metadata expiration check: 1:19:40 ago on Thu Jan 15 06:57:53 2026.
+No match for argument: stress
+Error: Unable to find a match: stress
+[root@davinci-mini ~]# dnf search stress
+Last metadata expiration check: 1:19:51 ago on Thu Jan 15 06:57:53 2026.
+No matches found.
+[root@davinci-mini ~]# dnf install -y stress-ng
+Last metadata expiration check: 1:19:59 ago on Thu Jan 15 06:57:53 2026.
+No match for argument: stress-ng
+Error: Unable to find a match: stress-ng
+[root@davinci-mini ~]# wget https://people.seas.harvard.edu/~apw/stress/stress-.0.4.tar.gz && tar -xzf stress-1.0.4.tar.gz && cd stress-1.0.4 && ./configure & make && sudo make install
+--2026-01-15 08:18:06--  https://people.seas.harvard.edu/~apw/stress/stress-1.0.4.tar.gz
+Resolving people.seas.harvard.edu (people.seas.harvard.edu)... 54.172.197.41
+Connecting to people.seas.harvard.edu (people.seas.harvard.edu)|54.172.197.41|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-01-15 08:18:08 ERROR 404: Not Found.
+
+[root@davinci-mini ~]# wget https://people.seas.harvard.edu/~apw/stress/stress-.0.4.tar.gz
+--2026-01-15 08:18:27--  https://people.seas.harvard.edu/~apw/stress/stress-1.0.4.tar.gz
+Resolving people.seas.harvard.edu (people.seas.harvard.edu)... 54.172.197.41
+Connecting to people.seas.harvard.edu (people.seas.harvard.edu)|54.172.197.41|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-01-15 08:18:29 ERROR 404: Not Found.
+
+[root@davinci-mini ~]# wget https://src.fedoraproject.org/repo/pkgs/stress/stres-1.0.4.tar.gz/sha512/fc257095b6c3b6b0c0d8c4a1108d2aabad4e1c88868504efe1d8a9c4e7b8e153e5c9ed23d61d3d8a34d9e7a6482c689eeaf275d2d6b24ffc8f45a66514d76d/stress-1..4.tar.gz
+--2026-01-15 08:18:36--  https://src.fedoraproject.org/repo/pkgs/stress/stress-1.0.4.tar.gz/sha512/fc257095b6c3b6b0c0d8c4a1108d2aabad4e1c88868504efe1d8a9c4ea7b8e153e5c9ed23d61d3d8a34d9e7a6482c689eeaf275d2d6b24ffc8f45a66514d76d/stress-1.0.4.tar.gz
+Resolving src.fedoraproject.org (src.fedoraproject.org)... 38.145.32.20, 38.145.32.21, 2620:52:6:1121:bead:cafe:feed:fed6, ...
+Connecting to src.fedoraproject.org (src.fedoraproject.org)|38.145.32.20|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-01-15 08:18:38 ERROR 404: Not Found.
+
+[root@davinci-mini ~]# yun install stream
+-bash: yun: command not found
+[root@davinci-mini ~]# yum install stream
+Last metadata expiration check: 1:21:11 ago on Thu Jan 15 06:57:53 2026.
+No match for argument: stream
+Error: Unable to find a match: stream
+[root@davinci-mini ~]# yum install fio
+Last metadata expiration check: 1:21:33 ago on Thu Jan 15 06:57:53 2026.
+Package fio-3.29-1.oe2203.aarch64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+[root@davinci-mini ~]# yum install netperf
+Last metadata expiration check: 1:21:56 ago on Thu Jan 15 06:57:53 2026.
+Dependencies resolved.
+================================================================================
+ Package        Architecture   Version                  Repository         Size
+================================================================================
+Installing:
+ netperf        aarch64        2.7.0-5.oe2203           everything        175 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 175 k
+Installed size: 532 k
+Is this ok [y/N]: y
+Downloading Packages:
+netperf-2.7.0-5.oe2203.aarch64.rpm              199 kB/s | 175 kB     00:00
+--------------------------------------------------------------------------------
+Total                                           198 kB/s | 175 kB     00:00    
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1
+  Running scriptlet: netperf-2.7.0-5.oe2203.aarch64                         1/1
+  Installing       : netperf-2.7.0-5.oe2203.aarch64                         1/1
+  Running scriptlet: netperf-2.7.0-5.oe2203.aarch64                         1/1
+  Verifying        : netperf-2.7.0-5.oe2203.aarch64                         1/1
+
+Installed:
+  netperf-2.7.0-5.oe2203.aarch64                                               
+
+Complete!
+[root@davinci-mini ~]# yum install iperf3
+Last metadata expiration check: 1:25:58 ago on Thu Jan 15 06:57:53 2026.
+Dependencies resolved.
+================================================================================
+ Package         Architecture     Version                   Repository     Size
+================================================================================
+Installing:
+ iperf3          aarch64          3.10.1-1.oe2203           base           83 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 83 k
+Installed size: 311 k
+Is this ok [y/N]: y
+Downloading Packages:
+iperf3-3.10.1-1.oe2203.aarch64.rpm               76 kB/s |  83 kB     00:01
+--------------------------------------------------------------------------------
+Total                                            76 kB/s |  83 kB     00:01    
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1
+  Installing       : iperf3-3.10.1-1.oe2203.aarch64                         1/1
+  Running scriptlet: iperf3-3.10.1-1.oe2203.aarch64                         1/1
+  Verifying        : iperf3-3.10.1-1.oe2203.aarch64                         1/1
+
+Installed:
+  iperf3-3.10.1-1.oe2203.aarch64                                               
+
+Complete!
+[root@davinci-mini ~]# yum install -y stress
+Last metadata expiration check: 1:27:06 ago on Thu Jan 15 06:57:53 2026.
+No match for argument: stress
+Error: Unable to find a match: stress
+[root@davinci-mini ~]# yum install -y stress-ng
+Last metadata expiration check: 1:28:45 ago on Thu Jan 15 06:57:53 2026.
+No match for argument: stress-ng
+Error: Unable to find a match: stress-ng
+[root@davinci-mini ~]# yum install -y stress-ng
+Last metadata expiration check: 1:32:08 ago on Thu Jan 15 06:57:53 2026.
+No match for argument: stress-ng
+Error: Unable to find a match: stress-ng
+[root@davinci-mini ~]# wget https://fossies.org/linux/privat/stress-1.0.7.tar.gz
+--2026-01-15 08:32:46--  https://fossies.org/linux/privat/stress-1.0.7.tar.gz
+Resolving fossies.org (fossies.org)... 148.251.50.230
+Connecting to fossies.org (fossies.org)|148.251.50.230|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 169111 (165K) [application/x-gzip]
+Saving to: 'stress-1.0.7.tar.gz'
+
+stress-1.0.7.tar.gz 100%[===================>] 165.15K   272KB/s    in 0.6s
+
+2026-01-15 08:32:48 (272 KB/s) - 'stress-1.0.7.tar.gz' saved [169111/169111]
+
+[root@davinci-mini ~]# tar -zxvf stress-1.0.7.tar.gz
+stress-1.0.7/
+stress-1.0.7/INSTALL
+stress-1.0.7/test/
+stress-1.0.7/test/check_version_return_code
+stress-1.0.7/test/Makefile.am
+stress-1.0.7/test/Makefile.in
+stress-1.0.7/test/check_usage_return_code
+stress-1.0.7/src/
+stress-1.0.7/src/stress.c
+stress-1.0.7/src/Makefile.am
+stress-1.0.7/src/Makefile.in
+stress-1.0.7/TODO
+stress-1.0.7/doc/
+stress-1.0.7/doc/stress.png
+stress-1.0.7/autogen.sh
+stress-1.0.7/depcomp
+stress-1.0.7/missing
+stress-1.0.7/ChangeLog
+stress-1.0.7/COPYING
+stress-1.0.7/configure
+stress-1.0.7/NEWS
+stress-1.0.7/Makefile.am
+stress-1.0.7/config.h.in
+stress-1.0.7/compile
+stress-1.0.7/Makefile.in
+stress-1.0.7/README.md
+stress-1.0.7/configure.ac
+stress-1.0.7/test-driver
+stress-1.0.7/aclocal.m4
+stress-1.0.7/CONTRIBUTING.md
+stress-1.0.7/README
+stress-1.0.7/install-sh
+stress-1.0.7/AUTHORS
+stress-1.0.7/man/
+stress-1.0.7/man/stress.1
+[root@davinci-mini ~]# cd stress-1.0.7
+[root@davinci-mini stress-1.0.7]# ./configure
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... gcc3
+checking whether make sets $(MAKE)... (cached) yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking sys/prctl.h usability... yes
+checking sys/prctl.h presence... yes
+checking for sys/prctl.h... yes
+checking for pid_t... yes
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking for alarm... yes
+checking for sqrt... no
+checking for strerror... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating test/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+[root@davinci-mini stress-1.0.7]# make
+make  all-recursive
+make[1]: Entering directory '/root/stress-1.0.7'
+Making all in src
+make[2]: Entering directory '/root/stress-1.0.7/src'
+gcc -DHAVE_CONFIG_H -I. -I..    -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -g -O2 -MT stress.o -MD -MP -MF .deps/stress.Tpo -c -o stress.o stress.c
+mv -f .deps/stress.Tpo .deps/stress.Po
+gcc -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -g -O2   -o stress stress.o -lm
+make[2]: Leaving directory '/root/stress-1.0.7/src'
+Making all in test
+make[2]: Entering directory '/root/stress-1.0.7/test'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/root/stress-1.0.7/test'
+make[2]: Entering directory '/root/stress-1.0.7'
+make[2]: Leaving directory '/root/stress-1.0.7'
+make[1]: Leaving directory '/root/stress-1.0.7'
+[root@davinci-mini stress-1.0.7]# make install
+Making install in src
+make[1]: Entering directory '/root/stress-1.0.7/src'
+make[2]: Entering directory '/root/stress-1.0.7/src'
+ /usr/bin/mkdir -p '/usr/local/bin'
+  /usr/bin/install -c stress '/usr/local/bin'
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/root/stress-1.0.7/src'
+make[1]: Leaving directory '/root/stress-1.0.7/src'
+Making install in test
+make[1]: Entering directory '/root/stress-1.0.7/test'
+make[2]: Entering directory '/root/stress-1.0.7/test'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/root/stress-1.0.7/test'
+make[1]: Leaving directory '/root/stress-1.0.7/test'
+make[1]: Entering directory '/root/stress-1.0.7'
+make[2]: Entering directory '/root/stress-1.0.7'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/local/share/man/man1'
+ /usr/bin/install -c -m 644 man/stress.1 '/usr/local/share/man/man1'
+make[2]: Leaving directory '/root/stress-1.0.7'
+make[1]: Leaving directory '/root/stress-1.0.7'
+[root@davinci-mini stress-1.0.7]# str
+streamzip  stress     strings    strip
+[root@davinci-mini stress-1.0.7]# str
+streamzip  stress     strings    strip
+[root@davinci-mini stress-1.0.7]# stre
+streamzip  stress
+[root@davinci-mini stress-1.0.7]# stre
+streamzip  stress
+[root@davinci-mini stress-1.0.7]# ifconfig
+enp4s0u2u3: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 46:f7:b6:11:e9:5c  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.0.2  netmask 255.255.255.0  broadcast 192.168.0.255
+        inet6 fe80::b855:17ff:feff:561c  prefixlen 64  scopeid 0x20<link>
+        ether ba:55:17:ff:56:1c  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 34  bytes 2528 (2.4 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 57
+
+eth1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet6 fe80::fb22:a9b9:6939:95f7  prefixlen 64  scopeid 0x20<link>
+        ether e6:39:b5:75:de:c1  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 66
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlp9s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.121.156.146  netmask 255.255.255.0  broadcast 10.121.156.255
+        inet6 fe80::b99:7f75:4f7c:77d1  prefixlen 64  scopeid 0x20<link>
+        ether 80:9d:65:ef:96:e0  txqueuelen 1000  (Ethernet)
+        RX packets 4327  bytes 2030173 (1.9 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1021  bytes 133759 (130.6 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[root@davinci-mini stress-1.0.7]# ifconfig
+enp4s0u2u3: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 46:f7:b6:11:e9:5c  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.0.2  netmask 255.255.255.0  broadcast 192.168.0.255
+        inet6 fe80::b855:17ff:feff:561c  prefixlen 64  scopeid 0x20<link>
+        ether ba:55:17:ff:56:1c  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 34  bytes 2528 (2.4 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 57
+
+eth1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet6 fe80::fb22:a9b9:6939:95f7  prefixlen 64  scopeid 0x20<link>
+        ether e6:39:b5:75:de:c1  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 66
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlp9s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.121.156.146  netmask 255.255.255.0  broadcast 10.121.156.255
+        inet6 fe80::b99:7f75:4f7c:77d1  prefixlen 64  scopeid 0x20<link>
+        ether 80:9d:65:ef:96:e0  txqueuelen 1000  (Ethernet)
+        RX packets 4327  bytes 2030173 (1.9 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1021  bytes 133759 (130.6 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[root@davinci-mini stress-1.0.7]# mkdir -p /tmp/iperf3_packages
+[root@davinci-mini stress-1.0.7]# cd /tmp/iperf3_packages
+[root@davinci-mini iperf3_packages]# arch
+aarch64
+[root@davinci-mini iperf3_packages]# yumdownloader --resolve --destdir=. iperf3
+-bash: yumdownloader: command not found
+[root@davinci-mini iperf3_packages]# wget http://mirror.centos.org/altarch/7/osaarch64/Packages/iperf3-3.1.3-1.el7.aarch64.rpm
+--2026-01-15 08:44:34--  http://mirror.centos.org/altarch/7/os/aarch64/Packages/iperf3-3.1.3-1.el7.aarch64.rpm
+Resolving mirror.centos.org (mirror.centos.org)... 111.90.139.139, 2406:da18:39f:a01:ad53:d67:8e75:43ef
+Connecting to mirror.centos.org (mirror.centos.org)|111.90.139.139|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-01-15 08:44:35 ERROR 404: Not Found.
+
+[root@davinci-mini iperf3_packages]# wget -O /tmp/iperf3.rpm http://mirror.cents.org/altarch/7/os/aarch64/Packages/iperf3-3.1.3-1.el7.aarch64.rpm
+--2026-01-15 08:44:57--  http://mirror.centos.org/altarch/7/os/aarch64/Packages/iperf3-3.1.3-1.el7.aarch64.rpm
+Resolving mirror.centos.org (mirror.centos.org)... 111.90.139.139, 2406:da1a:fcb:2f03:7adc:fea2:8465:cce2
+Connecting to mirror.centos.org (mirror.centos.org)|111.90.139.139|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2026-01-15 08:44:58 ERROR 404: Not Found.
+
+[root@davinci-mini iperf3_packages]# yum install -y yum-utils
+Last metadata expiration check: 1:47:31 ago on Thu Jan 15 06:57:53 2026.
+No match for argument: yum-utils
+Error: Unable to find a match: yum-utils
+[root@davinci-mini iperf3_packages]# wget https://downloads.es.net/pub/iperf/iprf-3.10.1.tar.gz
+--2026-01-15 08:45:40--  https://downloads.es.net/pub/iperf/iperf-3.10.1.tar.gz
+Resolving downloads.es.net (downloads.es.net)... 172.64.151.56, 104.18.36.200, 2606:4700:4406::ac40:9738, ...
+Connecting to downloads.es.net (downloads.es.net)|172.64.151.56|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 633304 (618K) [application/octet-stream]
+Saving to: 'iperf-3.10.1.tar.gz'
+
+iperf-3.10.1.tar.gz 100%[===================>] 618.46K   487KB/s    in 1.3s
+
+2026-01-15 08:45:44 (487 KB/s) - 'iperf-3.10.1.tar.gz' saved [633304/633304]
+
+[root@davinci-mini iperf3_packages]# scp iperf-3.10.1.tar.gz root@192.168.0.9:/mp/
+The authenticity of host '192.168.0.9 (192.168.0.9)' can't be established.
+ED25519 key fingerprint is SHA256:wBa5lkk7/IsvHQKP758cKo32d5YhxBV83P6H8BeL1dI.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? y
+Please type 'yes', 'no' or the fingerprint: yes
+Warning: Permanently added '192.168.0.9' (ED25519) to the list of known hosts.
+root@192.168.0.9's password:
+Permission denied, please try again.
+root@192.168.0.9's password:
+iperf-3.10.1.tar.gz                           100%  618KB  37.0MB/s   00:00
+[root@davinci-mini iperf3_packages]# tar -xzf iperf-3.10.1.tar.gz
+[root@davinci-mini iperf3_packages]# cd iperf-3.10.1
+[root@davinci-mini iperf-3.10.1]# scp iperf-3.10.1 root@192.168.0.9:/root/     root@192.168.0.9's password:
+iperf-3.10.1: No such file or directory
+[root@davinci-mini iperf-3.10.1]# cd
+[root@davinci-mini ~]# scp iperf-3.10.1 root@192.168.0.9:/root/
+root@192.168.0.9's password:
+iperf-3.10.1: No such file or directory
+[root@davinci-mini ~]# cd /tmp/iperf3_packages/
+[root@davinci-mini iperf3_packages]# cd iperf-3.10.1
+[root@davinci-mini iperf-3.10.1]# scp -r . root@192.168.0.9:/root/iperf-3.10.1
+root@192.168.0.9's password:
+scp: error: unexpected filename: .
+[root@davinci-mini iperf-3.10.1]# iperf3 -c 192.168.0.9 -t 10 -P 32
+Connecting to host 192.168.0.9, port 5201
+[  5] local 192.168.0.2 port 40696 connected to 192.168.0.9 port 5201
+[  7] local 192.168.0.2 port 40704 connected to 192.168.0.9 port 5201
+[  9] local 192.168.0.2 port 40720 connected to 192.168.0.9 port 5201
+[ 11] local 192.168.0.2 port 40734 connected to 192.168.0.9 port 5201
+[ 13] local 192.168.0.2 port 40736 connected to 192.168.0.9 port 5201
+[ 15] local 192.168.0.2 port 40738 connected to 192.168.0.9 port 5201
+[ 17] local 192.168.0.2 port 40752 connected to 192.168.0.9 port 5201
+[ 19] local 192.168.0.2 port 40760 connected to 192.168.0.9 port 5201
+[ 21] local 192.168.0.2 port 40768 connected to 192.168.0.9 port 5201
+[ 23] local 192.168.0.2 port 40770 connected to 192.168.0.9 port 5201
+[ 25] local 192.168.0.2 port 40784 connected to 192.168.0.9 port 5201
+[ 27] local 192.168.0.2 port 40792 connected to 192.168.0.9 port 5201
+[ 29] local 192.168.0.2 port 40802 connected to 192.168.0.9 port 5201
+[ 31] local 192.168.0.2 port 40810 connected to 192.168.0.9 port 5201
+[ 33] local 192.168.0.2 port 40818 connected to 192.168.0.9 port 5201
+[ 35] local 192.168.0.2 port 40828 connected to 192.168.0.9 port 5201
+[ 37] local 192.168.0.2 port 40836 connected to 192.168.0.9 port 5201
+[ 39] local 192.168.0.2 port 40848 connected to 192.168.0.9 port 5201
+[ 41] local 192.168.0.2 port 40850 connected to 192.168.0.9 port 5201
+[ 43] local 192.168.0.2 port 40862 connected to 192.168.0.9 port 5201
+[ 45] local 192.168.0.2 port 40866 connected to 192.168.0.9 port 5201
+[ 47] local 192.168.0.2 port 40882 connected to 192.168.0.9 port 5201
+[ 49] local 192.168.0.2 port 40890 connected to 192.168.0.9 port 5201
+[ 51] local 192.168.0.2 port 40902 connected to 192.168.0.9 port 5201
+[ 53] local 192.168.0.2 port 40908 connected to 192.168.0.9 port 5201
+[ 55] local 192.168.0.2 port 40918 connected to 192.168.0.9 port 5201
+[ 57] local 192.168.0.2 port 40932 connected to 192.168.0.9 port 5201
+[ 59] local 192.168.0.2 port 40948 connected to 192.168.0.9 port 5201
+[ 61] local 192.168.0.2 port 40964 connected to 192.168.0.9 port 5201
+[ 63] local 192.168.0.2 port 40980 connected to 192.168.0.9 port 5201
+[ 65] local 192.168.0.2 port 40990 connected to 192.168.0.9 port 5201
+[ 67] local 192.168.0.2 port 41002 connected to 192.168.0.9 port 5201
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec  4.63 MBytes  38.9 Mbits/sec    0   66.5 KBytes
+[  7]   0.00-1.00   sec  3.28 MBytes  27.5 Mbits/sec    0   45.2 KBytes
+[  9]   0.00-1.00   sec  2.12 MBytes  17.8 Mbits/sec    0   31.1 KBytes
+[ 11]   0.00-1.00   sec  2.51 MBytes  21.0 Mbits/sec    0   39.6 KBytes
+[ 13]   0.00-1.00   sec  5.79 MBytes  48.5 Mbits/sec    0   70.7 KBytes
+[ 15]   0.00-1.00   sec  5.59 MBytes  46.9 Mbits/sec    0   70.7 KBytes
+[ 17]   0.00-1.00   sec  3.74 MBytes  31.4 Mbits/sec    0   52.3 KBytes
+[ 19]   0.00-1.00   sec  2.11 MBytes  17.7 Mbits/sec    0   32.5 KBytes
+[ 21]   0.00-1.00   sec  3.38 MBytes  28.4 Mbits/sec    0   52.3 KBytes
+[ 23]   0.00-1.00   sec  3.76 MBytes  31.6 Mbits/sec    0   52.3 KBytes
+[ 25]   0.00-1.00   sec  4.70 MBytes  39.4 Mbits/sec    0   67.9 KBytes
+[ 27]   0.00-1.00   sec  4.14 MBytes  34.7 Mbits/sec    0   60.8 KBytes
+[ 29]   0.00-1.00   sec  4.58 MBytes  38.5 Mbits/sec    0   66.5 KBytes
+[ 31]   0.00-1.00   sec  4.36 MBytes  36.6 Mbits/sec    0   63.6 KBytes
+[ 33]   0.00-1.00   sec  3.62 MBytes  30.4 Mbits/sec    0   58.0 KBytes
+[ 35]   0.00-1.00   sec  4.51 MBytes  37.8 Mbits/sec    0   60.8 KBytes
+[ 37]   0.00-1.00   sec  2.15 MBytes  18.1 Mbits/sec    0   33.9 KBytes
+[ 39]   0.00-1.00   sec  2.09 MBytes  17.5 Mbits/sec    0   33.9 KBytes
+[ 41]   0.00-1.00   sec  2.05 MBytes  17.2 Mbits/sec    0   33.9 KBytes
+[ 43]   0.00-1.00   sec  2.07 MBytes  17.3 Mbits/sec    0   33.9 KBytes
+[ 45]   0.00-1.00   sec  2.09 MBytes  17.5 Mbits/sec    0   33.9 KBytes
+[ 47]   0.00-1.00   sec  2.09 MBytes  17.5 Mbits/sec    0   33.9 KBytes
+[ 49]   0.00-1.00   sec  4.46 MBytes  37.4 Mbits/sec    0   66.5 KBytes
+[ 51]   0.00-1.00   sec  2.04 MBytes  17.1 Mbits/sec    0   33.9 KBytes
+[ 53]   0.00-1.00   sec  4.29 MBytes  36.0 Mbits/sec    0   60.8 KBytes
+[ 55]   0.00-1.00   sec  4.52 MBytes  37.9 Mbits/sec    0   63.6 KBytes
+[ 57]   0.00-1.00   sec  2.08 MBytes  17.4 Mbits/sec    0   33.9 KBytes
+[ 59]   0.00-1.00   sec  5.38 MBytes  45.1 Mbits/sec    0   80.6 KBytes
+[ 61]   0.00-1.00   sec  2.08 MBytes  17.4 Mbits/sec    0   33.9 KBytes
+[ 63]   0.00-1.00   sec  6.75 MBytes  56.6 Mbits/sec    0   86.3 KBytes
+[ 65]   0.00-1.00   sec  2.09 MBytes  17.5 Mbits/sec    0   33.9 KBytes
+[ 67]   0.00-1.00   sec  11.8 MBytes  98.8 Mbits/sec    0    120 KBytes
+[SUM]   0.00-1.00   sec   121 MBytes  1.01 Gbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   1.00-2.00   sec  4.29 MBytes  36.0 Mbits/sec    0   66.5 KBytes
+[  7]   1.00-2.00   sec  2.98 MBytes  25.0 Mbits/sec    0   45.2 KBytes
+[  9]   1.00-2.00   sec  1.93 MBytes  16.2 Mbits/sec    0   31.1 KBytes
+[ 11]   1.00-2.00   sec  2.24 MBytes  18.8 Mbits/sec    0   39.6 KBytes
+[ 13]   1.00-2.00   sec  5.22 MBytes  43.8 Mbits/sec    0   74.9 KBytes
+[ 15]   1.00-2.00   sec  5.22 MBytes  43.8 Mbits/sec    0   73.5 KBytes
+[ 17]   1.00-2.00   sec  3.48 MBytes  29.2 Mbits/sec    0   52.3 KBytes
+[ 19]   1.00-2.00   sec  1.86 MBytes  15.6 Mbits/sec    0   32.5 KBytes
+[ 21]   1.00-2.00   sec  3.23 MBytes  27.1 Mbits/sec    0   52.3 KBytes
+[ 23]   1.00-2.00   sec  3.48 MBytes  29.2 Mbits/sec    0   53.7 KBytes
+[ 25]   1.00-2.00   sec  4.29 MBytes  36.0 Mbits/sec    0   67.9 KBytes
+[ 27]   1.00-2.00   sec  4.04 MBytes  33.9 Mbits/sec    0   60.8 KBytes
+[ 29]   1.00-2.00   sec  4.10 MBytes  34.4 Mbits/sec    0   66.5 KBytes
+[ 31]   1.00-2.00   sec  4.04 MBytes  33.9 Mbits/sec    0   63.6 KBytes
+[ 33]   1.00-2.00   sec  3.48 MBytes  29.2 Mbits/sec    0   58.0 KBytes
+[ 35]   1.00-2.00   sec  4.16 MBytes  34.9 Mbits/sec    0   60.8 KBytes
+[ 37]   1.00-2.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 39]   1.00-2.00   sec  1.99 MBytes  16.7 Mbits/sec    0   33.9 KBytes
+[ 41]   1.00-2.00   sec  1.97 MBytes  16.5 Mbits/sec    0   33.9 KBytes
+[ 43]   1.00-2.00   sec  1.99 MBytes  16.7 Mbits/sec    0   33.9 KBytes
+[ 45]   1.00-2.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 47]   1.00-2.00   sec  1.99 MBytes  16.7 Mbits/sec    0   33.9 KBytes
+[ 49]   1.00-2.00   sec  4.29 MBytes  36.0 Mbits/sec    0   69.3 KBytes
+[ 51]   1.00-2.00   sec  1.99 MBytes  16.7 Mbits/sec    0   33.9 KBytes
+[ 53]   1.00-2.00   sec  4.23 MBytes  35.4 Mbits/sec    0   63.6 KBytes
+[ 55]   1.00-2.00   sec  4.29 MBytes  36.0 Mbits/sec    0   67.9 KBytes
+[ 57]   1.00-2.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 59]   1.00-2.00   sec  5.22 MBytes  43.8 Mbits/sec    0   80.6 KBytes
+[ 61]   1.00-2.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 63]   1.00-2.00   sec  6.84 MBytes  57.3 Mbits/sec    0   94.7 KBytes
+[ 65]   1.00-2.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 67]   1.00-2.00   sec  10.5 MBytes  88.1 Mbits/sec    0    124 KBytes
+[SUM]   1.00-2.00   sec   113 MBytes   945 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   2.00-3.00   sec  4.10 MBytes  34.4 Mbits/sec    0   66.5 KBytes
+[  7]   2.00-3.00   sec  2.98 MBytes  25.0 Mbits/sec    0   48.1 KBytes
+[  9]   2.00-3.00   sec  1.93 MBytes  16.2 Mbits/sec    0   31.1 KBytes
+[ 11]   2.00-3.00   sec  2.36 MBytes  19.8 Mbits/sec    0   39.6 KBytes
+[ 13]   2.00-3.00   sec  5.41 MBytes  45.4 Mbits/sec    0   74.9 KBytes
+[ 15]   2.00-3.00   sec  5.41 MBytes  45.4 Mbits/sec    0   76.4 KBytes
+[ 17]   2.00-3.00   sec  3.60 MBytes  30.2 Mbits/sec    0   62.2 KBytes
+[ 19]   2.00-3.00   sec  1.74 MBytes  14.6 Mbits/sec    0   32.5 KBytes
+[ 21]   2.00-3.00   sec  3.11 MBytes  26.1 Mbits/sec    0   52.3 KBytes
+[ 23]   2.00-3.00   sec  3.48 MBytes  29.2 Mbits/sec    0   53.7 KBytes
+[ 25]   2.00-3.00   sec  4.29 MBytes  36.0 Mbits/sec    0   70.7 KBytes
+[ 27]   2.00-3.00   sec  3.85 MBytes  32.3 Mbits/sec    0   60.8 KBytes
+[ 29]   2.00-3.00   sec  4.29 MBytes  36.0 Mbits/sec    0   66.5 KBytes
+[ 31]   2.00-3.00   sec  4.04 MBytes  33.9 Mbits/sec    0   63.6 KBytes
+[ 33]   2.00-3.00   sec  3.36 MBytes  28.2 Mbits/sec    0   58.0 KBytes
+[ 35]   2.00-3.00   sec  4.10 MBytes  34.4 Mbits/sec    0   60.8 KBytes
+[ 37]   2.00-3.00   sec  1.99 MBytes  16.7 Mbits/sec    0   33.9 KBytes
+[ 39]   2.00-3.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 41]   2.00-3.00   sec  1.88 MBytes  15.8 Mbits/sec    0   33.9 KBytes
+[ 43]   2.00-3.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 45]   2.00-3.00   sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 47]   2.00-3.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 49]   2.00-3.00   sec  4.29 MBytes  36.0 Mbits/sec    0   69.3 KBytes
+[ 51]   2.00-3.00   sec  1.90 MBytes  15.9 Mbits/sec    0   33.9 KBytes
+[ 53]   2.00-3.00   sec  4.10 MBytes  34.4 Mbits/sec    0   63.6 KBytes
+[ 55]   2.00-3.00   sec  4.10 MBytes  34.4 Mbits/sec    0   67.9 KBytes
+[ 57]   2.00-3.00   sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 59]   2.00-3.00   sec  5.03 MBytes  42.2 Mbits/sec    0   80.6 KBytes
+[ 61]   2.00-3.00   sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 63]   2.00-3.00   sec  6.96 MBytes  58.4 Mbits/sec    0   94.7 KBytes
+[ 65]   2.00-3.00   sec  1.99 MBytes  16.7 Mbits/sec    0   33.9 KBytes
+[ 67]   2.00-3.00   sec  10.4 MBytes  87.6 Mbits/sec    0    124 KBytes
+[SUM]   2.00-3.00   sec   112 MBytes   936 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   3.00-4.00   sec  4.10 MBytes  34.4 Mbits/sec    0   66.5 KBytes
+[  7]   3.00-4.00   sec  2.98 MBytes  25.0 Mbits/sec    0   48.1 KBytes
+[  9]   3.00-4.00   sec  1.80 MBytes  15.1 Mbits/sec    0   31.1 KBytes
+[ 11]   3.00-4.00   sec  2.24 MBytes  18.8 Mbits/sec    0   39.6 KBytes
+[ 13]   3.00-4.00   sec  5.22 MBytes  43.8 Mbits/sec    0   74.9 KBytes
+[ 15]   3.00-4.00   sec  5.22 MBytes  43.8 Mbits/sec    0   77.8 KBytes
+[ 17]   3.00-4.00   sec  4.10 MBytes  34.4 Mbits/sec    0   62.2 KBytes
+[ 19]   3.00-4.00   sec  1.86 MBytes  15.6 Mbits/sec    0   32.5 KBytes
+[ 21]   3.00-4.00   sec  3.11 MBytes  26.1 Mbits/sec    0   52.3 KBytes
+[ 23]   3.00-4.00   sec  3.48 MBytes  29.2 Mbits/sec    0   53.7 KBytes
+[ 25]   3.00-4.00   sec  4.29 MBytes  36.0 Mbits/sec    0   70.7 KBytes
+[ 27]   3.00-4.00   sec  3.98 MBytes  33.4 Mbits/sec    0   60.8 KBytes
+[ 29]   3.00-4.00   sec  4.29 MBytes  36.0 Mbits/sec    0   66.5 KBytes
+[ 31]   3.00-4.00   sec  4.10 MBytes  34.4 Mbits/sec    0   63.6 KBytes
+[ 33]   3.00-4.00   sec  3.48 MBytes  29.2 Mbits/sec    0   58.0 KBytes
+[ 35]   3.00-4.00   sec  4.10 MBytes  34.4 Mbits/sec    0   60.8 KBytes
+[ 37]   3.00-4.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 39]   3.00-4.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 41]   3.00-4.00   sec  1.97 MBytes  16.5 Mbits/sec    0   33.9 KBytes
+[ 43]   3.00-4.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 45]   3.00-4.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 47]   3.00-4.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 49]   3.00-4.00   sec  4.29 MBytes  36.0 Mbits/sec    0   69.3 KBytes
+[ 51]   3.00-4.00   sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 53]   3.00-4.00   sec  4.16 MBytes  34.9 Mbits/sec    0   63.6 KBytes
+[ 55]   3.00-4.00   sec  4.10 MBytes  34.4 Mbits/sec    0   67.9 KBytes
+[ 57]   3.00-4.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 59]   3.00-4.00   sec  5.03 MBytes  42.2 Mbits/sec    0   80.6 KBytes
+[ 61]   3.00-4.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 63]   3.00-4.00   sec  6.96 MBytes  58.4 Mbits/sec    0   94.7 KBytes
+[ 65]   3.00-4.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 67]   3.00-4.00   sec  10.6 MBytes  88.6 Mbits/sec    0    124 KBytes
+[SUM]   3.00-4.00   sec   112 MBytes   940 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   4.00-5.00   sec  5.16 MBytes  43.3 Mbits/sec    0   94.7 KBytes
+[  7]   4.00-5.00   sec  2.98 MBytes  25.0 Mbits/sec    0   48.1 KBytes
+[  9]   4.00-5.00   sec  2.05 MBytes  17.2 Mbits/sec    0   45.2 KBytes
+[ 11]   4.00-5.00   sec  2.24 MBytes  18.8 Mbits/sec    0   39.6 KBytes
+[ 13]   4.00-5.00   sec  5.22 MBytes  43.8 Mbits/sec    0   74.9 KBytes
+[ 15]   4.00-5.00   sec  5.41 MBytes  45.3 Mbits/sec    0   80.6 KBytes
+[ 17]   4.00-5.00   sec  4.04 MBytes  33.9 Mbits/sec    0   62.2 KBytes
+[ 19]   4.00-5.00   sec  1.86 MBytes  15.6 Mbits/sec    0   32.5 KBytes
+[ 21]   4.00-5.00   sec  3.11 MBytes  26.1 Mbits/sec    0   52.3 KBytes
+[ 23]   4.00-5.00   sec  3.48 MBytes  29.2 Mbits/sec    0   53.7 KBytes
+[ 25]   4.00-5.00   sec  4.29 MBytes  36.0 Mbits/sec    0   70.7 KBytes
+[ 27]   4.00-5.00   sec  3.91 MBytes  32.8 Mbits/sec    0   60.8 KBytes
+[ 29]   4.00-5.00   sec  4.29 MBytes  36.0 Mbits/sec    0   66.5 KBytes
+[ 31]   4.00-5.00   sec  4.10 MBytes  34.4 Mbits/sec    0   63.6 KBytes
+[ 33]   4.00-5.00   sec  3.36 MBytes  28.1 Mbits/sec    0   58.0 KBytes
+[ 35]   4.00-5.00   sec  3.98 MBytes  33.4 Mbits/sec    0   60.8 KBytes
+[ 37]   4.00-5.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 39]   4.00-5.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 41]   4.00-5.00   sec  1.88 MBytes  15.8 Mbits/sec    0   33.9 KBytes
+[ 43]   4.00-5.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 45]   4.00-5.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 47]   4.00-5.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 49]   4.00-5.00   sec  4.10 MBytes  34.4 Mbits/sec    0   69.3 KBytes
+[ 51]   4.00-5.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 53]   4.00-5.00   sec  3.85 MBytes  32.3 Mbits/sec    0   63.6 KBytes
+[ 55]   4.00-5.00   sec  4.10 MBytes  34.4 Mbits/sec    0   67.9 KBytes
+[ 57]   4.00-5.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 59]   4.00-5.00   sec  5.03 MBytes  42.2 Mbits/sec    0   80.6 KBytes
+[ 61]   4.00-5.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 63]   4.00-5.00   sec  6.90 MBytes  57.9 Mbits/sec    0   94.7 KBytes
+[ 65]   4.00-5.00   sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 67]   4.00-5.00   sec  10.8 MBytes  90.7 Mbits/sec    0    124 KBytes
+[SUM]   4.00-5.00   sec   113 MBytes   946 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   5.00-6.00   sec  5.41 MBytes  45.4 Mbits/sec    0   94.7 KBytes
+[  7]   5.00-6.00   sec  2.73 MBytes  22.9 Mbits/sec    0   48.1 KBytes
+[  9]   5.00-6.00   sec  3.73 MBytes  31.3 Mbits/sec    0   65.0 KBytes
+[ 11]   5.00-6.00   sec  2.24 MBytes  18.8 Mbits/sec    0   39.6 KBytes
+[ 13]   5.00-6.00   sec  5.41 MBytes  45.4 Mbits/sec    0   74.9 KBytes
+[ 15]   5.00-6.00   sec  5.22 MBytes  43.8 Mbits/sec    0   80.6 KBytes
+[ 17]   5.00-6.00   sec  3.85 MBytes  32.3 Mbits/sec    0   62.2 KBytes
+[ 19]   5.00-6.00   sec  1.86 MBytes  15.6 Mbits/sec    0   32.5 KBytes
+[ 21]   5.00-6.00   sec  3.23 MBytes  27.1 Mbits/sec    0   52.3 KBytes
+[ 23]   5.00-6.00   sec  2.98 MBytes  25.0 Mbits/sec    0   53.7 KBytes
+[ 25]   5.00-6.00   sec  4.10 MBytes  34.4 Mbits/sec    0   70.7 KBytes
+[ 27]   5.00-6.00   sec  3.98 MBytes  33.4 Mbits/sec    0   60.8 KBytes
+[ 29]   5.00-6.00   sec  3.91 MBytes  32.8 Mbits/sec    0   66.5 KBytes
+[ 31]   5.00-6.00   sec  4.10 MBytes  34.4 Mbits/sec    0   63.6 KBytes
+[ 33]   5.00-6.00   sec  3.48 MBytes  29.2 Mbits/sec    0   58.0 KBytes
+[ 35]   5.00-6.00   sec  3.48 MBytes  29.2 Mbits/sec    0   60.8 KBytes
+[ 37]   5.00-6.00   sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 39]   5.00-6.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 41]   5.00-6.00   sec  1.97 MBytes  16.5 Mbits/sec    0   33.9 KBytes
+[ 43]   5.00-6.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 45]   5.00-6.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 47]   5.00-6.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 49]   5.00-6.00   sec  4.10 MBytes  34.4 Mbits/sec    0   69.3 KBytes
+[ 51]   5.00-6.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 53]   5.00-6.00   sec  3.79 MBytes  31.8 Mbits/sec    0   63.6 KBytes
+[ 55]   5.00-6.00   sec  4.10 MBytes  34.4 Mbits/sec    0   67.9 KBytes
+[ 57]   5.00-6.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 59]   5.00-6.00   sec  4.85 MBytes  40.7 Mbits/sec    0   80.6 KBytes
+[ 61]   5.00-6.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 63]   5.00-6.00   sec  6.90 MBytes  57.9 Mbits/sec    0   94.7 KBytes
+[ 65]   5.00-6.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 67]   5.00-6.00   sec  10.4 MBytes  87.1 Mbits/sec    0    124 KBytes
+[SUM]   5.00-6.00   sec   112 MBytes   943 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   6.00-7.00   sec  5.90 MBytes  49.5 Mbits/sec    0   94.7 KBytes
+[  7]   6.00-7.00   sec  2.73 MBytes  22.9 Mbits/sec    0   48.1 KBytes
+[  9]   6.00-7.00   sec  3.91 MBytes  32.8 Mbits/sec    0   65.0 KBytes
+[ 11]   6.00-7.00   sec  2.42 MBytes  20.3 Mbits/sec    0   63.6 KBytes
+[ 13]   6.00-7.00   sec  5.22 MBytes  43.8 Mbits/sec    0   74.9 KBytes
+[ 15]   6.00-7.00   sec  5.22 MBytes  43.8 Mbits/sec    0   80.6 KBytes
+[ 17]   6.00-7.00   sec  3.79 MBytes  31.8 Mbits/sec    0   62.2 KBytes
+[ 19]   6.00-7.00   sec  1.74 MBytes  14.6 Mbits/sec    0   32.5 KBytes
+[ 21]   6.00-7.00   sec  4.78 MBytes  40.1 Mbits/sec    0   80.6 KBytes
+[ 23]   6.00-7.00   sec  3.11 MBytes  26.1 Mbits/sec    0   53.7 KBytes
+[ 25]   6.00-7.00   sec  4.10 MBytes  34.4 Mbits/sec    0   70.7 KBytes
+[ 27]   6.00-7.00   sec  3.36 MBytes  28.1 Mbits/sec    0   60.8 KBytes
+[ 29]   6.00-7.00   sec  4.10 MBytes  34.4 Mbits/sec    0   66.5 KBytes
+[ 31]   6.00-7.00   sec  3.79 MBytes  31.8 Mbits/sec    0   63.6 KBytes
+[ 33]   6.00-7.00   sec  3.23 MBytes  27.1 Mbits/sec    0   58.0 KBytes
+[ 35]   6.00-7.00   sec  3.48 MBytes  29.2 Mbits/sec    0   60.8 KBytes
+[ 37]   6.00-7.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 39]   6.00-7.00   sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 41]   6.00-7.00   sec  1.78 MBytes  15.0 Mbits/sec    0   33.9 KBytes
+[ 43]   6.00-7.00   sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 45]   6.00-7.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 47]   6.00-7.00   sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 49]   6.00-7.00   sec  3.91 MBytes  32.8 Mbits/sec    0   69.3 KBytes
+[ 51]   6.00-7.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 53]   6.00-7.00   sec  3.67 MBytes  30.8 Mbits/sec    0   63.6 KBytes
+[ 55]   6.00-7.00   sec  3.91 MBytes  32.8 Mbits/sec    0   67.9 KBytes
+[ 57]   6.00-7.00   sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 59]   6.00-7.00   sec  4.85 MBytes  40.7 Mbits/sec    0   80.6 KBytes
+[ 61]   6.00-7.00   sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 63]   6.00-7.00   sec  7.15 MBytes  59.9 Mbits/sec    0   94.7 KBytes
+[ 65]   6.00-7.00   sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 67]   6.00-7.00   sec  10.6 MBytes  88.6 Mbits/sec    0    124 KBytes
+[SUM]   6.00-7.00   sec   113 MBytes   946 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   7.00-8.00   sec  5.59 MBytes  46.9 Mbits/sec    0   94.7 KBytes
+[  7]   7.00-8.00   sec  2.73 MBytes  22.9 Mbits/sec    0   48.1 KBytes
+[  9]   7.00-8.00   sec  3.91 MBytes  32.8 Mbits/sec    0   65.0 KBytes
+[ 11]   7.00-8.00   sec  3.42 MBytes  28.7 Mbits/sec    0   63.6 KBytes
+[ 13]   7.00-8.00   sec  5.03 MBytes  42.2 Mbits/sec    0   74.9 KBytes
+[ 15]   7.00-8.00   sec  5.22 MBytes  43.8 Mbits/sec    0   80.6 KBytes
+[ 17]   7.00-8.00   sec  3.73 MBytes  31.3 Mbits/sec    0   62.2 KBytes
+[ 19]   7.00-8.00   sec  1.62 MBytes  13.6 Mbits/sec    0   32.5 KBytes
+[ 21]   7.00-8.00   sec  4.66 MBytes  39.1 Mbits/sec    0   80.6 KBytes
+[ 23]   7.00-8.00   sec  2.98 MBytes  25.0 Mbits/sec    0   53.7 KBytes
+[ 25]   7.00-8.00   sec  4.10 MBytes  34.4 Mbits/sec    0   70.7 KBytes
+[ 27]   7.00-8.00   sec  3.23 MBytes  27.1 Mbits/sec    0   60.8 KBytes
+[ 29]   7.00-8.00   sec  3.91 MBytes  32.8 Mbits/sec    0   66.5 KBytes
+[ 31]   7.00-8.00   sec  3.42 MBytes  28.7 Mbits/sec    0   63.6 KBytes
+[ 33]   7.00-8.00   sec  3.17 MBytes  26.6 Mbits/sec    0   58.0 KBytes
+[ 35]   7.00-8.00   sec  3.48 MBytes  29.2 Mbits/sec    0   60.8 KBytes
+[ 37]   7.00-8.00   sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 39]   7.00-8.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 41]   7.00-8.00   sec  1.88 MBytes  15.8 Mbits/sec    0   33.9 KBytes
+[ 43]   7.00-8.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 45]   7.00-8.00   sec  1.62 MBytes  13.6 Mbits/sec    0   33.9 KBytes
+[ 47]   7.00-8.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 49]   7.00-8.00   sec  3.91 MBytes  32.8 Mbits/sec    0   69.3 KBytes
+[ 51]   7.00-8.00   sec  1.62 MBytes  13.6 Mbits/sec    0   33.9 KBytes
+[ 53]   7.00-8.00   sec  3.91 MBytes  32.8 Mbits/sec    0   63.6 KBytes
+[ 55]   7.00-8.00   sec  3.91 MBytes  32.8 Mbits/sec    0   67.9 KBytes
+[ 57]   7.00-8.00   sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 59]   7.00-8.00   sec  4.66 MBytes  39.1 Mbits/sec    0   80.6 KBytes
+[ 61]   7.00-8.00   sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 63]   7.00-8.00   sec  6.71 MBytes  56.3 Mbits/sec    0   94.7 KBytes
+[ 65]   7.00-8.00   sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 67]   7.00-8.00   sec  11.3 MBytes  94.9 Mbits/sec    0    182 KBytes
+[SUM]   7.00-8.00   sec   112 MBytes   942 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   8.00-9.00   sec  5.84 MBytes  49.0 Mbits/sec    0   94.7 KBytes
+[  7]   8.00-9.00   sec  2.86 MBytes  24.0 Mbits/sec    0   48.1 KBytes
+[  9]   8.00-9.00   sec  4.04 MBytes  33.9 Mbits/sec    0   65.0 KBytes
+[ 11]   8.00-9.00   sec  3.48 MBytes  29.2 Mbits/sec    0   63.6 KBytes
+[ 13]   8.00-9.00   sec  4.29 MBytes  36.0 Mbits/sec    0   74.9 KBytes
+[ 15]   8.00-9.00   sec  4.85 MBytes  40.7 Mbits/sec    0   80.6 KBytes
+[ 17]   8.00-9.00   sec  3.67 MBytes  30.8 Mbits/sec    0   62.2 KBytes
+[ 19]   8.00-9.00   sec  1.62 MBytes  13.6 Mbits/sec    0   32.5 KBytes
+[ 21]   8.00-9.00   sec  4.66 MBytes  39.1 Mbits/sec    0   80.6 KBytes
+[ 23]   8.00-9.00   sec  2.98 MBytes  25.0 Mbits/sec    0   53.7 KBytes
+[ 25]   8.00-9.00   sec  3.91 MBytes  32.8 Mbits/sec    0   70.7 KBytes
+[ 27]   8.00-9.00   sec  3.11 MBytes  26.1 Mbits/sec    0   60.8 KBytes
+[ 29]   8.00-9.00   sec  3.91 MBytes  32.8 Mbits/sec    0   66.5 KBytes
+[ 31]   8.00-9.00   sec  3.29 MBytes  27.6 Mbits/sec    0   63.6 KBytes
+[ 33]   8.00-9.00   sec  3.23 MBytes  27.1 Mbits/sec    0   58.0 KBytes
+[ 35]   8.00-9.00   sec  3.36 MBytes  28.1 Mbits/sec    0   60.8 KBytes
+[ 37]   8.00-9.00   sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 39]   8.00-9.00   sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 41]   8.00-9.00   sec  1.69 MBytes  14.2 Mbits/sec    0   33.9 KBytes
+[ 43]   8.00-9.00   sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 45]   8.00-9.00   sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 47]   8.00-9.00   sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 49]   8.00-9.00   sec  4.10 MBytes  34.4 Mbits/sec    0   69.3 KBytes
+[ 51]   8.00-9.00   sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 53]   8.00-9.00   sec  3.79 MBytes  31.8 Mbits/sec    0   63.6 KBytes
+[ 55]   8.00-9.00   sec  3.91 MBytes  32.8 Mbits/sec    0   67.9 KBytes
+[ 57]   8.00-9.00   sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 59]   8.00-9.00   sec  4.85 MBytes  40.7 Mbits/sec    0   80.6 KBytes
+[ 61]   8.00-9.00   sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 63]   8.00-9.00   sec  9.13 MBytes  76.6 Mbits/sec    0    140 KBytes
+[ 65]   8.00-9.00   sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 67]   8.00-9.00   sec  10.1 MBytes  84.4 Mbits/sec    0    182 KBytes
+[SUM]   8.00-9.00   sec   112 MBytes   943 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[  5]   9.00-10.00  sec  5.78 MBytes  48.5 Mbits/sec    0   94.7 KBytes
+[  7]   9.00-10.00  sec  2.86 MBytes  24.0 Mbits/sec    0   48.1 KBytes
+[  9]   9.00-10.00  sec  3.85 MBytes  32.3 Mbits/sec    0   65.0 KBytes
+[ 11]   9.00-10.00  sec  3.36 MBytes  28.1 Mbits/sec    0   63.6 KBytes
+[ 13]   9.00-10.00  sec  5.84 MBytes  49.0 Mbits/sec    0    115 KBytes
+[ 15]   9.00-10.00  sec  4.10 MBytes  34.4 Mbits/sec    0   80.6 KBytes
+[ 17]   9.00-10.00  sec  3.73 MBytes  31.3 Mbits/sec    0   62.2 KBytes
+[ 19]   9.00-10.00  sec  1.49 MBytes  12.5 Mbits/sec    0   32.5 KBytes
+[ 21]   9.00-10.00  sec  4.66 MBytes  39.1 Mbits/sec    0   80.6 KBytes
+[ 23]   9.00-10.00  sec  3.23 MBytes  27.1 Mbits/sec    0   53.7 KBytes
+[ 25]   9.00-10.00  sec  4.10 MBytes  34.4 Mbits/sec    0   70.7 KBytes
+[ 27]   9.00-10.00  sec  3.23 MBytes  27.1 Mbits/sec    0   60.8 KBytes
+[ 29]   9.00-10.00  sec  3.91 MBytes  32.8 Mbits/sec    0   66.5 KBytes
+[ 31]   9.00-10.00  sec  3.48 MBytes  29.2 Mbits/sec    0   63.6 KBytes
+[ 33]   9.00-10.00  sec  3.11 MBytes  26.1 Mbits/sec    0   58.0 KBytes
+[ 35]   9.00-10.00  sec  3.54 MBytes  29.7 Mbits/sec    0   60.8 KBytes
+[ 37]   9.00-10.00  sec  1.86 MBytes  15.6 Mbits/sec    0   33.9 KBytes
+[ 39]   9.00-10.00  sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 41]   9.00-10.00  sec  1.78 MBytes  15.0 Mbits/sec    0   33.9 KBytes
+[ 43]   9.00-10.00  sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 45]   9.00-10.00  sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 47]   9.00-10.00  sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 49]   9.00-10.00  sec  3.91 MBytes  32.8 Mbits/sec    0   69.3 KBytes
+[ 51]   9.00-10.00  sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 53]   9.00-10.00  sec  3.73 MBytes  31.3 Mbits/sec    0   63.6 KBytes
+[ 55]   9.00-10.00  sec  3.91 MBytes  32.8 Mbits/sec    0   67.9 KBytes
+[ 57]   9.00-10.00  sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 59]   9.00-10.00  sec  4.85 MBytes  40.7 Mbits/sec    0   80.6 KBytes
+[ 61]   9.00-10.00  sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 63]   9.00-10.00  sec  9.76 MBytes  81.8 Mbits/sec    0    197 KBytes
+[ 65]   9.00-10.00  sec  1.74 MBytes  14.6 Mbits/sec    0   33.9 KBytes
+[ 67]   9.00-10.00  sec  8.95 MBytes  75.1 Mbits/sec    0    182 KBytes
+[SUM]   9.00-10.00  sec   113 MBytes   947 Mbits/sec    0
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec  50.8 MBytes  42.6 Mbits/sec    0             sender
+[  5]   0.00-10.01  sec  50.4 MBytes  42.2 Mbits/sec                  receiver
+[  7]   0.00-10.00  sec  29.1 MBytes  24.4 Mbits/sec    0             sender
+[  7]   0.00-10.01  sec  28.8 MBytes  24.2 Mbits/sec                  receiver
+[  9]   0.00-10.00  sec  29.3 MBytes  24.6 Mbits/sec    0             sender
+[  9]   0.00-10.01  sec  29.0 MBytes  24.3 Mbits/sec                  receiver
+[ 11]   0.00-10.00  sec  26.5 MBytes  22.2 Mbits/sec    0             sender
+[ 11]   0.00-10.01  sec  26.2 MBytes  22.0 Mbits/sec                  receiver
+[ 13]   0.00-10.00  sec  52.6 MBytes  44.2 Mbits/sec    0             sender
+[ 13]   0.00-10.01  sec  52.0 MBytes  43.6 Mbits/sec                  receiver
+[ 15]   0.00-10.00  sec  51.5 MBytes  43.2 Mbits/sec    0             sender
+[ 15]   0.00-10.01  sec  51.1 MBytes  42.8 Mbits/sec                  receiver
+[ 17]   0.00-10.00  sec  37.7 MBytes  31.7 Mbits/sec    0             sender
+[ 17]   0.00-10.01  sec  37.4 MBytes  31.4 Mbits/sec                  receiver
+[ 19]   0.00-10.00  sec  17.8 MBytes  14.9 Mbits/sec    0             sender
+[ 19]   0.00-10.01  sec  17.6 MBytes  14.8 Mbits/sec                  receiver
+[ 21]   0.00-10.00  sec  37.9 MBytes  31.8 Mbits/sec    0             sender
+[ 21]   0.00-10.01  sec  37.6 MBytes  31.5 Mbits/sec                  receiver
+[ 23]   0.00-10.00  sec  33.0 MBytes  27.7 Mbits/sec    0             sender
+[ 23]   0.00-10.01  sec  32.7 MBytes  27.4 Mbits/sec                  receiver
+[ 25]   0.00-10.00  sec  42.2 MBytes  35.4 Mbits/sec    0             sender
+[ 25]   0.00-10.01  sec  41.8 MBytes  35.0 Mbits/sec                  receiver
+[ 27]   0.00-10.00  sec  36.8 MBytes  30.9 Mbits/sec    0             sender
+[ 27]   0.00-10.01  sec  36.5 MBytes  30.6 Mbits/sec                  receiver
+[ 29]   0.00-10.00  sec  41.3 MBytes  34.7 Mbits/sec    0             sender
+[ 29]   0.00-10.01  sec  41.0 MBytes  34.4 Mbits/sec                  receiver
+[ 31]   0.00-10.00  sec  38.7 MBytes  32.5 Mbits/sec    0             sender
+[ 31]   0.00-10.01  sec  38.4 MBytes  32.2 Mbits/sec                  receiver
+[ 33]   0.00-10.00  sec  33.5 MBytes  28.1 Mbits/sec    0             sender
+[ 33]   0.00-10.01  sec  33.3 MBytes  27.9 Mbits/sec                  receiver
+[ 35]   0.00-10.00  sec  38.2 MBytes  32.0 Mbits/sec    0             sender
+[ 35]   0.00-10.01  sec  37.9 MBytes  31.8 Mbits/sec                  receiver
+[ 37]   0.00-10.00  sec  18.7 MBytes  15.7 Mbits/sec    0             sender
+[ 37]   0.00-10.01  sec  18.5 MBytes  15.5 Mbits/sec                  receiver
+[ 39]   0.00-10.00  sec  18.6 MBytes  15.6 Mbits/sec    0             sender
+[ 39]   0.00-10.01  sec  18.5 MBytes  15.5 Mbits/sec                  receiver
+[ 41]   0.00-10.00  sec  18.9 MBytes  15.8 Mbits/sec    0             sender
+[ 41]   0.00-10.01  sec  18.7 MBytes  15.7 Mbits/sec                  receiver
+[ 43]   0.00-10.00  sec  18.6 MBytes  15.6 Mbits/sec    0             sender
+[ 43]   0.00-10.01  sec  18.5 MBytes  15.5 Mbits/sec                  receiver
+[ 45]   0.00-10.00  sec  18.2 MBytes  15.3 Mbits/sec    0             sender
+[ 45]   0.00-10.01  sec  18.1 MBytes  15.2 Mbits/sec                  receiver
+[ 47]   0.00-10.00  sec  18.6 MBytes  15.6 Mbits/sec    0             sender
+[ 47]   0.00-10.01  sec  18.5 MBytes  15.5 Mbits/sec                  receiver
+[ 49]   0.00-10.00  sec  41.4 MBytes  34.7 Mbits/sec    0             sender
+[ 49]   0.00-10.01  sec  41.0 MBytes  34.4 Mbits/sec                  receiver
+[ 51]   0.00-10.00  sec  18.4 MBytes  15.4 Mbits/sec    0             sender
+[ 51]   0.00-10.01  sec  18.2 MBytes  15.2 Mbits/sec                  receiver
+[ 53]   0.00-10.00  sec  39.5 MBytes  33.2 Mbits/sec    0             sender
+[ 53]   0.00-10.01  sec  39.3 MBytes  32.9 Mbits/sec                  receiver
+[ 55]   0.00-10.00  sec  40.9 MBytes  34.3 Mbits/sec    0             sender
+[ 55]   0.00-10.01  sec  40.6 MBytes  34.0 Mbits/sec                  receiver
+[ 57]   0.00-10.00  sec  18.2 MBytes  15.3 Mbits/sec    0             sender
+[ 57]   0.00-10.01  sec  18.1 MBytes  15.2 Mbits/sec                  receiver
+[ 59]   0.00-10.00  sec  49.7 MBytes  41.7 Mbits/sec    0             sender
+[ 59]   0.00-10.01  sec  49.4 MBytes  41.4 Mbits/sec                  receiver
+[ 61]   0.00-10.00  sec  18.2 MBytes  15.3 Mbits/sec    0             sender
+[ 61]   0.00-10.01  sec  18.1 MBytes  15.1 Mbits/sec                  receiver
+[ 63]   0.00-10.00  sec  74.1 MBytes  62.1 Mbits/sec    0             sender
+[ 63]   0.00-10.01  sec  73.1 MBytes  61.3 Mbits/sec                  receiver
+[ 65]   0.00-10.00  sec  18.5 MBytes  15.5 Mbits/sec    0             sender
+[ 65]   0.00-10.01  sec  18.3 MBytes  15.3 Mbits/sec                  receiver
+[ 67]   0.00-10.00  sec   105 MBytes  88.4 Mbits/sec    0             sender
+[ 67]   0.00-10.01  sec   105 MBytes  87.6 Mbits/sec                  receiver
+[SUM]   0.00-10.00  sec  1.11 GBytes   950 Mbits/sec    0             sender
+[SUM]   0.00-10.01  sec  1.10 GBytes   941 Mbits/sec                  receiver
+
+iperf Done.
+[root@davinci-mini iperf-3.10.1]#

@@ -1,0 +1,50 @@
+=== DPU Reboot 测试结果验证 ===
+验证时间: Tue Jan  6 11:57:19 AM CST 2026
+
+完成的循环次数: 299/300
+失败的循环次数: 0
+
+=== DPU 压力测试状态 ===
+
+Authorized users only. All activities may be monitored and reported.
+DPU 运行时间:  11:57:23 up 2 days, 23 min,  2 users,  load average: 47.88, 46.82, 46.22
+压力测试进程:
+运行中的压力测试进程数: 19
+
+最近系统日志错误:
+
+=== Host DPU 设备 ===
+PCI 设备:
+
+网络接口:
+enp8s0f0         DOWN           ac:dc:ca:a1:6d:7a <NO-CARRIER,BROADCAST,MULTICAST,UP> 
+enp8s0f1         DOWN           ac:dc:ca:a1:6d:7b <NO-CARRIER,BROADCAST,MULTICAST,UP> 
+
+虚拟设备:
+VFIO 设备数量: 4
+
+=== 错误汇总 ===
+/root/dpu_reboot_test/logs/dpu_check_cycle_after_98_20260105_183124.log:Error: Unable to establish LAN session
+/root/dpu_reboot_test/logs/dpu_check_cycle_after_98_20260105_183124.log:Error: Unable to establish IPMI v1.5 / RMCP session
+/root/dpu_reboot_test/logs/dpu_check_cycle_after_98_20260105_183124.log:Jan 05 18:32:27 bogon rc.local[13097]: Error: Unable to establish LAN session
+/root/dpu_reboot_test/logs/dpu_check_cycle_after_98_20260105_183124.log:Jan 05 18:32:27 bogon rc.local[13097]: Error: Unable to establish IPMI v1.5 / RMCP session
+/root/dpu_reboot_test/logs/dpu_check_cycle_after_99_20260105_183609.log:Last failed login: Mon Jan  5 11:06:19 CST 2026 from 10.121.176.107 on ssh:notty
+/root/dpu_reboot_test/logs/dpu_check_cycle_after_99_20260105_183609.log:There were 2 failed login attempts since the last successful login.
+/root/dpu_reboot_test/logs/dpu_check_cycle_after_99_20260105_183609.log:=== 系统日志（最近错误）===
+/root/dpu_reboot_test/logs/dpu_check_cycle_after_99_20260105_183609.log:无错误日志
+/root/dpu_reboot_test/logs/dpu_check_cycle_after_99_20260105_183609.log:Error: Unable to establish LAN session
+/root/dpu_reboot_test/logs/dpu_check_cycle_after_99_20260105_183609.log:Error: Unable to establish IPMI v1.5 / RMCP session
+/root/dpu_reboot_test/logs/dpu_check_cycle_after_99_20260105_183609.log:Jan 05 18:37:12 bogon rc.local[13036]: Error: Unable to establish LAN session
+/root/dpu_reboot_test/logs/dpu_check_cycle_after_99_20260105_183609.log:Jan 05 18:37:12 bogon rc.local[13036]: Error: Unable to establish IPMI v1.5 / RMCP session
+/root/dpu_reboot_test/logs/dpu_check_cycle_before_1_20260105_105356.log:=== 系统日志（最近错误）===
+/root/dpu_reboot_test/logs/dpu_check_cycle_before_1_20260105_105356.log:无错误日志
+/root/dpu_reboot_test/logs/dpu_check_cycle_before_1_20260105_105356.log:Error: Unable to establish LAN session
+/root/dpu_reboot_test/logs/dpu_check_cycle_before_1_20260105_105356.log:Error: Unable to establish IPMI v1.5 / RMCP session
+/root/dpu_reboot_test/logs/dpu_check_cycle_initial_20260105_105356.log:=== 系统日志（最近错误）===
+/root/dpu_reboot_test/logs/dpu_check_cycle_initial_20260105_105356.log:无错误日志
+/root/dpu_reboot_test/logs/dpu_check_cycle_initial_20260105_105356.log:Error: Unable to establish LAN session
+/root/dpu_reboot_test/logs/dpu_check_cycle_initial_20260105_105356.log:Error: Unable to establish IPMI v1.5 / RMCP session
+
+=== 测试总结 ===
+测试结果: FAIL
+请检查详细日志

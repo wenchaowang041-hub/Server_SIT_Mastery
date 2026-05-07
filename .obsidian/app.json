@@ -1,0 +1,11 @@
+{
+  "alwaysUpdateLinks": true,
+  "promptDelete": true,
+  "showFrontmatter": true,
+  "attachmentFolderPath": "./attachments",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "01-每日记录/工作日志",
+  "defaultViewMode": "source",
+  "showUnsupportedFiles": true,
+  "showLineNumber": true
+}

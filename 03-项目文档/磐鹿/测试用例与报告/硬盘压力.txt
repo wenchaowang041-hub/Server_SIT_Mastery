@@ -1,0 +1,2 @@
+里面有readme，压测内存和cpu。  还需要加个客户压测磁盘的命令
+fio --filename=/dev/nvme0n1 --ioengine=libaio --direct=1 --name=test --numjobs=12 --bs=64k --iodepth=128 --rw=randrw --norandommap --runtime=3600 --rwmixread=70 --group_reporting

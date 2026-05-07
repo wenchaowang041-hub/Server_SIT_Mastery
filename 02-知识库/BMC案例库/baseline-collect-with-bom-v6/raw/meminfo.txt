@@ -1,0 +1,53 @@
+# COMMAND: cat /proc/meminfo
+# TIME: 2026-04-22 17:04:03
+
+MemTotal:       2111960324 kB
+MemFree:        2102074756 kB
+MemAvailable:   2096895284 kB
+Buffers:           35604 kB
+Cached:           925520 kB
+SwapCached:            0 kB
+Active:           290656 kB
+Inactive:        1127652 kB
+Active(anon):       6580 kB
+Inactive(anon):   472884 kB
+Active(file):     284076 kB
+Inactive(file):   654768 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:       4194300 kB
+SwapFree:        4194300 kB
+Dirty:               188 kB
+Writeback:             0 kB
+AnonPages:        454724 kB
+Mapped:            67704 kB
+Shmem:             22276 kB
+KReclaimable:     258308 kB
+Slab:             989360 kB
+SReclaimable:     258308 kB
+SUnreclaim:       731052 kB
+KernelStack:       69536 kB
+PageTables:         5784 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    1060174460 kB
+Committed_AS:     788404 kB
+VmallocTotal:   135290159040 kB
+VmallocUsed:     2234332 kB
+VmallocChunk:          0 kB
+Percpu:           307200 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:    329728 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB

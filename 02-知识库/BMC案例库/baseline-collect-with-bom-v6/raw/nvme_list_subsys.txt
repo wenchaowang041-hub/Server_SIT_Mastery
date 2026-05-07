@@ -1,0 +1,39 @@
+# COMMAND: LC_ALL=C nvme list-subsys
+# TIME: 2026-04-22 17:04:04
+
+nvme-subsys0 - NQN=nqn.2014.08.org.nvmexpress:uuid:462a0000-0000-0100-ec6c-f1619e54daeb
+\
+ +- nvme0 pcie 0000:07:00.0 live 
+nvme-subsys1 - NQN=nqn.2014.08.org.nvmexpress:uuid:fb270000-0000-0100-e7a3-33d293d6f3f1
+\
+ +- nvme1 pcie 0000:08:00.0 live 
+nvme-subsys10 - NQN=nqn.2014.08.org.nvmexpress:uuid:552a0000-0000-0100-f055-20c85dc4f846
+\
+ +- nvme10 pcie 0000:e6:00.0 live 
+nvme-subsys11 - NQN=nqn.2014.08.org.nvmexpress:uuid:862a0000-0000-0100-fd3d-ae212cc32aeb
+\
+ +- nvme11 pcie 0000:e7:00.0 live 
+nvme-subsys2 - NQN=nqn.2014.08.org.nvmexpress:uuid:17280000-0000-0100-eb5b-ed5ea5dd8ffc
+\
+ +- nvme2 pcie 0000:09:00.0 live 
+nvme-subsys3 - NQN=nqn.2014.08.org.nvmexpress:uuid:0d280000-0000-0100-f060-728f93b0db77
+\
+ +- nvme3 pcie 0000:0a:00.0 live 
+nvme-subsys4 - NQN=nqn.2014.08.org.nvmexpress:uuid:e5280000-0000-0100-f43e-863ab218e093
+\
+ +- nvme4 pcie 0000:c9:00.0 live 
+nvme-subsys5 - NQN=nqn.2014.08.org.nvmexpress:uuid:d2290000-0000-0100-f42d-552ad90e891c
+\
+ +- nvme5 pcie 0000:ca:00.0 live 
+nvme-subsys6 - NQN=nqn.2014.08.org.nvmexpress:uuid:06280000-0000-0100-ff44-b1052f2950e4
+\
+ +- nvme6 pcie 0000:cb:00.0 live 
+nvme-subsys7 - NQN=nqn.2014.08.org.nvmexpress:uuid:2b2a0000-0000-0100-e665-a34775f71bf9
+\
+ +- nvme7 pcie 0000:cc:00.0 live 
+nvme-subsys8 - NQN=nqn.2014.08.org.nvmexpress:uuid:de280000-0000-0100-e789-ffea2411c8a3
+\
+ +- nvme8 pcie 0000:e4:00.0 live 
+nvme-subsys9 - NQN=nqn.2014.08.org.nvmexpress:uuid:9e290000-0000-0100-e21d-d10ae07125d6
+\
+ +- nvme9 pcie 0000:e5:00.0 live 

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>基准配置填写_板卡信息</title>
+  <style>
+    body { font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif; margin: 12px; color: #333; background: #fff; }
+    h1 { font-size: 18px; margin: 0 0 12px; }
+    table { border-collapse: collapse; width: 100%; table-layout: auto; }
+    th, td { border: 1px solid #cfd6df; padding: 8px 10px; font-size: 14px; vertical-align: top; word-break: break-word; }
+    th { background: #eef2f6; font-weight: 700; text-align: left; }
+    tr:nth-child(even) td { background: #fafbfd; }
+    .wrap { max-width: 1600px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>基准配置填写_板卡信息</h1>
+    <table>
+      <thead><tr>
+        <th>类别</th>
+        <th>物料号</th>
+        <th>批次号</th>
+        <th>物料描述</th>
+        <th>位置</th>
+        <th>版本</th>
+        <th>数量</th>
+        <th>备注（*为必填项）</th>
+      </tr></thead>
+      <tbody>
+      <tr>
+        <td>MB</td>
+        <td></td>
+        <td></td>
+        <td>iSoftStone BC83AMDA01-7260Z</td>
+        <td>-</td>
+        <td>V200R023C10</td>
+        <td>1</td>
+        <td>*SN 待人工补；来源：BOM+dmidecode</td>
+      </tr>
+      <tr>
+        <td>NVMe BP</td>
+        <td></td>
+        <td></td>
+        <td>NVMe Disk Backplane</td>
+        <td>前置</td>
+        <td>0.02/0.02/0.02</td>
+        <td>3</td>
+        <td>当前环境为 NVMe 背板，不沿用 SATA 背板 BOM</td>
+      </tr>
+      <tr>
+        <td>Mid Riser</td>
+        <td></td>
+        <td></td>
+        <td>Mid/IO Riser</td>
+        <td>中置/后置</td>
+        <td>0.04</td>
+        <td></td>
+        <td>需结合实物标签确认</td>
+      </tr>
+      <tr>
+        <td>FAN BP</td>
+        <td></td>
+        <td></td>
+        <td>前置风扇板</td>
+        <td>前置</td>
+        <td>0.04</td>
+        <td>1</td>
+        <td>前置风扇板，单独列示</td>
+      </tr>
+      <tr>
+        <td>FAN BP</td>
+        <td></td>
+        <td></td>
+        <td>中置风扇板</td>
+        <td>中置</td>
+        <td>0.03</td>
+        <td>1</td>
+        <td>中置风扇板，单独列示</td>
+      </tr>
+      <tr>
+        <td>SCM Card</td>
+        <td></td>
+        <td></td>
+        <td>BMC/SCM board</td>
+        <td>后置</td>
+        <td>11.02.01.18</td>
+        <td>1</td>
+        <td>版本来自 Redfish /Managers/1</td>
+      </tr>
+      <tr>
+        <td>PSU Board</td>
+        <td></td>
+        <td></td>
+        <td>PSU board</td>
+        <td>电源区域</td>
+        <td>5.04</td>
+        <td>2</td>
+        <td>版本来自 Redfish；不使用 PSU 模块 BOM 近似替代</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
