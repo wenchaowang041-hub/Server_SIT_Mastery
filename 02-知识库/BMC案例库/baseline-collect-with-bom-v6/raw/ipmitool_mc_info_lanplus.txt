@@ -1,0 +1,6 @@
+# COMMAND: LC_ALL=C ipmitool -I lanplus -H '10.121.176.138' -U 'Administrator' -P 'Admin@9000' mc info
+# TIME: 2026-04-22 17:04:04
+
+Error in open session response message : no matching cipher suite
+
+Error: Unable to establish IPMI v2 / RMCP+ session

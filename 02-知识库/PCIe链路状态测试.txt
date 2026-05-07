@@ -1,0 +1,4 @@
+测试用例名称：PCIe链路状态测试
+测试步骤：执行lspci -vv
+检查项：确认LnkSta Speed和Width符合设备规格
+预期结果：Speed和Width复合设备规格、如Gen4 x16

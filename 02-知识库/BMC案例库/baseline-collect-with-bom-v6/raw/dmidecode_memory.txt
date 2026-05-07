@@ -1,0 +1,1136 @@
+# COMMAND: LC_ALL=C dmidecode -t memory
+# TIME: 2026-04-22 17:04:04
+
+# dmidecode 3.4
+Getting SMBIOS data from sysfs.
+SMBIOS 3.3.0 present.
+
+Handle 0x0000, DMI type 16, 23 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: Single-bit ECC
+	Maximum Capacity: 8 TB
+	Error Information Handle: Not Provided
+	Number Of Devices: 32
+
+Handle 0x0002, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM000
+	Bank Locator: SOCKET 0 CHANNEL 0 DIMM 0
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B0095471
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0003, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM001
+	Bank Locator: SOCKET 0 CHANNEL 0 DIMM 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B0093040
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0004, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM010
+	Bank Locator: SOCKET 0 CHANNEL 1 DIMM 0
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B009596C
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0005, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM011
+	Bank Locator: SOCKET 0 CHANNEL 1 DIMM 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B00940DC
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0006, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM020
+	Bank Locator: SOCKET 0 CHANNEL 2 DIMM 0
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B0092FD4
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0007, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM021
+	Bank Locator: SOCKET 0 CHANNEL 2 DIMM 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B0092FD7
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0008, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM030
+	Bank Locator: SOCKET 0 CHANNEL 3 DIMM 0
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B0093042
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0009, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM031
+	Bank Locator: SOCKET 0 CHANNEL 3 DIMM 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B0093043
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x000A, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM040
+	Bank Locator: SOCKET 0 CHANNEL 4 DIMM 0
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B009547A
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x000B, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM041
+	Bank Locator: SOCKET 0 CHANNEL 4 DIMM 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B0095470
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x000C, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM050
+	Bank Locator: SOCKET 0 CHANNEL 5 DIMM 0
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B0093EDD
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x000D, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM051
+	Bank Locator: SOCKET 0 CHANNEL 5 DIMM 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B0093F22
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x000E, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM060
+	Bank Locator: SOCKET 0 CHANNEL 6 DIMM 0
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B00931EC
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x000F, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM061
+	Bank Locator: SOCKET 0 CHANNEL 6 DIMM 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B0093F3E
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0010, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM070
+	Bank Locator: SOCKET 0 CHANNEL 7 DIMM 0
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B009452E
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0011, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM071
+	Bank Locator: SOCKET 0 CHANNEL 7 DIMM 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B0095473
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0012, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM100
+	Bank Locator: SOCKET 1 CHANNEL 0 DIMM 0
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B0094FFB
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0013, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM101
+	Bank Locator: SOCKET 1 CHANNEL 0 DIMM 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B0094BBD
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0014, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM110
+	Bank Locator: SOCKET 1 CHANNEL 1 DIMM 0
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B0095727
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0015, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM111
+	Bank Locator: SOCKET 1 CHANNEL 1 DIMM 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B00947E3
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0016, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM120
+	Bank Locator: SOCKET 1 CHANNEL 2 DIMM 0
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B009566B
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0017, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM121
+	Bank Locator: SOCKET 1 CHANNEL 2 DIMM 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B0092E2B
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0018, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM130
+	Bank Locator: SOCKET 1 CHANNEL 3 DIMM 0
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B0095545
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0019, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM131
+	Bank Locator: SOCKET 1 CHANNEL 3 DIMM 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B0094E2C
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x001A, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM140
+	Bank Locator: SOCKET 1 CHANNEL 4 DIMM 0
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B0092E2A
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x001B, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM141
+	Bank Locator: SOCKET 1 CHANNEL 4 DIMM 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B0094FF6
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x001C, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM150
+	Bank Locator: SOCKET 1 CHANNEL 5 DIMM 0
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B0094B12
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x001D, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM151
+	Bank Locator: SOCKET 1 CHANNEL 5 DIMM 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B0094C1C
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x001E, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM160
+	Bank Locator: SOCKET 1 CHANNEL 6 DIMM 0
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B00931ED
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x001F, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM161
+	Bank Locator: SOCKET 1 CHANNEL 6 DIMM 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B0095667
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0020, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM170
+	Bank Locator: SOCKET 1 CHANNEL 7 DIMM 0
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B0095167
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+
+Handle 0x0021, DMI type 17, 100 bytes
+Memory Device
+	Array Handle: 0x0000
+	Error Information Handle: Not Provided
+	Total Width: 80 bits
+	Data Width: 64 bits
+	Size: 64 GB
+	Form Factor: DIMM
+	Set: None
+	Locator: DIMM171
+	Bank Locator: SOCKET 1 CHANNEL 7 DIMM 1
+	Type: DDR5
+	Type Detail: Synchronous Registered (Buffered)
+	Speed: 5600 MT/s
+	Manufacturer: Cxmt
+	Serial Number: 8A91502451B00949EF
+	Asset Tag: 2451 
+	Part Number: CXMR4E464R8AS-CB1C            
+	Rank: 2
+	Configured Memory Speed: 4000 MT/s
+	Minimum Voltage: 1.067 V
+	Maximum Voltage: 1.166 V
+	Configured Voltage: 1.1 V
+	Memory Technology: DRAM
+	Memory Operating Mode Capability: None
+	Firmware Version: Not Specified
+	Module Manufacturer ID: Bank 11, Hex 0x91
+	Module Product ID: Unknown
+	Memory Subsystem Controller Manufacturer ID: Unknown
+	Memory Subsystem Controller Product ID: Unknown
+	Non-Volatile Size: None
+	Volatile Size: None
+	Cache Size: None
+	Logical Size: None
+

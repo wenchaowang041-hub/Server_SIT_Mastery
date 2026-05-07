@@ -1,0 +1,14 @@
+date=2026-04-07 17:53:36
+target_mode=single
+target_disks=nvme0n1
+modes=rand_mix
+runtime=43200
+size=50G
+mix_read=70
+ioengine=libaio
+direct=1
+bs_override=4k
+numjobs_override=8
+iodepth_override=1
+verify_only=0
+command=fio --name=rand_mix_nvme0n1 --filename=/dev/nvme0n1 --direct=1 --ioengine=libaio --rw=randrw --bs=4k --iodepth=1 --runtime=43200 --time_based --numjobs=8 --size=50G --group_reporting --output=./fio-unified-results-2026-04-07-175333/nvme0n1/rand_mix.txt --rwmixread=70 

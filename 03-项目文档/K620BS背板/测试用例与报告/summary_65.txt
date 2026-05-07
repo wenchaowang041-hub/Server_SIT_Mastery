@@ -1,0 +1,10 @@
+文件: 128K_Seq_read_result.txt
+
+[nvme4n1]
+采样点数: 2881
+盘类型: SSD
+曲线图: ./all_nvme_analysis/nvme4n1/128K_Seq_read_result/plots/nvme4n1.png
+跌零点数: 0 (阈值 1.0 MB/s)
+稳态分析类型: SSD
+整体波动点占比: 2/2881 = 0.07%
+最终判定: PASS

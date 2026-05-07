@@ -1,0 +1,9 @@
+date=2026-04-03 14:10:00
+devices=/dev/nvme0n1,/dev/nvme1n1
+rw_mode=randrw
+rwmixread=70
+bs=4k
+iodepth=32
+numjobs=1
+runtime=60
+size=10G

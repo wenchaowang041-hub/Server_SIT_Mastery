@@ -1,0 +1,3 @@
+Event Code  |MaskType    
+0x28000035  |temp        
+0x28000031  |temp        

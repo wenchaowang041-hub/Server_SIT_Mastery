@@ -1,0 +1,1 @@
+sudo dmesg > /tmp/dmesg_after_reboot.log

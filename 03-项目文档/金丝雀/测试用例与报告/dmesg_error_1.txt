@@ -1,0 +1,180 @@
+########################## Reboot Count: 0##############################
+------------------Error_log-----------------
+[   20.511704] spi-nor: probe of spi-PRP0001:00 failed with error -2
+[   20.593790] arm_spe_pmu: probe of arm,spe-v1 failed with error -1
+
+------------------Fail_log------------------
+[    2.454570] hub 2-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[    2.463785] hub 6-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[    2.473378] hub 10-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[    2.482946] hub 14-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[   20.511704] spi-nor: probe of spi-PRP0001:00 failed with error -2
+[   20.531480] drv_vascend_stub: module verification failed: signature and/or required key missing - tainting kernel
+[   20.593790] arm_spe_pmu: probe of arm,spe-v1 failed with error -1
+[   21.227002] (null): set HEM step last failed!
+[   21.231785] (null): set HEM address to HW failed!
+[   21.231789] hns3 0000:35:00.0: failed to get gmv table, ret = -5.
+[   21.245556] hns3 0000:35:00.0: hw_init failed!
+[   21.250809] hns3 0000:35:00.0: RoCE Engine init failed!
+[   21.256500] hns3 0000:35:00.0: RoCE instance init failed! ret = -5
+[   21.263101] hns3 0000:35:00.0: fail to instantiate client, ret = -5
+[   21.269791] hns3 0000:35:00.0: match and instantiation failed for port, ret = -5
+[   21.311137] (null): set HEM step last failed!
+[   21.315919] (null): set HEM address to HW failed!
+[   21.315920] hns3 0000:35:00.1: failed to get gmv table, ret = -5.
+[   21.317991] hns3 0000:35:00.1: hw_init failed!
+[   21.332808] hns3 0000:35:00.1: RoCE Engine init failed!
+[   21.338472] hns3 0000:35:00.1: RoCE instance init failed! ret = -5
+[   21.338473] hns3 0000:35:00.1: fail to instantiate client, ret = -5
+[   21.338474] hns3 0000:35:00.1: match and instantiation failed for port, ret = -5
+[   21.371996] (null): set HEM step last failed!
+[   21.376777] (null): set HEM address to HW failed!
+[   21.376779] hns3 0000:35:00.2: failed to get gmv table, ret = -5.
+[   21.378820] hns3 0000:35:00.2: hw_init failed!
+[   21.393671] hns3 0000:35:00.2: RoCE Engine init failed!
+[   21.399327] hns3 0000:35:00.2: RoCE instance init failed! ret = -5
+[   21.399329] hns3 0000:35:00.2: fail to instantiate client, ret = -5
+[   21.399330] hns3 0000:35:00.2: match and instantiation failed for port, ret = -5
+[   21.433080] (null): set HEM step last failed!
+[   21.437861] (null): set HEM address to HW failed!
+[   21.442992] hns3 0000:35:00.3: failed to get gmv table, ret = -5.
+[   21.445037] hns3 0000:35:00.3: hw_init failed!
+[   21.454757] hns3 0000:35:00.3: RoCE Engine init failed!
+[   21.460407] hns3 0000:35:00.3: RoCE instance init failed! ret = -5
+[   21.460408] hns3 0000:35:00.3: fail to instantiate client, ret = -5
+[   21.460409] hns3 0000:35:00.3: match and instantiation failed for port, ret = -5
+########################## Reboot Count: 1##############################
+------------------Error_log-----------------
+[   20.390965] spi-nor: probe of spi-PRP0001:00 failed with error -2
+[   20.462211] arm_spe_pmu: probe of arm,spe-v1 failed with error -1
+
+------------------Fail_log------------------
+[    2.345788] hub 2-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[    2.355003] hub 6-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[    2.364525] hub 10-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[    2.374129] hub 14-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[   20.390965] spi-nor: probe of spi-PRP0001:00 failed with error -2
+[   20.409155] drv_vascend_stub: module verification failed: signature and/or required key missing - tainting kernel
+[   20.462211] arm_spe_pmu: probe of arm,spe-v1 failed with error -1
+[   20.468042] (null): set HEM step last failed!
+[   20.472826] (null): set HEM address to HW failed!
+[   20.477957] hns3 0000:35:00.0: failed to get gmv table, ret = -5.
+[   20.480049] hns3 0000:35:00.0: hw_init failed!
+[   20.489739] hns3 0000:35:00.0: RoCE Engine init failed!
+[   20.495396] hns3 0000:35:00.0: RoCE instance init failed! ret = -5
+[   20.495398] hns3 0000:35:00.0: fail to instantiate client, ret = -5
+[   20.495399] hns3 0000:35:00.0: match and instantiation failed for port, ret = -5
+[   20.547053] (null): set HEM step last failed!
+[   20.551842] (null): set HEM address to HW failed!
+[   20.556970] hns3 0000:35:00.1: failed to get gmv table, ret = -5.
+[   20.566973] hns3 0000:35:00.1: hw_init failed!
+[   20.572257] hns3 0000:35:00.1: RoCE Engine init failed!
+[   20.577912] hns3 0000:35:00.1: RoCE instance init failed! ret = -5
+[   20.584543] hns3 0000:35:00.1: fail to instantiate client, ret = -5
+[   20.591242] hns3 0000:35:00.1: match and instantiation failed for port, ret = -5
+[   20.629664] (null): set HEM step last failed!
+[   20.634446] (null): set HEM address to HW failed!
+[   20.639659] hns3 0000:35:00.2: failed to get gmv table, ret = -5.
+[   20.642799] hns3 0000:35:00.2: hw_init failed!
+[   20.651835] hns3 0000:35:00.2: RoCE Engine init failed!
+[   20.657490] hns3 0000:35:00.2: RoCE instance init failed! ret = -5
+[   20.664106] hns3 0000:35:00.2: fail to instantiate client, ret = -5
+[   20.664107] hns3 0000:35:00.2: match and instantiation failed for port, ret = -5
+[   20.705402] (null): set HEM step last failed!
+[   20.710209] (null): set HEM address to HW failed!
+[   20.715341] hns3 0000:35:00.3: failed to get gmv table, ret = -5.
+[   20.724965] hns3 0000:35:00.3: hw_init failed!
+[   20.730411] hns3 0000:35:00.3: RoCE Engine init failed!
+[   20.736064] hns3 0000:35:00.3: RoCE instance init failed! ret = -5
+[   20.742683] hns3 0000:35:00.3: fail to instantiate client, ret = -5
+[   20.749383] hns3 0000:35:00.3: match and instantiation failed for port, ret = -5
+########################## Reboot Count: 2##############################
+------------------Error_log-----------------
+[   20.654490] spi-nor: probe of spi-PRP0001:00 failed with error -2
+[   20.740740] arm_spe_pmu: probe of arm,spe-v1 failed with error -1
+
+------------------Fail_log------------------
+[    2.595612] hub 2-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[    2.604849] hub 6-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[    2.614558] hub 10-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[    2.624138] hub 14-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[   20.654490] spi-nor: probe of spi-PRP0001:00 failed with error -2
+[   20.673619] drv_vascend_stub: module verification failed: signature and/or required key missing - tainting kernel
+[   20.723276] (null): set HEM step last failed!
+[   20.728060] (null): set HEM address to HW failed!
+[   20.728065] hns3 0000:35:00.0: failed to get gmv table, ret = -5.
+[   20.740740] arm_spe_pmu: probe of arm,spe-v1 failed with error -1
+[   20.741865] hns3 0000:35:00.0: hw_init failed!
+[   20.747128] hns3 0000:35:00.0: RoCE Engine init failed!
+[   20.752780] hns3 0000:35:00.0: RoCE instance init failed! ret = -5
+[   20.759393] hns3 0000:35:00.0: fail to instantiate client, ret = -5
+[   20.766085] hns3 0000:35:00.0: match and instantiation failed for port, ret = -5
+[   20.814335] (null): set HEM step last failed!
+[   20.819145] (null): set HEM address to HW failed!
+[   20.824280] hns3 0000:35:00.1: failed to get gmv table, ret = -5.
+[   20.834110] hns3 0000:35:00.1: hw_init failed!
+[   20.839399] hns3 0000:35:00.1: RoCE Engine init failed!
+[   20.845048] hns3 0000:35:00.1: RoCE instance init failed! ret = -5
+[   20.851659] hns3 0000:35:00.1: fail to instantiate client, ret = -5
+[   20.858365] hns3 0000:35:00.1: match and instantiation failed for port, ret = -5
+[   20.900741] (null): set HEM step last failed!
+[   20.905523] (null): set HEM address to HW failed!
+[   20.910656] hns3 0000:35:00.2: failed to get gmv table, ret = -5.
+[   20.919846] hns3 0000:35:00.2: hw_init failed!
+[   20.925139] hns3 0000:35:00.2: RoCE Engine init failed!
+[   20.930800] hns3 0000:35:00.2: RoCE instance init failed! ret = -5
+[   20.937405] hns3 0000:35:00.2: fail to instantiate client, ret = -5
+[   20.944100] hns3 0000:35:00.2: match and instantiation failed for port, ret = -5
+[   20.979075] (null): set HEM step last failed!
+[   20.983857] (null): set HEM address to HW failed!
+[   20.988997] hns3 0000:35:00.3: failed to get gmv table, ret = -5.
+[   20.998256] hns3 0000:35:00.3: hw_init failed!
+[   21.003560] hns3 0000:35:00.3: RoCE Engine init failed!
+[   21.009226] hns3 0000:35:00.3: RoCE instance init failed! ret = -5
+[   21.015829] hns3 0000:35:00.3: fail to instantiate client, ret = -5
+[   21.022535] hns3 0000:35:00.3: match and instantiation failed for port, ret = -5
+########################## Reboot Count: 3##############################
+------------------Error_log-----------------
+[   20.143124] spi-nor: probe of spi-PRP0001:00 failed with error -2
+[   20.257258] arm_spe_pmu: probe of arm,spe-v1 failed with error -1
+
+------------------Fail_log------------------
+[    2.235467] hub 2-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[    2.244842] hub 6-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[    2.254438] hub 10-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[    2.263880] hub 14-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[   20.143124] spi-nor: probe of spi-PRP0001:00 failed with error -2
+[   20.165355] drv_vascend_stub: module verification failed: signature and/or required key missing - tainting kernel
+[   20.227819] (null): set HEM step last failed!
+[   20.232601] (null): set HEM address to HW failed!
+[   20.237739] hns3 0000:35:00.0: failed to get gmv table, ret = -5.
+[   20.246321] hns3 0000:35:00.0: hw_init failed!
+[   20.251598] hns3 0000:35:00.0: RoCE Engine init failed!
+[   20.257253] hns3 0000:35:00.0: RoCE instance init failed! ret = -5
+[   20.257256] hns3 0000:35:00.0: fail to instantiate client, ret = -5
+[   20.257258] arm_spe_pmu: probe of arm,spe-v1 failed with error -1
+[   20.270550] hns3 0000:35:00.0: match and instantiation failed for port, ret = -5
+[   20.315767] (null): set HEM step last failed!
+[   20.320553] (null): set HEM address to HW failed!
+[   20.320560] hns3 0000:35:00.1: failed to get gmv table, ret = -5.
+[   20.336164] hns3 0000:35:00.1: hw_init failed!
+[   20.341460] hns3 0000:35:00.1: RoCE Engine init failed!
+[   20.347120] hns3 0000:35:00.1: RoCE instance init failed! ret = -5
+[   20.353725] hns3 0000:35:00.1: fail to instantiate client, ret = -5
+[   20.360423] hns3 0000:35:00.1: match and instantiation failed for port, ret = -5
+[   20.397497] (null): set HEM step last failed!
+[   20.402278] (null): set HEM address to HW failed!
+[   20.407419] hns3 0000:35:00.2: failed to get gmv table, ret = -5.
+[   20.417442] hns3 0000:35:00.2: hw_init failed!
+[   20.422731] hns3 0000:35:00.2: RoCE Engine init failed!
+[   20.428389] hns3 0000:35:00.2: RoCE instance init failed! ret = -5
+[   20.435000] hns3 0000:35:00.2: fail to instantiate client, ret = -5
+[   20.441697] hns3 0000:35:00.2: match and instantiation failed for port, ret = -5
+[   20.477307] (null): set HEM step last failed!
+[   20.482089] (null): set HEM address to HW failed!
+[   20.487245] hns3 0000:35:00.3: failed to get gmv table, ret = -5.
+[   20.496274] hns3 0000:35:00.3: hw_init failed!
+[   20.501709] hns3 0000:35:00.3: RoCE Engine init failed!
+[   20.507371] hns3 0000:35:00.3: RoCE instance init failed! ret = -5
+[   20.513985] hns3 0000:35:00.3: fail to instantiate client, ret = -5
+[   20.520682] hns3 0000:35:00.3: match and instantiation failed for port, ret = -5

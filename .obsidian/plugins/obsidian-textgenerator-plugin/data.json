@@ -1,0 +1,23 @@
+{
+  "provider": "openai",
+  "apiKey": "sk-sp-djI.DS6BBUt7GeRsNNzUf_CxJoPfVO0tqJ-7Tx6u4bn6a-F8kyFe61XerSK78NHYDGzXH4segbdRaBD-gG_74T4fekWSVThdnFADU0WB-HqStEOaooimi0T6QWSkVtP_xTtR5kaUA8BliYNLkZuvPxO3GgAmHrEvRcFp7SItvt1wZ0sCTFWjhWg9SCMCe86MU_9e.MEQCHzAdU570mHFizcQwChFLNw0zHNpgSgiU8OLRNrG2_-4CIQDSA_VpHsWFM7RJ7dGjayA4p9AEfV5H1_BKKwex1nhdDw",
+  "baseUrl": "https://token-plan.cn-beijing.maas.aliyuncs.com/apps/anthropic",
+  "model": "qwen3.6-plus",
+  "maxTokens": 4096,
+  "temperature": 0.7,
+  "topP": 1,
+  "frequencyPenalty": 0,
+  "presencePenalty": 0,
+  "systemPrompt": "你是一个专业的助手，请用中文回答问题。",
+  "providerOptions": {
+    "openai": {
+      "apiKey": "sk-sp-djI.DS6BBUt7GeRsNNzUf_CxJoPfVO0tqJ-7Tx6u4bn6a-F8kyFe61XerSK78NHYDGzXH4segbdRaBD-gG_74T4fekWSVThdnFADU0WB-HqStEOaooimi0T6QWSkVtP_xTtR5kaUA8BliYNLkZuvPxO3GgAmHrEvRcFp7SItvt1wZ0sCTFWjhWg9SCMCe86MU_9e.MEQCHzAdU570mHFizcQwChFLNw0zHNpgSgiU8OLRNrG2_-4CIQDSA_VpHsWFM7RJ7dGjayA4p9AEfV5H1_BKKwex1nhdDw",
+      "baseUrl": "https://token-plan.cn-beijing.maas.aliyuncs.com/apps/anthropic",
+      "model": "qwen3.6-plus"
+    }
+  },
+  "advanced": {
+    "debug": false,
+    "showStatusBar": true
+  }
+}

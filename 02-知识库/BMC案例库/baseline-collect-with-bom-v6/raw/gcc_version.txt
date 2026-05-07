@@ -1,0 +1,4 @@
+# COMMAND: LC_ALL=C gcc --version | head -n 1
+# TIME: 2026-04-22 17:04:03
+
+gcc (GCC) 10.3.1

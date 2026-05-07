@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)http://10.121.177.122:8090/archives/ce-shi-ji-lu-gui-fan-shuo-ming#comment -->
+<html lang="en" class="light"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <title>测试日志规范说明 - 企业级测试部</title>
+    <link rel="stylesheet" href="./测试日志规范说明 - 企业级测试部_files/style.css">
+    <script src="./测试日志规范说明 - 企业级测试部_files/main.iife.js.下载"></script>
+    
+    <script>
+      main.initColorScheme("light",false)
+    </script>
+  <meta name="generator" content="Halo 2.20.17"><meta name="description" content="1. 总则 1.1 目的 为规范服务器测试全流程的日志记录与归档管理，确保测试数据的真实性、完整性、可追溯性，降低问题定位难度，提升测试协作效率，同时满足内部审计、客户交付及合规性要求，特制定本规范。本规范适用于服务器产品的所有测试场景，包括功能测试、性能测试、稳定性测试、兼容性测试等，全体测试工程"><link rel="stylesheet" href="./测试日志规范说明 - 企业级测试部_files/swiper-bundle.min.css">
+<script data-pjax="" src="./测试日志规范说明 - 企业级测试部_files/swiper-bundle.min.js.下载" type="text/javascript"></script>
+<link rel="stylesheet" href="./测试日志规范说明 - 企业级测试部_files/customEle.css">
+<script src="./测试日志规范说明 - 企业级测试部_files/bloghaoTag.js.下载" type="text/javascript"></script>
+<script data-pjax="" src="./测试日志规范说明 - 企业级测试部_files/swipperExecute.js.下载" type="text/javascript" defer=""></script>
+<!-- PluginLightGallery start -->
+<link href="./测试日志规范说明 - 企业级测试部_files/lightgallery.min.css" rel="stylesheet">
+<script defer="" src="./测试日志规范说明 - 企业级测试部_files/lightgallery.min.js.下载"></script>
+<!-- PluginLightGallery zoom plugin -->
+<script defer="" src="./测试日志规范说明 - 企业级测试部_files/lg-zoom.min.js.下载"></script>
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+       document.querySelectorAll(`#content img`)?.forEach(function (node) {
+  if (node) {
+    node.dataset.src = node.src;
+  }
+
+  const galleries = document.querySelectorAll(`#content`);
+
+  if (galleries.length > 0) {
+    galleries.forEach(function (node) {
+      lightGallery(node, {
+          selector: "img",
+      });
+    });
+  }
+});
+
+    });
+</script>
+<!-- PluginLightGallery end -->
+<!-- PluginHighlightJS start -->
+<link href="./测试日志规范说明 - 企业级测试部_files/atom-one-dark.min.css" rel="stylesheet">
+<script defer="" src="./测试日志规范说明 - 企业级测试部_files/highlight.min.js.下载"></script>
+
+
+    <link href="./测试日志规范说明 - 企业级测试部_files/highlightjs-copy.css" rel="stylesheet">
+    <script defer="" src="./测试日志规范说明 - 企业级测试部_files/highlightjs-copy.js.下载"></script>
+
+
+<link href="./测试日志规范说明 - 企业级测试部_files/override.css" rel="stylesheet">
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    
+        hljs.addPlugin(new CopyButtonPlugin({ lang: "zh"}));
+    
+    document.querySelectorAll("pre code").forEach((el) => {
+        hljs.highlightElement(el);
+    });
+});
+</script>
+<!-- PluginHighlightJS end -->
+<!-- PluginSearchWidget start -->
+<script src="./测试日志规范说明 - 企业级测试部_files/search-widget.iife.js.下载" async=""></script>
+<link rel="stylesheet" href="./测试日志规范说明 - 企业级测试部_files/style(1).css">
+<!-- PluginSearchWidget end -->
+<!-- plugin-katex start -->
+<script src="./测试日志规范说明 - 企业级测试部_files/katex.min.js.下载"></script>
+<link rel="stylesheet" href="./测试日志规范说明 - 企业级测试部_files/katex.min.css">
+<!-- plugin-katex end -->
+<script async="" defer="" src="./测试日志规范说明 - 企业级测试部_files/halo-tracker.js.下载" data-group="content.halo.run" data-plural="posts" data-name="0ec01eaa-2aaa-4bdb-a37b-2e8418cf5f40"></script>
+<link rel="icon" href="http://10.121.177.122:8090/upload/logo.ico">
+</head>
+  <body class="dark:bg-zinc-900 bg-[#F2F2F2]" x-data="search">
+    
+      
+    <header x-data="{ open : false }">
+  <div>
+    <div id="header-menu" class="flex h-16 bg-white py-4 shadow-sm transition-all dark:bg-zinc-900 menu-sticky">
+      <div class="container mx-auto flex h-full justify-between" x-data="colorSchemeSwitcher">
+        <div class="flex h-full items-center gap-6">
+          <div class="mr-2 h-full">
+            <a href="http://10.121.177.122:8090/" class="inline-flex h-full items-center">
+              <template x-if="currentValue &amp;&amp; currentValue == &#39;dark&#39;"></template>
+              <template x-if="currentValue &amp;&amp; currentValue == &#39;light&#39;"></template><img src="./测试日志规范说明 - 企业级测试部_files/logo-6.svg" alt="light_logo" class="max-h-16 w-full">
+              
+              
+            </a>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <ul class="hidden items-center gap-6 sm:flex">
+            <li class="relative cursor-pointer text-sm font-semibold transition-all" x-data="dropdown" @mouseenter="open()" @mouseleave="close()">
+              <a class="flex items-center gap-1 text-[#202531] hover:text-blue-600 dark:text-zinc-50 dark:hover:text-zinc-300" href="http://10.121.177.122:8090/">
+                <span>首页</span>
+                
+              </a>
+              
+            </li>
+            <li class="relative cursor-pointer text-sm font-semibold transition-all" x-data="dropdown" @mouseenter="open()" @mouseleave="close()">
+              <a class="flex items-center gap-1 text-[#202531] hover:text-blue-600 dark:text-zinc-50 dark:hover:text-zinc-300" href="https://www.tongfangpc.com/index.php/gallery-39.html">
+                <span>了解企业级产品</span>
+                
+              </a>
+              
+            </li>
+            <li class="relative cursor-pointer text-sm font-semibold transition-all" x-data="dropdown" @mouseenter="open()" @mouseleave="close()">
+              <a class="flex items-center gap-1 text-[#202531] hover:text-blue-600 dark:text-zinc-50 dark:hover:text-zinc-300" href="http://10.121.177.122:8090/about">
+                <span>关于</span>
+                
+              </a>
+              
+            </li>
+          </ul>
+          <ul class="flex items-center gap-4 pl-4">
+            <li class="sm:hidden" x-on:click="open = true">
+              <div class="i-tabler-menu-2 text-lg text-zinc-600 hover:text-blue-600 dark:text-zinc-100"></div>
+            </li>
+            
+            <!-- https://github.com/halo-sigs/plugin-search-widget -->
+            <li>
+              <a href="javascript:SearchWidget.open()" title="搜索" class="text-zinc-600 hover:text-blue-600 dark:text-zinc-100">
+                <div class="i-tabler-search text-lg"></div>
+              </a>
+            </li>
+            <li x-data="dropdown" class="relative cursor-pointer transition-all" @mouseenter="open()" @mouseleave="close()">
+              <div>
+                <div class="flex items-center border-l space-x-2 pl-4 text-zinc-600 hover:text-blue-600 dark:text-slate-100 sm:w-[140px] w-[40px]">
+                  <!-- <img
+                    class="h-5 w-5 rounded-full"
+                    th:if="${theme.config.style.show_content == 'all' or theme.config.style.show_content == 'avatar'}"
+                    th:src="${currentUser.avatar ?: #theme.assets('/images/default-avatar.svg')}"
+                    th:alt="${currentUser.displayName}"
+		    /> -->
+                  <span class="truncate text-sm hidden sm:block">刘帅</span>
+                </div>
+                
+                <ul @mouseenter="open()" @mouseleave="close()" x-show="show" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 z-10 mt-2 w-40 divide-y divide-gray-50 overflow-hidden rounded bg-white shadow dark:divide-zinc-600 dark:bg-zinc-700" style="display: none;">
+                  <li class="flex w-full items-center text-left text-sm hover:bg-gray-50 dark:hover:bg-zinc-600">
+                    <a class="h-full w-full truncate px-4 py-2 text-gray-600 hover:text-blue-600 dark:text-zinc-50 dark:hover:text-gray-300" href="http://10.121.177.122:8090/uc" target="_blank">
+                      个人资料
+                    </a>
+                  </li>
+                  <li class="flex w-full items-center text-left text-sm hover:bg-gray-50 dark:hover:bg-zinc-600">
+                    <a class="h-full w-full truncate px-4 py-2 text-gray-600 hover:text-blue-600 dark:text-zinc-50 dark:hover:text-gray-300" href="http://10.121.177.122:8090/console" target="_blank">
+                      控制台
+                    </a>
+                  </li>
+                  <li class="flex w-full items-center text-left text-sm hover:bg-gray-50 dark:hover:bg-zinc-600">
+                    <a class="h-full w-full truncate px-4 py-2 text-gray-600 hover:text-blue-600 dark:text-zinc-50 dark:hover:text-gray-300" href="http://10.121.177.122:8090/logout">
+                      退出登录
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="h-96 bg-cover bg-center bg-no-repeat" style="background-image: url(/upload/%E6%B5%8B%E8%AF%95%E6%97%A5%E5%BF%97%E8%A7%84%E8%8C%83.png)">
+      <div class="container mx-auto flex h-full flex-col items-center justify-center gap-3 py-6">
+        <span class="text-5xl text-white">测试日志规范说明</span>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="fixed inset-0 z-50 bg-gray-800/40 opacity-100 backdrop-blur-sm dark:bg-black/80" aria-hidden="true" x-show="open" x-transition:enter="ease-in-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in-out duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" style="display: none;"></div>
+    <div class="fixed inset-x-4 top-8 z-50 origin-top scale-100 rounded-lg bg-white p-4 dark:bg-slate-900" tabindex="-1" x-show="open" x-transition:enter="ease-out duration-200" x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100" x-transition:leave="ease-in duration-100" x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100" x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" @click.outside="open = false" style="display: none;">
+      <div class="flex flex-row-reverse items-center justify-between">
+        <button class="i-tabler-x p-1 text-xl text-gray-600 dark:text-slate-300" type="button" tabindex="0" @click="open = false"></button>
+        <h2 class="text-sm font-medium text-gray-600 dark:text-slate-300">菜单</h2>
+      </div>
+      <nav class="mt-6">
+        <ul class="-my-2 divide-y divide-gray-100 text-sm text-gray-800 dark:divide-slate-800 dark:text-slate-100">
+          <li>
+            <a class="flex items-center justify-between gap-1 py-2" href="http://10.121.177.122:8090/">
+              <span>首页</span>
+            </a>
+            
+          </li>
+          <li>
+            <a class="flex items-center justify-between gap-1 py-2" href="https://www.tongfangpc.com/index.php/gallery-39.html">
+              <span>了解企业级产品</span>
+            </a>
+            
+          </li>
+          <li>
+            <a class="flex items-center justify-between gap-1 py-2" href="http://10.121.177.122:8090/about">
+              <span>关于</span>
+            </a>
+            
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+  
+    
+    
+    <section class="container mx-auto"></section>
+    <section class="container mx-auto mt-6 grid grid-cols-4 gap-6 !-mt-20">
+      <div class="col-span-4 sm:col-span-3">
+        <div x-show="!isSearch">
+          
+    <div class="rounded-xl bg-white p-4 dark:bg-zinc-800" x-data="{readReminder: main.readTime()}">
+      <template x-if="readReminder"></template><div class="rounded bg-[#D8EAFD] py-1">
+          <span class="ml-2 text-sm font-light text-[#1077D1]" x-text="readReminder">文章共计 0 个字，阅读完成需要 0 分钟</span>
+        </div>
+      <h1 class="my-3 text-[1.625rem] font-medium dark:text-zinc-50">测试日志规范说明</h1>
+      <div class="flex gap-2">
+        <a href="http://10.121.177.122:8090/tags/ri-zhi" title="日志" class="cursor-pointer text-sm text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-700">#日志</a><a href="http://10.121.177.122:8090/tags/gui-fan" title="规范" class="cursor-pointer text-sm text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-700">#规范</a>
+      </div>
+      <hr>
+      <div class="my-2 flex items-center justify-between" x-data="postUtil(&#39;0ec01eaa-2aaa-4bdb-a37b-2e8418cf5f40&#39;,&#39;0&#39;)">
+        <div class="inline-flex items-center justify-start gap-2">
+          <img src="./测试日志规范说明 - 企业级测试部_files/d729422d-d4f2-4ca8-8ea0-92b38cc62c65.png" class="h-10 w-10 rounded-full" alt="Administrator">
+          <div class="flex flex-col gap-0.5">
+            <div class="flex items-center gap-2 text-xs font-light text-zinc-600 dark:text-zinc-100">
+              <span class="text-sm font-semibold text-zinc-900 dark:text-zinc-100"></span>
+              <span>发布于 2026-01-16</span>
+              <span class="text-zinc-300 dark:text-zinc-200">/</span>
+              <span>112 阅读</span>
+              <span class="text-zinc-300 dark:text-zinc-200">/</span>
+              <span>0 评论</span>
+              <span class="text-zinc-300 dark:text-zinc-200">/</span>
+              <span x-text="likeNum + &#39; 点赞&#39;">0 点赞</span>
+            </div>
+          </div>
+        </div>
+        <div class="inline-flex flex-row gap-1">
+          <div class="group cursor-pointer rounded-lg p-1">
+            <template x-if="liked"></template>
+            <template x-if="!liked"></template><div class="i-tabler-heart text-lg font-light text-zinc-600 hover:text-[#B23A48] active:animate-ping dark:text-zinc-100" x-on:click="upvote"></div>
+          </div>
+          <a href="http://10.121.177.122:8090/archives/ce-shi-ji-lu-gui-fan-shuo-ming#comment" class="cursor-pointer rounded-lg p-1 hover:bg-zinc-100 dark:hover:bg-zinc-600">
+            <div class="i-tabler-message-circle text-lg text-zinc-600 hover:text-zinc-900 dark:text-zinc-100 dark:hover:text-zinc-50"></div>
+          </a>
+          
+        </div>
+      </div>
+      
+        <div class="rounded-md bg-gray-100 p-4 text-sm font-light">1. 总则 1.1 目的 为规范服务器测试全流程的日志记录与归档管理，确保测试数据的真实性、完整性、可追溯性，降低问题定位难度，提升测试协作效率，同时满足内部审计、客户交付及合规性要求，特制定本规范。本规范适用于服务器产品的所有测试场景，包括功能测试、性能测试、稳定性测试、兼容性测试等，全体测试工程</div>
+      
+      
+      <!-- 登录墙：未登录用户显示提示 -->
+      
+      
+      <!-- 文章正文：仅登录用户可见 -->
+      <article id="content" class="prose prose-base font-normal prose-h1:text-2xl prose-h2:text-xl prose-h3:text-lg prose-h4:text-base prose-tr:break-keep prose-th:p-2 prose-th:border prose-th:border-solid prose-th:bg-neutral-300 prose-th:dark:bg-neutral-400 prose-th:border-[var(--tw-prose-td-borders)] prose-td:p-2 prose-td:border prose-td:border-solid prose-td:border-[var(--tw-prose-td-borders)] prose-pre:p-0 mt-4 !max-w-none dark:prose-invert" lg-uid="lg0"><script defer="" src="./测试日志规范说明 - 企业级测试部_files/mermaid.min.js.下载"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const postBody = document.body
+      let darkModel = document.querySelector('html[class~=dark]')
+      mermaid.initialize({
+        startOnLoad: false,
+        theme: darkModel?'dark':'default'
+      });
+      mermaid.run({
+        querySelector: 'text-diagram[data-type=mermaid]',
+      });
+    });
+</script>
+
+<h2 style="" id="1.-%E6%80%BB%E5%88%99">1. 总则</h2><h3 style="" id="1.1-%E7%9B%AE%E7%9A%84">1.1 目的</h3><p style="">为规范服务器测试全流程的日志记录与归档管理，确保测试数据的真实性、完整性、可追溯性，降低问题定位难度，提升测试协作效率，同时满足内部审计、客户交付及合规性要求，特制定本规范。本规范适用于服务器产品的所有测试场景，包括功能测试、性能测试、稳定性测试、兼容性测试等，全体测试工程师需严格遵照执行。</p><p style=""></p><h3 style="" id="1.2-%E9%80%82%E7%94%A8%E8%8C%83%E5%9B%B4">1.2 适用范围</h3><p style="">本规范覆盖测试过程中的所有日志相关活动，包括日志的采集、记录、整理、命名、存储、归档、检索及留存等环节；适用于所有服务器测试项目及相关测试人员。</p><p style=""></p><h3 style="" id="1.3-%E6%A0%B8%E5%BF%83%E5%8E%9F%E5%88%99">1.3 核心原则</h3><ul><li><p style=""><strong>可追溯性</strong>：每一条日志均需关联测试用例、测试时间、测试人员、测试环境等关键上下文信息，确保问题可回溯、过程可复现。</p></li><li><p style=""><strong>完整性</strong>：全面记录测试过程中的操作、数据、现象及结果，不遗漏关键信息，满足问题定位和复盘分析需求。</p></li><li><p style=""><strong>规范性</strong>：统一日志记录格式、命名规则及归档方式，确保日志管理的标准化、规范化，提升协作效率。</p></li><li><p style=""><strong>高效性</strong>：优化日志采集与归档流程，平衡日志完整性与存储/检索效率，避免无效日志冗余。</p></li></ul><p style=""></p><h2 style="" id="2.-%E6%97%A5%E5%BF%97%E5%AD%98%E6%A1%A3">2. 日志存档</h2><h3 style="" id="2.1-%E5%86%85%E9%83%A8%E6%B5%8B%E8%AF%95"><strong>2.1 内部测试</strong></h3><p style="">测试报告<span fontsize="" color="rgb(239, 68, 68)" style="color: rgb(239, 68, 68)">不强制要求</span>归档，但在测试管理系统-报告页面，<span fontsize="" color="rgb(239, 68, 68)" style="color: rgb(239, 68, 68)">必须完成测试报告整理工作</span>。</p><p style="">1）<a href="http://10.121.177.98:8081/" target="_self"><span fontsize="" color="rgb(59, 130, 246)" style="color: rgb(59, 130, 246)">测试管理系统</span></a>中提交关键测试过程信息说明和相应截图，通过<code>执行历史</code>可以识别测试行为和结果的正确性。</p><p style=""><img src="./测试日志规范说明 - 企业级测试部_files/image-vlws.png" width="100%" height="100%" style="display: inline-block" srcset="/upload/thumbnails/2026/w800/image-vlws.png 800w, /upload/thumbnails/2026/w400/image-vlws.png 400w, /upload/thumbnails/2026/w1200/image-vlws.png 1200w, /upload/thumbnails/2026/w1600/image-vlws.png 1600w" sizes="(max-width: 400px) 400px, (max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px" data-src="http://10.121.177.122:8090/upload/image-vlws.png"></p><p style=""><img src="./测试日志规范说明 - 企业级测试部_files/image-ceea.png" width="991px" height="542px" style="display: inline-block" srcset="/upload/thumbnails/2026/w400/image-ceea.png 400w, /upload/thumbnails/2026/w800/image-ceea.png 800w, /upload/thumbnails/2026/w1600/image-ceea.png 1600w, /upload/thumbnails/2026/w1200/image-ceea.png 1200w" sizes="(max-width: 400px) 400px, (max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px" data-src="http://10.121.177.122:8090/upload/image-ceea.png"></p><ul><li><p style="">测试报告总结</p><ul><li><p style="">部件类<img src="./测试日志规范说明 - 企业级测试部_files/image-gxil.png" width="991px" height="538px" style="display: inline-block" srcset="/upload/thumbnails/2026/w400/image-gxil.png 400w, /upload/thumbnails/2026/w800/image-gxil.png 800w, /upload/thumbnails/2026/w1200/image-gxil.png 1200w, /upload/thumbnails/2026/w1600/image-gxil.png 1600w" sizes="(max-width: 400px) 400px, (max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px" data-src="http://10.121.177.122:8090/upload/image-gxil.png">  <img src="./测试日志规范说明 - 企业级测试部_files/image-vcld.png" width="959px" height="498px" style="display: inline-block" srcset="/upload/thumbnails/2026/w800/image-vcld.png 800w, /upload/thumbnails/2026/w1200/image-vcld.png 1200w, /upload/thumbnails/2026/w1600/image-vcld.png 1600w, /upload/thumbnails/2026/w400/image-vcld.png 400w" sizes="(max-width: 400px) 400px, (max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px" data-src="http://10.121.177.122:8090/upload/image-vcld.png"></p></li></ul><p style=""></p><ul><li><p style="">固件类<img src="./测试日志规范说明 - 企业级测试部_files/image-uxjm.png" width="100%" height="100%" style="display: inline-block" srcset="/upload/thumbnails/2026/w400/image-uxjm.png 400w, /upload/thumbnails/2026/w1600/image-uxjm.png 1600w, /upload/thumbnails/2026/w800/image-uxjm.png 800w, /upload/thumbnails/2026/w1200/image-uxjm.png 1200w" sizes="(max-width: 400px) 400px, (max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px" data-src="http://10.121.177.122:8090/upload/image-uxjm.png"><img src="./测试日志规范说明 - 企业级测试部_files/image-pchr.png" width="100%" height="100%" style="display: inline-block" srcset="/upload/thumbnails/2026/w400/image-pchr.png 400w, /upload/thumbnails/2026/w1200/image-pchr.png 1200w, /upload/thumbnails/2026/w800/image-pchr.png 800w, /upload/thumbnails/2026/w1600/image-pchr.png 1600w" sizes="(max-width: 400px) 400px, (max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px" data-src="http://10.121.177.122:8090/upload/image-pchr.png"></p></li></ul></li></ul><p style=""></p><p style=""></p><p style=""></p><p style="">2）<a href="http://10.121.177.142:8090/" target="_self"><span fontsize="" color="rgb(59, 130, 246)" style="color: rgb(59, 130, 246)">测试FTP系统</span></a>中提交完整的测试过程日志及相关信息记录，确保测试数据的完整性、有效性与可追溯性。</p><p style=""><img src="./测试日志规范说明 - 企业级测试部_files/image-spor.png" width="991px" height="434px" style="display: inline-block" srcset="/upload/thumbnails/2026/w400/image-spor.png 400w, /upload/thumbnails/2026/w800/image-spor.png 800w, /upload/thumbnails/2026/w1200/image-spor.png 1200w, /upload/thumbnails/2026/w1600/image-spor.png 1600w" sizes="(max-width: 400px) 400px, (max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px" data-src="http://10.121.177.122:8090/upload/image-spor.png"></p><h3 style="" id="2.2-%E5%A4%96%E9%83%A8%E6%B5%8B%E8%AF%95">2.2 外部测试</h3><p style="">测试报告<span fontsize="" color="rgb(239, 68, 68)" style="color: rgb(239, 68, 68)">必须归档</span>，以提交给客户确认的最终版本为准。</p><ul><li><p style="">优先参考外部客户测试日志规范，进行测试日志归档整理</p></li><li><p style="">如无外部客户测试日志规则要求，则参考企业级测试部《测试日志规范说明》归档整理</p></li></ul><h3 style="" id="2.3-%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9">2.3 注意事项</h3><p style=""><span fontsize="" color="rgb(239, 68, 68)" style="color: rgb(239, 68, 68)">测试日志不要上传到测试用例中，例如：</span></p><p style=""><img src="./测试日志规范说明 - 企业级测试部_files/image-fdmi.png" width="100%" height="100%" style="display: inline-block" srcset="/upload/thumbnails/2026/w800/image-fdmi.png 800w, /upload/thumbnails/2026/w1600/image-fdmi.png 1600w, /upload/thumbnails/2026/w1200/image-fdmi.png 1200w, /upload/thumbnails/2026/w400/image-fdmi.png 400w" sizes="(max-width: 400px) 400px, (max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px" data-src="http://10.121.177.122:8090/upload/image-fdmi.png"></p><h2 style="" id="3-%E6%97%A5%E5%BF%97%E8%A7%84%E8%8C%83">3 日志规范</h2><h3 style="" id="3.1-%E6%88%AA%E5%9B%BE%EF%BC%88%E9%80%82%E7%94%A8%E4%BA%8E%E6%89%A7%E8%A1%8C%E7%B1%BB%EF%BC%89">3.1 截图（适用于执行类）</h3><ul><li><p style="">截图插入在系统或报告等其他载体中时，要求截图清晰可辨（<span fontsize="" color="rgb(239, 68, 68)" style="color: rgb(239, 68, 68)">禁止长截图或多图合成，会出现上传图片不清晰问题</span>），体现完整的测试关键信息</p></li><li><p style="">截图<mark data-color="#eab308" style="background-color: #eab308; color: inherit">少于3屏时</mark>，保留所有测试过程截图</p></li><li><p style="">截图<mark data-color="#eab308" style="background-color: #eab308; color: inherit">超过3屏时</mark>，保留至少3张核心截图，分别为：</p><ul><li><p style="">包含测试执行命令的截图（明确操作对象及指令）；</p></li><li><p style="">中间关键信息部分截图（如动态性能数据、测试正常运行标志、关键交互信息等）；</p></li><li><p style="">最后信息结束部分截图（如信息汇总、执行结果提示页）；</p></li><li><p style="">选择性通过绘图工具添加标注说明，文字清晰可辨，截图信息明确指向</p></li></ul></li></ul><ul><li><p style="">截图以文件形式保存时，参考本文测试日志命名规范进行保存</p></li></ul><p style="">截图少于3屏参考：</p><p style=""><img src="./测试日志规范说明 - 企业级测试部_files/image-kqoj.png" width="100%" height="100%" style="display: inline-block" srcset="/upload/thumbnails/2026/w1200/image-kqoj.png 1200w, /upload/thumbnails/2026/w1600/image-kqoj.png 1600w, /upload/thumbnails/2026/w400/image-kqoj.png 400w, /upload/thumbnails/2026/w800/image-kqoj.png 800w" sizes="(max-width: 400px) 400px, (max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px" data-src="http://10.121.177.122:8090/upload/image-kqoj.png"></p><p style="">截图超过3屏参考：</p><p style=""><img src="./测试日志规范说明 - 企业级测试部_files/image-qrwj.png" width="100%" height="100%" style="display: inline-block" srcset="/upload/thumbnails/2026/w1600/image-qrwj.png 1600w, /upload/thumbnails/2026/w1200/image-qrwj.png 1200w, /upload/thumbnails/2026/w400/image-qrwj.png 400w, /upload/thumbnails/2026/w800/image-qrwj.png 800w" sizes="(max-width: 400px) 400px, (max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px" data-src="http://10.121.177.122:8090/upload/image-qrwj.png"></p><p style=""><img src="./测试日志规范说明 - 企业级测试部_files/image-lald.png" width="100%" height="100%" style="display: inline-block" srcset="/upload/thumbnails/2026/w400/image-lald.png 400w, /upload/thumbnails/2026/w800/image-lald.png 800w, /upload/thumbnails/2026/w1600/image-lald.png 1600w, /upload/thumbnails/2026/w1200/image-lald.png 1200w" sizes="(max-width: 400px) 400px, (max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px" data-src="http://10.121.177.122:8090/upload/image-lald.png"></p><p style=""><img src="./测试日志规范说明 - 企业级测试部_files/image-hyls.png" width="100%" height="100%" style="display: inline-block" srcset="/upload/thumbnails/2026/w400/image-hyls.png 400w, /upload/thumbnails/2026/w800/image-hyls.png 800w, /upload/thumbnails/2026/w1600/image-hyls.png 1600w, /upload/thumbnails/2026/w1200/image-hyls.png 1200w" sizes="(max-width: 400px) 400px, (max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px" data-src="http://10.121.177.122:8090/upload/image-hyls.png"></p><h3 style="" id="3.2-%E6%88%AA%E5%9B%BE%EF%BC%88%E9%80%82%E7%94%A8%E4%BA%8E%E4%BF%A1%E6%81%AF%E7%B1%BB%EF%BC%89">3.2 截图（适用于信息类）</h3><blockquote><p style=""><strong>注：</strong>信息类截图通常针对系统配置、环境状态、硬件拓扑或静态日志等非动态执行过程，侧重于信息的准确传达与可追溯性。</p></blockquote><ul><li><p style=""><strong>画质与呈现底线</strong></p><ul><li><p style="">截图嵌入系统或测试报告时，必须保证<strong>清晰可辨</strong>。严禁使用长截图或多图合成拼接（以规避平台压缩导致的画质受损），确保各项关键参数肉眼易读。</p></li></ul></li><li><p style=""><strong>上下文的双向关联</strong></p><ul><li><p style=""><strong>拒绝“孤立截图”：</strong> 每张截图必须具备明确的业务上下文，严格与具体的<strong>测试步骤</strong>或<strong>预期结果</strong>建立一一映射关系。</p></li><li><p style="">截图的上下文中需配有简短的引导语（例如：“步骤3：BIOS配置界面如下”或“预期结果：系统正确识别硬件拓扑”）。</p></li></ul></li><li><p style=""><strong>核心观察点的显性标注</strong></p><ul><li><p style=""><strong>精准聚焦：</strong> 当界面包含海量信息时，必须使用标准化绘图工具（如醒目的红框、箭头）对<strong>具体观察点</strong>（如特定字段、关键参数、异常告警等）进行精准标识。</p></li><li><p style=""><strong>辅助说明：</strong> 标识处需视情况添加清晰、简练的文字说明，直接点明该界面的核心结论（例如：“内存识别容量正常”、“SNC模式已开启”等），最大限度降低评审人员的信息提取成本。</p></li></ul></li><li><p style=""><strong>信息截取策略</strong></p><ul><li><p style=""><strong>单屏涵盖全貌：</strong> 若能在单屏内展示，优先截取包含完整配置参数或系统状态的全局画面。</p></li><li><p style=""><strong>多屏提炼核心：</strong> 若信息列表较长（超过3屏），无需逐页截图，仅保留能证明关键状态的代表性截图（如具有代表性的数据页、关键差异页或首尾页即可）。</p></li></ul></li><li><p style=""><strong>文件归档命名</strong></p><ul><li><p style="">截图若以独立文件形式保存，必须严格参照当前的《测试日志命名规范》执行，确保文件名内嵌测试用例编号、关键步骤节点或时间戳，保障后期审计的快速溯源。</p></li></ul></li></ul><h3 style="" id="3.3-%E6%97%A5%E5%BF%97-%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%94%9F">3.3 日志-系统原生</h3><ul><li><p style="">保留原生日志状态，不需要更改名称（如messages、syslog等）</p></li><li><p style="">保留原生测试工具生成的日志文件（如SPECCPU测试自动化成的result里的文件保持不变）</p></li><li><p style="">如果测试跨周，注意将系统上一周的备份记录一同抓取归档，如下面的<span fontsize="" color="rgb(239, 68, 68)" style="color: rgb(239, 68, 68)">messages</span>和<span fontsize="" color="rgb(239, 68, 68)" style="color: rgb(239, 68, 68)">messages-20260120</span>包含了上周末的系统日志信息：</p></li></ul><pre class="hljs-copy-wrapper" style="--hljs-theme-background: rgb(40, 44, 52); --hljs-theme-color: rgb(171, 178, 191);"><code class="language-bash hljs" data-highlighted="yes">[root@bogon ~]# <span class="hljs-built_in">ls</span> /var/log/
+anaconda  btmp    ctyunos-security.log  dnf.rpm.log  hawkey.log           maillog            private  rpmpkgs-20260118  spooler              storelibdebugit.txt.1  up2date
+audit     chrony  dnf.librepo.log       dracut.log   hawkey.log-20260118  messages           README   samba             sssd                 systemtap.log          wtmp
+boot.log  cron    dnf.log               firewalld    lastlog              messages-20260120  rpmpkgs  secure            storelibdebugit.txt  tuned
+[root@bogon ~]#</code><button class="hljs-copy-button" data-copied="false">复制</button></pre><h3 style="" id="3.4-%E6%97%A5%E5%BF%97-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%94%9F%E6%88%90">3.4 日志-自定义生成</h3><ul><li><p style="">以执行命令或关键参数命名，做到见名知意效果，如：</p><ul><li><p style="">ipmitool sel elist输出命名为：sel</p></li><li><p style="">lspci -vvvs 2a:00.0输出命名为：lspci_2a_00_0.txt</p></li><li><p style="">fio 队列深度32下的4k randread输出命名为：randread_32_sdb_4k.txt</p></li></ul></li><li><p style="">以用例名称或预期结果命名，如：</p><ul><li><p style=""><span style="font-size: 14px; color: rgb(50, 50, 51)">GPU在OS侧信息验证</span></p></li><li><p style=""><span style="font-size: 14px; color: rgb(50, 50, 51)">GPU在BMC Web侧信息验证-</span><span style="font-size: 14px; color: rgb(239, 68, 68)">BMC_03.07.03</span><span style="font-size: 14px; color: rgb(50, 50, 51)">、GPU在BMC Web侧信息验证-</span><span style="font-size: 14px; color: rgb(239, 68, 68)">BMC_03.08.03</span><span style="font-size: 14px; color: rgb(50, 50, 51)">（针对不同版本差异化，需要增加版本标识）</span></p></li><li><p style=""><span style="font-size: 14px; color: rgb(50, 50, 51)">OS_Cycles_</span><span style="font-size: 14px; color: rgb(239, 68, 68)">20251201</span><span style="font-size: 14px; color: rgb(50, 50, 51)">、OS_Cycles_</span><span style="font-size: 14px; color: rgb(239, 68, 68)">20251205</span><span style="font-size: 14px; color: rgb(50, 50, 51)">（针对不同时间复现数据，需要增加时间标识）</span></p></li></ul></li></ul><h3 style="" id="3.5-%E6%96%87%E4%BB%B6%E5%A4%B9%E7%BB%84%E7%BB%87%E7%BB%93%E6%9E%84">3.5 文件夹组织结构</h3><ul><li><p style="">采用“测试编号/序号-测试用例”二级文件夹结构（<span fontsize="" color="rgb(239, 68, 68)" style="color: rgb(239, 68, 68)">测试报告以文件或压缩包形式保存归档</span>），确保日志归档清晰有序，具体结构举例：</p></li></ul><pre class="hljs-copy-wrapper" style="--hljs-theme-background: rgb(40, 44, 52); --hljs-theme-color: rgb(171, 178, 191);"><code class="language-plaintext hljs" data-highlighted="yes">【测试需求或项目名称】
+├─ 【测试用例编号/序号-测试用例类别】
+│  ├─ 测试子编号/序号-测试用例名称
+│  ├─ 测试子编号/序号-测试用例名称
+│  ├─ 测试子编号/序号-测试用例名称
+│  │  │─ 测试子编号/序号-测试用例小项
+│  │  │─ 测试子编号/序号-测试用例小项
+│  │  │─ 测试子编号/序号-测试用例小项
+│  └─ 测试日志说明.md：记录该用例的测试概况、版本信息、异常说明、文件关联关系等
+├─ 【测试用例编号/序号-测试用例名称】
+│  └─ （同上）
+└─ XX项目XX测试报告</code><button class="hljs-copy-button" data-copied="false">复制</button></pre><ul><li><p style="">以天翼云需求为例：</p></li></ul><p style=""><img src="./测试日志规范说明 - 企业级测试部_files/image-qyng.png" width="100%" height="100%" style="display: inline-block" srcset="/upload/thumbnails/2026/w400/image-qyng.png 400w, /upload/thumbnails/2026/w1200/image-qyng.png 1200w, /upload/thumbnails/2026/w800/image-qyng.png 800w, /upload/thumbnails/2026/w1600/image-qyng.png 1600w" sizes="(max-width: 400px) 400px, (max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px" data-src="http://10.121.177.122:8090/upload/image-qyng.png"></p><pre class="hljs-copy-wrapper" style="--hljs-theme-background: rgb(40, 44, 52); --hljs-theme-color: rgb(171, 178, 191);"><code class="language-plaintext hljs" data-highlighted="yes">【天翼云一期512C DPU测试】
+├─ 01-结构测试
+├─ 02-服务器端网卡识别与指示灯测试
+│  ├─ 01-BMC下网卡识别
+│  ├─ 02-Linux下网卡识别
+│  ├─ 03-网卡Link灯及Active灯状态
+│  ├─ ……
+│  └─ 07-Linux下对网卡驱动进行卸载
+├─ 03-交换机指示灯测试
+│  ├─ 01-连通状态无数据传输状态下指示灯测试
+│  └─ 02-连通状态有数据传输状态下指示灯测试
+├─ 04-上电时序测试
+│  ├─ 01-测试修改bios选型保存退出后，在服务器warm reboot/DC/AC情况下服务器能否正常开机
+│  ├─ 02-服务器电源开关按钮上下电
+│  │  │─ 01-测短按电源开关按钮-走下电流程
+│  │  │─ 02-长按短按电源开关按钮-走强制下电流程
+│  │  │─ 03-上电过程中短按短按电源开关按钮-下电
+│  │  │─ 04-上电过程中长按短按电源开关按钮-下电
+│  │  │─ 05-下电状态短按电源开关按钮-屏蔽Power button
+│  │  └─ 06-下电状态长按电源开关按钮-屏蔽Power button
+│  ├─ 03-BMC webUI下电
+│  ├─ ……
+│  └─ 测试日志说明.md：记录该用例的测试概况、版本信息、异常说明、文件关联关系等
+└─ 天翼云BF2智能网卡测试用例V1.9-20250328.xlsx</code><button class="hljs-copy-button" data-copied="false">复制</button></pre><h2 style="" id="4-%E6%89%A7%E8%A1%8C%E4%B8%8E%E7%9B%91%E7%9D%A3">4 执行与监督</h2><h3 style="" id="4.1-%E5%9F%B9%E8%AE%AD%E4%B8%8E%E5%AE%A3%E8%B4%AF">4.1 培训与宣贯</h3><p style="">测试负责人组织组内测试人员进行宣贯培训，确保每个人理解规范并按要求执行。</p><h3 style="" id="4.2-%E6%97%A5%E5%B8%B8%E7%9B%91%E7%9D%A3">4.2 日常监督</h3><p style="">测试负责人需定期对测试日志的记录与归档情况进行检查，重点核查日志完整性、命名规范性、归档及时性及敏感信息脱敏情况；对违反规范的情况需及时督促整改，并记录整改结果。</p><h3 style="" id="4.3-%E6%8C%81%E7%BB%AD%E4%BC%98%E5%8C%96">4.3 持续优化</h3><p style="">本规范将根据测试工作实际需求、技术迭代及最佳实践更新情况，会不定期进行评审与优化，确保规范的适用性和有效性。</p><h2 style="" id="5-%E9%99%84%E5%88%99">5 附则</h2><p style="">本规范由测试部门负责解释，自发布之日起正式执行。原有测试日志相关规定与本规范不一致的，以本规范为准。</p><p style=""></p>
+<script data-pjax="">
+  function renderMath(selector,displayMode) {
+    const els = document.body.querySelectorAll(selector)
+    els.forEach((el) => {
+      katex.render(el.innerText, el, { displayMode })
+    })
+  }
+  renderMath("[math-inline]",false);
+  renderMath("[math-display]",true);
+</script>
+</article>
+      
+      <hr class="my-10 dark:border-zinc-700">
+      <div class="my-10 flex flex-col sm:flex-row sm:justify-between">
+        <div class="flex justify-start">
+          <a role="navigation" class="group inline-flex items-center gap-2 truncate text-base hover:text-[#567AAC] text-zinc-700 dark:text-zinc-100 dark:hover:text-zinc-200" href="http://10.121.177.122:8090/archives/chang-jian-xi-tong-yi-chang-ri-zhi-shuo-ming" title="常见系统异常日志说明（持续更新）">
+            <span class="i-tabler-chevron-left translate-x-1 text-lg transition-all group-hover:-translate-x-0"></span>
+            <span>上一篇:</span>
+            <span>常见系统异常日志说明（持续更新）</span>
+          </a>
+        </div>
+        
+        <div class="flex justify-end">
+          <a role="navigation" class="group inline-flex items-center gap-2 truncate text-base hover:text-[#567AAC] text-zinc-700 dark:text-zinc-100 dark:hover:text-zinc-200" href="http://10.121.177.122:8090/archives/1qwdf" title="AVT测试工具">
+            <span>下一篇:</span>
+            <span>AVT测试工具</span>
+            <span class="i-tabler-chevron-right -translate-x-1 text-lg transition-all group-hover:translate-x-0"></span>
+          </a>
+        </div>
+      </div>
+      <hr class="my-10 dark:border-zinc-700">
+      <div class="text-center" x-data="postUtil(&#39;0ec01eaa-2aaa-4bdb-a37b-2e8418cf5f40&#39;,&#39;0&#39;)">
+        是否对你有帮助?
+         <template x-if="!liked &amp;&amp; !noLiked"></template><button class="i-tabler-thumb-up !h-8 text-lg font-light text-zinc-600 hover:text-[#B23A48] active:animate-ping dark:text-zinc-100" x-on:click="upvote">3</button>
+        <template x-if="!liked &amp;&amp; !noLiked"></template><button class="i-tabler-thumb-down !h-8 text-lg font-light text-zinc-600 hover:text-[#B23A48] active:animate-ping dark:text-zinc-100" x-on:click="downvote">4</button>
+        <template x-if="liked"></template>
+        <template x-if="noLiked"></template>
+      </div>
+      <!-- https://github.com/halo-sigs/plugin-comment-widget -->
+      
+    </div>
+    <a href="http://10.121.177.122:8090/console#/posts/editor?name=0ec01eaa-2aaa-4bdb-a37b-2e8418cf5f40&amp;returnToView=true" id="edit-button" class="fixed bottom-10 right-10 flex h-14 w-14 items-center justify-center rounded-full bg-[#4CCBA0] text-white shadow transition-all duration-300 hover:opacity-80 hover:shadow-lg">
+      <div class="i-tabler-edit !h-7 !w-7"></div>
+    </a>
+  
+        </div>
+        <template x-if="isSearch"></template>
+      </div>
+
+      
+        <div class="col-span-1 px-2">
+          
+            
+    <aside class="sticky top-20 flex-col hidden gap-6 sm:flex">
+  
+    
+      
+    <div class="w-full cursor-pointer overflow-hidden rounded-xl bg-white p-3 shadow transition-all duration-500 hover:shadow-md dark:bg-zinc-800">
+      <div class="flex items-center justify-between">
+        <h2 class="inline-flex items-center gap-2 text-base dark:text-zinc-50">
+          <span class="i-tabler-chevron-left text-lg"></span>
+          <a class="group inline-flex items-center gap-2 text-base text-zinc-600 transition-all hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-300" href="http://10.121.177.122:8090/">返回首页 /</a>
+          <a class="group inline-flex items-center gap-2 text-base text-zinc-600 transition-all hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-300" href="javascript:;" onclick="javascript:history.back(-1)">返回上一页
+          </a>
+        </h2>
+      </div>
+    </div>
+    <div class="w-full cursor-pointer overflow-hidden rounded-xl bg-white p-3 shadow transition-all duration-500 hover:shadow-md dark:bg-zinc-800">
+        <h2 class="inline-flex items-center gap-2 text-base dark:text-zinc-50">
+          <span class="i-tabler-list text-lg"></span>
+          目录
+        </h2>
+        <div class="toc mt-2"><ol class="toc-list space-y-1 dark:border-zinc-500"><li class="toc-list-item is-active-li"><a href="http://10.121.177.122:8090/archives/ce-shi-ji-lu-gui-fan-shuo-ming#1.-%E6%80%BB%E5%88%99" class="toc-link node-name--H2 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-zinc-100 text-sm opacity-80 dark:hover:bg-zinc-700 dark:text-zinc-50 is-active-link bg-zinc-100 dark:bg-zinc-600">1. 总则</a><ol class="toc-list space-y-1 dark:border-zinc-500"><li class="toc-list-item"><a href="http://10.121.177.122:8090/archives/ce-shi-ji-lu-gui-fan-shuo-ming#1.1-%E7%9B%AE%E7%9A%84" class="toc-link node-name--H3 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-zinc-100 text-sm opacity-80 dark:hover:bg-zinc-700 dark:text-zinc-50">1.1 目的</a></li><li class="toc-list-item"><a href="http://10.121.177.122:8090/archives/ce-shi-ji-lu-gui-fan-shuo-ming#1.2-%E9%80%82%E7%94%A8%E8%8C%83%E5%9B%B4" class="toc-link node-name--H3 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-zinc-100 text-sm opacity-80 dark:hover:bg-zinc-700 dark:text-zinc-50">1.2 适用范围</a></li><li class="toc-list-item"><a href="http://10.121.177.122:8090/archives/ce-shi-ji-lu-gui-fan-shuo-ming#1.3-%E6%A0%B8%E5%BF%83%E5%8E%9F%E5%88%99" class="toc-link node-name--H3 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-zinc-100 text-sm opacity-80 dark:hover:bg-zinc-700 dark:text-zinc-50">1.3 核心原则</a></li></ol></li><li class="toc-list-item"><a href="http://10.121.177.122:8090/archives/ce-shi-ji-lu-gui-fan-shuo-ming#2.-%E6%97%A5%E5%BF%97%E5%AD%98%E6%A1%A3" class="toc-link node-name--H2 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-zinc-100 text-sm opacity-80 dark:hover:bg-zinc-700 dark:text-zinc-50">2. 日志存档</a><ol class="toc-list space-y-1 dark:border-zinc-500"><li class="toc-list-item"><a href="http://10.121.177.122:8090/archives/ce-shi-ji-lu-gui-fan-shuo-ming#2.1-%E5%86%85%E9%83%A8%E6%B5%8B%E8%AF%95" class="toc-link node-name--H3 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-zinc-100 text-sm opacity-80 dark:hover:bg-zinc-700 dark:text-zinc-50">2.1 内部测试</a></li><li class="toc-list-item"><a href="http://10.121.177.122:8090/archives/ce-shi-ji-lu-gui-fan-shuo-ming#2.2-%E5%A4%96%E9%83%A8%E6%B5%8B%E8%AF%95" class="toc-link node-name--H3 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-zinc-100 text-sm opacity-80 dark:hover:bg-zinc-700 dark:text-zinc-50">2.2 外部测试</a></li><li class="toc-list-item"><a href="http://10.121.177.122:8090/archives/ce-shi-ji-lu-gui-fan-shuo-ming#2.3-%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9" class="toc-link node-name--H3 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-zinc-100 text-sm opacity-80 dark:hover:bg-zinc-700 dark:text-zinc-50">2.3 注意事项</a></li></ol></li><li class="toc-list-item"><a href="http://10.121.177.122:8090/archives/ce-shi-ji-lu-gui-fan-shuo-ming#3-%E6%97%A5%E5%BF%97%E8%A7%84%E8%8C%83" class="toc-link node-name--H2 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-zinc-100 text-sm opacity-80 dark:hover:bg-zinc-700 dark:text-zinc-50">3 日志规范</a><ol class="toc-list space-y-1 dark:border-zinc-500"><li class="toc-list-item"><a href="http://10.121.177.122:8090/archives/ce-shi-ji-lu-gui-fan-shuo-ming#3.1-%E6%88%AA%E5%9B%BE%EF%BC%88%E9%80%82%E7%94%A8%E4%BA%8E%E6%89%A7%E8%A1%8C%E7%B1%BB%EF%BC%89" class="toc-link node-name--H3 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-zinc-100 text-sm opacity-80 dark:hover:bg-zinc-700 dark:text-zinc-50">3.1 截图（适用于执行类）</a></li><li class="toc-list-item"><a href="http://10.121.177.122:8090/archives/ce-shi-ji-lu-gui-fan-shuo-ming#3.2-%E6%88%AA%E5%9B%BE%EF%BC%88%E9%80%82%E7%94%A8%E4%BA%8E%E4%BF%A1%E6%81%AF%E7%B1%BB%EF%BC%89" class="toc-link node-name--H3 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-zinc-100 text-sm opacity-80 dark:hover:bg-zinc-700 dark:text-zinc-50">3.2 截图（适用于信息类）</a></li><li class="toc-list-item"><a href="http://10.121.177.122:8090/archives/ce-shi-ji-lu-gui-fan-shuo-ming#3.3-%E6%97%A5%E5%BF%97-%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%94%9F" class="toc-link node-name--H3 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-zinc-100 text-sm opacity-80 dark:hover:bg-zinc-700 dark:text-zinc-50">3.3 日志-系统原生</a></li><li class="toc-list-item"><a href="http://10.121.177.122:8090/archives/ce-shi-ji-lu-gui-fan-shuo-ming#3.4-%E6%97%A5%E5%BF%97-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%94%9F%E6%88%90" class="toc-link node-name--H3 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-zinc-100 text-sm opacity-80 dark:hover:bg-zinc-700 dark:text-zinc-50">3.4 日志-自定义生成</a></li><li class="toc-list-item"><a href="http://10.121.177.122:8090/archives/ce-shi-ji-lu-gui-fan-shuo-ming#3.5-%E6%96%87%E4%BB%B6%E5%A4%B9%E7%BB%84%E7%BB%87%E7%BB%93%E6%9E%84" class="toc-link node-name--H3 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-zinc-100 text-sm opacity-80 dark:hover:bg-zinc-700 dark:text-zinc-50">3.5 文件夹组织结构</a></li></ol></li><li class="toc-list-item"><a href="http://10.121.177.122:8090/archives/ce-shi-ji-lu-gui-fan-shuo-ming#4-%E6%89%A7%E8%A1%8C%E4%B8%8E%E7%9B%91%E7%9D%A3" class="toc-link node-name--H2 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-zinc-100 text-sm opacity-80 dark:hover:bg-zinc-700 dark:text-zinc-50">4 执行与监督</a><ol class="toc-list space-y-1 dark:border-zinc-500"><li class="toc-list-item"><a href="http://10.121.177.122:8090/archives/ce-shi-ji-lu-gui-fan-shuo-ming#4.1-%E5%9F%B9%E8%AE%AD%E4%B8%8E%E5%AE%A3%E8%B4%AF" class="toc-link node-name--H3 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-zinc-100 text-sm opacity-80 dark:hover:bg-zinc-700 dark:text-zinc-50">4.1 培训与宣贯</a></li><li class="toc-list-item"><a href="http://10.121.177.122:8090/archives/ce-shi-ji-lu-gui-fan-shuo-ming#4.2-%E6%97%A5%E5%B8%B8%E7%9B%91%E7%9D%A3" class="toc-link node-name--H3 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-zinc-100 text-sm opacity-80 dark:hover:bg-zinc-700 dark:text-zinc-50">4.2 日常监督</a></li><li class="toc-list-item"><a href="http://10.121.177.122:8090/archives/ce-shi-ji-lu-gui-fan-shuo-ming#4.3-%E6%8C%81%E7%BB%AD%E4%BC%98%E5%8C%96" class="toc-link node-name--H3 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-zinc-100 text-sm opacity-80 dark:hover:bg-zinc-700 dark:text-zinc-50">4.3 持续优化</a></li></ol></li><li class="toc-list-item"><a href="http://10.121.177.122:8090/archives/ce-shi-ji-lu-gui-fan-shuo-ming#5-%E9%99%84%E5%88%99" class="toc-link node-name--H2 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-zinc-100 text-sm opacity-80 dark:hover:bg-zinc-700 dark:text-zinc-50">5 附则</a></li></ol></div>
+      </div>
+  
+    
+    
+    
+      <div class="w-full cursor-pointer overflow-hidden rounded-xl bg-white p-3 shadow transition-all duration-500 hover:shadow-md dark:bg-zinc-800">
+  <h2 class="inline-flex items-center gap-2 text-lg dark:text-zinc-50">
+    <span class="i-tabler-category text-lg"></span>
+    分类目录
+  </h2>
+  <div class="mt-2">
+    <ul class="space-y-1">
+      <li>
+    <a href="http://10.121.177.122:8090/categories/x86" title="x86" class="group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-zinc-100 dark:hover:bg-zinc-700">
+      <span class="text-base opacity-80 dark:text-zinc-50">x86</span>
+      <span class="rounded bg-zinc-100 py-0.5 px-1 text-sm tabular-nums opacity-70 group-hover:bg-white dark:bg-zinc-600 dark:text-zinc-50 dark:group-hover:bg-zinc-500">4</span>
+    </a>
+    
+  </li><li>
+    <a href="http://10.121.177.122:8090/categories/arm" title="arm" class="group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-zinc-100 dark:hover:bg-zinc-700">
+      <span class="text-base opacity-80 dark:text-zinc-50">arm</span>
+      <span class="rounded bg-zinc-100 py-0.5 px-1 text-sm tabular-nums opacity-70 group-hover:bg-white dark:bg-zinc-600 dark:text-zinc-50 dark:group-hover:bg-zinc-500">4</span>
+    </a>
+    
+  </li><li>
+    <a href="http://10.121.177.122:8090/categories/oem" title="OEM" class="group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-zinc-100 dark:hover:bg-zinc-700">
+      <span class="text-base opacity-80 dark:text-zinc-50">OEM</span>
+      <span class="rounded bg-zinc-100 py-0.5 px-1 text-sm tabular-nums opacity-70 group-hover:bg-white dark:bg-zinc-600 dark:text-zinc-50 dark:group-hover:bg-zinc-500">2</span>
+    </a>
+    
+  </li><li>
+    <a href="http://10.121.177.122:8090/categories/others" title="Others" class="group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-zinc-100 dark:hover:bg-zinc-700">
+      <span class="text-base opacity-80 dark:text-zinc-50">Others</span>
+      <span class="rounded bg-zinc-100 py-0.5 px-1 text-sm tabular-nums opacity-70 group-hover:bg-white dark:bg-zinc-600 dark:text-zinc-50 dark:group-hover:bg-zinc-500">50</span>
+    </a>
+    
+  </li>
+    </ul>
+  </div>
+</div>
+
+    
+      <div class="w-full cursor-pointer overflow-hidden rounded-xl bg-white p-3 shadow transition-all duration-500 hover:shadow-md dark:bg-zinc-800">
+  <div class="flex items-center justify-between">
+    <h2 class="inline-flex items-center gap-2 text-lg dark:text-zinc-50">
+      <span class="i-tabler-tags text-lg"></span>
+      标签
+    </h2>
+    <a class="group inline-flex items-center gap-2 text-sm text-zinc-600 transition-all hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-300" href="http://10.121.177.122:8090/tags">
+      <span>更多</span>
+      <span class="i-tabler-chevron-right -translate-x-1 text-lg transition-all group-hover:translate-x-0"></span>
+    </a>
+  </div>
+  <div class="mt-2 flex flex-wrap gap-2">
+    <a href="http://10.121.177.122:8090/tags/jie-kou" title="接口" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      接口
+      <sup>0</sup>
+    </a><a href="http://10.121.177.122:8090/tags/300i-a2" title="300I A2" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      300I A2
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/wang-yi-you-xiang-da-shi" title="网易邮箱大师" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      网易邮箱大师
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/bug" title="BUG" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      BUG
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/ying-jian" title="硬件" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      硬件
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/xi-tong" title="系统" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      系统
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/bei-wang" title="备忘" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      备忘
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/jie-kou" title="接口" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      接口
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/dian-deng" title="点灯" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      点灯
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/di-di-qi-ye-ban" title="滴滴企业版" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      滴滴企业版
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/qwen" title="Qwen" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      Qwen
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/cun-chu" title="存储" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      存储
+      <sup>4</sup>
+    </a><a href="http://10.121.177.122:8090/tags/hardware_info" title="hardware_info" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      hardware_info
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/ming-ming" title="命名" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      命名
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/qi-ye-ji" title="企业级" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      企业级
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/da-che" title="打车" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      打车
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/bu-jian" title="部件" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      部件
+      <sup>4</sup>
+    </a><a href="http://10.121.177.122:8090/tags/si-yin" title="丝印" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      丝印
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/bei-wang-lu" title="备忘录" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      备忘录
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/guan-li" title="管理" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      管理
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/tian-yi-yun" title="天翼云" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      天翼云
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/xiang-mu" title="项目" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      项目
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/di-di" title="滴滴" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      滴滴
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/jie-wu" title="借物" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      借物
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/ying-jian-si-yin-gui-fan" title="硬件丝印规范" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      硬件丝印规范
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/shun-feng" title="顺丰" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      顺丰
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/kuai-di" title="快递" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      快递
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/chong-qi" title="重启" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      重启
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/outlook" title="Outlook" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      Outlook
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/da-yin-ji" title="打印机" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      打印机
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/windows" title="windows" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      windows
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/ce-shi-yong-li" title="测试用例" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      测试用例
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/an-li" title="案例" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      案例
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/yi-chang" title="异常" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      异常
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/es3000" title="ES3000" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      ES3000
+      <sup>6</sup>
+    </a><a href="http://10.121.177.122:8090/tags/you-xiang" title="邮箱" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      邮箱
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/mindie" title="MindIE" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      MindIE
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/ji-hua" title="计划" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      计划
+      <sup>0</sup>
+    </a><a href="http://10.121.177.122:8090/tags/dian-deng-gui-fan" title="点灯规范" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      点灯规范
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/wu-liao" title="物料" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      物料
+      <sup>2</sup>
+    </a><a href="http://10.121.177.122:8090/tags/guan-li-gui-ze" title="管理规则" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      管理规则
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/fang-an" title="方案" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      方案
+      <sup>0</sup>
+    </a><a href="http://10.121.177.122:8090/tags/wen-jian" title="文件" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      文件
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/yan-fa-zhong-xin" title="研发中心" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      研发中心
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/ri-zhi" title="日志" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      日志
+      <sup>3</sup>
+    </a><a href="http://10.121.177.122:8090/tags/redfish" title="Redfish" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      Redfish
+      <sup>1</sup>
+    </a><a href="http://10.121.177.122:8090/tags/gui-fan" title="规范" class="rounded bg-zinc-100 px-1 py-0.5 text-sm hover:bg-zinc-200 dark:bg-zinc-600 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-100">
+      规范
+      <sup>5</sup>
+    </a>
+  </div>
+</div>
+
+    
+  
+</aside>
+  
+          
+          
+        </div>
+      
+    </section><search-modal><template shadowrootmode="open"><!----><div class="modal__wrapper" style="display:none;">
+      <div class="modal__layer"></div>
+      <div data-overlayscrollbars-initialize="" class="modal__content shadow-xl bg-modal" data-overlayscrollbars="host"><div class="os-size-observer"><div class="os-size-observer-listener"></div></div><div class="" data-overlayscrollbars-viewport="scrollbarHidden overflowXHidden overflowYHidden" tabindex="-1" style="margin-right: 0px; margin-bottom: 0px; margin-left: 0px; top: 0px; right: auto; left: 0px; width: calc(100% + 0px); padding: 0px;">
+        <!--?lit$562259870$-->
+      </div><div class="os-scrollbar os-scrollbar-horizontal os-theme-dark os-scrollbar-auto-hide os-scrollbar-auto-hide-hidden os-scrollbar-handle-interactive os-scrollbar-cornerless os-scrollbar-unusable" style="--os-viewport-percent: 0; --os-scroll-direction: 0;"><div class="os-scrollbar-track"><div class="os-scrollbar-handle"></div></div></div><div class="os-scrollbar os-scrollbar-vertical os-theme-dark os-scrollbar-auto-hide os-scrollbar-auto-hide-hidden os-scrollbar-handle-interactive os-scrollbar-cornerless os-scrollbar-unusable" style="--os-viewport-percent: 0; --os-scroll-direction: 0;"><div class="os-scrollbar-track"><div class="os-scrollbar-handle"></div></div></div></div>
+    </div></template></search-modal>
+    <footer class="relative mt-8 bg-zinc-100 pt-8 pb-6 dark:bg-zinc-800">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap text-center lg:text-left">
+      <div class="w-full px-4 lg:w-4/12">
+        <a href="http://10.121.177.122:8090/">
+          <div class="... flex flex-row">
+            <div>
+              
+            </div>
+            <div>
+              <h4 class="text-3xl font-semibold text-zinc-600 dark:text-zinc-200"></h4>
+              <h5 class="mt-0 mb-2 text-base font-light text-zinc-600 dark:text-zinc-200"></h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="w-full px-4 lg:w-8/12">
+        
+      </div>
+    </div>
+  </div>
+  <div>
+    <hr class="my-6 border-zinc-200 dark:border-zinc-700 sm:mx-auto lg:my-8">
+    <div class="flex flex-wrap items-center justify-center font-light md:justify-between">
+      <div class="mx-auto w-full px-4 text-center md:w-4/12">
+        <span class="dark:hover:text-whit text-zinc-500 hover:text-zinc-900">
+          <a href="https://beian.miit.gov.cn/" class="hover:underline" target="_blank"></a>
+        </span>
+        <div class="xs:text-center text-sm font-light text-zinc-500 dark:text-zinc-300">
+          Copyright ©
+          2026
+          <a href="http://10.121.177.122:8090/" class="hover:underline">企业级测试部</a>. All Rights Reserved.
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+<a class="fixed bottom-[6.5rem] right-10 m-0 hidden h-10 w-10 rounded-full border-[1px] border-solid border-zinc-300 text-center leading-10" id="back-to-top" href="Javascript:scroll(0,0)">
+  <span class="i-tabler-chevron-up text-lg text-[#7ca5e7] transition-all">至顶</span>
+</a>
+
+<a class="fixed bottom-[6.5rem] right-10 m-0 h-10 w-10 rounded-full border-[1px] border-solid border-zinc-300 text-center leading-10" id="back-to-down" href="Javascript:scroll(0,document.documentElement.scrollHeight)">
+  <span class="i-tabler-chevron-down text-lg text-[#7ca5e7] transition-all">至底</span>
+</a>
+
+    
+      
+    <script>
+      main.generateToc();
+    </script>
+  
+    
+  
+
+</body></html>

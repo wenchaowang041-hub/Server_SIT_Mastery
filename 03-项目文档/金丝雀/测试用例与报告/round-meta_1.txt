@@ -1,0 +1,4 @@
+round_name=2026-04-17_110334
+cycles=10
+pull_wait_seconds=30
+system_disk=/dev/nvme5n1

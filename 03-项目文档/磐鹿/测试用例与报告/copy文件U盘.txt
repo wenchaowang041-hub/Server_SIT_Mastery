@@ -1,0 +1,17 @@
+# 1. 查看USB设备
+lsblk
+sudo fdisk -l
+
+# 2. 挂载USB（假设是 /dev/sdb1）
+sudo mkdir -p /mnt/usb
+sudo mount /dev/sdb1 /mnt/usb
+
+# 3. 复制文件夹
+cp -r /path/to/folder /mnt/usb/
+
+# 4. 卸载
+sudo umount /mnt/usb
+
+[root@davinci-mini ~]# cp -r fio_perf_results /mnt/usb/
+[root@davinci-mini ~]# cd /mnt/usb/
+[root@davinci-mini usb]# ls

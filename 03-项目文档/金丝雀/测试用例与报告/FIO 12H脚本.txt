@@ -1,0 +1,13 @@
+FIO 12H
+#
+mkdir -p /root/fio_logs
+cd /root/fio_logs
+#
+fio --name=mix_workload --filename=/dev/sda \
+    --rw=randrw --rwmixread=70 --bs=4k \
+    --size=50G --numjobs=8 --runtime=43200 \
+    --ioengine=libaio --direct=1 \
+    --output=fio_test_result.txt \
+    --write_bw_log=bandwidth_data \
+    --write_iops_log=iops_data \
+    --write_lat_log=latency_data

@@ -1,0 +1,33 @@
+Test Name,IOPS,Bandwidth(KB/s),Latency(ns)
+
+[1;33mRunning: 4k_randread[0m
+Parameters: rw=randread, bs=4k, iodepth=64, numjobs=1, runtime=60s
+Result: IOPS=70667.172214, BW=N/A KB/s, Latency=N/A ns
+4k_randread:70667.172214::
+
+[1;33mRunning: 4k_randwrite[0m
+Parameters: rw=randwrite, bs=4k, iodepth=64, numjobs=1, runtime=60s
+Result: IOPS=0.000000, BW=N/A KB/s, Latency=N/A ns
+4k_randwrite:0.000000::
+
+[1;33mRunning: seq_read_1M[0m
+Parameters: rw=read, bs=1M, iodepth=32, numjobs=1, runtime=0s
+fio: time_based requires a runtime/timeout setting
+Result: IOPS=493.493976, BW=N/A KB/s, Latency=N/A ns
+seq_read_1M:493.493976::
+
+[1;33mRunning: seq_write_1M[0m
+Parameters: rw=write, bs=1M, iodepth=32, numjobs=1, runtime=0s
+fio: time_based requires a runtime/timeout setting
+Result: IOPS=0.000000, BW=N/A KB/s, Latency=N/A ns
+seq_write_1M:0.000000::
+
+[1;33mRunning: mixed_70r30w[0m
+Parameters: rw=randrw, bs=4k, iodepth=64, numjobs=1, runtime=60s
+Result: IOPS=28336.994383, BW=N/A KB/s, Latency=N/A ns
+mixed_70r30w:28336.994383::
+
+[1;33mRunning: qd256_randread[0m
+Parameters: rw=randread, bs=4k, iodepth=256, numjobs=4, runtime=30s
+Result: IOPS=48308.381936, BW=N/A KB/s, Latency=N/A ns
+qd256_randread:48308.381936::

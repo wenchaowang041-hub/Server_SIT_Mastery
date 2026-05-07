@@ -1,0 +1,163 @@
+# COMMAND: LC_ALL=C nvme list -o json
+# TIME: 2026-04-22 17:04:04
+
+{
+  "Devices" : [
+    {
+      "NameSpace" : 1,
+      "DevicePath" : "/dev/nvme0n1",
+      "Firmware" : "2020",
+      "Index" : 0,
+      "ModelNumber" : "HWE6AP441T9L00KN",
+      "ProductName" : "Non-Volatile memory controller: Huawei Technologies Co., Ltd. Device 0x37d4",
+      "SerialNumber" : "034XESZERC000419",
+      "UsedBytes" : 1920383410176,
+      "MaximumLBA" : 3750748848,
+      "PhysicalSize" : 1920383410176,
+      "SectorSize" : 512
+    },
+    {
+      "NameSpace" : 1,
+      "DevicePath" : "/dev/nvme1n1",
+      "Firmware" : "2020",
+      "Index" : 1,
+      "ModelNumber" : "HWE6AP441T9L00KN",
+      "ProductName" : "Non-Volatile memory controller: Huawei Technologies Co., Ltd. Device 0x37d4",
+      "SerialNumber" : "034XESZERC000508",
+      "UsedBytes" : 1920383410176,
+      "MaximumLBA" : 3750748848,
+      "PhysicalSize" : 1920383410176,
+      "SectorSize" : 512
+    },
+    {
+      "NameSpace" : 1,
+      "DevicePath" : "/dev/nvme10n1",
+      "Firmware" : "2020",
+      "Index" : 10,
+      "ModelNumber" : "HWE6AP441T9L00KN",
+      "ProductName" : "Non-Volatile memory controller: Huawei Technologies Co., Ltd. Device 0x37d4",
+      "SerialNumber" : "034XESZERC000235",
+      "UsedBytes" : 1920383410176,
+      "MaximumLBA" : 3750748848,
+      "PhysicalSize" : 1920383410176,
+      "SectorSize" : 512
+    },
+    {
+      "NameSpace" : 1,
+      "DevicePath" : "/dev/nvme11n1",
+      "Firmware" : "2020",
+      "Index" : 11,
+      "ModelNumber" : "HWE6AP441T9L00KN",
+      "ProductName" : "Non-Volatile memory controller: Huawei Technologies Co., Ltd. Device 0x37d4",
+      "SerialNumber" : "034XESZERC000474",
+      "UsedBytes" : 1920383410176,
+      "MaximumLBA" : 3750748848,
+      "PhysicalSize" : 1920383410176,
+      "SectorSize" : 512
+    },
+    {
+      "NameSpace" : 1,
+      "DevicePath" : "/dev/nvme2n1",
+      "Firmware" : "2020",
+      "Index" : 2,
+      "ModelNumber" : "HWE6AP441T9L00KN",
+      "ProductName" : "Non-Volatile memory controller: Huawei Technologies Co., Ltd. Device 0x37d4",
+      "SerialNumber" : "034XESZERC000354",
+      "UsedBytes" : 1920383410176,
+      "MaximumLBA" : 3750748848,
+      "PhysicalSize" : 1920383410176,
+      "SectorSize" : 512
+    },
+    {
+      "NameSpace" : 1,
+      "DevicePath" : "/dev/nvme3n1",
+      "Firmware" : "2020",
+      "Index" : 3,
+      "ModelNumber" : "HWE6AP441T9L00KN",
+      "ProductName" : "Non-Volatile memory controller: Huawei Technologies Co., Ltd. Device 0x37d4",
+      "SerialNumber" : "034XESZERC000041",
+      "UsedBytes" : 1920383410176,
+      "MaximumLBA" : 3750748848,
+      "PhysicalSize" : 1920383410176,
+      "SectorSize" : 512
+    },
+    {
+      "NameSpace" : 1,
+      "DevicePath" : "/dev/nvme4n1",
+      "Firmware" : "2020",
+      "Index" : 4,
+      "ModelNumber" : "HWE6AP441T9L00KN",
+      "ProductName" : "Non-Volatile memory controller: Huawei Technologies Co., Ltd. Device 0x37d4",
+      "SerialNumber" : "034XESZERB003970",
+      "UsedBytes" : 1920383410176,
+      "MaximumLBA" : 3750748848,
+      "PhysicalSize" : 1920383410176,
+      "SectorSize" : 512
+    },
+    {
+      "NameSpace" : 1,
+      "DevicePath" : "/dev/nvme5n1",
+      "Firmware" : "2020",
+      "Index" : 5,
+      "ModelNumber" : "HWE6AP441T9L00KN",
+      "ProductName" : "Non-Volatile memory controller: Huawei Technologies Co., Ltd. Device 0x37d4",
+      "SerialNumber" : "034XESZERC000359",
+      "UsedBytes" : 1920383410176,
+      "MaximumLBA" : 3750748848,
+      "PhysicalSize" : 1920383410176,
+      "SectorSize" : 512
+    },
+    {
+      "NameSpace" : 1,
+      "DevicePath" : "/dev/nvme6n1",
+      "Firmware" : "2020",
+      "Index" : 6,
+      "ModelNumber" : "HWE6AP441T9L00KN",
+      "ProductName" : "Non-Volatile memory controller: Huawei Technologies Co., Ltd. Device 0x37d4",
+      "SerialNumber" : "034XESZERC000485",
+      "UsedBytes" : 1920383410176,
+      "MaximumLBA" : 3750748848,
+      "PhysicalSize" : 1920383410176,
+      "SectorSize" : 512
+    },
+    {
+      "NameSpace" : 1,
+      "DevicePath" : "/dev/nvme7n1",
+      "Firmware" : "1073",
+      "Index" : 7,
+      "ModelNumber" : "HWE6AP441T9L00KN",
+      "ProductName" : "Non-Volatile memory controller: Huawei Technologies Co., Ltd. Device 0x37d4",
+      "SerialNumber" : "034XESD9R6000101",
+      "UsedBytes" : 1920383410176,
+      "MaximumLBA" : 3750748848,
+      "PhysicalSize" : 1920383410176,
+      "SectorSize" : 512
+    },
+    {
+      "NameSpace" : 1,
+      "DevicePath" : "/dev/nvme8n1",
+      "Firmware" : "2020",
+      "Index" : 8,
+      "ModelNumber" : "HWE6AP441T9L00KN",
+      "ProductName" : "Non-Volatile memory controller: Huawei Technologies Co., Ltd. Device 0x37d4",
+      "SerialNumber" : "034XESZERC000513",
+      "UsedBytes" : 1920383410176,
+      "MaximumLBA" : 3750748848,
+      "PhysicalSize" : 1920383410176,
+      "SectorSize" : 512
+    },
+    {
+      "NameSpace" : 1,
+      "DevicePath" : "/dev/nvme9n1",
+      "Firmware" : "1073",
+      "Index" : 9,
+      "ModelNumber" : "HWE6AP441T9L00KN",
+      "ProductName" : "Non-Volatile memory controller: Huawei Technologies Co., Ltd. Device 0x37d4",
+      "SerialNumber" : "034XESD9R6000189",
+      "UsedBytes" : 1920383410176,
+      "MaximumLBA" : 3750748848,
+      "PhysicalSize" : 1920383410176,
+      "SectorSize" : 512
+    }
+  ]
+}

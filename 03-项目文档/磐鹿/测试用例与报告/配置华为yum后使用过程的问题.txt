@@ -1,0 +1,202 @@
+--- www.a.shifen.com ping statistics ---
+34 packets transmitted, 33 received, 2.94118% packet loss, time 51586ms
+rtt min/avg/max/mdev = 77.308/1381.433/3543.421/1213.284 ms, pipe 4
+[root@davinci-mini ~]# cd
+[root@davinci-mini ~]# cd /etc/yum.repos.d
+[root@davinci-mini yum.repos.d]#
+[root@davinci-mini yum.repos.d]#
+[root@davinci-mini yum.repos.d]# cat my_openEuler.repo
+cat: my_openEuler.repo: No such file or directory
+[root@davinci-mini yum.repos.d]# pwd
+/etc/yum.repos.d
+[root@davinci-mini yum.repos.d]#  cat my_openEuler.repo
+cat: my_openEuler.repo: No such file or directory
+[root@davinci-mini yum.repos.d]# vi /etc/yum.repos.d/my_openEuler.repocat                                           [root@davinci-mini yum.repos.d]# vi /etc/yum.repos.d/my_openEuler.repo
+se]
+name=openEuler 22.03 LTS - Base
+baseurl=https://mirrors.huaweicloud.com/openeuler/openEuler-22.03-LTS/OS/                                           /arch64
+enabled=1
+gpgcheck=0
+
+[everything]
+name=openEuler 22.03 LTS - Everything
+baseurl=https://mirrors.huaweicloud.com/openeuler/openEuler-22.03-LTS/eve                                           /aarch64/
+enabled=1
+gpgcheck=0
+
+[EPOL]
+name=openEuler 22.03 LTS - EPOL
+baseurl=https://mirrors.huaweicloud.com/openeuler/openEuler-22.03-LTS/EPO                                           aarch64/
+enabled=1
+gpgcheck=0
+~
+~
+~
+"my_openEuler.repo" [New] 17L, 452B written
+[root@davinci-mini yum.repos.d]# ls
+my_openEuler.repo  openEuler.repo
+[root@davinci-mini yum.repos.d]# vi my_openEuler.repo
+[base]
+name=openEuler 22.03 LTS - Base
+baseurl=https://mirrors.huaweicloud.com/openeuler/openEuler-22.03-LTS/OS/                                           /arch644
+enabled=1
+gpgcheck=0
+
+[everything]
+name=openEuler 22.03 LTS - Everything
+baseurl=https://mirrors.huaweicloud.com/openeuler/openEuler-22.03-LTS/eve                                           /aarch64/
+enabled=1
+gpgcheck=0
+
+[EPOL]
+name=openEuler 22.03 LTS - EPOL
+baseurl=https://mirrors.huaweicloud.com/openeuler/openEuler-22.03-LTS/EPO                                           aarch64/
+enabled=1
+gpgcheck=0
+~
+~
+~
+"my_openEuler.repo" 17L, 455B written
+[root@davinci-mini yum.repos.d]# vi my_openEuler.repo
+[base]
+name=openEuler 22.03 LTS - Base
+baseurl=https://mirrors.huaweicloud.com/openeuler/openEuler-22.03-LTS/OS/                                           /arch644
+enabled=1
+gpgcheck=0
+
+[everything]
+name=openEuler 22.03 LTS - Everything
+baseurl=https://mirrors.huaweicloud.com/openeuler/openEuler-22.03-LTS/eve                                           /aarch64/
+enabled=1
+gpgcheck=0
+
+[EPOL]
+name=openEuler 22.03 LTS - EPOL
+baseurl=https://mirrors.huaweicloud.com/openeuler/openEuler-22.03-LTS/EPO                                           aarch64/
+enabled=1
+gpgcheck=0
+~
+~
+~
+[root@davinci-mini yum.repos.d]# yum install ipmitool
+openEuler 22.03 LTS      [===                 ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [===                 ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [   ===              ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [      ===           ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [         ===        ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [            ===     ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [               ===  ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [===                 ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [===                 ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [   ===              ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [      ===           ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [         ===        ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [            ===     ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [               ===  ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [===                 ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [===                 ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [   ===              ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [      ===           ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [         ===        ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [            ===     ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [               ===  ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [===                 ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [===                 ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [   ===              ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [      ===           ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [         ===        ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [            ===     ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [               ===  ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [===                 ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [===                 ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [   ===              ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [      ===           ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS      [         ===        ] ---  B/s |   0  B     --:                                           openEuler 22.03 LTS - Base                      0.0  B/s |   0  B     00:28
+Errors during downloading metadata for repository 'base':
+  - Curl error (6): Couldn't resolve host name for https://mirrors.huaweicloud.com/openeuler/openEuler-22.03-LTS/OS/aarch64/repodata/repomd.xml [Could not resolve host: mirrors.huaweicloud.com]
+Error: Failed to download metadata for repo 'base': Cannot download repomd.xml: Cannot download repodata/repomd.xml: All mirrors were tried
+[root@davinci-mini yum.repos.d]# ping -c 4 mirrors.huaweicloud.com
+ping: mirrors.huaweicloud.com: Name or service not known
+[root@davinci-mini yum.repos.d]# cd
+[root@davinci-mini ~]# ping -c 4 mirrors.huaweicloud.com
+ping: mirrors.huaweicloud.com: Name or service not known
+[root@davinci-mini ~]# ping www.baidu.com
+ping: www.baidu.com: Name or service not known
+[root@davinci-mini ~]# cd
+[root@davinci-mini ~]#
+[root@davinci-mini ~]#
+[root@davinci-mini ~]# ping www.baidu.com
+ping: www.baidu.com: Name or service not known
+[root@davinci-mini ~]# ifconfig
+enp4s0u2u3: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether b2:f0:28:0a:cb:4c  txqueuelen 1000  (Ethernet)
+        RX packets 89  bytes 10404 (10.1 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 102  bytes 9210 (8.9 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.0.2  netmask 255.255.255.0  broadcast 192.168.0.255
+        inet6 fe80::b0ab:bcff:fe60:d5c6  prefixlen 64  scopeid 0x20<link>
+        ether b2:ab:bc:60:d5:c6  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 16  bytes 1196 (1.1 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 56
+
+eth1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether ae:e6:e3:07:27:3a  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 65
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 50  bytes 4018 (3.9 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 50  bytes 4018 (3.9 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[root@davinci-mini ~]# stty -F /dev/ttyUSB3 115200 raw -echo
+stty: /dev/ttyUSB3: unable to perform all requested operations
+[root@davinci-mini ~]# echo -ne 'AT+QIACT?\r' > /dev/ttyUSB3
+[root@davinci-mini ~]# cat /dev/ttyUSB3
+OK
+
+
+[root@davinci-mini ~]# echo -ne 'AT+QIACT=1\r' > /dev/ttyUSB3
+[root@davinci-mini ~]# cat /dev/ttyUSB3
+OK
+
+[root@davinci-mini ~]# ifconfig
+enp4s0u2u3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.12.112.39  netmask 255.255.255.0  broadcast 10.12.112.255
+        inet6 fe80::9585:458d:d1be:ff8b  prefixlen 64  scopeid 0x20<link>
+        ether b2:f0:28:0a:cb:4c  txqueuelen 1000  (Ethernet)
+        RX packets 99  bytes 12620 (12.3 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 114  bytes 10986 (10.7 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.0.2  netmask 255.255.255.0  broadcast 192.168.0.255
+        inet6 fe80::b0ab:bcff:fe60:d5c6  prefixlen 64  scopeid 0x20<link>
+        ether b2:ab:bc:60:d5:c6  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 16  bytes 1196 (1.1 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 56
+
+eth1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether ae:e6:e3:07:27:3a  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 65
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 50  bytes 4018 (3.9 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 50  bytes 4018 (3.9 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[root@davinci-mini ~]# yum install ipmitool
+openEuler 22.03 LTS - Base                      0.0  B/s |   0  B     00:47
+Errors during downloading metadata for repository 'base':
+  - Curl error (60): SSL peer certificate or SSH remote key was not OK for https://mirrors.huaweicloud.com/openeuler/openEuler-22.03-LTS/OS/aarch64/repodata/repomd.xml [SSL certificate problem: certificate is not yet valid]
+Error: Failed to download metadata for repo 'base': Cannot download repomd.xml: Cannot download repodata/repomd.xml: All mirrors were tried
+[root@davinci-mini ~]# ping www.baidu.com
+PING www.a.shifen.com (110.242.69.21) 56(84) bytes of data.
+64 bytes from 110.242.69.21 (110.242.69.21): icmp_seq=1 ttl=52 time=95.5 ms
+
+--- www.a.shifen.com ping statistics ---
+2 packets transmitted, 1 received, 50% packet loss, time 1000ms
+rtt min/avg/max/mdev = 95.516/95.516/95.516/0.000 ms
+[root@davinci-mini ~]# date
+Wed Jan  5 03:31:39 UTC 2000
+[root@davinci-mini ~]# hwclock
+2000-01-05 03:31:47.711181+00:00
+[root@davinci-mini ~]# ntpdate pool.ntp.org
+14 Jan 02:19:39 ntpdate[5607]: step time server 111.230.189.174 offset +821314053.318642 sec
+[root@davinci-mini ~]# date
+Wed Jan 14 02:19:57 UTC 2026
+[root@davinci-mini ~]# yum install ipmitool
+openEuler 22.03 LTS  26% [=====               ] 106 kB/s | 915 kB     00:23 ETA

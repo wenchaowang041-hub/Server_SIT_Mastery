@@ -1,0 +1,13 @@
+# 1. stress
+stress --cpu 8 --timeout 7200s
+stress -c 8 -t 7200
+
+# 2. stress-ng
+stress-ng --cpu 8 --cpu-method all --timeout 7200
+stress-ng --matrix 4 --matrix-size 64 --timeout 3600
+
+# 3. sysbench
+sysbench cpu --threads=8 --cpu-max-prime=20000 run --time=7200
+
+# 4. cpulimit + yes
+yes > /dev/null & cpulimit -l 800 -p $!

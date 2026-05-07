@@ -1,0 +1,7 @@
+文件: 4K_Seq_read_result.txt
+
+[nvme15n1]
+采样点数: 2881
+盘类型: SSD
+曲线图: ./all_nvme_analysis/nvme15n1/4K_Seq_read_result/plots/nvme15n1.png
+跌零点数: 1 (阈值 1.0 MB/s)

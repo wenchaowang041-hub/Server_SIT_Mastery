@@ -1,0 +1,4 @@
+# COMMAND: curl -ksu 'Administrator:Admin@9000' 'https://10.121.176.138/redfish/v1/UpdateService/FirmwareInventory/chassisPSU2'
+# TIME: 2026-04-22 17:04:18
+
+{"@odata.context":"/redfish/v1/$metadata#SoftwareInventory.SoftwareInventory","@odata.id":"/redfish/v1/UpdateService/FirmwareInventory/chassisPSU2","@odata.type":"#SoftwareInventory.v1_2_0.SoftwareInventory","Id":"chassisPSU2","Name":"PSU2","Status":{"State":"Enabled","Oem":{"openUBMC":{"Severity":"Informational"}},"Health":"OK"},"Version":"DC:1.0 PFC:1.00","ReleaseDate":null,"Updateable":true,"RelatedItem":[{"@odata.id":"/redfish/v1/Managers/1"}],"Oem":{"openUBMC":{"PositionId":"EXU","Manufacturer":"Great Wall","ActiveMode":null,"ActiveModeSupported":null}},"SoftwareId":"PSU-CRPS2700D2    "}

@@ -1,0 +1,33 @@
+# COMMAND: LC_ALL=C modinfo nvme | head -n 30
+# TIME: 2026-04-22 17:04:04
+
+filename:       /lib/modules/5.10.0-216.0.0.115.oe2203sp4.aarch64/kernel/drivers/nvme/host/nvme.ko.xz
+version:        1.0
+license:        GPL
+author:         Matthew Wilcox <willy@linux.intel.com>
+srcversion:     4DB80BAE17CCA074D114D2D
+alias:          pci:v*d*sv*sd*bc01sc08i02*
+alias:          pci:v0000106Bd00002005sv*sd*bc*sc*i*
+alias:          pci:v0000106Bd00002003sv*sd*bc*sc*i*
+alias:          pci:v0000106Bd00002001sv*sd*bc*sc*i*
+alias:          pci:v00002646d00002263sv*sd*bc*sc*i*
+alias:          pci:v00002646d00002262sv*sd*bc*sc*i*
+alias:          pci:v000015B7d00002001sv*sd*bc*sc*i*
+alias:          pci:v00001C5Cd00001504sv*sd*bc*sc*i*
+alias:          pci:v00001344d00006001sv*sd*bc*sc*i*
+alias:          pci:v00001344d00005407sv*sd*bc*sc*i*
+alias:          pci:v00001CC1d00008201sv*sd*bc*sc*i*
+alias:          pci:v000010ECd00005762sv*sd*bc*sc*i*
+alias:          pci:v00001D1Dd00002601sv*sd*bc*sc*i*
+alias:          pci:v00001D1Dd00002807sv*sd*bc*sc*i*
+alias:          pci:v00001D1Dd00001F1Fsv*sd*bc*sc*i*
+alias:          pci:v00001B4Bd00001092sv*sd*bc*sc*i*
+alias:          pci:v00001987d00005016sv*sd*bc*sc*i*
+alias:          pci:v0000144Dd0000A822sv*sd*bc*sc*i*
+alias:          pci:v0000144Dd0000A821sv*sd*bc*sc*i*
+alias:          pci:v00001C5Fd00000540sv*sd*bc*sc*i*
+alias:          pci:v00001C58d00000023sv*sd*bc*sc*i*
+alias:          pci:v00001C58d00000003sv*sd*bc*sc*i*
+alias:          pci:v00001BB1d00000100sv*sd*bc*sc*i*
+alias:          pci:v0000126Fd00002263sv*sd*bc*sc*i*
+alias:          pci:v00001B36d00000010sv*sd*bc*sc*i*

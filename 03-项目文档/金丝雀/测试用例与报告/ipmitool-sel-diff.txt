@@ -1,0 +1,5 @@
+# ipmitool SEL 前后对比
+
+before=./stress-ng-12h-2026-04-02-175406/ipmitool-sel-before.txt
+after=./stress-ng-12h-2026-04-02-175406/ipmitool-sel-after.txt
+

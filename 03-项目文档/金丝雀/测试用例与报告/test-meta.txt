@@ -1,0 +1,8 @@
+start_time=2026-04-02 17:54:06
+duration_seconds=43200
+cpu_workers=256
+vm_workers=8
+vm_bytes=8G
+io_workers=0
+hdd_workers=0
+sensor_interval=300

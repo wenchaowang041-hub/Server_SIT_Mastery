@@ -1,0 +1,12 @@
+说明：
+由于百度网盘文件大小限制，对原始镜像进行了分割并上传，分割命令为：
+split -b 1G -d Kylin-Server-V10-SP3-2303-ARM64-YunBao-25.11.28.qcow2 Kylin-Server-V10-SP3-2303-ARM64-YunBao-25.11.28.qcow2_
+
+请您参照以下步骤下载镜像并使用：
+1. 将百度网盘当前文件夹下所有文件下载，并上传到一个linux系统的同一目录下
+2. cd进入到对应目录里执行：cat Kylin-Server-V10-SP3-2303-ARM64-YunBao-25.11.28.qcow2_0*  > Kylin-Server-V10-SP3-2303-ARM64-YunBao-25.11.28.qcow2
+3. 计算qcow2镜像的md5值是：6091ed239e97bd9acb12d0b7be137125
+    命令为： md5sum Kylin-Server-V10-SP3-2303-ARM64-YunBao-25.11.28.qcow2
+4. 将生成的qcow2文件转换成raw格式(需要安装qemu-img工具)： qemu-img convert -O raw Kylin-Server-V10-SP3-2303-ARM64-YunBao-25.11.28.qcow2 Kylin-Server-V10-SP3-2303-ARM64-YunBao-25.11.28.raw
+5. 使用生成的raw格式镜像作为云盘启动裸机
+

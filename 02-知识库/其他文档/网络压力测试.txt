@@ -1,0 +1,8 @@
+# 1. iperf3
+iperf3 -s & iperf3 -c localhost -t 7200 -P 8
+
+# 2. netperf
+netserver & netperf -H localhost -l 7200 -t TCP_STREAM
+
+# 3. stress-ng网络测试
+stress-ng --sock 4 --sock-domain ipv4 --timeout 7200

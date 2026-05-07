@@ -1,0 +1,4 @@
+# 监控命令
+watch -n 1 "uptime; free -h; top -bn1 | head -20"
+sar -u -r -n DEV -d 1 7200
+dstat -tcmnd --disk-util --output report.csv

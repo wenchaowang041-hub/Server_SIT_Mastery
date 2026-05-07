@@ -1,0 +1,15 @@
+# COMMAND: LC_ALL=C smartctl --scan-open
+# TIME: 2026-04-22 17:04:04
+
+/dev/nvme0 -d nvme # /dev/nvme0, NVMe device
+/dev/nvme1 -d nvme # /dev/nvme1, NVMe device
+/dev/nvme2 -d nvme # /dev/nvme2, NVMe device
+/dev/nvme3 -d nvme # /dev/nvme3, NVMe device
+/dev/nvme4 -d nvme # /dev/nvme4, NVMe device
+/dev/nvme5 -d nvme # /dev/nvme5, NVMe device
+/dev/nvme6 -d nvme # /dev/nvme6, NVMe device
+/dev/nvme7 -d nvme # /dev/nvme7, NVMe device
+/dev/nvme8 -d nvme # /dev/nvme8, NVMe device
+/dev/nvme9 -d nvme # /dev/nvme9, NVMe device
+/dev/nvme10 -d nvme # /dev/nvme10, NVMe device
+/dev/nvme11 -d nvme # /dev/nvme11, NVMe device

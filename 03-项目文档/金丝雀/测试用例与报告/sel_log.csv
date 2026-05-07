@@ -1,0 +1,902 @@
+RecordId,Timestamp,SensorName,Level,SensorType,Status,Description
+901,2026-05-06 09:37:34,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+900,2026-05-06 09:17:43,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+899,2026-05-06 09:04:40,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+898,2026-05-06 07:48:35,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+897,2026-05-06 07:32:02,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+896,2026-05-06 07:32:00,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+895,2026-05-06 07:31:05,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+894,2026-05-06 07:04:49,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+893,2026-05-06 06:41:30,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+892,2026-05-06 06:38:00,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+891,2026-05-06 06:06:53,DISK0,Informational,Drive Slot / Bay,Asserted,Drive Present
+890,2026-05-06 06:06:48,DISK1,Informational,Drive Slot / Bay,Deasserted,Drive Present
+889,2026-05-06 05:59:48,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+888,2026-05-06 05:59:31,DIMM131,Informational,Memory,Asserted,Presence detected
+887,2026-05-06 05:59:31,DIMM130,Informational,Memory,Asserted,Presence detected
+886,2026-05-06 05:59:31,DIMM120,Informational,Memory,Asserted,Presence detected
+885,2026-05-06 05:59:31,DIMM100,Informational,Memory,Asserted,Presence detected
+884,2026-05-06 05:59:31,DIMM030,Informational,Memory,Asserted,Presence detected
+883,2026-05-06 05:59:31,DIMM021,Informational,Memory,Asserted,Presence detected
+882,2026-05-06 05:59:31,DIMM160,Informational,Memory,Asserted,Presence detected
+881,2026-05-06 05:59:30,DIMM151,Informational,Memory,Asserted,Presence detected
+880,2026-05-06 05:59:30,DIMM150,Informational,Memory,Asserted,Presence detected
+879,2026-05-06 05:59:30,DIMM141,Informational,Memory,Asserted,Presence detected
+878,2026-05-06 05:59:30,DIMM140,Informational,Memory,Asserted,Presence detected
+877,2026-05-06 05:59:30,DIMM071,Informational,Memory,Asserted,Presence detected
+876,2026-05-06 05:59:30,DIMM070,Informational,Memory,Asserted,Presence detected
+875,2026-05-06 05:59:30,DIMM060,Informational,Memory,Asserted,Presence detected
+874,2026-05-06 05:59:30,DIMM051,Informational,Memory,Asserted,Presence detected
+873,2026-05-06 05:59:29,DIMM020,Informational,Memory,Asserted,Presence detected
+872,2026-05-06 05:59:29,DIMM161,Informational,Memory,Asserted,Presence detected
+871,2026-05-06 05:59:29,DIMM011,Informational,Memory,Asserted,Presence detected
+870,2026-05-06 05:59:29,DIMM040,Informational,Memory,Asserted,Presence detected
+869,2026-05-06 05:59:29,DIMM121,Informational,Memory,Asserted,Presence detected
+868,2026-05-06 05:59:28,DIMM031,Informational,Memory,Asserted,Presence detected
+867,2026-05-06 05:59:28,DIMM101,Informational,Memory,Asserted,Presence detected
+866,2026-05-06 05:59:28,DIMM110,Informational,Memory,Asserted,Presence detected
+865,2026-05-06 05:59:27,DIMM010,Informational,Memory,Asserted,Presence detected
+864,2026-05-06 05:59:26,DIMM111,Informational,Memory,Asserted,Presence detected
+863,2026-05-06 05:59:26,DIMM000,Informational,Memory,Asserted,Presence detected
+862,2026-05-06 05:59:25,DIMM001,Informational,Memory,Asserted,Presence detected
+861,2026-05-06 05:59:25,DIMM171,Informational,Memory,Asserted,Presence detected
+860,2026-05-06 05:59:23,DIMM170,Informational,Memory,Asserted,Presence detected
+859,2026-05-06 05:59:20,DIMM061,Informational,Memory,Asserted,Presence detected
+858,2026-05-06 05:59:17,DIMM041,Informational,Memory,Asserted,Presence detected
+857,2026-05-06 05:59:15,DIMM050,Informational,Memory,Asserted,Presence detected
+856,2026-05-06 05:57:41,PS1 Status,Informational,Power Supply,Asserted,Presence detected
+855,2026-05-06 05:57:39,PS3 Status,Informational,Power Supply,Asserted,Presence detected
+854,2026-05-06 05:57:35,PS2 Status,Informational,Power Supply,Asserted,Presence detected
+853,2026-05-06 05:57:28,DISK1,Informational,Drive Slot / Bay,Asserted,Drive Present
+852,2026-05-06 05:57:28,DISK0,Informational,Drive Slot / Bay,Asserted,Drive Present
+851,2026-05-06 05:57:17,PS5 Status,Informational,Power Supply,Asserted,Presence detected
+850,2026-05-06 05:57:14,PS6 Status,Informational,Power Supply,Asserted,Presence detected
+849,2026-05-06 05:57:12,PS4 Status,Informational,Power Supply,Asserted,Presence detected
+848,2026-05-06 05:56:43,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+847,2026-05-06 05:56:43,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+846,2026-05-06 05:56:14,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+845,2026-05-06 05:43:42,PS3 Status,Informational,Power Supply,Asserted,Power Supply AC lost
+844,2026-05-06 05:43:40,PS4 Status,Informational,Power Supply,Asserted,Power Supply AC lost
+843,2026-05-06 05:43:38,PS5 Status,Informational,Power Supply,Asserted,Power Supply AC lost
+842,2026-05-06 05:43:37,PS6 Status,Informational,Power Supply,Asserted,Power Supply AC lost
+841,2026-05-06 05:40:29,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+840,2026-05-06 05:36:26,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+839,2026-05-06 05:26:12,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+838,2026-05-06 05:24:32,DIMM121,Informational,Memory,Asserted,Presence detected
+837,2026-05-06 05:24:32,DIMM120,Informational,Memory,Asserted,Presence detected
+836,2026-05-06 05:24:32,DIMM011,Informational,Memory,Asserted,Presence detected
+835,2026-05-06 05:24:31,DIMM111,Informational,Memory,Asserted,Presence detected
+834,2026-05-06 05:24:31,DIMM130,Informational,Memory,Asserted,Presence detected
+833,2026-05-06 05:24:31,DIMM101,Informational,Memory,Asserted,Presence detected
+832,2026-05-06 05:24:31,DIMM050,Informational,Memory,Asserted,Presence detected
+831,2026-05-06 05:24:30,DIMM100,Informational,Memory,Asserted,Presence detected
+830,2026-05-06 05:24:30,DIMM060,Informational,Memory,Asserted,Presence detected
+829,2026-05-06 05:24:30,DIMM030,Informational,Memory,Asserted,Presence detected
+828,2026-05-06 05:24:29,DIMM021,Informational,Memory,Asserted,Presence detected
+827,2026-05-06 05:24:29,DIMM000,Informational,Memory,Asserted,Presence detected
+826,2026-05-06 05:24:29,DIMM140,Informational,Memory,Asserted,Presence detected
+825,2026-05-06 05:24:28,DIMM020,Informational,Memory,Asserted,Presence detected
+824,2026-05-06 05:24:28,DIMM161,Informational,Memory,Asserted,Presence detected
+823,2026-05-06 05:24:27,DIMM001,Informational,Memory,Asserted,Presence detected
+822,2026-05-06 05:24:27,DIMM070,Informational,Memory,Asserted,Presence detected
+821,2026-05-06 05:24:27,DIMM141,Informational,Memory,Asserted,Presence detected
+820,2026-05-06 05:24:27,DIMM151,Informational,Memory,Asserted,Presence detected
+819,2026-05-06 05:24:26,DIMM150,Informational,Memory,Asserted,Presence detected
+818,2026-05-06 05:24:26,DIMM071,Informational,Memory,Asserted,Presence detected
+817,2026-05-06 05:24:26,DIMM010,Informational,Memory,Asserted,Presence detected
+816,2026-05-06 05:24:26,DIMM061,Informational,Memory,Asserted,Presence detected
+815,2026-05-06 05:24:26,DIMM170,Informational,Memory,Asserted,Presence detected
+814,2026-05-06 05:24:25,DIMM160,Informational,Memory,Asserted,Presence detected
+813,2026-05-06 05:24:25,DIMM051,Informational,Memory,Asserted,Presence detected
+812,2026-05-06 05:24:24,DIMM041,Informational,Memory,Asserted,Presence detected
+811,2026-05-06 05:24:22,DIMM131,Informational,Memory,Asserted,Presence detected
+810,2026-05-06 05:24:21,DIMM031,Informational,Memory,Asserted,Presence detected
+809,2026-05-06 05:24:20,DIMM040,Informational,Memory,Asserted,Presence detected
+808,2026-05-06 05:24:18,DIMM171,Informational,Memory,Asserted,Presence detected
+807,2026-05-06 05:24:16,DIMM110,Informational,Memory,Asserted,Presence detected
+806,2026-05-06 05:22:33,DISK1,Informational,Drive Slot / Bay,Asserted,Drive Present
+805,2026-05-06 05:22:33,DISK0,Informational,Drive Slot / Bay,Asserted,Drive Present
+804,2026-05-06 05:22:24,PS1 Status,Informational,Power Supply,Asserted,Presence detected
+803,2026-05-06 05:22:19,PS3 Status,Informational,Power Supply,Asserted,Presence detected
+802,2026-05-06 05:22:17,PS2 Status,Informational,Power Supply,Asserted,Presence detected
+801,2026-05-06 05:22:15,PS6 Status,Informational,Power Supply,Asserted,Presence detected
+800,2026-05-06 05:22:13,PS5 Status,Informational,Power Supply,Asserted,Presence detected
+799,2026-05-06 05:22:10,PS4 Status,Informational,Power Supply,Asserted,Presence detected
+798,2026-05-06 05:21:43,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+797,2026-05-06 05:21:43,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+796,2026-05-06 05:21:12,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+795,2026-05-06 05:14:28,PS6 Status,Informational,Power Supply,Asserted,Power Supply AC lost
+794,2026-05-06 05:09:34,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+793,2026-05-06 05:06:20,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+792,2026-05-06 05:03:07,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+791,2026-05-06 04:24:51,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+790,2026-05-06 03:46:18,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+789,2026-05-06 03:42:05,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+788,2026-05-06 03:34:59,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+787,2026-05-06 03:32:07,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+786,2026-05-06 03:29:20,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+785,2026-05-06 03:25:44,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+784,2026-05-06 03:25:41,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+783,2026-05-06 03:23:55,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+782,2026-05-06 02:56:21,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+781,2026-05-06 02:52:43,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+780,2026-05-06 02:49:04,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+779,2026-05-06 02:43:02,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+778,2026-05-06 02:39:52,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+777,2026-05-06 02:36:24,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+776,2026-05-06 02:34:06,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+775,2026-05-06 02:30:37,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+774,2026-05-06 02:28:23,DIMM110,Informational,Memory,Asserted,Presence detected
+773,2026-05-06 02:28:22,DIMM101,Informational,Memory,Asserted,Presence detected
+772,2026-05-06 02:28:22,DIMM100,Informational,Memory,Asserted,Presence detected
+771,2026-05-06 02:28:22,DIMM071,Informational,Memory,Asserted,Presence detected
+770,2026-05-06 02:28:22,DIMM140,Informational,Memory,Asserted,Presence detected
+769,2026-05-06 02:28:22,DIMM120,Informational,Memory,Asserted,Presence detected
+768,2026-05-06 02:28:22,DIMM030,Informational,Memory,Asserted,Presence detected
+767,2026-05-06 02:28:22,DIMM031,Informational,Memory,Asserted,Presence detected
+766,2026-05-06 02:28:22,DIMM121,Informational,Memory,Asserted,Presence detected
+765,2026-05-06 02:28:22,DIMM060,Informational,Memory,Asserted,Presence detected
+764,2026-05-06 02:28:21,DIMM051,Informational,Memory,Asserted,Presence detected
+763,2026-05-06 02:28:21,DIMM050,Informational,Memory,Asserted,Presence detected
+762,2026-05-06 02:28:21,DIMM041,Informational,Memory,Asserted,Presence detected
+761,2026-05-06 02:28:21,DIMM001,Informational,Memory,Asserted,Presence detected
+760,2026-05-06 02:28:21,DIMM040,Informational,Memory,Asserted,Presence detected
+759,2026-05-06 02:28:21,DIMM010,Informational,Memory,Asserted,Presence detected
+758,2026-05-06 02:28:20,DIMM141,Informational,Memory,Asserted,Presence detected
+757,2026-05-06 02:28:20,DIMM011,Informational,Memory,Asserted,Presence detected
+756,2026-05-06 02:28:20,DIMM131,Informational,Memory,Asserted,Presence detected
+755,2026-05-06 02:28:20,DIMM020,Informational,Memory,Asserted,Presence detected
+754,2026-05-06 02:28:20,DIMM111,Informational,Memory,Asserted,Presence detected
+753,2026-05-06 02:28:19,DIMM070,Informational,Memory,Asserted,Presence detected
+752,2026-05-06 02:28:19,DIMM061,Informational,Memory,Asserted,Presence detected
+751,2026-05-06 02:28:18,DIMM000,Informational,Memory,Asserted,Presence detected
+750,2026-05-06 02:28:17,DIMM160,Informational,Memory,Asserted,Presence detected
+749,2026-05-06 02:28:16,DIMM161,Informational,Memory,Asserted,Presence detected
+748,2026-05-06 02:28:14,DIMM170,Informational,Memory,Asserted,Presence detected
+747,2026-05-06 02:28:12,DIMM171,Informational,Memory,Asserted,Presence detected
+746,2026-05-06 02:28:10,DIMM150,Informational,Memory,Asserted,Presence detected
+745,2026-05-06 02:28:09,DIMM130,Informational,Memory,Asserted,Presence detected
+744,2026-05-06 02:28:08,DIMM021,Informational,Memory,Asserted,Presence detected
+743,2026-05-06 02:28:07,DIMM151,Informational,Memory,Asserted,Presence detected
+742,2026-05-06 02:26:40,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+741,2026-05-06 02:26:40,Op. Log Full,Informational,Event Logging Disabled,Deasserted,Informational
+740,2026-05-06 02:25:47,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+739,2026-05-06 02:24:56,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+738,2026-05-06 02:24:04,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+737,2026-05-06 02:23:17,DISK1,Informational,Drive Slot / Bay,Asserted,Drive Present
+736,2026-05-06 02:23:17,DISK0,Informational,Drive Slot / Bay,Asserted,Drive Present
+735,2026-05-06 02:22:40,PS3 Status,Informational,Power Supply,Asserted,Presence detected
+734,2026-05-06 02:22:37,PS1 Status,Informational,Power Supply,Asserted,Presence detected
+733,2026-05-06 02:22:33,PS2 Status,Informational,Power Supply,Asserted,Presence detected
+732,2026-05-06 02:22:31,PS4 Status,Informational,Power Supply,Asserted,Presence detected
+731,2026-05-06 02:22:29,PS5 Status,Informational,Power Supply,Asserted,Presence detected
+730,2026-05-06 02:22:07,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+729,2026-05-06 02:22:06,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+728,2026-05-06 02:22:05,PS6 Status,Informational,Power Supply,Asserted,Presence detected
+727,2026-05-06 02:21:48,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+726,2026-05-06 02:21:38,Op. Log Full,Informational,Event Logging Disabled,Asserted,Informational
+725,2026-05-06 01:30:59,PS1 Status,Informational,Power Supply,Asserted,Power Supply AC lost
+724,2026-04-30 05:29:50,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+723,2026-04-30 03:44:09,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+722,2026-04-30 03:44:05,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+721,2026-04-30 03:43:16,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+720,2026-04-30 03:20:46,DIMM101,Informational,Memory,Asserted,Presence detected
+719,2026-04-30 03:20:45,DIMM060,Informational,Memory,Asserted,Presence detected
+718,2026-04-30 03:20:44,DIMM051,Informational,Memory,Asserted,Presence detected
+717,2026-04-30 03:20:42,DIMM050,Informational,Memory,Asserted,Presence detected
+716,2026-04-30 03:20:41,DIMM130,Informational,Memory,Asserted,Presence detected
+715,2026-04-30 03:20:40,DIMM121,Informational,Memory,Asserted,Presence detected
+714,2026-04-30 03:20:39,DIMM171,Informational,Memory,Asserted,Presence detected
+713,2026-04-30 03:20:39,DIMM120,Informational,Memory,Asserted,Presence detected
+712,2026-04-30 03:20:38,DIMM161,Informational,Memory,Asserted,Presence detected
+711,2026-04-30 03:20:38,DIMM160,Informational,Memory,Asserted,Presence detected
+710,2026-04-30 03:20:37,DIMM170,Informational,Memory,Asserted,Presence detected
+709,2026-04-30 03:20:36,DIMM151,Informational,Memory,Asserted,Presence detected
+708,2026-04-30 03:20:35,DIMM141,Informational,Memory,Asserted,Presence detected
+707,2026-04-30 03:20:33,DIMM110,Informational,Memory,Asserted,Presence detected
+706,2026-04-30 03:20:31,DIMM150,Informational,Memory,Asserted,Presence detected
+705,2026-04-30 03:20:28,DIMM020,Informational,Memory,Asserted,Presence detected
+704,2026-04-30 03:20:26,DIMM021,Informational,Memory,Asserted,Presence detected
+703,2026-04-30 03:20:24,DIMM030,Informational,Memory,Asserted,Presence detected
+702,2026-04-30 03:20:23,DIMM031,Informational,Memory,Asserted,Presence detected
+701,2026-04-30 03:20:22,DIMM100,Informational,Memory,Asserted,Presence detected
+700,2026-04-30 03:20:22,DIMM070,Informational,Memory,Asserted,Presence detected
+699,2026-04-30 03:20:21,DIMM000,Informational,Memory,Asserted,Presence detected
+698,2026-04-30 03:20:21,DIMM001,Informational,Memory,Asserted,Presence detected
+697,2026-04-30 03:20:21,DIMM010,Informational,Memory,Asserted,Presence detected
+696,2026-04-30 03:20:20,DIMM011,Informational,Memory,Asserted,Presence detected
+695,2026-04-30 03:20:19,DIMM061,Informational,Memory,Asserted,Presence detected
+694,2026-04-30 03:20:16,DIMM111,Informational,Memory,Asserted,Presence detected
+693,2026-04-30 03:20:15,DIMM041,Informational,Memory,Asserted,Presence detected
+692,2026-04-30 03:20:13,DIMM040,Informational,Memory,Asserted,Presence detected
+691,2026-04-30 03:20:12,DIMM131,Informational,Memory,Asserted,Presence detected
+690,2026-04-30 03:20:11,DIMM071,Informational,Memory,Asserted,Presence detected
+689,2026-04-30 03:20:10,DIMM140,Informational,Memory,Asserted,Presence detected
+688,2026-04-30 03:18:11,DISK0,Informational,Drive Slot / Bay,Asserted,Drive Present
+687,2026-04-30 03:18:03,PS3 Status,Informational,Power Supply,Asserted,Presence detected
+686,2026-04-30 03:18:01,PS2 Status,Informational,Power Supply,Asserted,Presence detected
+685,2026-04-30 03:17:57,PS1 Status,Informational,Power Supply,Asserted,Presence detected
+684,2026-04-30 03:17:54,PS6 Status,Informational,Power Supply,Asserted,Presence detected
+683,2026-04-30 03:17:49,PS5 Status,Informational,Power Supply,Asserted,Presence detected
+682,2026-04-30 03:17:47,PS4 Status,Informational,Power Supply,Asserted,Presence detected
+681,2026-04-30 03:17:16,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+680,2026-04-30 03:17:16,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+679,2026-04-30 03:16:44,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+678,2026-04-30 03:16:33,Op. Log Full,Informational,Event Logging Disabled,Asserted,Informational
+677,2026-04-30 03:04:13,PS4 Status,Informational,Power Supply,Asserted,Power Supply AC lost
+676,2026-04-30 03:04:10,PS5 Status,Informational,Power Supply,Asserted,Power Supply AC lost
+675,2026-04-30 03:04:08,PS6 Status,Informational,Power Supply,Asserted,Power Supply AC lost
+674,2026-04-29 06:08:28,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+673,2026-04-29 06:08:27,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+672,2026-04-29 06:07:13,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+671,2026-04-28 08:48:02,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+670,2026-04-28 08:48:02,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+669,2026-04-28 08:47:57,PwrOk Sig. Drop,Critical,Power Supply,Deasserted,Failure detected
+668,2026-04-28 08:47:56,Power Button,Informational,Button,Asserted,Power Button pressed
+667,2026-04-28 07:16:44,BCU1 3V3_RISER2,Major,Voltage,Deasserted,Lower Critical going low 
+666,2026-04-28 07:16:43,BCU1 3V3_RISER2,Major,Voltage,Deasserted,Lower Critical going low 
+665,2026-04-28 07:16:40,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+664,2026-04-28 07:16:32,Power Button,Informational,Button,Asserted,Power Button pressed
+663,2026-04-28 07:16:14,Power Button,Informational,Button,Asserted,Power Button pressed
+662,2026-04-28 07:16:06,Power Button,Informational,Button,Asserted,Power Button pressed
+661,2026-04-28 07:15:37,PwrOk Sig. Drop,Critical,Power Supply,Asserted,Failure detected
+660,2026-04-28 06:59:51,DIMM040,Informational,Memory,Asserted,Presence detected
+659,2026-04-28 06:59:51,DIMM041,Informational,Memory,Asserted,Presence detected
+658,2026-04-28 06:59:50,DIMM050,Informational,Memory,Asserted,Presence detected
+657,2026-04-28 06:59:49,DIMM051,Informational,Memory,Asserted,Presence detected
+656,2026-04-28 06:59:49,DIMM011,Informational,Memory,Asserted,Presence detected
+655,2026-04-28 06:59:48,DIMM020,Informational,Memory,Asserted,Presence detected
+654,2026-04-28 06:59:47,DIMM131,Informational,Memory,Asserted,Presence detected
+653,2026-04-28 06:59:47,DIMM031,Informational,Memory,Asserted,Presence detected
+652,2026-04-28 06:59:46,DIMM100,Informational,Memory,Asserted,Presence detected
+651,2026-04-28 06:59:46,DIMM101,Informational,Memory,Asserted,Presence detected
+650,2026-04-28 06:59:45,DIMM130,Informational,Memory,Asserted,Presence detected
+649,2026-04-28 06:59:45,DIMM071,Informational,Memory,Asserted,Presence detected
+648,2026-04-28 06:59:44,DIMM121,Informational,Memory,Asserted,Presence detected
+647,2026-04-28 06:59:43,DIMM120,Informational,Memory,Asserted,Presence detected
+646,2026-04-28 06:59:42,DIMM060,Informational,Memory,Asserted,Presence detected
+645,2026-04-28 06:59:41,DIMM061,Informational,Memory,Asserted,Presence detected
+644,2026-04-28 06:59:41,DIMM070,Informational,Memory,Asserted,Presence detected
+643,2026-04-28 06:59:40,DIMM140,Informational,Memory,Asserted,Presence detected
+642,2026-04-28 06:59:40,DIMM141,Informational,Memory,Asserted,Presence detected
+641,2026-04-28 06:59:39,DIMM000,Informational,Memory,Asserted,Presence detected
+640,2026-04-28 06:59:39,DIMM001,Informational,Memory,Asserted,Presence detected
+639,2026-04-28 06:59:38,DIMM010,Informational,Memory,Asserted,Presence detected
+638,2026-04-28 06:59:38,DIMM021,Informational,Memory,Asserted,Presence detected
+637,2026-04-28 06:59:37,DIMM030,Informational,Memory,Asserted,Presence detected
+636,2026-04-28 06:59:36,DIMM150,Informational,Memory,Asserted,Presence detected
+635,2026-04-28 06:59:34,DIMM151,Informational,Memory,Asserted,Presence detected
+634,2026-04-28 06:59:32,DIMM110,Informational,Memory,Asserted,Presence detected
+633,2026-04-28 06:59:29,DIMM160,Informational,Memory,Asserted,Presence detected
+632,2026-04-28 06:59:26,DIMM111,Informational,Memory,Asserted,Presence detected
+631,2026-04-28 06:59:23,DIMM161,Informational,Memory,Asserted,Presence detected
+630,2026-04-28 06:59:21,DIMM170,Informational,Memory,Asserted,Presence detected
+629,2026-04-28 06:59:21,DIMM171,Informational,Memory,Asserted,Presence detected
+628,2026-04-28 06:58:17,DISK0,Informational,Drive Slot / Bay,Asserted,Drive Present
+627,2026-04-28 06:58:17,BCU1 3V3_RISER2,Major,Voltage,Asserted,Lower Critical going low 
+626,2026-04-28 06:58:07,PS3 Status,Informational,Power Supply,Asserted,Presence detected
+625,2026-04-28 06:58:04,PS2 Status,Informational,Power Supply,Asserted,Presence detected
+624,2026-04-28 06:58:00,PS1 Status,Informational,Power Supply,Asserted,Presence detected
+623,2026-04-28 06:57:58,PS6 Status,Informational,Power Supply,Asserted,Presence detected
+622,2026-04-28 06:57:56,PS5 Status,Informational,Power Supply,Asserted,Presence detected
+621,2026-04-28 06:57:53,PS4 Status,Informational,Power Supply,Asserted,Presence detected
+620,2026-04-28 06:56:55,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+619,2026-04-28 06:56:47,Op. Log Full,Informational,Event Logging Disabled,Asserted,Informational
+618,2026-04-22 06:49:18,PS2 Status,Informational,Power Supply,Asserted,Power Supply AC lost
+617,2026-04-22 06:49:15,PS1 Status,Informational,Power Supply,Asserted,Power Supply AC lost
+616,2026-04-22 03:27:28,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+615,2026-04-22 03:21:50,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+614,2026-04-22 03:15:01,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+613,2026-04-22 03:11:00,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+612,2026-04-21 01:37:34,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+611,2026-04-21 01:37:32,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+610,2026-04-21 01:36:40,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+609,2026-04-20 10:12:34,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+608,2026-04-20 05:37:51,DISK0,Informational,Drive Slot / Bay,Deasserted,Drive Present
+607,2026-04-20 04:20:57,DISK3,Informational,Drive Slot / Bay,Deasserted,Drive Present
+606,2026-04-20 04:20:29,DISK3,Informational,Drive Slot / Bay,Asserted,Drive Present
+605,2026-04-20 03:18:26,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+604,2026-04-20 03:18:25,DIMM060,Informational,Memory,Asserted,Presence detected
+603,2026-04-20 03:18:25,DIMM151,Informational,Memory,Asserted,Presence detected
+602,2026-04-20 03:18:25,DIMM130,Informational,Memory,Asserted,Presence detected
+601,2026-04-20 03:18:25,DIMM101,Informational,Memory,Asserted,Presence detected
+600,2026-04-20 03:18:24,DIMM031,Informational,Memory,Asserted,Presence detected
+599,2026-04-20 03:18:24,DIMM120,Informational,Memory,Asserted,Presence detected
+598,2026-04-20 03:18:23,DIMM111,Informational,Memory,Asserted,Presence detected
+597,2026-04-20 03:18:23,DIMM110,Informational,Memory,Asserted,Presence detected
+596,2026-04-20 03:18:22,DIMM100,Informational,Memory,Asserted,Presence detected
+595,2026-04-20 03:18:21,DIMM030,Informational,Memory,Asserted,Presence detected
+594,2026-04-20 03:18:21,DIMM000,Informational,Memory,Asserted,Presence detected
+593,2026-04-20 03:18:20,DIMM140,Informational,Memory,Asserted,Presence detected
+592,2026-04-20 03:18:20,DIMM001,Informational,Memory,Asserted,Presence detected
+591,2026-04-20 03:18:19,DIMM141,Informational,Memory,Asserted,Presence detected
+590,2026-04-20 03:18:18,DIMM150,Informational,Memory,Asserted,Presence detected
+589,2026-04-20 03:18:17,DIMM121,Informational,Memory,Asserted,Presence detected
+588,2026-04-20 03:18:16,DIMM161,Informational,Memory,Asserted,Presence detected
+587,2026-04-20 03:18:15,DIMM160,Informational,Memory,Asserted,Presence detected
+586,2026-04-20 03:18:12,DIMM170,Informational,Memory,Asserted,Presence detected
+585,2026-04-20 03:18:07,DIMM171,Informational,Memory,Asserted,Presence detected
+584,2026-04-20 03:18:05,DIMM131,Informational,Memory,Asserted,Presence detected
+583,2026-04-20 03:18:04,DIMM021,Informational,Memory,Asserted,Presence detected
+582,2026-04-20 03:18:03,DIMM020,Informational,Memory,Asserted,Presence detected
+581,2026-04-20 03:18:02,DIMM011,Informational,Memory,Asserted,Presence detected
+580,2026-04-20 03:18:01,DIMM010,Informational,Memory,Asserted,Presence detected
+579,2026-04-20 03:18:01,DIMM061,Informational,Memory,Asserted,Presence detected
+578,2026-04-20 03:18:00,DIMM070,Informational,Memory,Asserted,Presence detected
+577,2026-04-20 03:17:58,DIMM071,Informational,Memory,Asserted,Presence detected
+576,2026-04-20 03:17:57,DIMM040,Informational,Memory,Asserted,Presence detected
+575,2026-04-20 03:17:56,DIMM041,Informational,Memory,Asserted,Presence detected
+574,2026-04-20 03:17:54,DIMM050,Informational,Memory,Asserted,Presence detected
+573,2026-04-20 03:17:53,DIMM051,Informational,Memory,Asserted,Presence detected
+572,2026-04-20 03:15:58,DISK0,Informational,Drive Slot / Bay,Asserted,Drive Present
+571,2026-04-20 03:15:56,DISK0,Informational,Drive Slot / Bay,Asserted,Drive Present
+570,2026-04-20 03:15:52,PS3 Status,Informational,Power Supply,Asserted,Presence detected
+569,2026-04-20 03:15:49,PS1 Status,Informational,Power Supply,Asserted,Presence detected
+568,2026-04-20 03:15:46,PS2 Status,Informational,Power Supply,Asserted,Presence detected
+567,2026-04-20 03:15:42,PS6 Status,Informational,Power Supply,Asserted,Presence detected
+566,2026-04-20 03:15:39,PS4 Status,Informational,Power Supply,Asserted,Presence detected
+565,2026-04-20 03:15:36,PS5 Status,Informational,Power Supply,Asserted,Presence detected
+564,2026-04-20 03:14:41,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+563,2026-04-20 03:14:37,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+562,2026-04-20 03:14:36,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+561,2026-04-20 03:14:26,Op. Log Full,Informational,Event Logging Disabled,Asserted,Informational
+560,2026-04-20 02:53:17,PS6 Status,Informational,Power Supply,Asserted,Power Supply AC lost
+559,2026-04-20 02:52:29,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+558,2026-04-20 02:52:29,DIMM000,Informational,Memory,Asserted,Presence detected
+557,2026-04-20 02:52:29,DIMM030,Informational,Memory,Asserted,Presence detected
+556,2026-04-20 02:52:29,DIMM141,Informational,Memory,Asserted,Presence detected
+555,2026-04-20 02:52:28,DIMM041,Informational,Memory,Asserted,Presence detected
+554,2026-04-20 02:52:28,DIMM040,Informational,Memory,Asserted,Presence detected
+553,2026-04-20 02:52:28,DIMM131,Informational,Memory,Asserted,Presence detected
+552,2026-04-20 02:52:28,DIMM130,Informational,Memory,Asserted,Presence detected
+551,2026-04-20 02:52:28,DIMM140,Informational,Memory,Asserted,Presence detected
+550,2026-04-20 02:52:27,DIMM121,Informational,Memory,Asserted,Presence detected
+549,2026-04-20 02:52:27,DIMM150,Informational,Memory,Asserted,Presence detected
+548,2026-04-20 02:52:27,DIMM120,Informational,Memory,Asserted,Presence detected
+547,2026-04-20 02:52:27,DIMM160,Informational,Memory,Asserted,Presence detected
+546,2026-04-20 02:52:26,DIMM171,Informational,Memory,Asserted,Presence detected
+545,2026-04-20 02:52:26,DIMM011,Informational,Memory,Asserted,Presence detected
+544,2026-04-20 02:52:26,DIMM010,Informational,Memory,Asserted,Presence detected
+543,2026-04-20 02:52:25,DIMM001,Informational,Memory,Asserted,Presence detected
+542,2026-04-20 02:52:25,DIMM070,Informational,Memory,Asserted,Presence detected
+541,2026-04-20 02:52:25,DIMM170,Informational,Memory,Asserted,Presence detected
+540,2026-04-20 02:52:25,DIMM061,Informational,Memory,Asserted,Presence detected
+539,2026-04-20 02:52:25,DIMM050,Informational,Memory,Asserted,Presence detected
+538,2026-04-20 02:52:25,DIMM111,Informational,Memory,Asserted,Presence detected
+537,2026-04-20 02:52:24,DIMM060,Informational,Memory,Asserted,Presence detected
+536,2026-04-20 02:52:24,DIMM110,Informational,Memory,Asserted,Presence detected
+535,2026-04-20 02:52:24,DIMM051,Informational,Memory,Asserted,Presence detected
+534,2026-04-20 02:52:24,DIMM101,Informational,Memory,Asserted,Presence detected
+533,2026-04-20 02:52:23,DIMM100,Informational,Memory,Asserted,Presence detected
+532,2026-04-20 02:52:22,DIMM031,Informational,Memory,Asserted,Presence detected
+531,2026-04-20 02:52:20,DIMM151,Informational,Memory,Asserted,Presence detected
+530,2026-04-20 02:52:19,DIMM161,Informational,Memory,Asserted,Presence detected
+529,2026-04-20 02:52:17,DIMM021,Informational,Memory,Asserted,Presence detected
+528,2026-04-20 02:52:17,DIMM020,Informational,Memory,Asserted,Presence detected
+527,2026-04-20 02:52:16,DIMM071,Informational,Memory,Asserted,Presence detected
+526,2026-04-20 02:51:17,DISK0,Informational,Drive Slot / Bay,Asserted,Drive Present
+525,2026-04-20 02:51:14,DISK0,Informational,Drive Slot / Bay,Asserted,Drive Present
+524,2026-04-20 02:51:06,PS3 Status,Informational,Power Supply,Asserted,Presence detected
+523,2026-04-20 02:51:03,PS1 Status,Informational,Power Supply,Asserted,Presence detected
+522,2026-04-08 01:55:01,PS1 Status,Informational,Power Supply,Asserted,Power Supply AC lost
+521,2026-04-20 02:51:01,PS2 Status,Informational,Power Supply,Asserted,Presence detected
+520,2026-04-08 01:31:30,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+519,2026-04-20 02:50:58,PS5 Status,Informational,Power Supply,Asserted,Presence detected
+518,2026-04-08 01:31:26,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+517,2026-04-20 02:50:54,PS6 Status,Informational,Power Supply,Asserted,Presence detected
+516,2026-04-08 01:26:19,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+515,2026-04-20 02:50:50,PS4 Status,Informational,Power Supply,Asserted,Presence detected
+514,2026-04-07 22:09:36,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+513,2026-04-20 02:50:17,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+512,2026-04-07 22:09:35,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+511,2026-04-20 02:50:17,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+510,2026-04-07 22:09:19,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+509,2026-04-20 02:49:46,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+508,2026-04-07 22:04:33,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+507,2026-04-20 02:49:38,Op. Log Full,Informational,Event Logging Disabled,Asserted,Informational
+506,2026-04-07 22:03:37,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+505,2026-04-07 22:03:36,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+504,2026-04-07 22:03:21,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+503,2026-04-07 22:03:20,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+502,2026-04-07 21:58:29,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+501,2026-04-07 21:57:32,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+500,2026-04-07 21:57:31,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+499,2026-04-07 21:57:17,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+498,2026-04-07 21:57:14,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+497,2026-04-07 21:52:18,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+496,2026-04-07 21:51:21,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+495,2026-04-07 21:51:20,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+494,2026-04-07 21:51:06,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+493,2026-04-07 21:51:03,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+492,2026-04-07 21:45:19,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+491,2026-04-07 21:45:18,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+490,2026-04-07 21:45:04,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+489,2026-04-07 21:40:16,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+488,2026-04-07 21:39:20,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+487,2026-04-07 21:39:18,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+486,2026-04-07 21:39:02,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+485,2026-04-07 21:39:00,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+484,2026-04-07 21:34:07,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+483,2026-04-07 21:33:11,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+482,2026-04-07 21:33:11,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+481,2026-04-07 21:32:57,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+480,2026-04-07 21:32:55,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+479,2026-04-07 21:28:09,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+478,2026-04-07 21:28:09,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+477,2026-04-07 21:27:11,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+476,2026-04-07 21:27:10,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+475,2026-04-07 21:26:57,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+474,2026-04-07 21:26:54,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+473,2026-04-07 21:22:08,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+472,2026-04-07 21:22:08,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+471,2026-04-07 21:21:11,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+470,2026-04-07 21:21:08,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+469,2026-04-07 21:20:57,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+468,2026-04-07 21:20:55,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+467,2026-04-07 21:15:10,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+466,2026-04-07 21:15:07,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+465,2026-04-07 21:14:54,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+464,2026-04-07 21:09:57,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+463,2026-04-07 21:09:03,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+462,2026-04-07 21:09:02,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+461,2026-04-07 21:08:49,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+460,2026-04-07 21:08:45,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+459,2026-04-07 21:04:00,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+458,2026-04-07 21:03:04,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+457,2026-04-07 21:03:02,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+456,2026-04-07 21:02:49,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+455,2026-04-07 21:02:47,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+454,2026-04-07 20:57:55,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+453,2026-04-07 20:56:59,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+452,2026-04-07 20:56:58,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+451,2026-04-07 20:56:43,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+450,2026-04-07 20:56:42,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+449,2026-04-07 20:51:55,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+448,2026-04-07 20:50:58,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+447,2026-04-07 20:50:57,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+446,2026-04-07 20:50:43,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+445,2026-04-07 20:50:41,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+444,2026-04-07 20:45:54,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+443,2026-04-07 20:44:58,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+442,2026-04-07 20:44:56,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+441,2026-04-07 20:44:42,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+440,2026-04-07 20:44:40,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+439,2026-04-07 20:39:42,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+438,2026-04-07 20:38:47,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+437,2026-04-07 20:38:46,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+436,2026-04-07 20:38:31,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+435,2026-04-07 20:38:28,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+434,2026-04-07 20:33:43,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+433,2026-04-07 20:33:42,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+432,2026-04-07 20:32:44,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+431,2026-04-07 20:32:41,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+430,2026-04-07 20:32:31,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+429,2026-04-07 20:32:28,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+428,2026-04-07 20:27:43,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+427,2026-04-07 20:27:42,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+426,2026-04-07 20:26:45,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+425,2026-04-07 20:26:44,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+424,2026-04-07 20:26:31,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+423,2026-04-07 20:26:29,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+422,2026-04-07 20:21:43,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+421,2026-04-07 20:20:45,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+420,2026-04-07 20:20:44,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+419,2026-04-07 20:20:31,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+418,2026-04-07 20:20:27,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+417,2026-04-07 20:15:41,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+416,2026-04-07 20:14:45,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+415,2026-04-07 20:14:44,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+414,2026-04-07 20:14:29,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+413,2026-04-07 20:14:26,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+412,2026-04-07 20:09:40,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+411,2026-04-07 20:08:43,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+410,2026-04-07 20:08:42,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+409,2026-04-07 20:08:24,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+408,2026-04-07 20:08:21,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+407,2026-04-07 20:03:35,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+406,2026-04-07 20:02:39,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+405,2026-04-07 20:02:38,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+404,2026-04-07 20:02:23,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+403,2026-04-07 20:02:21,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+402,2026-04-07 19:57:29,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+401,2026-04-07 19:56:33,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+400,2026-04-07 19:56:29,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+399,2026-04-07 19:56:19,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+398,2026-04-07 19:56:16,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+397,2026-04-07 19:51:32,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+396,2026-04-07 19:51:32,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+395,2026-04-07 19:50:34,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+394,2026-04-07 19:50:30,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+393,2026-04-07 19:50:20,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+392,2026-04-07 19:50:18,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+391,2026-04-07 19:45:30,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+390,2026-04-07 19:44:35,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+389,2026-04-07 19:44:33,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+388,2026-04-07 19:44:20,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+387,2026-04-07 19:44:18,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+386,2026-04-07 19:39:31,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+385,2026-04-07 19:39:31,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+384,2026-04-07 19:38:34,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+383,2026-04-07 19:38:33,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+382,2026-04-07 19:38:16,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+381,2026-04-07 19:38:14,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+380,2026-04-07 19:32:31,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+379,2026-04-07 19:32:30,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+378,2026-04-07 19:32:15,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+377,2026-04-07 19:27:26,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+376,2026-04-07 19:26:29,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+375,2026-04-07 19:26:28,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+374,2026-04-07 19:26:15,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+373,2026-04-07 19:26:12,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+372,2026-04-07 19:21:25,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+371,2026-04-07 19:21:25,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+370,2026-04-07 19:20:28,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+369,2026-04-07 19:20:25,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+368,2026-04-07 19:20:15,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+367,2026-04-07 19:20:14,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+366,2026-04-07 19:15:28,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+365,2026-04-07 19:14:30,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+364,2026-04-07 19:14:26,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+363,2026-04-07 19:14:16,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+362,2026-04-07 19:14:13,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+361,2026-04-07 19:09:26,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+360,2026-04-07 19:08:29,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+359,2026-04-07 19:08:28,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+358,2026-04-07 19:08:13,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+357,2026-04-07 19:08:11,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+356,2026-04-07 19:03:25,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+355,2026-04-07 19:02:28,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+354,2026-04-07 19:02:27,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+353,2026-04-07 19:02:13,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+352,2026-04-07 19:02:10,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+351,2026-04-07 18:57:17,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+350,2026-04-07 18:56:25,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+349,2026-04-07 18:56:24,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+348,2026-04-07 18:56:10,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+347,2026-04-07 18:56:07,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+346,2026-04-07 18:51:16,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+345,2026-04-07 18:50:18,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+344,2026-04-07 18:50:17,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+343,2026-04-07 18:50:04,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+342,2026-04-07 18:50:02,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+341,2026-04-07 18:45:14,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+340,2026-04-07 18:44:18,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+339,2026-04-07 18:44:14,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+338,2026-04-07 18:44:03,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+337,2026-04-07 18:44:01,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+336,2026-04-07 18:39:10,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+335,2026-04-07 18:39:10,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+334,2026-04-07 18:38:13,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+333,2026-04-07 18:38:09,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+332,2026-04-07 18:37:59,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+331,2026-04-07 18:37:56,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+330,2026-04-07 18:33:09,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+329,2026-04-07 18:33:09,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+328,2026-04-07 18:32:12,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+327,2026-04-07 18:32:07,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+326,2026-04-07 18:31:58,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+325,2026-04-07 18:31:57,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+324,2026-04-07 18:27:10,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+323,2026-04-07 18:27:10,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+322,2026-04-07 18:26:12,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+321,2026-04-07 18:26:11,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+320,2026-04-07 18:25:57,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+319,2026-04-07 18:25:55,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+318,2026-04-07 18:21:09,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+317,2026-04-07 18:21:09,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+316,2026-04-07 18:20:11,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+315,2026-04-07 18:20:07,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+314,2026-04-07 18:19:57,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+313,2026-04-07 18:19:55,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+312,2026-04-07 18:15:08,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+311,2026-04-07 18:14:11,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+310,2026-04-07 18:14:10,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+309,2026-04-07 18:13:56,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+308,2026-04-07 18:13:55,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+307,2026-04-07 18:09:06,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+306,2026-04-07 18:08:10,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+305,2026-04-07 18:08:10,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+304,2026-04-07 18:07:53,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+303,2026-04-07 18:07:49,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+302,2026-04-07 18:02:54,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+301,2026-04-07 18:02:01,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+300,2026-04-07 18:02:00,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+299,2026-04-07 18:01:45,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+298,2026-04-07 18:01:43,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+297,2026-04-07 17:56:58,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+296,2026-04-07 17:56:01,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+295,2026-04-07 17:56:00,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+294,2026-04-07 17:55:46,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+293,2026-04-07 17:55:42,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+292,2026-04-07 17:50:02,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+291,2026-04-07 17:50:01,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+290,2026-04-07 17:49:47,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+289,2026-04-07 17:44:02,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+288,2026-04-07 17:43:57,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+287,2026-04-07 17:43:43,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+286,2026-04-07 17:38:52,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+285,2026-04-07 17:38:51,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+284,2026-04-07 17:37:55,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+283,2026-04-07 17:37:54,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+282,2026-04-07 17:37:40,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+281,2026-04-07 17:37:38,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+280,2026-04-07 17:32:49,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+279,2026-04-07 17:32:49,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+278,2026-04-07 17:31:53,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+277,2026-04-07 17:31:47,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+276,2026-04-07 17:31:37,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+275,2026-04-07 17:31:35,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+274,2026-04-07 17:26:49,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+273,2026-04-07 17:25:52,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+272,2026-04-07 17:25:52,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+271,2026-04-07 17:25:36,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+270,2026-04-07 17:25:34,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+269,2026-04-07 17:20:49,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+268,2026-04-07 17:19:52,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+267,2026-04-07 17:19:51,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+266,2026-04-07 17:19:37,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+265,2026-04-07 17:19:34,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+264,2026-04-07 17:14:49,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+263,2026-04-07 17:13:52,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+262,2026-04-07 17:13:51,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+261,2026-04-07 17:13:37,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+260,2026-04-07 17:13:35,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+259,2026-04-07 17:07:52,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+258,2026-04-07 17:07:51,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+257,2026-04-07 17:07:35,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+256,2026-04-07 17:02:39,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+255,2026-04-07 17:01:43,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+254,2026-04-07 17:01:43,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+253,2026-04-07 17:01:27,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+252,2026-04-07 17:01:26,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+251,2026-04-07 16:56:40,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+250,2026-04-07 16:55:45,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+249,2026-04-07 16:55:44,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+248,2026-04-07 16:55:29,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+247,2026-04-07 16:55:26,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+246,2026-04-07 16:50:36,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+245,2026-04-07 16:50:36,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+244,2026-04-07 16:49:38,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+243,2026-04-07 16:49:34,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+242,2026-04-07 16:49:25,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+241,2026-04-07 16:49:22,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+240,2026-04-07 16:44:32,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+239,2026-04-07 16:43:39,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+238,2026-04-07 16:43:38,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+237,2026-04-07 16:43:24,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+236,2026-04-07 16:43:21,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+235,2026-04-07 16:38:33,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+234,2026-04-07 16:37:38,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+233,2026-04-07 16:37:37,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+232,2026-04-07 16:37:22,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+231,2026-04-07 16:37:19,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+230,2026-04-07 16:32:33,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+229,2026-04-07 16:32:33,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+228,2026-04-07 16:31:37,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+227,2026-04-07 16:31:34,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+226,2026-04-07 16:31:21,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+225,2026-04-07 16:31:18,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+224,2026-04-07 16:26:25,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+223,2026-04-07 16:26:25,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+222,2026-04-07 16:25:29,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+221,2026-04-07 16:25:25,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+220,2026-04-07 16:25:16,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+219,2026-04-07 16:25:12,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+218,2026-04-07 16:20:20,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+217,2026-04-07 16:19:24,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+216,2026-04-07 16:19:23,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+215,2026-04-07 16:19:09,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+214,2026-04-07 16:19:07,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+213,2026-04-07 16:14:21,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+212,2026-04-07 16:13:24,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+211,2026-04-07 16:13:21,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+210,2026-04-07 16:13:09,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+209,2026-04-07 16:13:06,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+208,2026-04-07 16:08:22,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+207,2026-04-07 16:07:26,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+206,2026-04-07 16:07:25,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+205,2026-04-07 16:07:07,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+204,2026-04-07 16:07:04,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+203,2026-04-07 16:02:20,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+202,2026-04-07 16:01:24,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+201,2026-04-07 16:01:22,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+200,2026-04-07 16:01:08,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+199,2026-04-07 16:01:05,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+198,2026-04-07 15:55:17,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+197,2026-04-07 15:55:17,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+196,2026-04-07 15:55:01,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+195,2026-04-07 15:50:15,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+194,2026-04-07 15:49:18,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+193,2026-04-07 15:49:17,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+192,2026-04-07 15:49:03,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+191,2026-04-07 15:49:01,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+190,2026-04-07 15:44:16,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+189,2026-04-07 15:43:20,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+188,2026-04-07 15:43:19,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+187,2026-04-07 15:43:05,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+186,2026-04-07 15:43:01,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+185,2026-04-07 15:38:16,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+184,2026-04-07 15:38:15,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+183,2026-04-07 15:37:19,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+182,2026-04-07 15:37:14,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+181,2026-04-07 15:37:04,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+180,2026-04-07 15:37:01,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+179,2026-04-07 15:32:17,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+178,2026-04-07 15:31:19,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+177,2026-04-07 15:31:19,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+176,2026-04-07 15:31:05,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+175,2026-04-07 15:31:02,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+174,2026-04-07 15:26:17,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+173,2026-04-07 15:25:22,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+172,2026-04-07 15:25:21,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+171,2026-04-07 15:25:00,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+170,2026-04-07 15:24:58,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+169,2026-04-07 15:20:02,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+168,2026-04-07 15:19:10,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+167,2026-04-07 15:19:07,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+166,2026-04-07 15:18:55,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+165,2026-04-07 15:18:53,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+164,2026-04-07 15:14:07,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+163,2026-04-07 15:13:11,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+162,2026-04-07 15:13:10,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+161,2026-04-07 15:12:56,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+160,2026-04-07 15:12:53,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+159,2026-04-07 15:08:06,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+158,2026-04-07 15:07:10,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+157,2026-04-07 15:07:05,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+156,2026-04-07 15:06:55,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+155,2026-04-07 15:06:53,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+154,2026-04-07 15:02:01,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+153,2026-04-07 15:02:00,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+152,2026-04-07 15:01:03,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+151,2026-04-07 15:00:58,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+150,2026-04-07 15:00:49,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+149,2026-04-07 15:00:46,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+148,2026-04-07 14:56:00,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+147,2026-04-07 14:55:06,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+146,2026-04-07 14:55:05,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+145,2026-04-07 14:54:50,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+144,2026-04-07 14:54:48,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+143,2026-04-07 14:50:02,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+142,2026-04-07 14:50:02,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+141,2026-04-07 14:49:04,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+140,2026-04-07 14:49:00,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+139,2026-04-07 14:48:50,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+138,2026-04-07 14:48:47,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+137,2026-04-07 14:43:58,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+136,2026-04-07 14:43:58,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+135,2026-04-07 14:43:04,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+134,2026-04-07 14:43:03,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+133,2026-04-07 14:42:50,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+132,2026-04-07 14:42:46,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+131,2026-04-07 14:38:01,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+130,2026-04-07 14:38:01,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+129,2026-04-07 14:37:03,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+128,2026-04-07 14:37:00,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+127,2026-04-07 14:36:50,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+126,2026-04-07 14:36:46,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+125,2026-04-07 14:32:01,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+124,2026-04-07 14:32:01,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+123,2026-04-07 14:31:05,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+122,2026-04-07 14:31:00,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+121,2026-04-07 14:30:50,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+120,2026-04-07 14:30:48,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+119,2026-04-07 14:25:06,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+118,2026-04-07 14:25:05,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+117,2026-04-07 14:24:50,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+116,2026-04-07 14:20:02,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+115,2026-04-07 14:19:05,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+114,2026-04-07 14:19:04,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+113,2026-04-07 14:18:51,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+112,2026-04-07 14:18:49,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+111,2026-04-07 14:14:04,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+110,2026-04-07 14:14:04,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+109,2026-04-07 14:13:07,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+108,2026-04-07 14:13:02,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+107,2026-04-07 14:12:48,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+106,2026-04-07 14:12:45,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+105,2026-04-07 14:07:53,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+104,2026-04-07 14:06:56,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+103,2026-04-07 14:06:56,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+102,2026-04-07 14:06:42,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+101,2026-04-07 14:06:40,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+100,2026-04-07 14:01:55,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+99,2026-04-07 14:01:55,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+98,2026-04-07 14:00:57,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+97,2026-04-07 14:00:53,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+96,2026-04-07 14:00:44,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+95,2026-04-07 14:00:42,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+94,2026-04-07 13:55:56,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+93,2026-04-07 13:54:57,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+92,2026-04-07 13:54:56,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+91,2026-04-07 13:54:44,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+90,2026-04-07 13:54:42,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+89,2026-04-07 13:49:54,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+88,2026-04-07 13:48:58,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+87,2026-04-07 13:48:57,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+86,2026-04-07 13:48:43,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+85,2026-04-07 13:48:40,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+84,2026-04-07 13:43:56,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+83,2026-04-07 13:43:00,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+82,2026-04-07 13:42:58,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+81,2026-04-07 13:42:44,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+80,2026-04-07 13:42:41,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+79,2026-04-07 13:37:56,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+78,2026-04-07 13:37:00,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+77,2026-04-07 13:37:00,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+76,2026-04-07 13:36:45,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+75,2026-04-07 13:36:43,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+74,2026-04-07 13:31:58,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+73,2026-04-07 13:31:58,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+72,2026-04-07 13:31:02,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+71,2026-04-07 13:31:01,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+70,2026-04-07 13:30:40,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+69,2026-04-07 13:30:36,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+68,2026-04-07 13:25:52,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+67,2026-04-07 13:25:52,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+66,2026-04-07 13:24:55,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+65,2026-04-07 13:24:50,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+64,2026-04-07 13:24:40,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+63,2026-04-07 13:24:38,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+62,2026-04-07 13:19:53,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+61,2026-04-07 13:19:53,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+60,2026-04-07 13:18:57,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+59,2026-04-07 13:18:56,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+58,2026-04-07 13:18:41,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+57,2026-04-07 13:18:39,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+56,2026-04-07 13:13:53,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+55,2026-04-07 13:12:56,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+54,2026-04-07 13:12:56,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+53,2026-04-07 13:12:42,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+52,2026-04-07 13:12:39,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+51,2026-04-07 13:07:53,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+50,2026-04-07 13:07:52,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+49,2026-04-07 13:06:55,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+48,2026-04-07 13:06:51,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+47,2026-04-07 13:06:41,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+46,2026-04-07 13:06:38,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+45,2026-04-07 13:01:53,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+44,2026-04-07 13:00:56,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+43,2026-04-07 13:00:55,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+42,2026-04-07 13:00:42,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+41,2026-04-07 13:00:40,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+40,2026-04-07 12:55:55,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+39,2026-04-07 12:55:54,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+38,2026-04-07 12:54:57,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+37,2026-04-07 12:54:53,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+36,2026-04-07 12:54:43,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+35,2026-04-07 12:54:40,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+34,2026-04-07 12:49:53,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+33,2026-04-07 12:49:53,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+32,2026-04-07 12:48:59,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+31,2026-04-07 12:48:54,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+30,2026-04-07 12:48:39,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+29,2026-04-07 12:48:35,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+28,2026-04-07 12:43:40,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+27,2026-04-07 12:42:47,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+26,2026-04-07 12:42:45,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+25,2026-04-07 12:42:33,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+24,2026-04-07 12:42:30,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+23,2026-04-07 12:36:45,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+22,2026-04-07 12:36:44,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+21,2026-04-07 12:36:29,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+20,2026-04-07 12:31:42,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+19,2026-04-07 12:30:46,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+18,2026-04-07 12:30:45,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+17,2026-04-07 12:30:31,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+16,2026-04-07 12:30:28,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+15,2026-04-07 12:25:43,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+14,2026-04-07 12:24:46,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+13,2026-04-07 12:24:45,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+12,2026-04-07 12:24:31,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+11,2026-04-07 12:24:27,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+10,2026-04-07 12:18:47,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+9,2026-04-07 12:18:46,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+8,2026-04-07 12:18:27,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+7,2026-04-07 12:13:39,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+6,2026-04-07 12:13:38,EXU1 VCC_5V0,Major,Voltage,Asserted,Lower Critical going low 
+5,2026-04-07 12:12:42,ACPI State,Informational,System ACPI Power State,Asserted,S0/G0: working
+4,2026-04-07 12:12:37,SysRestart,Informational,System Boot Initiated,Asserted,System Restart
+3,2026-04-07 12:12:27,ACPI State,Informational,System ACPI Power State,Asserted,S4/S5: soft-off
+2,2026-04-07 12:12:23,EXU1 VCC_5V0,Major,Voltage,Deasserted,Lower Critical going low 
+1,2026-04-07 12:10:03,SEL Status,Informational,Event Logging Disabled,Asserted,Log area reset/cleared
