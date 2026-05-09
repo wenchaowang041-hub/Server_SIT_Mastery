@@ -1,0 +1,1794 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARM SIT Guide - ARM 架构服务器 SIT 测试指南</title>
+<style>
+:root{--bg:#0a0a0b;--surface:#131316;--surface2:#1a1a1f;--border:#2a2a30;--text:#e8e8ed;--text2:#9898a2;--accent:#4f8cff;--green:#34d399;--orange:#f97316;--purple:#a78bfa;--red:#ef4444;--cyan:#22d3ee}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:14px}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+
+.app{display:flex;min-height:100vh}
+.sidebar{position:fixed;top:0;left:0;bottom:0;width:260px;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:50;padding-bottom:40px}
+.sidebar .logo{padding:20px 20px 12px;font-size:18px;font-weight:700;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px}
+.sidebar .logo span{color:var(--accent)}
+.sidebar .logo .ver{font-size:11px;color:var(--text2);font-weight:400;margin-left:auto}
+.sidebar .nav-section{padding:8px 0}
+.sidebar .nav-label{padding:8px 20px 4px;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--text2);font-weight:600}
+.sidebar .nav-item{display:flex;align-items:center;gap:8px;padding:7px 20px;font-size:13px;color:var(--text2);cursor:pointer;border-left:3px solid transparent;transition:all .15s}
+.sidebar .nav-item:hover{color:var(--text);background:var(--surface2);border-left-color:var(--accent)}
+.sidebar .nav-item.active{color:var(--text);background:var(--surface2);border-left-color:var(--accent);font-weight:600}
+.sidebar .nav-item .icon{width:18px;text-align:center;font-size:14px}
+.sidebar .nav-item .badge{margin-left:auto;font-size:10px;padding:1px 7px;border-radius:8px;background:var(--surface2);color:var(--text2)}
+.sidebar .nav-item .badge.blue{background:rgba(79,140,255,.15);color:var(--accent)}
+.sidebar .nav-item .badge.green{background:rgba(52,211,153,.15);color:var(--green)}
+.sidebar .nav-item .badge.orange{background:rgba(249,115,22,.15);color:var(--orange)}
+.sidebar .nav-item .badge.red{background:rgba(239,68,68,.15);color:var(--red)}
+
+.main{margin-left:260px;flex:1;min-width:0}
+.topbar{position:sticky;top:0;z-index:40;background:rgba(10,10,11,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 28px;height:52px;display:flex;align-items:center;gap:12px}
+.topbar .menu-btn{display:none;background:none;border:none;color:var(--text);font-size:20px;cursor:pointer}
+.topbar h2{font-size:15px;font-weight:600}
+.topbar .path{color:var(--text2);font-size:12px;margin-left:auto}
+.content{padding:28px 32px 60px;max-width:1100px}
+
+/* Breadcrumb */
+.breadcrumb{display:flex;gap:4px;align-items:center;font-size:12px;color:var(--text2);margin-bottom:16px}
+.breadcrumb span{cursor:pointer}
+.breadcrumb span:hover{color:var(--accent)}
+.breadcrumb .sep{color:var(--border);cursor:default}
+
+/* Hero / Dashboard */
+.hero{text-align:center;padding:30px 0 24px}
+.hero h1{font-size:32px;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--green));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero .sub{font-size:15px;color:var(--text2);max-width:560px;margin:0 auto 16px}
+.hero .badges{display:flex;flex-wrap:wrap;justify-content:center;gap:6px}
+
+/* Search bar */
+.search-bar{position:relative;margin:16px auto;max-width:480px}
+.search-bar input{width:100%;padding:10px 16px 10px 38px;background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--text);font-size:14px;outline:none;transition:border-color .2s}
+.search-bar input:focus{border-color:var(--accent)}
+.search-bar .icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--text2);font-size:14px}
+.search-results{position:absolute;top:100%;left:0;right:0;background:var(--surface);border:1px solid var(--border);border-radius:8px;margin-top:4px;max-height:300px;overflow-y:auto;display:none;z-index:99}
+.search-results .sr{padding:8px 14px;cursor:pointer;border-bottom:1px solid var(--border);font-size:13px}
+.search-results .sr:hover{background:var(--surface2)}
+.search-results .sr .sr-title{font-weight:600}
+.search-results .sr .sr-page{font-size:11px;color:var(--text2)}
+
+/* Stats grid */
+.sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin:16px 0}
+.si{text-align:center;padding:16px 8px;background:var(--surface);border:1px solid var(--border);border-radius:10px}
+.si .v{font-size:28px;font-weight:800}
+.si .v.a{color:var(--accent)}.si .v.g{color:var(--green)}.si .v.o{color:var(--orange)}.si .v.p{color:var(--purple)}.si .v.r{color:var(--red)}.si .v.c{color:var(--cyan)}
+.si .l{font-size:11px;color:var(--text2);margin-top:2px}
+
+/* Cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin:16px 0}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:18px;transition:border-color .2s,transform .15s}
+.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.card h3{font-size:15px;margin-bottom:4px}
+.card p{font-size:13px;color:var(--text2);margin-bottom:0}
+.card ul{padding-left:18px;margin-top:8px}
+.card li{font-size:13px;color:var(--text2);margin-bottom:3px}
+
+/* Tags */
+.tag{display:inline-block;padding:2px 8px;border-radius:8px;font-size:11px;margin:1px}
+.tag.blue{background:rgba(79,140,255,.12);color:var(--accent)}
+.tag.green{background:rgba(52,211,153,.12);color:var(--green)}
+.tag.orange{background:rgba(249,115,22,.12);color:var(--orange)}
+.tag.purple{background:rgba(167,139,250,.12);color:var(--purple)}
+.tag.red{background:rgba(239,68,68,.12);color:var(--red)}
+.tag.cyan{background:rgba(34,211,238,.12);color:var(--cyan)}
+.tag.gray{background:rgba(152,152,162,.12);color:var(--text2)}
+
+/* Tables */
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--border)}
+th{color:var(--text2);background:var(--surface2);font-weight:600;font-size:12px;white-space:nowrap}
+tr:hover td{background:var(--surface2)}
+
+/* Code blocks with copy */
+pre{position:relative;background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:14px 16px 36px 16px;overflow-x:auto;margin:10px 0;font-size:12px;line-height:1.6}
+code{font-family:"Fira Code","Cascadia Code","Consolas",monospace;font-size:12px}
+.ic{background:var(--surface2);padding:1px 5px;border-radius:3px;font-size:12px;font-family:"Fira Code",monospace}
+.copy-btn{position:absolute;top:6px;right:6px;padding:3px 10px;background:var(--border);border:none;border-radius:4px;color:var(--text2);font-size:11px;cursor:pointer;transition:all .15s;z-index:2}
+.copy-btn:hover{background:var(--accent);color:#fff}
+.copy-btn.copied{background:var(--green);color:#fff}
+
+/* Alerts */
+.alert{padding:12px 16px;border-radius:8px;margin:12px 0;font-size:13px;line-height:1.6}
+.alert.warn{background:rgba(249,115,22,.08);border:1px solid rgba(249,115,22,.25);color:var(--orange)}
+.alert.info{background:rgba(79,140,255,.08);border:1px solid rgba(79,140,255,.25);color:var(--accent)}
+.alert.success{background:rgba(52,211,153,.08);border:1px solid rgba(52,211,153,.25);color:var(--green)}
+.alert.danger{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.25);color:var(--red)}
+
+/* Data boxes */
+.dg{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin:12px 0}
+.db{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px;text-align:center}
+.db .l{font-size:11px;color:var(--text2);margin-bottom:2px}
+.db .v{font-size:20px;font-weight:700}
+.db .v.g{color:var(--green)}.db .v.w{color:var(--orange)}.db .v.b{color:var(--red)}.db .v.a{color:var(--accent)}
+
+/* Lists */
+ul.chk{list-style:none;padding:0}
+ul.chk li{padding:3px 0 3px 22px;position:relative;font-size:13px;color:var(--text2)}
+ul.chk li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:700}
+
+/* Steps */
+.steps{counter-reset:step}
+.step{counter-increment:step;position:relative;padding:10px 10px 10px 48px;margin-bottom:8px;background:var(--surface);border:1px solid var(--border);border-radius:8px}
+.step::before{content:counter(step);position:absolute;left:14px;top:12px;width:22px;height:22px;background:var(--accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
+.step h4{font-size:13px;margin-bottom:4px}
+.step p{font-size:13px;color:var(--text2);margin:0}
+
+/* Checklist */
+.checklist{list-style:none;padding:0;margin:12px 0}
+.checklist li{display:flex;align-items:flex-start;gap:10px;padding:8px 12px;border:1px solid var(--border);border-radius:6px;margin-bottom:6px;font-size:13px;cursor:pointer;transition:all .15s;background:var(--surface)}
+.checklist li:hover{border-color:var(--accent)}
+.checklist li.done{opacity:.6;text-decoration:line-through}
+.checklist li input[type="checkbox"]{margin-top:2px;accent-color:var(--green);width:16px;height:16px;flex-shrink:0}
+.checklist .cl-title{font-weight:600}
+.checklist .cl-desc{font-size:12px;color:var(--text2)}
+
+/* Architecture diagram */
+.arch{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:20px;margin:16px 0;overflow-x:auto}
+.arch pre{border:none;background:none;padding:0;font-size:12px;line-height:1.5;color:var(--text)}
+.arch .cpu{color:var(--accent);font-weight:700}
+.arch .pcie{color:var(--cyan)}
+.arch .dev{color:var(--green)}
+.arch .mem{color:var(--orange)}
+.arch .bmc{color:var(--purple)}
+
+/* Troubleshooting wizard */
+.wiz{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px;margin:16px 0}
+.wiz h3{margin-top:0}
+.wiz-options{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.wiz-btn{padding:8px 16px;background:var(--surface2);border:1px solid var(--border);border-radius:8px;color:var(--text);cursor:pointer;font-size:13px;transition:all .15s}
+.wiz-btn:hover{border-color:var(--accent);background:rgba(79,140,255,.1);color:var(--accent)}
+.wiz-btn.active{border-color:var(--accent);background:rgba(79,140,255,.15);color:var(--accent)}
+.wiz-result{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:16px;margin:12px 0;display:none}
+.wiz-result.show{display:block}
+.wiz-path{font-size:12px;color:var(--text2);margin-bottom:8px}
+
+/* Bug tracker */
+.bug-status{display:flex;gap:12px;margin:12px 0;flex-wrap:wrap}
+.bug-stat{padding:10px 18px;border-radius:8px;font-size:13px;font-weight:600}
+.bug-stat.red{background:rgba(239,68,68,.12);color:var(--red)}
+.bug-stat.orange{background:rgba(249,115,22,.12);color:var(--orange)}
+.bug-stat.green{background:rgba(52,211,153,.12);color:var(--green)}
+.bug-stat.blue{background:rgba(79,140,255,.12);color:var(--accent)}
+
+/* Tab navigation */
+.tabs{display:flex;gap:4px;margin:12px 0;flex-wrap:wrap}
+.tab{padding:6px 14px;background:var(--surface2);border:1px solid var(--border);border-radius:6px;font-size:12px;cursor:pointer;color:var(--text2);transition:all .15s}
+.tab:hover{color:var(--text);border-color:var(--accent)}
+.tab.active{background:rgba(79,140,255,.15);border-color:var(--accent);color:var(--accent)}
+.tab-content{display:none}
+.tab-content.active{display:block}
+
+/* Phase badges */
+.phases{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.phase{padding:8px 16px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;border:1px solid var(--border);background:var(--surface);transition:all .15s}
+.phase:hover{border-color:var(--accent)}
+.phase.active{border-color:var(--accent);background:rgba(79,140,255,.15);color:var(--accent)}
+
+/* Page transitions */
+.page{display:none;animation:fadeIn .2s ease}
+.page.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+
+/* Back to top */
+.btt{position:fixed;bottom:24px;right:24px;width:40px;height:40px;background:var(--accent);color:#fff;border:none;border-radius:50%;font-size:18px;cursor:pointer;display:none;align-items:center;justify-content:center;z-index:99;transition:opacity .2s}
+.btt.show{display:flex}
+
+/* Architecture diagram */
+.arch{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:20px;margin:16px 0;overflow-x:auto}
+.arch pre{border:none;background:none;padding:0;font-size:12px;line-height:1.5;color:var(--text)}
+.arch .cpu{color:var(--accent);font-weight:700}
+.arch .pcie{color:var(--cyan)}
+.arch .dev{color:var(--green)}
+.arch .mem{color:var(--orange)}
+.arch .bmc{color:var(--purple)}
+
+footer{text-align:center;padding:24px;color:var(--text2);font-size:12px;border-top:1px solid var(--border);margin-top:40px}
+
+@media(max-width:768px){
+  .sidebar{transform:translateX(-100%);transition:transform .2s}
+  .sidebar.open{transform:translateX(0)}
+  .main{margin-left:0}
+  .topbar .menu-btn{display:block}
+  .content{padding:20px 16px}
+  .sg{grid-template-columns:repeat(2,1fr)}
+  .grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="app">
+
+<!-- ========== SIDEBAR ========== -->
+<aside class="sidebar" id="sidebar">
+  <div class="logo">ARM SIT<span>Guide</span><span class="ver">v4.0</span></div>
+
+  <div class="nav-section">
+    <div class="nav-label">总览</div>
+    <div class="nav-item active" data-page="home"><span class="icon">📊</span>首页 Dashboard</div>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">知识类</div>
+    <div class="nav-item" data-page="arm-basics"><span class="icon">🔬</span>ARM 基础知识</div>
+    <div class="nav-item" data-page="hw-arch"><span class="icon">🏗️</span>服务器硬件架构</div>
+    <div class="nav-item" data-page="firmware"><span class="icon">⚡</span>固件与启动链路</div>
+    <div class="nav-item" data-page="os-driver"><span class="icon">🐧</span>OS 与驱动</div>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">测试类</div>
+    <div class="nav-item" data-page="bmc"><span class="icon">🔧</span>BMC 管理</div>
+    <div class="nav-item" data-page="network"><span class="icon">🌐</span>网络测试</div>
+    <div class="nav-item" data-page="storage"><span class="icon">💿</span>存储测试</div>
+    <div class="nav-item" data-page="performance"><span class="icon">📈</span>性能测试</div>
+    <div class="nav-item" data-page="stability"><span class="icon">💪</span>稳定性测试</div>
+    <div class="nav-item" data-page="compatibility"><span class="icon">🔗</span>兼容性测试</div>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">执行类</div>
+    <div class="nav-item" data-page="fault-inject"><span class="icon">💥</span>故障注入</div>
+    <div class="nav-item" data-page="automation"><span class="icon">🤖</span>自动化测试</div>
+    <div class="nav-item" data-page="test-cases"><span class="icon">📋</span>测试用例库</div>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">排障类</div>
+    <div class="nav-item" data-page="troubleshoot"><span class="icon">🩺</span>问题定位手册</div>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">交付类</div>
+    <div class="nav-item" data-page="templates"><span class="icon">📄</span>项目交付模板</div>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">附录</div>
+    <div class="nav-item" data-page="projects"><span class="icon">📁</span>项目实战</div>
+    <div class="nav-item" data-page="cmdref"><span class="icon">📝</span>命令速查</div>
+    <div class="nav-item" data-page="openeuler"><span class="icon">📋</span>openEuler 认证</div>
+  </div>
+</aside>
+
+<!-- ========== MAIN ========== -->
+<div class="main">
+  <div class="topbar">
+    <button class="menu-btn" onclick="document.getElementById('sidebar').classList.toggle('open')">☰</button>
+    <h2 id="pt">首页 Dashboard</h2>
+    <div class="path" id="pb">ARM SIT Guide</div>
+  </div>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb" id="breadcrumb" style="padding:8px 28px;font-size:12px;color:var(--text2);border-bottom:1px solid var(--border)">
+    <span onclick="go('home')">首页</span><span class="sep">›</span><span id="bc-current">Dashboard</span>
+  </div>
+
+  <div class="content">
+
+<!-- ===== HOME DASHBOARD ===== -->
+<div class="page active" id="p-home">
+  <div class="hero">
+    <h1>ARM SIT Guide</h1>
+    <p class="sub">面向 ARM 架构服务器的系统集成测试知识库，覆盖硬件、固件、OS、BMC、网络、存储、性能、稳定性、兼容性、自动化与问题定位。<br>目标不是堆文档，而是让测试人员能快速找到测试方法、执行步骤、判定标准和故障处理路径。</p>
+    <div class="badges">
+      <span class="tag blue">4 个项目实战</span>
+      <span class="tag green">6 大测试模块</span>
+      <span class="tag orange">13 种故障排查</span>
+      <span class="tag purple">ARM 架构知识</span>
+      <span class="tag cyan">自动化测试</span>
+      <span class="tag red">交付模板</span>
+    </div>
+  </div>
+
+  <div class="search-bar">
+    <span class="icon">🔍</span>
+    <input type="text" id="searchInput" placeholder="搜索命令、测试项、故障现象..." oninput="doSearch(this.value)">
+    <div class="search-results" id="searchResults"></div>
+  </div>
+
+  <h2>测试阶段</h2>
+  <div class="phases">
+    <div class="phase active">冒烟测试</div>
+    <div class="phase">功能测试</div>
+    <div class="phase">性能测试</div>
+    <div class="phase">稳定性测试</div>
+    <div class="phase">兼容性测试</div>
+    <div class="phase">回归测试</div>
+    <div class="phase">交付验收</div>
+  </div>
+
+  <h2>常用快捷入口</h2>
+  <div class="grid">
+    <div class="card" onclick="go('bmc')" style="cursor:pointer"><h3>🔧 BMC 常用命令</h3><p>IPMI / Redfish / SOL / 传感器 / 固件升级</p></div>
+    <div class="card" onclick="go('network')" style="cursor:pointer"><h3>🌐 网络测试 Checklist</h3><p>网口识别 / iperf3 / bonding / RoCE / 中断亲和</p></div>
+    <div class="card" onclick="go('storage')" style="cursor:pointer"><h3>💿 存储测试 Checklist</h3><p>磁盘识别 / NVMe / SMART / fio / 热插拔 / RAID</p></div>
+    <div class="card" onclick="go('stability')" style="cursor:pointer"><h3>💪 稳定性测试 Checklist</h3><p>CPU/内存/IO 压力 / DC Cycle / Reboot / 长稳</p></div>
+    <div class="card" onclick="go('firmware')" style="cursor:pointer"><h3>⚡ ARM 启动流程</h3><p>BootROM → TF-A → U-Boot → UEFI → OS</p></div>
+    <div class="card" onclick="go('troubleshoot')" style="cursor:pointer"><h3>🩺 问题定位流程</h3><p>按现象分类：掉盘 / 网口不通 / 性能低 / 死机</p></div>
+    <div class="card" onclick="go('templates')" style="cursor:pointer"><h3>📄 测试报告模板</h3><p>测试计划 / 测试报告 / 问题单 / 风险评估</p></div>
+  </div>
+</div>
+
+<!-- ===== ARM BASICS ===== -->
+<div class="page" id="p-arm-basics">
+  <h1>ARM 基础知识</h1>
+  <div class="alert info">ARM 架构服务器与 x86 的关键差异，帮助测试人员理解 ARM 平台的测试特点。</div>
+
+  <h2>ARMv8 / ARMv9 架构</h2>
+  <table>
+    <tr><th>特性</th><th>说明</th></tr>
+    <tr><td>AArch64</td><td>ARM 64 位执行状态，对应 x86_64</td></tr>
+    <tr><td>指令集</td><td>RISC 架构，固定长度 32 位指令，Load/Store 模型</td></tr>
+    <tr><td>寄存器</td><td>31 个通用寄存器 (X0-X30)，X30 为链接寄存器</td></tr>
+    <tr><td>内存模型</td><td>弱内存模型 (Weak Memory Model)，需要显式内存屏障 (DMB/DSB/ISB)</td></tr>
+  </table>
+
+  <h2>异常级别 (Exception Levels)</h2>
+  <table>
+    <tr><th>级别</th><th>用途</th><th>对应 x86</th></tr>
+    <tr><td>EL0</td><td>用户空间应用</td><td>Ring 3</td></tr>
+    <tr><td>EL1</td><td>Linux 内核</td><td>Ring 0</td></tr>
+    <tr><td>EL2</td><td>虚拟化 (Hypervisor)</td><td>VMX Root</td></tr>
+    <tr><td>EL3</td><td>安全监视器 (TF-A / ATF)</td><td>SMM</td></tr>
+  </table>
+
+  <h2>GIC 中断控制器</h2>
+  <p style="font-size:13px;color:var(--text2)">ARM 使用 GIC (Generic Interrupt Controller) 管理中断，与 x86 的 APIC 不同。GIC 支持 SPI (共享外设中断)、PPI (私有外设中断)、SGI (软件生成中断)。测试中关注中断分配和亲和性。</p>
+
+  <h2>SMMU / IOMMU</h2>
+  <p style="font-size:13px;color:var(--text2)">ARM 的 SMMU (System Memory Management Unit) 等效于 x86 的 IOMMU/VT-d，负责 DMA 地址转换和隔离。关闭 IOMMU 可降低延迟，但失去 DMA 保护。</p>
+
+  <h2>NUMA 架构</h2>
+  <p style="font-size:13px;color:var(--text2)">Kunpeng 920 双路服务器有 2 个 NUMA 节点。跨 NUMA 访问增加 20-50% 延迟。程序应绑定到设备所在节点运行。</p>
+  <pre><code>lscpu | grep NUMA
+numactl --hardware
+numactl --cpunodebind=0 --membind=0 ./program</code></pre>
+
+  <h2>Cache 架构</h2>
+  <p style="font-size:13px;color:var(--text2)">ARM 处理器通常有 L1 (指令/数据分离)、L2 (统一)、L3 (共享) 三级 Cache。Cache 一致性由硬件维护，但弱内存模型要求正确插入内存屏障。</p>
+
+  <h2>ARM 与 x86 差异对测试的影响</h2>
+  <table>
+    <tr><th>差异</th><th>测试影响</th></tr>
+    <tr><td>弱内存模型</td><td>需要验证同步原语正确性，多线程测试更关注内存序</td></tr>
+    <tr><td>GIC vs APIC</td><td>中断分配和亲和性配置方式不同</td></tr>
+    <tr><td>SMMU vs IOMMU</td><td>DMA 地址转换和隔离机制不同</td></tr>
+    <tr><td>UEFI + Device Tree</td><td>ARM 平台可能使用 Device Tree 而非纯 ACPI</td></tr>
+    <tr><td>TF-A / ATF</td><td>多了一层固件启动链路，调试需要考虑 EL3</td></tr>
+  </table>
+</div>
+
+<!-- ===== HARDWARE ARCHITECTURE ===== -->
+<div class="page" id="p-hw-arch">
+  <h1>服务器硬件架构</h1>
+  <div class="alert info">基于 Kunpeng 920 S920X20 双路服务器的实测拓扑。</div>
+
+  <h2>系统拓扑</h2>
+  <div class="arch">
+<pre>
+<span class="cpu">┌─ CPU 0 (NUMA 0) ───────┐     ┌─ CPU 1 (NUMA 1) ───────┐</span>
+│  96 Cores              │     │  96 Cores              │
+│  <span class="mem">Memory: DDR4-3200</span>       │     │  <span class="mem">Memory: DDR4-3200</span>       │
+└──┬───┬───┬──────────────┘     └──┬───┬───┬──────────────┘
+   │   │   │                       │   │   │
+<span class="pcie">  PCIe Gen4 x16              PCIe Gen4 x16</span>
+   │   │   │                       │   │   │
+<span class="dev">  ┌─┴───┴───┴─┐             ┌─┴───┴───┴─┐</span>
+  │ PCIe Switch│             │ PCIe Switch│
+  └─┬───┬───┬─┘             └─┬───┬───┬─┘
+    │   │   │                 │   │   │
+<span class="dev">  ┌─┴──┐┌─┴──┐┌─┴──┐      ┌─┴──┐┌─┴──┐┌─┴──┐</span>
+  │NVMe││NVMe││GPU │      │NVMe││NVMe││NIC │
+  │ U.2││ U.2││910B│      │ U.2││ U.2││25G │
+  └────┘└────┘└────┘      └────┘└────┘└────┘
+
+<span class="bmc">┌─ BMC (iBMC / openUBMC) ────────────────┐</span>
+│  传感器 / 风扇策略 / 电源控制 / 固件升级 │
+└────────────────────────────────────────┘
+</pre>
+  </div>
+
+  <h2>硬件组件</h2>
+  <table>
+    <tr><th>组件</th><th>内容</th></tr>
+    <tr><td>CPU 拓扑</td><td>Kunpeng 920, 2P, 96 cores/socket, 4 NUMA nodes/socket</td></tr>
+    <tr><td>内存通道</td><td>8 通道 DDR4-3200, 每通道 1-2 DIMM</td></tr>
+    <tr><td>PCIe 拓扑</td><td>Gen4 x16 Root Port, PCIe Switch 扩展</td></tr>
+    <tr><td>NVMe/SATA/SAS</td><td>U.2 NVMe / SATA M.2 / SAS via HBA</td></tr>
+    <tr><td>网卡/OCP</td><td>25G/10G 网卡 (hns3 / mlx5), OCP 3.0 网卡</td></tr>
+    <tr><td>GPU/DPU/FPGA</td><td>昇腾 910B/310P3, DPU 加速卡</td></tr>
+    <tr><td>风扇</td><td>多风扇模块，BMC 温控策略</td></tr>
+    <tr><td>电源</td><td>冗余电源模块，DCMI 功耗管理</td></tr>
+    <tr><td>传感器</td><td>温度/电压/风扇/电源传感器</td></tr>
+    <tr><td>背板</td><td>NVMe 背板 / SAS 背板 / 0SW/2SW/4SW</td></tr>
+    <tr><td>Riser</td><td>PCIe Riser 卡，扩展 PCIe 槽位</td></tr>
+    <tr><td>线缆</td><td>SAS 线缆 / 电源线 / 串口线</td></tr>
+  </table>
+
+  <h2>PCIe 链路检查</h2>
+  <table>
+    <tr><th>规格</th><th>带宽</th></tr>
+    <tr><td>PCIe Gen4 x4</td><td>~8 GB/s</td></tr>
+    <tr><td>PCIe Gen4 x8</td><td>~16 GB/s</td></tr>
+    <tr><td>PCIe Gen4 x16</td><td>~32 GB/s</td></tr>
+  </table>
+  <pre><code># 检查 PCIe 链路速度
+lspci -vv -s &lt;BDF&gt; | grep Lnk
+# LnkCap = 能力, LnkSta = 实际 — 不一致说明降级</code></pre>
+</div>
+
+<!-- ===== FIRMWARE ===== -->
+<div class="page" id="p-firmware">
+  <h1>固件与启动链路</h1>
+  <div class="alert info">ARM 平台启动链路：BootROM → TF-A → U-Boot → EDK2/UEFI → OS</div>
+
+  <h2>启动链路</h2>
+  <div class="steps">
+    <div class="step"><h4>BootROM</h4><p>CPU 内部固化的第一级启动代码，从 SPI Flash/eMMC 加载 BL1</p></div>
+    <div class="step"><h4>TF-A (Trusted Firmware-A)</td><td>EL3 安全固件，初始化安全世界，加载 BL2/BL31</p></div>
+    <div class="step"><h4>U-Boot</h4><p>第二级 bootloader，加载 UEFI 或直接加载 Kernel</p></div>
+    <div class="step"><h4>EDK2 / UEFI</h4><p>UEFI 固件，提供 ACPI / SMBIOS 表，引导 OS</p></div>
+    <div class="step"><h4>ACPI / Device Tree</h4><p>硬件描述表，ARM 平台可能使用 Device Tree 或 ACPI</p></div>
+    <div class="step"><h4>Kernel</h4><p>Linux 内核启动，加载驱动，挂载文件系统</p></div>
+  </div>
+
+  <h2>固件管理</h2>
+  <table>
+    <tr><th>组件</th><th>说明</th></tr>
+    <tr><td>Secure Boot</td><td>验证启动链完整性，每个阶段签名验证</td></tr>
+    <tr><td>PXE</td><td>网络启动，用于 OS 安装和自动化部署</td></tr>
+    <tr><td>ISO 安装</td><td>通过 BMC 虚拟光驱挂载 ISO 安装系统</td></tr>
+    <tr><td>固件升级</td><td>BIOS/BMC 固件升级，注意过渡版本</td></tr>
+  </table>
+
+  <h2>启动失败排查</h2>
+  <table>
+    <tr><th>阶段</th><th>排查</th></tr>
+    <tr><td>无法进入 BIOS</td><td>检查串口/BMC SOL，确认 BootROM/TF-A 是否正常</td></tr>
+    <tr><td>无法进入 OS</td><td>检查 UEFI boot order / 系统盘识别 / 内核启动参数</td></tr>
+    <tr><td>Kernel panic</td><td>串口抓取 panic 日志，检查驱动/内存/ACPI 表</td></tr>
+  </table>
+</div>
+
+<!-- ===== OS & DRIVER ===== -->
+<div class="page" id="p-os-driver">
+  <h1>OS 与驱动</h1>
+
+  <h2>Linux 安装与内核</h2>
+  <table>
+    <tr><th>项目</th><th>内容</th></tr>
+    <tr><td>支持的 OS</td><td>openEuler 22.03 / Ubuntu 22.04 / CentOS 等</td></tr>
+    <tr><td>Kernel 版本</td><td>建议使用 ≥ 5.10 内核（更好的 ARM 服务器支持）</td></tr>
+    <tr><td>内核参数</td><td><code class="ic">/etc/default/grub</code> 中修改 GRUB_CMDLINE_LINUX</td></tr>
+  </table>
+
+  <h2>驱动管理</h2>
+  <pre><code># 查看已加载驱动
+lsmod
+
+# 查看驱动信息
+modinfo hns3
+
+# 重新加载驱动
+rmmod hns3 && modprobe hns3
+
+# 查看内核日志
+dmesg | grep -iE "error|fail|nvme|hns3"</code></pre>
+
+  <h2>常用设备命令</h2>
+  <table>
+    <tr><th>命令</th><th>用途</th></tr>
+    <tr><td><code class="ic">lspci</code></td><td>PCIe 设备列表</td></tr>
+    <tr><td><code class="ic">lsblk</code></td><td>块设备列表</td></tr>
+    <tr><td><code class="ic">dmidecode -t bios</code></td><td>BIOS 信息</td></tr>
+    <tr><td><code class="ic">dmidecode -t system</code></td><td>系统信息</td></tr>
+    <tr><td><code class="ic">dmidecode -t memory</code></td><td>内存信息</td></tr>
+    <tr><td><code class="ic">ethtool eth0</code></td><td>网卡状态</td></tr>
+  </table>
+
+  <h2>Kdump</h2>
+  <p style="font-size:13px;color:var(--text2)">Kernel crash dump 机制，在 Kernel panic 时保存内存快照。配置 <code class="ic">/etc/kdump.conf</code>，使用 <code class="ic">systemctl enable kdump</code> 启用。</p>
+</div>
+
+<!-- ===== BMC ===== -->
+<div class="page" id="p-bmc">
+  <h1>BMC 管理</h1>
+  <div class="alert info">BMC 是服务器的"第二操作系统"，即使 OS 崩溃也能远程管理硬件。</div>
+
+  <h2>测试目的</h2>
+  <p style="font-size:13px;color:var(--text2)">验证 BMC 管理功能完整性，包括 Web 界面、IPMI、Redfish、SOL、传感器、FRU、风扇策略、电源控制和固件升级。</p>
+
+  <h2>BMC Web 界面</h2>
+  <p style="font-size:13px;color:var(--text2)">BMC 提供 Web 管理界面，功能包括：</p>
+  <ul class="chk">
+    <li>传感器实时监控（温度/电压/风扇/功耗）</li>
+    <li>风扇策略配置与状态查看</li>
+    <li>电源控制（开/关机/重启/DC cycle/AC cycle）</li>
+    <li>固件升级（BIOS/BMC/CPLD/NVMe/网卡）</li>
+    <li>虚拟控制台 (KVM / HTML5)</li>
+    <li>SEL 事件日志查看与导出</li>
+    <li>FRU 信息查询</li>
+    <li>用户管理与权限配置</li>
+    <li>NTP / SMTP / LDAP 配置</li>
+  </ul>
+
+  <h2>IPMI 常用命令</h2>
+  <table>
+    <tr><th>命令</th><th>用途</th></tr>
+    <tr><td><code class="ic">ipmitool sensor list</code></td><td>所有传感器状态 (温度/电压/风扇/功耗)</td></tr>
+    <tr><td><code class="ic">ipmitool sel list</code></td><td>系统事件日志 (System Event Log)</td></tr>
+    <tr><td><code class="ic">ipmitool sel clear</code></td><td>清空 SEL 日志（测试前必做）</td></tr>
+    <tr><td><code class="ic">ipmitool fru print</code></td><td>FRU 信息 (部件号/序列号/制造商)</td></tr>
+    <tr><td><code class="ic">ipmitool mc info</code></td><td>BMC 固件版本和设备信息</td></tr>
+    <tr><td><code class="ic">ipmitool power status</code></td><td>电源状态 (on/off/cycle)</td></tr>
+    <tr><td><code class="ic">ipmitool power cycle</code></td><td>电源循环（断电 1 秒后重新上电）</td></tr>
+    <tr><td><code class="ic">ipmitool sol activate</code></td><td>串口重定向 (Serial over LAN)</td></tr>
+    <tr><td><code class="ic">ipmitool sel time-get</code></td><td>BMC 系统时间</td></tr>
+    <tr><td><code class="ic">ipmitool sdr list</code></td><td>传感器数据记录 (SDR)</td></tr>
+  </table>
+
+  <h2>Redfish API</h2>
+  <p style="font-size:13px;color:var(--text2)">RESTful API 管理接口，替代传统 IPMI。S920X20 支持 iBMC Redfish 接口。</p>
+  <pre><code># 获取系统信息
+curl -k -u admin:Admin@9000 https://&lt;bmc_ip&gt;/redfish/v1/Systems/1
+
+# 获取传感器数据
+curl -k -u admin:Admin@9000 https://&lt;bmc_ip&gt;/redfish/v1/Chassis/1/Thermal
+
+# 获取电源信息
+curl -k -u admin:Admin@9000 https://&lt;bmc_ip&gt;/redfish/v1/Chassis/1/Power
+
+# 控制电源状态
+curl -k -X PATCH -H "Content-Type: application/json" \
+  -d '{"PowerState":"On"}' \
+  -u admin:Admin@9000 https://&lt;bmc_ip&gt;/redfish/v1/Systems/1
+
+# 获取 BMC 固件信息
+curl -k -u admin:Admin@9000 https://&lt;bmc_ip&gt;/redfish/v1/UpdateService/FirmwareInventory
+
+# 修改启动设备
+curl -k -X PATCH -H "Content-Type: application/json" \
+  -d '{"Boot":{"BootSourceOverrideTarget":"Pxe"}}' \
+  -u admin:Admin@9000 https://&lt;bmc_ip&gt;/redfish/v1/Systems/1</code></pre>
+
+  <h2>SOL (Serial over LAN)</h2>
+  <p style="font-size:13px;color:var(--text2)">通过 IPMI 网络通道重定向串口，用于远程查看 BIOS 启动日志和 Kernel 串口输出。</p>
+  <pre><code># 配置 SOL
+ipmitool -I lanplus -H &lt;bmc_ip&gt; -U admin -P password sol activate
+
+# 设置 SOL 参数
+ipmitool sol set volatile-bit-rate 115.2
+ipmitool sol set non-volatile-bit-rate 115.2
+
+# 退出 SOL（转义序列）
+~.  (tilde + dot)
+
+# 通过 ssh 连接 SOL
+ssh -p 2200 admin@&lt;bmc_ip&gt;</code></pre>
+
+  <h2>FRU 信息</h2>
+  <table>
+    <tr><th>FRU 类型</th><th>信息</th></tr>
+    <tr><td>Board FRU</td><td>主板部件号/序列号/制造商</td></tr>
+    <tr><td>Chassis FRU</td><td>机箱部件号/序列号</td></tr>
+    <tr><td>Product FRU</td><td>产品名称/版本/序列号</td></tr>
+  </table>
+  <pre><code># 查看 FRU 信息
+ipmitool fru print
+ipmitool fru print 0  # Board
+ipmitool fru print 1  # Chassis
+ipmitool fru print 2  # Product</code></pre>
+
+  <h2>传感器与风扇策略</h2>
+  <p style="font-size:13px;color:var(--text2)">BMC 根据温度传感器自动调节风扇转速，测试中关注：</p>
+  <table>
+    <tr><th>传感器类型</th><th>说明</th></tr>
+    <tr><td>温度传感器</td><td>CPU/DIMM/NVMe/环境温度，单位 °C</td></tr>
+    <tr><td>电压传感器</td><td>12V/5V/3.3V/CPU 核心电压</td></tr>
+    <tr><td>风扇转速传感器</td><td>RPM 和占空比百分比</td></tr>
+    <tr><td>功耗传感器</td><td>通过 DCMI 获取整机功耗</td></tr>
+  </table>
+  <pre><code># 查看传感器
+ipmitool sensor list
+ipmitool sensor | grep -iE "temp|fan|volt|power"
+
+# 查看风扇策略（BMC Web）
+# 通常包括：Normal / Performance / Full Speed 三种模式
+
+# 通过 DCMI 查看功耗
+ipmitool dcmi power reading get
+ipmitool dcmi power reading get instantaneous
+ipmitool dcmi power reading get average
+ipmitool dcmi power cap get</code></pre>
+
+  <h2>电源控制</h2>
+  <table>
+    <tr><th>命令</th><th>用途</th></tr>
+    <tr><td><code class="ic">ipmitool power on</code></td><td>开机</td></tr>
+    <tr><td><code class="ic">ipmitool power off</code></td><td>关机</td></tr>
+    <tr><td><code class="ic">ipmitool power cycle</code></td><td>DC cycle（断电 1 秒后重启）</td></tr>
+    <tr><td><code class="ic">ipmitool power reset</code></td><td>硬重启</td></tr>
+    <tr><td><code class="ic">ipmitool chassis bootdev pxe</code></td><td>下次从 PXE 启动</td></tr>
+    <tr><td><code class="ic">ipmitool chassis bootdev disk</code></td><td>下次从硬盘启动</td></tr>
+    <tr><td><code class="ic">ipmitool chassis bootdev cdrom</code></td><td>下次从光驱启动</td></tr>
+    <tr><td><code class="ic">ipmitool chassis policy list</code></td><td>列出所有电源策略</td></tr>
+  </table>
+
+  <h2>固件升级</h2>
+  <pre><code># BMC 固件升级（通过 BMC Web 上传 .hpm 文件）
+ipmcset -t maintenance -d upgradebios -v /tmp/Kunpeng920_Update_CS_2P_cms.hpm
+
+# BIOS 固件升级
+# 通过 BMC Web 或 UEFI 内置升级工具
+
+# CPLD 固件升级
+# 注意：CPLD 升级需要完全断电后再上电才能生效
+
+# 升级后验证
+ipmitool mc info  # 确认 BMC 版本
+dmidecode -t bios # 确认 BIOS 版本</code></pre>
+
+  <h2>异常恢复</h2>
+  <table>
+    <tr><th>异常</th><th>处理方式</th></tr>
+    <tr><td>BMC Web 无法访问</td><td>检查网络 → ping BMC IP → telnet 443 → 冷重启 BMC</td></tr>
+    <tr><td>IPMI 命令无响应</td><td><code class="ic">ipmitool mc reset cold</code> 冷重启 BMC</td></tr>
+    <tr><td>BMC 时间异常</td><td>配置 NTP 或手动同步 <code class="ic">ipmitool sel time-set</code></td></tr>
+    <tr><td>SEL 日志满</td><td><code class="ic">ipmitool sel clear</code> 清空日志</td></tr>
+    <tr><td>传感器数据异常</td><td>可能是 BMC 固件 Bug，升级 BMC 固件</td></tr>
+    <tr><td>风扇策略失效</td><td>通过 BMC Web 手动设置风扇模式</td></tr>
+  </table>
+  <pre><code># BMC 冷重启（不影响 OS）
+ipmitool mc reset cold
+
+# BMC 用户管理
+ipmitool user list 1
+ipmitool user set name 2 newuser
+ipmitool user set password 2 newpass</code></pre>
+
+  <h2>Checklist</h2>
+  <ul class="checklist" id="cl-bmc">
+    <li><input type="checkbox" data-cl="cl-bmc" data-id="0"><div><div class="cl-title">BMC Web 界面可访问</div><div class="cl-desc">通过浏览器访问 BMC IP，确认 Web 界面正常加载</div></div></li>
+    <li><input type="checkbox" data-cl="cl-bmc" data-id="1"><div><div class="cl-title">IPMI 命令可用</div><div class="cl-desc">本地和远程 IPMI 命令均可执行并返回结果</div></div></li>
+    <li><input type="checkbox" data-cl="cl-bmc" data-id="2"><div><div class="cl-title">Redfish API 正常</div><div class="cl-desc">关键 Redfish 接口返回正确数据</div></div></li>
+    <li><input type="checkbox" data-cl="cl-bmc" data-id="3"><div><div class="cl-title">SOL 可连接</div><div class="cl-desc">串口重定向功能正常，可查看启动日志</div></div></li>
+    <li><input type="checkbox" data-cl="cl-bmc" data-id="4"><div><div class="cl-title">传感器数据完整</div><div class="cl-desc">所有温度/电压/风扇传感器均有有效数据</div></div></li>
+    <li><input type="checkbox" data-cl="cl-bmc" data-id="5"><div><div class="cl-title">电源控制正常</div><div class="cl-desc">远程开机/关机/重启均可正常执行</div></div></li>
+    <li><input type="checkbox" data-cl="cl-bmc" data-id="6"><div><div class="cl-title">SEL 日志已清空</div><div class="cl-desc">测试前已清空 SEL 日志</div></div></li>
+    <li><input type="checkbox" data-cl="cl-bmc" data-id="7"><div><div class="cl-title">BMC 固件版本已记录</div><div class="cl-desc">记录当前 BMC/BIOS 固件版本</div></div></li>
+  </ul>
+</div>
+
+<!-- ===== NETWORK ===== -->
+<div class="page" id="p-network">
+  <h1>网络测试</h1>
+
+  <h2>测试目的</h2>
+  <p style="font-size:13px;color:var(--text2)">验证 ARM 服务器上所有网口识别正常、链路协商正确、吞吐率达到标称值、bonding/VLAN/RDMA 功能正常。</p>
+
+  <h2>前置条件</h2>
+  <ul class="chk">
+    <li>所有网口物理连接正常</li>
+    <li>对端交换机/服务器已配置</li>
+    <li>iperf3 已安装（两端）</li>
+    <li>已记录网卡 BDF 和驱动信息</li>
+  </ul>
+
+  <h2>测试步骤</h2>
+  <div class="steps">
+    <div class="step"><h4>网口识别</h4><p><code class="ic">lspci | grep -i ethernet</code> <code class="ic">ip -br link</code></p></div>
+    <div class="step"><h4>Link 检查</h4><p><code class="ic">ethtool eth0</code> — 确认 Link detected: yes，Speed 正确</p></div>
+    <div class="step"><h4>DHCP / 静态 IP</h4><p><code class="ic">ip addr add 192.168.1.100/24 dev eth0</code></p></div>
+    <div class="step"><h4>iperf3 吞吐量</h4><p><code class="ic">iperf3 -c &lt;server_ip&gt; -P 8 -t 300</code></p></div>
+    <div class="step"><h4>bonding</h4><p>配置 bond0 (mode 4 LACP)，验证聚合带宽</p></div>
+    <div class="step"><h4>VLAN</h4><p><code class="ic">ip link add link eth0 name eth0.100 type vlan id 100</code></p></div>
+    <div class="step"><h4>RDMA / RoCE</h4><p><code class="ic">rdma link</code> 查看 RoCE 绑定，测试 rping</p></div>
+    <div class="step"><h4>中断亲和性</h4><p>确认网卡中断分布在正确的 NUMA 节点 CPU 上</p></div>
+  </div>
+
+  <h2>判定标准</h2>
+  <table>
+    <tr><th>测试项</th><th>Pass 条件</th></tr>
+    <tr><td>1G 网口</td><td>iperf3 ≥ 940 Mbits/sec</td></tr>
+    <tr><td>10G 网口</td><td>iperf3 ≥ 9.4 Gbits/sec</td></tr>
+    <tr><td>25G 网口</td><td>iperf3 ≥ 23 Gbits/sec (MTU=9000)</td></tr>
+    <tr><td>bonding</td><td>聚合带宽 ≥ 单口带宽 × N × 0.9</td></tr>
+  </table>
+
+  <h2>日志采集</h2>
+  <pre><code># 采集网络日志
+ip -s link > net_ip_link.log
+ethtool -S eth0 > net_ethtool_S.log
+dmesg | grep -iE "hns3|mlx5|eth" > net_dmesg.log</code></pre>
+
+  <h2>Checklist</h2>
+  <ul class="checklist" id="cl-network">
+    <li><input type="checkbox" data-cl="cl-network" data-id="0"><div><div class="cl-title">所有网口已识别</div><div class="cl-desc">lspci / ip link 显示所有网口</div></div></li>
+    <li><input type="checkbox" data-cl="cl-network" data-id="1"><div><div class="cl-title">Link 状态正常</div><div class="cl-desc">ethtool 确认 Link detected: yes</div></div></li>
+    <li><input type="checkbox" data-cl="cl-network" data-id="2"><div><div class="cl-title">iperf3 带宽达标</div><div class="cl-desc">≥ 标称值 90%</div></div></li>
+    <li><input type="checkbox" data-cl="cl-network" data-id="3"><div><div class="cl-title">bonding 功能正常</div><div class="cl-desc">聚合带宽达标，拔线测试通过</div></div></li>
+    <li><input type="checkbox" data-cl="cl-network" data-id="4"><div><div class="cl-title">VLAN 隔离正常</div><div class="cl-desc">不同 VLAN 无法互通</div></div></li>
+    <li><input type="checkbox" data-cl="cl-network" data-id="5"><div><div class="cl-title">日志已归档</div><div class="cl-desc">ethtool/dmesg/iperf3 日志已保存</div></div></li>
+  </ul>
+</div>
+
+<!-- ===== STORAGE ===== -->
+<div class="page" id="p-storage">
+  <h1>存储测试</h1>
+
+  <h2>测试目的</h2>
+  <p style="font-size:13px;color:var(--text2)">验证 ARM 服务器上所有存储设备识别正常、SMART 健康、性能达标、热插拔可靠、RAID 配置正确、长稳无异常。</p>
+
+  <h2>前置条件</h2>
+  <ul class="chk">
+    <li>所有 NVMe / SATA / SAS 硬盘已安装</li>
+    <li>RAID 卡（如有）已安装并配置</li>
+    <li>fio / nvme-cli / smartmontools 已安装</li>
+    <li>已记录固件版本和设备信息</li>
+  </ul>
+
+  <h2>测试步骤</h2>
+  <div class="steps">
+    <div class="step"><h4>磁盘识别</h4><p><code class="ic">lsblk -d</code> <code class="ic">nvme list</code> <code class="ic">lspci | grep -i nvme</code> <code class="ic">lsscsi</code></p></div>
+    <div class="step"><h4>NVMe SMART 检查</h4><p><code class="ic">nvme smart-log /dev/nvme0</code> — 确认 critical_warning=0，温度正常，无介质错误</p></div>
+    <div class="step"><h4>磁盘性能测试 (fio)</h4><p><code class="ic">fio --name=randread --rw=randread --bs=4k --iodepth=32 --numjobs=4 --time_based --runtime=60 --direct=1 --ioengine=libaio</code></p></div>
+    <div class="step"><h4>磁盘热插拔</h4><p>运行时拔出 NVMe 再插入，确认重新识别，无数据丢失</p></div>
+    <div class="step"><h4>RAID 配置验证</h4><p><code class="ic">storcli64 /c0/show</code> — 所有 VD Online，无 Degraded</p></div>
+    <div class="step"><h4>文件系统测试</h4><p><code class="ic">mkfs.ext4</code> 格式化后挂载，读写验证</p></div>
+    <div class="step"><h4>I/O 压力测试</h4><p>fio 混合压力 12H+，确认无掉盘无报错</p></div>
+    <div class="step"><h4>掉盘定位排查</h4><p>记录 PCIe 链路、NVMe 驱动、SMART 状态</p></div>
+    <div class="step"><h4>背板排查</h4><p>通过背板连接的 NVMe，验证背板信号完整性</p></div>
+  </div>
+
+  <h2>NVMe SMART 关键字段</h2>
+  <table>
+    <tr><th>字段</th><th>说明</th><th>正常值</th></tr>
+    <tr><td>critical_warning</td><td>健康告警标志</td><td>0</td></tr>
+    <tr><td>temperature</td><td>温度 (°C)</td><td>&lt; 70°C</td></tr>
+    <tr><td>available_spare</td><td>剩余可用空间百分比</td><td>&gt; 10%</td></tr>
+    <tr><td>media_errors</td><td>介质错误计数</td><td>0</td></tr>
+    <tr><td>num_err_log_entries</td><td>错误日志条目数</td><td>0</td></tr>
+    <tr><td>percentage_used</td><td>已用寿命百分比</td><td>&lt; 100%</td></tr>
+  </table>
+  <pre><code># NVMe 详细信息
+nvme id-ctrl /dev/nvme0 -H
+nvme id-ns /dev/nvme0n1 -H
+
+# 格式化 NVMe
+nvme format /dev/nvme0 --lbaf=0 --ses=1</code></pre>
+
+  <h2>fio 测试模板</h2>
+  <pre><code># 4K 随机读 (IOPS)
+fio --name=randread --rw=randread --bs=4k --iodepth=32 --numjobs=4 --time_based --runtime=60 --filename=/dev/nvme0n1 --direct=1 --ioengine=libaio
+
+# 4K 随机写 (IOPS)
+fio --name=randwrite --rw=randwrite --bs=4k --iodepth=32 --numjobs=4 --time_based --runtime=60 --filename=/dev/nvme0n1 --direct=1 --ioengine=libaio
+
+# 顺序读 (带宽)
+fio --name=seqread --rw=read --bs=128k --iodepth=32 --numjobs=4 --time_based --runtime=60 --filename=/dev/nvme0n1 --direct=1 --ioengine=libaio
+
+# 混合 70%读/30%写
+fio --name=mixed --rw=randrw --rwmixread=70 --bs=4k --iodepth=32 --numjobs=4 --time_based --runtime=60 --filename=/dev/nvme0n1 --direct=1 --ioengine=libaio</code></pre>
+
+  <h2>RAID 管理</h2>
+  <pre><code># RAID 控制器状态
+storcli64 /c0/show
+
+# 虚拟磁盘状态
+storcli64 /c0/vall show
+
+# 物理磁盘状态
+storcli64 /c0/eall/sall show
+
+# 创建 RAID1
+storcli64 /c0 add vd r1 drives=252:0,252:1
+
+# 重建 RAID
+storcli64 /c0/e252/s0 start rebuild</code></pre>
+
+  <h2>判定标准</h2>
+  <table>
+    <tr><th>测试项</th><th>Pass 条件</th></tr>
+    <tr><td>设备识别</td><td>所有硬盘 lsblk / nvme list 可见</td></tr>
+    <tr><td>SMART 检查</td><td>critical_warning=0，无告警</td></tr>
+    <tr><td>4K 随机读</td><td>≥ 厂商标称值 80%</td></tr>
+    <tr><td>顺序读</td><td>≥ 厂商标称值 90%</td></tr>
+    <tr><td>热插拔</td><td>重新识别，无数据丢失</td></tr>
+    <tr><td>RAID</td><td>所有 VD Online，无 Degraded</td></tr>
+    <tr><td>I/O 长稳</td><td>12H+ 无掉盘、无 kernel error</td></tr>
+  </table>
+
+  <h2>日志采集</h2>
+  <pre><code>nvme smart-log /dev/nvme0 > sto_smart.log
+nvme error-log /dev/nvme0 > sto_error.log
+lspci -vv -s &lt;nvme_bdf&gt; > sto_lspci.log
+dmesg | grep -iE "nvme|sd|scsi|raid" > sto_dmesg.log
+storcli64 /c0/show all > sto_raid.log</code></pre>
+
+  <h2>Checklist</h2>
+  <ul class="checklist" id="cl-storage">
+    <li><input type="checkbox" data-cl="cl-storage" data-id="0"><div><div class="cl-title">所有存储设备已识别</div><div class="cl-desc">lsblk / nvme list 显示所有已安装设备</div></div></li>
+    <li><input type="checkbox" data-cl="cl-storage" data-id="1"><div><div class="cl-title">SMART 健康检查通过</div><div class="cl-desc">critical_warning=0，无异常告警</div></div></li>
+    <li><input type="checkbox" data-cl="cl-storage" data-id="2"><div><div class="cl-title">性能测试达标</div><div class="cl-desc">fio 测试结果 ≥ 标称值</div></div></li>
+    <li><input type="checkbox" data-cl="cl-storage" data-id="3"><div><div class="cl-title">热插拔功能验证</div><div class="cl-desc">拔出再插入后设备重新识别</div></div></li>
+    <li><input type="checkbox" data-cl="cl-storage" data-id="4"><div><div class="cl-title">RAID 配置正确</div><div class="cl-desc">所有 VD Online，重建功能正常</div></div></li>
+    <li><input type="checkbox" data-cl="cl-storage" data-id="5"><div><div class="cl-title">I/O 长稳通过</div><div class="cl-desc">12H+ fio 压力无掉盘</div></div></li>
+    <li><input type="checkbox" data-cl="cl-storage" data-id="6"><div><div class="cl-title">日志已归档</div><div class="cl-desc">SMART/fio/dmesg/RAID 日志已保存</div></div></li>
+  </ul>
+</div>
+
+<!-- ===== PERFORMANCE ===== -->
+<div class="page" id="p-performance">
+  <h1>性能测试</h1>
+
+  <h2>测试目的</h2>
+  <p style="font-size:13px;color:var(--text2)">验证 ARM 服务器在 CPU、内存、磁盘、网络各维度的性能表现，与标称值或基线对比，找出瓶颈并调优。</p>
+
+  <h2>前置条件</h2>
+  <ul class="chk">
+    <li>系统空闲，无其他业务进程</li>
+    <li>CPU 调速模式设为 Performance</li>
+    <li>已记录 NUMA 拓扑和 PCIe 拓扑</li>
+    <li>所有测试工具已安装并验证</li>
+  </ul>
+
+  <h2>CPU 性能</h2>
+  <table>
+    <tr><th>工具</th><th>测试内容</th><th>说明</th></tr>
+    <tr><td>UnixBench</td><td>系统综合基准</td><td>单核/多核性能指数</td></tr>
+    <tr><td>SPEC CPU2017</td><td>INT/FP 基准</td><td>行业标准化测试</td></tr>
+  </table>
+  <pre><code># UnixBench 单核测试
+cd UnixBench && ./Run -c 1
+
+# UnixBench 多核测试
+./Run -c $(nproc)
+
+# SPEC CPU2017
+cd spec2017 && . ./shrc
+runcpu --config=kunpeng920.cfg --action=build --tune=base all
+runcpu --config=kunpeng920.cfg --tune=base --size=refrate all</code></pre>
+
+  <h2>内存带宽</h2>
+  <table>
+    <tr><th>测试项</th><th>说明</th></tr>
+    <tr><td>COPY</td><td>内存拷贝带宽</td></tr>
+    <tr><td>SCALE</td><td>内存缩放拷贝带宽</td></tr>
+    <tr><td>ADD</td><td>内存加法带宽</td></tr>
+    <tr><td>TRIAD</td><td>内存综合带宽</td></tr>
+  </table>
+  <pre><code># Stream 内存带宽测试（每个 NUMA 节点分别测试）
+numactl --cpunodebind=0 --membind=0 ./stream_c 100000000 10
+numactl --cpunodebind=0 --membind=0 ./stream_f 100000000 10
+numactl --cpunodebind=0 --membind=0 ./stream_triad 100000000 10
+
+# NUMA 交叉访问带宽（跨节点访问）
+numactl --cpunodebind=0 --membind=1 ./stream_c 100000000 10</code></pre>
+
+  <h2>磁盘性能</h2>
+  <pre><code># 4K 随机读 IOPS
+fio --name=randread --rw=randread --bs=4k --iodepth=32 --numjobs=4 --time_based --runtime=60 --filename=/dev/nvme0n1 --direct=1 --ioengine=libaio
+
+# 顺序读带宽
+fio --name=seqread --rw=read --bs=128k --iodepth=32 --numjobs=4 --time_based --runtime=60 --filename=/dev/nvme0n1 --direct=1 --ioengine=libaio</code></pre>
+
+  <h2>网络性能</h2>
+  <pre><code># 单流吞吐
+iperf3 -c &lt;server_ip&gt; -t 60
+
+# 多流聚合带宽
+iperf3 -c &lt;server_ip&gt; -P 8 -t 300
+
+# 延迟测试
+iperf3 -c &lt;server_ip&gt; -t 30 --cport</code></pre>
+
+  <h2>NUMA 绑定调优</h2>
+  <p style="font-size:13px;color:var(--text2)">ARM 双路服务器有 2 个 NUMA 节点，跨 NUMA 访问增加 20-50% 延迟。程序应绑定到设备所在节点运行。</p>
+  <pre><code># 查看 NUMA 拓扑
+lscpu | grep NUMA
+numactl --hardware
+
+# 绑定到 NVMe 所在 NUMA 节点
+numactl --cpunodebind=0 --membind=0 fio --filename=/dev/nvme0n1 ...
+
+# 绑定到网卡所在 NUMA 节点
+numactl --cpunodebind=1 --membind=1 iperf3 -s
+
+# 查看进程的 NUMA 分布
+numastat -p $(pidof program)
+numactl --show</code></pre>
+
+  <h2>调优记录</h2>
+  <table>
+    <tr><th>调优项</th><th>方法</th><th>效果</th></tr>
+    <tr><td>CPU 调速</td><td><code class="ic">cpupower frequency-set -g performance</code></td><td>避免降频影响性能</td></tr>
+    <tr><td>NUMA 绑定</td><td>进程绑定到设备所在 NUMA 节点</td><td>减少跨 NUMA 访问延迟</td></tr>
+    <tr><td>中断亲和</td><td>网卡中断绑定到指定 CPU 核</td><td>减少中断迁移开销</td></tr>
+    <tr><td>IOMMU</td><td>关闭 IOMMU（仅测试环境）</td><td>降低 DMA 延迟</td></tr>
+    <tr><td>透明大页</td><td><code class="ic">echo never > /sys/kernel/mm/transparent_hugepage/enabled</code></td><td>减少 THP 开销</td></tr>
+  </table>
+
+  <h2>判定标准</h2>
+  <table>
+    <tr><th>测试项</th><th>Pass 条件</th></tr>
+    <tr><td>CPU 性能</td><td>UnixBench ≥ 同平台基线 90%</td></tr>
+    <tr><td>内存带宽</td><td>Stream ≥ DDR4-3200 理论带宽 70%</td></tr>
+    <tr><td>磁盘性能</td><td>≥ 厂商标称值 80%</td></tr>
+    <tr><td>网络性能</td><td>≥ 标称值 90% (MTU=9000)</td></tr>
+  </table>
+
+  <h2>日志采集</h2>
+  <pre><code># 采集性能数据
+lscpu > perf_cpu.log
+numactl --hardware > perf_numa.log
+cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor > perf_governor.log
+dmesg | grep -iE "frequency|throttle" > perf_dmesg.log</code></pre>
+</div>
+
+<!-- ===== STABILITY ===== -->
+<div class="page" id="p-stability">
+  <h1>稳定性测试</h1>
+
+  <h2>测试目的</h2>
+  <p style="font-size:13px;color:var(--text2)">验证 ARM 服务器在长时间高负载下的稳定性，无死机、无数据损坏、无硬件告警、无性能衰减。</p>
+
+  <h2>前置条件</h2>
+  <ul class="chk">
+    <li>所有功能测试已通过</li>
+    <li>BMC 可远程访问，用于监控</li>
+    <li>自动化脚本已准备好</li>
+    <li>日志采集路径已配置</li>
+  </ul>
+
+  <h2>测试项</h2>
+  <table>
+    <tr><th>测试项</th><th>方法</th><th>时长</th><th>判定</th></tr>
+    <tr><td>CPU 压力</td><td>stress-ng --cpu $(nproc)</td><td>12H / 72H</td><td>无死机/panic</td></tr>
+    <tr><td>内存压力</td><td>stress-ng --vm 4 --vm-bytes 90%</td><td>12H</td><td>无 OOM/panic</td></tr>
+    <tr><td>I/O 压力</td><td>fio randrw 4K 多盘并发</td><td>12H</td><td>无掉盘/错误</td></tr>
+    <tr><td>网络压力</td><td>iperf3 多流持续打流</td><td>12H</td><td>无断流/丢包</td></tr>
+    <tr><td>混合压力</td><td>CPU + 内存 + IO + 网络并发</td><td>12H</td><td>系统正常响应</td></tr>
+    <tr><td>高低温</td><td>高低温箱 -5°C ~ 55°C</td><td>48H</td><td>无硬件告警</td></tr>
+    <tr><td>重启循环</td><td>300-500 次 reboot</td><td>自动化</td><td>100% 启动成功</td></tr>
+    <tr><td>上下电循环</td><td>DC/AC cycle 100+ 次</td><td>自动化</td><td>100% 上电成功</td></tr>
+    <tr><td>长时间运行</td><td>7×24 不间断运行</td><td>7 天</td><td>无异常</td></tr>
+  </table>
+
+  <h2>DC Cycle / Reboot 自动化</h2>
+  <pre><code># DC Cycle 脚本示例
+#!/bin/bash
+for i in $(seq 1 100); do
+  ipmitool power cycle
+  sleep 60
+  # 检查是否成功启动
+  ping -c 1 $server_ip && echo "Cycle $i OK" || echo "Cycle $i FAIL"
+done
+
+# Reboot 脚本示例
+#!/bin/bash
+for i in $(seq 1 500); do
+  ssh $server_ip "reboot"
+  sleep 90
+  ssh $server_ip "uptime" && echo "Reboot $i OK" || echo "Reboot $i FAIL"
+done</code></pre>
+
+  <h2>日志采集</h2>
+  <pre><code># 压测前清空日志
+dmesg -c
+ipmitool sel clear
+
+# 压测后检查
+dmesg | grep -iE "error|fail|panic|mce"
+ipmitool sel list
+ipmitool sensor | grep -iE "temp|fan|volt"
+
+# 定时采集（每 30 分钟）
+while true; do
+  date > /var/log/stability/$(date +%Y%m%d_%H%M%S).log
+  ipmitool sensor >> /var/log/stability/$(date +%Y%m%d_%H%M%S).log
+  sleep 1800
+done</code></pre>
+
+  <h2>判定标准</h2>
+  <ul class="chk">
+    <li>测试期间无死机 / Kernel panic</li>
+    <li>dmesg 无 hardware error</li>
+    <li>SEL 无新增 Critical 事件</li>
+    <li>所有传感器状态正常 (ok)</li>
+    <li>温度未超过规格上限</li>
+    <li>DC Cycle / Reboot 成功率 100%</li>
+    <li>性能数据无明显衰减</li>
+  </ul>
+
+  <h2>Checklist</h2>
+  <ul class="checklist" id="cl-stability">
+    <li><input type="checkbox" data-cl="cl-stability" data-id="0"><div><div class="cl-title">压测前环境确认</div><div class="cl-desc">硬件配置/固件版本/OS 版本已记录，SEL 已清空</div></div></li>
+    <li><input type="checkbox" data-cl="cl-stability" data-id="1"><div><div class="cl-title">CPU 压力测试通过</div><div class="cl-desc">stress-ng 12H+ 无死机</div></div></li>
+    <li><input type="checkbox" data-cl="cl-stability" data-id="2"><div><div class="cl-title">内存压力测试通过</div><div class="cl-desc">stress-ng vm 12H 无 OOM</div></div></li>
+    <li><input type="checkbox" data-cl="cl-stability" data-id="3"><div><div class="cl-title">I/O 压力测试通过</div><div class="cl-desc">fio 12H 无掉盘无错误</div></div></li>
+    <li><input type="checkbox" data-cl="cl-stability" data-id="4"><div><div class="cl-title">DC Cycle 通过</div><div class="cl-desc">100 次断电重启均成功</div></div></li>
+    <li><input type="checkbox" data-cl="cl-stability" data-id="5"><div><div class="cl-title">Reboot 通过</div><div class="cl-desc">500 次重启均成功启动</div></div></li>
+    <li><input type="checkbox" data-cl="cl-stability" data-id="6"><div><div class="cl-title">压测后日志已归档</div><div class="cl-desc">dmesg/SEL/传感器日志已保存</div></div></li>
+    <li><input type="checkbox" data-cl="cl-stability" data-id="7"><div><div class="cl-title">无遗留问题</div><div class="cl-desc">所有异常已登记问题单</div></div></li>
+  </ul>
+</div>
+
+<!-- ===== COMPATIBILITY ===== -->
+<div class="page" id="p-compatibility">
+  <h1>兼容性测试</h1>
+
+  <h2>测试目的</h2>
+  <p style="font-size:13px;color:var(--text2)">验证 ARM 服务器与不同 OS、硬件组件、固件版本的兼容性。</p>
+
+  <h2>兼容性矩阵</h2>
+  <table>
+    <tr><th>维度</th><th>内容</th></tr>
+    <tr><td>OS 兼容性</td><td>openEuler / Ubuntu / CentOS / Kylin</td></tr>
+    <tr><td>Kernel 兼容性</td><td>不同内核版本 (5.10 / 5.15 / 6.x)</td></tr>
+    <tr><td>网卡兼容性</td><td>hns3 / mlx5 / ixgbe / ice 等驱动</td></tr>
+    <tr><td>NVMe 兼容性</td><td>不同品牌型号 NVMe SSD</td></tr>
+    <tr><td>RAID 卡兼容性</td><td>Broadcom / Huawei RAID 控制器</td></tr>
+    <tr><td>GPU/DPU/FPGA</td><td>昇腾 / NVIDIA / Intel 加速卡</td></tr>
+    <tr><td>固件版本矩阵</td><td>不同 BIOS/BMC 版本组合</td></tr>
+  </table>
+
+  <h2>判定标准</h2>
+  <p style="font-size:13px;color:var(--text2)">每个组合执行冒烟测试（设备识别 + 基本功能），PASS 记入兼容性矩阵，FAIL 登记问题单。</p>
+</div>
+
+<!-- ===== FAULT INJECTION ===== -->
+<div class="page" id="p-fault-inject">
+  <h1>故障注入</h1>
+  <div class="alert warn">故障注入用于验证系统的容错能力和恢复机制。请在测试环境中执行。</div>
+
+  <h2>故障注入项</h2>
+  <table>
+    <tr><th>故障项</th><th>方法</th><th>预期结果</th></tr>
+    <tr><td>磁盘热插拔</td><td>运行时拔出 NVMe 再插入</td><td>OS 重新识别，无数据丢失</td></tr>
+    <tr><td>网线插拔</td><td>运行时拔掉网线再插回</td><td>Link 恢复，网络自动恢复</td></tr>
+    <tr><td>电源插拔</td><td>拔掉一个电源模块</td><td>冗余电源接管，系统不关机</td></tr>
+    <tr><td>风扇异常</td><td>拔掉一个风扇模块</td><td>BMC 告警，其余风扇加速</td></tr>
+    <tr><td>BMC 重启</td><td>OS 运行时冷重启 BMC</td><td>OS 不受影响，BMC 恢复正常</td></tr>
+    <tr><td>OS panic</td><td>echo c > /proc/sysrq-trigger</td><td>Kdump 保存 vmcore</td></tr>
+    <tr><td>Watchdog</td><td>触发看门狗超时</td><td>系统自动重启</td></tr>
+    <tr><td>PCIe AER</td><td>注入 PCIe 错误</td><td>系统记录 AER 日志，可恢复</td></tr>
+    <tr><td>内存 ECC</td><td>注入内存 ECC 错误</td><td>系统记录 ECC 日志，可纠正/不可纠正</td></tr>
+  </table>
+</div>
+
+<!-- ===== AUTOMATION ===== -->
+<div class="page" id="p-automation">
+  <h1>自动化测试</h1>
+
+  <h2>脚本规范</h2>
+  <table>
+    <tr><th>规范</th><th>说明</th></tr>
+    <tr><td>目录</td><td><code class="ic">scripts/&lt;模块&gt;/</code> 按模块组织</td></tr>
+    <tr><td>命名</td><td><code class="ic">&lt;模块&gt;_&lt;测试项&gt;.py</code> 如 <code class="ic">net_iperf3.py</code></td></tr>
+    <tr><td>参数</td><td>使用 argparse，支持 --target --duration --output</td></tr>
+    <tr><td>日志</td><td>输出到 <code class="ic">logs/&lt;模块&gt;/&lt;日期&gt;/</code> 目录</td></tr>
+  </table>
+
+  <h2>结果 JSON 格式</h2>
+  <pre><code>{
+  "case_id": "NET-001",
+  "case_name": "网口带宽测试",
+  "platform": "ARM-Server",
+  "os": "Ubuntu 22.04",
+  "firmware": "1.0.0",
+  "result": "PASS",
+  "start_time": "2026-05-09 10:00:00",
+  "end_time": "2026-05-09 10:30:00",
+  "logs": ["iperf3.log", "dmesg.log"]
+}</code></pre>
+
+  <h2>失败重跑与报告</h2>
+  <ul class="chk">
+    <li>失败用例自动重跑 1-2 次</li>
+    <li>报告包含：通过率、失败用例清单、性能数据对比</li>
+    <li>CI 集成：Jenkins / GitLab CI 定时触发</li>
+  </ul>
+</div>
+
+<!-- ===== TEST CASES ===== -->
+<div class="page" id="p-test-cases">
+  <h1>测试用例库</h1>
+  <div class="alert info">测试用例按模块组织，优先级 P0(冒烟/阻塞) / P1(核心功能) / P2(常规覆盖) / P3(扩展验证)。</div>
+
+  <h2>用例总览</h2>
+  <table>
+    <tr><th>编号</th><th>模块</th><th>测试项</th><th>优先级</th><th>前置条件</th><th>判定标准</th><th>关联脚本</th><th>适用平台</th><th>维护人</th><th>更新时间</th></tr>
+    <tr><td>BMC-001</td><td>BMC</td><td>传感器状态检查</td><td><span class="tag green">P0</span></td><td>BMC 正常运行</td><td>所有传感器 ok</td><td>bmc_sensor.py</td><td>Kunpeng 920</td><td>SIT Team</td><td>2026-05-09</td></tr>
+    <tr><td>BMC-002</td><td>BMC</td><td>SEL 日志清除与记录</td><td><span class="tag green">P1</span></td><td>BMC 正常运行</td><td>清除后无旧事件</td><td>bmc_sel.py</td><td>Kunpeng 920</td><td>SIT Team</td><td>2026-05-09</td></tr>
+    <tr><td>BMC-003</td><td>BMC</td><td>固件升级验证</td><td><span class="tag green">P1</span></td><td>升级包已上传</td><td>升级后版本正确</td><td>bmc_upgrade.py</td><td>Kunpeng 920</td><td>SIT Team</td><td>2026-05-09</td></tr>
+    <tr><td>BMC-004</td><td>BMC</td><td>Redfish 接口验证</td><td><span class="tag green">P1</span></td><td>BMC Web 正常</td><td>API 返回正确 JSON</td><td>bmc_redfish.py</td><td>S920X20</td><td>SIT Team</td><td>2026-05-09</td></tr>
+    <tr><td>BMC-005</td><td>BMC</td><td>SOL 串口重定向</td><td><span class="tag green">P0</span></td><td>SOL 已配置</td><td>可查看启动日志</td><td>bmc_sol.py</td><td>Kunpeng 920</td><td>SIT Team</td><td>2026-05-09</td></tr>
+    <tr><td>BMC-006</td><td>BMC</td><td>电源远程控制</td><td><span class="tag green">P0</span></td><td>BMC 正常运行</td><td>开机/关机/重启均成功</td><td>bmc_power.py</td><td>Kunpeng 920</td><td>SIT Team</td><td>2026-05-09</td></tr>
+    <tr><td>NET-001</td><td>网络</td><td>网口带宽测试</td><td><span class="tag green">P0</span></td><td>两端 iperf3 就绪</td><td>≥ 标称值 90%</td><td>net_iperf3.py</td><td>Kunpeng 920</td><td>SIT Team</td><td>2026-05-09</td></tr>
+    <tr><td>NET-002</td><td>网络</td><td>bonding 聚合带宽</td><td><span class="tag blue">P2</span></td><td>双网口连接交换机</td><td>≥ 单口 × N × 0.9</td><td>net_bond.py</td><td>Kunpeng 920</td><td>SIT Team</td><td>2026-05-09</td></tr>
+    <tr><td>NET-003</td><td>网络</td><td>RoCE 连通性</td><td><span class="tag blue">P2</span></td><td>RoCE 已配置</td><td>rping 通</td><td>net_roce.py</td><td>Kunpeng 920</td><td>SIT Team</td><td>2026-05-09</td></tr>
+    <tr><td>NET-004</td><td>网络</td><td>VLAN 功能验证</td><td><span class="tag blue">P2</span></td><td>交换机 VLAN 已配置</td><td>VLAN 隔离正常</td><td>net_vlan.py</td><td>Kunpeng 920</td><td>SIT Team</td><td>2026-05-09</td></tr>
+    <tr><td>NET-005</td><td>网络</td><td>网口热插拔</td><td><span class="tag green">P1</span></td><td>系统运行中</td><td>Link 恢复，网络自动恢复</td><td>net_hotplug.py</td><td>Kunpeng 920</td><td>SIT Team</td><td>2026-05-09</td></tr>
+    <tr><td>STO-001</td><td>存储</td><td>NVMe SMART 检查</td><td><span class="tag green">P0</span></td><td>NVMe 已识别</td><td>critical_warning=0</td><td>sto_smart.py</td><td>Kunpeng 920</td><td>SIT Team</td><td>2026-05-09</td></tr>
+    <tr><td>STO-002</td><td>存储</td><td>4K 随机读性能</td><td><span class="tag green">P1</span></td><td>NVMe 空闲</td><td>≥ 标称值 80%</td><td>sto_fio.py</td><td>Kunpeng 920</td><td>SIT Team</td><td>2026-05-09</td></tr>
+    <tr><td>STO-003</td><td>存储</td><td>NVMe 热插拔</td><td><span class="tag green">P1</span></td><td>系统运行中</td><td>重新识别，无数据丢失</td><td>sto_hotplug.py</td><td>Kunpeng 920</td><td>SIT Team</td><td>2026-05-09</td></tr>
+    <tr><td>STO-004</td><td>存储</td><td>RAID VD 状态</td><td><span class="tag green">P0</span></td><td>RAID 卡已安装</td><td>所有 VD Online</td><td>sto_raid.py</td><td>Kunpeng 920</td><td>SIT Team</td><td>2026-05-09</td></tr>
+    <tr><td>STO-005</td><td>存储</td><td>NVMe 长稳测试</td><td><span class="tag green">P1</span></td><td>系统运行中</td><td>12H 无掉盘无报错</td><td>sto_stress.py</td><td>Kunpeng 920</td><td>SIT Team</td><td>2026-05-09</td></tr>
+    <tr><td>PERF-001</td><td>性能</td><td>CPU 基准性能</td><td><span class="tag blue">P2</span></td><td>系统空闲</td><td>UnixBench ≥ 基线 90%</td><td>perf_cpu.sh</td><td>Kunpeng 920</td><td>SIT Team</td><td>2026-05-09</td></tr>
+    <tr><td>PERF-002</td><td>性能</td><td>内存带宽</td><td><span class="tag blue">P2</span></td><td>系统空闲</td><td>Stream ≥ 理论 70%</td><td>perf_mem.sh</td><td>Kunpeng 920</td><td>SIT Team</td><td>2026-05-09</td></tr>
+    <tr><td>STB-001</td><td>稳定性</td><td>CPU 压力 72H</td><td><span class="tag green">P0</span></td><td>系统空闲</td><td>72H 无死机无 panic</td><td>stb_cpu.sh</td><td>Kunpeng 920</td><td>SIT Team</td><td>2026-05-09</td></tr>
+    <tr><td>STB-002</td><td>稳定性</td><td>DC Cycle 100 次</td><td><span class="tag green">P0</span></td><td>BMC 正常</td><td>100 次均成功启动</td><td>stb_dc.sh</td><td>Kunpeng 920</td><td>SIT Team</td><td>2026-05-09</td></tr>
+    <tr><td>COMP-001</td><td>兼容性</td><td>openEuler 22.03</td><td><span class="tag green">P0</span></td><td>安装介质就绪</td><td>安装成功，设备识别正常</td><td>comp_os.sh</td><td>Kunpeng 920</td><td>SIT Team</td><td>2026-05-09</td></tr>
+    <tr><td>COMP-002</td><td>兼容性</td><td>Ubuntu 22.04</td><td><span class="tag green">P1</span></td><td>安装介质就绪</td><td>安装成功，设备识别正常</td><td>comp_os.sh</td><td>Kunpeng 920</td><td>SIT Team</td><td>2026-05-09</td></tr>
+  </table>
+
+  <h2>模块详细用例</h2>
+  <div class="tabs" id="tcTabs">
+    <div class="tab active" onclick="switchTcTab(0)">BMC 详细</div>
+    <div class="tab" onclick="switchTcTab(1)">网络详细</div>
+    <div class="tab" onclick="switchTcTab(2)">存储详细</div>
+    <div class="tab" onclick="switchTcTab(3)">性能详细</div>
+    <div class="tab" onclick="switchTcTab(4)">稳定性详细</div>
+  </div>
+
+  <div class="tab-content active" id="tcTab0">
+  <table>
+    <tr><th>编号</th><th>测试项</th><th>前置条件</th><th>步骤</th><th>预期结果</th><th>脚本</th></tr>
+    <tr><td>BMC-001</td><td>传感器状态</td><td>BMC 正常运行</td><td>ipmitool sensor</td><td>所有传感器 ok</td><td>bmc_sensor.py</td></tr>
+    <tr><td>BMC-002</td><td>SEL 日志</td><td>BMC 正常运行</td><td>sel clear → sel list</td><td>无旧事件</td><td>bmc_sel.py</td></tr>
+    <tr><td>BMC-003</td><td>固件升级</td><td>升级包已上传</td><td>ipmcset upgradebios</td><td>版本正确</td><td>bmc_upgrade.py</td></tr>
+    <tr><td>BMC-004</td><td>Redfish 接口</td><td>BMC Web 正常</td><td>curl redfish API</td><td>返回正确 JSON</td><td>bmc_redfish.py</td></tr>
+    <tr><td>BMC-005</td><td>SOL 重定向</td><td>SOL 已配置</td><td>sol activate</td><td>可查看启动日志</td><td>bmc_sol.py</td></tr>
+    <tr><td>BMC-006</td><td>电源控制</td><td>BMC 正常</td><td>power on/off/cycle</td><td>均成功执行</td><td>bmc_power.py</td></tr>
+  </table>
+  </div>
+  <div class="tab-content" id="tcTab1">
+  <table>
+    <tr><th>编号</th><th>测试项</th><th>前置条件</th><th>步骤</th><th>预期结果</th><th>脚本</th></tr>
+    <tr><td>NET-001</td><td>带宽测试</td><td>两端 iperf3 就绪</td><td>iperf3 -c -P 8 -t 300</td><td>≥ 标称值 90%</td><td>net_iperf3.py</td></tr>
+    <tr><td>NET-002</td><td>bonding</td><td>双网口连接交换机</td><td>配置 bond0 mode 4</td><td>聚合带宽达标</td><td>net_bond.py</td></tr>
+    <tr><td>NET-003</td><td>RoCE</td><td>RoCE 已配置</td><td>rdma link / rping</td><td>rping 通</td><td>net_roce.py</td></tr>
+    <tr><td>NET-004</td><td>VLAN</td><td>交换机 VLAN 就绪</td><td>创建 vlan 并 ping</td><td>VLAN 隔离正常</td><td>net_vlan.py</td></tr>
+    <tr><td>NET-005</td><td>网口热插拔</td><td>系统运行中</td><td>拔线 → 插线 → ping</td><td>Link 恢复，网络恢复</td><td>net_hotplug.py</td></tr>
+  </table>
+  </div>
+  <div class="tab-content" id="tcTab2">
+  <table>
+    <tr><th>编号</th><th>测试项</th><th>前置条件</th><th>步骤</th><th>预期结果</th><th>脚本</th></tr>
+    <tr><td>STO-001</td><td>SMART 检查</td><td>NVMe 已识别</td><td>nvme smart-log</td><td>critical_warning=0</td><td>sto_smart.py</td></tr>
+    <tr><td>STO-002</td><td>4K 性能</td><td>NVMe 空闲</td><td>fio randrw 4K</td><td>≥ 标称值 80%</td><td>sto_fio.py</td></tr>
+    <tr><td>STO-003</td><td>热插拔</td><td>系统运行中</td><td>拔出再插入</td><td>重新识别，无数据丢失</td><td>sto_hotplug.py</td></tr>
+    <tr><td>STO-004</td><td>RAID VD</td><td>RAID 卡已安装</td><td>storcli64 /c0/vall show</td><td>所有 VD Online</td><td>sto_raid.py</td></tr>
+    <tr><td>STO-005</td><td>长稳测试</td><td>系统运行中</td><td>fio 12H 混合压力</td><td>无掉盘无报错</td><td>sto_stress.py</td></tr>
+  </table>
+  </div>
+  <div class="tab-content" id="tcTab3">
+  <table>
+    <tr><th>编号</th><th>测试项</th><th>前置条件</th><th>步骤</th><th>预期结果</th><th>脚本</th></tr>
+    <tr><td>PERF-001</td><td>CPU 基准</td><td>系统空闲</td><td>UnixBench</td><td>≥ 基线 90%</td><td>perf_cpu.sh</td></tr>
+    <tr><td>PERF-002</td><td>内存带宽</td><td>系统空闲</td><td>Stream</td><td>≥ 理论 70%</td><td>perf_mem.sh</td></tr>
+  </table>
+  </div>
+  <div class="tab-content" id="tcTab4">
+  <table>
+    <tr><th>编号</th><th>测试项</th><th>前置条件</th><th>步骤</th><th>预期结果</th><th>脚本</th></tr>
+    <tr><td>STB-001</td><td>CPU 压力 72H</td><td>系统空闲</td><td>stress-ng --cpu $(nproc)</td><td>72H 无死机</td><td>stb_cpu.sh</td></tr>
+    <tr><td>STB-002</td><td>DC Cycle 100 次</td><td>BMC 正常</td><td>ipmitool power cycle × 100</td><td>均成功启动</td><td>stb_dc.sh</td></tr>
+  </table>
+  </div>
+</div>
+
+<!-- ===== TROUBLESHOOT ===== -->
+<div class="page" id="p-troubleshoot">
+  <h1>问题定位手册</h1>
+  <div class="alert warn">按故障现象分类，每种包含：现象描述、快速判断、排查流程、相关命令、日志路径、常见原因、解决方案、升级材料。</div>
+
+  <h2>选择故障现象</h2>
+  <div class="wiz">
+    <h3>你遇到了什么问题？</h3>
+    <div class="wiz-options" id="wizCat">
+      <button class="wiz-btn" onclick="showWiz('no-power')">无法上电</button>
+      <button class="wiz-btn" onclick="showWiz('no-bios')">无法进 BIOS</button>
+      <button class="wiz-btn" onclick="showWiz('no-os')">无法进 OS</button>
+      <button class="wiz-btn" onclick="showWiz('no-net')">网口不通</button>
+      <button class="wiz-btn" onclick="showWiz('no-nvme')">NVMe 掉盘</button>
+      <button class="wiz-btn" onclick="showWiz('no-pcie')">PCIe 设备丢失</button>
+      <button class="wiz-btn" onclick="showWiz('no-bmc-web')">BMC Web 无法访问</button>
+      <button class="wiz-btn" onclick="showWiz('no-ipmi')">IPMI 无响应</button>
+      <button class="wiz-btn" onclick="showWiz('low-perf')">性能低于预期</button>
+      <button class="wiz-btn" onclick="showWiz('stress-crash')">压力测试死机</button>
+      <button class="wiz-btn" onclick="showWiz('panic')">Kernel panic</button>
+      <button class="wiz-btn" onclick="showWiz('fan-full')">风扇满转</button>
+      <button class="wiz-btn" onclick="showWiz('sensor-abnormal')">传感器异常</button>
+    </div>
+  </div>
+
+  <div id="wiz-no-power" class="wiz-result">
+    <div class="wiz-path">服务器无法上电 → 排查流程</div>
+    <h3>现象</h3><p>按下电源键无反应，前面板指示灯不亮。</p>
+    <h3>排查流程</h3>
+    <div class="steps">
+      <div class="step"><h4>检查电源模块</h4><p>确认电源线连接、PSU 指示灯状态</p></div>
+      <div class="step"><h4>通过 BMC 检查</h4><p><code class="ic">ipmitool power status</code> — 如果 BMC 能访问，尝试 <code class="ic">ipmitool power on</code></p></div>
+      <div class="step"><h4>检查 BMC 日志</h4><p><code class="ic">ipmitool sel list</code> — 查找电源相关事件</p></div>
+      <div class="step"><h4>最小化硬件</h4><p>只保留 CPU + 1 DIMM + 电源，尝试上电</p></div>
+    </div>
+    <h3>升级给研发所需材料</h3><p>BMC SEL 日志 + 串口日志 + 最小化配置清单</p>
+  </div>
+
+  <div id="wiz-no-bios" class="wiz-result">
+    <div class="wiz-path">无法进入 BIOS/UEFI → 排查流程</div>
+    <h3>现象</h3><p>开机后无法进入 BIOS 设置界面，或 UEFI 启动卡住。</p>
+    <h3>排查流程</h3>
+    <div class="steps">
+      <div class="step"><h4>通过 SOL 查看启动日志</h4><p><code class="ic">ipmitool sol activate</code></p></div>
+      <div class="step"><h4>检查 TF-A / U-Boot</h4><p>确认串口输出是否正常到 UEFI 阶段</p></div>
+      <div class="step"><h4>清除 NVRAM</h4><p>清除 BIOS 设置，恢复默认</p></div>
+      <div class="step"><h4>升级 BIOS 固件</h4><p>检查是否为固件 Bug</p></div>
+    </div>
+    <h3>升级材料</h3><p>串口完整启动日志 + BIOS 版本 + NVRAM 清除前后对比</p>
+  </div>
+
+  <div id="wiz-no-os" class="wiz-result">
+    <div class="wiz-path">无法进入 OS → 排查流程</div>
+    <h3>现象</h3><p>UEFI 引导失败、Kernel panic、文件系统挂载失败。</p>
+    <h3>排查流程</h3>
+    <div class="steps">
+      <div class="step"><h4>检查 UEFI boot order</h4><p>确认系统盘在引导列表中</p></div>
+      <div class="step"><h4>检查系统盘识别</h4><p>UEFI shell 中 <code class="ic">map -r</code> 查看磁盘映射</p></div>
+      <div class="step"><h4>串口抓取 Kernel 日志</h4><p>确认 panic 位置（驱动/内存/ACPI）</p></div>
+      <div class="step"><h4>单用户模式</h4><p>修改 grub 参数进入 emergency 模式</p></div>
+    </div>
+    <h3>升级材料</h3><p>Kernel panic 完整日志 + grub 配置 + 系统盘 SMART 信息</p>
+  </div>
+
+  <div id="wiz-no-net" class="wiz-result">
+    <div class="wiz-path">网口不通 → 排查流程</div>
+    <h3>现象</h3><p>网口 Link 不亮 / ping 不通 / DHCP 获取失败。</p>
+    <h3>排查流程</h3>
+    <div class="steps">
+      <div class="step"><h4>物理层</h4><p>网线连接、交换机端口状态、光模块</p></div>
+      <div class="step"><h4>ethtool 检查</h4><p><code class="ic">ethtool eth0</code> — Link detected? Speed?</p></div>
+      <div class="step"><h4>驱动检查</h4><p><code class="ic">lsmod | grep hns3</code> <code class="ic">dmesg | grep hns3</code></p></div>
+      <div class="step"><h4>重载驱动</h4><p><code class="ic">rmmod hns3 && modprobe hns3</code></p></div>
+    </div>
+    <h3>升级材料</h3><p>ethtool 输出 + dmesg + lspci -vv 网卡详情 + 对端交换机配置</p>
+  </div>
+
+  <div id="wiz-no-nvme" class="wiz-result">
+    <div class="wiz-path">NVMe <think> <think> → 排查流程</div>
+    <h3>现象</h3><p>lsblk 看不到 NVMe，或 nvme list 不识别。</p>
+    <h3>排查流程</h3>
+    <div class="steps">
+      <div class="step"><h4>PCIe 层确认</h4><p><code class="ic">lspci | grep -i nvme</code> — 能看到 = 枚举成功</p></div>
+      <div class="step"><h4>驱动确认</h4><p><code class="ic">lsmod | grep nvme</code> <code class="ic">dmesg | grep nvme</code></p></div>
+      <div class="step"><h4>PCIe 链路</h4><p><code class="ic">lspci -vv -s &lt;BDF&gt; | grep LnkSta</code></p></div>
+      <div class="step"><h4>重新扫描</h4><p><code class="ic">echo 1 > /sys/bus/pci/rescan</code></p></div>
+      <div class="step"><h4>物理排查</h4><p>重插 NVMe，检查金手指和插槽</p></div>
+    </div>
+    <h3>升级材料</h3><p>lspci -vv + dmesg + nvme smart-log + 硬件配置清单</p>
+  </div>
+
+  <div id="wiz-no-pcie" class="wiz-result">
+    <div class="wiz-path">PCIe 设备丢失 → 排查流程</div>
+    <h3>排查流程</h3>
+    <div class="steps">
+      <div class="step"><h4>lspci 确认</h4><p><code class="ic">lspci | grep -iE "network|nvme|raid"</code></p></div>
+      <div class="step"><h4>检查 PCIe 拓扑</h4><p><code class="ic">lspci -tv</code> — 确认设备是否从拓扑中消失</p></div>
+      <div class="step"><h4>检查 BIOS 配置</h4><p>PCIe bifurcation 设置是否正确</p></div>
+      <div class="step"><h4>换槽测试</h4><p>将设备换到另一个 PCIe 槽位</p></div>
+    </div>
+    <h3>升级材料</h3><p>lspci -tv + BIOS 配置 + 换槽测试结果</p>
+  </div>
+
+  <div id="wiz-no-bmc-web" class="wiz-result">
+    <div class="wiz-path">BMC Web 无法访问 → 排查流程</div>
+    <h3>排查流程</h3>
+    <div class="steps">
+      <div class="step"><h4>网络层</h4><p><code class="ic">ping &lt;bmc_ip&gt;</code> — 确认网络可达</p></div>
+      <div class="step"><h4>端口检查</h4><p><code class="ic">telnet &lt;bmc_ip&gt; 443</code></p></div>
+      <div class="step"><h4>通过 IPMI/SSH 访问 BMC</h4><p><code class="ic">ipmitool -I lanplus -H &lt;bmc_ip&gt; -U admin mc info</code></p></div>
+      <div class="step"><h4>重启 BMC Web 服务</h4><p>或冷重启 BMC</p></div>
+    </div>
+    <h3>升级材料</h3><p>BMC 版本 + Web 错误截图 + 网络抓包</p>
+  </div>
+
+  <div id="wiz-no-ipmi" class="wiz-result">
+    <div class="wiz-path">IPMI 命令无响应 → 排查流程</div>
+    <h3>排查流程</h3>
+    <div class="steps">
+      <div class="step"><h4>本地 IPMI</h4><p><code class="ic">ipmitool mc info</code> — 本地是否可用</p></div>
+      <div class="step"><h4>远程 IPMI</h4><p><code class="ic">ipmitool -I lanplus -H &lt;bmc_ip&gt; mc info</code></p></div>
+      <div class="step"><h4>冷重启 BMC</h4><p><code class="ic">ipmitool mc reset cold</code></p></div>
+    </div>
+    <h3>升级材料</h3><p>BMC 版本 + ipmitool 输出 + 网络配置</p>
+  </div>
+
+  <div id="wiz-low-perf" class="wiz-result">
+    <div class="wiz-path">性能低于预期 → 排查流程</div>
+    <h3>排查流程</h3>
+    <div class="steps">
+      <div class="step"><h4>检查温度</h4><p>高温触发降频：<code class="ic">ipmitool sensor | grep temp</code></p></div>
+      <div class="step"><h4>检查 NUMA</h4><p>确认进程和设备在同一 NUMA 节点</p></div>
+      <div class="step"><h4>检查 PCIe 链路</h4><p><code class="ic">lspci -vv | grep LnkSta</code> — 是否降级</p></div>
+      <div class="step"><h4>对比基线</h4><p>与同平台基线数据对比</p></div>
+    </div>
+    <h3>升级材料</h3><p>性能测试完整输出 + NUMA 绑定信息 + PCIe 链路状态</p>
+  </div>
+
+  <div id="wiz-stress-crash" class="wiz-result">
+    <div class="wiz-path">压力测试死机 → 排查流程</div>
+    <h3>排查流程</h3>
+    <div class="steps">
+      <div class="step"><h4>检查 Kdump</h4><p><code class="ic">ls /var/crash/</code> — 是否有 vmcore</p></div>
+      <div class="step"><h4>检查 SEL</h4><p><code class="ic">ipmitool sel list</code> — 硬件错误</p></div>
+      <div class="step"><h4>检查温度</h4><p>过热保护触发关机</p></div>
+      <div class="step"><h4>分析 vmcore</h4><p>crash 工具分析内核转储</p></div>
+    </div>
+    <h3>升级材料</h3><p>vmcore + SEL + 测试时完整日志</p>
+  </div>
+
+  <div id="wiz-panic" class="wiz-result">
+    <div class="wiz-path">Kernel panic → 排查流程</div>
+    <h3>排查流程</h3>
+    <div class="steps">
+      <div class="step"><h4>串口抓取 panic 日志</h4><p>确认 panic 原因（NULL pointer / OOM / driver bug）</p></div>
+      <div class="step"><h4>检查 Kdump</h4><p>vmcore 分析</p></div>
+      <div class="step"><h4>检查 dmesg</h4><p>panic 前的最后日志</p></div>
+    </div>
+    <h3>升级材料</h3><p>panic 完整日志 + vmcore + Kernel 版本</p>
+  </div>
+
+  <div id="wiz-fan-full" class="wiz-result">
+    <div class="wiz-path">风扇满转 → 排查流程</div>
+    <h3>排查流程</h3>
+    <div class="steps">
+      <div class="step"><h4>检查温度</h4><p><code class="ic">ipmitool sensor | grep temp</code> — 是否有高温</p></div>
+      <div class="step"><h4>检查风扇故障</h4><p><code class="ic">ipmitool sensor | grep fan</code> — 是否有风扇停转</p></div>
+      <div class="step"><h4>检查机箱盖</h4><p>机箱盖传感器（cover sensor）会触发风扇满转</p></div>
+    </div>
+    <h3>升级材料</h3><p>传感器完整输出 + BMC Web 截图</p>
+  </div>
+
+  <div id="wiz-sensor-abnormal" class="wiz-result">
+    <div class="wiz-path">传感器异常 → 排查流程</div>
+    <h3>排查流程</h3>
+    <div class="steps">
+      <div class="step"><h4>确认传感器状态</h4><p><code class="ic">ipmitool sensor</code> — cr/nr/ok 状态</p></div>
+      <div class="step"><h4>对比 BMC Web</h4><p>IPMI 与 Web 数据是否一致</p></div>
+      <div class="step"><h4>检查 SEL</h4><p><code class="ic">ipmitool sel list</code> — 是否有告警事件</p></div>
+      <div class="step"><h4>升级 BMC</h4><p>部分传感器数据异常是 BMC 固件 Bug</p></div>
+    </div>
+    <h3>升级材料</h3><p>传感器完整输出 + SEL + BMC 版本</p>
+  </div>
+</div>
+
+<!-- ===== TEMPLATES ===== -->
+<div class="page" id="p-templates">
+  <h1>项目交付模板</h1>
+  <div class="alert info">统一的测试文档模板，适用于所有 ARM 服务器 SIT 测试项目交付。</div>
+
+  <h2>文档模板结构</h2>
+  <pre><code># 测试项名称
+
+## 基本信息
+- 模块：
+- 优先级：P0/P1/P2/P3
+- 适用平台：
+- 适用 OS：
+- 维护人：
+- 更新时间：
+
+## 测试目的
+
+## 前置条件
+
+## 测试步骤
+
+## 预期结果
+
+## 判定标准
+
+## 常用命令
+
+## 日志采集
+
+## 常见问题
+
+## 关联用例
+
+## 关联脚本</code></pre>
+
+  <h2>测试计划模板</h2>
+  <pre><code># [项目名称] SIT 测试计划
+
+## 1. 概述
+- 项目名称：
+- 测试阶段：EVT / DVT / PVT
+- 测试时间：YYYY-MM-DD ~ YYYY-MM-DD
+
+## 2. 测试范围
+- 测试模块：BMC / 网络 / 存储 / 性能 / 稳定性 / 兼容性
+- 不测试模块：
+
+## 3. 资源配置
+- 服务器数量：
+- 测试人员：
+- 测试工具：fio / iperf3 / stress-ng / UnixBench
+
+## 4. 测试环境
+- 硬件配置：CPU / 内存 / 存储 / 网卡
+- 固件版本：BIOS / BMC / CPLD
+- OS 版本：
+
+## 5. 风险评估
+- 高风险：
+- 中风险：
+- 缓解措施：
+
+## 6. 交付物
+- 测试报告
+- 问题清单
+- 测试日志
+- 兼容性矩阵</code></pre>
+
+  <h2>测试报告模板</h2>
+  <pre><code># [项目名称] SIT 测试报告
+
+## 1. 执行概况
+- 测试时间：
+- 测试人员：
+- 总用例数：
+- 通过数：
+- 失败数：
+- 跳过数：
+- 通过率：
+
+## 2. 测试覆盖
+| 模块 | 用例数 | 通过 | 失败 | 跳过 | 覆盖率 |
+|------|--------|------|------|------|--------|
+| BMC  |        |      |      |      |        |
+| 网络 |        |      |      |      |        |
+| 存储 |        |      |      |      |        |
+| 性能 |        |      |      |      |        |
+| 稳定性 |      |      |      |      |        |
+
+## 3. 性能数据
+| 测试项 | 标称值 | 实测值 | 偏差 | 结论 |
+|--------|--------|--------|------|------|
+
+## 4. 问题清单
+| 编号 | 描述 | 严重程度 | 状态 | 责任人 |
+|------|------|----------|------|--------|
+
+## 5. 结论
+- 测试结论：通过 / 不通过
+- 遗留问题：
+- 建议：</code></pre>
+
+  <h2>问题单模板</h2>
+  <pre><code># 问题单
+
+## 基本信息
+- 编号：BUG-XXXX
+- 项目名称：
+- 提交人：
+- 提交日期：
+- 严重程度：Critical / Major / Minor
+- 状态：Open / Fixed / Verified / Closed
+
+## 问题描述
+- 现象：
+- 复现步骤：
+- 影响范围：
+
+## 环境信息
+- 硬件配置：
+- 固件版本：BIOS / BMC
+- OS 版本：
+- Kernel 版本：
+
+## 日志附件
+- dmesg 日志：
+- SEL 日志：
+- 相关截图：
+
+## 根因分析（研发填写）
+- 根因：
+- 修复方案：
+- 修复版本：</code></pre>
+
+  <h2>风险评估模板</h2>
+  <pre><code># [项目名称] 风险评估
+
+## 高风险项
+| 编号 | 风险描述 | 影响范围 | 概率 | 影响 | 缓解措施 | 责任人 |
+|------|----------|----------|------|------|----------|--------|
+
+## 中风险项
+| 编号 | 风险描述 | 影响范围 | 概率 | 影响 | 缓解措施 | 责任人 |
+|------|----------|----------|------|------|----------|--------|
+
+## 风险等级定义
+- 高：可能导致项目延期或交付质量不达标
+- 中：可能影响部分功能，但有替代方案
+- 低：影响可控，不影响交付</code></pre>
+
+  <h2>交付文档清单</h2>
+  <table>
+    <tr><th>文档</th><th>内容</th><th>格式</th></tr>
+    <tr><td>测试计划</td><td>测试范围、时间、资源、风险</td><td>Markdown / Word</td></tr>
+    <tr><td>测试报告</td><td>执行结果、通过率、问题清单</td><td>Markdown / Word</td></tr>
+    <tr><td>问题单</td><td>编号、描述、严重程度、状态</td><td>Markdown / Excel</td></tr>
+    <tr><td>风险评估</td><td>高风险项、影响范围、缓解措施</td><td>Markdown / Excel</td></tr>
+    <tr><td>兼容性矩阵</td><td>OS / 硬件 / 固件组合验证结果</td><td>Excel</td></tr>
+    <tr><td>性能数据</td><td>CPU / 内存 / 磁盘 / 网络实测值</td><td>Excel</td></tr>
+  </table>
+
+  <h2>Checklist</h2>
+  <ul class="checklist" id="cl-templates">
+    <li><input type="checkbox" data-cl="cl-templates" data-id="0"><div><div class="cl-title">前置条件已确认</div><div class="cl-desc">硬件配置、固件版本、OS 版本已记录</div></div></li>
+    <li><input type="checkbox" data-cl="cl-templates" data-id="1"><div><div class="cl-title">测试工具已安装</div><div class="cl-desc">fio / iperf3 / stress-ng 等已安装并验证</div></div></li>
+    <li><input type="checkbox" data-cl="cl-templates" data-id="2"><div><div class="cl-title">测试步骤已执行</div><div class="cl-desc">按文档步骤逐一执行并记录结果</div></div></li>
+    <li><input type="checkbox" data-cl="cl-templates" data-id="3"><div><div class="cl-title">日志已保存</div><div class="cl-desc">dmesg / SEL / 工具日志已归档</div></div></li>
+    <li><input type="checkbox" data-cl="cl-templates" data-id="4"><div><div class="cl-title">结果已判定</div><div class="cl-desc">按判定标准给出 Pass/Fail 结论</div></div></li>
+    <li><input type="checkbox" data-cl="cl-templates" data-id="5"><div><div class="cl-title">问题已登记</div><div class="cl-desc">所有 FAIL 项已登记问题单</div></div></li>
+  </ul>
+</div>
+
+<!-- ===== PROJECTS ===== -->
+<div class="page" id="p-projects">
+  <h1>项目实战</h1>
+
+  <table>
+    <tr><th>项目</th><th>平台</th><th>核心测试</th><th>关键发现</th><th>状态</th></tr>
+    <tr><td><span class="tag orange">金丝雀</span></td><td>Kunpeng 920 + 昇腾 NPU</td><td>0SW/2SW/4SW NVMe + GPU</td><td>NVMe 点灯失败 / CPLD 升级</td><td><span class="tag blue">EVT</span></td></tr>
+    <tr><td><span class="tag blue">磐鹿</span></td><td>Kunpeng + 昇腾 310P3/910B</td><td>RC/EP 模式 NPU</td><td>FIO 写失败 / NPU Critical</td><td><span class="tag orange">测试中</span></td></tr>
+    <tr><td><span class="tag green">DPU</span></td><td>服务器 + DPU</td><td>BMC / 虚拟化 / Bond</td><td>DPU 稳定性 / 转发率</td><td><span class="tag orange">测试中</span></td></tr>
+    <tr><td><span class="tag purple">K620BS</span></td><td>RAID 控制器 + 背板</td><td>BMC / SCSI PASSTHRU</td><td>Redfish 接口验证</td><td><span class="tag green">导入中</span></td></tr>
+  </table>
+</div>
+
+<!-- ===== CMDREF ===== -->
+<div class="page" id="p-cmdref">
+  <h1>命令速查</h1>
+  <div class="alert info">一页纸快速参考，覆盖 SIT 测试中 90% 的高频命令。</div>
+
+  <div class="cmd-cat">🔍 硬件识别</div>
+  <table>
+    <tr><th>命令</th><th>用途</th></tr>
+    <tr><td><code class="ic">lscpu</code></td><td>CPU/NUMA/架构</td></tr>
+    <tr><td><code class="ic">free -h</code></td><td>内存</td></tr>
+    <tr><td><code class="ic">lsblk -d</code></td><td>块设备</td></tr>
+    <tr><td><code class="ic">lspci -tv</code></td><td>PCIe 拓扑</td></tr>
+    <tr><td><code class="ic">nvme list</code></td><td>NVMe 设备</td></tr>
+    <tr><td><code class="ic">dmidecode -t system</code></td><td>系统信息</td></tr>
+  </table>
+
+  <div class="cmd-cat">🌡️ BMC</div>
+  <table>
+    <tr><th>命令</th><th>用途</th></tr>
+    <tr><td><code class="ic">ipmitool sensor</code></td><td>传感器</td></tr>
+    <tr><td><code class="ic">ipmitool sel list</code></td><td>事件日志</td></tr>
+    <tr><td><code class="ic">ipmitool fru</code></td><td>FRU 信息</td></tr>
+    <tr><td><code class="ic">ipmitool mc info</code></td><td>BMC 版本</td></tr>
+    <tr><td><code class="ic">ipmitool power cycle</code></td><td>电源循环</td></tr>
+  </table>
+
+  <div class="cmd-cat">📊 性能</div>
+  <table>
+    <tr><th>命令</th><th>用途</th></tr>
+    <tr><td><code class="ic">iostat -x 1</code></td><td>磁盘 IO (%util≈100 = 饱和)</td></tr>
+    <tr><td><code class="ic">vmstat 1</code></td><td>系统概览</td></tr>
+    <tr><td><code class="ic">numactl -H</code></td><td>NUMA 拓扑</td></tr>
+    <tr><td><code class="ic">iperf3 -c &lt;ip&gt; -t 30</code></td><td>网络吞吐</td></tr>
+  </table>
+
+  <div class="cmd-cat">🔧 存储</div>
+  <table>
+    <tr><th>命令</th><th>用途</th></tr>
+    <tr><td><code class="ic">nvme smart-log /dev/nvme0</code></td><td>SMART 健康</td></tr>
+    <tr><td><code class="ic">storcli64 /c0/show</code></td><td>RAID 控制器</td></tr>
+    <tr><td><code class="ic">storcli64 /c0/eall/sall show</code></td><td>物理盘映射</td></tr>
+  </table>
+
+  <div class="cmd-cat">📝 日志</div>
+  <table>
+    <tr><th>命令</th><th>用途</th></tr>
+    <tr><td><code class="ic">dmesg -c</code></td><td>查看并清空内核日志</td></tr>
+    <tr><td><code class="ic">journalctl -k</code></td><td>内核事件</td></tr>
+    <tr><td><code class="ic">lsmod</code></td><td>驱动模块</td></tr>
+  </table>
+</div>
+
+<!-- ===== OPENEULER ===== -->
+<div class="page" id="p-openeuler">
+  <h1>openEuler 认证</h1>
+  <div class="alert info">58 个自动化测试用例 (整机 & 板卡)</div>
+  <table>
+    <tr><th>设备</th><th>内容</th></tr>
+    <tr><td>NVMe</td><td>格式化 / 读写 / 查询</td></tr>
+    <tr><td>FC 卡</td><td>光纤通道验证</td></tr>
+    <tr><td>GPU</td><td>NVIDIA / AMD 兼容性</td></tr>
+    <tr><td>VGPU</td><td>虚拟 GPU</td></tr>
+    <tr><td>密码卡</td><td>RSA / ECC / 对称 / 杂凑 / 用户文件</td></tr>
+    <tr><td>cdrom</td><td>光驱兼容性</td></tr>
+  </table>
+</div>
+
+  </div><!-- /content -->
+  <footer>
+    <p>ARM SIT Guide · ARM 架构服务器系统集成测试知识库 · 基于 Kunpeng 920 平台实战经验</p>
+    <p style="margin-top:4px">2026 · 团队知识库 · 持续更新中 · 本地路径: E:\桌面\Servre_SIT_Mastery\SIT-Guide\</p>
+  </footer>
+</div><!-- /main -->
+
+<!-- Back to top -->
+<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="返回顶部">↑</button>
+
+</div><!-- /app -->
+
+<script>
+const T={home:'首页 Dashboard','arm-basics':'ARM 基础知识','hw-arch':'服务器硬件架构',firmware:'固件与启动链路','os-driver':'OS 与驱动',bmc:'BMC 管理',network:'网络测试',storage:'存储测试',performance:'性能测试',stability:'稳定性测试',compatibility:'兼容性测试','fault-inject':'故障注入',automation:'自动化测试','test-cases':'测试用例库',troubleshoot:'问题定位手册',templates:'项目交付模板',projects:'项目实战',cmdref:'命令速查',openeuler:'openEuler 认证'};
+
+const B={home:'总览','arm-basics':'知识类','hw-arch':'知识类',firmware:'知识类','os-driver':'知识类',bmc:'测试类',network:'测试类',storage:'测试类',performance:'测试类',stability:'测试类',compatibility:'测试类','fault-inject':'执行类',automation:'执行类','test-cases':'执行类',troubleshoot:'排障类',templates:'交付类',projects:'附录',cmdref:'附录',openeuler:'附录'};
+
+function go(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  const el=document.getElementById('p-'+id);if(el)el.classList.add('active');
+  document.querySelectorAll('.nav-item').forEach(n=>n.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n=>{if(n.dataset.page===id)n.classList.add('active')});
+  document.getElementById('pt').textContent=T[id]||id;
+  document.getElementById('bc-current').textContent=T[id]||id;
+  document.getElementById('pb').textContent='ARM SIT Guide › '+(T[id]||id);
+  document.getElementById('sidebar').classList.remove('open');
+  window.scrollTo(0,0);
+  // Restore checklists
+  restoreChecklists(id);
+}
+document.querySelectorAll('.nav-item').forEach(n=>{
+  n.addEventListener('click',function(){const id=this.dataset.page;if(id)go(id)});
+});
+
+// Copy code
+document.querySelectorAll('pre').forEach(pre=>{
+  const btn=document.createElement('button');
+  btn.className='copy-btn';btn.textContent='复制';
+  btn.onclick=()=>{
+    const code=pre.querySelector('code')||pre;
+    const text=code.textContent.replace(/^复制$/,'').trim();
+    if(navigator.clipboard){
+      navigator.clipboard.writeText(text).then(()=>{btn.textContent='已复制';btn.classList.add('copied');setTimeout(()=>{btn.textContent='复制';btn.classList.remove('copied')},2000)});
+    }else{
+      const ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);
+      btn.textContent='已复制';btn.classList.add('copied');setTimeout(()=>{btn.textContent='复制';btn.classList.remove('copied')},2000);
+    }
+  };
+  pre.appendChild(btn);
+});
+
+// Checklist localStorage
+document.querySelectorAll('.checklist input[type="checkbox"]').forEach(cb=>{
+  const cl=cb.dataset.cl;
+  if(cl){
+    const key='sit-cl-'+cl;
+    const saved=localStorage.getItem(key);
+    if(saved){try{const s=JSON.parse(saved);if(s[cb.dataset.id]){cb.checked=true;cb.closest('li').classList.add('done')}}catch(e){}}
+    cb.onchange=()=>{
+      const state=JSON.parse(localStorage.getItem(key)||'{}');
+      state[cb.dataset.id]=cb.checked;
+      localStorage.setItem(key,JSON.stringify(state));
+      cb.closest('li').classList.toggle('done',cb.checked);
+    };
+  }
+});
+function restoreChecklists(id){
+  document.querySelectorAll('.checklist input[type="checkbox"]').forEach(cb=>{
+    const cl=cb.dataset.cl;
+    if(cl){const key='sit-cl-'+cl;const saved=localStorage.getItem(key);if(saved){try{const s=JSON.parse(saved);if(s[cb.dataset.id]){cb.checked=true;cb.closest('li').classList.add('done')}else{cb.checked=false;cb.closest('li').classList.remove('done')}}catch(e){}}}});
+}
+
+// Back to top
+window.addEventListener('scroll',()=>{document.getElementById('btt').classList.toggle('show',window.scrollY>400)});
+
+// Wizard
+function showWiz(cat){
+  document.querySelectorAll('.wiz-result').forEach(r=>r.classList.remove('show'));
+  document.querySelectorAll('#wizCat .wiz-btn').forEach(b=>b.classList.remove('active'));
+  const el=document.getElementById('wiz-'+cat);
+  if(el)el.classList.add('show');
+  event.target.classList.add('active');
+}
+
+// Test case tabs
+function switchTcTab(idx){
+  document.querySelectorAll('#tcTabs .tab').forEach((t,i)=>{t.classList.toggle('active',i===idx)});
+  document.querySelectorAll('[id^="tcTab"]').forEach((c,i)=>{c.classList.toggle('active',i===idx)});
+}
+
+// Search
+const searchData=[
+  {t:'lscpu',p:'CPU/NUMA 信息',page:'cmdref'},{t:'lspci',p:'PCIe 设备',page:'cmdref'},
+  {t:'lsblk',p:'块设备',page:'cmdref'},{t:'nvme list',p:'NVMe 设备',page:'cmdref'},
+  {t:'ipmitool sensor',p:'BMC 传感器',page:'cmdref'},{t:'ipmitool sel',p:'事件日志',page:'cmdref'},
+  {t:'fio',p:'磁盘性能',page:'storage'},{t:'iperf3',p:'网络吞吐',page:'cmdref'},
+  {t:'iostat',p:'磁盘 IO',page:'cmdref'},{t:'numactl',p:'NUMA 绑定',page:'cmdref'},
+  {t:'storcli64',p:'RAID 管理',page:'cmdref'},{t:'dmesg',p:'内核日志',page:'cmdref'},
+  {t:'ethtool',p:'网卡状态',page:'cmdref'},{t:'stress-ng',p:'压力测试',page:'stability'},
+  {t:'掉盘',p:'NVMe 排查',page:'troubleshoot'},{t:'网口不通',p:'网络排查',page:'troubleshoot'},
+  {t:'性能低',p:'性能排查',page:'troubleshoot'},{t:'死机',p:'压力崩溃',page:'troubleshoot'},
+  {t:'panic',p:'内核崩溃',page:'troubleshoot'},{t:'风扇满转',p:'风扇排查',page:'troubleshoot'},
+  {t:'传感器',p:'传感器异常',page:'troubleshoot'},{t:'BMC',p:'BMC 管理',page:'bmc'},
+  {t:'无法上电',p:'电源排查',page:'troubleshoot'},{t:'无法进 BIOS',p:'固件排查',page:'troubleshoot'},
+  {t:'无法进 OS',p:'系统排查',page:'troubleshoot'},{t:'PCIe 丢失',p:'PCIe 排查',page:'troubleshoot'},
+  {t:'Redfish',p:'BMC API',page:'bmc'},{t:'SOL',p:'串口重定向',page:'bmc'},
+  {t:'热插拔',p:'存储热插拔',page:'storage'},{t:'bonding',p:'网卡绑定',page:'network'},
+  {t:'RoCE',p:'RDMA',page:'network'},{t:'SMART',p:'NVMe 健康',page:'storage'},
+  {t:'ARMv8',p:'ARM 架构',page:'arm-basics'},{t:'NUMA',p:'NUMA 调优',page:'arm-basics'},
+  {t:'GIC',p:'中断控制器',page:'arm-basics'},{t:'SMMU',p:'IOMMU',page:'arm-basics'},
+  {t:'TF-A',p:'启动链路',page:'firmware'},{t:'UEFI',p:'固件',page:'firmware'},
+  {t:'金丝雀',p:'项目',page:'projects'},{t:'磐鹿',p:'项目',page:'projects'},
+  {t:'DPU',p:'项目',page:'projects'},{t:'openEuler',p:'认证',page:'openeuler'},
+  {t:'密码卡',p:'国密算法',page:'openeuler'},{t:'hns3',p:'华为网卡',page:'network'},
+  {t:'Watchdog',p:'看门狗',page:'fault-inject'},{t:'ECC',p:'内存错误',page:'fault-inject'},
+  {t:'测试用例',p:'用例库',page:'test-cases'},{t:'P0',p:'优先级',page:'test-cases'},
+  {t:'AArch64',p:'ARM 64位',page:'arm-basics'},{t:'EL0',p:'异常级别',page:'arm-basics'},
+  {t:'EL1',p:'内核态',page:'arm-basics'},{t:'EL2',p:'虚拟化',page:'arm-basics'},
+  {t:'EL3',p:'安全监视器',page:'arm-basics'},{t:'弱内存模型',p:'ARM 特性',page:'arm-basics'},
+  {t:'内存屏障',p:'DMB/DSB/ISB',page:'arm-basics'},{t:'ARM vs x86',p:'架构差异',page:'arm-basics'},
+  {t:'Kunpeng 920',p:'处理器',page:'hw-arch'},{t:'PCIe 拓扑',p:'硬件架构',page:'hw-arch'},
+  {t:'内存通道',p:'DDR4-3200',page:'hw-arch'},{t:'背板',p:'NVMe/SAS 背板',page:'hw-arch'},
+  {t:'BootROM',p:'第一级启动',page:'firmware'},{t:'U-Boot',p:'第二级启动',page:'firmware'},
+  {t:'ACPI',p:'硬件描述',page:'firmware'},{t:'Device Tree',p:'设备树',page:'firmware'},
+  {t:'Secure Boot',p:'安全启动',page:'firmware'},{t:'PXE',p:'网络启动',page:'firmware'},
+  {t:'固件升级',p:'BIOS/BMC',page:'bmc'},{t:'FRU',p:'现场可更换单元',page:'bmc'},
+  {t:'风扇策略',p:'温控',page:'bmc'},{t:'电源控制',p:'远程开关机',page:'bmc'},
+  {t:'异常恢复',p:'BMC 冷重启',page:'bmc'},{t:'DCMI',p:'功耗管理',page:'bmc'},
+  {t:'DHCP',p:'动态IP',page:'network'},{t:'VLAN',p:'虚拟局域网',page:'network'},
+  {t:'中断亲和',p:'IRQ affinity',page:'network'},{t:'网络长稳',p:'稳定性',page:'network'},
+  {t:'磁盘识别',p:'lsblk/nvme',page:'storage'},{t:'RAID',p:'RAID 管理',page:'storage'},
+  {t:'文件系统',p:'mkfs/ext4',page:'storage'},{t:'I/O 压力',p:'fio 长稳',page:'storage'},
+  {t:'掉盘定位',p:'NVMe 排查',page:'storage'},{t:'背板排查',p:'信号完整性',page:'storage'},
+  {t:'UnixBench',p:'CPU 基准',page:'performance'},{t:'SPEC CPU',p:'CPU 基准',page:'performance'},
+  {t:'Stream',p:'内存带宽',page:'performance'},{t:'NUMA 调优',p:'性能优化',page:'performance'},
+  {t:'CPU 调速',p:'performance governor',page:'performance'},
+  {t:'透明大页',p:'THP',page:'performance'},{t:'调优记录',p:'优化清单',page:'performance'},
+  {t:'DC Cycle',p:'断电重启',page:'stability'},{t:'Reboot',p:'重启循环',page:'stability'},
+  {t:'高低温',p:'温度测试',page:'stability'},{t:'72H',p:'长时间压测',page:'stability'},
+  {t:'OS 兼容性',p:'操作系统矩阵',page:'compatibility'},
+  {t:'Kernel 兼容',p:'内核版本',page:'compatibility'},
+  {t:'固件矩阵',p:'BIOS/BMC 版本',page:'compatibility'},
+  {t:'磁盘热插拔',p:'故障注入',page:'fault-inject'},{t:'网线插拔',p:'故障注入',page:'fault-inject'},
+  {t:'电源插拔',p:'故障注入',page:'fault-inject'},{t:'BMC 重启',p:'故障注入',page:'fault-inject'},
+  {t:'OS panic',p:'故障注入',page:'fault-inject'},{t:'PCIe AER',p:'故障注入',page:'fault-inject'},
+  {t:'自动化脚本',p:'脚本规范',page:'automation'},{t:'JSON 格式',p:'测试结果',page:'automation'},
+  {t:'失败重跑',p:'自动化',page:'automation'},{t:'CI 集成',p:'Jenkins/GitLab',page:'automation'},
+  {t:'测试计划',p:'交付模板',page:'templates'},{t:'测试报告',p:'交付模板',page:'templates'},
+  {t:'问题单',p:'交付模板',page:'templates'},{t:'风险评估',p:'交付模板',page:'templates'},
+];
+
+function doSearch(q){
+  const r=document.getElementById('searchResults');
+  if(!q.trim()){r.style.display='none';return}
+  q=q.toLowerCase();
+  const matches=searchData.filter(d=>d.t.toLowerCase().includes(q)||d.p.toLowerCase().includes(q));
+  if(!matches.length){r.innerHTML='<div class="sr"><span class="sr-title">无结果</span></div>';r.style.display='block';return}
+  r.innerHTML=matches.slice(0,10).map(d=>`<div class="sr" onclick="go('${d.page}');document.getElementById('searchResults').style.display='none';document.getElementById('searchInput').value=''"><span class="sr-title">${d.t}</span> <span style="color:var(--text2);font-size:12px">${d.p}</span><div class="sr-page">${T[d.page]||d.page}</div></div>`).join('');
+  r.style.display='block';
+}
+document.addEventListener('click',function(e){if(!e.target.closest('.search-bar'))document.getElementById('searchResults').style.display='none'});
+</script>
+</body>
+</html>
